@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<title>MAT-101: Module 5C Applications - NEEDS CONTENT</title>
+
+<style>
+
+table, td
+
+{
+
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+}
+
+table.center 
+
+{
+
+  margin-left:auto; 
+  margin-right:auto;
+
+}
+
+</style> 
+
+<script type="text/x-mathjax-config">
+  
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
+</script>
+
+<script type="text/javascript"
+
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+
+</script>
+
+</head>
+
+
+
+<body>
+
+<b>Lines</b>
+<br><br>
+
+*******PUT TEXT HERE************
+<br><br>
+
+
+<b>Example 5B-1:</b> 
+<br>
+
+<center>
+
+<table class = "center">
+
+  <tr>
+
+    <td>$\dfrac{36}{84}$</td>
+
+    <td>Both numerator and denominator are divisible by $4$</td>
+  </tr>
+
+  <tr>
+
+    <td>$x^2 \sqrt{y}$</td>
+    <td>Example of exponents and radicals</td>
+  </tr>
+
+  <tr>
+
+    <td>$27 + mx$</td>
+    <td>Our solution</td>
+
+  </tr>
+
+</table>
+
+</center>
+
+<br><br>
+
+
+
+
+</body>
+
+</html>

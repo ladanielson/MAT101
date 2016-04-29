@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace is licensed under a Creative Commons
+Attribution 3.0 Unported License. (http://creativecommons.org/licenses/by/3.0/)
+Based on a work at http://wallace.ccfaculty.org/book/book.html. pages 57-60, 64-68 and 79-83-->
+
+<html>
+<head>
+
+<title>MAT-101: Module 3C Formulas and Applications</title>
+
+<style type="text/css">
+td
+{
+    padding:0 0 0 15px; <!--add space between table columns-->
+}
+</style>
+
+<style>
+
+table, td
+
+{
+
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+}
+
+table.center
+
+{
+
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+</style>
+
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
+</script>
+
+<script type="text/javascript"
+
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+
+</script>
+
+</head>
+
+
+
+<body>
+<p>
+<b>MAT-101: Module 3C Formulas and Applications</b>
+</p>
+
+
+<b>Objectives:</b>
+<ul>
+   <li>Solve problems involving averages and weighted averages. </li>
+   <li>Solve linear formulas for a given variable.</li>
+  <li>Solve variation problems by creating variation equations and
+finding the variation constant. </li>
+  <li>Solve word problems by creating and solving a linear equation.</li>
+</ul>
+
+<p>
+<b>Averages and Weighted Averages</b>
+</p>
+
+You are all familiar with computing average grades.  For example, if your scores on $2$ homework assignments are $89$ and $85$, then the average of the two assignments is $\dfrac{89+85}{2}=\dfrac{174}{2}=87$.  One application involving averages is to determine the minimum value of a third grade based on a desired minimum average. Consider the following example:
+</p>
+
+<b>Example 3C-1:</b> Suppose your scores on $2$ homework assignments are $89$ and $85$.  What minimum score should you achieve on your third assignment if you desire the average of the $3$ assignments to be at least $90$?
+<!-- Our own-->
+<br>
+
+<center>
+<table class = "center">
+ <tr>
+    <td align="right">What minimum score should you achieve on your third assignment?</td>
+    <td>Identify the unknown quantity to be determined</td>
+
+  </tr>
+  <tr>
+    <td align="right">Let $x$ represent the third score</td>
+    <td>Compare the average of the $3$ scores to the desired minimum</td>
+
+  </tr>
+
+    <tr>
+    <td align="right">$\dfrac{89+85+x}{3}\geq 90$</td>
+    <td>Solve for $x$: Multiply both sides by $3$, add $89+85$</td>
+
+  </tr>
+
+  <tr>
+    <td align="right">$174+x\geq 270$</td>
+    <td>Subtract $174$ from both sides</td>
+
+  </tr>
+
+  <tr>
+    <td align="right">$x\geq 96$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+</center>
+
+Look back and answer the question: You should earn at least a $96$ on your third assignment if you desire the average of the $3$ assignments to be at least $90$.
+
+<p>
+The final course grade in MAT 101 is a weighted average.  The final course grade is weighted by groups as follows: Attendance and Participation has weight $5\%$, Unit Exams have weight $25\%$ and the Final Exam has weight $70\%$.  Consider the computation of the following example grade:
+</p>
+
+<b>Example 3C-2:</b> Suppose your MAT 101 final course grades are as follows: Attendance and Participation $=95$, Unit Exams $=83$ and Final Exam $=72$.  Compute your overall weighted average in MAT 101.
+<!-- Our own-->
+<br>
+
+<center>
+<table class = "center">
+ <tr>
+    <td align="right">$95\left(\dfrac{5}{100} \right) + 83\left(\dfrac{25}{100} \right) + 72\left(\dfrac{70}{100} \right)$</td>
+    <td>Multiply each grade by its corresponding weight</td>
+
+  </tr>
+  <td align="right">$95(.05)+ 83(.25) + 72(.70)$</td>
+    <td>Compute the corresponding decimal weights, multiplication before addition</td>
+
+  </tr>
+  <tr>
+    <td align="right">$4.75+20.75+50.4$</td>
+    <td>Add</td>
+
+  </tr>
+
+    <tr>
+    <td align="right">$75.9$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+</center>
+
+<p> Your overall weighted average in MAT 101 would be $75.9\%$.  The Final Exam is given the highest weight so has the greatest influence on the final weighted average. </p>
+
+<b>Example 3C-3:</b> Suppose your MAT 101 final course grades are as follows: Attendance and Participation $=100$ and your Unit Exams average is $88$.  What minimum score should you achieve on your Final Exam if you desire your overall weighted average in MAT 101 to be at least $80$?
+<!-- Our own-->
+<br>
+
+<center>
+<table class = "center">
+ <tr>
+    <td align="right">What minimum score should you achieve on your Final Exam?</td>
+    <td>Identify the unknown quantity to be determined</td>
+
+  </tr>
+  <tr>
+    <td align="right">Let $x$ represent the Final Exam score</td>
+    <td>Compare the weighted average of the group scores to the desired minimum</td>
+
+  </tr>
+
+    <tr>
+    <td align="right">$100(.05) + 88(.25) + x(.70) \geq 80$</td>
+    <td>Solve for $x$: Multiply numbers first</td>
+
+  </tr>
+
+  <tr>
+    <td align="right">$5 + 22 + .7x \geq 80$</td>
+    <td>Add $5 + 22= 27$ then subtract $27$ from both sides</td>
+
+  </tr>
+
+  <tr>
+    <td align="right">$.7x\geq 53$</td>
+    <td>Divide both sides by $.7$</td>
+
+  </tr>
+
+  <tr>
+    <td align="right">$x\geq 75.71$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+</center>
+
+Look back and answer the question: You should earn at least a $75.71$ on your Final Exam if you desire your overall weighted average in MAT 101 to be at least $80$.
+
+<p><b>Solving Linear Equations - Formulas</b></p>
+
+<p>
+Solving formulas is much like solving general linear equations. The only difference
+is we will have several variables in the problem and we will be attempting to solve
+for one specific variable. For example, we may have a formula such as $A=\pi r^2 + \pi r s$ (formula for surface area of a right circular cone) and we may be interested in
+solving for the variable $s$. This means we want to isolate the $s$ so the equation has
+$s$ on one side, and everything else on the other. So a solution might look like $s = \dfrac{A-\pi r^2}{\pi r}$. This second equation gives the same information as the first which means they are
+algebraically equivalent. However, one is solved for the area $A$, while the other is
+solved for $s$ (slant height of the cone).  In this section we will discuss how we can
+move from the first equation to the second.
+</p>
+
+<p>
+When solving formulas for a variable we need to focus on the one variable we are
+trying to solve for, all the others are treated just like numbers. This is shown in
+the following example. Two parallel problems are shown, the first is a normal one step
+equation, the second is a formula that we are solving for $x$:
+</p>
+
+<b>Example 3C-4:</b>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 74 pg 47-->
+<br>
+
+<center>
+<table class = "center">
+ <tr>
+   <tr>
+    <td align="right">$3x=12\,\,$</td>
+    <td>$\,\,$</td>
+    <td align ="center">$wx=z$</td>
+    <td>In both problems, $x$ is multiplied by something</td>
+
+  </tr>
+ <tr>
+    <td align="right">$\,\,\overline{\,3\,}\,\,\,\,\,\,\,\,\,\,\overline{\,3\,}\,\,\,$</td>
+    <td>$\,\,$</td>
+    <td align="center">$\overline{\,\,w\,}\,\,\,\,\,\,\,\,\overline{\,w\,}\,\,\,$</td>
+    <td>To isolate $x$ we divide by $3$ or $w$</td>
+
+  </tr>
+ <tr>
+    <td align="right">$x=4\,\,\,$</td>
+    <td>$\,\,$</td>
+    <td align ="center">$x=\dfrac{z}{w}$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+</center> </p>
+
+<p>
+We use the same process to solve $3x = 12$ for $x$ as we use to solve $wx = z$ for $x$.  Because we are solving for $x$ we treat all the other variables the same way we would treat numbers. Thus, to get rid of the multiplication we divided by $w$. This
+same idea is seen in the following example.
+</p>
+
+<b>Example 3C-5:</b> Solve for $n$.
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 75 pg 47-->
+<br>
+
+<center>
+<table class = "center">
+
+<tr>
+    <td align="right">$m+n=p$</td>
+    <td>Solving for $n$, treat all other variables like numbers</td>
+
+  </tr>
+   <tr>
+    <td align="right">$\,\,\,\,\,\underline{-m\,\,\,\,\,\,\,-m}$</td>
+    <td>Subtract $m$ from both sides</td>
+
+  </tr>
+
+  <tr>
+    <td align="right">$n=p-m$</td>
+    <td>Our Solution</td>
+
+  </tr>
+
+  </table></p> </center>
+
+  <b>Example 3C-6:</b> Solve for $a$.
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 76 pg 47-->
+<br>
+
+<center>
+<table class = "center">
+
+<tr>
+    <td align="right">$a(x-y)=b\phantom{0123}$</td>
+    <td>Solving for $a$, treat $(x-y)$ like a number</td>
+
+  </tr>
+   <tr>
+    <td align="right">$\,\,\overline{\,(x-y)\,}\,\,\overline{\,(x-y)\,}$</td>
+    <td>Divide both sides by $(x-y)$: on the left, $\dfrac{(x-y)}{(x-y)}=1$</td>
+
+  </tr>
+
+  <tr>
+    <td align="right">$a=\dfrac{b}{(x-y)}$</td>
+    <td>Our Solution</td>
+
+  </tr>
+
+  </table></p> </center>
+
+  <p>
+Because $(x-y)$ is in parentheses, if we are not searching for what is inside the parentheses, we can keep them together as a group and divide by that group. However, if we are searching for what is inside the parentheses, we will have to break up the parentheses by distributing. The following example is the same formula, but this time we will solve for $x$.
+  </p>
+
+<b>Example 3C-7:</b> Solve for $x$.
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 77 pg 48-->
+<br>
+
+<center>
+<table class = "center">
+
+<tr>
+    <td align="right">$a(x-y)=b$</td>
+    <td>Solving for $x$, we need to distribute to clear parenthesis</td>
+
+  </tr>
+
+  <tr>
+    <td align="right">$ax-ay=b$</td>
+    <td>This is a two-step equation, $ay$ is subtracted from our $x$ term, therefore</td>
+
+  </tr>
+   <tr>
+    <td align="right">$\,\,\,\,\,\underline{+ay\,\,+ay}$</td>
+    <td>Add $ay$ to both sides</td>
+
+  </tr>
+
+  <tr>
+    <td align="right">$ax=b+ay$</td>
+    <td>The $x$ is multiplied by $a$, therefore</td>
+
+  </tr>
+   <tr>
+    <td align="right">$\,\,\overline{\,a\,}\phantom{12}\overline{\,\,\,\,\,\,\,a\,\,\,\,\,\,\,}$</td>
+    <td>Divide both sides by $a$</td>
+
+  </tr>
+
+  <tr>
+    <td align="right">$x=\dfrac{b+ay}{a}$</td>
+    <td>Our Solution</td>
+
+  </tr>
+
+  </table></p> </center>
+
+  <p>
+Be very careful as we isolate $x$ that we do not try and cancel the $a$ on top and bottom of the fraction. This is not allowed if there is any adding or subtracting in the fraction. There is no reducing possible in this problem, so our final reduced answer remains $x=\dfrac{b+ay}{a}$. The next example is another two-step problem:
+  </p>
+
+  <b>Example 3C-8:</b> Solve for $m$.
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 78 pg 48-->
+<br>
+
+<center>
+<table class = "center">
+
+<tr>
+    <td align="right">$y=mx+b$</td>
+    <td>Solving for $m$, focus on addition first</td>
+
+  </tr>
+
+    <tr>
+    <td align="right">$\,\,\,\,\,\underline{-b\phantom{12345}-b}$</td>
+    <td>Subtract $b$ from both sides</td>
+
+  </tr>
+
+  <tr>
+    <td align="right">$y-b=mx$</td>
+    <td>The $m$ is multiplied by $x$, therfore</td>
+
+  </tr>
+   <tr>
+    <td align="right">$\,\,\overline{\,\,\,\,x\,\,\,\,}\phantom{1234}\overline{\,x\,}$</td>
+    <td>Divide both sides by $x$</td>
+
+  </tr>
+
+  <tr>
+    <td align="right">$\dfrac{y-b}{x}=m$</td>
+    <td>Our Solution</td>
+
+  </tr>
+
+  </table></p> </center>
+
+  <p>
+  It is important to note that we know we are done with the problem when the variable we are solving for is isolated or alone on one side of the equation and it does not appear anywhere on the other side of the equation.
+  </p>
+
+  <p>
+  The next example is also a two-step equation (it is the problem we started with at the beginning of the lesson):
+  </p>
+
+
+  <b>Example 3C-9:</b> Solve for $s$.
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 79 pg 49-->
+<br>
+
+<center>
+<table class = "center">
+
+<tr>
+    <td align="right"> $A=\pi r^2 + \pi r s$</td>
+    <td>Solving for $s$, focus on what is added to the term with $s$</td>
+
+  </tr>
+
+    <tr>
+    <td align="right">$\,\,\,\,\,\underline{-\pi r^2\,-\pi r^2}\phantom{12345}$</td>
+    <td>Subtract $\pi r^2$ from both sides</td>
+
+  </tr>
+
+  <tr>
+    <td align="right">$A-\pi r^2=\pi r s$</td>
+    <td>The $s$ is multiplied by $\pi r$, so</td>
+
+  </tr>
+   <tr>
+    <td align="right">$\,\,\overline{\,\,\,\,\pi r\,\,\,\,}\phantom{1234}\overline{\,\pi r\,}$</td>
+    <td>Divide both sides by $\pi r$</td>
+
+  </tr>
+
+  <tr>
+    <td align="right">$\dfrac{A-\pi r^2}{\pi r}=s$</td>
+    <td>Our Solution</td>
+
+  </tr>
+
+  </table></p> </center>
+
+  <p>
+  Again, we cannot reduce the $\pi r$ in the numerator and denominator because of the subtraction in the problem.
+  </p>
+
+
+<p><b>Solving Linear Equations - Variation</b></p>
+
+
+<p>One application of solving linear equations is variation. Often different events are
+related by what is called the constant of variation. For example, the time it takes
+to travel a certain distance is related to how fast you are traveling. The faster you
+travel, the less time it takes to get there. This is one type of variation problem. We
+will look at three types of variation here. Variation problems have two or three
+variables and a constant in them. The constant, usually noted with a $k$, describes
+the relationship and does not change as the other variables in the problem change.
+There are two ways to set up a variation problem. The first solves for one of the
+variables. The second method is to solve for the constant. Here we will use the
+second method.</p>
+<p>The greek letter pi ($\pi$) is used to represent the ratio of the circumference of a
+circle to its diameter.</p>
+
+<p><b>World View Note:</b> In the 5th century, Chinese mathematician Zu Chongzhi calculated
+the value of $\pi$ to seven decimal places (3.1415926). This was the most
+accurate value of $\pi$ for the next 1000 years!</p>
+
+<p>If you take any circle and divide the circumference of the circle by the diameter
+you will always get the same value, about 3.14159... If you have a bigger circumference
+you will also have a bigger diameter. This relationship is called<b> direct
+variation</b> or <b>directly proportional</b>. If we see this phrase in the problem we
+know to divide to find the constant of variation.</p>
+
+<b>Example 3C-10:</b>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 92 pg 57-->
+<br>
+
+<center>
+<table class = "center">
+  <tr>
+    <td align="right">$m$ varies directly as $n$</td>
+    <td>"Directly" tells us if $n$ increases so does $m$</td>
+
+  </tr>
+   <tr>
+    <td align="right">$m=kn$</td>
+    <td>Our formula for the relationship with $k$= the constant of variation</td>
+
+  </tr>
+  </table>
+</center>
+
+
+
+<p>In kickboxing, one will find that the longer the board, the easier it is to break. If
+you multiply the force required to break a board by the length of the board you
+will also get a constant. Here, we are multiplying the variables, which means as
+one variable increases, the other variable decreases. This relationship is called
+<b>indirect variation</b> or <b>inversely proportional</b>. If we see this phrase in the
+problem we know to multiply to find the constant of variation.</p>
+<b>Example 3C-11:</b>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 93 pg 57-->
+<br>
+<center>
+<table class = "center">
+  <tr>
+    <td align="right">$y$ is inversely proportional to $z$</td>
+    <td>''Inversely'' tells us if $z$ increases then $y$ decreases</td>
+
+  </tr>
+  <tr>
+    <td align="right">$y =k\cdot \dfrac{1}{z}$</td>
+    <td>Our formula for the relationship with $k$= the constant of variation</td>
+
+  </tr>
+</table></center>
+
+<p>The formula for the area of a triangle has three variables in it (do you recall the area of a triangle is $\frac{1}{2}$(the base length)(the height)?). If we divide the
+area by the base times the height we will also get a constant, $\frac{1}{2}$. This relationship
+is called joint variation or jointly proportional. If we see this phrase in the
+problem we know to divide the first variable by the product of the other two to
+find the constant of variation.</p>
+
+<b>Example 3C-12:</b>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 94 pg 58-->
+<br>
+
+<center>
+<table class = "center">
+  <tr>
+    <td align="right">$A$ varies jointly as $x$ and $y$</td>
+    <td>''Jointly'' tells us if the product $xy$ increases so does $A$</td>
+
+  </tr>
+  <tr>
+    <td align="right">$A=k(xy)$</td>
+    <td>Our formula for the relationship with $k$= the constant of variation</td>
+
+  </tr>
+</table></center>
+
+
+
+
+
+<p>Once we have our formula for the relationship in a variation problem, we use
+given or known information to calculate the constant of variation. This is shown
+for each type of variation in the next three examples.</p>
+
+<b>Example 3C-13:</b> Find the constant of variation and write the formula to express the relationship using that constant.
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 95 pg 58-->
+
+<center>
+
+<p>$w$ is directly proportional to $y$ and $w =50$ when $y =5$</p>
+
+<p><table class = "center">
+  <tr>
+    <td align="right">$w=k\cdot y$</td>
+    <td>"Directly" tells us  if $y$ increases so does $w$</td>
+
+
+  </tr>
+  <tr>
+    <td align="right">$50=k\cdot 5$</td>
+    <td>Substitute known values, solve for the constant of variation $k$</td>
+
+
+  </tr>
+  <tr>
+    <td align="right">$\overline{\,5\,}\phantom{123}\overline{\,\,\,\,5\,\,\,\,}$</td>
+    <td>Divide both sides by $5$</td>
+
+  </tr>
+<tr>
+    <td align="right">$10=k$</td>
+    <td>Determine the final formula relating $w$ to $y$</td>
+  </tr>
+
+   <tr>
+    <td align="right">$w=10y$</td>
+    <td>Our Solution</td>
+
+
+  </tr>
+</table></p> </center>
+
+
+
+
+<b>Example 3C-14:</b> Find the constant of variation and write the formula to express the relationship using that constant.
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 96 pg 58-->
+<br>
+<center>
+
+<p>$c$ varies indirectly as $d$ and $c=4.5$ when $d=6$</p>
+
+<p><table class = "center">
+  <tr>
+    <td align="right">$c=k\cdot\dfrac{1}{d}$</td>
+    <td>"Indirectly" tells us if $d$ increases then $c$ decreases</td>
+
+  </tr>
+  <tr>
+    <td align="right">$4.5=k\cdot\dfrac{1}{6}$</td>
+    <td>Substitute known values, solve for $k$: multiply both sides by $6$</td>
+
+  </tr>
+  <tr>
+    <td align="right">$(4.5)6=(k\cdot\dfrac{1}{6})6$</td>
+    <td>Simplify: $\dfrac{6}{6}=1$  on the <b>RHS</b></td>
+
+  </tr>
+<tr>
+    <td align="right">$27=k$</td>
+    <td>Determine the final formula relating $c$ to $d$</td>
+
+  </tr>
+  
+  <tr>
+    <td align="right">$c=27\cdot\dfrac{1}{d}$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table></p> </center>
+
+
+
+<b>Example 3C-15:</b> Find the constant of variation and write the formula to express the relationship using that constant.
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 97 pg 58-->
+<br>
+
+<center>
+
+<p>$x$ is jointly proportional to $y$ and $z$ and $x=48$ when $y =2$ and $z =4$</p>
+
+<p><table class = "center">
+  <tr>
+    <td align="right">$x=k(yz)$</td>
+    <td>"Jointly" tells us if the product $yz$ increases so does $x$</td>
+
+  </tr>
+  <tr>
+    <td align="right">$48=k(2\cdot 4)$</td>
+    <td>Substitute known values, simplify $2\cdot 4=8$, solve for the constant of variation $k$</td>
+
+
+  </tr>
+  <tr>
+    <td align="right">$\overline{\,8\,}\phantom{12345}\overline{\,\,\,\,8\,\,\,\,}$</td>
+    <td>Divide both sides by $8$</td>
+
+  </tr>
+
+  </tr>
+<tr>
+    <td align="right">$6=k$</td>
+    <td>Determine the final formula relating $x$ to $(yz)$</td>
+
+  </tr>
+
+  <tr>
+    <td align="right">$$x=6(yz)$$</td>
+    <td>Our Solution</td>
+</table></p> </center>
+
+
+<p>Once we have found the constant of variation we can use it to find other combinations
+in the same relationship. Each of these problems we solve will have three
+important steps, none of which should be skipped.</p>
+
+1. Find the formula for the relationship using the type of variation<br>
+2. Find the constant of variation using known values<br>
+3. Answer the question using the constant of variation<br>
+
+<p>The next three examples show how this process is worked out for each type of
+variation.</p>
+
+<b>Example 3C-16:</b>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 98 pg 59-->
+<br>
+<p>The price of an item varies directly with the sales tax. If a $\$ 25$ item has a sales tax of $\$ 2$,
+what will the tax be on a $\$ 40$ item?</p>
+<center>
+<p><table class = "center">
+  <tr>
+    <td align="right">$p=kt$</td>
+    <td>''Directly'' tells us if tax $(t)$ increases so does price $(p)$ </td>
+
+  </tr>
+<tr>
+    <td align="right">$25=k(2)$</td>
+    <td>Substitute known values for price and tax, solve for the constant of variation $k$</td>
+
+  </tr>
+  <tr>
+    <td align="right">$\overline{\,2\,}\phantom{123}\overline{\,\,\,\,2\,\,\,\,}$</td>
+    <td>Divide both sides by $2$</td>
+
+  </tr>
+<tr>
+    <td align="right">$12.5=k$</td>
+    <td>Evaluate to find our constant</td>
+
+  </tr>
+<tr>
+    <td align="right">$40=12.5t$</td>
+    <td>Using our constant, substitute $40$ for price to find the tax</td>
+
+ 
+<tr>
+    <td align="right">$\overline{12.5}\phantom{123}\overline{\,\,12.5\,\,}\,\,$</td>
+    <td>Divide both sides by $12.5$</td>
+
+  </tr>
+<tr>
+    <td align="right">$3.2=t$</td>
+    <td>Our solution: Tax is $\$ 3.20$</td>
+
+  </tr>
+</table></p> </center>
+
+<b>Example 3C-17:</b>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 99 pg 59-->
+<br>
+<p>The speed (or rate) Josiah travels to work is inversely proportional to the time it
+takes to get there. If he travels $35$ miles per hour it will take him $2.5$ hours to get
+to work. How long will it take him if he travels $55$ miles per hour?</p>
+
+<center>
+<p><table class = "center">
+  <tr>
+    <td align="right">$r=k\cdot\dfrac{1}{t}$</td>
+    <td>"Inversely" tells us if time $(t)$ increases then rate $(r)$ decreases</td>
+
+  </tr>
+  <tr>
+    <td align="right">$35=k\cdot\dfrac{1}{2.5}$</td>
+    <td>Substitute known values for rate and time, solve for $k$: multiply both sides by $2.5$</td>
+
+  </tr>
+ <tr>
+    <td align="right">$(35)(2.5)=k\cdot\dfrac{1}{2.5}(2.5)$</td>
+    <td>Simplify: $\dfrac{2.5}{2.5}=1$  on the <b>RHS</b></td>
+
+  </tr>
+  <tr>
+    <td align="right">$87.5 = k$</td>
+    <td>Substitute $k=87.5$ in the formula relating rate and time</td>
+
+  </tr>
+ <tr>
+    <td align="right">$55=87.5\cdot \dfrac{1}{t}$</td>
+    <td>Using our constant, substitute $55$ for rate to find the corresponding time</td>
+
+  </tr>
+   <tr>
+    <td align="right">$55t=87.5$</td>
+    <td>Multiply both sides by $t$: $\dfrac{t}{t} = 1$ on the <b>RHS</b></td>
+
+  </tr>
+ <tr>
+    <td align="right">$\overline{55}\,\,\,\,\,\,\,\,\,\,\,\,\overline{55}\,\,$</td>
+    <td>Divide both sides by $55$</td>
+
+  </tr>
+ <tr>
+    <td align="right">$t\approx 1.59$</td>
+    <td>Our solution: It takes him approximately $1.59$ hours to get to work</td>
+
+  </tr>
+</table></p> </center>
+
+
+<b>Example 3C-18:</b>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 100 pg 59-->
+<br>
+
+
+<p>The amount of simple interest earned on an investment varies jointly as the principle
+(amount invested) and the time it is invested. In an account, $\$ 150$ invested
+for $2$ years earned $\$ 12$ in interest. How much interest would be earned on a $\$ 220$ investment for $3$ years?</p>
+
+<center>
+<p><table class = "center">
+  <tr>
+    <td align="right">$I=k(Pt)$</td>
+    <td>"Jointly" means if the product of Principle ($P$) & time ($t$) increases so does the Interest ($I$)</td>
+
+  </tr>
+  <tr>
+    <td align="right">$12=k(150\cdot 2)$
+    <td>Substitute known values for Interest, Principle and time, simplify: $150\cdot 2 = 300$, solve for the constant of variation $k$</td>
+
+
+  </tr>
+  <tr>
+    <td align="right">$\overline{\,300\,}\phantom{12345}\overline{\,\,\,\,300\,\,\,\,}$</td>
+    <td>Divide both sides by $300$</td>
+
+  </tr>
+
+  </tr>
+<tr>
+    <td align="right">$0.04=k$</td>
+    <td>Evaluate to find our constant of variation</td>
+
+  </tr>
+<tr>
+    <td align="right">$I=0.04(Pt) = 0.04(220\cdot 3)$
+    <td>Using our constant, substitute $220$ for Principle and $3$ for time</td>
+
+  </tr>
+
+<tr>
+    <td align="right">$I =26.4$</td>
+    <td>Our Solution: The investment would earn $\$ 26.40$ in interest</td>
+
+  </tr>
+</table></p> </center>
+
+
+<p>Sometimes a variation problem will ask us to do something to a variable as we set
+up the formula for the relationship. For example, $\pi$ can be thought of as the ratio
+of the area and the radius squared of a circle. This is still direct variation. In fact we say the area
+varies directly as the square of the radius and thus our variable, $r$, is squared in our formula.
+This is shown in the next example.</p>
+<b>Example 3C-19:</b>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 101 pg 60-->
+<p>The area of a circle is directly proportional to the square of its radius. A circle
+with a radius of $10$ cm has an area of $314$ cm$^2$. What will the area be on a circle of radius
+$4$ cm?</p>
+
+<center>
+<p><table class = "center">
+  <tr>
+    <td align="right">$A =kr^2$</td>
+    <td>''Directly'' tells us if the square of the radius $(r^2)$ increases so does the area $(A)$</td>
+
+  </tr>
+  <tr>
+    <td align="right">$314 =k(10)^2$
+    <td>Substitute known values into our formula, divide both sides by $(10)^2$</td>
+
+  </tr>
+<tr>
+    <td align="right">$\frac{314}{100} =k$
+    <td>Exponents first</td>
+
+  </tr>
+<tr>
+    <td align="right">$3.14=k$</td>
+    <td>Divide to find our constant (look familiar?)</td>
+
+  </tr>
+<tr>
+    <td align="right">$A =3.14(4)^2$
+    <td>Using the constant, use $4$ for $r$, don't forget the squared!</td>
+
+  </tr>
+<tr>
+    <td align="right">$A =3.14(16)$</td>
+    <td>Evaluate the exponent</td>
+
+  </tr>
+
+<tr>
+    <td align="right">$A=50.24$</td>
+    <td>Our Solution: Area is $50.24$ cm$^2$</td>
+
+  </tr>
+</table></p> </center>
+
+<p>When solving variation problems it is important to take the time to clearly state
+the variation formula, find the constant, and solve the final equation.</p>
+
+
+
+
+</body>
+
+</html> 
