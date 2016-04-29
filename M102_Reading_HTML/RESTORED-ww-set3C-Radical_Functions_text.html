@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
+Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
+Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 143-149-->
+
+
+<html>
+<head>
+<title>MAT-102: Module 3C-Radical Functions</title>
+<style>
+table, td
+{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+table.center
+{
+  margin-left:auto;
+  margin-right:auto;
+}
+</style>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+<body>
+<h1>MAT-102: 3C-Radical Functions</h1>
+<p>The concept of a radical (or root) is a familiar one which we've used in earlier Units in this course. In this Module, we will start by reviewing properties of radicals and see how they become a way of understanding general power functions. We will brush up on our algebra skills by solving equations involving radicals and consider a new take on composing functions.  We will revisit graphing concepts such as finding intercepts and the domain and range for radical functions and general power function.</p>
+<h2>$\S$3C.1  Properties of Radicals</h2>
+<p>What is $\sqrt{x^2 + 9}$? Many students will answer quickly that the answer is $(x + 3)$ and have a very difficult
+time believing this answer is wrong. But it is wrong.</p>
+<p>
+For positive values of $x$, $\sqrt{x^2}$ <b>is</b> $x$ and $\sqrt{9}$ <b>is</b> $3$, but
+$\sqrt{x^2 + 9}$ is not $(x + 3).$
+</p>
+<p>Why not? Remember that $\sqrt{x^2 + 9}$ is asking a question: "what <b>squared</b> gives
+the answer $x^2 + 9$?" So $(x + 3)$ is not an answer, because $(x + 3)^2 = x^2 + 6x+9$, not $x^2 + 9$.
+</p>
+<p>As an example, suppose $x = 4$. Substituting into $\sqrt{x^2 + 9}$ gives $\sqrt{4^2 + 9} = \sqrt{25} = 5$.
+But substituting into $(x + 3)$ gives, $(4 + 3) = 7$.  That is, when $x = 4$:
+$$\sqrt{x^2 + 9} = \sqrt{4^2 + 9} = \sqrt{25} = 5\neq 7 = (4+3)=(x+3)$$
+</p>
+<p>
+NOTE: If two numbers are added or subtracted under a square root, you cannot split them up. In
+symbols:
+$\sqrt{a + b} \neq \sqrt{a} + \sqrt{b}$ or, to put it another way,
+$\sqrt{x^2 + y^2} \neq x + y$</p>.
+<p> $\sqrt{x^2 + 9}$ cannot, in fact, be simplified at all. It is a perfectly valid function, but cannot be rewritten in a
+simpler form.</p>
+<p>How about $\sqrt{9x^2}$? By analogy to the previous discussion, you might expect that this cannot be simplified
+either. But in fact, it can be simplified:</p>
+<p>$\sqrt{9x^2} = 3x$</p>
+<p>Why? Again, $\sqrt{9x^2}$ is asking “what squared gives the answer $9x^2$?” The answer is $3x$
+because $(3x)^2 = 9x^2$.
+</p>
+<p>
+Similarly,
+$\displaystyle \sqrt{\frac{9}{x^2}} = \frac{3}{x}$ , because
+$\displaystyle \left(\frac{3}{x}\right)^2 = \frac{9}{x^2}$.</p>
+
+<p>
+There are radicals (or roots) other than a square root: $\sqrt[3]{27}$ means "what number raised to the third power
+gives $27$".  In this case, $3^3=27$ so $\sqrt[3]{27} = 3$.  Similarly, $\sqrt[4]{16} = 2$.
+</p>
+
+<!--
+<p>NOTE: If two numbers are multiplied or divided under a square root, you can split them up. In
+symbols:
+p
+ab =
+p
+a
+p
+b,
+q
+ab
+=
+p
+a p
+b</p>
+
+
+<h2>$\S$3C.2 Simplifying Radicals</h2>
+<p>The property
+p
+ab=
+p
+a
+p
+b can be used to simplify radicals. The key is to break the number inside the root
+into two factors, one of which is a perfect square.</p>
+<p>Example 8.1: Simplifying a Radical</p>
+
+<p><table style="width:100%">
+  <tr>
+    <td>p
+75</td>
+    <td></td>
+
+  </tr>
+  <tr>
+    <td>=
+p
+25  3</td>
+    <td>because 253 is 75, and 25 is a perfect square</td>
+
+  </tr>
+ <tr>
+    <td>=
+p
+25
+p
+3</td>
+    <td>because
+p
+ab =
+p
+a
+p
+b</td>
+
+  </tr>
+ <tr>
+    <td>= 5
+p
+3</td>
+    <td>because
+p
+25 =5</td>
+
+  </tr>
+</table>
+
+</p>
+
+
+<p>So we conclude that
+p
+75=5
+p
+3. You can confirm this on your calculator (both are approximately 8.66).</p>
+<p>We rewrote 75 as 25  3 because 25 is a perfect square. We could, of course, also rewrite 75 as 5  15, but—
+although correct—that would not help us simplify, because neither number is a perfect square.</p>
+<p>Example 8.2: Simplifying a Radical in Two Steps</p>
+
+<p>
+
+<table style="width:100%">
+  <tr>
+    <td>p
+180</td>
+    <td></td>
+
+  </tr>
+  <tr>
+    <td>=
+p
+9  20</td>
+    <td>because 9  20 is 180, and 9 is a perfect square</td>
+
+  </tr>
+<tr>
+    <td>=
+p
+9
+p
+20</td>
+    <td>because
+p
+ab =
+p
+a
+p
+b</td>
+
+  </tr>
+<tr>
+    <td>= 3
+p
+20</td>
+    <td>So far, so good. But wait! We’re not done!</td>
+
+  </tr>
+<tr>
+    <td>= 3
+p
+4  5</td>
+    <td>There’s another perfect square to pull out!</td>
+
+  </tr>
+<tr>
+    <td>= 3
+p
+4
+p
+5</td>
+    <td></td>
+
+  </tr>
+<tr>
+    <td>= 3 (2)
+p
+5</td>
+    <td></td>
+
+  </tr>
+<tr>
+    <td>= 6
+p
+5</td>
+    <td>Now we’re done.</td>
+
+  </tr>
+</table>
+
+</p>
+
+
+<p>The moral of this second example is that after you simplify, you should always look to see if you can
+simplify again .</p>
+<p>A secondary moral is, try to pull out the biggest perfect square you can. We could have jumped straight to
+the answer if we had begun by rewriting 180 as 36  5.</p>
+
+<p>This sort of simplification can sometimes allow you to combine radical terms, as in this example:</p>
+<p>Example 8.3: Combining Radicals</p>
+
+<p><table style="width:100%">
+  <tr>
+    <td>p
+75 ????
+p
+12</td>
+    <td></td>
+
+  </tr>
+  <tr>
+    <td>= 5
+p
+3 ?? ?? 2
+p
+3</td>
+    <td>We found earlier that
+p
+75 = 5
+p
+3 . Use the
+same method to confirm that
+p
+12 = 2
+p
+3 .</td>
+
+  </tr>
+ <tr>
+    <td>= 3
+p
+3</td>
+    <td>5 of anything minus 2 of that same thing is 3 of
+it, right?</td>
+
+  </tr>
+</table></p>
+
+
+
+<p>That last step may take a bit of thought. It can only be used when the radical is the same. Hence,
+p
+2
++
+p
+3 cannot be simplified at all. We were able to simplify
+p
+75 –
+p
+12 only by making the radical in
+both cases the same .</p>
+<p>So why does 5
+p
+3?? ?? 2
+p
+3= 3
+p
+3? It may be simplest to think about verbally: 5 of these things, minus 2
+of the same things, is 3 of them. But you can look at it more formally as a factoring problem, if you see a
+common factor of
+p
+3.</p>
+<p>5
+p
+3?? ?? 2
+p
+3 =
+p
+3(5 ?? ??2) =
+p
+3(3).</p>
+<p>Of course, the process is exactly the same if variable are involved instead of just numbers!</p>
+<p>Example 8.4: Combining Radicals with Variables</p>
+
+<p>
+
+<table style="width:100%">
+  <tr>
+    <td>x32
++ x52</td>
+    <td></td>
+
+  </tr>
+  <tr>
+    <td>= x3 + x5</td>
+    <td>Remember the definition of fractional exponents!</td>
+
+  </tr>
+<tr>
+    <td>=
+p
+x2  x +
+p
+x4  x</td>
+    <td>As always, we simplify radicals by factoring them inside the root...</td>
+
+  </tr>
+<tr>
+    <td>p
+x2 
+p
+x +
+p
+x4 
+p
+x</td>
+    <td>and then breaking them up...</td>
+
+  </tr>
+<tr>
+    <td>= x
+p
+x + x2p
+x</td>
+    <td>and then taking square roots outside!</td>
+
+  </tr>
+<tr>
+    <td>=
+??
+x2 + x
+p
+x</td>
+    <td>Now that the radical is the same, we can combine.</td>
+
+  </tr>
+</table></p>
+-->
+<h2>$\S$3C.2 Radicals as Exponents</h2>
+The way we generally consider exponents is as repeated multiplication: $10^6$ means $10\cdot10\cdot10\cdot10\cdot10\cdot10$. But
+this definition of exponents does not enable us to answer questions such as:
+$$4^0 = ??$$
+$$5^{-4}=??$$
+$$9^{1/3} = ??$$
+You can't "multiply $9$ by itself half a time" or "multiply $5$ by itself $-4$ times." We need a different way of considering
+the exponent in these cases.
+<h3>Definitions: When the exponent is not a positive integer</h3>
+<style> table#collapseborder  {
+    border-collapse: collapse; }
+    table#collapseborder, tr#collapseborder, td#collapseborder {border:1px solid black; padding: 10px}
+</style>
+<table id="collapseborder">
+  <tr>
+    <td id="collapseborder"><b>Zero exponents</b></td>
+    <td id="collapseborder"><b>Negative exponents</b></td>
+    <td id="collapseborder"><b>Fractional exponents ($1/n$)</b></td>
+    <td id="collapseborder"><b>Fractional exponents ($m/n$)</b></td>
+  </tr>
+  <tr>
+    <td id="collapseborder">Always 1</td>
+    <td id="collapseborder">Go in the denominator</td>
+    <td id="collapseborder">Act as a radical</td>
+    <td id="collapseborder">$m$ is an exponent, $n$ is a radical</td>
+  </tr>
+  <tr>
+    <td id="collapseborder">$7^0 = 1$</td>
+    <td id="collapseborder">$7^{-3} = \frac{1}{7^3} = \frac{1}{343}$</td>
+    <td id="collapseborder">$9^{1/2} = \sqrt{9} = 3$</td>
+    <td id="collapseborder">$8^{2/3}=\sqrt[3]{8^2}=4$ or $(\sqrt[3]{8})^2=4$
+    <br/> The order doesn't matter.</td>
+  </tr>
+    <tr>
+    <td id="collapseborder">$9^0=1$</td>
+    <td id="collapseborder">$x^{-5} = \frac{1}{x^5}$</td>
+    <td id="collapseborder">$2^{1/2} = \sqrt{2}$</td>
+    <td id="collapseborder">$8^{3/2} = \sqrt{8^3}$ or $(\sqrt{8})^3$</td>
+  </tr>
+</table></p>
+<p>
+Note that you can combine these definitions. For instance, $8^{-2/3}$ is a negative, fractional exponent. The
+negative exponent means, as always, "put me in the denominator." So we can write:
+$$8^{-2/3} = \frac{1}{8^{2/3}} = \frac{1}{(\sqrt[3]{8})^2} = \frac{1}{2^2} = \frac{1}{4}$$
+</p>
+<H3>OK, so why define exponents that way?</H3>
+These are obviously not chosen to be the simplest possible definitions. But they are chosen to be consistent
+with the behavior of positive-integer exponents.
+One way to see that consistency is to consider the following progression:
+$$19^4 = 19 \cdot 19 \cdot 19 \cdot 19$$
+$$19^3 = 19 \cdot 19 \cdot 19$$
+$$19^2 = 19 \cdot 19$$
+$$19^1 = 19$$
+What happens each time we decrease the exponent by $1$? Your first response might be "we have one less
+$19$." But what is really happening, mathematically, to the numbers on the right? The answer is that, with
+each step, they are dividing by $19$. If you take $19 \cdot 19 \cdot 19 \cdot 19$, and divide it by $19$,
+you get $19 \cdot 19 \cdot 19$. Divide that by $19$ again, and you get $19 \cdot 19$ $\ldots$ and so on.
+From this we can formulate the following principle for the powers of $19$:
+</p>
+<p>
+<i>Whenever you <b>subtract</b> $1$ from the exponent, you <b>divide the answer</b> by $19.$</i>
+</p>
+<p>
+As I said earlier, we want the behavior of our new exponents to be consistent with the behavior of the old
+(positive-integer) exponents. So we can continue this progression as follows:
+         $$ \begin{align}
+              19^1 & =19 \\
+              19^0 & =\frac{19}{19} = 1 \\
+              19^{-1} & = \frac{1}{19} \\
+             19^{-2}  & = \frac{\frac{1}{19}}{19} = \frac{1}{19^2}\\
+          \end{align}$$
+$\ldots$ and so on. We arrive at our definitions that anything to the zero power is $1$ and negative exponents
+go to the denominator by simply requiring this progression to be consistent.
+<p>
+More rigorously, we can find all our exponent definitions by using the laws of exponents. For instance,
+what is $4^0$? We can approach this question indirectly by asking: what is $\dfrac{4^2}{4^2}$?
+</p>
+<ul>
+  <li>The second law of exponents tells us that $\dfrac{4^2}{4^2} = 4^{2-2}$, which is $4^0$.</li>
+  <li>But of course, $\dfrac{4^2}{4^2}$ is just $\dfrac{16}{16}$ , or $1$.</li>
+  <li>Since $\dfrac{4^2}{4^2}$ is both $4^0$ and $1$, $4^0$ and $1$ must be the same thing!</li>
+</ul>
+The proofs given below all follow this pattern. They use the laws of exponents to rewrite expressions such
+as $\frac{4^2}{4^2}$ , and go on to show how zero, negative, and fractional exponents must be defined. We started with
+the definition of an exponent for a positive integer, $10^6 = 10 \cdot 10 \cdot 10 \cdot 10 \cdot 10 \cdot 10$. From there,
+we developed the laws of exponents. Now we find that, if we want those same laws to apply to other kinds of exponents,
+there is only one correct way to define those other kinds of exponents.
+
+<p><b>Examples: When the exponent is not a positive integer</b>
+<table id="collapseborder">
+  <tr>
+    <td id="collapseborder"><b>Zero exponents</b></td>
+    <td id="collapseborder"><b>Negative exponents</b></td>
+    <td id="collapseborder"><b>Fractional exponents ($1/n$)</b></td>
+    <td id="collapseborder"><b>Fractional exponents ($m/n$)</b></td>
+  </tr>
+  <tr>
+    <td id="collapseborder">Always 1</td>
+    <td id="collapseborder">Go in the denominator</td>
+    <td id="collapseborder">Act as a radical</td>
+    <td id="collapseborder">$m$ is an exponent, $n$ is a radical</td>
+  </tr>
+  <tr>
+    <td id="collapseborder"> $\frac{4^2}{4^2} = 4^{2-2} = 0$ <br/>
+                                          but $\frac{4^2}{4^2} =\frac{16}{16} = 1$ <br/>
+                                          so $4^0$ must be $1$!</td>
+    <td id="collapseborder"> $\frac{10^1}{10^3} = 10^{1-3} = 10^{-2}$, <br/>
+                                          but $\frac{10^1}{10^3} = \frac{10}{10 \cdot 10 \cdot 10} = \frac{1}{10 \cdot 10}$ <br/>
+                                          so $10^{-2}$ must be $\frac{1}{10^2}$.</td>
+    <td id="collapseborder"> $(9^{\frac{1}{2}})^2 = 9^{\frac{1}{2} \cdot 2} = 9^1 = 9$. <br/>
+                                          So, what is $9^{\frac{1}{2}}$? </br>
+                                          Well, when you square it, <br/>
+                                          you get $9$. <br/>
+                                          So it must be $\sqrt{9}$, or $3$!</td>
+    <td id="collapseborder"> $8^{\frac{2}{3}}=(8^{\frac{1}{3}})^2=(\sqrt[3]{8})^2$ </br>
+                                          or $8^{\frac{2}{3}}=(8^2)^{\frac{1}{3}}=\sqrt[3]{8^2}$
+    </td>
+  </tr>
+</table></p>
+<p>
+Now that we have a firm understanding of how to deal with expressions like $x^{n/m}$ where $n$ and $m$ are integers,
+we could extend the idea to expressions like $x^r$ where $r$ is a real number. We will demonstrate how such a critter would
+be calculated, but not go into the mathematical underpinnings for the expression in this course. Let's see how one would go
+about calculating $2^\pi$. Recall that $\pi \approx 3.14159 \dots$. Consider
+         $$ \begin{align}
+              2^3 & =8 \\
+              2^{3.1} & =2^{\frac{31}{10}} =  \sqrt[10]{2^{31}} = 8.5741877 \dots \\
+              2^{3.14} & =2^{\frac{314}{100}} =  \sqrt[100]{2^{314}} = 8.815241 \dots \\
+              2^{3.141} & =2^{\frac{3141}{1000}} =  \sqrt[1000]{2^{3141}} = 8.821353 \dots \\
+              2^{3.1415} & =2^{\frac{31415}{10000}} =  \sqrt[10000]{2^{31415}} = 8.824411 \dots \\
+              2^{3.14159} & =2^{\frac{314159}{100000}} =  \sqrt[100000]{2^{314159}} = 8.824962 \dots \\
+          \end{align}$$
+As we use more digits of $\pi$ the digits of the result begin to stabilize to $8.824 \dots $ after the last calculation.
+So, we won't ever get an exact value for $2^\pi$ since $\pi$'s digits don't repeat, but we can get as accurate
+a number as we need by using enough digits to calculate $2^\pi$.
+</p>
+<p>
+We now have the idea of the general power function:
+<H3>Definition: General Power Function</H3>
+A general power function is of the form $$f(x) = x^n$$ where $n$ is a real number.
+</p>
+Of course, we can make new functions out of power functions. A recent example is the set of polynomials which are
+power functions with integer exponents which have been multiplied by numbers and added/subtracted together.
+
+<p><b>Example 3C-1</b> Evaluate $f(x) = \sqrt[4]{x-2}$ at the following points;
+<ol type="a">
+  <li>$x = 5$: This is $f(5) = \sqrt[4]{5-2} = 3^{1/4} \approx 1.316074$ using a
+  calculator for the last step.</li>
+  <li>$x = 1$: Here, $f(1) = \sqrt[4]{1-2} = \sqrt[4]{-1}$, but no real number can multiply
+   itself four times to get $-4$. $f(1)$ is not defined.</li>
+</ol>
+
+</p>
+<h2>$\S$3C.3 Radical Equations</h2>
+<p>When solving equations that involve radicals, begin by asking yourself: is there an $x$ under the square
+root? The answer to this question will determine the way you approach the problem.</p>
+<p>If there is not an $x$ under the square root—if only numbers are under the radicals—you can solve much the
+same way you would solve with no radicals at all.</p>
+
+<p><b>Example 3C-2:</b>Solve a radical equation with no variables Under square root
+
+<table style="width:75%">
+  <tr>
+    <td>$\sqrt{2}x + 5 = 7 - \sqrt{3}x$</td>
+    <td>Notice that there are no variables under a radical</td>
+  </tr>
+  <tr>
+    <td>$\sqrt{2}x +\sqrt{3}x = 7 - 5$</td>
+    <td>Get everything with an $x$ on one side, everything else on the other</td>
+  </tr>
+<tr>
+    <td>$x(\sqrt{2} +\sqrt{3})= 2$</td>
+    <td>Factor out the $x$</td>
+  </tr>
+<tr>
+    <td>$x = \dfrac{2}{\sqrt{2}+\sqrt{3}}$</td>
+    <td>Divide, to solve for $x$</td>
+  </tr>
+</table></p>
+
+
+<p>The key thing to note about such problems is that you do not have to square both sides of the equation.
+$\sqrt{ 2}$ may look ugly, but it is just a number—you could find it on your calculator if you wanted to—it functions
+in the equation just the way that the number $10$, or $\frac{1}{3}$ , or $\pi$ would.</p>
+<p>If there is an $x$ under the square root, the problem is completely different. You will have to square both
+sides to get rid of the radical. However, there are two important notes about this kind of problem.</p>
+<ol>
+<li> If possible, always get the radical alone, on one side of the equation, before squaring.</li>
+<li>  Squaring both sides can introduce false answers—so it is important to check your answers after solving!</li>
+</ol>
+<p>Both of these principles are demonstrated in the following example.</p>
+
+<p><b>Example 3C-3:</b>  Solve a radical equation with the variable under the square root:
+<p><table style="width:75%">
+  <tr>
+    <td>$\sqrt{x + 2} + 3x = 5x + 1$</td>
+    <td>Here, there is a variable under radical</td>
+  </tr>
+  <tr>
+    <td>$\sqrt{x + 2} = 2x + 1$</td>
+    <td>Isolate the radical on one side of the equation by subtracting $3x$</td>
+
+  </tr>
+<tr>
+    <td>$x + 2 = (2x + 1)^2$</td>
+    <td>Now, square both sides to remove the radical</td>
+  </tr>
+<tr>
+    <td>$x + 2 = 4x^2 + 4x + 1$</td>
+    <td>Multiply out. Hey, it looks like a quadratic equation now!</td>
+  </tr>
+<tr>
+    <td>$0 = 4x^2 + 3x - 1$</td>
+    <td>As always with quadratics, get everything on one side.</td>
+  </tr>
+<tr>
+    <td>$0 = (4x - 1) (x + 1)$</td>
+    <td>Factor (the easiest way to solve quadratic equations)</td>
+  </tr>
+<tr>
+    <td>$x = \frac{1}{4}$ or $x = -1$</td>
+    <td>Two solutions. Do they work? Check in the original equation!</td>
+  </tr>
+</table></p>
+
+<p>
+
+<table style="width:75%">
+  <tr>
+    <td>Check $x = \frac{1}{4}$</td>
+    <td>Check $x = -1$</td>
+  </tr>
+  <tr>
+    <td>$\sqrt{\frac{1}{4} + 2} + 3(\frac{1}{4})$ $?=?$ $5(\frac{1}{4})+ 1$ </td>
+    <td>$\sqrt{-1 + 2} + 3 (-1)$ $?=?$ $5 (-1) + 1$</td>
+  </tr>
+<tr>
+    <td>$\sqrt{\frac{1}{4} + \frac{8}{4}}+ \frac{3}{4}$ $?=?$ $\frac{5}{4} + 1$</td>
+    <td>$\sqrt{1} - 3$ $?=?$ $-5 + 1$</td>
+  </tr>
+<tr>
+    <td>$\sqrt{\frac{9}{4}}+\frac{3}{4}$ $?=?$ $\frac{5}{4} + \frac{4}{4}$</td>
+    <td>$1 - 3$ $?=?$ $-5 + 1$</td>
+  </tr>
+<tr>
+    <td>$\frac{3}{2} + \frac{3}{4}$ $?=?$ $\frac{9}{4}$</td>
+    <td>$-2 \neq -4$ Not equal!</td>
+  </tr>
+<tr>
+    <td>$\frac{9}{4} = \frac{9}{4}$ This one works.</td>
+    <td></td>
+  </tr>
+</table></p>
+
+<p>So the algebra yielded two solutions: $\frac{1}{4}$ and $–1$. Checking, however, we discover that
+only the first solution is valid. This problem demonstrates how important it is to check solutions whenever
+squaring both sides of an equation.</p>
+<p>If variables under the radical occur more than once, you will have to go through this procedure multiple
+times. Each time, you isolate a radical and then square both sides.</p>
+</p>
+<!--  IF YOU WANT THIS ONE BACK IN, PROBLEMS LIKE THIS WILL NEED TO BE ADDED TO THE WEBWORK SET
+<h3>Example 3C-4:  Radical Equation with Variables under Square Roots Multiple Times</h3>
+<p><table style="width:75%">
+  <tr>
+    <td>$\sqrt{x + 7} - \sqrt{x} = 1$</td>
+    <td>Let's work one with variables under radicals multiple times</td>
+  </tr>
+  <tr>
+    <td>$\sqrt{x + 7} = \sqrt{x} + 1$</td>
+    <td>Isolate one radical. (I usually prefer to start with the bigger one.)</td>
+  </tr>
+<tr>
+    <td>$x + 7 = (\sqrt{x} + 1)^2$</td>
+    <td>Square both sides. </td>
+  </tr>
+  <tr>
+    <td>$x + 7 = (\sqrt{x} + 1)(\sqrt{x} + 1)$</td>
+    <td>It might be easier to see how to do the square this way.</td>
+  </tr>
+    <tr>
+    <td>$x + 7 = x + \sqrt{x} + \sqrt{x} + 1$</td>
+    <td>Note: $\sqrt{x}\sqrt{x}= (\sqrt{x})^2=x$</td>
+  </tr>
+        <tr>
+    <td>$x + 7 = x + 2\sqrt{x} + 1$</td>
+    <td>The two-radical equation is now a one-radical equation.</td>
+  </tr>
+<tr>
+    <td>$6 = 2\sqrt{x}$</td>
+    <td>Isolate the remaining radical</td>
+  </tr>
+<tr>
+    <td>$3 = \sqrt{x}$</td>
+    <td>Square both sides again.</td>
+  </tr>
+<tr>
+    <td>$9 = x$</td>
+    <td>In this case, we end up with only one solution. But we still need to check it.</td>
+  </tr>
+</table></p>
+<p><table style="width:75%">
+  <tr>
+    <td>Check $x = 9$</td>
+  </tr>
+  <tr>
+  <tr>
+    <td>$\sqrt{9 + 7}- \sqrt{9}$ $?=?$ $1$</td>
+  </tr>
+  <tr>
+    <td>$\sqrt{16} - \sqrt{9}$ $?=?$ $1$</td>
+  </tr>
+<tr>
+    <td>$4 - 3 = 1$ $\checkmark$</td>
+
+  </tr>
+</table></p>
+
+
+
+<p>Remember, the key to this problem was recognizing that variables under the radical occurred in the original
+problem two times. That cued us that we would have to go through the process—isolate a radical,
+then square both sides—twice, before we could solve for $x$. And whenever you square both sides of the
+equation, it’s vital to check your answer(s)!</p>
+-->
+
+<h3>When good math leads to bad answers</h3>
+<p>Why is it that—when squaring both sides of an equation—perfectly good algebra can lead to invalid solutions?
+The answer is in the redundancy of squaring. Consider the following equation:</p>
+<p>$-5 = 5$  is false. But square both sides, and we get...</p>
+<p>$25 = 25$ which is true. So squaring both sides of a false equation can produce a true equation.</p>
+
+<p>To see how this affects our equations, try plugging $x = -1$ into the various steps of Example 3C-3.</p>
+<p>
+<table style="width:75%">
+  <tr>
+    <td>$\sqrt{x + 2} + 3x = 5x + 1$</td>
+    <td>Does $x = -1$ work here? No, it does not.</td>
+  </tr>
+  <tr>
+    <td>$\sqrt{x + 2} = 2x + 1$</td>
+    <td>How about here? No, $x = -1$ produces the false equation $1 = –1$.</td>
+  </tr>
+  <tr>
+    <td>$x + 2 = (2x + 1)^2$</td>
+    <td>Suddenly, $x = -1$ works. (Try it!)</td>
+
+  </tr>
+</table>
+</p>
+
+<p>When we squared both sides, we "lost" the difference between $1$ and $–1$, and they "became equal."
+From here on, when we solved, we ended up with $x = -1$ as a valid solution. So, the moral of the story,
+is if you square an equation in the course of solving it, you will need to check your answer to make sure
+a false one didn't sneak in.</p>
+
+<h2>$\S$3C.3 Radical Functions</h2>
+<p>
+When we consider functions like $f(x) = \sqrt[n]{x}$ and $g(x) = x^{1/n}$ it is clear that the domain and range of these
+sorts of functions depend on $n$.
+<p>
+<p><b>Example 3C-4</b> Find the domain and range of $y =f(x)$ and $y=g(x)$ given below:
+<ol type="a">
+  <li>For $f(x) = \dfrac{1}{x^{2/3}}$, we notice $f$ may be rewritten as $f(x) = \sqrt[3]{\dfrac{1}{x^2}}$
+   and any number squared is positive. Taking the cube root of a positive number poses no problem and always results in a
+   positive number. The only problem will be at $x=0$ since division by zero is not defined.  Hence, the domain is
+   $x < 0$ or $x > 0$.  At first glance, it would seem the range should be numbers between $0$ and $1$ excluding zero, but
+   we have to consider all possible values to use for $x$. Note that if $x = -0.01$, then
+   $f(-0.01) = \dfrac{1}{(-0.01)^{2/3}} = 100$. Is this enough to convince you that we can make any positive number?
+   If not, try a few more values, or better yet, graph $y = f(x)$ to see that the range is $y >0$.</br> </br></li>
+   <li> For $g(x) = \sqrt{x + 1}$, the domain consists of all real numbers which may be evaluated in the
+  function, hence the domain is $x \ge -1$. The range is the set of numbers which can be produced by $g(x)$.
+  Notice that we can make tiny numbers by letting $x$ be values close to $-1$ and we can make zero by
+  substituting $x = -1$.  The larger $x$ is, the larger the output value will be, but since the square root is always
+  a nonnegative number, the range is $y \ge 0$.   </li>
+</ol>
+</p>
+<p>
+Now let's try our hand at finding intercepts:
+</p>
+<p><b>Example 3C-5</b> Find the intercepts for $y =f(x)$ and $y=g(x)$:
+<ol type="a">
+  <li>For $f(x) = \dfrac{1}{x^{2/3}}$:
+  <table style="width:75%">
+  <tr>
+    <td>The $y$-intercept is where $x=0$.
+    But, $f(0)$ is not defined. $f(x)$ has no $y$-intercept.</td>
+  </tr>
+  <tr>
+    <td>The $x$-intercept is where $y=0$.
+    Consider: $0 = \dfrac{1}{x^{2/3}}$. The numerator is always $1$
+    and the fraction will never be zero.  $f(x)$ has no $x$-intercept.</td>
+  </tr>
+</table>
+  </li>
+   <li> For $g(x) = \sqrt{x + 1}$,
+     <table style="width:75%">
+  <tr>
+    <td>$g(0) = \sqrt{0 + 1} = \sqrt{1} = 1$.
+    The $y$-intercept is at $y=1$.</td>
+  </tr>
+  <tr>
+    <td>Solve: $0 = \sqrt{x + 1}$.
+    Square both sides: $0 = x+1$, so the $x$-intercept is at $x=-1$.</td>
+  </tr>
+</table>  </li>
+</ol>
+</p>
+
+
+<p>In a Module 1C, we considered transformations of functions. It's as good a time as any
+to review them.
+</p>
+<p><b>Example 3C-6</b>
+<center>
+<table class = "center">
+  <tr>
+
+    <td>Lets start with the graph of $f(x) = \sqrt{x}$:</td>
+  <td> <img src="set3C-Radical_Functions_01.png" width="70%"></td>
+  </tr>
+</table>
+</center>
+
+<p><center>
+<table class = "center">
+  <tr>
+
+    <td>$g(x) = 3-\sqrt{x-2}$ shifts the graph </br>
+           of $f(x)$ to the right $2$, up $3$ and </br>
+           flips it on the horizontal axis:</td>
+  <td> <img src="set3C-Radical_Functions_02.png" width="70%"></td>
+  </tr>
+</table>
+</center>
+
+<p><center>
+<table class = "center">
+  <tr>
+
+    <td>$h(x) = \sqrt{1-x}-2$ flips $f(x)$ about </br>
+           the vertical axis, shifts it $1$ to the left </br>
+           and $2$ down;</td>
+  <td> <img src="set3C-Radical_Functions_03.png" width="70%"></td>
+  </tr>
+</table>
+</center>
+</p>
+<p>
+This section would not be complete with an application (i.e. word problem).
+</p>
+
+<p><b>Example 3C-7</b> A basketball player's hang time is the time spent in the air when shooting
+a basket.  Hang time can be estimated by the model
+$$h = \frac{\sqrt{v}}{2}$$
+where $h$ is the hang time in seconds and $v$ the vertical distance of the jump in feet.  Suppose Boo
+is a member of the C of I basketball team. If Boo's hang time for a slam dunk is 1.15 seconds, how high did Boo jump?
+</br>
+Solution: We know that $h = 1.15$ so
+    $$\begin{align}
+    1.15 & = \frac{\sqrt{v}}{2} \\
+    2(1.15) & = \sqrt{v} \\
+    (2.30)^2 & = v \\
+    \mbox{So, } v & = 5.29
+    \end{align}$$
+Answer: Boo jumped 5.29 ft high while making the slam dunk.  Go Yotes!
+</p>
+<H3>$\S$3C.4 Composition With General Power and Radical Functions</H3>
+We finish this section with a twist to the idea of composing functions.  Previously, we were given
+two functions and asked to compose them. For example, if $f(x) = \sqrt{x}$ and $g(x) = 2x^3+1$,
+$$(f \circ g)(x) = f(g(x)) = f(2x^3+1) = \sqrt{2x^3+1}.$$
+However, in Calculus, it is sometimes more necessary to "find" the two functions used in a composition.
+<p><b>Example 3C-8</b> For $h(x) = \dfrac{1}{\sqrt[3]{x+1}}$, find two functions,
+$f(x)$ and $g(x)$ so that $h(x) = (f \circ g)(x)$. In other words, we want to deconstruct $h(x)$
+into two functions. Actually, there is more than one set of functions that work. For now, it doesn't
+matter what the two functions are as long as they make $h(x)$.  It basically takes a little educated
+guessing:
+<ol  type="a">
+  <li>It looks like $x+1$ is "plugged in" to $\dfrac{1}{\sqrt[3]{x}}$, so we could have
+        $g(x) = x+1$ and $f(x) = \dfrac{1}{\sqrt[3]{x}}$.
+        </br>
+        We can check: $(f \circ g)(x) = f(x+1) =  \dfrac{1}{\sqrt[3]{x+1}}$ $\checkmark$  </br></li>
+  <li>Now consider if $f(x) = \dfrac{1}{x}$ and $g(x) = \sqrt[3]{x+1}$ yield $h(x)$.
+        </br>
+        Checking: $(f \circ g)(x) = f(\sqrt[3]{x+1}) =  \dfrac{1}{\sqrt[3]{x+1}}$ $\checkmark$ </br></li>
+  <li>What if we took $f(x) = \dfrac{1}{x+1}$ and $g(x) = \sqrt[3]{x}$?
+       </br>
+       Let's check: $(f \circ g)(x) = f(\sqrt[3]{x}) =  \dfrac{1}{\sqrt[3]{x}+1}$ which is <b>not</b>
+       $h(x)$. This choice of $f(x)$ and $g(x)$ does not work.
+       </li>
+</ol>
+The moral here is: Guess, but check your answer.  You <b>can</b>  know if you have a correct answer.
+</body>
+</html> 

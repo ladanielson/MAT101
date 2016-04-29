@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<title>MAT-101: Module 3B Lines - Adapt from p. 95-99 and 102-104</title>
+
+<style>
+
+table, td
+
+{
+
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+}
+
+table.center 
+
+{
+
+  margin-left:auto; 
+  margin-right:auto;
+
+}
+
+</style> 
+
+<script type="text/x-mathjax-config">
+  
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
+</script>
+
+<script type="text/javascript"
+
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+
+</script>
+
+</head>
+
+
+
+<body>
+
+<b>Lines</b>
+<br><br>
+
+
+<p>95-99pp are in the module 3A already; the text below is pp 102-104</p>
+
+<p><b>Graphing - Slope-Intercept Form</b></p>
+
+<p>Objective: Give the equation of a line with a known slope and y-intercept.</p>
+<p>When graphing a line we found one method we could use is to make a table of
+values. However, if we can identify some properties of the line, we may be able to
+make a graph much quicker and easier. One such method is finding the slope and
+the y-intercept of the equation. The slope can be represented by m and the yintercept,
+where it crosses the axis and x = 0, can be represented by (0, b) where b
+is the value where the graph crosses the vertical y-axis. Any other point on the
+line can be represented by (x, y). Using this information we will look at the slope
+formula and solve the formula for y.</p>
+
+
+<br><br>
+
+
+<b>Example 3b-1:</b> 
+<br>
+
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>m, (0, b), (x, y)</td>
+    <td>Using the slope formula gives:</td> 
+    
+  </tr>
+  <tr>
+    <td>y -b
+x-0
+=m</td>
+    <td>Simplify</td> 
+    
+  </tr>
+<tr>
+    <td>y -b
+x
+=m</td>
+    <td>Multiply both sides by x</td> 
+    
+  </tr>
+<tr>
+    <td>y -b=mx</td>
+    <td>Add b to both sides</td> 
+    
+  </tr>
+<tr>
+    <td>+b +b</td>
+    <td></td> 
+    
+  </tr>
+<tr>
+    <td>y =mx+b</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+<p>This equation, y =mx + b can be thought of as the equation of any line that as a
+slope of m and a y-intercept of b. This formula is known as the slope-intercept
+equation.</p>
+<p>Slope-Intercept Equation: y =mx+b</p>
+<p>If we know the slope and the y-intercept we can easily find the equation that represents
+the line.</p>
+
+<p><b>Example 3b-2:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>Slope=
+3
+4
+, y -intercept=-3</td>
+    <td>Use the slope-intercept equation</td> 
+    
+  </tr>
+  <tr>
+    <td>y =mx+b</td>
+    <td>mis the slope, b is the y -intercept</td> 
+    
+  </tr>
+<tr>
+    <td>y =
+3
+4
+x-3</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+<p>We can also find the equation by looking at a graph and finding the slope and y intercept.</p>
+
+
+<p><b>Example 3b-3:</b></p>
+
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>GRAPH</td>
+    <td>Identify the point where the graph
+crosses the y-axis (0,3). This means
+the y-intercept is 3.</br></br>Idenfity one other point and draw a
+slope triangle to find the slope. The
+slope is - 2
+3</br></br>y =mx+b Slope-intercept equation</td> 
+    
+  </tr>
+  <tr>
+    <td>y =-
+2
+3
+x+3</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+<p>We can also move the opposite direction, using the equation identify the slope
+and y-intercept and graph the equation from this information. However, it will be
+important for the equation to first be in slope intercept form. If it is not, we will
+have to solve it for y so we can identify the slope and the y-intercept.</p>
+
+<p><b>Example 3b-4:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>Write in slope-intercept form: 2x-4y =6</td>
+    <td>Solve for y</td> 
+    
+  </tr>
+  <tr>
+    <td>-2x -2x</td>
+    <td>Subtract 2x fromboth sides</td> 
+    
+  </tr>
+ <tr>
+    <td>-4y =-2x+6</td>
+    <td>Put x termfirst</td> 
+    
+  </tr>
+ <tr>
+    <td>-4 -4 -4</td>
+    <td>Divide each termby-4</td> 
+    
+  </tr>
+ <tr>
+    <td>y =
+1
+2
+x-
+3
+2</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+
+
+<p>Once we have an equation in slope-intercept form we can graph it by first plotting
+the y-intercept, then using the slope, find a second point and connecting the dots.</p>
+
+<p><b>Example 3b-5:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>Graph y =
+1
+2
+x-4</td>
+    <td>Recall the slope-intercept formula</td> 
+    
+  </tr>
+  <tr>
+    <td>y =mx+b</td>
+    <td>Idenfity the slope,m, and the y -intercept, b</td> 
+    
+  </tr>
+ <tr>
+    <td>m=
+1
+2
+, b=-4</td>
+    <td>Make the graph</td> 
+    
+  </tr>
+ <tr>
+    <td>GRAPH</td>
+    <td>Starting with a point at the y-intercept
+of -4,</br></br>Then use the slope rise
+run, so we will rise
+1 unit and run 2 units to find the next
+point.</br></br>Once we have both points, connect the
+dots to get our graph.</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+
+<p>World View Note: Before our current system of graphing, French Mathematician
+Nicole Oresme, in 1323 sugggested graphing lines that would look more like a bar graph with a constant slope!</p>
+
+
+<p><b>Example 3b-6:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>Graph 3x+4y =12</td>
+    <td>Not in slope intercept form</td> 
+    
+  </tr>
+  <tr>
+    <td>-3x -3x</td>
+    <td>Subtract 3x fromboth sides</td> 
+    
+  </tr>
+ <tr>
+    <td>4y =-3x+12</td>
+    <td>Put the x termfirst</td> 
+    
+  </tr>
+ <tr>
+    <td>4 4 4</td>
+    <td>Divide each termby 4</td> 
+    
+  </tr>
+ <tr>
+    <td>y =-
+3
+4
+x+3</td>
+    <td>Recall slope-intercept equation</td> 
+    
+  </tr>
+ <tr>
+    <td>y =mx+b</td>
+    <td>Idenfitymand b</td> 
+    
+  </tr>
+ <tr>
+    <td>m=-
+3
+4
+, b=3</td>
+    <td>Make the graph</td> 
+    
+  </tr>
+ <tr>
+    <td>GRAPH</td>
+    <td>Starting with a point at the y-intercept
+of 3,</br></br>Then use the slope rise
+run, but its negative
+so it will go downhill, so we will
+drop 3 units and run 4 units to find
+the next point.</br></br>Once we have both points, connect the
+dots to get our graph.</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+
+<p>We want to be very careful not to confuse using slope to find the next point with
+use a coordinate such as (4, - 2) to find an individule point. Coordinates such as
+(4, - 2) start from the origin and move horizontally first, and vertically second.
+Slope starts from a point on the line that could be anywhere on the graph. The
+numerator is the vertical change and the denominator is the horizontal change.</p>
+<p>Lines with zero slope or no slope can make a problem seem very different. Zero
+slope, or horiztonal line, will simply have a slope of zero which when multiplied
+by x gives zero. So the equation simply becomes y = b or y is equal to the y-coordinate
+of the graph. If we have no slope, or a vertical line, the equation can’t be
+written in slope intercept at all because the slope is undefined. There is no y in
+these equations. We will simply make x equal to the x-coordinate of the graph.</p>
+<p><b>Example 3b-7:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>GRAPH</td>
+    <td>Give the equation of the line in the
+graph.</br></br>Because we have a vertical line and no
+slope there is no slope-intercept equation
+we can use. Rather we make x
+equal to the x-coordinate of -4</br></br>x=-4 Our Solution</td> 
+    
+  </tr>
+  
+</table>
+
+</center>
+</p>
+
+
+
+</body>
+
+</html>
+
+
+

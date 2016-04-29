@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<!-- Cite Applied Finite Mathematics by Authors:UniqU, LLC, Rupinder Sekhon
+is licensed under a Creative Commons
+Attribution 3.0 Unported License. (http://creativecommons.org/licenses/by/3.0/)
+Based on a work at http://cnx.org/content/col10613/1.5/ pages 209-220-->
+
+<html>
+<head>
+
+<title>MAT-101: Module 4C Probability Rules</title>
+
+<style type="text/css">
+td
+{
+    padding:0 0 0 15px; <!--add space between table columns-->
+}
+</style>
+<style> table#collapseborder  {
+    border-collapse: collapse; }
+    table#collapseborder, tr#collapseborder, td#collapseborder {border:1px solid black; padding: 10px}
+</style>
+
+<style>
+
+table, td
+
+{
+
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+}
+
+table.center
+
+{
+
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+</style>
+
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
+</script>
+
+<script type="text/javascript"
+
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+
+</script>
+
+</head>
+
+
+
+<body>
+<p>
+<b>MAT-101: Module 4C Probability Rules</b>
+</p>
+
+
+<b>Objectives:</b>
+<ul>
+
+   <li>Utilize probability properties.</li>
+   <li>Calculate conditional probabilities.</li>
+   <li>Calculate probabilities using complementary events.</li>
+   <li>Calculate probabilities using addition rules.</li>
+    <li>Determine if two events are independent or dependent.</li>
+  </ul>
+
+  <p>
+   <!--   This is CoconinoCC_chapter_4_Probability.pdf page 116 -->
+The examples and WeBWorK problems of <b>Module 4B Probability</b> demonstrated some important probability results which are summarized below.
+  </p>
+  <table style="width:50%" align="center"  id="collapseborder".>
+  <tr>
+    <td  id="collapseborder"><b>Probability Properties</b>
+    <ol>
+      <li>$0\leq P(event)\leq 1$.</li>
+      <li>If the $P(event)=1$, then it will happen and is called a certain event.</li>
+      <li>If the $P(event)=0$, then it cannot happen and is called an impossible event.</li>
+      <li>The probabilities of all the outcomes in a sample space add up to $1$.</li>
+    </ol>
+
+
+    </td>
+  </tr>
+</table>
+
+<p>
+Recall the <b>complement</b> of set $A$, written as $A'$, is the set consisting of elements in the universal set $U$ that are <b>NOT</b> in $A$.
+</p>
+
+ <table style="width:50%" align="center"  id="collapseborder".>
+  <tr>
+    <td  id="collapseborder">If two events are <b>complementary events</b> then their probabilities add up to one.  That is </br>
+    $P(A) + P(A') =1$, or $P(A)=1-P(A')$, or $P(A')=1-P(A)$.
+
+
+    </td>
+  </tr>
+</table>
+
+ <b>Example 4C-1:</b> Suppose you know the probability of not getting the flu is $0.24$. What is the probability of getting the flu?
+
+ <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.2 Example 4.2.5(b), page 121 -->
+
+ <table  align="center">
+
+
+<tr>
+  <td align="right">Write $F$ for the event getting the flu. </td>
+  <td>Then $F'$ is the event not getting the flu.</td>
+</tr>
+
+<tr>
+  <td align="right">$P(F') = 0.24$</td>
+  <td> We know the probability of not getting the flu is $0.24$.</td>
+</tr>
+
+<tr>
+  <td align="right">$P(F)=1-P(F')$</td>
+  <td>Use complementary events.</td>
+</tr>
+
+<tr>
+  <td align="right">$P(F)=1-0.24=0.76$</td>
+  <td>Our Solution: The probability of getting the flu is  $0.76$ or $76\%$.</td>
+</tr>
+</table>
+
+
+
+
+
+ <b>Example 4C-2:</b> In an experiment of picking a card from a deck, what is the probability of not getting a card that is a Queen?
+
+ <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.2 Example 4.2.5, page 121 -->
+ <table  align="center">
+<tr>
+  <td align="right">$SS=\{2S, 3S, 4S, 5S, 6S, 7S, 8S, 9S, 10S, JS, QS, KS, AS, $ </br>
+   $2C, 3C, 4C, 5C, 6C, 7C, 8C, 9C, 10C, JC, QC, KC, AC, $ </br>
+   $2D, 3D, 4D, 5D, 6D, 7D, 8D, 9D, 10D, JD, QD, KD, AD, $</br>
+   $2H, 3H, 4H, 5H, 6H, 7H, 8H, 9H, 10H, JH, QH, KH, AH \}$</td>
+  <td>The sample space has $52$ outcomes, one for each card in the deck.</td>
+</tr>
+
+<tr>
+  <td align="right">Use complementary events. Determine the probability of selecting a queen.</td>
+  <td>First write the event space, $Queen$.</td>
+</tr>
+
+<tr>
+  <td align="right">$Queen=\{QS, QC, QD, QH \}$</td>
+  <td>The event $Queen$ contains $4$ outcomes.</td>
+</tr>
+
+<tr>
+  <td align="right">$P(Queen) =\dfrac{4}{52}$</td>
+  <td>Next use complementary events. </td>
+</tr>
+
+
+<tr>
+  <td align="right">$P(Queen') = 1-\dfrac{4}{52}=\dfrac{38}{52}\approx  0.7308$</td>
+  <td>Our Solution: The probability of not selecting a queen is $\dfrac{38}{52}$ or about $73.08\%$.</td>
+</tr>
+</table>
+
+  <p>
+The complement is useful when you are trying to find the probability of an event that
+involves the words "at least" or an event that involves the words "at most". As an example of an at least event is suppose you want to find the probability of making <em>at least</em> $\$50,000$ when you graduate from college. That means you want the probability of your salary being greater than or equal to $\$50,000$. An example of an at most event is suppose you want to find the probability of rolling a die and getting <em>at most</em> a $4$. That means that you want to get less than or equal to a $4$ on the die. The reason to use the complement is that sometimes it is easier to find the probability of the complement and then subtract from $1$.
+</p>
+
+<b>Example 4C-3:</b> Two fair dice are rolled. Determine the probability of rolling a sum of at least a $4$.
+ <!--   This matches our WeBWorK  -->
+
+  <table  align="center">
+<tr>
+  <td align="right">The $SS$ is written in <b>Example 4B-4</b>.</td>
+  <td>Recall the sample space has $36$ outcomes.</td>
+</tr>
+
+<tr>
+  <td align="right">Rolling a sum that is at least $4$ would involve listing all of the sums that are $4$ or more. </td>
+  <td>It would be much easier to list the outcomes that make up the
+complement.</td>
+</tr>
+<tr>
+  <td align="right">Determine the probability of rolling a sum less than $4$.</td>
+  <td>First write $D$ for the sum of the dots showing. Write the event space $(D\lt 4)$.</td>
+</tr>
+
+<tr>
+  <td align="right">$(D\lt 4) =\{(\color{red}{1},\color{green}{1}), (\color{red}{1},\color{green}{2}),  (\color{red}{2},\color{green}{1})\}$</td>
+  <td>The event $(D\lt 4)$ contains $3$ outcomes with a sum less than  $4$.</td>
+</tr>
+
+<tr>
+  <td align="right">$P(D\lt 4) =\dfrac{3}{36}$</td>
+  <td>Next use complementary events.</td>
+</tr>
+
+<tr>
+  <td align="right">$P(D\ge 4) = 1-P(D\lt 4)= 1-\dfrac{3}{36}=\dfrac{33}{36}\approx  0.9167$</td>
+  <td>Our Solution: The probability of rolling a sum of at least a $4$ is $\dfrac{33}{36}$ or about $91.67\%$.</td>
+</tr>
+</table>
+
+<b>Example 4C-4:</b> In an experiment of picking one card from a deck, what is the probability of getting a Jack and an Ace? What is the probability of getting a Jack or an Ace? What is the probability of getting a Spade or an Ace?
+
+ <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.2 Example 4.2.5, page 121 -->
+ <table  align="center">
+
+<tr>
+  <td align="right">Determine the probability of selecting a Jack $J$ AND an Ace $A$.</td>
+  <td>First write the event space, $J\cap A$.</td>
+</tr>
+
+<tr>
+  <td align="right">$J\cap A=\{ \}$</td>
+  <td>The event $J\cap A$ contains $0$ outcomes since you can't do that with one
+card.</td>
+</tr>
+
+<tr>
+  <td align="right">$P(J\cap A) =\dfrac{0}{52}$</td>
+  <td>Our First Solution: The probability of getting a Jack and an Ace is $0$. </td>
+</tr>
+
+
+<tr>
+  <td align="right">Determine the probability of selecting a Jack $J$ OR an Ace $A$.</td>
+  <td>First write the event space, $J\cup A$.</td>
+</tr>
+
+<tr>
+  <td align="right">$J\cup A=\{JS, JC, JD, JH, AS, AC, AD, AH \}$</td>
+  <td>The event $J\cup A$ contains $8$ outcomes.</td>
+</tr>
+
+<tr>
+  <td align="right">$P(J\cup A) =\dfrac{8}{52}\approx 0.1538$</td>
+  <td>Our Second Solution: The probability of getting a Jack or an Ace is $\dfrac{8}{52}$ or approximately $15.38\%$. </td>
+</tr>
+
+<tr>
+  <td align="right">Determine the probability of selecting a Spade $S$ OR an Ace $A$.</td>
+  <td>First write the event space, $S\cup A$.</td>
+</tr>
+
+<tr>
+  <td align="right">$S\cup A=\{2S, 3S, 4S, 5S, 6S, 7S, 8S, 9S, 10S,$ </br>
+        $JS, QS, KS, AS, AC, AD, AH \}$</td>
+  <td>The event $S\cup A$ contains $16$ outcomes.</td>
+</tr>
+
+<tr>
+  <td align="right">$P(S\cup A) =\dfrac{16}{52}\approx 0.3077$</td>
+  <td>Our Third Solution: The probability of getting a Spade or an Ace is $\dfrac{16}{52}$ or approximately $30.77\%$. </td>
+</tr>
+
+</table>
+
+<p>
+The first part of <b>Example 4C-4</b> demonstrates an impossible event: selecting a Jack and an Ace on one draw.  The second and third parts demonstrate another probability concept.  Notice that:
+</p>
+<p>
+$P(J\cup A) =\dfrac{8}{52} = \dfrac{4}{52}+ \dfrac{4}{52} = P(J) + P(A)$</br>
+$P(S\cup A) =\dfrac{16}{52} \neq \dfrac{17}{52} = \dfrac{13}{52}+ \dfrac{4}{52} = P(S) + P(A)$
+</p>
+
+<p>
+Why does adding two individual probabilities together work in one situation to give the
+probability of one or another event and not give the correct probability in the other?
+</p>
+<p>
+The reason this is true in the case of the Jack and the Ace is that these two events cannot happen together. There is no overlap between the two events, and in fact the
+$P(J \cap A) = 0$. However, in the case of the Spade and Ace, they can happen
+together. There is overlap, mainly the ace of spades. The $P(S \cap A) \neq 0$.
+</p>
+<p>
+When two events cannot happen at the same time, they are called <b>mutually exclusive</b>. In the above situation, the events Jack and Ace are mutually exclusive, while the events Spade and Ace are not mutually exclusive.
+</p>
+
+ <table style="width:50%" align="center"  id="collapseborder".>
+  <tr>
+    <td  id="collapseborder"><b>Addition Rules:</b> </br>
+    If two events $A$ and $B$ are mutually exclusive, then</br>
+    $P(A\cup B) =P(A)+ P(B)$ and $P(A\cap B)=0$. </br> </br>
+    If two events $A$ and $B$ are not mutually exclusive, then</br>
+     $P(A\cup B) =P(A)+ P(B) -P(A\cap B)$.
+
+
+    </td>
+  </tr>
+</table>
+
+<p><b>Example 4C-5:</b> (Recall <b>Example 4B-8</b>.) The number of people who survived the Titanic based on class and gender is in the below table ("Encyclopedia Titanica," 2013).
+
+
+                <table align="center"  id="collapseborder".>
+                   <tr>
+                        <td id="collapseborder" align="center" rowspan="2" style="vertical-align:bottom">Class</td>
+                        <td id="collapseborder" align="center" colspan="2">Gender</td>
+                        <td id="collapseborder" align="center" rowspan="2" style="vertical-align:bottom">Total</td>
+                  </tr>
+
+                  <tr>
+                        <td>Female $(F)$</td>
+                        <td>Male $(M)$</td>
+                  </tr>
+
+                  <tr>
+                        <td id="collapseborder" align="center">1st</td>
+                        <td id="collapseborder" align="center">$134$</td>
+                        <td id="collapseborder" align="center">$59$</td>
+                        <td id="collapseborder" align="center">$193$</td>
+                  </tr>
+
+                   <tr>
+                        <td id="collapseborder" align="center">2nd</td>
+                        <td id="collapseborder" align="center">$94$</td>
+                        <td id="collapseborder" align="center">$25$</td>
+                        <td id="collapseborder" align="center">$119$</td>
+                  </tr>
+
+                   <tr>
+                        <td id="collapseborder" align="center">3rd</td>
+                        <td id="collapseborder" align="center">$80$</td>
+                        <td id="collapseborder" align="center">$58$</td>
+                        <td id="collapseborder" align="center">$138$</td>
+                  </tr>
+
+                   <tr>
+                        <td id="collapseborder" align="center">Total</td>
+                        <td id="collapseborder" align="center">$308$</td>
+                        <td id="collapseborder" align="center">$142$</td>
+                        <td id="collapseborder" align="center">$450$</td>
+                  </tr>
+                </table>
+
+ <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Homework Problem 11, page 140 -->
+
+<table  align="center">
+
+<tr>
+  <td align="right">Determine if the events survivor is a female and survivor is in the 1st class are mutually exclusive.</td>
+  <td>Label the event spaces $F$ for female and $1st$ for first class.</td>
+</tr>
+
+<tr>
+  <td align="right">Determine $n(F\cap 1st)$</td>
+  <td>Mutually exclusive events cannot happen at the same time which means there would be no overlap or intersection. </td>
+</tr>
+
+<tr>
+  <td align="right">$n(F\cap 1st)=134$</td>
+  <td>Our Solution: Since there were female survivors from the 1st class, the events survivor is a female and survivor is in the 1st class are NOT mutually exclusive. </td>
+</tr>
+
+
+</table></p>
+
+<p>
+<b>Conditional Probability</b>
+</p>
+
+<p>
+Suppose you want to figure out if you should buy a new car. When you first go and look, you find two cars that you like the most. In your mind they are equal, and so each has a $50\%$ chance that you will pick it. Then you start to look at the reviews of the cars and realize that the first car has had $40\%$ of them needing to be repaired in the first year, while the second car only has $10\%$ of the cars needing to be repaired in the first year. You could use this information to help you decide which car you want to actually purchase. Both cars no longer have a $50\%$ chance of being the car you choose. You could actually calculate the probability you will buy each car, which is a conditional probability. You probably wouldn't do this, but it gives you an example of what a conditional probability is.
+</p>
+
+<p>
+<b>Conditional probabilities</b> are probabilities calculated after information is given. This is where you want to find the probability of event $A$ happening after you know that event $B$ has happened. If you know that $B$ has happened, then you don't need to consider the rest of the sample space. You only need the outcomes that make up event $B$. Event $B$ becomes the new sample space, which is called the restricted sample space, $R$. If you always write a restricted sample space when doing conditional probabilities and use this as your sample space, you will have no trouble with conditional probabilities. The notation for conditional probabilities is $P(A, \text{ given } B) = P(A|B)$. The event following the vertical line is always the restricted sample space.
+</p>
+
+<b>Example 4C-6:</b> (Recall <b>Example 4B-8</b>.) The number of people who survived the Titanic based on class and gender is in the below table ("Encyclopedia Titanica," 2013). Suppose a person is picked at random from the survivors.
+
+
+                <table align="center"  id="collapseborder".>
+                   <tr>
+                        <td id="collapseborder" align="center" rowspan="2" style="vertical-align:bottom">Class</td>
+                        <td id="collapseborder" align="center" colspan="2">Gender</td>
+                        <td id="collapseborder" align="center" rowspan="2" style="vertical-align:bottom">Total</td>
+                  </tr>
+
+                  <tr>
+                        <td>Female $(F)$</td>
+                        <td>Male $(M)$</td>
+                  </tr>
+
+                  <tr>
+                        <td id="collapseborder" align="center">1st</td>
+                        <td id="collapseborder" align="center">$134$</td>
+                        <td id="collapseborder" align="center">$59$</td>
+                        <td id="collapseborder" align="center">$193$</td>
+                  </tr>
+
+                   <tr>
+                        <td id="collapseborder" align="center">2nd</td>
+                        <td id="collapseborder" align="center">$94$</td>
+                        <td id="collapseborder" align="center">$25$</td>
+                        <td id="collapseborder" align="center">$119$</td>
+                  </tr>
+
+                   <tr>
+                        <td id="collapseborder" align="center">3rd</td>
+                        <td id="collapseborder" align="center">$80$</td>
+                        <td id="collapseborder" align="center">$58$</td>
+                        <td id="collapseborder" align="center">$138$</td>
+                  </tr>
+
+                   <tr>
+                        <td id="collapseborder" align="center">Total</td>
+                        <td id="collapseborder" align="center">$308$</td>
+                        <td id="collapseborder" align="center">$142$</td>
+                        <td id="collapseborder" align="center">$450$</td>
+                  </tr>
+                </table>
+
+Determine the following probabilities.
+ <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Homework Problem 11, page 140 -->
+
+<table  align="center">
+
+<tr>
+  <td align="right">Determine the probability that a survivor was in the first class.</td>
+  <td>Label the event space $1st$ for first class.</td>
+</tr>
+
+<tr>
+  <td align="right">$P(F) = \dfrac{n(1st)}{\text{Total #}}=\dfrac{193}{450}\approx 0.4289$</td>
+  <td>Our First Solution: The probability that a survivor was in the first class is $\dfrac{193}{450}$ or about $42.89\%$.</td>
+</tr>
+
+<tr>
+  <td align="right">Determine the probability that a survivor was female given the person was in the 1st class.</td>
+  <td>Label the event space $F | 1st$ for female GIVEN in the 1st class.</td>
+</tr>
+
+<tr>
+  <td align="right">In this case we know the person is in 1st class because of the GIVEN. </td>
+  <td>Only the number of survivors in the 1st row will be considered.</td>
+</tr>
+
+<tr>
+  <td align="right">$P(F | 1st) = \dfrac{n(F\cap 1st)}{\text{n(1st)}}=\dfrac{134}{193}\approx 0.6943$</td>
+  <td>Our Second Solution: The probability that a survivor was a female given the person was in the first class is $\dfrac{134}{193}$ or about $69.43\%$.</td>
+</tr>
+
+</table>
+
+
+
+<b>Example 4C-7:</b> Two fair dice are rolled. Determine the probability of rolling a sum of $5$, given that the first die is a $2$.
+ <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.2 Example 4.3.1, page 130 -->
+
+  <table  align="center">
+<tr>
+  <td align="right">The first die is a $2$. </td>
+  <td>Write the restricted sample space, $R$.</td>
+</tr>
+
+<tr>
+  <td align="right">$R =\{(\color{red}{2},\color{green}{1}), (\color{red}{2},\color{green}{2}),  (\color{red}{2},\color{green}{3}), (\color{red}{2},\color{green}{4}), (\color{red}{2},\color{green}{5}),  (\color{red}{2},\color{green}{6})\}$</td>
+  <td>$n(R)=6$.  Determine the event space $(D=5)$ out of $R$.</td>
+</tr>
+
+<tr>
+  <td align="right">$(D=5)=\{  (\color{red}{2},\color{green}{3})\}$</td>
+  <td>The event $(D=5)$ contains $1$ outcome.</td>
+</tr>
+
+<tr>
+  <td align="right">$P(D=5|\text{the first die is a }2)=\dfrac{1}{6}\approx  0.1667$</td>
+  <td>Our Solution: The probability of rolling a sum of $5$, given that the first die is a $2$ is $\dfrac{1}{6}$ or about $16.67\%$.</td>
+</tr>
+</table>
+
+<b>Example 4C-8:</b> Suppose you pick a card from a deck. What is the probability of getting a Spade, given that the card is a Jack?
+
+ <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Example 4.3.1d, page 131 -->
+
+  <table  align="center">
+<tr>
+  <td align="right">We know the card is a Jack. </td>
+  <td>Write the restricted sample space, $R$.</td>
+</tr>
+
+<tr>
+  <td align="right">$R =\{JS, JC, JD, JH\}$</td>
+  <td>$n(R)=4$.  Determine the event space $Spade$ out of $R$.</td>
+</tr>
+
+<tr>
+  <td align="right">$Spade=\{  JS\}$</td>
+  <td>The event $Spade$ contains $1$ outcome.</td>
+</tr>
+
+<tr>
+  <td align="right">$P(Spade|\text{the card is a }Jack)=\dfrac{1}{4}=  0.25$</td>
+  <td>Our Solution: The probability of getting a Spade, given that the card is a Jack is $\dfrac{1}{4}$ or $25\%$.</td>
+</tr>
+</table>
+<p>
+If you look at the results of <b>Example 4C-8:</b>, notice that you get $P(Spade|\text{the card is a }Jack)=\dfrac{1}{4}$ which is exactly the same as $P(Spade)=\dfrac{13}{52}$ since there are $13$ spades. This means that knowing that the card is a Jack did not change the probability that the card is a Spade. This added knowledge did not help you in any way. It is as if that information was not given at all. However, if you compare the conditional probability of  <b>Example 4C-4</b> $P(D=5|\text{the first die is a }2)=\dfrac{1}{6}\approx 16.67\% $ with $P(D=5)=\dfrac{n(D=5)}{36}=\dfrac{4}{36}\approx 11.11\%$, you will notice that they are not the same answer. In this case, knowing that the first die is a $2$ did change the probability of getting a sum of $5$. In the first case, the events $Spade$ and $\text{the card is a }Jack$ are called<b> independent events</b>. In the second case, the events sum of $5$ and first die is a $2$ are
+called <b>dependent events</b>.
+</p>
+<p>
+Events $A$ and $B$ are considered <b>independent events</b> if the fact that one event happens does not change the probability of the other event happening. In other words, events $A$ and $B$ are independent if the fact that $B$ has happened does not affect the probability of event $A$ happening and the fact that $A$ has happened does not affect the probability of event $B$ happening. Otherwise, the two events are dependent. </p>
+<p>
+In symbols, $A$ and $B$ are <b>independent</b> if</br>
+$P(A|B) = P(A)$ or $P(B|A) = P(B)$.
+</p>
+
+<b>Example 4C-9:</b> (Recall <b>Example 4B-8</b>.) The number of people who survived the Titanic based on class and gender is in the below table ("Encyclopedia Titanica," 2013). Suppose a person is picked at random from the survivors.
+
+
+                <table align="center"  id="collapseborder".>
+                   <tr>
+                        <td id="collapseborder" align="center" rowspan="2" style="vertical-align:bottom">Class</td>
+                        <td id="collapseborder" align="center" colspan="2">Gender</td>
+                        <td id="collapseborder" align="center" rowspan="2" style="vertical-align:bottom">Total</td>
+                  </tr>
+
+                  <tr>
+                        <td>Female $(F)$</td>
+                        <td>Male $(M)$</td>
+                  </tr>
+
+                  <tr>
+                        <td id="collapseborder" align="center">1st</td>
+                        <td id="collapseborder" align="center">$134$</td>
+                        <td id="collapseborder" align="center">$59$</td>
+                        <td id="collapseborder" align="center">$193$</td>
+                  </tr>
+
+                   <tr>
+                        <td id="collapseborder" align="center">2nd</td>
+                        <td id="collapseborder" align="center">$94$</td>
+                        <td id="collapseborder" align="center">$25$</td>
+                        <td id="collapseborder" align="center">$119$</td>
+                  </tr>
+
+                   <tr>
+                        <td id="collapseborder" align="center">3rd</td>
+                        <td id="collapseborder" align="center">$80$</td>
+                        <td id="collapseborder" align="center">$58$</td>
+                        <td id="collapseborder" align="center">$138$</td>
+                  </tr>
+
+                   <tr>
+                        <td id="collapseborder" align="center">Total</td>
+                        <td id="collapseborder" align="center">$308$</td>
+                        <td id="collapseborder" align="center">$142$</td>
+                        <td id="collapseborder" align="center">$450$</td>
+                  </tr>
+                </table>
+
+ <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Homework Problem 11, page 140 -->
+
+<table  align="center">
+
+<tr>
+  <td align="right">Determine if the events survivor is a female and survivor is in 1st class are independent.</td>
+  <td>Label the event spaces $F$ for female and $1st$ for first class.</td>
+</tr>
+
+<tr>
+  <td align="right">Compute both  $P(F|1st)$ and $P(F)$</td>
+  <td>In symbols, $F$ and $1st$ are <b>independent</b> if</br>
+$P(F|1st) = P(F)$</td>
+</tr>
+
+<tr>
+  <td align="right">$P(F | 1st) = \dfrac{n(F\cap 1st)}{\text{n(1st)}}=\dfrac{134}{193}\approx 0.6943$</td>
+  <td>$P(F) = \dfrac{n(F)}{\text{Total #}}=\dfrac{308}{450}\approx 0.6844$</td>
+</tr>
+
+<tr>
+  <td align="right"> $P(F|1st) \neq P(F)$ </td>
+  <td>Since $ 0.6943\neq  0.6844$ </td>
+</tr>
+
+<tr>
+  <td align="right">The events survivor is a female and survivor is in 1st class are NOT independent.</td>
+  <td>Our Solution</td>
+</tr>
+
+</table>
+
+<b>Example 4C-10:</b> Two fair dice are rolled. Are the events "sum of 7" and "first die is a 3" independent?
+ <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Example 4.3.2a, page 132 -->
+
+  <table  align="center">
+  <tr>
+  <td align="right">It doesn't matter which event is $A$ or $B$.</td>
+  <td>Assign one as $A$ and one as $B$.</td>
+</tr>
+
+<tr>
+  <td align="right">Let $A=$ sum of $7$.</td>
+  <td>$A=\{ (\color{red}{1},\color{green}{6}), (\color{red}{2},\color{green}{5}),  (\color{red}{3},\color{green}{4}), (\color{red}{4},\color{green}{3}), (\color{red}{5},\color{green}{2}),  (\color{red}{6},\color{green}{1})\}$.</td>
+</tr>
+
+<tr>
+  <td align="right">Let $B=$ first die is a $3$.</td>
+  <td>$B=\{ (\color{red}{3},\color{green}{1}), (\color{red}{3},\color{green}{2}),  (\color{red}{3},\color{green}{3}), (\color{red}{3},\color{green}{4}), (\color{red}{3},\color{green}{5}),  (\color{red}{3},\color{green}{6})\}$.</td>
+</tr>
+
+<tr>
+  <td align="right">Compute $P(A|B)$ and $P(A)$</td>
+  <td>Events are independent if $P(A|B) = P(A)$.</td>
+</tr>
+
+<tr>
+  <td align="right">$P(A|B)$ means that you assume that $B$ has happened.</td>
+  <td>The restricted sample space $R = B$.</td>
+</tr>
+
+<tr>
+  <td align="right">$R=\{ (\color{red}{3},\color{green}{1}), (\color{red}{3},\color{green}{2}),  (\color{red}{3},\color{green}{3}), (\color{red}{3},\color{green}{4}), (\color{red}{3},\color{green}{5}),  (\color{red}{3},\color{green}{6})\}$.</td>
+  <td>$n(R)=6$.  Determine the event space $A=$ sum of $7$ out of $R$.</td>
+</tr>
+
+<tr>
+  <td align="right">Event space $A=$ sum of $7$ out of $R=\{  (\color{red}{3},\color{green}{4})\}$</td>
+  <td>The event contains $1$ outcome.</td>
+</tr>
+
+<tr>
+  <td align="right">$P(A|B)=\dfrac{1}{6}$</td>
+  <td>Compute $P(A)$ out of the entire $SS$.</td>
+</tr>
+
+<tr>
+  <td align="right">$P(A)=\dfrac{6}{36}$</td>
+  <td>Compare $P(A|B)$ and $P(A)$.</td>
+</tr>
+
+<tr>
+  <td align="right">$P(A|B)=\dfrac{1}{6}=\dfrac{6}{36}=P(A)$</td>
+  <td>Our Solution: The events "sum of 7" and "first die is a 3" independent. </td>
+</tr>
+</table>
+
+<p>Two events $A$ and $B$ are independent if the fact that $B$ has happened does not affect the probability of event $A$ happening.  In the case of offspring, we consider the genders to be independent.  This means, the probability of the gender of the second child is not affected by the actual gender of the first child born.  Consider the following example. </p>
+
+<b>Example 4C-11:</b> Male calico cats are quite rare.  In fact, the probability of a cat having a boy calico kitten is only $3\%$.  Suppose a cat has $3$ calico kittens.  Use a probability tree to determine the following probabilities.
+ <!--   Our own -->
+
+ <table  align="center">
+<tr>
+  <td align="right">Let $B$ represent a boy kitten. Let $G$ represent a girl kitten.</td>
+  <td>Illustrate the possibilities with a tree diagram.</td>
+</tr>
+<tr>
+
+    <td align="right"></br>
+    The tree has $8$ endpoints, </br>
+    one for each element in the sample space.</br></br>
+
+    The possibility $BGB$, for example, </br>
+    indicates that the first kitten is a boy, </br>
+    the second born a girl, and the third a boy.
+
+    </td>
+   <td><img src="set4B_Probability_01.png" ></td>
+   </tr>
+   <tr>
+  <td align="right">$P(B)=0.03$</td>
+  <td>Determine the probability of a girl using complementary events, since $B' = G$.</td>
+</tr>
+
+ <tr>
+  <td align="right">$P(G)=P(B')=1-P(B)=1-0.03=0.97$</td>
+  <td>Label the corresponding branches of the tree.</td>
+</tr>
+
+<tr>
+
+    <td align="right"></br>
+    Each branch with an outcome of $B$  </br>
+    has a $0.03$ chance of occurring.</br></br>
+
+    Each branch with an outcome of $G$  </br>
+    has a $0.97$ chance of occurring.</br></br>
+
+    </td>
+   <td><img src="set4C_Probability_Rules_01.png" ></td>
+   </tr>
+
+    <tr>
+  <td align="right">Determine the probability of all $3$ calico kittens being boys.</td>
+  <td>Multiply the probabilities along the path to the outcome $BBB$.</td>
+</tr>
+
+ <tr>
+  <td align="right">$P(BBB)=(0.03)(0.03)(0.03) = 0.000027$.</td>
+  <td>Our First Solution:  The probability of all $3$ calico kittens being boys is $0.0027\%$, which is extremely unlikely.</td>
+</tr>
+
+ <tr>
+  <td align="right">Determine the probability of at least one of the calico kittens being a boy.</td>
+  <td>Recall complementary events help determine probabilities of events involving "at least". </td>
+</tr>
+
+ <tr>
+  <td align="right">Notice there is only one outcome with no male kittens: $GGG$. </td>
+  <td>All of the other outcomes have at least one male kitten.</td>
+</tr>
+
+ <tr>
+  <td align="right">This means the event "at least one boy"  is the complement of the event $GGG$</td>
+  <td>Use the complement: $P(\text{at least one boy})=1-P(GGG)$.</td>
+</tr>
+
+<tr>
+  <td align="right">$P(GGG)= (0.97)(0.97)(0.97)\approx 0.9127$</td>
+  <td>Multiply the probabilities along the path to the outcome $GGG$.</td>
+</tr>
+
+ <tr>
+  <td align="right">$P(\text{at least one boy})=1-P(GGG)=1-(0.97)^3\approx 1-0.9127=0.0873$</td>
+  <td>Our Second Solution: The probability of at least one of the calico kittens being a boy is approximately $8.73\%$.</td>
+</tr>
+
+
+</table>
+
+
+
+
+
+
+</body>
+
+</html> 

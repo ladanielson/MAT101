@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
+Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
+Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 35-49-->
+
+
+<html>
+<head>
+<title>MAT-102: Module 1C-Graphs of Function</title>
+<style>
+table, td
+{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+table.center
+{
+  margin-left:auto;
+  margin-right:auto;
+}
+</style>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+
+
+
+<body>
+
+
+<p><b>1.10 Graphing10</b></p>
+<p>Graphing, like algebraic generalizations, is a difficult topic because many students know how to do it but
+are not sure what it means.</p>
+<p>For instance, consider the following graph:</p>
+
+<p>GRAPH</p>
+
+<p>If I asked you “Draw the graph of y = x2” you would probably remember how to plot points and draw the
+shape.</p>
+<p>But suppose I asked you this instead: “Here’s a function, y = x2. And here’s a shape, that sort of looks like
+a U. What do they actually have to do with each other?” This is a harder question! What does it mean to
+graph a function?</p>
+<p>The answer is simple, but it has important implications for a proper understanding of functions. Recall
+that every point on the plane is designated by a unique (x, y) pair of coordinates: for instance, one point is
+(5, 3). We say that its x -value is 5 and its y -value is 3.</p>
+<p>A few of these points have the particular property that their y -values are the square of their x -values. For
+instance, the points (0, 0), (3, 9), and (??5, 25) all have that property. (5, 3) and (??2,??4) do not.</p>
+<p>The graph shown—the pseudo-U shape—is all the points in the plane that have this property. Any point
+whose y-value is the square of its x-value is on this shape; any point whose y-value is not the square of its
+x-value is not on this shape. Hence, glancing at this shape gives us a complete visual picture of the function
+y = x2 if we know how to interpret it correctly.</p>
+<p><b>1.10.1 Graphing Functions</b></p>
+<p>Remember that every function specifies a relationship between two variables. When we graph a function,
+we put the independent variable on the x-axis, and the dependent variable on the y-axis.</p>
+
+<p><b>1.10.1 Graphing Functions</b></p>
+<p>Remember that every function specifies a relationship between two variables. When we graph a function,
+we put the independent variable on the x-axis, and the dependent variable on the y-axis.</p>
+<p>For instance, recall the function that describes Alice’s money as a function of her hours worked. Since Alice
+makes $12/hour, her financial function is m(t) = 12t. We can graph it like this.</p>
+<p>GRAPH</p>
+<p>This simple graph has a great deal to tell us about Alice’s job, if we read it correctly.</p>
+<p>The graph contains the point (3, 300).What does that tell us? That after Alice has worked for three
+hours, she has made $300.</p>
+<p>The graph goes through the origin (the point (0, 0)). What does that tell us? That when she works 0
+hours, Alice makes no money.</p>
+<p>The graph exists only in the first quadrant. What does that tell us? On the mathematical level, it
+indicates the domain of the function ( t  0) and the range of the function ( m  0). In terms of the
+situation, it tells us that Alice cannot work negative hours or make negative money.</p>
+<p>The graph is a straight line. What does that tell us? That Alice makes the same amount of money
+every day: every day, her money goes up by $100. ($100/day is the slope of the line—more on this in
+the section on linear functions.)</p>
+<p>Consider now the following, more complicated graph, which represents Alice’s hair length as a function
+of time (where time is now measured in weeks instead of hours).</p>
+
+<p>GRAPH</p>
+<p>What does this graph h (t) tell us? We can start with the same sort of simple analysis.</p>
+<p>The graph goes through the point (0, 12).This tells us that at time (t = 0), Alice’s hair is 12" long.</p>
+<p>The range of this graph appears to be 12  h  18. Alice never allows her hair to be shorter than 12"
+or longer than 18".</p>
+<p>But what about the shape of the graph? The graph shows a gradual incline up to 18", and then a precipitous
+drop back down to 12"; and this pattern repeats throughout the shown time. The most likely explanation is
+that Alice’s hair grows slowly until it reaches 18", at which point she goes to the hair stylist and has it cut
+down, within a very short time (an hour or so), to 12". Then the gradual growth begins again.</p>
+<p><b>1.10.2 The rule of consistency, graphically</b></p>
+<p>Consider the following graph.</p>
+<p>GRAPH</p>
+<p>This is our earlier “U” shaped graph ( y = x2) turned on its side. This might seem like a small change. But
+ask this question: what is y when x = 3? This question has two answers. This graph contains the points
+(3,??9) and (3, 9). So when x = 3, y is both 9 and –9 on this graph.</p>
+<p>This violates the only restriction on functions—the rule of consistency. Remember that the x-axis is
+the independent variable, the y-axis the dependent. In this case, one “input” value (3) is leading to two
+different “output” values (??9, 9) We can therefore conclude that this graph does not represent a function
+at all. No function, no matter how simple or complicated, could produce this graph.</p>
+<p>This idea leads us to the “vertical line test,” the graphical analog of the rule of consistency.</p>
+<p>Definition 1.3: The Vertical Line Test</p>
+<p>If you can draw any vertical line that touches a graph in two places, then that graph violates the
+rule of consistency and therefore does not represent any function.</p>
+<p>It is important to understand that the vertical line test is not a new rule! It is the graphical version of the rule
+of consistency. If any vertical line touches a graph in two places, then the graph has two different y-values
+for the same x-value, and this is the only thing that functions are not allowed to do.</p>
+<p><b>1.10.3 What happens to the graph, when you add 2 to a function?</b></p>
+<p>Suppose the following is the graph of the function y = f (x).</p>
+<p>GRAPH</p>
+<p>We can see from the graph that the domain of the graph is ??3  x  6 and the range is ??3  y  2.</p>
+<p>Question: What does the graph of y = f (x) + 2 look like?</p>
+<p>This might seem an impossible question, since we do not even know what the function f (x) is. But we
+don’t need to know that in order to plot a few points.</p>
+
+<p><table style="width:100%">
+  <tr>
+    <td>x</td>
+    <td>f (x)</td> 
+    <td>f (x + 2)</td>
+    <td>so y = f (x) contains this point</td>
+    <td>and y = f (x) + 2 contains this point</td>
+  </tr>
+  <tr>
+    <td>-3</td>
+    <td>2</td> 
+    <td>4</td>
+    <td>(??3, 2)</td>
+    <td>(??3, 4)</td>
+  </tr><tr>
+    <td>-1</td>
+    <td>-3</td> 
+    <td>-1</td>
+    <td>(??1,??3)</td>
+    <td>(??1,??1)</td>
+  </tr><tr>
+    <td>1</td>
+    <td>2</td> 
+    <td>4</td>
+    <td>(1, 2)</td>
+    <td>(1, 4)</td>
+  </tr><tr>
+    <td>6</td>
+    <td>0</td> 
+    <td>2</td>
+    <td>(6, 0)</td>
+    <td>(6, 2)</td>
+  </tr>
+</table></p>
+
+<p>If you plot these points on a graph, the pattern should become clear. Each point on the graph is moving up
+by two. This comes as no surprise: since you added 2 to each y-value, and adding 2 to a y-value moves any
+point up by 2. So the new graph will look identical to the old, only moved up by 2.</p>
+<p>GRAPH</p>
+<p>In a similar way, it should be obvious that if you subtract 10 from a function, the graph moves down by 10.
+Note that, in either case, the domain of the function is the same, but the range has changed.</p>
+<p>These permutations work for any function. Hence, given the graph of the function y =
+p
+x below (which
+you could generate by plotting points), you can produce the other two graphs without plotting points,
+simply by moving the first graph up and down.</p>
+<p>GRAPH</p>
+
+<p><b>1.10.4 Other vertical permutations</b></p>
+<p>Adding or subtracting a constant from f (x), as described above, is one example of a vertical permutation:
+it moves the graph up and down. There are other examples of vertical permutations.</p>
+<p>For instance, what does doubling a function do to a graph? Let’s return to our original function:</p>
+<p>GRAPH</p>
+<p>What does the graph y = 2 f (x) look like? We can make a table similar to the one we made before.</p>
+
+
+<p><table style="width:100%">
+  <tr>
+    <td>x</td>
+    <td>f (x)</td> 
+    <td>2 f (x)</td>
+    <td>so y = 2 f (x) contains this point</td>
+    
+  </tr>
+  <tr>
+    <td>-3</td>
+    <td>2</td> 
+    <td>4</td>
+    <td>(??3, 4)</td>
+    
+  </tr><tr>
+    <td>-1</td>
+    <td>-3</td> 
+    <td>-6</td>
+    <td>(??1,??6)</td>
+    
+  </tr><tr>
+    <td>1</td>
+    <td>2</td> 
+    <td>4</td>
+    <td>(1, 4)</td>
+    
+  </tr><tr>
+    <td>6</td>
+    <td>0</td> 
+    <td>0</td>
+    <td>(6, 0)</td>
+    
+  </tr>
+</table></p>
+
+<p>In general, the high points move higher; the low points move lower. The entire graph is vertically stretched,
+with each point moving farther away from the x-axis.</p>
+<p>GRAPH</p>
+
+<p>Similarly, y = 12</p>
+f (x) yields a graph that is vertically compressed, with each point moving toward the x-axis.</p>
+<p>Finally, what does y = ??f (x) look like? All the positive values become negative, and the negative values
+become positive. So, point by point, the entire graph flips over the x-axis.</p>
+<p>GRAPH</p>
+<p><b>1.10.5 What happens to the graph, when you add 2 to the x value?</b></p>
+<p>Vertical permutations affect the y-value; that is, the output, or the function itself. Horizontal permutations
+affect the x-value; that is, the numbers that come in. They often do the opposite of what it naturally seems
+they should.</p>
+<p>Let’s return to our original function y = f (x).</p>
+<p>GRAPH</p>
+<p>Suppose you were asked to graph y = f (x + 2). Note that this is not the same as f (x) + 2! The latter is an
+instruction to run the function, and then add 2 to all results. But y = f (x + 2) is an instruction to add 2 to
+every x-value before plugging it into the function.</p>
+<p>f (x) + 2 changes y, and therefore shifts the graph vertically</p>
+<p>f (x + 2) changes x, and therefore shifts the graph horizontally.</p>
+<p>But which way? In analogy to the vertical permutations, you might expect that adding two would shift the
+graph to the right. But let’s make a table of values again.</p>
+
+<p><table style="width:100%">
+  <tr>
+    <td>x</td>
+    <td>x + 2</td> 
+    <td>f (x + 2)</td>
+    <td>so y = f (x + 2) contains this point</td>
+    
+  </tr>
+  <tr>
+    <td>-5</td>
+    <td>-3</td> 
+    <td>f(–3)=2</td>
+    <td>(??5, 2)</td>
+    
+  </tr><tr>
+    <td>-3</td>
+    <td>-1</td> 
+    <td>f(–1)=–3</td>
+    <td>(??3,??3)</td>
+    
+  </tr><tr>
+    <td>-1</td>
+    <td>1</td> 
+    <td>f(1)=2</td>
+    <td>(??1, 2)</td>
+    
+  </tr><tr>
+    <td>4</td>
+    <td>6</td> 
+    <td>f(6)=0</td>
+    <td>(4, 0)</td>
+    
+  </tr>
+</table></p>
+
+<p>This is a very subtle, very important point—please follow it closely and carefully! First of all, make sure
+you understand where all the numbers in that table came from. Then look what happened to the original
+graph.</p>
+<p>NOTE: The original graph f (x) contains the point (6, 0); therefore, f (x + 2) contains the point
+(4, 0). The point has moved two spaces to the left.</p>
+<p>GRAPH</p>
+
+<p>You see what I mean when I say horizontal permutations “often do the opposite of what it naturally seems
+they should”? Adding two moves the graph to the left.</p>
+<p>Why does it work that way? Here is my favorite way of thinking about it. f (x ?? 2) is an instruction that
+says to each point, “look two spaces to your left, and copy what the original function is doing there.” At
+x = 5 it does what f (x) does at x = 3. At x = 10, it copies f (8). And so on. Because it is always copying
+f (x) to its left, this graph ends up being a copy of f (x) moved to the right. If you understand this way of
+looking at it, all the rest of the horizontal permutations will make sense.</p>
+<p>Of course, as you might expect, subtraction has the opposite effect: f (x ?? 6) takes the original graph and
+moves it 6 units to the right. In either case, these horizontal permutations affect the domain of the original
+function, but not its range.</p>
+<p><b>1.10.6 Other horizontal permutations</b></p>
+<p>Recall that y = 2 f (x) vertically stretches a graph; y = 1
+2 f (x) vertically compresses. Just as with addition
+and subtraction, we will find that the horizontal equivalents work backward.</p>
+
+
+<p><table style="width:100%">
+  <tr>
+    <td>x</td>
+    <td>2x</td> 
+    <td>f (2x)</td>
+    <td>so y = 2 f (x) contains this point</td>
+    
+  </tr>
+  <tr>
+    <td>-1 1/2</td>
+    <td>-3</td> 
+    <td>2</td>
+    <td>(-1 1/2, 2)</td>
+    
+  </tr><tr>
+    <td>-1/2</td>
+    <td>-1</td> 
+    <td>-3</td>
+    <td>(-1/2, -3)</td>
+    
+  </tr><tr>
+    <td>1/2</td>
+    <td>1</td> 
+    <td>2</td>
+    <td>(1/2, 2)</td>
+    
+  </tr><tr>
+    <td>3</td>
+    <td>6</td> 
+    <td>0</td>
+    <td>(3, 0)</td>
+    
+  </tr>
+</table></p>
+
+<p>The original graph f (x) contains the point (6, 0); therefore, f (2x) contains the point (3, 0). Similarly,
+(??1;??3) becomes
+
+??1
+2 ;??3
+
+. Each point is closer to the y-axis; the graph has horizontally compressed.</p>
+
+<p>GRAPH</p>
+
+<p>We can explain this the same way we explained f (x ?? 2). In this case, f (2x) is an instruction that says
+to each point, “Look outward, at the x-value that is double yours, and copy what the original function
+is doing there.” At x = 5 it does what f (x) does at x = 10. At x = ??3, it copies f (??6). And so on.
+Because it is always copying f(x) outside itself, this graph ends up being a copy of f (x) moved inward; ie
+a compression. Similarly, f
+
+1
+2 x
+
+causes each point to look inward toward the y-axis, so it winds up being
+a horizontally stretched version of the original.</p>
+<p>Finally, y = f (??x) does precisely what you would expect: it flips the graph around the y-axis. f (??2) is
+the old f (2) and vice-versa.</p>
+<p>GRAPH</p>
+
+<p>All of these permutations do not need to be memorized: only the general principles need to be understood.
+But once they are properly understood, even a complex graph such as y = ??2 (x + 3)2 + 5 can be easily
+graphed. You take the (known) graph of y = x2, flip it over the x-axis (because of the negative sign), stretch
+it vertically (the 2), move it to the left by 3, and move it up 5.</p>
+<p>With a good understanding of permutations, and a very simple list of known graphs, it becomes possible
+to graph a wide variety of important functions. To complete our look at permutations, let’s return to the
+graph of y =
+p
+x in a variety of flavors.</p>
+
+<p>GRAPH</p>
+<p>GRAPH</p>
+
+
+
+
+
+</body>
+</html> 

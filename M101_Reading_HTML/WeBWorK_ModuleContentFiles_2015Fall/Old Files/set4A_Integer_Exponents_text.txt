@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<title>MAT-101: Module 4A Integer Exponents - Adapt from p.177-181 and 183-186</title>
+
+<style>
+
+table, td
+
+{
+
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+}
+
+table.center 
+
+{
+
+  margin-left:auto; 
+  margin-right:auto;
+
+}
+
+</style> 
+
+<script type="text/x-mathjax-config">
+  
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
+</script>
+
+<script type="text/javascript"
+
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+
+</script>
+
+</head>
+
+
+
+<body>
+
+<b>Lines</b>
+<br><br>
+
+
+
+
+<p><b>Polynomials - Exponent Properties</b></p>
+
+<p>Objective: Simplify expressions using the properties of exponents.</p>
+<p>Problems with expoenents can often be simplified using a few basic exponent
+properties. Exponents represent repeated multiplication. We will use this fact to
+discover the important properties.</p>
+<p>World View Note: The word exponent comes from the Latin “expo” meaning
+out of and “ponere” meaning place. While there is some debate, it seems that the
+Babylonians living in Iraq were the first to do work with exponents (dating back
+to the 23rd century BC or earlier!)</p>
+
+<p><b>Example 4a-1:</b></p>
+
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>a3a2</td>
+    <td>Expand exponents to multiplication problem</td> 
+    
+  </tr>
+  <tr>
+    <td>$(aaa)(aa)$</td>
+    <td>Now we have $5a$'s being multiplied together</td> 
+    
+  </tr>
+<tr>
+    <td>$a5$</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+
+<p>A quicker method to arrive at our answer would have been to just add the exponents:
+
+$a3a2=a3+2=a5$ This is known as the product rule of exponents
+</p>
+
+<p>ProductRule of Exponents: $aman=am+n$
+</p>
+
+<p>The product rule of exponents can be used to simplify many problems. We will
+add the exponent on like variables. This is shown in the following examples
+</p>
+
+<p><b>Example $4a-2$:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>$32 · 36 · 3$</td>
+    <td>Same base, add the exponents $2+6+1$</td> 
+    
+  </tr>
+  <tr>
+    <td>$39$</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+
+<p><b>Example $4a-3:$</b></p>
+
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>$2x3y5z · 5xy2z3$</td>
+    <td>Multiply $2 · 5$, add exponents on $x$, $y$ and $z$</td> 
+    
+  </tr>
+  <tr>
+    <td>10x4y7z4</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+<p>Rather than multiplying, we will now try to divide with exponents</p>
+
+<p><b>Example 4a-4:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>a5
+a2</td>
+    <td>Expand exponents</td> 
+    
+  </tr>
+  <tr>
+    <td>aaaaa
+aa</td>
+    <td>Divide out two of the a's</td> 
+    
+  </tr>
+  <tr>
+    <td>aaa</td>
+    <td>Convert to exponents</td> 
+    
+  </tr>
+  <tr>
+    <td>a3</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+<p>A quicker method to arrive at the solution would have been to just subtract the
+exponents, a5
+a2 =a5-2=a3. This is known as the quotient rule of exponents.</p>
+<p>Quotient Rule of Exponents:
+am
+an =am-n</p>
+<p>The quotient rule of exponents can similarly be used to simplify exponent problems
+by subtracting exponents on like variables. This is shown in the following
+examples.</p>
+
+<p><b>Example 4a-5:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>713
+75</td>
+    <td>Same base, subtract the exponents</td> 
+    
+  </tr>
+  <tr>
+    <td>78</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+<p><b>Example 4a-6:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>5a3b5c2
+2ab3c</td>
+    <td>Subtract exponents on a, b and c</td> 
+    
+  </tr>
+  <tr>
+    <td>5
+2
+a2b2c</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+<p>A third property we will look at will have an exponent problem raised to a second
+exponent. This is investigated in the following example.</p>
+
+<p><b>Example 4a-7:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>??
+a2
+3</td>
+    <td>Thismeanswe have a2 three times</td> 
+    
+  </tr>
+  <tr>
+    <td>a2 · a2 · a2</td>
+    <td>Add exponents</td> 
+    
+  </tr>
+  <tr>
+    <td>a6</td>
+    <td>Our solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+
+
+<p>A quicker method to arrive at the solution would have been to just multiply the
+exponents, (a2)3 = a2·3 = a6. This is known as the power of a power rule of exponents.
+</p>
+
+<p>Power of aPowerRule of Exponents: (am)n=amn
+</p>
+
+<p>This property is often combined with two other properties which we will investigate
+now.
+</p>
+
+
+<p><b>Example 4a-8:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>(ab)3</td>
+    <td>Thismeanswe have (ab) three times</td> 
+    
+  </tr>
+  <tr>
+    <td>(ab)(ab)(ab)</td>
+    <td>Three a's and three b's can bewrittenwith exponents</td> 
+    
+  </tr>
+<tr>
+    <td>a3b3</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+<p>A quicker method to arrive at the solution would have been to take the exponent
+of three and put it on each factor in parenthesis, (ab)3 = a3b3. This is known as
+the power of a product rule or exponents.</p>
+<p>Power of aProductRule of Exponents: (ab)m=ambm</p>
+<p>It is important to be careful to only use the power of a product rule with multiplication
+inside parenthesis. This property does NOT work if there is addition or
+subtraction.</p>
+
+<p><b>Warning</b></p>
+
+<p>(a+b)m=/=am+bm These areNOTequal, beware of this error!</p>
+
+<p>Another property that is very similar to the power of a product rule is considered
+next.</p>
+<p><b>Example 4a-9:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td> a
+b
+3</td>
+    <td>Thismeanswe have the fraction three timse</td> 
+    
+  </tr>
+  <tr>
+    <td>a
+b
+ a
+b
+ a
+b</td>
+    <td>Multiply fractions across the top and bottom, using exponents</td> 
+    
+  </tr>
+ <tr>
+    <td>a3
+b3</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+
+<p>A quicker method to arrive at the solution would have been to put the exponent
+on every factor in both the numerator and denominator,
+?? a
+b
+3
+= a3
+b3 . This is known
+as the power of a quotient rule of exponents.</p>
+
+<p>Power of aQuotientRule of Exponents:
+ a
+b
+m
+=
+am
+bm</p>
+
+<p>The power of a power, product and quotient rules are often used together to simplify
+expressions. This is shown in the following examples.</p>
+
+<p><b>Example 4a-10:</b></p>
+
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>(x3yz2)4</td>
+    <td>Put the exponent of 4 on each factor,multiplying powers</td> 
+    
+  </tr>
+  <tr>
+    <td>x12y4z8</td>
+    <td>Our solution</td> 
+    
+  </tr>
+  <tr>
+    <td>
+a3b
+c8d5
+2</td>
+    <td>Put the exponent of 2 on each factor,multiplying powers</td> 
+    
+  </tr>
+  <tr>
+    <td>a6b2
+c8d10</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+<p>As we multiply exponents its important to remember these properties apply to
+exponents, not bases. An expressions such as 53 does not mean we multipy 5 by 3,
+rather we multiply 5 three times, 5 × 5 × 5 = 125. This is shown in the next
+example.</p>
+
+<p><b>Example 4a-11:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>(4x2y5)3</td>
+    <td>Put the exponent of 3 on each factor,multiplying powers</td> 
+    
+  </tr>
+  <tr>
+    <td>43x6y15</td>
+    <td>Evaluate 43</td> 
+    
+  </tr>
+ <tr>
+    <td>64x6y15</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+
+<p>In the previous example we did not put the 3 on the 4 and multipy to get 12, this
+would have been incorrect. Never multipy a base by the exponent. These properties
+pertain to exponents only, not bases.
+</p>
+
+<p>In this lesson we have discussed 5 different exponent properties. These rules are
+summarized in the following table.
+</p>
+
+<p>Rules of Exponents
+</p>
+
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>ProductRule of Exponents</td>
+    <td>aman=am+n</td> 
+    
+  </tr>
+  <tr>
+    <td>QuotientRule of Exponents</td>
+    <td>am
+an =am-n</td> 
+    
+  </tr>
+  <tr>
+    <td>Power of aPowerRule of Exponents</td>
+    <td>(am)n=amn</td> 
+    
+  </tr>
+  <tr>
+    <td>Power of aProductRule of Exponents</td>
+    <td>(ab)m=ambm</td> 
+    
+  </tr>
+  <tr>
+    <td>Power of aQuotientRule of Exponents</td>
+    <td>(a
+b
+m
+=
+am
+bm</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+
+
+<p>These five properties are often mixed up in the same problem. Often there is a bit
+of flexibility as to which property is used first. However, order of operations still
+applies to a problem. For this reason it is the suggestion of the auther to simplify
+inside any parenthesis first, then simplify any exponents (using power rules), and
+finally simplify any multiplication or division (using product and quotient rules).
+This is illustrated in the next few examples.
+</p>
+
+<p><b>Example 4a-12:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>(4x3y · 5x4y2)3</td>
+    <td>In parenthesis simplify using product rule, adding exponents</td> 
+    
+  </tr>
+  <tr>
+    <td>(20x7y3)3</td>
+    <td>With power rules, put three on each factor,multiplying exponents</td> 
+    
+  </tr>
+  <tr>
+    <td>203x21y9</td>
+    <td>Evaluate 203</td> 
+    
+  </tr>
+  <tr>
+    <td>8000x21y9</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+<p><b>Example 4a-13:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>7a3(2a4)3</td>
+    <td>Parenthesis are already simplified, next use power rules</td> 
+    
+  </tr>
+  <tr>
+    <td>7a3(8a12)</td>
+    <td>Using product rule, add exponents andmultiply numbers</td> 
+    
+  </tr>
+<tr>
+    <td>56a15</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+<p><b>Example 4a-14:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>3a3b · 10a4b3
+2a4b2</td>
+    <td>Simplify numeratorwith product rule, adding exponents</td> 
+    
+  </tr>
+  <tr>
+    <td>30a7b4
+2a4b2</td>
+    <td>Nowuse the quotient rule to subtract exponents</td> 
+    
+  </tr>
+  <tr>
+    <td>15a3b2</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+<p><b>Example 4a-15:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>3m8n12
+(m2n3)3</td>
+    <td>Use power rule in denominator</td> 
+    
+  </tr>
+  <tr>
+    <td>3m8n12
+m6n9</td>
+    <td>Use quotient rule</td> 
+    
+  </tr>
+ <tr>
+    <td>3m2n3</td>
+    <td>Our solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+<p><b>Example 4a-16:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>
+3ab2(2a4b2)3
+6a5b7
+2</td>
+    <td>Simplify inside parenthesis first, using power rule in numerator</td> 
+    
+  </tr>
+  <tr>
+    <td>3ab2(8a12b6)
+6a5b7
+2</td>
+    <td>Simplify numerator using product rule</td> 
+    
+  </tr>
+  <tr>
+    <td>24a13b8
+6a5b7
+2</td>
+    <td>Simplify using the quotient rule</td> 
+    
+  </tr>
+  <tr>
+    <td>(4a8b)2</td>
+    <td>Now that the parenthesis are simplified, use the power rules</td> 
+    
+  </tr>
+<tr>
+    <td>16a16b2</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+
+</table>
+
+</center>
+</p>
+
+<p>Clearly these problems can quickly become quite involved. Remember to follow
+order of operations as a guide, simplify inside parenthesis first, then power rules,
+then product and quotient rules.</p>
+
+<p>Polynomials - Negative Exponents</p>
+
+<p>Objective: Simplify expressions with negative exponents using the
+properties of exponents.</p>
+<p>There are a few special exponent properties that deal with exponents that are not
+positive. The first is considered in the following example, which is worded out 2
+different ways:</p>
+
+<p><b>Example 4a-17:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>a3
+a3</td>
+    <td>Use the quotient rule to subtract exponents</td> 
+    
+  </tr>
+  <tr>
+    <td>a0</td>
+    <td>Our Solution, but nowwe consider the problema the secondway:</td> 
+    
+  </tr>
+ <tr>
+    <td>a3
+a3</td>
+    <td>Rewrite exponents as repeatedmultiplication</td> 
+    
+  </tr>
+ <tr>
+    <td>aaa
+aaa</td>
+    <td>Reduce out all the a's</td> 
+    
+  </tr>
+ <tr>
+    <td>1
+1
+=1</td>
+    <td>Our Solution,whenwe combine the two solutionswe get:</td> 
+    
+  </tr>
+ <tr>
+    <td>a0=1</td>
+    <td>Our final result.</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+<p>This final result is an imporant property known as the zero power rule of exponents</p>
+
+<p>ZeroPowerRule of Exponents: a0=1</p>
+<p>Any number or expression raised to the zero power will always be 1. This is illustrated
+in the following example.</p>
+
+<p><b>Example 4a-18:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>(3x2)0</td>
+    <td>Zero power rule</td> 
+    
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+<p>Another property we will consider here deals with negative exponents. Again we
+will solve the following example two ways.</p>
+
+<p><b>Example 4a-19:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>a3
+a5</td>
+    <td>Using the quotient rule, subtract exponents</td> 
+    
+  </tr>
+  <tr>
+    <td>a-2</td>
+    <td>Our Solution, butwewill also solve this problemanotherway.</td> 
+    
+  </tr>
+  <tr>
+    <td>a3
+a5</td>
+    <td>Rewrite exponents as repeatedmultiplication</td> 
+    
+  </tr>
+  <tr>
+    <td>aaa
+aaaaa</td>
+    <td>Reduce three a's out of top and bottom</td> 
+    
+  </tr>
+  <tr>
+    <td>1
+aa</td>
+    <td>Simplify to exponents</td> 
+    
+  </tr>
+  <tr>
+    <td>1
+a2</td>
+    <td>Our Solution, putting these solutions together gives:</td> 
+    
+  </tr>
+  <tr>
+    <td>a-2=
+1
+a2</td>
+    <td>Our Final Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+
+<p>This example illustrates an important property of exponents. Negative exponents
+yield the reciprocal of the base. Once we take the reciprical the exponent is now
+positive. Also, it is important to note a negative exponent does not mean the
+expression is negative, only that we need the reciprocal of the base. Following are
+the rules of negative exponents
+</p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>Rules ofNegative Exponets:</td>
+    <td>a-m=
+1
+m<br/><br/>1
+a-m =am<br/><br/> a
+b
+-m
+=
+bm
+am</td> 
+    
+  </tr>
+
+</table>
+
+</center>
+</p>
+
+
+<p>Negative exponents can be combined in several different ways. As a general rule if
+we think of our expression as a fraction, negative exponents in the numerator
+must be moved to the denominator, likewise, negative exponents in the denominator
+need to be moved to the numerator. When the base with exponent moves,
+the exponent is now positive. This is illustrated in the following example.
+</p>
+
+
+<p><b>Example 4a-20:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>a3b-2c
+2d-1 e-4f2</td>
+    <td>Negative exponents on b, d, and e need to flip</td> 
+    
+  </tr>
+  <tr>
+    <td>a 3cde4
+2b2f2</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+
+<p>As we simplified our fraction we took special care to move the bases that had a
+negative exponent, but the expression itself did not become negative because of
+those exponents. Also, it is important to remember that exponents only effect
+what they are attached to. The 2 in the denominator of the above example does
+not have an exponent on it, so it does not move with the d.
+</p>
+
+<p>We now have the following nine properties of exponents. It is important that we
+are very familiar with all of them.
+</p>
+
+<p>Properties of Exponents
+</p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>aman=am+n</td>
+    <td>(ab)m=ambm</td> 
+    <td>a-m=
+1
+am</td>
+  </tr>
+  <tr>
+    <td>am
+an =am-n</td>
+    <td> a
+b
+m
+=
+am
+bm</td> 
+    <td>1
+a-m =am</td>
+  </tr>
+ <tr>
+    <td>(am)n=amn</td>
+    <td>a0=1</td> 
+    <td> a
+b
+-m
+=
+bm
+am</td>
+  </tr>
+</table>
+
+</center>
+</p>
+
+
+<p>World View Note: Nicolas Chuquet, the French mathematician of the 15th century
+wrote 121m¯ to indicate 12x-1. This was the first known use of the negative
+exponent.</p>
+<p>Simplifying with negative exponents is much the same as simplifying with positive
+exponents. It is the advice of the author to keep the negative exponents until the
+end of the problem and then move them around to their correct location (numerator
+or denominator). As we do this it is important to be very careful of rules for
+adding, subtracting, and multiplying with negatives. This is illustrated in the following
+examples</p>
+
+<p><b>Example 4a-21:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>4x-5y-3 · 3x3y-2
+6x-5y3</td>
+    <td>Simplify numeratorwith product rule, adding exponents</td> 
+    
+  </tr>
+  <tr>
+    <td>12x-2y-5
+6x-5y3</td>
+    <td>Quotient rule to subtract exponets, be carefulwith negatives!<br/>(-2)-(-5)=(-2)+5=3<br/>(-5)-3=(-5)+(-3)=-8</td> 
+    
+  </tr>
+ <tr>
+    <td>2x3y-8</td>
+    <td>Negative exponent needs tomove down to denominator</td> 
+    
+  </tr>
+ <tr>
+    <td>2x3
+y8</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+
+<p><b>Example 4a-22:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>(3ab3)-2ab-3
+2a-4b0</td>
+    <td>In numerator, use power rulewith-2,multiplying exponents
+In denominator, b0=1</td> 
+    
+  </tr>
+  <tr>
+    <td>3-2a-2b-6ab-3
+2a-4</td>
+    <td>In numerator, use product rule to add exponents</td> 
+    
+  </tr>
+ <tr>
+    <td>3-2a-1b-9
+2a-4</td>
+    <td>Use quotient rule to subtract exponents, be carefulwith negatives<br/>(-1)-(-4)=(-1)+4=3</td> 
+    
+  </tr>
+ <tr>
+    <td>3-2a3b-9
+2</td>
+    <td>Move 3 and b to denominator because of negative exponents</td> 
+    
+  </tr>
+ <tr>
+    <td>a3
+322b9</td>
+    <td>Evaluate 322</td> 
+    
+  </tr>
+ <tr>
+    <td>a3
+18b9</td>
+    <td>Our Solution</td> 
+    
+  </tr>
+</table>
+
+</center>
+</p>
+
+<p>In the previous example it is important to point out that when we simplified 3-2
+we moved the three to the denominator and the exponent became positive. We
+did not make the number negative! Negative exponents never make the bases negative,
+they simply mean we have to take the reciprocal of the base. One final
+example with negative exponents is given here.</p>
+
+<p><b>Example 4a-23:</b></p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td>
+3x-2y5z3 · 6x-6y-2z-3
+9(x2y-2)-3
+
+-3</td>
+    <td>In numerator, use product rule, adding exponents<br/>
+In denominator, use power rule,multiplying exponets</td> 
+    
+  </tr>
+  <tr>
+    <td>
+18x-8y3z0
+9x-6y6
+
+-3</td>
+    <td>Use quotient rule to subtract exponents,
+be carefulwith negatives:<br/>(-8)-(-6)=(-8)+6=-2<br/>3-6=3+(-6)=-3</td> 
+    
+  </tr>
+<tr>
+    <td>(2x-2y-3z0)-3</td>
+    <td>Parenthesis are done, use power rulewith-3</td> 
+    
+  </tr>
+<tr>
+    <td>2-3x6y9z0</td>
+    <td>Move 2with negative exponent down and z0=1</td> 
+    
+  </tr>
+<tr>
+    <td>x6y9
+23</td>
+    <td>Evaluate 23</td> 
+    
+  </tr>
+<tr>
+    <td>x6y9
+8</td>
+    <td>JOur Solution</td> 
+    
+  </tr>
+
+</table>
+
+</center>
+</p>
+
+
+
+
+</body>
+
+</html>
+
+

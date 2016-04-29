@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
+Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
+Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 77-83-->
+
+
+<html>
+<head>
+<title>MAT-102: Module 2B-Simultaneous Equations</title>
+<style>
+table, td
+{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+table.center
+{
+  margin-left:auto;
+  margin-right:auto;
+}
+</style>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+
+
+
+
+
+<body>
+<p><b>Simultaneous Equations</b></p>
+<p><b>3.1 Distance, Rate and Time</b></p>
+<p>If you travel 30 miles per hour for 4 hours, how far do you go? A little common sense will tell you that the
+answer is 120 miles.</p>
+<p>This relationship is captured in the following equation:</p>
+<p>d = rt where...</p>
+<p>d is distance traveled (sometimes the letter x is used instead, for position)</p>
+<p>r is the rate, or speed (sometimes the letter v is used, for velocity)</p>
+<p>t is the time</p>
+<p>This is presented here because it forms the basis for many common simultaneous equations problems.</p>
+<p><b>3.2 Simultaneous Equations by Graphing</b></p>
+<p>Consider the equation y = 2
+p
+x. How many (x, y) pairs are there that satisfy this equation? Answer: (0, 0),
+(1, 2), (4, 4), and (9, 6) are all solutions; and there is an infinite number of other solutions. (And don’t
+forget non-integer solutions, such as (, 1)!)</p>
+<p>Now, consider the equation y = x + 1/
+2 . How many pairs satisfy this equation? Once again, an infinite
+number. Most equations that relate two variables have an infinite number of solutions.</p>
+<p>To consider these two equations “simultaneously” is to ask the question: what (x, y) pairs make both
+equations true? To express the same question in terms of functions: what values can you hand the functions
+2
+p
+x and x + 1/
+2 that will make these two functions produce the same answer?</p>
+<p>PICTURE</p>
+
+<p>At first glance, it is not obvious how to approach such a question– it is not even obvious how many answers
+there will be.</p>
+<p>One way to answer such a question is by graphing. Remember, the graph of y = 2
+p
+x is the set of all points
+that satisfy that relationship; and the graph of y = x + 1
+2 is the set of all points that satisfy that relationship.
+So the intersection(s) of these two graphs is the set of all points that satisfy both relationships.</p>
+<p>How can we graph these two? The second one is easy: it is a line, already in y = mx + b format. The
+y-intercept is 1
+2 and the slope is 1. We can graph the first equation by plotting points; or, if you happen to
+know what the graph of y =
+p
+x looks like, you can stretch the graph vertically to get y = 2
+p
+x, since all
+the y-values will double. Either way, you wind up with something like this:</p>
+<p>GRAPH</p>
+
+<p>We can see that there are two points of intersection. One occurs when x is barely greater than 0 (say, x = 0.1),
+and the other occurs at approximately x = 3. There will be no more points of intersection after this, because
+the line will rise faster than the curve.</p>
+<p>Exercise 3.2.1</p>
+<p>y = 2
+p
+x</br>
+y = x + 12</p>
+<p>Graphing has three distinct advantages as a method for solving simultaneous equations.</p>
+<p>1. It works on any type of equations.</p>
+<p>2. It tells you how many solutions there are, as well as what the solutions are.</p>
+<p>3. It can help give you an intuitive feel for why the solutions came out the way they did.</p>
+<p>However, graphing also has two disadvantages.</p>
+<p>1. It is time-consuming.</p>
+<p>2. It often yields solutions that are approximate, not exact—because you find the solutions by simply
+“eyeballing” the graph to see where the two curves meet.</p>
+<p>For instance, if you plug the number 3 into both of these functions, will you get the same answer?</p>
+<p>3 ! 2
+p
+x ! 2
+p
+3  3.46</br>
+3 ! x + 12
+! 3.5<p>
+<p>Pretty close! Similarly, 2
+p
+.1  0.632, which is quite close to 0.6. But if we want more exact answers, we will
+need to draw a much more exact graph, which becomes very time-consuming. (Rounded to three decimal
+places, the actual answers are 0.086 and 2.914.)</p>
+<p>For more exact answers, we use analytic methods. Two such methods will be discussed in this chapter:
+substitution and elimination. A third method will be discussed in the section on Matrices.</p>
+
+<p><b>3.3 Substitution</b></p>
+<p>Here is the algorithm for substitution.</p>
+<p>1. Solve one of the equations for one variable.</p>
+<p>2. Plug this variable into the other equation.</p>
+<p>3. Solve the second equation, which now has only one variable.</p>
+<p>4. Finally, use the equation you found in step (1) to find the other variable.</p>
+<p>Example 3.1: Solving Simultaneous Equations by Substitution</p>
+<p>3x + 4y = 1</br>
+2x ?? y = 8</p>
+<p>1. The easiest variable to solve for here is the y in the second equation.</p>
+<p>- ??y = ??2x + 8</br>
+- y = 2x ?? 8</p>
+<p>2. Now, we plug that into the other equation:</p>
+<p>- 3x + 4 (2x ?? 8) = 1</p>
+<p>3. We now have an equation with only x in it, so we can solve for x.</p>
+<p>- 3x + 8x ?? 32 = 1</br>
+- 11x = 33</br>
+- x = 3</p>
+<p>4. Finally, we take the equation from step (1), y = 2x ?? 8, and use it to find y.</p>
+<p>- y = 2 (3) ?? 8 = ??2</p>
+<p>So (3,??2) is the solution. You can confirm this by plugging this pair into both of the original
+equations.</p>
+<p>Why does substitution work?</p>
+<p>We found in the first step that y = 2x ?? 8. This means that y and 2x ?? 8 are equal in the sense that we
+discussed in the first chapter on functions—they will always be the same number, in these equations—they
+are the same. This gives us permission to simply replace one with the other, which is what we do in the
+second (“substitution”) step.</p>
+<p><b>3.4 Elimination</b></p>
+<p>Here is the algorithm for elimination.</p>
+<p>1. Multiply one equation (or in some cases both) by some number, so that the two equations have the
+same coefficient for one of the variables.</p>
+<p>2. Add or subtract the two equations to make that variable go away.</p>
+<p>3. Solve the resulting equation, which now has only one variable.</p>
+<p>4. Finally, plug back in to find the other variable.</p>
+<p>Example 3.2: Solving Simultaneous Equations by Elimination</p>
+<p>3x + 4y = 1</br>
+2x ?? y = 8</p>
+<p>1 - The first question is: how do we get one of these variables to have the same coefficient in
+both equations? To get the x coefficients to be the same, we would have to multiply the
+top equation by 2 and the bottom by 3. It is much easier with y; if we simply multiply
+the bottom equation by 4, then the two y values will both be multiplied by 4.</p>
+<p>- 3x + 4y = 1</br>
+- 8x ?? 4y = 32</p>
+<p>2 - Now we either add or subtract the two equations. In this case, we have 4y on top, and
+??4y on the bottom; so if we add them, they will cancel out. (If the bottom had a +4y
+we would have to subtract the two equations to get the " y"s to cancel.)</p>
+<p>- 11x + 0y = 33</p>
+<p>3-4 - Once again, we are left with only one variable. We can solve this equation to find that
+x = 3 and then plug back in to either of the original equations to find y = ??2 as before.</p>
+<p>Why does elimination work?</p>
+<p>As you know, you are always allowed to do the same thing to both sides of an equation. If an equation is
+true, it will still be true if you add 4 to both sides, multiply both sides by 6, or take the square root of both
+sides.</p>
+<p>Now—consider, in the second step above, what we did to the equation 3x + 4y = 1. We added something
+to both sides of this equation. What did we add? On the left, we added 8x ?? 4y; on the right, we added 32.
+It seems that we have done something different to the two sides.</p>
+<p>However, the second equation gives us a guarantee that these two quantities, 8x ??4y and 32, are in fact the
+same as each other. So by adding 8x ?? 4y to the left, and 32 to the right, we really have done exactly the
+same thing to both sides of the equation 3x + 4y = 1.</p>
+<p><b>3.5 Special Cases</b></p>
+<p>Consider the two equations:</p>
+<p>2x + 3y = 8 (3.1) </br>
+4x + 6y = 3 (3.2)</p>
+<p>Suppose we attempt to solve these two equations by elimination. So, we double the first equation and
+subtract, and the result is:</p>
+<p>4x + 6y = 16</br>
+4x + 6y = 3</br>
+0 = 13
+(3.3)</p>
+<p>Hey, what happened? 0 does not equal 13, no matter what x is. Mathematically, we see that these two
+equations have no simultaneous solution. You asked the question “When will both of these equations be
+true?” And the math answered, “Hey, buddy, not until 0 equals 13.”</p>
+<p>No solution.</p>
+
+<p>Now, consider these equations:</p>
+<p>2x + 3y = 8</br>
+4x + 6y = 16
+(3.4)</p>
+<p>Once again, we attempt elimination, but the result is different:</p>
+<p>2x + 3y = 8</br>
+4x + 6y = 16</br>
+0 = 0
+(3.5)</p>
+<p>What happened that time? 0 = 0 no matter what x is. Instead of an equation that is always false, we have
+an equation that is always true. Does that mean these equations work for any x and y? Clearly not: for
+instance, (1, 1) does not make either equation true. What this means is that the two equations are the same:
+any pair that solves one will also solve the other. There is an infinite number of solutions.</p>
+<p>Infinite number of solutions.</p>
+<p>All of this is much easier to understand graphically! Remember that one way to solve simultaneous equations
+is by graphing them and looking for the intersection. In the first case, we see that original equations
+represented two parallel lines. There is no point of intersection, so there is no simultaneous equation.</p>
+<p>GRAPH</p>
+<p>In the second case, we see that the original equations represented the same line, in two different forms.
+Any point on the line is a solution to both equations.</p>
+<p>GRAPH</p>
+
+<p>GENERAL RULE: If you solve an equation and get a mathematical impossibility such as 0 = 13
+, there is no solution. If you get a mathematical tautology such as 0 = 0 , there is an infinite
+number of solutions.</p>
+
+
+
+
+
+
+</body>
+</html> 

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
+Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
+Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 77-83-->
+
+
+<html>
+<head>
+<title>MAT-102: 2B-Simultaneous Equations</title>
+<style>
+table, td
+{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+table.center
+{
+  margin-left:auto;
+  margin-right:auto;
+}
+</style>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+<body>
+<H1>MAT-102: 2B-Simultaneous Equations</H1>
+
+<b>Objective:</b>
+<ul>
+  <li>Solve two simultaneous linear equations graphically, by substitution, and by elimination.</li>
+</ul>
+
+<p>Consider the equation $y = 2\sqrt{x}$. How many $(x, y)$ pairs are there that satisfy this equation?
+Answer: $(0, 0)$, $(1, 2)$, $(4, 4)$, and $(9, 6)$ are all solutions; and there is an infinite number of other
+solutions. (And don’t forget non-integer solutions, such as $(\frac{1}{4}, 1)$!)</p>
+<p>Now, consider the equation $y = x + \frac{1}{2}$ . How many pairs satisfy this equation? Once again,
+an infinite number. Most equations that relate two variables have an infinite number of solutions.</p>
+<p>To consider these two equations “simultaneously” is to ask the question:
+<center><b>What $(x, y)$ pairs make both equations true?</b> </center>
+</br>
+To express the same question in terms of functions: What values can you hand the functions
+$2\sqrt{x}$ and $x + \frac{1}{2}$ that will make these two functions produce the same answer?</p>
+
+<p><center><img src="set2B-Simultaneous_Equations_00.png" alt=""><p align="center"></center></p>
+
+<H2>$\S$2B.1 Simultaneous Equations by Graphing</H2>
+<p>At first glance, it is not obvious how to approach such a question– it is not even obvious how many answers
+there will be.</p>
+<p>One way to answer such a question is by graphing. Remember, the graph of $y = 2\sqrt{x}$ is the set
+of all points that satisfy that relationship; and the graph of $y = x + \frac{1}{2}$ is the set of all points that
+satisfy that relationship.  So the intersection(s) of these two graphs is the set of all points that satisfy both
+relationships.</p>
+<p>How can we graph these two? The second one is easy: it is a line, already in $y = mx + b$ format. The
+$y$-intercept is $\frac{1}{2}$ and the slope is $1$. We can graph the first equation by plotting points; or,
+if you happen to know what the graph of $y = \sqrt{x}$ looks like, you can stretch the graph vertically to
+get $y = 2\sqrt{x}$, since all the $y$-values will double. Either way, you wind up with something like this:</p>
+
+<table>
+<tr>
+  <td><img src="set2B-Simultaneous_Equations_01.png"></td>
+  <td>We can see that there are two points of intersection. </br>
+  One occurs when $x$ is barely greater than $0$ (say, $x = 0.1$), </br>
+  and the other occurs at approximately $x = 3$. </br></br>
+
+  There will be no more points of
+intersection after this, because the line will rise faster than the curve.</td>
+
+</tr>
+</table>
+
+
+<p></p>
+
+<p>Graphing has three distinct advantages as a method for solving simultaneous equations.
+<ol>
+<li> It works on any type of equations.</li>
+<li> It tells you how many solutions there are, as well as what the solutions are.</li>
+<li> It can help give you an intuitive feel for why the solutions came out the way they did.</li>
+</ol>
+
+However, graphing also has two disadvantages.
+
+<ol>
+<li> It is time-consuming.</li>
+<li> It often yields solutions that are approximate, not exact—because you find the solutions by simply
+“eyeballing” the graph to see where the two curves meet.</li>
+</ol>
+Let's consider the two equations from the graph above:
+$$y = 2\sqrt{x}$$
+$$y = x + \frac{1}{2}$$
+Taking our estimated solution of $3$, if you plug the number $3$ into both of these functions, will you get the same answer?
+$$3 \rightarrow 2\sqrt{x} \rightarrow 2\sqrt{3} \approx 3.46$$
+$$3 \rightarrow x + \frac{1}{2} \rightarrow 3.5$$
+Pretty close! Similarly, $2\sqrt{.1} \approx 0.632$, which is quite close to $.1+\frac{1}{2} = 0.6$. But if we want more
+exact answers, we will need to draw a much more exact graph, which becomes very time-consuming.</p>
+<p>For more exact answers, we use analytic methods. Two such methods will be discussed in this chapter:
+substitution and elimination.</p>
+
+<H2>$\S$2B.2 Solving by Substitution</H2>
+<p>Here is the algorithm for substitution.
+<ol>
+  <li> Solve one of the equations for one variable.</li>
+  <li> Substitute the expression for the variable in the other equation.</li>
+  <li>Solve the second equation, which now has only one variable.</li>
+  <li>Finally, use the equation you found in step (1) to find the other variable.</li>
+</ol>
+</p>
+
+<p><b>Example 2B-1: Solving Simultaneous Equations by Substitution</b>
+$$3x + 4y = 1$$
+$$2x - y = 8$$
+</p>
+<p>1. The easiest variable to solve for here is the y in the second equation.
+$$-y = -2x + 8$$
+$$\color{red}{y = 2x - 8}$$</p>
+<p>2. Now, we plug that into the other equation:
+$$3x + 4 (2x - 8) = 1$$</p>
+<p>3. We now have an equation with only $x$ in it, so we can solve for $x$.
+$$3x + 8x - 32 = 1$$
+$$11x = 33$$
+$$x = 3$$</p>
+<p>4. Finally, we take the equation from step 1, $\color{red}{y = 2x - 8}$, and use it to find $y$.
+$$y = 2 (3) - 8 = -2$$
+So $(3,-2)$ is the solution. You can confirm this by plugging this point into both of the original
+equations, and getting true statements (or two true equations).</p>
+<p>Why does substitution work?</p>
+<p>We found in the first step that $y = 2x - 8$. This means that $y$ and $2x - 8$ are equal in the
+sense that we discussed in the first chapter on functions—they will always be the same number, in
+these equations—they are the same. This gives us permission to simply replace one with the other,
+which is what we do in the second (“substitution”) step.</p>
+
+<H2>$\S$2B.3 Solving by Elimination</H2>
+Here is the algorithm for elimination.
+
+<ol>
+  <li>Multiply one equation (or in some cases both) by some number, so that the two equations have the
+same coefficient for one of the variables.</li>
+  <li>Add or subtract the two equations to make that variable go away.</li>
+  <li>Solve the resulting equation, which now has only one variable.</li>
+  <li>Finally, plug back in to find the other variable.</li>
+</ol>
+
+<p><b>Example 2B-2: Solving Simultaneous Equations by Elimination</b>
+$$3x + 4y = 1$$
+$$2x - y = 8$$</p>
+<p>1 - The first question is: how do we get one of these variables to have the same coefficient in
+both equations? To get the $x$ coefficients to be the same, we would have to multiply the
+top equation by $2$ and the bottom by $3$. It is much easier with $y$; if we simply multiply
+the bottom equation by $4$, then the two $y$ values will both be multiplied by $4$.
+$$3x + 4y = 1$$
+$$8x - 4y = 32$$</p>
+<p>2 - Now we either add or subtract the two equations. In this case, we have $4y$ on top, and
+$-4y$ on the bottom; so if we add them, they will add to zero. (If the bottom had a $+4y$
+we would have to subtract the two equations to eliminate the $y$'s.)
+$$3x + 4y = 1$$
+$$+\underline{(8x - 4y = 32)}$$
+$$11x + 0y = 33$$</p>
+<p>3-4 - Once again, we are left with only one variable: $11x = 33.$ We can solve this equation to find that
+$x = 3$ and then plug back in to either of the original equations to find $y = -2$ as before.</p>
+<p>Why does elimination work?</p>
+<p>As you know, you are always allowed to do the same thing to both sides of an equation. If an equation is
+true, it will still be true if you add $4$ to both sides, multiply both sides by $6$, or take the square root of both
+sides.</p>
+<p>Now—consider, in the second step above, what we did to the equation $3x + 4y = 1$. We added something
+to both sides of this equation. What did we add? On the left, we added $8x - 4y$; on the right, we added $32$.
+It seems that we have done something different to the two sides.</p>
+<p>However, the second equation gives us a guarantee that these two quantities, $8x-4y$ and $32$, are in fact the
+same as each other. So by adding $8x - 4y$ to the left, and $32$ to the right, we really have done exactly the
+same thing to both sides of the equation $3x + 4y = 1$.</p>
+<H2>$\S$2B.4 Special Cases</H2>
+
+<p><b>Example 2B-3:</b>
+Consider the two equations:
+$$2x + 3y = 8$$
+$$4x + 6y = -3$$
+Suppose we attempt to solve these two equations by elimination. One approach is to multiply the first equation by $2$ and
+subtract the second equation. The result is:
+$$4x + 6y = 16$$
+$$-(\underline{4x + 6y = -3})$$
+$$0 = 19$$
+Hey, what happened? $0$ does not equal $19$, no matter what $x$ is. Mathematically, we see that these two
+equations have no simultaneous solution. You asked the question “When will both of these equations be
+true?” And the math answered, “Hey, buddy, not until 0 equals $19$.” So our conclusion must be: <b>No solution</b>.</p>
+<p>
+What happens in this situation if we had tried to solve by the method of substitution?
+</p>
+<p>
+<p><b>Example 2B-4:</b>
+Again consider the equations:
+$$2x + 3y = 8$$
+$$4x + 6y = -3$$
+Let's solve the first equation for $x$:
+         $$ \begin{align}
+               2x + 3y & = 8\\
+                     2x & = 8 - 3y\\
+                       x & = 4 - \frac{3}{2} y \\
+          \end{align}$$
+Substituting the expression for $x$ into the second equation:
+         $$ \begin{align}
+               4(4 - \frac{3}{2} y) + 6y & = -3 & \\
+                                  16 - 6y + 6y & = -3 & \\
+                                                16  & = -3 & \mbox{It happened again!!!}\\
+          \end{align}$$
+
+<p>Even though the numbers are different between the
+two methods, our conclusion must remain the same: <b>No solution</b>.</p>
+</p>
+
+
+
+<p><b>Example 2B-5:</b> Now, consider these equations:
+$$2x + 3y = 8$$
+$$4x + 6y = 16$$
+Once again, we attempt to solve the system by elimination, but the result is different. First multiply the first equation by $2$:
+         $$ \begin{align}
+            2(2x + 3y & = 8) \\
+            4x + 6y  &= 16\\
+          \end{align}$$
+Subtract the second from the first:
+         $$ \begin{align}
+                    4x + 6y & = 16 \\
+-\underline{(4x + 6y} & \underline{= 16)}\\
+                             0 & = 0
+          \end{align}$$
+What happened that time? $0 = 0$ no matter what $x$ is. Instead of an equation that is always false, we have
+an equation that is always true. Does that mean these equations work for any $x$ and $y$? Clearly not: for
+instance, $(1, 1)$ does not make either equation true. What this means is that the two equations are the same:
+Any pair that solves one will also solve the other. There are an infinite number of solutions, but not all points are
+solutions.
+<p>
+To solve the system we need to state what values <b>are</b> solutions. These equations are the same line and its slope-intercept form is:
+         $$ \begin{align}
+               2x + 3y & = 8\\
+                     3y & = -2x + 8 \\
+                       y & = -\frac{2}{3} x + \frac{8}{3} \\
+          \end{align}$$
+Any point that is a solution to the line's equation is a solution for the system. Now, $x$ may be any value, since any
+value of $x$ may be substituted into the equation for a line--remember, a line's domain is all real numbers. The $y$-values
+are calculated by $y = -\frac{2}{3} x + \frac{8}{3}.$
+</br>
+ So, $(-2, -\frac{2}{3}(-2) + \frac{8}{3}) = (2,4)$ is a solution as is $(1, -\frac{2}{3}(1) + \frac{8}{3}) = (1, 2).$
+</br>
+In conclusion, we found that there are many solutions to this system of equations, but they have to look like $(x, -\frac{2}{3} x + \frac{8}{3}).$
+</p>
+
+
+</p>
+<p>All of this is much easier to understand graphically! Remember that one way to solve simultaneous equations
+is by graphing them and looking for the intersection.
+</p>
+<p>
+<b>Example 2B-6:</b> Recall <b>Examples 2B-3</b> and <b>2B-4</b>.  We found no solution to the system
+$$2x + 3y = 8$$
+$$4x + 6y = -3$$
+<table>
+<tr>
+  <td><img src="set2B-Simultaneous_Equations_02.png"></td>
+  <td> In this case, we see the original equations </br>
+represented as two parallel lines. There is no point of intersection, </br>
+so there is no simultaneous solution. </br></br>
+</td>
+
+</tr>
+</table>
+
+
+
+<b>Example 2B-7:</b>  Recall <b>Example 2B-5</b>.  We found many solutions to the system
+$$2x + 3y = 8$$
+$$4x + 6y = 16$$
+
+<table>
+<tr>
+  <td><img src="set2B-Simultaneous_Equations_03.png"></td>
+  <td> In this case, we see that the original equations represented </br>
+  the same line, in two different forms. </br>
+Any point on the line is a solution to both equations. </br></br>
+</td>
+
+</tr>
+</table>
+
+
+<p>GENERAL RULE FOR THE SPECIAL CASES: If you solve an equation and get a mathematical impossibility such as $0 = 13$, there
+is no solution. If you get a mathematical tautology such as $0 = 0$, there are an infinite number of solutions and you should find an
+expression for the solutions in terms of $x$.  For example, $\left(x, \frac{2}{3}x+\frac{8}{3} \right)$,  where the $y$ coordinate is replaced by $mx+b$, the equation for the line.  Remember $mx+b$ equals $y$.  When you express $y$ in terms of $x$, someone can plug in any value for the $x$ coordinate and determine the corresponding $y$ coordinate on the line. </p>
+
+</body>
+</html> 

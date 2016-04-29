@@ -1,0 +1,1310 @@
+﻿<!DOCTYPE html>
+<!-- Adapted from: College Algebra
+Version bc
+Corrected Edition
+by
+Carl Stitz, Ph.D. Je Zeager, Ph.D.
+Lakeland Community College Lorain County Community College
+July 4, 2013 pdf generated January 26, 2015,  pages 1-25-->
+
+
+<html>
+<head>
+<title>MAT-102: 00-Preliminaries</title>
+<link href="M102webwork.css" rel="stylesheet" type="text/css">
+<style>
+table, td
+{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+table.center
+{
+  margin-left:auto;
+  margin-right:auto;
+}
+</style>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+<body>
+<H1>00-Preliminaries</H1>
+<p>
+<h3>Objectives:</h3> Demonstrate proficiency with:
+<ul>
+  <li>Inequalities and interval notation</li>
+  <li>Cartesian coordinate system.</li>
+  <li>Mathematical expressions with variables.</li>
+</ul>
+</p>
+<!--  Consider adding these Objectives later:
+  <li>Fractions and decimals.</li>
+  <li>Exponent properties. </li>
+  -->
+
+<H2>Sets of numbers</H2>
+<p>
+While we would like nothing more than to delve quickly and deeply into the sheer excitement that is Functions, experience
+ has taught us that a brief refresher on some basic notions is welcome, if not completely necessary, at this stage.
+ To that end, we present a brief summary of 'set theory' and some of the associated vocabulary and notations we
+ use in the text. Like all good Math 'books', we begin with a definition.
+
+<p>
+<b>Definition 00-1:</b> A <b>set</b> is a well-defined collection of objects which are called the 'elements' of
+the set. Here, `well-defined' means that it is possible to determine if something belongs to the
+collection or not, without prejudice.
+</p>
+
+For example, the collection of letters that make up the word "coyote" is well-defined and is a set,
+but the collection of the worst pizza places in the world is not well-defined, and so is not a set.
+In general, there are three ways to describe sets. They are
+</p>
+
+<h3>Ways to Describe Sets</h3>
+<ol>
+<li> <b>The Verbal Method:</b> Use a sentence to define a set.</li>
+<li> <b>The Roster Method:</b> Begin with a left brace '$\{$', list each element of the set only once
+and then end with a right brace `$\}$'.</li>
+<li> <b>The Set-Builder Method:</b> A combination of the verbal and roster methods using a
+"dummy variable" such as $x$.</li>
+</ol>
+</p>
+<p>
+<h3>Example 00-1: Describing sets</h3>
+<ul>
+<li> For example, let $S$ be the set described verbally as: <i>The set of letters that make up the word "coyote".</i></li>
+<li> A roster description of $S$ would be $\{c,o,y,t,e\}$. Note that we listed '$o$' only once, even though it
+appears twice in "coyote".  Also, the order of the elements doesn't matter, so $\{t,e,y,o,c\}$ is also
+a roster description of $S$.</li>
+<li>  A set-builder description of $S$ is:
+$\{x \; | \; x$ is a letter in the word "coyote"$\}$.  The way to read this is: "The set of elements $x$ such that $x$ is a
+letter in the word "coyote".  </li>
+</ul>
+</p>
+<p>
+In each of the above cases, we may use the familiar equals sign '$=$' and write $S = \{c,o,t,e,y\}$ or
+$S = \{x \; | \; x$ is a letter in the word "coyote"$\}$. Clearly $t$ is in $S$ and $q$ is not in $S$.
+<!-- We express these sentiments mathematically by writing $t \in S$ and $q \notin S.$-->
+ Throughout your mathematical upbringing, you have encountered several famous sets of numbers.
+ They are listed below.
+</p>
+
+<h3>Sets of Numbers</h3>
+<ol>
+<li> The Empty Set: $\emptyset = \{ \}$. This is the set with no elements. Like the number
+      $0,$ it plays a vital role in mathematics. <tt>WeBWorK</tt> will understand either empty curly braces <tt> $\{\}$</tt> or <tt>NONE</tt>.</li>
+<li> The Natural Numbers: $\mathbb{N} = {1, 2, 3, \dots }$ The periods of ellipsis here
+       indicate that the natural numbers contain $1$, $2$, $3$, `and so forth.</li>
+<li> The Whole Numbers: $\mathbb{W} = {0, 1, 2, \cdots }$</li>
+<li> The Integers: $\mathbb{Z} = {\cdots ,-3, -2, -1, 0, 1, 2, 3, \cdots}$</li>
+<li> The Rational Numbers: $\mathbb{Q} = \{\frac{a}{b}\; |\; a  \mbox{ and } b \mbox{ are integers }.\}$
+       Rational numbers are the ratios of integers (provided the denominator is not zero!) It turns out that
+       another way to describe the rational numbers is:
+       $\mathbb{Q} = \{x \; | \; x \mbox{ possesses a repeating or terminating decimal representation }\}.$</li>
+<li> The Real Numbers: $\mathbb{R} = \{ x \; | \; x \mbox{ possesses a decimal representation }\}.$</li>
+<li> The Irrational Numbers: $\mathbb{P} = \{ x \; | \; x \mbox{ is a non-rational real number }\}.$ Said another way,
+         an irrational number is a decimal which neither repeats nor terminates.c</li>
+<li> The Complex Numbers: $\mathbb{C} = \{ a + bi \; | \; a,b \mbox { are in } \mathbb{R} \mbox{ and } i = \sqrt{-1}\}.$
+        Despite their importance, complex numbers are not used in this course.</li>
+</ol>
+
+<p>
+It is important to note that every natural number is a whole number, which, in turn, is an integer.
+Each integer is a rational number (taking $b = 1$ in the above definition for $\mathbb{Q}$ produces integers) and the
+rational numbers are all real numbers, since they possess decimal representations.
+For the most part, we will focus on sets whose elements come from the real numbers $\mathbb{R}$.
+</p>
+<h2>Interval Notation</h2>
+<p>
+Recall that we may visualize $\mathbb{R}$ as a line. Segments of this line are called intervals of numbers.
+Below is a summary of the so-called interval notation associated with given sets of numbers. For
+intervals with finite endpoints, we list the left endpoint, then the right endpoint. We use square
+brackets, `$[$' or `$]$', if the endpoint is included in the interval and use a filled-in or `closed' dot, $\bullet$, to
+indicate membership in the interval. Otherwise, we use parentheses, `$($' or `$)$' and an `open' circle, $\circ$, to
+indicate that the endpoint is not part of the set. If the interval does not have finite endpoints, we
+use the symbols $-\infty$ to indicate that the interval extends indefinitely to the left and $\infty$ to indicate
+that the interval extends indefinitely to the right. Since infinity is a concept, and not a number,
+we always use parentheses when using these symbols in interval notation, and use an appropriate
+arrow to indicate that the interval extends indefinitely in one (or both) directions.
+</p>
+<p>
+We will usually abuse the notation when we are considering intervals as sets of numbers.  Instead of using a complete form of
+ set-builder notation, we will abbreviate to just the inequality: $x>2$ as a shortened from of $\{x \; |\; x>2\}.$
+ With this in mind, let $a$ and $b$ be real numbers with $a < b$.
+</p>
+
+<table align="center">
+  <tr>
+    <td style="text-align:center">Set of Real Numbers</td>
+    <td style="text-align:center">Interval Notation</td>
+    <td style="text-align:center" >Region on the Real Number Line</td>
+  </tr>
+  <tr>
+    <td style="text-align:center">$a < x < b$.</td>
+   <td style="text-align:center"> $(a, b)$</td>
+    <td style="text-align:center"><img src="set00-Preliminaries_01.png" alt=""></td>
+  </tr>
+  <tr>
+    <td style="text-align:center">$a \leq x < b$.</td>
+   <td style="text-align:center"> $[a, b)$</td>
+    <td style="text-align:center"><img src="set00-Preliminaries_02.png" alt=""></td>
+  </tr>
+  <tr>
+    <td style="text-align:center">$a < x \leq b$.</td>
+   <td style="text-align:center"> $(a, b]$</td>
+    <td style="text-align:center"><img src="set00-Preliminaries_03.png" alt=""></td>
+  </tr>
+  <tr>
+    <td style="text-align:center">$a \leq x \leq b$.</td>
+   <td style="text-align:center"> $[a, b]$</td>
+    <td style="text-align:center"><img src="set00-Preliminaries_04.png" alt=""></td>
+  </tr>
+    <tr>
+    <td style="text-align:center">$x < b$.</td>
+   <td style="text-align:center"> $(-\infty,b)$</td>
+    <td style="text-align:center"><img src="set00-Preliminaries_05.png" alt=""></td>
+  </tr>
+    <tr>
+    <td style="text-align:center">$x \leq b$.</td>
+   <td style="text-align:center"> $(-\infty,b]$</td>
+    <td style="text-align:center"><img src="set00-Preliminaries_06.png" alt=""></td>
+  </tr>
+    <tr>
+    <td style="text-align:center">$a < x$.</td>
+   <td style="text-align:center"> $(a,\infty)$</td>
+    <td style="text-align:center"><img src="set00-Preliminaries_07.png" alt=""></td>
+  </tr>
+    <tr>
+    <td style="text-align:center">$a \leq x$.</td>
+   <td style="text-align:center"> $[a,\infty)$</td>
+    <td style="text-align:center"><img src="set00-Preliminaries_08.png" alt=""></td>
+  </tr>
+    <tr>
+    <td style="text-align:center">$a < x < b$.</td>
+   <td style="text-align:center"> $(a,b)$</td>
+    <td style="text-align:center"><img src="set00-Preliminaries_09.png" alt=""></td>
+  </tr>
+    <tr>
+    <td style="text-align:center">All Real numbers, $\mathbb{R}$.</td>
+   <td style="text-align:center"> $(-\infty,\infty)$</td>
+    <td style="text-align:center"><img src="set00-Preliminaries_10.png" alt=""></td>
+  </tr>
+</table></p>
+<div class="WWbox">
+In <tt>WeBWorK</tt>: Type
+   <ul>
+   <li> <b>inf </b> for \(\infty\) and <b>-inf </b> for \(-\infty\)</li>
+   <li> <b> >= </b> for $\geq$ and <b> <= </b> for $\leq$</li>
+   </ul></div>
+<p>
+Note that we could write the inequality $1 < x < 3$ as $3 > x > 1$ and still have the same set. An easy way to
+remember which inequality symbol to use is that the smaller (closed) end points to the smaller number and conversely
+the larger end (open end) is next to the larger value.  There is some evidence that the inequality sign started
+ont as a "distorted" equal sign with one end pinched together to denote the side with the smaller value.
+However it came about, the table below gives a few examples of the two notations.
+
+<h3>Example 00-2:</h3>
+
+<table align="center" >
+  <tr>
+    <td style="text-align:center">Set of Real Numbers</td>
+    <td style="text-align:center">Interval Notation</td>
+    <td style="text-align:center" >Region on the Real Number Line</td>
+  </tr>
+  <tr>
+    <td style="text-align:center">$1 \le x < 3$.</td>
+   <td style="text-align:center"> $[1, 3)$</td>
+    <td style="text-align:center"><img src="set00-Preliminaries_11.png" alt=""></td>
+  </tr>
+  <tr>
+    <td style="text-align:center">$4 \ge x \ge -1$.</td>
+   <td style="text-align:center"> $[-1, 4]$</td>
+    <td style="text-align:center"><img src="set00-Preliminaries_12.png" alt=""></td>
+  </tr>
+    <tr>
+    <td style="text-align:center">$x \le 5$.</td>
+   <td style="text-align:center"> $(-\infty, 5]$</td>
+    <td style="text-align:center"><img src="set00-Preliminaries_13.png" alt=""></td>
+  </tr>
+    <tr>
+    <td style="text-align:center">$x > -2$.</td>
+   <td style="text-align:center"> $(-2, \infty)$</td>
+    <td style="text-align:center"><img src="set00-Preliminaries_14.png" alt=""></td>
+  </tr>
+  </table></p>
+<p>
+We will often have occasion to combine sets. There are two basic ways to combine sets:
+intersection and union. We define both of these concepts below.</p>
+<p>
+<b>Definition 00-2:</b>  Suppose $A$ and $B$ are two sets. </br>
+ The intersection of $A$ and $B$: $A \cap B = \{ x \; | \;  x \mbox{ is in } A \mbox{ and }  x \mbox{ is in } B\}.$
+ </br>
+ The union of $A$ and $B$: $A \cup B = \{ x \; | \;  x \mbox{ is in } A \mbox{ or }  x \mbox{ is in } B \mbox{ (or both)}\}.$
+</p>
+Said differently, the intersection of two sets is the overlap of the two sets--the elements which the
+sets have in common. The union of two sets consists of the totality of the elements in each of the
+sets, collected together.
+
+<h3>Example 00-3:</h3> For $A = \{1, 2, 3\}$ and $B = \{2, 4, 6\},$ we have
+$A \cap B = \{ 2 \}$ and $A \cup B = \{1, 2, 3, 4, 6\}.$
+</p>
+<h3>Example 00-4:</h3> If $A = [-5, 3)$ and $B = (1, \infty),$ then we can find $A \cap B$ and
+$A \cup B$ graphically. First, here are the graphs of $A$ and $B$:
+
+<p><center><img src="set00-Preliminaries_15.png" alt=""><p align="center"></center></p>
+
+To find $A \cap B,$ we shade the overlap of the two and obtain $A \cap B = (1, 3).$
+
+<p><center><img src="set00-Preliminaries_15a.png" alt=""><p align="center"></center></p>
+
+To find $A \cup B,$ we shade each of $A$ and $B$ and describe the resulting shaded region
+to find $A \cup B = [-5, \infty).$
+
+<p><center><img src="set00-Preliminaries_15b.png" alt=""><p align="center"></center></p>
+
+Here are slightly more complicated situations where the set is in two separate pieces.
+
+<h3>Example 00-5:</h3> Express the following sets of numbers using interval notation:
+<table align="center" >
+  <tr>
+    <td style="text-align:center">Set of Real Numbers</td>
+    <td style="text-align:center">Interval Notation</td>
+    <td style="text-align:center" >Region on the Real Number Line</td>
+  </tr>
+  <tr>
+    <td style="text-align:center">$x \leq -2$ or $x \geq 2$</td>
+   <td style="text-align:center"> $(-\infty, -2] \cup [2, \infty)$</td>
+    <td style="text-align:center"><img src="set00-Preliminaries_16a.png" alt=""></td>
+  </tr>
+<tr>
+    <td style="text-align:center">$x \neq 3$</td>
+   <td style="text-align:center"> $(-\infty, 3) \cup (3, \infty)$</td>
+    <td style="text-align:center"><img src="set00-Preliminaries_16b.png" alt=""></td>
+  </tr>
+</table>
+</center></p>
+<div class="WWbox">
+In <tt>WeBWorK</tt>: Type
+   <ul>
+   <li> Upper case <b>U </b> for union \(\cup\)</li>
+   <li> <b> != </b> for $\neq$ </li>
+   </ul></div>
+</pr>
+
+<h2>The Cartesian Coordinate Plane</h2>
+
+<p>In order to visualize the pure excitement that is MAT-102, we need to unite Algebra and Geometry.
+Simply put, we must find a way to draw algebraic things. Let's start with possibly the
+greatest mathematical achievement of all time: the Cartesian Coordinate Plane. (Named in honor of the
+17th century philosopher, mathematician and scientist, Ren&eacute Decartes.)
+
+<p> Imagine two real number lines crossing at a right angle at $0$ as drawn below.  </p>
+
+<p><center><img src="set00-Preliminaries_17.png" alt=""><p align="center"></center></p>
+
+<p>The horizontal number line is usually called the $x$-axis while the vertical number line is usually
+called the y-axis. As with the usual number line, we imagine these axes extending off indefinitely
+in both directions. Having two number lines allows us to locate the positions of points off of the
+number lines as well as points on the lines themselves.</p>
+<p>For example, consider the point $P$ shown below. To use the numbers on the axes to label this
+point, we imagine dropping a vertical line from the $x$-axis to $P$ and extending a horizontal line from
+the $y$-axis to $P$. This process is sometimes called `projecting' the point $P$ to the $x$- (respectively
+$y$-) axis. We then describe the point $P$ using the ordered pair $(2,-4).$ The first number in the
+ordered pair is the $x$-coordinate and the second is the $y$-coordinate. Taken together, the ordered
+pair $(2, -4)$ give the location of the point $P$ with respect to the $x$ and $y$ axes.
+
+<p><center><img src="set00-Preliminaries_17a.png" alt=""><p align="center"></center></p>
+
+Notice that the order in the ordered pair is important--if we wish to plot the point $(-4, 2),$ we would move
+to the left $4$ units from the origin and then move upwards $2$ units.</p>
+
+<p><center><img src="set00-Preliminaries_17b.png" alt=""><p align="center"></center></p>
+
+<p>The axes divide the plane into four regions called <b>quadrants</b>. They are labeled Q1, Q2, Q3 and Q4 and proceed counterclockwise around the plane as shown in the graph below. Note that point $P$ is in quadrant 4 and $Q$ is in quadrant 2.</p>
+
+<p><center><img src="set00-Preliminaries_18.png" alt=""><p align="center"></center></p>
+
+<h2>Mathematical expressions</h2>
+
+<p>
+Before beginning the material in MAT-102, you should have be able to simplify basic mathematical expressions with variables
+and know how to solve an equation for a variable.  Here are a few examples for your review.
+</p>
+<h3>Example 00-6:</h3> Evaluate $2p + \dfrac{r^2}{3}$ for $p = -1$ and $r = 4$.
+Substitute the values for the variables and simplify:
+$$2(-1) + \frac{4^2}{3} = -2 + \frac{16}{3} = \frac{-6}{3} + \frac{16}{3} = \frac{10}{3}$$
+<p/>
+<h3>Example 00-7:</h3> Simplify: $3(2x+5) -4x$
+<br/> In this case you need to remove the parentheses by multiplying in the $3$ so that the like terms may be combined.
+$$3(2x+5) -4x$$
+$$6x+15-4x$$
+$$2x+15$$
+</p>
+<h3>Example 00-8:</h3> Solve for $x$: $\dfrac{x}{3} + 2 = \dfrac{x}{4}$
+<br/> There are many ways to start this problem.  If you don't like fractions you may "clear" the denominators
+by multiplying through both sides of the equation by $12$.  Then proceed to combine the $x$'s on one side.
+$$12\left(\frac{x}{3} + 2\right) = 12\left(\frac{x}{4}\right)$$
+$$12\left(\frac{x}{3}\right) + 12(2) = 3x$$
+$$4x + 24 = 3x$$
+$$4x + 24 - 3x = 3x-3x$$
+$$x + 24 = 0$$
+$$x = -24$$
+</p>
+<h3>Example 00-9:</h3> Solve for $C$: $S = C + rC$
+<br/> The equation must be rearranged so that $C$ is isolated. This can be done by factoring the right side and dividing by $1+r$:
+$$S = C + rC$$
+$$S = C(1 + r)$$
+$$\frac{S}{1+r} = C$$
+And we usually write this in the from: $C = \dfrac{S}{1+r}.$
+</p>
+<h2>Exponent Properties</h2>
+
+Problems with exponents can often be simplified using a few basic exponent properties. Exponents represent repeated multiplication. We will use this fact to discover the important properties.</p>
+
+<p><b>World View Note:</b> The word exponent comes from the Latin "expo" meaning out of and "ponere" meaning place. While there is some debate, it seems that the Babylonians living in Iraq were the first to do work with exponents (dating back to the 23rd century BC or earlier!)</p>
+
+<h3>Example 00-10:</h3>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 196 pg 177-->
+<br>
+
+<center>
+<table class = "center">
+ <tr>
+    <td align="right">$a^3a^2$</td>
+    <td>Expand exponents to multiplication problem</td>
+
+  </tr>
+  <tr>
+    <td align="right">$(aaa)(aa)$</td>
+    <td>Now we have $5$ $a$'s being multiplied together</td>
+
+  </tr>
+
+    <tr>
+    <td align="right">$a^5$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+</center> </p>
+<div class="WWbox">
+In <tt>WeBWorK</tt>: Type <b>x^n</b> for \(x^n\).
+</div>
+
+<p>A quicker method to arrive at our answer would have been to just add the exponents:
+
+$a^3 a^2=a^{3+2}=a^5$. This is known as the <b>product rule of exponents</b>: </p>
+
+<p><center><b>Product Rule of Exponents</b>: $a^m a^n=a^{m+n}$</center> </p>
+
+<p>The product rule of exponents can be used to simplify many problems. We will add the exponent on like variables. This is shown in the following examples: </p>
+
+<h3>Example 00-11:</h3>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 197 pg 177-->
+<br>
+
+<center>
+<table class = "center">
+ <tr>
+    <td align="right">$3^2\cdot 3^6\cdot 3$</td>
+    <td>Same base $(3)$, add the exponents $2+6+1$</td>
+
+  </tr>
+    <tr>
+    <td align="right">$3^9$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+</center> </p>
+
+
+<h3>Example 00-12:</h3>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 198 pg 177-->
+<br>
+
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">$2x^3 y^5 z \cdot 5x y^2 z^3$</td>
+    <td>Multiply $2\cdot 5$, add exponents on each of  $x, y$ and $z$</td>
+
+  </tr>
+  <tr>
+    <td align="right">$10x^4 y^7 z^4$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+
+</center> </p>
+
+<p>Rather than multiplying, we will now try to divide with exponents.</p>
+
+<h3>Example 00-13:</h3>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 199 pg 177-->
+<br>
+
+<center>
+<table class = "center">
+  <tr>
+    <td align="right">$\dfrac{a^5}{a^2}$</td>
+    <td>Expand exponents</td>
+
+  </tr>
+  <tr>
+    <td align="right">$\dfrac{aaaaa}{aa}$</td>
+    <td>Divide out (cancel) two of the $a$'s in both</br>
+        the numerator and denominator ($\frac{a}{a} = 1$)</td>
+
+  </tr>
+  <tr>
+    <td align="right">$aaa$</td>
+    <td>Convert to exponents</td>
+
+  </tr>
+  <tr>
+    <td align="right">$a^3$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+
+</center> </p>
+
+<p>A quicker method to arrive at the solution would have been to just subtract the exponents, $\dfrac{a^5}{ a^2} = a^{5-2}= a^3$. This is known as the <b>quotient rule of exponents</b>.
+</p> <p><b><center>Quotient Rule of Exponents:</b> $\frac{a^m}{ a^n} =a^{m-n}$</p></center>
+
+<p>The quotient rule of exponents can similarly be used to simplify exponent problems by subtracting exponents on like variables. This is shown in the following examples:</p>
+
+<h3>Example 00-14:</h3>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 200 pg 178-->
+<br>
+
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">$\dfrac{7^{13}}{7^5}$</td>
+    <td>Same base, subtract the exponents $13-5 = 8$</td>
+
+  </tr>
+  <tr>
+    <td align="right">$7^8$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+</center> </p>
+
+<h3>Example 00-15:</h3>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 201 pg 178-->
+<br>
+
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">$\dfrac{5a^3 b^5 c^2}{2ab^3 c}$</td>
+    <td>Subtract exponents on $a, b$ and $c$</td>
+
+  </tr>
+  <tr>
+    <td align="right">$\frac{5}{2} a^2 b^2 c$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+
+</center> </p>
+
+<p>A third property we will look at will have an exponent problem raised to a second exponent. This is investigated in the following example:</p>
+
+<h3>Example 00-16:</h3>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 202 pg 178-->
+<br>
+
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">$\left(a^2\right)^3$</td>
+    <td>This means we have $a^2$ three times--expand</td>
+
+  </tr>
+  <tr>
+    <td align="right">$a^2\cdot a^2 \cdot a^2$</td>
+    <td>Add exponents</td>
+
+  </tr>
+  <tr>
+    <td align="right">$a^6$</td>
+    <td>Our solution</td>
+
+  </tr>
+</table>
+
+</center> </p>
+
+
+
+<p>A quicker method to arrive at the solution would have been to just multiply the exponents, $(a^2)^3 = a^{2\cdot 3} = a^6$. This is known as the<b> power of a power rule of exponents</b> </p>
+
+<p><center><b>Power of a Power Rule of Exponents</b>: $(a^m)^n=a^{mn}$ </p></center>
+
+<p>This property is often combined with two other properties which we will investigate now. </p>
+
+
+<h3>Example 00-17:</h3>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 203 pg 178-->
+<br>
+
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">$(ab)^3$</td>
+    <td>This means we have $(ab)$ three times</td>
+
+  </tr>
+  <tr>
+    <td align="right">$(ab)(ab)(ab)$</td>
+    <td>The product of three $a$'s and three $b$'s can be written with exponents</td>
+
+  </tr>
+<tr>
+    <td align="right">$a^3 b^3$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+
+</center> </p>
+
+<p>A quicker method to arrive at the solution would have been to take the exponent of three and put it on each factor in parenthesis, $(ab)^3 = a^3b^3$. This is known as the <b>power of a product rule of exponents</b>:</p>
+
+<p><center><b>Power of a Product Rule of Exponents</b>: $(ab)^m=a^m b^m$</p></center>
+
+ <p>It is important to be careful to only use the power of a product rule with multiplication inside parenthesis. This property does NOT work if there is addition or subtraction inside the parentheses.</p>
+
+ <b>Warning</b>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Warning 204 pg 179-->
+<br>
+
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">$(a+b)^m\ne a^m+b^m$</td>
+    <td>These are NOT equal if $m\ne 1$, beware of this error!</td>
+
+  </tr>
+
+</table>
+
+</center> </p>
+
+<p>Another property that is very similar to the power of a product rule is considered next.</p>
+
+<h3>Example 00-18:</h3>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 205 pg 179-->
+<br>
+
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">$\left(\frac{a}{b} \right)^3$</td>
+    <td>This means we have the fraction three times</td>
+
+  </tr>
+  <tr>
+    <td align="right">$\left(\frac{a}{b} \right) \left(\frac{a}{b} \right) \left(\frac{a}{b} \right)$</td>
+    <td>Multiply fractions across the top and bottom, using exponents</td>
+
+  </tr>
+ <tr>
+    <td align="right">$\dfrac{a^3}{b^3}$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+
+</center> </p>
+
+
+<p>A quicker method to arrive at the solution would have been to put the exponent on every factor in both the numerator and denominator, $\left(\frac{a}{b} \right)^3=\frac{a^3}{b^3}$. This is known as the<b> power of a quotient rule of exponents</b>:</p>
+
+<p><b><center>Power of a Quotient Rule of Exponents</b>: $\left(\frac{a}{b} \right)^m=\frac{a^m}{b^m}$</p></center>
+
+<p>The power of a power, product and quotient rules are often used together to simplify expressions. This is shown in the following examples:</p>
+
+<h3>Example 00-19:</h3>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 206 pg 179-->
+<br>
+
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">$(x^3y z^2)^4$</td>
+    <td>Put the exponent of $4$ on each factor, multiplying powers</td>
+
+  </tr>
+  <tr>
+    <td align="right">$x^{12} y^4 z^8$</td>
+    <td>Our solution</td>
+
+  </tr>
+  </table>
+
+</center> </p>
+
+  <h3>Example 00-20:</h3>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 207 pg 180-->
+<br>
+
+<center>
+<table class = "center">
+  <tr>
+    <td align="right">$\left(\dfrac{a^3 b}{c^4 d^5} \right)^2$</td>
+    <td>Put the exponent of 2 on each factor, multiplying powers</td>
+
+  </tr>
+  <tr>
+    <td align="right">$\dfrac{a^6 b^2}{c^8d^{10}}$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+
+</center> </p>
+
+<p>As we multiply exponents its important to remember these properties apply to exponents, not bases. An expression such as $5^3$ does not mean we multiply $5$ by $3$, rather we multiply $5$ three times, $5 \cdot 5 \cdot 5 = 125$. This is shown in the next example.</p>
+
+  <h3>Example 00-21:</h3>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 208 pg 180-->
+<br>
+
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">$(4x^2 y^5)^3$</td>
+    <td>Put the exponent of $3$ on each factor, multiplying powers</td>
+
+  </tr>
+  <tr>
+    <td align="right">$4^3 x^6 y^{15}$</td>
+    <td>Evaluate $4^3=4\cdot 4\cdot 4$</td>
+
+  </tr>
+ <tr>
+    <td align="right">$64x^6 y^{15}$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+
+</center> </p>
+
+
+<p>In the previous example we did not put the $3$ on the $4$ and multiply to get $12$, this would have been incorrect. Never multiply a base by the exponent. These properties pertain to exponents only, not bases. </p>
+
+<p>In this lesson we have discussed $5$ different exponent properties. These rules are summarized in the following table: </p>
+
+<p><b><center>Rules of Exponents</b> </p></center>
+
+
+<p><center>
+
+<table class = "center" border="1">
+
+  <tr>
+    <td><b>Product Rule of Exponents</b></td>
+    <td>$a^m a^n=a^{m+n}$</td>
+
+  </tr>
+  <tr>
+    <td><b>Quotient Rule of Exponents</b></td>
+    <td>$\frac{a^m}{a^n} =a^{m-n}$</td>
+
+  </tr>
+  <tr>
+    <td><b>Power of a Power Rule of Exponents</b></td>
+    <td>$(a^m)^n=a^{mn}$</td>
+
+  </tr>
+  <tr>
+    <td><b>Power of a Product Rule of Exponents</b></td>
+    <td> $(ab)^m=a^m b^m$</td>
+
+  </tr>
+  <tr>
+    <td><b>Power of a Quotient Rule of Exponents</b></td>
+    <td>$\left(\frac{a}{b} \right)^m=\frac{a^m}{b^m}$</td>
+
+  </tr>
+</table>
+
+</center> </p>
+
+
+
+<p>These five properties are often mixed up in the same problem. Often there is a bit of flexibility as to which property is used first. However, order of operations still applies to a problem. For this reason it is our suggestion to simplify inside any parentheses first, then simplify any exponents (using power rules), and finally simplify any multiplication or division (using product and quotient rules). This is illustrated in the next few examples: </p>
+
+<h3>Example 00-22:</h3>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 209 pg 180-->
+<br>
+
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">$(4x^3 y \cdot 5x^4 y^2)^3$</td>
+    <td>In parenthesis simplify using Product Rule, add exponents</td>
+
+  </tr>
+  <tr>
+    <td align="right">$(20x^7 y^3)^3$</td>
+    <td>Apply the Power of a Product Rule, multiply exponents</td>
+
+  </tr>
+  <tr>
+    <td align="right">$20^3 x^{21} y^9$</td>
+    <td>Evaluate $20^3$</td>
+
+  </tr>
+  <tr>
+    <td align="right">$8000x^{21} y^9$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+
+</center> </p>
+
+<h3>Example 00-23:</h3>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 210 pg 181-->
+<br>
+
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">$7a^3(2a^4)^3$</td>
+    <td>Parenthesis are already simplified, next use Power Rule</td>
+
+  </tr>
+  <tr>
+    <td align="right">$7a^3(8a^{12})$</td>
+    <td>Using Product Rule, add exponents and multiply numbers</td>
+
+  </tr>
+<tr>
+    <td align="right">$56a^{15}$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+
+</center> </p>
+
+<h3>Example 00-24:</h3>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 211 pg 181-->
+<br>
+
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">$\dfrac{(3a^3 b)(10a^4 b^3)}{2a^4 b^2}$</td>
+    <td>Simplify numerator with Product Rule, adding exponents</td>
+
+  </tr>
+  <tr>
+    <td align="right">$\dfrac{30a^7 b^4}{2a^4 b^2}$</td>
+    <td>Now use the Quotient Rule, subtract exponents</td>
+
+  </tr>
+  <tr>
+    <td align="right">$15a^3 b^2$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+
+</center> </p>
+<!--
+<b>Example 3A-16:</b>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 212 pg 181
+<br>
+
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">$\dfrac{3m^8 n^{12}}{(m^2 n^3)^3}$</td>
+    <td>Use power rule in denominator</td>
+
+  </tr>
+  <tr>
+    <td>$\dfrac{3m^8 n^{12}}{m^6 n^9}$</td>
+    <td>Use quotient rule</td>
+
+  </tr>
+ <tr>
+    <td>$3m^2 n^3$</td>
+    <td>Our solution</td>
+
+  </tr>
+</table>
+
+</center> </p>
+
+<b>Example 3A-17:</b>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 213 pg 181
+<br>
+
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">$\left(\dfrac{3a b^2(2a^4 b^2)^3}{6a^5 b^7}\right)^2$</td>
+    <td>Simplify inside parenthesis first, using power rule in numerator</td>
+
+  </tr>
+  <tr>
+    <td align="right">$\left(\dfrac{3a b^2(8a^{12} b^6)}{6a^5 b^7}\right)^2$</td>
+    <td>Simplify numerator using product rule</td>
+
+  </tr>
+  <tr>
+    <td align="right">$\left(\dfrac{24a^{13} b^8)}{6a^5 b^7}\right)^2$</td>
+    <td>Simplify using the quotient rule</td>
+
+  </tr>
+  <tr>
+    <td align="right">$(4a^8 b)^2$</td>
+    <td>Now that the parenthesis are simplified, use the power rules</td>
+
+  </tr>
+<tr>
+    <td align="right">$16a^{16}b^2$</td>
+    <td>Our Solution</td>
+
+  </tr>
+
+</table>
+
+</center> </p> -->
+
+<p>Clearly these problems can quickly become quite involved. Remember to follow order of operations as a guide, simplify inside parenthesis first, then power rules, then product and quotient rules.</p>
+
+<h2>Negative Exponents</h2>
+
+<p>There are a few special exponent properties that deal with exponents that are not positive. The first is considered in the following example, which is worked out 2 different ways:</p>
+
+<h3>Example 00-25:</h3>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 214 pg 183-->
+<br>
+
+<center>
+<table class = "center">
+
+  <tr>
+  <td colspan="2" style ="width:50%" align ="center"><em><b>First Method</b></em></td>
+  <td colspan="2" style ="width:50%" align="center"><em><b>Second Method</b></em></td>
+
+  </tr>
+
+  <tr>
+    <td align="right" style ="width:25%">$\dfrac{a^3}{a^3}$</td>
+    <td style ="width:25%">Use the Quotient Rule, subtract exponents</td>
+
+    <td align="right" style ="width:25%">$\dfrac{a^3}{a^3}$</td>
+    <td style ="width:25%">Rewrite exponents as repeated multiplication</td>
+
+  </tr>
+  <tr>
+    <td align="right" style ="width:25%">$a^0$</td>
+    <td style ="width:25%">Our Solution</td>
+
+    <td align="right">$\dfrac{aaa}{aaa}$</td>
+    <td>Cancel out all the $a$'s</td>
+
+  </tr>
+ <tr>
+        <td></td>
+        <td></td>
+        <td align="right">$\frac{1}{1}=1$</td>
+    <td>Our Solution</td>
+
+
+  </tr>
+
+  <tr>
+    <td colspan="3">When we combine the two solutions we get:</td>
+
+  </tr>
+
+
+ <tr>
+        <td></td>
+    <td align="right">$a^0=1$</td>
+    <td>Our Final Result</td>
+
+  </tr>
+</table>
+
+</center> </p>
+
+<p>This final result is an important property known as the <b>Zero Power Rule of Exponents</b>:</p>
+
+<p><center><b>Zero Power Rule of Exponents</b>: $a^0=1$</p></center>
+
+<p>Any number or expression raised to the zero power will always be $1$. This is illustrated in the following example.</p>
+
+<h3>Example 00-26:</h3>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 215 pg 183-->
+<br>
+
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">$(3x^2)^0$</td>
+    <td>Apply the Zero Power Rule</td>
+
+  </tr>
+  <tr>
+    <td align="right">$1$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+
+</center> </p>
+
+<p>Another property we will consider here deals with negative exponents. Again we will solve the following example two ways.</p>
+
+<h3>Example 00-27:</h3>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 216 pg 184-->
+<br>
+
+<center>
+<table class = "center">
+
+ <tr>
+  <td colspan="2" style ="width:50%" align ="center"><em><b>First Method</b></em></td>
+  <td colspan="2" style ="width:50%" align="center"><em><b>Second Method</b></em></td>
+
+  </tr>
+
+  <tr>
+    <td align="right">$\dfrac{a^3}{a^5}$</td>
+    <td>Using the Quotient Rule, subtract exponents $3-5=-2$</td>
+
+    <td align="right">$\dfrac{a^3}{a^5}$</td>
+    <td>Rewrite exponents as repeated multiplication</td>
+
+  </tr>
+  <tr>
+    <td align="right">$a^{-2}$</td>
+    <td>Our Solution</td>
+
+    <td align="right">$\dfrac{aaa}{aaaaa}$</td>
+    <td>Reduce three $a$'s out of top and bottom</td>
+
+  </tr>
+ <tr>
+        <td></td>
+        <td></td>
+        <td align="right">$\dfrac{1}{aa}$</td>
+    <td>Simplify to exponents</td>
+
+
+  </tr>
+
+  <tr>
+        <td></td>
+        <td></td>
+        <td align="right">$\dfrac{1}{a^2}$</td>
+        <td>Our Solution</td>
+  </tr>
+
+  <tr>
+    <td colspan="3">When we combine the two solutions we get:</td>
+  </tr>
+
+ <tr>
+        <td></td>
+    <td align="right">$a^{-2}=\dfrac{1}{a^2}$</td>
+    <td>Our Final Result</td>
+
+  </tr>
+</table>
+
+</center> </p>
+
+<p>This example illustrates an important property of exponents. Negative exponents yield the reciprocal of the base. Once we take the reciprocal the exponent is now positive. Also, it is important to note a negative exponent does not mean the expression is negative, only that we need the reciprocal of the base.  The next example simplifies a fraction raised to a negative exponent.</p>
+
+<h3>Example 00-28:</h3>
+<!-- New one-->
+<br>
+
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">$\left(\dfrac{5}{3} \right)^{-2}$</td>
+    <td>Negative exponents yield the reciprocal of the base</td>
+
+  </tr>
+
+  <tr>
+    <td align="right">$\left(\dfrac{3}{5} \right)^2$</td>
+    <td>The reciprocal has a positive exponent, now power rule</td>
+
+  </tr>
+  <tr>
+    <td align="right">$\dfrac{3^2}{5^2}$</td>
+    <td>Evaluate</td>
+
+  </tr>
+  <tr>
+    <td align="right">$\dfrac{9}{25}$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+
+</center> </p>
+
+<p>Following are the rules of negative exponents: </p>
+
+<p><center>
+
+<table class = "center">
+
+  <tr>
+    <td><b>Rules of Negative Exponents</b>:</td>
+    <td>$a^{-m}=\dfrac{1}{a^m}$<br/><br/>$\dfrac{1}{a^{-m}}= a^m$<br/><br/>$\left( \dfrac{a}{b}\right)^{-m}=\dfrac{b^m}{a^m}$</td>
+
+  </tr>
+
+</table>
+
+</center> </p>
+
+
+<p>Negative exponents can be combined in several different ways. As a general rule if we think of our expression as a fraction, bases with negative exponents in the numerator must be moved to the denominator with a positive exponent.  Likewise, bases with negative exponents in the denominator need to be moved to the numerator. When the base with exponent moves, the exponent is now positive.
+
+<!--This is illustrated in the following example. </p>
+
+
+<b>Example 3A-21:</b>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 217 pg 184
+<br>
+
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">$\dfrac{a^3b^{-2}c}{2d^{-1}e^{-4}f^2}$</td>
+    <td>Negative exponents on $b, d$, and $e$ need to "flip"</td>
+
+  </tr>
+  <tr>
+    <td align="right">$\dfrac{a^3 c d e^4}{2 b^2 f^2}$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+
+</center> </p>
+
+
+<p>As we simplified our fraction we took special care to move the bases that had a negative exponent, but the expression itself did not become negative because of those exponents. Also, it is important to remember that exponents only effect what they are attached to. The $2$ in the denominator of the above example does not have an explicit exponent (which is an exponent of positive $1$), so it does not move to the numerator with the $d$. </p> -->
+
+<p>We now have the following nine properties of exponents. It is important that we are very familiar with all of them. </p>
+
+<center><p><b>Properties of Exponents</b> </p>
+
+<p>
+
+<table class = "center">
+
+  <tr>
+    <td>$a^m a^n=a^{m+n}$</td>
+    <td>$(ab)^m=a^m b^m$</td>
+    <td>$a^{-m}=\dfrac{1}{a^m}$</td>
+  </tr>
+  <tr>
+    <td>$\frac{a^m}{a^n} =a^{m-n}$</td>
+    <td>$\left(\frac{a}{b} \right)^m=\frac{a^m}{b^m}$</td>
+    <td>$\dfrac{1}{a^{-m}}= a^m$</td>
+  </tr>
+ <tr>
+    <td>$(a^m)^n=a^{mn}$</td>
+    <td>$a^0=1$</td>
+    <td>$\left( \dfrac{a}{b}\right)^{-m}=\dfrac{b^m}{a^m}$</td>
+  </tr>
+</table>
+
+</center> </p>
+
+
+<p><b>World View Note</b>: Nicolas Chuquet, the French mathematician of the 15th century wrote $12^{1\overline{m}}$ to indicate $12x^{-1}$. This was the first known use of the negative exponent.</p>
+
+<!--ADD A PROBLEM ABOUT FACTORING: GUESS AND CHECK METHOD, THEN ADD A FEW PROBLEMS TO THE WW SET-->
+
+<!--
+<p>Important Facts about the Cartesian Coordinate Plane</p>
+
+<p><center><table>
+  <tr>
+    <td>(a; b) and (c; d) represent the same point in the plane if and only if a = c and b = d.</td>
+
+  </tr>
+  <tr>
+    <td>(x; y) lies on the x-axis if and only if y = 0.</td>
+
+  </tr>
+<tr>
+    <td>(x; y) lies on the y-axis if and only if x = 0.</td>
+
+  </tr>
+<tr>
+    <td>The origin is the point (0; 0). It is the only point common to both axes.</td>
+
+  </tr>
+</table>
+</center></p>
+
+
+<p>Example 1.1.2. Plot the following points: A(5; 8), B
+􀀀
+􀀀5
+2 ; 3
+
+, C(􀀀5:8;􀀀3), D(4:5;􀀀1), E(5; 0),
+F(0; 5), G(􀀀7; 0), H(0;􀀀9), O(0; 0).</p>
+<p>Solution. To plot these points, we start at the origin and move to the right if the x-coordinate is
+positive; to the left if it is negative. Next, we move up if the y-coordinate is positive or down if it
+is negative. If the x-coordinate is 0, we start at the origin and move along the y-axis only. If the
+y-coordinate is 0 we move along the x-axis only.</p>
+
+<p>GRAPH</p>
+
+<p>The axes divide the plane into four regions called quadrants. They are labeled with Roman
+numerals and proceed counterclockwise around the plane:</p>
+
+<p>GRAPH</p>
+
+<p>1.1 Sets of Real Numbers and the Cartesian Coordinate Plane</p>
+
+<p>For example, (1; 2) lies in Quadrant I, (􀀀1; 2) in Quadrant II, (􀀀1;􀀀2) in Quadrant III and (1;􀀀2)
+in Quadrant IV. If a point other than the origin happens to lie on the axes, we typically refer to
+that point as lying on the positive or negative x-axis (if y = 0) or on the positive or negative y-axis
+(if x = 0). For example, (0; 4) lies on the positive y-axis whereas (􀀀117; 0) lies on the negative
+x-axis. Such points do not belong to any of the four quadrants.</p>
+
+
+
+<p>One of the most important concepts in all of Mathematics is symmetry.11 There are many types of
+symmetry in Mathematics, but three of them can be discussed easily using Cartesian Coordinates.</p>
+
+<p>Denition 1.3. Two points (a; b) and (c; d) in the plane are said to be</p>
+<p><center><table>
+  <tr>
+    <td>symmetric about the x-axis if a = c and b = 􀀀d</td>
+
+  </tr>
+  <tr>
+    <td>symmetric about the y-axis if a = 􀀀c and b = d</td>
+
+  </tr>
+<tr>
+    <td>symmetric about the origin if a = 􀀀c and b = 􀀀d</td>
+
+  </tr>
+</table>
+</center></p>
+
+
+<p>Schematically,</p>
+
+<p>GRAPH</p>
+
+<p>In the above gure, P and S are symmetric about the x-axis, as are Q and R; P and Q are
+symmetric about the y-axis, as are R and S; and P and R are symmetric about the origin, as are
+Q and S.</p>
+<p>Example 1.1.3. Let P be the point (􀀀2; 3). Find the points which are symmetric to P about the:</p>
+
+<p><center><table>
+  <tr>
+    <td>1. x-axis</td>
+    <td>2. y-axis</td>
+    <td>3. origin</td>
+  </tr>
+
+</table>
+</center></p>
+
+
+
+<p>Check your answer by plotting the points.</p>
+<p>Solution. The gure after Denition 1.3 gives us a good way to think about nding symmetric
+points in terms of taking the opposites of the x- and/or y-coordinates of P(􀀀2; 3).</p>
+
+<p>1. To nd the point symmetric about the x-axis, we replace the y-coordinate with its opposite
+to get (􀀀2;􀀀3).</p>
+<p>2. To nd the point symmetric about the y-axis, we replace the x-coordinate with its opposite
+to get (2; 3).</p>
+<p>3. To nd the point symmetric about the origin, we replace the x- and y-coordinates with their
+opposites to get (2;􀀀3).</p>
+
+<p>GRAPH</p>
+
+<p>One way to visualize the processes in the previous example is with the concept of a re
+ection. If
+we start with our point (􀀀2; 3) and pretend that the x-axis is a mirror, then the re
+ection of (􀀀2; 3)
+across the x-axis would lie at (􀀀2;􀀀3). If we pretend that the y-axis is a mirror, the re
+ection
+of (􀀀2; 3) across that axis would be (2; 3). If we re
+ect across the x-axis and then the y-axis, we
+would go from (􀀀2; 3) to (􀀀2;􀀀3) then to (2;􀀀3), and so we would end up at the point symmetric
+to (􀀀2; 3) about the origin. We summarize and generalize this process below.</p>
+
+
+<p>Reflections</p>
+<p>To re
+ect a point (x; y) about the:</p>
+
+<p><center><table>
+  <tr>
+    <td>x-axis, replace y with 􀀀y.</td>
+
+  </tr>
+  <tr>
+    <td>y-axis, replace x with 􀀀x.</td>
+
+  </tr>
+<tr>
+    <td>origin, replace x with 􀀀x and y with 􀀀y.</td>
+
+  </tr>
+</table>
+</center></p>
+-->
+
+</body>
+</html>

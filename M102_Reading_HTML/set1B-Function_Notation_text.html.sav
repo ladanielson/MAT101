@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
+Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
+Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 31-32, 52-59-->
+
+
+<html>
+<head>
+<title>MAT-102: 1B-Notation, Composition and Inverses</title>
+<style>
+table, td
+{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+table.center
+{
+  margin-left:auto;
+  margin-right:auto;
+}
+</style>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+<body>
+
+<H1>1B-Function Notation, Composition and Inverses</H1>
+<H2>$\S$1B.1 Function Notation</H2>
+<p>Functions are often denoted by the notation: $f(x)$. When you write $f(x)$ you are "naming" the
+function, $f$,  and you are indicating that it is a function of—or depends on—the variable $x$. </p>
+<p>For instance, suppose $f(x) = x^2 + 3x$. This means that $f$ is a function that takes whatever
+you give it, and squares it, and multiplies it by $3$, and adds those two quantities.</p>
+
+<p><table align="center" style="width:75%">
+  <tr>
+    <td style="text-align:right">$7$ </br>
+          $10$ </br>
+            $x$ </br>
+            $y$ </br>
+          a dog</td>
+    <td style="text-align:center">$\rightarrow$ </br>
+            $\rightarrow$ </br>
+            $\rightarrow$ </br>
+            $\rightarrow$ </br>
+            $\rightarrow$ </td>
+    <td  style="text-align:center"><img src="set1B-Function Notation_01.png" alt=""></td>
+
+    <td  style="text-align:left"><br/>$\rightarrow$</br>
+            $\rightarrow$</br>
+            $\rightarrow$</br>
+            $\rightarrow$</br>
+            $\rightarrow$<br/>$ $</td>
+     <td  style="text-align:left"><br/>$f(7) = 7^2 + 3(7) = 70$</br>
+            $f(10) = 10^2 + 3(10) = 130$</br>
+            $f(x) = x^2 + 3x$</br>
+            $f(y) = y^2 + 3y$</br>
+            $f(\mbox{dog}) = (dog)^2 + 3(dog) =$ ?</br>
+            (but "dog" is not in the domain of $f$)</td>
+  </tr>
+</table></p>
+
+<p>The notation $f(7)$ means "plug the number $7$ into the function $f$." It does not indicate that you are multiplying
+$f$ times $7$. To evaluate $f(7)$ you take the function $f(x)$ and replace all occurrences of the variable $x$
+with the number $7$. If this function is given a $7$, it will come out with a $70$.</p>
+<p>If we write $f(y) = y^2 + 3y$ we have not specified a different function. Remember, the function is not the
+variables or the numbers, it is the process.  $f(y) = y^2 + 3y$ also means "whatever number comes in, square
+it, multiply it by $3$, and add those two quantities." So it is a different way of writing the same function.</p>
+<p>Just as many students expect all variables to be named $x$, many students expect all functions to be named $f$. The correct rule is that--whenever possible--functions, like
+variables, should be named descriptively. For instance, if Alice makes $\$100$ per day, we might write:
+
+<br/>Let $m$ equal the amount of money Alice has made (measured in dollars)
+<br/>Let $t$ equal the amount of time Alice has worked (measured in days)
+<br/>Then, $m(t) = 100t$
+</p>
+<p>This last equation should be read "$m$ is a function of $t$ (or $m$ depends on $t$). Given any value of the variable
+$t$, you can multiply it by $100$ to find the corresponding value of the function $m$."</p>
+
+<p>Of course, this is a very simple function! While simple examples are helpful to illustrate the concept, it is
+important to realize that very complicated functions are also used to model real world relationships. For
+instance, $M(i) = \frac{1000 \frac{i}{12}(1 + \frac{i}{12})^{60} }{ (1 + \frac{i}{12})^{60} - 1}$ gives the monthly payment on a $5$-year loan of $\$1000$
+for an annual interest rate of $i$.  Here, the monthly payment, $M$, is a function of the annual interest rate, $i$.</p>
+
+<H2>$\S$1B.2 Composite Functions</H2>
+<p>You are the manager of an elementary school cafeteria, making peanut butter sandwiches for today’s lunch.</p>
+<p>The more classes the school has, the more children there are.</p>
+<p>The more children there are, the more sandwiches you have to make.</p>
+<p>The more sandwiches you have to make, the more pounds (lbs) of peanut butter you will use.</p>
+<p>The more peanut butter you use, the more money you need to budget for peanut butter.</p>
+<p>...and so on. Each sentence in this little story is a function. Mathematically, if $c$ is the number of classes and
+$h$ is the number of children, then the first sentence asserts the existence of a function $h(c)$.</p>
+<p>The principal walks up to you at the beginning of the year and says "We're considering expanding the
+school. If we expand to $70$ classes, how much money do we need to budget? What if we expand to $75$? How about $80$?" For each of these numbers, you have to calculate each number from the previous one,
+until you find the final budget number.</p>
+
+<p><table style="width:100%">
+  <tr>
+    <td># Classes $\rightarrow$</td>
+    <td style="background-color:red" style="color:white" style="font-family:verdana">FUNCTION</td>
+    <td>$\rightarrow$ # Children $\rightarrow$</td>
+<td style="background-color:blue" style="color:white" style="font-family:verdana">FUNCTION
+<td>$\rightarrow$ # Sandwiches $\rightarrow$</td>
+<td style="background-color:yellow" style="color:white" style="font-family:verdana">FUNCTION
+<td>$\rightarrow$ lbs of Peanut Butter $\rightarrow$</td>
+<td style="background-color:green" style="color:white" style="font-family:verdana">FUNCTION
+<td>$\rightarrow$ $\$\$$ Budget</td>
+  </tr>
+
+</table></p>
+
+<p>But going through this process each time is tedious. What you want is one function that puts the entire
+chain together: "You tell me the number of classes, and I will tell you the budget."</p>
+
+</p><table align="center" style="width:45%">
+  <tr>
+    <td align="right"># Classes </td>
+     <td align="center">$\rightarrow$</td>
+    <td align="center"><img src="set1B-FunctionNotation_02.png" alt=""></td>
+    <td align="center">$\rightarrow$ </td>
+     <td align="left">$\$\$$ Budget</td>
+  </tr>
+
+</table></p>
+
+<p>This is a composite function--a function that represents in one function, the results of an entire chain of
+dependent functions. Since such chains are very common in real life, finding composite functions is a very
+important skill.</p>
+
+<H3>How do you make a composite Function?</H3>
+</p>We can consider how to build composite functions into the function game that we played on the first day.
+Suppose Susan takes any number you give her, quadruples it, and adds $6$. Al takes any number you give
+him and divides it by $2$. Mathematically, we can represent the two functions like this:</p>
+<p>$$S(x) = 4x + 6$$</p>
+<p>$$A(x) = \frac{x}{2}$$</p>
+<p>To create a chain like the one above, we give a number to Susan; she acts on it, and gives the resulting
+number to Al; and he then acts on it and hands back a third number.</p>
+<p>$$3 \rightarrow \mbox{Susan} \rightarrow S (3) = 18 \rightarrow Al \rightarrow A(18) = 9$$</p>
+<p>In this example, we are plugging $S(3)$--in other words, $18$-- into Al's function. In general, for any
+$x$ that comes in, we are plugging $S(x)$ into $A(x)$. So we could represent the entire process as
+$A(S(x))$. This notation for composite functions is really nothing new: it means that you are plugging
+$S(x)$ into the $A$ function.</p>
+<p>But in this case, recall that $S(x) = 4x + 6$. So we can write:</p>
+<p>$$A(S(x)) = \frac{S(x)}{2} = \frac{4x + 6}{2}= 2x + 3$$</p>
+<p>What happened? We've just discovered a shortcut for the entire process. When you perform the operation
+$A(S(x))$--that is, when you perform the Al function on the result of the Susan function--you are, in effect,
+doubling and adding $3$. For instance, we saw earlier that when we started with a $3$, we ended with a $9$. Our
+composite function does this in one step:</p>
+<p>$$3 \rightarrow 2x + 3 \rightarrow 9$$</p>
+<p>Understanding the meaning of composite functions requires real thought. It requires understanding the
+idea that this variable depends on that variable, which in turn depends on the other variable; and how that
+idea is translated into mathematics. Finding composite functions, on the other hand, is a purely mechanical
+process--it requires practice, but no creativity. Whenever you are asked for $f(g(x))$, just plug the $g(x)$
+function into the $f(x)$ function and then simplify.</p>
+<p><b>Example 1B-1: Building and Testing a Composite Function</b></p>
+<p>$f(x) = x^2 - 4x$</p>
+<p>$g(x) = x + 2$</p>
+<p>What is $f(g(x))$?</p>
+<p>To find the composite, plug $g(x)$ into $f(x)$, just as you would with any number.</p>
+<p>$f(g(x)) = f( x+2) = (x + 2)^2 - 4 (x + 2)$</p>
+<p> Then simplify.</p>
+<p>$f(g(x)) = (x^2 + 4x + 4) - (4x + 8)$</p>
+<p>So, $f(g(x)) = x^2 - 4$</p>
+<p> Let's test it. $f(g(x))$ means do $g$, then $f$. What happens if we start with $x = 7$?</p>
+
+<p>$7 \rightarrow g(x) \rightarrow 7 + 2 = 9 \rightarrow f(x) \rightarrow (9)^2 - 4 (9) = 45$</p>
+<p>So, if it worked, our composite function should do all of that in one step.</p>
+<p>$7 \rightarrow x^2 - 4 \rightarrow 7^2 - 4 = 45$ $\checkmark$ It worked!</p>
+<p>There is a different notation that is sometimes used for composite functions. The notation $f(g(x))$ very naturally conveys the idea of "plugging $g(x)$ into $f(x)$." However, you will
+sometimes see the same thing written as $(f \circ g)(x)$, which represents the idea of
+ "doing one function, and then the other, in sequence." The two notations mean the same thing.</p>
+
+<H2>$\S$1B.3 Inverse Functions</H2>
+<p>Let's go back to Alice, who makes $\$100$/day. We know how to answer questions such as "After $3$
+days, how much money has she made?" We use the function $m(t) = 100t$.</p>
+<p>But suppose I want to ask the reverse question: "If Alice has made $\$300$, how many hours has she worked?"
+This is the job of an inverse function. It gives the same relationship, but reverses the dependent and independent
+variables: $t(m) = m/100$. Given any amount of money, divide it by $100$ to find how many days
+she has worked.</p>
+<p>If a function answers the question: "Alice worked this long, how much money has she made?" then its
+inverse answers the question: "Alice made this much money, how long did she work?"</p>
+<p>If a function answers the question: "I have this many spoons, how much do they weigh?" then its
+inverse answers the question: "My spoons weigh this much, how many do I have?"</p>
+<p>If a function answers the question: "How many hours of music fit on $12$ CDs?" then its inverse answers
+the question: "How many CDs do you need for $3$ hours of music?"</p>
+
+<H3>How do you recognize an inverse function?</H3>
+<p>Let's look at the two functions above:</p>
+<p>$$m(t) = 100t$$</p>
+<p>$$t(m) = m/100$$</p>
+<p>Mathematically, you can recognize these as inverse functions because they reverse the inputs and the
+outputs.</p>
+
+<p><table align="center" style="width:75%">
+  <tr>
+    <td>$3 \rightarrow m(t) = 100t \rightarrow 300$</td>
+  </tr>
+  <tr>
+    <td>$300 \rightarrow t (m) = m/100  \rightarrow 3$</td>
+  </tr>
+ <tr>
+    <td>$\checkmark$ Inverse functions</td>
+  </tr>
+</table></p>
+
+<p>Of course, this makes logical sense. The first line above says that "If Alice works $3$ hours, she
+makes $\$300$."
+The second line says "If Alice made $\$300$, she worked $3$ hours." It's the same statement, made in two
+different ways.</p>
+<p>But this "reversal" property gives us a way to test any two functions to see if they are inverses. For instance,
+consider the two functions:</p>
+<p>$$f(x) = 3x + 7$$</p>
+<p>$$g(x) = \frac{1}{3}x - 7$$</p>
+<p>They look like inverses, don't they? But let's test and find out.</p>
+
+<p><table align="center" style="width:75%">
+  <tr>
+    <td>$2 \rightarrow 3x + 7 \rightarrow 13$</td>
+  </tr>
+  <tr>
+    <td>$13 \rightarrow \frac{1}{3}x - 7 \rightarrow \frac{13}{3} - 7 \rightarrow \frac{-8}{3}$</td>
+  </tr>
+ <tr>
+    <td>$\times$ Not inverse functions</td>
+  </tr>
+</table></p>
+
+<p>The first function turns a $2$ into a $13$. But the second function does not turn $13$
+into $2$. So these are not inverses.</p>
+<p>On the other hand, consider:</p>
+<p>$$f(x) = 3x + 7$$</p>
+<p>$$g(x) = \frac{1}{3}(x - 7)$$</p>
+<p>Let's run our test of inverses on these two functions.</p>
+
+<p><table align="center" style="width:75%">
+  <tr>
+    <td>$2 \rightarrow 3x + 7 \rightarrow 13$</td>
+  </tr>
+  <tr>
+    <td>$13 \rightarrow \frac{1}{3}(x - 7) \rightarrow 2$</td>
+  </tr>
+ <tr>
+    <td>$\checkmark$ Inverse functions</td>
+  </tr>
+</table></p>
+
+<p>So we can see that these functions do, in fact, reverse each other: they are inverses.</p>
+<p>A common example is the Celsius-to-Fahrenheit conversion:</p>
+<p>$$F(C) = \frac{9}{5}C + 32$$</p>
+<p>$$C(F) = \frac{5}{9}(F - 32)$$</p>
+<p>where $C$ is the Celsius temperature and $F$ the Fahrenheit. If you plug $100^{\circ} C$ into
+the first equation, you find that it is $212^\circ F$. If you ask the second equation about
+$212^{\circ} F$, it of course converts that back into $100^{\circ} C$.</p>
+
+<H3>The notation and definition of an inverse function</H3>
+<p>The notation for the inverse function of $f(x)$ is $f^{-1}(x)$. This notation can cause
+considerable confusion, because it looks like an exponent, but it isn't. $f^{-1}(x)$ simply
+means "the inverse function of $f(x)$." It is defined formally by the fact that if you plug
+any number x into one function, and then plug the result into the other function, you get
+back where you started. (Take a moment to convince yourself that this is the same definition
+I gave above more informally.) We can represent this as a composition function by saying
+that $f\left(f^{-1}(x)\right)= x$.</p>
+
+<p><b>Definition 1B-2: Inverse Function</b>$f^{-1}(x)$ is defined as the inverse function of $f(x)$ if
+it consistently reverses the $f(x)$ process. That is, if $f(a)=b$, then $f^{-1}(b)=a$. More concisely
+and formally, $f^{-1}(x)$ is the inverse function of $f(x)$ if $\left(f \circ f^{-1}\right)(x) = x$.</p>
+
+<H3>Finding an inverse function</H3>
+<p>In examples above, we saw that if $f(x) = 3x + 7$, then $f ^{-1}(x) = \frac{1}{3}(x - 7)$. We also
+saw that the function $\frac{1}{3} x - 7$, which may have looked just as likely, did not work as an inverse
+function. So in general, given a function, how do you find its inverse function?</p>
+<p>Remember that an inverse function reverses the inputs and outputs. When we graph functions, we always
+represent the incoming number as $x$ and the outgoing number as $y$. So to find the inverse function, switch
+the $x$ and $y$ values, and then solve for $y$.</p>
+<p><b>Example: Building and Testing an Inverse Function</b></p>
+<p>1. Find the inverse function of $f(x) = \dfrac{2x-3}{5}$</p>
+<p>a) Write the function as $y = \dfrac{2x-3}{5}$</p>
+<p>b) Switch the $x$ and $y$ variables: $x = \dfrac{2y-3}{5}$</p>
+<p>c) Solve for $y$:
+<br/>$5x = 2y - 3$
+<br/>$5x + 3 = 2y$
+<br/>$\dfrac{5x+3}{2} = y$
+<br/>So $f^{-1}(x) = \dfrac{5x+3}{2}$.</p>
+<p>2. Test to make sure this solution fills the definition of an inverse function.</p>
+<p>a) Pick a number, and plug it into the original function. $9 \rightarrow f(x) \rightarrow 3$.</p>
+<p>b) See if the inverse function reverses this process. $3 \rightarrow  f^{-1}(x) \rightarrow 9$.
+$\checkmark$ It worked!</p>
+<p>Were you surprised by the answer? At first glance, it seems that the numbers in the original function (the
+$2$, $3$, and $5$) have been rearranged almost at random.</p>
+<p>But with more thought, the solution becomes very intuitive. The original function $f(x)$ described the
+following process: double a number, then subtract $3$, then divide by $5$. To reverse this process, we need
+to reverse each step in order: multiply by $5$, then add $3$, then half the result. This is just what the inverse
+function does.</p>
+
+<H3>Some functions have no inverse function</H3>
+<p>Some functions have no inverse function. The reason is the rule of consistency.</p>
+<p>For instance, consider the function $y = x^2$. This function takes both $3$ and $-3$ and turns
+them into $9$. No problem: a function is allowed to turn different inputs into the same output. However,
+what does that say about the inverse of this particular function? In order to fulfill the requirement of an
+inverse function, it would have to take $9$, and turn it into both $3$ and $-3$--which is the one and
+only thing that functions are not allowed to do. Hence, the inverse of this function would not be a
+function at all!</p>
+
+<p><table style="width:50%" align="center">
+  <tr>
+    <td align="right">$3$ $\rightarrow$<br/>
+           $-3$ $\rightarrow$</td>
+    <td style="background-color:red" align="center" style="color:white">$f(x)$</td>
+    <td>$\rightarrow$ $9$ <br/>
+           $\rightarrow$ $9$</td></td>
+  </tr>
+
+</table></p>
+
+<p>If $3$ goes in, $9$ comes out. If $–3$ goes in, $9$ also comes out. No problem. Now, consider
+the situation for the inverse:</p>
+
+<p><table style="width:50%" align="center">
+  <tr>
+    <td align="right">$9$ $\rightarrow$</td>
+    <td style="background-color:yellow" align="center" style="color:white">$f^{-1}(x)$</td>
+    <td>$\rightarrow$ $3$? <br/>
+           $\rightarrow$ $-3$?</td></td>
+  </tr>
+
+</table></p>
+
+<p>Its inverse would have to turn $9$ into both $3$ and $-3$. No function can do this,
+so there is no inverse.</p>
+</p>In general, any function that turns multiple inputs into the same output, does not have an inverse function.</p>
+<p>What does that mean in the real world? If we can convert Fahrenheit to Celsius, we must be able to
+convert Celsius to Fahrenheit. If we can ask "How much money did Alice make in $3$ days?" we must
+surely be able to ask "How long did it take Alice to make $\$500$?" When would you have a function
+that cannot be inverted?</p>
+<p>Let's go back to this example:</p>
+<p>Recall the example that was used earlier: "Max threw a ball. The height of the ball depends on how many
+seconds it has been in the air." The two variables here are $h$ (the height of the ball) and $t$ (the number of
+seconds it has been in the air). The function $h(t)$ enables us to answer questions such as "After $3$ seconds,
+where is the ball?"</p>
+<p>The inverse question would be "At what time was the ball $10$ feet in the air?" The problem with that
+question is, it may well have two answers!</p>
+
+<p><table align="center" style="width:75%">
+  <tr>
+    <td>The ball is here...</td>
+    <td>...after this much time has elapsed</td>
+
+  </tr>
+  <tr>
+    <td>$10$ ft</td>
+    <td>$2$ seconds (*on the way up)</td>
+
+  </tr>
+  <tr>
+    <td>$10$ ft</td>
+    <td>$5$ seconds (*on the way back down)</td>
+
+  </tr>
+</table></p>
+<p>So what does that mean? Does it mean we can't ask that question? Of course not. We can ask that
+question, and we can expect to mathematically find the answer, or answers--by knowing how to solve quadratic equations. However, it <b>does</b> mean that time is not a function of height because such a "function" would not be consistent: one question would produce multiple answers.</p>
+
+</body>
+</html> 

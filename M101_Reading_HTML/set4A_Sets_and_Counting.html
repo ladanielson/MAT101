@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<!-- Cite Applied Finite Mathematics by Authors:UniqU, LLC, Rupinder Sekhon
+is licensed under a Creative Commons
+Attribution 3.0 Unported License. (http://creativecommons.org/licenses/by/3.0/)
+Based on a work at http://cnx.org/content/col10613/1.5/ pages 169-178-->
+
+<html>
+<head>
+<title>MAT-101: Set 4A-Sets and Counting</title>
+<link href="M101webwork.css" rel="stylesheet" type="text/css">
+
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
+</script>
+<script type="text/javascript"
+
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+
+</script>
+</head>
+<body>
+
+<h1>MAT-101: Set 4A-Sets and Counting</h1>
+
+
+<h3>Objectives:</h3>
+<ul>
+   <li>Use set theory and Venn diagrams to solve counting problems. </li>
+   <li>Use tree diagrams and the Multiplication Axiom to solve counting problems.</li>
+  </ul>
+
+<h2>Sets</h2>
+
+<p> You are already familiar with the concept of sets from <b>Set 1C-Sets, Intervals and Inequalities</b>.  Recall:
+</p>
+
+<ul>
+     <li>A <b>set</b> is a collection of objects, and its members are called the <b>elements</b> of the set.</li>
+     <li>We name the set by using capital letters, and enclose its members in braces. For example, the set of primary colors could be denoted \(P = \{ \text{red, yellow, blue} \}\).</li>
+     <li>A set that has no members is called an <b>empty set</b>. The empty set is denoted by the symbol \(\emptyset\) or with empty curly braces \(\{\}\).</li>
+     <li>Two sets are <b>equal</b> if they have the same elements.</li>
+     <li>A set \(A\) is a <b>subset</b> of a set \(B\) if every member of \(A\) is also a member of \(B\). For example, suppose and \(A = \{\text{blue, red}\}\). Then \(A\) is a subset of \(P\), written as \(A\subseteq P\).</li>
+     <li> Every set is a subset of itself, \(A \subseteq A\). The empty set is a subset of every set, \(\emptyset \subseteq A\).</li>
+     <li>The <b>union</b> of \(A\) and \(B\), written as \(A\cup B\), is the set of all elements that are either in \(A\) <b>OR</b> in \(B\), or in both \(A\) and \(B\).</li>
+     <li>The <b>intersection</b> of \(A\) and \(B\), written as \(A\cap B\), is the set of all elements that are common to both sets \(A\) <b>AND</b> \(B\).</li>
+     <li>A <b>universal set</b> \(U\) is the set consisting of all elements under consideration.</li>
+     <li>The <b>complement</b> of set \(A\), written as \(A'\), is the set consisting of elements in the universal set \(U\) that are <b>NOT</b> in \(A\).</li>
+</ul>
+
+<p> A concept not discussed in <b>Set 1C</b> is disjoint sets.
+Two sets \(A\) and \(B\) are called <b>disjoint</b> sets if their intersection is an empty set.  This would be denoted \(A\cap B = \emptyset\).  The following examples demonstrate the above ideas regarding sets.
+</p>
+
+<h3>Example 4A-1: Subsets</h3>
+List all the subsets of the set of primary colors \(P = \{ \text{red, yellow, blue} \}\).
+<!--  http://cnx.org/content/col10613/1.5/ Example 11.1 page 170 -->
+<center>
+<table class = "center" style="width:75%" >
+ <tr align="Center" span ="">
+    <td colspan="4" align ="left"> The subsets are: </td>
+  </tr>
+
+  <tr>
+    <td>\(\{ \},\)</td>
+    <td>\(\{\text{red} \},\)</td>
+    <td>\(\{\text{yellow} \},\)</td>
+    <td>\(\{\text{blue} \},\)</td>
+  </tr>
+  <tr>
+    <td>\(\{\text{red, yellow} \},\)</td>
+    <td>\(\{\text{red, blue} \},\)</td>
+    <td>\(\{\text{yellow, blue} \},\)</td>
+    <td>\(\{\text{red, yellow, blue} \}\)</td>
+  </tr>
+  <tr>
+   <td colspan="2"> Note that the empty set \(\{ \}\) is a subset of every set, and a set is a subset of itself.</td>
+   <td colspan="2"> Note also that there are \(8= 2^3\) subsets of the original set containing \(3\) elements. In general, a set with \(n\) elements will have \(2^n\) subsets!</td>
+   </tr>
+   <tr>
+   <td colspan="4"> <div class="WWbox">
+                    Use a comma between elements in a set: {red, yellow} and between subsets: {red},{red, yellow} when entering subsets in <tt>WeBWorK</tt>.
+                    </div>
+</td>
+   </tr>
+</table>
+</center>
+
+<h3>Example 4A-2: Union, Intersection, Complement</h3>
+Let the universal set \(U=\{\text{red, orange, yellow, green, gold, blue, indigo, violet, purple, black}\}\), \(P = \{ \text{red, yellow, blue} \}\), \(Y = \{ \text{purple, gold} \}\) and \(N = \{ \text{red, black} \}\).
+<!-- Modeled after  http://cnx.org/content/col10613/1.5/ Example 11.1 page 170 -->
+<center>
+<table class = "center">
+ <tr>
+    <td align="right">\(P\cup N=\{\text{red, yellow, blue, black} \}\)</td>
+    <td>The union is the set of all elements that are either in \(P\) <b>OR</b> in \(N\), or in both</td>
+  </tr>
+
+  <tr>
+    <td align="right">\(P\cap N=\{\text{red} \}\)</td>
+    <td>The intersection is the set of all elements that are common to both \(P\) <b>AND</b> \(N\)</td>
+  </tr>
+
+  <tr>
+    <td align="right">\(P\cap Y=\{ \}\)</td>
+    <td>\(P\) and \(Y\) have no elements in common, \(P\) and \(Y\) are disjoint</td>
+  </tr>
+  <tr>
+    <td align="right">\(P'=\{\text{orange, green, gold, indigo, violet, purple, black} \}\)</td>
+    <td>The elements in \(U\) <b>NOT</b> in \(P\)</td>
+  </tr>
+</table>
+</center>
+
+
+<p>
+Recall a Venn diagram represents a set as the
+interior of a circle. Often two or more circles are enclosed in a rectangle where the rectangle represents the
+universal set. These diagrams allow us to visualize an intersection or union of two sets or the complement of a set.  We will now use Venn
+diagrams to sort various populations and count objects.  We use the notation \(n(A)\) to represent the number of elements in set \(A\).  For example, \(n(P\cup N) = 4\) in <b>Example 4A-2</b>.
+</p>
+
+
+<h3>Example 4A-3: 2-Group Venn Diagram</h3> 
+Suppose a survey of car enthusiasts showed that over a certain time period, \(30\) drove cars with automatic transmissions, \(20\) drove cars with standard transmissions, and \(12\) drove cars of both types. If every person in the survey drove cars with one of these transmissions, how many people
+participated in the survey?
+<!--   http://cnx.org/content/col10613/1.5/ Example 11.6 page 171 -->
+
+<center>
+<table class = "center">
+ <tr>
+    <td align="right">Let set \(A\) represent those surveyed with automatic transmissions.</td>
+    <td>Let set \(S\) represent those surveyed with standard transmissions.</td>
+  </tr>
+  <tr>
+    <td align="right">Since \(12\) drove cars of both types</br>
+    Record \(\color{red}{12}\) in \(A\) AND \(S\) \(=A\cap S\).
+  </br>
+  That is \(n(A\cap S)=\color{red}{12}\).</td>
+    <td><img src="set4A_Sets_and_Counting_01.png"></td>
+  </tr>
+
+    <tr>
+    <td align="right">
+    Let \(\color{blue}{x}\) be the number in \(A\) but <b>NOT</b> in \(S\).</br>
+    Then \(\color{blue}{x}=n(A\cap S')\).</br>
+     Let \(\color{green}{y}\) be the number in \(S\) but <b>NOT</b> in \(A\).</br>
+     Then \(\color{green}{y}=n(S\cap A')\).</br></td>
+    <td><img src="set4A_Sets_and_Counting_02.png"></td>
+    <tr>
+        <td align =" right"> Because \(30\) people drove cars with automatic transmissions, </br>
+    the circle \(A\) must contain \(30\) total people. </br>
+    This means \(x + 12 = 30\).</br>
+        Subtract \(12\) from both sides to get</br>
+         \(x = 18\).</br>
+    Record \(\color{blue}{18}\) in \(A\) but <b>NOT</b> in \(S\).</td>
+    <td><img src="set4A_Sets_and_Counting_03.png"></td>
+  </tr>
+
+   <tr>
+        <td align =" right"> Because \(20\) people drove cars with standard transmissions, </br>
+    the circle \(S\) must contain \(20\) total people. </br>
+    This means \(y + 12 = 20\).</br>
+        Subtract \(12\) from both sides to get</br>
+         \(y = 8\).</br>
+    Record \(\color{green}{8}\) in \(S\) but <b>NOT</b> in \(A\).</td>
+    <td><img src="set4A_Sets_and_Counting_04.png"></td>
+  </tr>
+
+  <tr>
+        <td align ="right">Now that all the information is sorted out, </br>
+        it is easy to read from the diagram that:</td>
+        <td>
+
+         \(\color{blue}{18}\) people drove cars with automatic transmissions only, </br>
+         \(\color{red}{12}\) people drove both types of cars, and </br>
+
+          \(\color{green}{8}\) drove cars with standard transmissions only.</td>
+  </tr>
+
+  <tr>
+    <td align="right">\(18+12+8=38\)</td>
+    <td>Our Solution: \(38\) people participated in the survey.</td>
+
+  </tr>
+</table>
+</center>
+
+<h3>Example 4A-4: 2-Group Venn Diagram</h3> 
+A survey of \(100\) people in California indicates that \(60\) people have visited Disneyland, \(15\) have visited Knott's Berry Farm, and \(6\) have visited both. How many people have visited neither place?
+<!--   http://cnx.org/content/col10613/1.5/ Example 11.7 page 171 -->
+<center>
+<table class = "center">
+ <tr>
+    <td align="right">Let set \(D\) represent those surveyed who have visited Disneyland.</td>
+    <td>Let set \(K\) represent those surveyed who have visited Knott's Berry Farm.</td>
+  </tr>
+  <tr>
+    <td align="right">Since \(6\) have visited both</br>
+    Record \(\color{red}{6}\) in \(=D\cap K\)</br>
+     Let \(\color{blue}{x}=n(D\cap K')\).</br>
+     Let \(\color{green}{y}=n(K\cap D')\).</td>
+    <td><img src="set4A_Sets_and_Counting_05.png"></td>
+  </tr>
+
+        <td align =" right"> Because \(60\) people visited Disneyland, </br>
+    \(D\) must contain \(60\) total people. </br>
+    This means \(x + 6 = 60\).</br>
+        Subtract \(6\) from both sides to get</br>
+         \(x = 54\).</br>
+    Record \(\color{blue}{54}\) in \(D\) but <b>NOT</b> in \(K\).</td>
+    <td><img src="set4A_Sets_and_Counting_06.png"></td>
+  </tr>
+
+   <tr>
+        <td align =" right"> Because \(15\) people visited Knott's, </br>
+     \(K\) must contain \(15\) total people. </br>
+    This means \(y + 6 = 15\).</br>
+        Subtract \(6\) from both sides to get</br>
+         \(y = 9\).</br>
+    Record \(\color{green}{9}\) in \(K\) but <b>NOT</b> in \(D\).</td>
+    <td><img src="set4A_Sets_and_Counting_07.png"></td>
+  </tr>
+
+   <tr>
+        <td align =" right">  Let \(\color{brown}{z}\) be the number in</br>
+         the rectangle representing the universal set</br>
+         \(U\) but <b>NOT</b> in \(D\) nor in \(K\).</br>
+     Thus \(z=n(D\cup K)'\).</td>
+    <td><img src="set4A_Sets_and_Counting_08.png"></td>
+  </tr>
+
+
+  <tr>
+    <td align="right">Since \(100\) people participated in the survey,</br>
+      \(U\) must contain \(100\) objects. </br>
+      This means \(54+6+9+z = 100\)</br>
+      or \(69+z=100\).</br>
+        Subtract \(69\) from both sides to get</br>
+         \(z = 31\).</br>
+          Record \(\color{brown}{31}\) in \((D\cup K)'\).</td>
+     </td>
+    <td><img src="set4A_Sets_and_Counting_09.png"></td>
+  </tr>
+
+
+
+  <tr>
+    <td align="right">\(31=n(D\cup K)'\) </td>
+    <td>Our Solution: \(31\) people have visited neither place.</td>
+  </tr>
+</table>
+</center>
+
+<p>
+Looking back at the final Venn diagram of the survey of \(100\) people in California, we can organize the results in a two-way table as follows:
+</p>
+
+<table align="center" border="1">
+                        <tr>
+                                 <td align="center">\(\,\)</td>
+                                 <td align="center">Disneyland (\(D\))</td>
+                                <td align="center">Not Disneyland (\(D'\))</td>
+                                <td align="center">Total</td>
+                        </tr>
+
+                         <tr>
+                         <td  align ="center">Knott's (\(K\))</td>
+                         <td  align ="center">\(\color{red}{6}\)</td>
+                         <td  align ="center">\(\color{green}{9}\)</td>
+                         <td  align ="center">\(15\)</td>
+
+                         </tr>
+                         <tr>
+                          <td  align ="center">Not Knott's (\(K'\))</td>
+                          <td  align ="center">\(\color{blue}{54}\)</td>
+                         <td  align ="center">\(\color{brown}{31}\)</td>
+                         <td  align ="center">\(85\)</td>
+                         </tr>
+
+                         <tr>
+                          <td  align ="center">Total</td>
+                          <td  align ="center">\(\fbox{60}\)</td>
+                         <td  align ="center">\(40\)</td>
+                         <td  align ="center">\(100\)</td>
+                         </tr>
+                </table>
+<p>
+Notice from the above table, we can determine particular counts.  For example, at the bottom of the Disneyland column is the boxed number \(\fbox{60}\), which is the total number of people surveyed who visited Disneyland.  The red \(\color{red}{6}\) is the intersection of row Knott's and column Disneyland, which is \(n(D\cap K)\), the number of people who visited both parks.  The \(\color{brown}{31}=n(D'\cap K')\) means \(\color{brown}{31}\) did not attend either park.
+</p>
+
+<p>
+We are not limited to \(2\) circles.  Suppose a survey of \(100\) exercise conscious people resulted in the following information:
+<ol>
+  <li>\(50\) jog, \(30\) swim, and \(35\) cycle</li>
+  <li>\(14\) jog and swim</li>
+  <li>\(7\) swim and cycle</li>
+  <li>\(9\) jog and cycle</li>
+  <li>\(3\) people take part in all three activities</li>
+</ol>
+Since we have \(3\) exercise categories (jog, swim, cycle) we will use three circles, one for each group. Use the exercise survey results to assign a number to each region in a corresponding Venn diagram and then answer the given questions in the following examples:
+</p>
+
+
+<h3>Example 4A-5: 3-Group Venn Diagram</h3> 
+Use the exercise survey results above to assign a number to each region in a corresponding Venn diagram.
+<!--   http://cnx.org/content/col10613/1.5/ Example 11.8 page 172 -->
+
+<center>
+<table class = "center">
+ <tr>
+    <td align="right">Let set \(J\) represent the joggers, set \(S\) the swimmers and set \(C\) the cyclers.</td>
+    <td>We always begin by first assigning the number to the innermost region and then working our way out.</td>
+
+  </tr>
+  <tr>
+    <td align="right">Since \(3\) people participate in all three activities</br>
+    place a \(\color{red}{3}\) in \(=J\cap S\cap C\)</br>
+     Let \(\color{blue}{x}=n((J\cap S)\cap C')\)</br>
+     (people that jog and swim but don't cycle).</br>
+     Let \(\color{green}{y}=n((J\cap C)\cap S')\).</br>
+     Let \(\color{brown}{z}=n((S\cap C)\cap J')\).</td>
+    <td><img src="set4A_Sets_and_Counting_10.png"></td>
+
+  </tr>
+
+       <tr>
+    <td align="right">Since \(14\) jog and swim</br>
+   \(x+3=14\), so \(\color{blue}{x = 11}\).</br>
+     Since \(9\) jog and cycle</br>
+   \(y+3=9\), so \(\color{green}{y = 6}\).</br>
+      Since \(7\) swim and cycle</br>
+   \(z+3=7\), so \(\color{brown}{z = 4}\).</br>
+   After replacing \(x,y,z\) with these values</br>
+   label the regions \(\color{red}{m}, \color{blue}{n},\color{green}{ p}\).
+    <td><img src="set4A_Sets_and_Counting_11.png"></td>
+  </tr>
+
+   <tr>
+         <tr>
+    <td align="right">Since \(50\) people jog</br>
+   \(m + 11+3+6=50\), so \(\color{red}{m =30 }\).</br>
+     Since \(30\) swim</br>
+   \(n+11+3+4=30\), so \(\color{blue}{n = 12}\).</br>
+      Since \(35\) cycle</br>
+   \(p+6+3+4=35\), so \(\color{green}{p = 22}\).</br>
+    <td><img src="set4A_Sets_and_Counting_12.png"></td>
+  </tr>
+
+   <tr>
+        <td align =" right">  By adding all the entries in all three sets, </br>
+        we get a sum of \(88\). </br>
+        Since \(100\) people were surveyed,</br>
+        the number inside the universal set but outside of all three sets is </br>
+        \(100-88=\color{red}{12}\)</td>
+    <td><img src="set4A_Sets_and_Counting_13.png"></td>
+
+  </tr>
+
+  <tr>
+    <td align="right">Our Solution </td>
+    <td><img src="set4A_Sets_and_Counting_14.png"></td>
+
+  </tr>
+</table>
+</center>
+
+<h3>Example 4A-6: 3-Group Venn Diagram</h3> 
+Use the completed Venn diagram from <b>Example 4A-5</b> to determine the number of people surveyed who jog but do not swim or cycle.
+
+<!--   http://cnx.org/content/col10613/1.5/ Example 11.8(a) page 172 -->
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">The region which contains </br>
+    joggers who do not swim or cycle</br>
+     is highlighted in \(\color{red}{\text{red}}\). </td>
+    <td><img src="set4A_Sets_and_Counting_15.png"></td>
+  </tr>
+
+  <tr>
+    <td align="right">\(30\)</td>
+    <td>Our Solution: \(30\) people jog but do not swim or cycle.</td>
+  </tr>
+</table>
+</center>
+
+<h3>Example 4A-7: 3-Group Venn Diagram</h3> 
+Use the completed Venn diagram from <b>Example 4A-5</b> to determine the number of people surveyed who take part in only one of the activities.
+<!--   http://cnx.org/content/col10613/1.5/ Example 11.8(b) page 172 -->
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">The regions which contain </br>
+    people taking part in exactly one activity</br>
+     are highlighted in \(\color{blue}{\text{blue}}\). </td>
+    <td><img src="set4A_Sets_and_Counting_16.png"></td>
+  </tr>
+
+  <tr>
+    <td align="right">\(30+12+22=64\)</td>
+    <td>Our Solution: \(64\) people take part in only one of the activities.</td>
+  </tr>
+</table>
+</center>
+
+<h3>Example 4A-8: 3-Group Venn Diagram</h3> 
+Use the completed Venn diagram from <b>Example 4A-5</b> to determine the number of people surveyed who do not take part in any of these activities.
+<!--   http://cnx.org/content/col10613/1.5/ Example 11.8(c) page 172 -->
+<center>
+<table class = "center">
+
+  <tr>
+    <td align="right">The region which contains </br>
+    people who do not take part in any of these activities</br>
+     is highlighted in \(\color{green}{\text{green}}\). </td>
+    <td><img src="set4A_Sets_and_Counting_17.png"></td>
+  </tr>
+
+  <tr>
+    <td align="right">\(12\)</td>
+    <td>Our Solution: \(12\) people do not take part in any of these activities.</td>
+  </tr>
+</table>
+</center>
+
+
+<h2>Tree Diagrams and the Multiplication Axiom</h2>
+
+<p>
+In this Module, we are developing counting techniques that will be used in the following Module to study probability. One of the most fundamental of such techniques is called the <b>Multiplication Axiom</b>. Before we
+introduce the multiplication axiom, we first consider some examples.
+</p>
+
+<h3>Example 4A-9: 2-Step Tree Diagram</h3> 
+A restaurant has a special choose \(2\) dinner deal: for one low price a customer may select one of two appetizers and one of four main courses.  How many different dinner combinations consisting of one appetizer and one main course are possible?
+
+<!--   Modeled after http://cnx.org/content/col10613/1.5/ Example 11.9 page 173 but less sexist!! -->
+<center>
+<table class = "center">
+ <tr>
+    <td align="right">Label the two appetizers \(a_1\) and \(a_2\).</td>
+    <td>Label the four main dishes \(m_1, m_2, m_3\) and \(m_4\).</td>
+  </tr>
+
+  <tr>
+    <td align="right">Create a tree diagram </br>
+    for this problem.</br></br>
+    <b>Step 1:</b> Since we may select </br>
+    one of two appetizers, </br>
+    the tree begins with two branches, </br>one for each of \(a_1\) and \(a_2\).</br></br>
+    <b>Step 2: </b>Then since we may select </br>
+    one of four main course options, </br>
+    each of the first two branches leads to four more branches. </br> </br>
+    The tree has \(2\times 4 = 8\) endpoints,</br>
+    one for each of the \(8\) dinner special combinations.
+    <td><img src="set4A_Sets_and_Counting_18.png"></td>
+    </td>
+
+    <tr>
+        <td align="right">\(8\)</td>
+        <td>Our Solution: There are \(8\) possible </br>
+        different dinner combinations </br> consisting of one appetizer and one main course. </br> </br>
+        For example, one combination \(a_2, m_3 \) represents </br>
+        the choice of appetizer \(2\) with main course \(3\).</td>
+    </tr>
+  </tr> </table></center>
+
+  <p>
+ The tree diagram gives us all eight possibilities. The method involves two steps. First we choose an appetizer. We have two choices: \(a_1\) or \(a_2\). If we choose \(a_1\), we have
+four main dishes to go with it; \(m_1, m_2, m_3\) and \(m_4\). Similarly if we choose \(a_2\), we can select any one of the four main dishes, again. The tree diagram helps us visualize these
+possibilities.
+</p>
+<p>
+The reader should note that the process involves two steps. For the first step of choosing an appetizer, there are two choices, and for each choice of an appetizer, there are four choices of a main dish. So altogether there \(2\cdot 4=8\) possibilities. If, in the above example, we add a dessert, we have the following problem:
+  </p>
+
+  <h3>Example 4A-10: 3-Step Tree Diagram</h3> 
+  A restaurant has a special choose \(3\) dinner deal: for one low price a customer may select one of two appetizers, one of four main courses, and one of three desserts.  How many different dinner combinations consisting of one appetizer, one main course and one dessert are possible?
+
+<!--   Modeled after http://cnx.org/content/col10613/1.5/ Example 11.10 page 174 but less sexist!! -->
+
+<center>
+<table class ="center">
+ <tr>
+    <td align="right">Label the two appetizers \(a_1\) and \(a_2\).</br>
+
+    Label the four main dishes \(m_1, m_2, m_3\) and \(m_4\).</br>
+    Label the three desserts \(d_1, d_2\) and \(d_3\).</br> </br>
+
+    The tree diagram at the right results.</br>
+
+    (Note that only 6 of the actual possible dinner combinations are listed at the far right.) </br>
+
+    The tree has \(2\times 4\times 3 = 24\) endpoints,</br>
+    one for each of the \(24\) dinner special combinations.
+
+    </td>
+   <td><img src="set4A_Sets_and_Counting_19.png"  width ="407" height="273"></td>
+   </tr>
+   <tr>
+   <td align =" right">24</td>
+   <td>Our Solution: There are \(24\) possible different dinner combinations consisting of one appetizer, one main course, and one dessert. </td>
+   </tr>
+   </table></center>
+
+   <p>
+   The important thing to observe here, again, is that this is a three step process. There are two choices for the first step of choosing an appetizer. For each choice of a appetizer, there are four choices of a main course, and for each combination of an appetizer and main course, there are three choices of selecting a dessert. All in all, we have \(2\times 4\times 3 = 24\) different possibilities.
+   </p>
+
+   <p>
+   The tree diagrams help us visualize the different possibilities, but they are not practical when the possibilities are numerous. Besides, we are mostly interested in counting the number of elements in the set and not the actual possibilities. But once the problem is envisioned, we can solve it without a tree diagram. The two examples we just solved may have given us a clue to do just that.
+   </p>
+   <p>
+   Let us now try to solve <b>Example 4A-10:</b> without a tree diagram. Recall that the problem involved three steps: choosing an appetizer, choosing a main course, and choosing a dessert. The number of ways of choosing each are listed below.
+   </p>
+
+    <table align="center"  border="1">
+  <tr>
+    <td  align="center">The number of ways</br>
+    of choosing an appetizer
+    </td>
+    <td  align="center">The number of ways</br>
+     of choosing a main course
+    </td>
+    <td align="center"">The number of ways</br>
+     of choosing a dessert
+    </td>
+  </tr>
+
+  <tr>
+    <td  align ="center">\(2\)
+    </td>
+    <td  align="center">\(4\)
+    </td>
+    <td  align ="center">\(3\)
+    </td>
+  </tr>
+</table>
+<p>
+By multiplying these three numbers we get \(2\cdot 4\cdot 3=24\), which is what we got when we did the problem using a tree diagram.  The procedure we just employed is called the multiplication axiom.
+</p>
+<p><center>
+<b>The Multiplication Axiom</b>: If a task can be done in \(m\) ways, and a second task can be done in \(n\) ways, then the operation involving the first task followed by the second can be performed in \(m\cdot n\) ways.</center>
+</p>
+<p>
+The general multiplication axiom is not limited to just two tasks and can be used for any number of tasks.
+</p>
+
+ <h3>Example 4A-11: Multiplication Axiom</h3> 
+ A truck license plate consists of a letter followed by four digits. How many such license plates are possible?
+ <!--   This is T http://cnx.org/content/col10613/1.5/ Example 11.12 page 176  -->
+
+ <table  align="center">
+ <tr>
+  <td colspan="2">Since there are \(26\) letters and \(10\) digits, we have the number of choices for each listed in the below table.</td>
+  <tr>
+  <td colspan="2" align ="center">
+  <table align="center"  border="1">
+  <tr>
+    <td  align="center">Letter
+    </td>
+    <td  align="center">Digit
+    </td>
+    <td  align="center">Digit
+    </td>
+    <td  align="center">Digit
+    </td>
+    <td  align="center">Digit
+    </td>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td  align ="center">\(26\)
+    </td>
+    <td  align="center">\(10\)
+    </td>
+    <td  align ="center">\(10\)
+    </td>
+    <td  align ="center">\(10\)
+    </td>
+    <td  align ="center">\(10\)
+    </td>
+  </tr>
+</table>
+</td>
+</tr>
+ <tr>
+  <td>\(26\cdot 10 \cdot 10 \cdot 10 \cdot 10\)</td>
+  <td>Multiply the possibilities using the <b>Multiplication Axiom</b></td>
+</tr>
+<tr>
+<td>260,000</td>
+<td>Our Solution: There are 260,000 possible such license plates </td>
+</tr>
+ </table>
+
+  <h3>Example 4A-12: Multiplication Axiom</h3> 
+  In how many different ways can a \(3\)-question true-false test be answered?
+ <!--   This is T http://cnx.org/content/col10613/1.5/ Example 11.13 page 176  -->
+
+ <table  align="center">
+ <tr>
+  <td colspan="2">Since there are two choices for each question, we have</td>
+  <tr>
+        <td colspan="2" align ="center">
+                <table align="center"  border="1">
+                        <tr>
+                         <td  align="center">Question 1</td>
+                        <td  align="center">Question 2</td>
+                        <td  align="center">Question 3 </td>
+                        </tr>
+
+                         <tr>
+                         <td  align ="center">\(2\)</td>
+                        <td  align="center">\(2\) </td>
+                        <td  align ="center">\(2\)</td>
+
+                         </tr>
+                </table>
+        </td>
+  </tr>
+ <tr>
+  <td>\(2\cdot 2 \cdot 2 \)</td>
+  <td>Multiply the possibilities using the <b>Multiplication Axiom</b></td>
+</tr>
+<tr>
+<td align="right">\(8\)</td>
+<td>Our Solution: There are \(8\) different ways. </td>
+</tr>
+ </table>
+ <p>
+ We list all eight possibilities below:</p>
+ <p><center>
+ TTT, TTF, TFT, TFF, FTT, FTF, FFT, FFF</center>
+ </p>
+
+<p>
+The reader should note that the first letter in each possibility is the answer corresponding to the first question, the second letter corresponds to the answer to the second question and so on. For example, TFF, says that the answer to the first question is given as true, and the answers to the second and third questions false.
+</p>
+
+ <h3>Example 4A-13: Multiplication Axiom</h3> 
+ In how many different ways can four people be seated in a row?
+ <!--   This is T http://cnx.org/content/col10613/1.5/ Example 11.14 page 177  -->
+
+ <table  align="center">
+ <tr>
+  <td colspan="2">Suppose we put four chairs in a row, and proceed to put four people in these seats.</td>
+  </tr>
+  <tr>
+  <td colspan="2">There are four choices for the first chair we choose. Once a person sits down in that chair, there are only three choices for the second chair, and so on. We list as shown below.</td>
+  <tr>
+        <td colspan="2" align ="center">
+                <table align="center"  border="1">
+                        <tr>
+                         <td  align="center">Choices for chair 1</td>
+                        <td  align="center">Choices for chair 2</td>
+                        <td  align="center">Choices for chair 3</td>
+                        <td  align="center">Choices for chair 4</td>
+                        </tr>
+
+                         <tr>
+                         <td  align ="center">\(4\)</td>
+                        <td  align="center">\(3\) </td>
+                        <td  align ="center">\(2\)</td>
+                        <td  align ="center">\(1\)</td>
+
+                         </tr>
+                </table>
+        </td>
+  </tr>
+ <tr>
+  <td align="right">\(4\cdot 3 \cdot 2 \cdot 1 \)</td>
+  <td>Multiply the possibilities using the <b>Multiplication Axiom</b></td>
+</tr>
+<tr>
+<td align="right">\(24\)</td>
+<td>Our Solution: There are \(24\) different ways. </td>
+</tr>
+ </table>
+
+
+
+
+
+
+</body>
+
+</html> 

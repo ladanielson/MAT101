@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<!-- Cite College Algebra by Carl Stitz (Lakeland Community College) and Jeff Zeager (Lorain County Community College), is licensed under a Creative Commons
+Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
+Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
+
+
+<html>
+<head>
+<title>MAT-102: Module 4A-Exponential Functions</title>
+<style> table#collapseborder  {
+    border-collapse: collapse; }
+    table#collapseborder, tr#collapseborder, td#collapseborder {border:1px solid black; padding: 10px}
+</style>
+<style>
+table, td
+{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+table.center
+{
+  margin-left:auto;
+  margin-right:auto;
+}
+</style>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+</head>
+
+<body>
+<p><b><h1>4A-Exponential and Logarithmic Functions</h1></b></p>
+
+<p><b><h2>\(\S4A.1\) Introduction to Exponential and Logarithmic Functions </h2></b></p>
+Of all of the functions we study in this course, exponential and logarithmic functions are possibly the
+ones which impact everyday life the most. This module introduces us to these functions while the
+rest of the Unit will more thoroughly explore their properties. Up to this point, we have dealt
+with functions which involve terms like $x^2$ or $x^{2/3}$, in other words, terms of the form
+$x^p$ where the base of the term, $x$, varies but the exponent of each term, $p$, remains
+constant. In this Unit, we study functions of the form $f(x) = b^x$ where the base $b$ is a
+constant and the exponent $x$ is the variable.
+
+<p><b> Example 4A-1:</b> We start our exploration of these functions
+with $f(x) = 2^x.$ (Apparently this is a tradition. Every book about Functions we have ever
+read starts with $f(x) = 2^x.$)We make a table of values, plot the points and connect the dots.
+
+<table id="collapseborder">
+  <tr id="collapseborder">
+    <td id="collapseborder">$x$</td>
+    <td id="collapseborder">$f(x)$</td>
+  </tr>
+  <tr id="collapseborder">
+    <td id="collapseborder">$-3$</td>
+    <td id="collapseborder">$2^{-3} = \frac{1}{8}$</td>
+  </tr>
+  <tr id="collapseborder">
+    <td id="collapseborder">$-2$</td>
+    <td id="collapseborder">$2^{-2} = \frac{1}{4}$</td>
+  </tr>
+  <tr id="collapseborder">
+    <td id="collapseborder">$-1$</td>
+    <td id="collapseborder">$2^{-1} = \frac{1}{2}$</td>
+  </tr>
+  <tr id="collapseborder">
+    <td id="collapseborder">$0$</td>
+    <td id="collapseborder">$2^0 = 1$</td>
+  </tr>
+  <tr id="collapseborder">
+    <td id="collapseborder">$1$</td>
+    <td id="collapseborder">$2^1 = 2$</td>
+  </tr>
+  <tr id="collapseborder">
+    <td id="collapseborder">$2$</td>
+    <td id="collapseborder">$2^2 = 4$</td>
+  </tr>
+  <tr id="collapseborder">
+    <td id="collapseborder">$3$</td>
+    <td id="collapseborder">$2^3 = 8$</td>
+  </tr>
+</table>
+
+GRAPH: LYNDA CAN YOU PUT THE GRAPH AND TABLE ON THE SAME ROW ALIGNED?
+</br> </br>
+A few remarks about the graph of $f(x) = 2^x$ which we have constructed are in order.
+First, note that from what we discovered about exponents in Unit 3, any real number may
+be an input for $f(x) = 2^x$.  Thus, the domain is all real numbers. If we consider
+"large" negative values of $x$  like $x = -100$ or $x = -1000,$ the function
+$f(x) = 2^x$ takes on values like $f(-100) = 2^{-100} = \frac{1}{2^{100}}$  or
+ $f(-1000) = 2^{-1000} = \frac{1}{2^{1000}}$. In other words, as $x$ takes on
+ increasingly "larger" negative values, this is what happens in the function
+
+$$2^x \approx \frac{1}{\mbox{very big positive number}} \approx \mbox{very small positive number}$$
+
+So, $f(x) = 2^x$ is getting very close to zero. This is represented graphically using the
+$x$-axis (the line y = 0) as a <b>horizontal asymptote</b>.  A horizontal asymptote is
+a guiding line for the graph. The graph eventually follows along the asymptote.
+</p>
+<p>
+On the flip side, if we consider large positive values for $x$ , we find $f(100) = 2^{100}$,
+$f(1000) = 2^{1000}$, and so on, thus $2^x$ gets larger as we use larger values for $x$.
+As a result, our graph suggests the range of $f$ is $(0, \infty)$. We can see that $f(x)$ does not
+repeat values for the output and so
+</p>
+
+
+<h2>\(\S4A.2\) Properties of Exponential Functions</h2>
+Suppose we wish to study the family of functions $f(x) = b^x.$ Which bases $b$ make sense to study?
+We find that we run into difficulty if $b < 0$. For example, if $b = -2,$ then the function
+$f(x) = (-2)^x$ has trouble, for instance, at $x = \frac{1}{2}$ since $(-2)^{1/2} = \sqrt{-2}$
+is not a real number. In general, if $x$ is any rational number with an even denominator, then
+$(-2)^x$ is not defined, so we must restrict our attention to bases $b > 0.$ What about $b = 0$?
+The function $f(x) = 0^x$ is undefined for $x \le 0$ because we cannot divide by $0$ and $0^0$
+cannot be determined. One one hand, it would seem like $0^0$ should be zero, but there is an
+an equally strong argument for $0^0$ being $1$.  Since there are two possible outputs, we won't
+decide which is better. Instead we say $0^0$ is not defined. For $x > 0$,
+$0^x = 0$ so the function $f(x) = 0^x$ is the same as the function $f(x) = 0$ which never
+changes. We know everything we can possibly know about this function, so we exclude it from our investigations. The only other base we exclude is $b = 1,$ since the function $f(x) = 1^x = 1$ is, once again, a function with a constant output value. We are now ready for our definition of exponential
+ functions.
+
+<p>
+<b>Definition.</b> A function of the form $f(x) = b^x$ where $b$ is a fixed real number,
+$b > 0$ and $b \neq 1$ is called a base $b$ exponential function.
+
+</p>
+<p>
+We leave it to the reader to verify that if $b > 1,$ then the exponential function $f(x) = b^x$
+will share the same basic shape and characteristics as $f(x) = 2^x$. </p>
+<p>
+What if $0 < b < 1$?
+Consider $g(x) = \left(\frac{1}{2}\right)^x$.  We could certainly build a table of values and connect
+the points, or we could take a step back and note that
+$g(x) = \left(\frac{1}{2}\right)^x =(2^{-1})^2 = 2^{-x} = f(-x),$ where $f(x) = 2^x.$ Thinking
+back to what we know about transforming graphs, the graph of $f(-x)$ is obtained from
+the graph of $f(x)$ by flipping it across the $y$-axis.
+
+</br> GRAPH GRAPH </br>
+
+We see that the domain and range of $g$ match that of $f,$ namely $(-\infty,\infty)$ and
+$(0,\infty),$ respectively. Like $f$, $g$'s output values are unique and so $g$ has an inverse.
+Whereas $f$ is always increasing, g is always decreasing. As a result, as $x$ grows in
+the negative direction, $g(x)$ takes on larger positive values, and on the
+flip side, as $x$ gets larger in the positive direction, $g(x)$ gets closer to zero.
+It shouldn't be too surprising that for all choices of the base $0 < b < 1,$ the graph
+of $y = b^x$ behaves similarly to the graph of $g.$
+</p>
+
+We summarize the basic properties of exponential functions below:
+
+<p>
+ <b>Properties of Exponential Functions:</b> Suppose $f(x) = b^x.$
+   <ul>
+     <li> The domain of f is $(-\infty,\infty)$ and the range of $f$ is $(0,\infty)$.</li>
+     <li> $(0, 1)$ is on the graph of $f$ and $y = 0$ is a horizontal asymptote to the graph of $f.$</li>
+     <li> $f$  has an inverse and its graph is smooth and unbroken
+
+<table style="width:75%",  id="collapseborder">
+  <tr  id="collapseborder">
+    <td id="collapseborder">If $b>1$
+    <ul>
+      <li> $f$ is always increasing</li>
+      <li> As $x$ takes on "larger" negative values, $f$ gets closer to $0$</li>
+      <li> As $x$ takes on larger positive values, $f$ takes larger positive values</li>
+      <li>The graph of $f$ looks like:
+      </br>
+      GRAPH
+      </li>
+    </ul>
+
+    </td>
+    <td  id="collapseborder">If $b<1$
+      <ul>
+      <li> $f$ is always decreasing</li>
+      <li> As $x$ takes on "larger" negative values, $f$ takes larger positive values</li>
+      <li> As $x$ takes on larger positive values, $f$ gets closer to $0$</li>
+      <li>The graph of $f$ looks like:
+      </br>
+      GRAPH
+      </li>
+    </ul>
+    </td>
+  </tr>
+</table>
+</li>
+   </ul>
+
+The proof of which, like many things discussed in the text, requires Calculus.
+</p>
+<p>
+Of all of the bases for exponential functions, two occur the most often in scientific circles. The first,
+base $10,$ is often called the common base. The second base is an irrational number,
+$e \approx 2.718 \dots,$ called the natural base.
+For now, it is enough to know that since $e > 1,$ $f(x) = e^x$ is an increasing exponential function.
+The following examples give us an idea how these functions are used in the wild.
+</p>
+
+
+<p><b> Example 4A-2:</b>The value of a car can be modeled by
+$V(x) = 25 \left(\frac{4}{5}\right)^x,$ where $x \ge 0$ is age of the
+car in years and $V(x)$ is the value in thousands of dollars.
+<ol>
+<li>Find and interpret $V(0).$
+</br>
+Solution: To find $V(0),$ we replace $x$ with $0$ to obtain
+$$V(0) = 25\left(\frac{4}{5}\right)^0 = 25.$$
+Since $x$ represents the age of the car in years, $x = 0$ corresponds to the
+car being brand new. Since $V(x)$ is measured in thousands of dollars, $V(0) = 25$
+corresponds to a value of $\$25,000.$ Putting it all together, we interpret
+$V(0) = 25$ to mean the purchase price of the car was $\$25,000.$
+</br> </br>
+</li>
+<li> Sketch the graph of y = V (x) using transformations.
+</br>
+ Solution: To graph $y = 25\left(\frac{4}{5}\right)^x,$ we start with the basic
+ exponential function $f(x) = \left(\frac{4}{5}\right)^x.$ Since the base
+ $b = \frac{4}{5}$ is between $0$ and $1,$ the graph of $y = f(x)$ is
+ decreasing. We plot the $y$-intercept $(0, 1)$ and two other points,
+$(-1,\frac{5}{4})$  and $(1, \frac{4}{5}),$ and label the horizontal asymptote
+$y = 0.$
+</br>
+To obtain $V(x) = 25\left(\frac{4}{5}\right)^x,$  $x \ge 0,$ we multiply the output
+from $f$ by $25,$ in other words, $V(x) = 25f(x).$  This results in a vertical stretch by a factor
+of $25.$ We multiply all of the $y$ values in the graph by $25$ (including the $y$ value of the
+horizontal asymptote) and obtain the points $(-1, \frac{125}{4}),$ $(0, 25)$ and $(1, 20).$
+The horizontal asymptote remains $y = 0.$ Finally, we restrict the domain to $[0,\infty)$ to fit
+with the applied domain given to us. We have the result below.
+</br> GRAPH GRAPH </br> </br>
+</li>
+<li> Find and interpret the horizontal asymptote of the graph you found.
+</br>
+Solution: We see from the graph of $V$ that its horizontal asymptote is $y = 0.$ (We
+leave it to reader to verify this analytically by thinking about what happens as we take
+larger and larger powers of $\frac{4}{5}.$) This means as the car gets older, its value
+diminishes to $0.$
+</li>
+</ol>
+<p>
+The function in the previous example is often called a 'decay curve'. Increasing exponential
+functions are used to model 'growth curves' and we shall see several different examples of those in
+<b>4C</b>. For now, we present another common decay curve which will serve as the basis for
+further study of exponential functions. Although it may look more complicated than the
+previous example, it is actually just a basic exponential function which has been modified by a few
+transformations.
+</p>
+
+<p><b> Example 4A-3:</b> According to Newton's Law of Cooling, the temperature of
+coffee $T$ (in degrees Fahrenheit) $t$ minutes after it is served can be modeled by
+$T(t) = 70 + 90e^{-0.1t}.$
+<ol>
+  <li> Find and interpret T(0).
+  </br>
+Solution: To find $T(0),$ we replace every occurrence of the independent variable $t$ with
+$0$ to obtain $T(0) = 70 + 90e^{-0.1(0)} = 160.$ This means that the coffee was served
+at $160^\circ F.$
+</br> </br>
+</li>
+  <li> Sketch the graph of $y = T(t)$ using transformations.
+</br>
+Solution:  To graph $y = T(t)$ using transformations, we start with the basic
+function, $f(t) = e^t.$  As we have already remarked, $e \approx 2.718 \gt 1$ so the graph of
+ $f$ is an increasing exponential with $y$-intercept $(0, 1)$ and horizontal asymptote $y = 0.$
+The points $(-1, e^{-1}) \approx  (-1, 0.37)$ and $(1, e) \approx  (1, 2.72)$ are also on the
+graph. Since the formula $T(t)$ looks rather complicated, we rewrite $T(t)$ in the form
+presented in Theorem 1.7 and use that result to track the changes to our three points and the
+horizontal asymptote. We have
+$$T(t) = 70 + 90e^{-0.1t} = 90e^{-0.1t} + 70 = 90f(-0.1t) + 70$$
+Multiplication of the input to $f$, $t$, by $-0.1$ results in a horizontal expansion by a factor of $10$
+as well as a flip about the $y$-axis. We divide each of the $x$ values of our points by $-0.1$
+(which amounts to multiplying them by $-10$) to obtain $(10, e^{-1}),$ $(0, 1),$ and $(-10, e).$
+Since none of these changes affected the $y$ values, the horizontal asymptote remains $y = 0.$
+Next, we see that the output from $f$ is being multiplied by $90.$ This results in a vertical stretch
+by a factor of $90.$ We multiply the $y$-coordinates by $90$ to obtain $(10, 90e^{-1}),$
+$(0, 90),$ and $(-10, 90e).$ We also multiply the $y$ value of the horizontal asymptote $y = 0$
+by $90,$ and it remains $y = 0.$ Finally, we add $70$ to all of the $y$-coordinates, which shifts
+the graph upwards to obtain $(10, 90e^{-1} + 70 ) \approx  (10, 103.11),$ $(0, 160),$ and
+$(-10, 90e + 70)  \aprox (-10, 314.64).$ Adding $70$ to the horizontal asymptote shifts it
+upwards as well to $y = 70.$ We connect these three points using the same shape in the same
+direction as in the graph of $f$ and, last but not least, we restrict the domain to match the applied
+domain  $[0,1).$ The result is below
+</br> GRAPH GRAPH
+  </br> </br>
+  </li>
+  <li>Find and interpret the horizontal asymptote of the graph.
+  </br>
+Solution: From the graph, we see that the horizontal asymptote is $y = 70.$ It is worth
+a moment or two of our time to see how this happens analytically. As $t$ gets larger, we
+get $T(t) = 70 + 90e^{-0.1t} \approx 70 + 90^{\mbox{every big negative}}.$ Since
+$e \gt 1,$
+
+$$e^{\mbox{every big negative}} = \frac{1}{e^{\mbox{every big positive}}} \approx
+\frac{1}{\mbox{very big positive}} \approx \mbox{very small positive}$$
+
+The larger $t$ becomes, the smaller $e^{-0.1t}$ becomes, so the term
+$90e^{-0.1t} \approx \mbox{ very small positive}.$
+Hence, $T(t) \approx 70 + \mbox{ very small positive}$ which means the graph is
+approaching the horizontal line $y = 70$ from above. This means that as time goes by,
+the temperature of the coffee is cooling to $70^\circ F,$ presumably room temperature.
+  </br> </br>
+  </li>
+</ol>
+</p>
+
+<h2>\(\S4A.3\) Logarithms and Their Properties</h2>
+As we have already remarked, the functions $f(x) = b^x$ all have a unique output for each input.
+Thus the exponential functions are invertible. We now turn our attention to these inverses, the
+logarithmic functions, which are called 'logs' for short.
+</p>
+<p>
+<b>Definition.</b> The inverse of the exponential function $f(x) = b^x$ is called
+the base $b$ logarithm function, and is denoted $f^{-1}(x) = \log_b(x).$
+We read '$\log_b(x)$' as 'log base $b$ of $x.$'
+</p>
+<p>
+We have special notations for the common base, $b = 10,$ and the natural base, $b = e.$
+</p>
+<p>
+<b>Definition.</b> The common logarithm of a real number $x$ is $\log_{10}(x)$ and
+is usually written $\log(x).$ The natural logarithm of a real number $x$ is $\log_e(x)$ and
+is usually written $\ln(x).$
+</p>
+<p>
+Since logs are defined as the inverses of exponential functions, we can use use what we know
+about inverses to tell us about logarithmic functions. For example, we know that the domain of
+a log function is the range of an exponential function, namely $(0,1),$ and that the range of a log
+function is the domain of an exponential function, namely $(-1,1).$ Since we know the basic
+shapes of $y = f(x) = b^x$ for the different cases of $b,$ we can obtain the graph of
+$y = f^{-1}(x) = \log_b(x)$ by flipping the graph of $f$ across the line $y = x$ as shown below.
+The $y$-intercept $(0, 1)$ on the graph of $f$ corresponds to an $x$-intercept of $(1, 0)$ on
+the graph of $f^{-1}.$ The horizontal asymptotes y = 0 on the graphs of the exponential functions
+become vertical asymptotes $x = 0$ on the log graphs.
+</p>
+<p>
+On a procedural level, logs undo the exponentials. Consider the function $f(x) = 2^x.$ When we
+evaluate $f(3) = 2^3 = 8,$ the input 3 becomes the exponent on the base $2$ to produce the real
+number $8.$ The function $f^{-1}(x) = \log_2(x)$ then takes the number $8$ as its input and
+returns the exponent $3$ as its output. In symbols, $\log_2(8) = 3.$ More generally,
+$\log_2(x)$ is the exponent you put on $2$ to get $x.$ Thus, $\log_2(16) = 4,$ because
+$2^4 = 16.$ We summarize the basic properties of logarithmic functions below, all of which come from
+the fact that they are inverses of exponential functions.
+</p>
+<p>
+<b>Properties of Logarithmic Functions:</b> Suppose $f(x) = \log_b(x).$
+<ul>
+  <li> The domain of $f$ is $(0, 1)$ and the range of $f$ is $(-1, 1).$</li>
+  <li> $(1, 0)$ is on the graph of $f$ and $x = 0$ is a vertical asymptote of the graph of $f.$</li>
+  <li> $f$ is has a unique output for each input, continuous and smooth</li>
+  <li> $b^a = c$ if and only if $\log_b(c) = a.$ That is, $\log_b(c)$ is the exponent you put
+          on $b$ to obtain $c.$  $\log_b(b^x) = x$ for all $x$ and $b^{\log_b(x)} = x$ for all $x \gt 0$
+<table style="width:75%",  id="collapseborder">
+  <tr  id="collapseborder">
+    <td id="collapseborder"> If $b>1$
+    <ul>
+      <li> $f$ is always increasing</li>
+      <li> As $x$ gets closer to zero from the right, $f$ takes larger negative values</li>
+      <li> As $x$ takes on larger positive values, $f$ gets larger</li>
+      <li>The graph of $f$ looks like:
+      </br>
+      GRAPH
+      </li>
+      </ul>
+    </td>
+
+    <td  id="collapseborder"> If $0 \gt b \gt 1$
+      <ul>
+      <li> $f$ is always decreasing</li>
+      <li> As $x$ gets closer to zero from the right, $f$ takes larger positive values</li>
+      <li> As $x$ takes on larger positive values, $f$ takes larger negative values</li>
+      <li>The graph of $f$ looks like:
+      </br>
+      GRAPH
+      </li>
+    </ul>
+    </td>
+  </tr>
+</table>
+</li>
+   </ul>
+</p>
+<p>
+It is worth the reader's time to understand logarithm properties from an exponential perspective.
+For instance, we know that the domain of $g(x) = \log_2(x)$ is $(0, \infty).$ Why? Because the range of $f(x) = 2^x$ is $(0, \infty).$  In a way, the idea of "reversing" the exponential function says everything, but at the same time, it doesn't. For example,
+if we try to find $\log_2(-1),$ we are trying to find the exponent we put on $2$ to give us $-1.$
+In other words, we are looking for $x$ that satisfies $2^x = -1.$ There is no such real number,
+since all powers of $2$ are positive. While what we have said is exactly the same thing as saying
+'the domain of $g(x) = \log_2(x)$ is $(0, \infty)$ because the range of $f(x) = 2^x$ is $(0,\infty)$',
+we feel it is in a student's best interest to understand the properties of logarithms at this level
+instead of just merely memorizing the facts.
+
+<p><b> Example 4A-4:</b> Simplify the following.
+<ol type=""a"">
+  <li> $\log_3(81)$
+  </br>
+  Solution: The number $\log_3(81)$ is the exponent we put on $3$ to get $81.$  As such,
+  we want to write $81$ as a power of $3.$ We find $81 = 3^4,$ so that $\log_3(81) = 4.$
+  </br> </br>
+  </li>
+  <li> $\log_2\left(\frac{1}{8}\right)$
+    </br>
+  Solution: To find $\log_2(\frac{1}{8}),$ we need rewrite $\frac{1}{8}$ as a power of $2.$
+  We find $\frac{1}{8} = \frac{1}{2^3} = 2^{-3},$ so $\log_2\left(\frac{1}{8}\right) = -3.$
+  </br> </br>
+  </li>
+  <li> $\ln (\sqrt[3]{e^2})$
+    </br>
+  Solution: First, recall that the notation $\ln\left(\sqrt[3]{e^2}\right)$ means 
+  $\log_e\left(\sqrt[3]{e^2}\right),$ so we are looking for the exponent to put on $e$ 
+  to obtain $\sqrt[3]{e^2}.$ Rewriting $\sqrt[3]{e^2} = e^{2/3},$ we find 
+  $\ln\left(\sqrt[2]{e^2}\right) = \ln\left(e^{2/3}\right) = \frac{2}{3}.$
+  </br> </br>
+  </li>
+  <li>$\log(0.001)$
+    </br>
+  Solution: Rewriting $\log(0.001)$ as $\log_{10}(0.001),$ we see that we need to write 
+  $0.001$ as a power of $10.$ We have $0.001 = \frac{1}{1000} = \frac{1}{10^3} = 10^{-3}.$ 
+  Hence, $\log(0.001) = \log(10^{-3}) = -3.$ 
+  </br> </br>
+  </li>
+  <li>$2^{\log_2(8)}$
+    </br>
+  Solution: We can use the idea of inverse functions directly to simplify $2^{\log_2(8)} = 8.$ We can 
+  also understand this problem by first finding $\log_2(8).$ By definition, $\log_2(8)$ is the exponent 
+  we put on $2$ to get $8.$  Since $8 = 2^3,$ we have $\log_2(8) = 3.$ We now substitute to find 
+  $2^{\log_2(8)} = 2^3 = 8.$
+  </br>
+  </li>
+</ol>
+</p>
+Being able to convert back and forth between log and exponential forms can come in handy
+when solving equations in the next section. We practice a this technique next.
+
+<p><b> Example 4A-5:</b> Rewrite the logarithm equation as an exponential equation.
+<ol type=""a"">
+  <li> $10^2 = 100$
+  </br>
+  Logarithm form: $\log(100) = 2$
+  </br></br>
+  </li> 
+  <li> $e^{2x} = 5$
+  </br>
+  Logarithm form: $\ln(5) = 2x$
+  </br></br>
+  </li>
+  <li> $10^{x+1} = 0.001$
+  </br>
+  Logarithm form: $\log(0.001) = x+1$
+  </br></br>
+  </li>
+</ol>
+</p>
+<p><b> Example 4A-6:</b> Rewrite the exponential equation as a logarithm equation.
+<ol type=""a"">
+<li> $\ln(1) = 0$
+  </br>
+  Exponential form: $e^0 = 1$
+  </br></br>
+  </li>
+<li> $\log(2x) = 18$
+  </br>
+  Exponential form: $2x = e^{18}$
+  </br></br>
+  </li>
+<li> $\ln(x-3) = 2.4$
+  </br>
+  Exponential form: $e^{2.4} = x - 3$
+  </br></br>
+  </li>
+</ol>
+</p>
+<p>
+Up until this point, restrictions on the domains of functions came from avoiding division by zero
+and keeping negative numbers from beneath even radicals. With the introduction of logs, we now
+have another restriction. Since the domain of$ f(x) = \log_b(x)$ is $(0,\infty),$ the 
+argument of the log must be strictly positive.
+</p>
+
+
+<p><b> Example 4A-7:</b> Find the domain of the following functions and then find their inverse function.
+<ol type="a">
+<li> $f(x) = 2 \log(3 - x) - 1$ 
+</br>
+Solution: The main issue is that $3 - x$ must be a positive number: 
+  <table style="width:75%">
+  <tr>
+    <td> $3 -x \gt 0$</td>
+    <td>Subtract $3$ from both sides </td>
+  </tr>
+  <tr>
+    <td>$-x \gt -3$</td>
+    <td>Multiply both sides by $-1$ and remember to reverse the inequality </td>
+  </tr>
+    <tr>
+    <td>$x \lt 3$</td>
+    <td> Hence the domain of $f$ is $(-\infty,3)$.</td>
+  </tr>
+</table>
+To find the inverse function:
+  <table style="width:75%">
+  <tr>
+    <td> $y = 2 \log(3 - x) - 1$</td>
+    <td>Switch the variables </td>
+  </tr>
+  <tr>
+    <td>$x = 2 \log(3 - y) - 1$</td>
+    <td>Add $1$ to both sides </td>
+  </tr>
+  <tr>
+    <td>$x +1 = 2 \log(3 - y)$</td>
+    <td> Divide by $2$</td>
+  </tr>
+  <tr>
+    <td>$\dfrac{x +1}{2} = \log(3 - y)$</td>
+    <td> Rewrite the log in its equivalent exponential form</td>
+  </tr>
+  <tr>
+    <td>$e^{(x +1)/2} = 3 - y$</td>
+    <td> Now, subtract 3 from both sides</td>
+  </tr>
+  <tr>
+    <td>$-3 + e^{(x +1)/2} = -y$</td>
+    <td> Multiply both sides by $-1$</td>
+  </tr>
+   <tr>
+    <td>$3 - e^{(x +1)/2} = y$</td>
+    <td> </td>
+  </tr>
+</table>
+The inverse is $f^{-1}(x) = 3 - e^{(x +1)/2}$.
+</br> </br>
+</li>
+<li> $g(x) = e^{x-1}-3$
+</br>
+Solution: The domain for an exponential function is usually pretty easy to figure out. Here
+it's $(-\infty, \infty).$
+</br>
+To find the inverse:
+  <table style="width:75%">
+  <tr>
+    <td> $y = e^{x-1}-3$</td>
+    <td>Switch the variables </td>
+  </tr>
+  <tr>
+    <td>$x = e^{y-1}-3$</td>
+    <td>Add $3$ to both sides </td>
+  </tr>
+  <tr>
+    <td>$x +3 = e^{y-1}$</td>
+    <td> Rewrite the exponential in log form</td>
+  </tr>
+  <tr>
+    <td>$\ln(x+3) = y - 1$</td>
+    <td> Add $1$ to both sides</td>
+  </tr>
+  <tr>
+    <td>$\ln(x+3) + 1 = y$</td>
+    <td> </td>
+  </tr>
+  
+</table>
+The inverse is $g^{-1}(x) = \ln(x+3) + 1$.
+</br> </br>
+</li>
+</ol>
+</p>
+<p>
+Finally, let's practice taking apart composition of functions with
+exponential and logarithm functions.
+</p>
+
+<p><b> Example 4A-8: </b>.Find functions $f(t)$ and $g(t)$ so that $h(t) = (f \circ g)(t)$.
+<ol type="a">
+  <li> $h(t) = \ln(1- 2t) + 4$
+  </br>
+  Solution:  If $f(t) = \ln(t) + 4$ and $g(t) = 1 - 2t$,
+  then $f(g(t)) = \ln(g(t)) + 4 = \ln(1-2t) + 4 = h(t).$
+  </br> </br>
+  </li>
+  <li> $h(t) = \dfrac{1}{e^t-1}$
+    </br>
+  Solution: There are several possible choices. If $f_1(t) = \dfrac{1}{t - 1}$ and $g_1(t) = e^t$,
+  then $f_1(g_1(t)) = \dfrac{1}{g_1(t)-1} = \dfrac{1}{e^t-1} = h(t).$ Another choice could be,
+  $f_2(t) = \dfrac{1}{t}$ and $g_2(t) = e^t -1$,
+  then $f_2(g_2(t)) = \dfrac{1}{g_2(t)} = \dfrac{1}{e^t-1} = h(t).$
+  </br> </br>
+  </li>
+</ol>
+
+
+</p>
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,518 @@
+<!DOCTYPE html> <!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/) Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 123-130-->
+
+
+<html> <head> <title>MAT-102: 4B-Properties of Logarithms</title>
+<style type="text/css">
+td
+{
+    padding:0 0 0 15px; <!--add space between table columns-->
+}
+</style>
+<style> table#collapseborder  {
+    border-collapse: collapse; }
+    table#collapseborder, tr#collapseborder, td#collapseborder {border:1px solid black; padding: 10px}
+</style>
+<style>
+table, td
+{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+table.center
+{
+  margin-left:auto;
+  margin-right:auto;
+}
+</style>
+ <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script> <script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+</head>
+
+<body>
+
+<h1><b>4B: Properties of Logarithms</b></h1>
+
+<p>
+In Module <b>4A</b>, we introduced the logarithmic functions as inverses of exponential functions and discussed a few of their functional properties from that perspective. In this module, we explore the algebraic properties of logarithms. Historically, these have played a huge role in the scientific development of our society since, among other things, they were used to develop analog computing devices called <i>slide rules</i> which enabled scientists and engineers to perform accurate calculations leading to such things as space travel and the moon landing. As we shall see shortly, logs have properties similar to all of the properties of exponents. We first restate the definition of a logarithm and the fact that it is the inverse of an exponential function.
+</p>
+<p>
+<b>Definition of Logarithm:</b>  Let $b >0$ with $b \neq 1$. If $a$ and $c$ are numbers
+<ul>
+  <li>  $\log_b(c) = a$ means $b^a = c$</li>
+  <li> $\log_b(b^x) = x$ for all $x$ and $b^{\log_b(x)} = x$ for all $x \gt 0$</li>
+</ul>
+</p>
+
+<h3><b>A few quick examples to review logarithms:</b></h3>
+
+<p><center>
+
+<table align="center" style="width:75%">
+
+  <tr>
+    <td>Problem</td>
+    <td>Means</td>
+    <td>The answer is</td>
+    <td>because</td>
+
+  </tr>
+  <tr>
+    <td>$\log_2 8$</td>
+    <td>$2$ to what power is $8$?</td>
+    <td>$3$</td>
+    <td>$2^3$ is $8$</td>
+
+  </tr>
+  <tr>
+    <td>$\log_2 16$</td>
+    <td>$2$ to what power is $16$?</td>
+    <td>$4$</td>
+    <td>$2^4$ is $16$</td>
+
+  </tr>
+  <tr>
+    <td>$\log_2 10$</td>
+    <td>$2$ to what power is $10$?</td>
+    <td>somewhere between $3$ and $4$</td>
+    <td>$2^3 = 8$ and $2^4 = 16$</td>
+
+  </tr>
+  <tr>
+    <td>$\log_8 2$</td>
+    <td>$8$ to what power is $2$?</td>
+    <td>$\frac{1}{3}$</td>
+    <td>$8^{\frac{1}{3}}= \sqrt[3]{8} = 2$</td>
+
+  </tr>
+  <tr>
+    <td>$\log_{10} 10,000$</td>
+    <td>$10$ to what power is $10,000$?</td>
+    <td>$4$</td>
+    <td>$10^4$ = $10, 000$</td>
+
+  </tr>
+  <tr>
+    <td>$\log_{10}  \frac{1}{100}$</td>
+    <td>$10$ to what power is $ =\frac{1}{100}$?</td>
+    <td>$-2$</td>
+    <td>$10^{-2} = \frac{1}{10^2} = \frac{1}{100}$</td>
+
+  </tr>
+  <tr>
+    <td>$\log_5 0$</td>
+    <td>$5$ to what power is $0$?</td>
+    <td>There is no answer</td>
+    <td>$5^{?}$ will never be $0$</td>
+
+  </tr>
+</table>
+
+</center> </p>
+
+<h3><b>Review the graph of a logarithm function</b></h3>
+The graph of any logarithm function with base greater than $1$ has the same basic shape.  We plot
+a few well chosen points to graph $f(x) = \log_2(x)$:
+ <p><center>
+<table>
+  <tr>
+    <td>
+      <table  id="collapseborder">
+        <tr>
+        <td  id="collapseborder">$x$</td>
+        <td  id="collapseborder" align="center">$y = \log_2(x)$</td>
+        </tr>
+        <tr>
+        <td  id="collapseborder">$\frac{1}{8}$</td>
+        <td  id="collapseborder" align="center">-3</td>
+        </tr>
+        <tr>
+        <td  id="collapseborder">$\frac{1}{4}$</td>
+       <td  id="collapseborder" align="center">$-2$</td>
+        </tr>
+        <tr>
+        <td  id="collapseborder">$\frac{1}{2}$</td>
+       <td  id="collapseborder" align="center">$-1$</td>
+        </tr>
+        <tr>
+        <td  id="collapseborder">1</td>
+       <td  id="collapseborder" align="center">0</td>
+       </tr>
+        <tr>
+        <td  id="collapseborder">2</td>
+        <td  id="collapseborder" align="center">1</td>
+        </tr>
+        <tr>
+        <td  id="collapseborder">4</td>
+        <td  id="collapseborder" align="center">2</td>
+        </tr>
+        <tr>
+        <td  id="collapseborder">8</td>
+        <td  id="collapseborder" align="center">3</td>
+        </tr>
+        </table>
+   </td>
+    <td>GRAPH OF $2^x$</td>
+  </tr>
+</table>
+</center>
+</p>
+As always, you can learn a great deal about the log function by reading the graph.
+<ul>
+  <li> The domain is $x \gt 0.$ (You can't take the log of $0$ or a negative number—do you remember why?).</li>
+  <li> The range, on the other hand, is all numbers. Of course, all this inverses the function $2^x$, which has a
+domain of all numbers and a range of $y \gt 0.$</li>
+  <li> As $x$ gets closer and closer to $0,$ the function dives down to smaller and smaller negative numbers. So
+the $y$-axis serves as an "asymptote" for the graph, meaning a line that the graph approaches closer
+and closer as a guiding line.</li>
+  <li> As $x$ moves to the right, the graph grows—but more and more slowly. As $x$ goes from $4$ to $8,$ the graph
+goes up by $1.$ As $x$ goes from $8$ to $16,$ the graph goes up by another $1.$ It doesn't make it up another $1$
+until $x$ reaches $32$ .... and so on.</li>
+</ul>
+
+
+<p><b>Using the log to model a real world problem</b></p>
+<p>This pattern of slower and slower growth is one of the most important characteristics of the log. It can be
+used to "slow down" functions that have too wide a range to be practical to work with.
+
+<p> Using the log to model a real world problem
+Lewis Fry Richardson (1881–1953) was a British meteorologist and mathematician. He was also an
+active Quaker and committed pacifist, and was one of the first men to apply statistics to the study
+of human conflict. Richardson catalogued $315$ wars between 1820 and 1950, and categorized them
+by how many deaths they caused. At one end of the scale is a deadly quarrel, which might result
+in $1$ or $2$ deaths. At the other extreme are World War I and World War II, which are responsible for
+roughly $10$ million deaths each.</p>
+
+<p><center>IMAGE See page 130 in the advanced-algebra-ii-coneeptual-explanaiont-15.10.pdf</center></p>
+
+<p>As you can see from the chart above, working with these numbers is extremely difficult: on a
+scale from $0$ to $10$ Million, there is no visible difference between (say) $1$ and $100,000.$ Richardson
+solved this problem by taking the common log of the number of deaths. So a conflict with $1,000$
+deaths is given a magnitude of $\log(1000) = 3.$ On this scale, which is now the standard for conflict
+measurement, the magnitudes of all wars can be easily represented.
+</p>
+<p><center>IMAGE See page 130 in the advanced-algebra-ii-coneeptual-explanaiont-15.10.pdf</center>
+</p>
+<p>Richardson's scale makes it practical to chart, discuss, and compare wars and battles from the
+smallest to the biggest. For instance, he discovered that each time you move up by one on the
+scale—that is, each time the number of deaths multiplies by $10$—the number of conflicts drops in
+a third. (So there are roughly three times as many "magnitude $5$" wars as "magnitude $6$," and so
+on.)</p>
+<p>The log is useful here because the logarithm function itself grows so slowly that it compresses
+the entire $1$ to $10,000,000$ range into a $0$ to $7$ scale. The same trick is
+used—for the same reason—to study topics ranging from earthquakes to sound waves.</p>
+</p>
+
+<h2><b>$\S$4B.1 Properties of Logarithms</b></h2>
+<p>Just as there are fundamental laws of exponents, there are corresponding fundamental laws of logarithms.</p>
+<p>
+For $b>0$, $b \neq 1$ and real numbers $m$, $n$, $M$ and $N$, the exponent and logarithm properties are:
+<table width="85" align="center" id="collapseborder">
+<tr  id="collapseborder">
+  <td id="collapseborder"></td>
+  <td style="white-space: nowrap"  id="collapseborder">Rules for Exponents:</td>
+  <td style="white-space: nowrap">Rules for Logarithms:</td>
+ </tr>
+ <tr id="collapseborder">
+   <td id="collapseborder"> Product Rule </td>
+  <td style="white-space: nowrap">$b^m b^n = b^{m+n}$</td>
+  <td id="collapseborder"> $\log_b (MN) = \log_b M + \log_b N$</td>
+  </tr>
+  <tr  id="collapseborder">
+  <td id="collapseborder"> Quotient Rule </td>
+  <td style="white-space: nowrap">$\dfrac{b^m}{b^n} = b^{m-n}$</td>
+  <td id="collapseborder"> $\log_b \dfrac{M}{N} = \log_b M - \log_b N$</td>
+    </tr>
+  <tr  id="collapseborder">
+     <td id="collapseborder"> Power Rule </td>
+  <td style="white-space: nowrap">$(b^m)^n = b^{mn}$</td>
+  <td id="collapseborder"> $\log_b M^n= n\log_b M$</td>
+  </tr>
+  <tr id="collapseborder">
+  <td id="collapseborder"> Zero Rule </td>
+  <td style="white-space: nowrap">$b^0 = 1$</td>
+  <td  id="collapseborder"> $\log_b(1) = 0$</td>
+</tr>
+</table>
+
+</p>
+
+
+<p><b>Example 4B-1: Properties of Logarithms</b></p>
+<p>1. Suppose you are given these two facts:</p>
+<p>$\log_4 5 = 1.16$<br/>
+      $\log_4 10 = 1.66$</p>
+<p>2. Then we can use the laws of logarithms to conclude that:</p>
+<p>$\log_4 (50) = \log_4 5 + \log_4 10 = 1.16 + 1.66 = 2.82$<br/>
+      $\log_4 (2) = \log_4 10 - \log_4 5 = 1.66 - 1.16 = 0.5$<br/>
+      $\log_4 (100,000) = 5\log_4 10 = 5(1.66) = 8.3$</p>
+<p>NOTE: All three of these results can be found quickly, and without a calculator. Note that the
+second result could also be figured out directly, since $4^{1/2} = 2.$</p>
+<p>These properties of logarithms were very important historically, because they enabled pre-calculator mathematicians
+to perform multiplication (which is very time-consuming and error prone) by doing addition
+(which is faster and easier). These rules are still useful in simplifying complicated expressions and solving
+equations and we will explore these uses in the next module. The logarithm rules may seem a trivial
+strange, but they come about because of the way exponents behave.</p>
+
+
+<p><h2>$\S$4B.2 Proving the Properties of Logarithms</h2></p>
+<p>If you understand what an exponent is, you can very quickly see why the rules of exponents work.
+But why do logarithms have the properties we listed above?</p>
+<p>As you work through the text, you will demonstrate these rules intuitively, by viewing the logarithm as a
+counter. ( $\log_2 8$ asks "how many $2$s do I need to multiply, in order to get $8$?") However, these rules can also
+be rigorously proven, using the laws of exponents as our starting place.</p>
+
+<p>Proving the Product Rule of Logarithms, $\log_b (MN) = \log_b M + \log_b N$</p>
+<p><center>
+<table>
+  <tr>
+    <td>$c = \log_b M$</td>
+    <td>I'm just inventing $c$ to represent this log</td>
+
+  </tr>
+  <tr>
+    <td>$b^c = M$</td>
+    <td>Rewriting the above expression as an exponent.
+( $\log_b M$ asks "$b$ to what power is $M$?" And the
+equation answers: "$b$ to the $c$ is $M$.')</td>
+
+  </tr>
+  <tr>
+    <td>$d = \log_b N$</td>
+    <td>Similarly, $d$ will represent the other log.</td>
+
+  </tr>
+  <tr>
+    <td>$b^d = N$</td>
+    <td></td>
+
+  </tr>
+  <tr>
+    <td>$\log_b (MN) = \log_b (b^c b^d)$</td>
+    <td>Replacing $M$ and $N$ based on the previous equations</td>
+
+  </tr>
+  <tr>
+    <td>$= \log_b (b^{c+d})$</td>
+    <td>This is the key step! It uses the first law of exponents.
+Thus you can see that the properties of
+logarithms come directly from the laws of exponents.</td>
+
+  </tr>
+  <tr>
+    <td>$= c + d$</td>
+    <td>$\log_b (b^{c+d}$ asks the question: "$b$ to what
+power is $b^{c+d}$ ?" Looked at this way, the answer
+is obviously $(c+d)$ . Hence, you can see how
+the logarithm and exponential functions cancel
+each other out, as inverse functions must.</td>
+
+  </tr>
+  <tr>
+    <td>$= \log_b M + \log_b N$</td>
+    <td>Replacing $c$ and $d$ with what they were originally
+defined as. Hence, we have proven what we
+set out to prove.</td>
+
+  </tr>
+</table>
+</center>
+</p>
+
+<p>To test your understanding, try proving the Quotient Rule of logarithms: the proof is very similar to the proof
+just given above.
+For the Power Rule, you need invent only one variable, $f = \log_b M$ In each case, you will rely on a different
+one of the rules of exponents, showing how each exponent law corresponds to one of the logarithms
+laws.</p>
+
+<p><h2>$\S$4B.3 Working with the Properties of Logarithms</h2></p>
+The following examples help build familiarity with the log properties.
+
+<p><b>Example 4B-2:</b> Expand the following using the properties of logarithms and simplify. Assume
+when necessary that all quantities represent positive real numbers.
+<ol  type="a">
+  <li> $\log_2\left( \dfrac{8}{x}\right)$
+  </br>
+  Solution: To expand $\log_2\left( \frac{8}{x}\right)$, we use the Quotient Rule
+  <table width="75" align="center">
+  <tr>
+  <td align="right" style="white-space: nowrap"> $\log_2\left( \dfrac{8}{x}\right)$</td>
+  <td align="left" style="white-space: nowrap"> $ = \log_2(8) - \log_2(x)$</td>
+  <td style="white-space: nowrap"> Quotient Rule</td>
+</tr>
+  <tr>
+  <td> </td>
+  <td align="left" style="white-space: nowrap">$ = 3 - \log_2(x)$</td>
+  <td style="white-space: nowrap">Since $2^3 = 8$ we can simplify the $\log_2(8)=3$</td>
+</tr>
+  </table>
+</br> </br>
+  </li>
+  <li> $\ln (x^2y)$
+  </br>
+  Solution: To expand this expression, we need both the Product Rule and the Power Rule:
+    <table width="75" align="center">
+  <tr>
+  <td align="right" style="white-space: nowrap"> $\ln (x^2y)$</td>
+  <td align="left" style="white-space: nowrap"> $ = \ln(x^2) + \ln(y)$</td>
+  <td style="white-space: nowrap"> Product Rule</td>
+</tr>
+  <tr>
+  <td> </td>
+  <td align="left" style="white-space: nowrap">$ =  2\ln(x) + \ln(y)$</td>
+  <td style="white-space: nowrap">Power Rule</td>
+</tr>
+  </table>
+  </br> </br>
+  </li>
+  <li> $\log \left( \dfrac{\sqrt{x}}{x+3} \right)$
+  </br>
+  Solution: The Quotient Rule and Power Rule will do the trick for this one.
+      <table width="75" align="center">
+  <tr>
+  <td align="right" style="white-space: nowrap"> $\log \left( \dfrac{\sqrt{x}}{x+3} \right)$</td>
+  <td align="left" style="white-space: nowrap"> $ = \log(\sqrt{x}) - \log(x+3)$</td>
+  <td style="white-space: nowrap"> Quotient Rule</td>
+</tr>
+  <tr>
+  <td> </td>
+  <td align="left" style="white-space: nowrap">$ = \log(x^{1/2}) - \log(x+3)$</td>
+  <td style="white-space: nowrap">Rewrite the square root as an exponent</td>
+</tr>
+  <tr>
+  <td> </td>
+  <td align="left" style="white-space: nowrap">$ = \frac{1}{2}\log(x) - \log(x+3)$</td>
+  <td style="white-space: nowrap">Power Rule</td>
+</tr>
+  </table>
+  Note that we cannot change $\log(x+3)$ by any log rule since it is not a product nor a quotient.
+  </br> </br>
+  </li>
+  <li> $\log(100A^{0.3}B)$
+  </br>
+  Solution:
+        <table width="75" align="center">
+  <tr>
+  <td align="right" style="white-space: nowrap"> $\log(100A^{0.3}B)$</td>
+  <td align="left" style="white-space: nowrap"> $ = \log(100) + \log(A^{0.3})+\log(B)$</td>
+  <td style="white-space: nowrap"> Product Rule</td>
+</tr>
+  <tr>
+  <td> </td>
+  <td align="left" style="white-space: nowrap">$  = 2 + \log(A^{0.3})+\log(B)$</td>
+  <td style="white-space: nowrap">Simplify $\log(100) = 2$ since $10^2=100$</td>
+</tr>
+  <tr>
+  <td> </td>
+  <td align="left" style="white-space: nowrap">$ = 2 + 0.3\log(A)+\log(B)$</td>
+  <td style="white-space: nowrap">Power Rule</td>
+</tr>
+  </table>
+  </br> </br>
+  </li>
+  <li> $\ln(x^2 - 5y)$
+  </br>
+  Solution: This one does not simplify since it is not a product nor quotient.
+  </br> </br>
+  </li>
+</ol>
+
+</p>
+
+<p><b>Example 4B-3:</b> Use the properties of logarithms to write the following as
+a single logarithm.</p>
+<p>
+<ol  type="a">
+  <li>  $\log(x) + \log(y) - \log(5)$
+  </br>
+  Solution:
+        <table width="75" align="center">
+  <tr>
+  <td align="right" style="white-space: nowrap"> $\log(x) + \log(y) - \log(5)$</td>
+  <td align="left" style="white-space: nowrap"> $ = \log(xy) - \log(5)$</td>
+  <td style="white-space: nowrap"> Product Rule to combine $\log(x) + \log(y)$</td>
+</tr>
+  <tr>
+  <td> </td>
+  <td align="left" style="white-space: nowrap">$ = \log\left( \dfrac{xy}{5} \right)$</td>
+  <td style="white-space: nowrap">Quotient Rule</td>
+</tr>
+  </table>
+  </br> </br>
+  </li>
+  <li> $2\ln(x-1) - \ln(x+1)$
+  </br>
+  Solution:
+        <table width="75" align="center">
+  <tr>
+  <td align="right" style="white-space: nowrap"> $2\ln(x-1) -\ln(x+1)$</td>
+  <td align="left" style="white-space: nowrap"> $ = \ln(x-1)^2 -\ln(x+1)$</td>
+  <td style="white-space: nowrap"> Power Rule</td>
+</tr>
+  <tr>
+  <td> </td>
+  <td align="left" style="white-space: nowrap">$= \ln\left(\dfrac{(x-1)^2}{x+1}\right)$</td>
+  <td style="white-space: nowrap">Quotient Rule</td>
+</tr>
+  </table>
+  </br> </br>
+  </li>
+  <li> $\ln(x)\ln(x+1)$
+  </br>
+  Solution: This expression cannot be combined into one log since it is not a sum or difference
+  of two logarithms.
+  </br> </br>
+  </li>
+  <li> $\dfrac{\log(5t)}{\log(t-3)}$
+  </br>
+  Solution: Like the previous example, this expression cannot be combined into
+  one logarithm since it is not the sum or difference of two logarithms.
+  </br> </br>
+  </li>
+</ol>
+</p>
+
+<p><b>Example 4B-4:</b> In the western United States the area $A$ (in $\mbox{mi}^2$)
+affected by an earthquake is related to the magnitude $R$ of the quake by the formula:
+$$R = 2.3 \log(A + 3000) - 5.1$$
+</p>
+<ol type="a">
+  <li> If $5 \mbox{ mi}^2$ of land are affected by an earthquake, what was the magnitude of the quake?
+  </br>
+  Solution: Use $A = 5$ in the formula to find $R$:
+         $$ \begin{align}
+         R  & = 2.3 \log(5 + 3000) - 5.1 \\
+           & = 2.3 \log(3005) - 5.1 \\       
+           & \approx 2.3 (3.47784) - 5.1 \\  
+           & \approx 2.89903 \\  
+         \end{align}$$
+  $R$ is about a magnitude $3$ earthquake.
+  </br> </br>
+  </li>
+  <li> How many square miles will be affected if a magnitude $5$ earthquake hits?
+  </br>
+  Solution: This time we know $R$  but not $A$.
+           $$ \begin{align}
+           5  & = 2.3 \log(A + 3000) - 5.1 & \\
+           5 + 5.1 & = 2.3 \log(A + 3000)  & \\
+          \frac{10.1}{2.3}  & = \log(A + 3000) & \mbox{Switch to exponential form}\\
+           A + 3000 & = 10^{10.1/2.3} &  & \\
+           A  & =10^{10.1/2.3} - 3000 & \\
+           A & \approx   21,620.924 \mbox{ mi}^2 & \\
+         \end{align}$$
+  </li>
+</ol>
+
+</p>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
+Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
+Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 50-52-->
+
+
+<html>
+<head>
+<title>MAT-102: 2A-Linear Function</title>
+<style type="text/css">
+td
+{
+    padding:0 15px 0 15px; <!--add space between table columns-->
+}
+</style>
+
+<style>
+
+table, td
+
+{
+
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+}
+
+table.center
+
+{
+
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+</style>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+<body>
+<H1>MAT-102: 2A-Linear Functions</H1>
+
+<b>Objectives:</b>
+<ul>
+  <li>Understand the concepts of linear function, slope, and $y$-intercept.</li>
+  <li>Give the slope-intercept equation for a line.</li>
+  <li>Give the equation of a line from either a graph, the slope and a point, or two points on the line.</li>
+  <li>Give equations for horizontal and vertical lines.</li>
+</ul>
+
+
+<p>Most students entering this course are already familiar with the basic mechanics of graphing lines.
+Recapping very briefly: the equation for a line is $y = mx + b$ where  $m$ and $b$ are constants. Note that $b$ is the $y$-intercept  and $m$ is the slope.   This form of the equation for a line is sometimes called the <b>slope-intercept</b> form because the slope and vertical intercept are clearly seen.
+</p>
+<p>
+<b>Example 2A-1:</b> Any equation that can be written in slope-intercept form is the equation for a line. So, $2x-5y = 15$ represents a line since
+         $$ \begin{align}
+                2x-5y & = 15\\
+                    -5y & = -2x+15\\
+                       y & = \frac{2}{5}x-3. \\
+          \end{align}$$
+We see that the $y$-intercept of this line is at $y = -3$ and the slope is $\frac{2}{5}.$
+</p>
+<p>
+Not all equations represent lines. For example, $y = x^2 + 3x$ does not define a line. It cannot be written in the form $y = mx + b.$
+</p>
+<p>There are two purposes of reintroducing this material in this course. The first is to frame the
+discussion as linear functions modeling behavior. The second is to deepen your understanding of the
+important concept of slope.</p>
+<p>Consider the following examples. Sam is a salesman—he earns a commission for each sale. Alice is a
+technical support representative—she earns $\$100$ each day. The chart below shows their bank accounts
+over the week.</p>
+
+<p><table align="center" style="width:75%">
+  <tr>
+    <td>After this many days ($d$)</td>
+    <td>Sam’s bank account ($S$)</td>
+    <td>Alice’s bank account ($A$)</td>
+  </tr>
+  <tr>
+    <td>$0$ (*what they started with)</td>
+    <td>$\$75$</td>
+    <td>$\$750$</td>
+  </tr>
+<tr>
+    <td>$1$</td>
+    <td>$\$275$</td>
+    <td>$\$850$</td>
+  </tr>
+<tr>
+    <td>$2$</td>
+    <td>$\$275$</td>
+    <td>$\$950$</td>
+  </tr>
+<tr>
+    <td>$3$</td>
+    <td>$\$450$</td>
+    <td>$\$1,050$</td>
+  </tr>
+<tr>
+    <td>$4$</td>
+    <td>$\$480$</td>
+    <td>$\$1,150$</td>
+  </tr>
+<tr>
+    <td>$5$</td>
+    <td>$\$530$</td>
+    <td>$\$1,250$</td>
+  </tr>
+</table></p>
+
+<p>Sam has some extremely good days (such as the first day, when he made $\$200$) and some extremely bad
+days (such as the second day, when he made nothing). Alice makes exactly $\$100$ every day.</p>
+<p>Let $d$ be the number of days, $S$ be the number of dollars Sam has made, and $A$ be the number of dollars
+Alice has made. Both $S$ and $A$ are functions of time. But $S(d)$ is not a linear function, and $A(d)$ is a linear
+function.</p>
+
+<p><b>Definition: Linear Function</b> A function is said to be “linear” if every time the independent
+variable increases by $1$, the dependent variable increases or decreases by the same amount.</p>
+
+<p>Once you know that Alice’s bank account function is linear, there are only two things you need to know
+before you can predict her bank account on any given day.
+
+<ul>
+  <li> How much money she started with ($\$750$ in this example). This is called the $y$-intercept </li>
+  <li> How much she makes each day ($\$100$ in this example). This is called the slope.</li>
+</ul>
+
+<table>
+<tr>
+  <td>So, the linear function that gives how much money </br>
+  is in Alice's bank account  $d$ days after she opened the account is </br>
+  $A(d) = 100d + 750.$</td>
+  <td><img src="set2A-Linear_Functions_00.png"></td>
+</tr>
+</table>
+
+
+<p>The $y$-intercept is relatively easy to understand. As discussed in Section 1C, the vertical intercept may be
+calculated from the formula of a line by evaluating the formula at $0$. Verbally, it is where the function is when the
+independent variable is $0$; graphically, it is where the line crosses the $y$-axis. </p>
+
+<p>
+<b>Example 2A-2:</b> Find the $y$-intercept for the line defined by the equation, $x + 3y = 6$.
+</br>
+Solution: The $y$-intercept is the value of $y$ when $x=0$, so $0 + 3y = 6$, and dividing both sides by $3$ we get: $y=2$. So, the $y$-intercept is $2$.
+</br> Note that we could have put the equation in the slope-intercept form to find the intercept:
+<p>
+<table align="center">
+  <tr>
+    <td  style="text-align:right">$x + 3y$ </td>
+    <td> $= 6$</td>
+        <td> Subtract $x$ from both sides</td>
+  </tr>
+  <tr>
+    <td style="text-align:right">$3y$ </td>
+    <td>$= -x+6$ </td>
+    <td>Divide both sides by $3$</td>
+  </tr>
+    <tr>
+    <td style="text-align:right">$y$ </td>
+    <td>$= -\frac{1}{3}x+2$ </td>
+    <td></td>
+  </tr>
+</table>
+Again, we found that the $y$-intercept is $2$
+</p>
+
+<H2>$\S$2A.1 But what about slope?</H2>
+ One of the best ways to understand the idea of slope is to convince yourself that all
+of the following definitions of slope are actually the same.</p>
+
+<p><table align="center" style="width:75%">
+  <tr>
+    <td><b>Definitions of Slope</b></td>
+  </tr>
+  <tr>
+    <td>In our example</td>
+    <td>In general</td>
+    <td>On a graph</td>
+  </tr>
+<tr>
+    <td>Each day, Alice’s bank account
+increases by $100$. So the slope is
+$100$.</td>
+    <td>Each time the independent variable
+increases by $1$, the dependent
+variable increases by the
+slope.</td>
+    <td>Each time you move to the right
+by $1$, the graph goes up (or down) by the
+slope.</td>
+  </tr>
+<tr>
+    <td>Between days $2$ and $5$, Alice
+earns $\$300$ in $3$ days.
+$300/3=100$. Between days $1$
+and $3$, she earns $\$200$ in $2$ days.
+$200/2=100$.</td>
+    <td>Take any two values of the independent variable with their corresponding values
+in the dependent variable, divide the change in the dependent variable's values by the change
+in the independent variable. This is the slope. </td>
+    <td>Take any two points on the line.  The change
+in $y$ divided by the change in $x$ is the slope. This is often written as
+$m = \dfrac{\Delta y}{\Delta x}= \dfrac{y_2 - y_1}{x_2-x_1}$ , or as $m = \dfrac{\mbox{rise}}{\mbox{run}}$</td>
+  </tr>
+<tr>
+    <td>The higher the slope, the faster
+Alice is making money.</td>
+    <td>The higher the slope, the
+faster the dependent variable
+increases.</td>
+    <td>The higher the slope, the faster
+the graph rises as you move to
+the right.</td>
+  </tr>
+</table></p>
+
+<p>So slope does not tell you where a graph is, but how quickly it is rising or falling. Looking at a graph, you can get an
+approximate feeling for its slope without any numbers. Examples are given below.</p>
+
+<table class = "left">
+  <tr>
+    <td align="right">A slope of $1$: each time you go over $1$, you also go up $1$.</td>
+    <td><img src="set2A-Linear_Functions_02a.png" alt=""></td>
+  </tr>
+  <tr>
+    <td align="right">A steep slope of perhaps $3$ or $4$.</td>
+    <td><img src="set2A-Linear_Functions_02b.png" alt=""></td>
+  </tr>
+  <tr>
+    <td align="right">A gentle slope of perhaps $\frac{1}{2}$.</td>
+    <td><img src="set2A-Linear_Functions_02c.png" alt=""></td>
+  </tr>
+  <tr>
+    <td align="right">A horizontal line has a slope of $0$: </br>
+    each time you go over 1, you don't go up at all! The equation </br>
+           of a horizontal line is: $y = 0x + b$ and simplified: $y = b$.</td>
+    <td><img src="set2A-Linear_Functions_02d.png" alt=""></td>
+  </tr>
+  <tr>
+    <td align="right">This line goes down as you move left to right. </br>
+    So the slope is negative. It is steep: maybe a $-2$.</td>
+    <td><img src="set2A-Linear_Functions_02e.png" alt=""></td>
+  </tr>
+    <tr>
+    <td align="right">A vertical line has no slope. </br>
+    It has no change in the horizontal direction and </br>
+    since we cannot calculate division by zero, </br>
+    we say the slope is <b>not defined</b>. </br>
+    Note that having no value is not the same as having the value of zero. </br>
+    The equation for a vertical line is just $x = c$ </br>
+    where $c$ is the $x$-intercept of the line.</td>
+    <td><img src="set2A-Linear_Functions_02f.png" alt=""></td>
+  </tr>
+</table>
+
+<p>The slope of a line may be calculated from any two points on the line, $(x_1, y_1)$ and $(x_2, y_2)$.  The "rise" is found by finding the difference between the two $y$ values, $y_2 - y_1$ and dividing by the "run", the difference in the $x$ values: $x_2 - x_1$. Note that you must find the differences in the same order. You may not calculate the change from $y_1$ to $y_2$ and then the change from $x_2$ to $x_1$.  So the formula for finding the slope of a line from two points on the line is:
+$$\mbox{Slope through two points } ( x_1, y_1) \mbox{ and } ( x_2, y_2) = \dfrac{y_2 - y_1}{x_2 - x_1}$$
+</p>
+<p>
+<b>Example 2A-3:</b>
+
+<table>
+<tr>
+  <td>Looking at the graph at the right, you can see  it doesn't matter </br>
+  which points you use as long as you are consistent in finding the differences </br>
+  between $x$ and $y$ values: slope $= \frac{2}{1} = \frac{-2}{-1} = 2$.</td>
+  <td><img src="set2A-Linear_Functions_01.png"></td>
+</tr>
+</table>
+
+<p>
+<b>Example 2A-4:</b> To find the slope, $m$, of the line passing through the points, $(2, -5)$ and $(4, 1),$ we calculate the
+rise and divide by the run.  It doesn't matter which point you take to be the $(x_1, y_1)$ or $(x_2, y_2)$ so let $(2, -5)$ be the "first"
+point and $(4, 1)$ be the "second" point"
+$$m = \frac{y_2 - y_1}{x_2 - x_1}=\frac{1 - (-5)}{4 - 2} = \frac{6}{2} = 3$$
+</p>
+<p>
+<b>Example 2A-5:</b> Find the slope of the line passing through the points, $(3, 2)$ and $(-1, 2).$  This time we let  $(3, 2)$ be the "first"
+point and $(-1, 2)$ be the "second" point"
+$$m = \frac{y_2 - y_1}{x_2 - x_1}=\frac{2 - 2}{-1- 3} = \frac{0}{-4} = 0$$
+Since the slope is zero, the line is a horizontal line with all $y$-coordinates equal to $2$.
+</p>
+<p>
+<b>Example 2A-6:</b> Find the slope of the line passing through the points, $(5, 0)$ and $(5, 3).$  Taking  $(5, 0)$ for the "first"
+point and $(5,3)$ be the "second" point"
+$$m = \frac{y_2 - y_1}{x_2 - x_1}=\frac{3 - 0}{5- 5}  \mbox{ Oops, we are in trouble here!}$$
+Since $5 - 5 = 0$ and we cannot divide by zero, the slope is not defined. This is a vertical line where all the points have an $x$-coordinate of $5$, i.e. the line
+passes vertically through $x = 5$ on the $x$-axis.
+</p>
+
+
+<H2>$\S$2A.2 Finding the Equation for a line.</H2>
+We may calculate the equation for a line if we can find it's slope and vertical intercept.
+<p>
+<b>Example 2A-7: Find the equation from a graph</b>
+</br>
+
+<table class = "left">
+  <tr>
+    <td align="right">This method is pretty easy if the slope is an integer </br>
+    or simple fraction like $\frac{2}{3}$ or $-\frac{1}{2}$.  </br>
+    Using the previous graph, which we show again at the right,</br>
+     recall the slope is $2$ and we can see that the $y$-intercept is $0$.</td>
+    <td><img src="set2A-Linear_Functions_01.png" alt=""></td>
+  </tr>
+
+
+</table>
+
+Therefore, the equation for the line is $y = 2x$.
+</p>
+<p>
+Of course if the slope was $\sqrt{2}$, we'd want a better method of finding the equation.
+<p>
+<b>Example 2A-8: Find the equation from the slope and a point</b>
+</br>
+If we know the slope, we are half way done!  Let's find the equation for the line with slope $\frac{1}{2}$ which passes through the
+point $(-3,5).$
+</br>
+Since we know the point is on the line, it must be a solution to the equation for the line: $y = \frac{1}{2}x + b$.  If we plug in the values
+$x = -3$ and $y = 5$ into the equation, we can find the value of $b:$
+         $$ \begin{align}
+               5 & = \frac{1}{2}(-3) + b\\
+               5 & = -\frac{3}{2} + b\\
+               5 + \frac{3}{2} & = b \\
+                \frac{10}{2} + \frac{3}{2} & = b \\
+                \frac{13}{2} & =  b \\
+          \end{align}$$
+So, the equation for this line is $y = \frac{1}{2}x + \frac{13}{2}.$
+</p>
+<p>
+<b>Example 2A-9: Find the equation from points on the line</b>
+</br>
+ Let $(-2,3)$ and $(1,7)$ be points on a line. If we find the slope, we may use the same process as the previous example to find the equation. The slope is:
+ $$m = \dfrac{7-3}{1-(-2)} =\dfrac{4}{3}.$$
+ We now know half of what we need for the equation: $y = \frac{4}{3}x + b$, where $b$ is the $y$-intercept.  Both points are on the line and so if we pick a point and plug in the $x$ and $y$ values, we can find $b$:
+         $$ \begin{align}
+                                     7 & = \frac{4}{3}(1) + b\\
+                7 - \frac{4}{3} & = b\\
+                \frac{21}{3} - \frac{4}{3} & = b\\
+              \mbox{So, }    b & = \frac{17}{3} \\
+          \end{align}$$
+Hence, the equation is $y = \frac{4}{3}x + \frac{17}{3}$.
+</p>
+<p>We could have used the other point: $3 = \frac{4}{3}(-2) + b$. In this case, $b = 3 + \frac{8}{3} = \frac{9}{3} + \frac{8}{3}= \frac{17}{3}$ and $b$ is still equal to $\frac{17}{3}.$  So remember, finding the $b$ from one point is enough to do just one time.
+</p>
+<p>
+<b>Example 2A-10: </b> Find the equation for the line through the points $(-2,1)$ and $(3,1)$
+</br>
+Solution: The slope is:
+         $$m = \frac{1 - 1}{3 - (-2)} = \frac{0}{5} = 0$$
+A line with zero slope is horizontal.  It is defined by the fact that all of it's $y$-coordinates are the same. In this case, $y = 1$
+is the equation for the line.  Even if you take the time to write out the slope-intercept form to find the $y$-intercept, you will find:
+         $$ \begin{align}
+                y & = 0x + b\\
+                1 & = 0(-2)+b  \\
+                1 & =b. \\
+          \end{align}$$
+And, even though it took a little longer, we get the equation, $y = 1,$ for this line. Please don't write $y = 0x + 1$ for the equation.
+Even though it is technically correct, it's better to simplify the equation since $0x + 1 = 1.$
+</p>
+<p>
+<b>Example 2A-11: </b> Find the equation for the vertical line through the point $(-2,5).$
+</br>
+Solution: The slope of a vertical line is not defined since it has no change in the horizontal direction.  So, there is no value for the
+$m$ in the slope-intercept form: $y = mx+b$. How can we proceed if we don't have a value to work with?
+</br>
+The equation for a line must define it--tell us "where" it is and what it looks like. The defining aspect of a vertical line is the
+fact that all of it's $x$=coordinates are the same. In this case, the $x$ values of all the points on the line are $-2.$ So, the
+equation for the line is $x = -2$ since it tells all we need to know about "where" the line is and what it looks like.
+</p>
+</body>
+</html> 

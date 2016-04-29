@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
+Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
+Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 23-31-->
+
+
+<html>
+<head>
+<title>MAT-102: Module 1A-Function Concepts</title>
+<style>
+table, td
+{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+table.center
+{
+  margin-left:auto;
+  margin-right:auto;
+}
+</style>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+
+
+<body><b>
+1.1 Function Concepts </b>
+
+<p>The unit on functions is the most important in the Algebra II course, because it provides a crucial transition
+point. Roughly speaking. . .</p>
+<p>Before Algebra I, math is about numbers.</p>
+<p>Starting in Algebra I, and continuing into Algebra II, math is about variables.</p>
+<p>Beginning with Algebra II, and continuing into Calculus, math is about functions.</p>
+<p>Each step builds on the previous step. Each step expands the ability of mathematics to model behavior
+and solve problems. And, perhaps most crucially, each step can be frightening to a student. It can be very
+intimidating for a beginning Algebra student to see an entire page of mathematics that is covered with
+letters, with almost no numbers to be found!</p>
+<p>Unfortunately, many students end up with a very vague idea of what variables are (“That’s when you use
+letters in math”) and an even more vague understanding of functions (“Those things that look like $f (x)$ or
+something”). If you leave yourself with this kind of vague understanding of the core concepts, the lessons
+will make less and less sense as you go on: you will be left with the feeling that “I just can’t do this stuff”
+without realizing that the problem was all the way back in the idea of a variable or function.</p>
+<p>The good news is, variables and functions both have very specific meanings that are not difficult to understand.</p>
+
+<p><b>What is a Variable?</b></p>
+<p>A variable is a letter that stands for a number you don’t know, or a number that can change.</p>
+<p>A few examples:</p>
+<p><b>Example 1A-1: Good Examples of Variable Definitions,</b></p>
+<p> “Let $p$ be the number of people in a classroom.”</p>
+<p>“Let $A$ be John’s age, measured in years.”</p>
+<p>“Let $h$ be the number of hours that Susan has been working.”
+<p>In each case, the letter stands for a very specific number. However, we use a letter instead of a number
+because we don’t know the specific number. In the first example above, different classrooms will have
+different numbers of people (so $p$ can be different numbers in different classes); in the second example,
+John’s age is a specific and well-defined number, but we don’t know what it is (at least not yet); and in the
+third example, h will actually change its value every hour. In all three cases, we have a good reason for
+using a letter: it represents a number, but we cannot use a specific number such as “$–3$” or “ $4 1/2$”.</p>
+<p><b>Example 1A-2: Bad Examples of Variable Definitions</b></p>
+<p>“Let n be the nickels.”</p>
+<p>“Let $M$ be the number of minutes in an hour.”</p>
+<p>The first error is by far the most common. Remember that a variable always stands for a number. “The
+nickels” are not a number. Better definitions would be: “Let $n$ be the number of nickels” or “Let $n$ be the
+total value of the nickels, measured in cents” or “Let $n$ be the total mass of the nickels, measured in grams.”</p>
+<p>The second example is better, because “number of minutes in an hour” is a number. But there is no reason
+to call it “The Mysterious Mr. M” because we already know what it is. Why use a letter when you just mean
+“$60$”?</p>
+<p>Bad variable definitions are one of the most common reasons that students get stuck on word problems—
+or get the wrong answer. The first type of error illustrated above leads to variable confusion: $n$ will end
+up being used for “number of nickels” in one equation and “total value of the nickels” in another, and
+you end up with the wrong answer. The second type of error is more harmless—it won’t lead to wrong
+answers—but it won’t help either. It usually indicates that the student is asking the wrong question (“What
+can I assign a variable to?”) instead of the right question (“What numbers do I need to know?”)</p>
+
+<p><b>Variables aren’t all called $x$. Get used to it.</b></p>
+<p>Many students expect all variables to be named $x$, with possibly an occasional guest appearance by $y$.
+In fact, variables can be named with practically any letter. Uppercase letters, lowercase letters, and even
+Greek letters are commonly used for variable names. Hence, a problem might start with “Let $H$ be the
+home team’s score and $V$ be the visiting team’s score.”</p>
+<p>If you attempt to call both of these variables $x$, it just won’t work. You could in principle call one of them $x$
+and the other $y$, but that would make it more difficult to remember which variable goes with which team.
+It is important to become comfortable using a wide range of letters. (I do, however, recommend avoiding
+the letter o whenever possible, since it looks like the number $0$.)</p>
+
+
+<p><b>1.3 What is a Function?</b></p>
+<p>A function is neither a number nor a variable: it is a process for turning one number into another. For
+instance, “Double and then add 6” is a function. If you put a 4 into that function, it comes out with a 14. If
+you put a 1/2 into that function, it comes out with a 7.</p>
+<p>The traditional image of a function is a machine, with a slot on one side where numbers go in and a slot on
+the other side where numbers come out.</p>
+<p>PICTURE</p>
+<p>Table 1.1: A number goes in. A number comes out. The function is the machine, the process that turns 4
+into 14 or 5 into 16 or 100 into 206.</p>
+
+<p>The point of this image is that the function is not the numbers, but the machine itself—the process, not the
+results of the process.</p>
+<p>The primary purpose of “The Function Game” that you play on Day 1 is to get across this idea of a numerical
+process. In this game, one student (the “leader”) is placed in the role of a function. “Whenever someone
+gives you a number, you double that number, add 6, and give back the result.” It should be very clear, as
+you perform this role, that you are not modeling a number, a variable, or even a list of numbers. You are
+instead modeling a process—or an algorithm, or a recipe—for turning numbers into other numbers. That
+is what a function is.</p>
+<p>The function game also contains some more esoteric functions: “Respond with –3 no matter what number
+you are given,” or “Give back the lowest prime number that is greater than or equal to the number you
+were given.” Students playing the function game often ask “Can a function do that?” The answer is always
+yes (with one caveat mentioned below). So another purpose of the function game is to expand your idea of
+what a function can do. Any process that consistently turns numbers into other numbers, is a function.</p>
+<p>By the way—having defined the word “function” I just want to say something about the word “equation.”
+An “equation” is when you “equate” two things—that is to say, set them equal. So x2 - 3 is a function, but
+it is not an equation. x2 - 3 = 6 is an equation. An “equation” always has an equal sign in it.</p>
+
+<p><b>1.4 The Rule of Consistency</b></p>
+<p>There is only one limitation on what a function can do: a function must be consistent.</p>
+<p>For instance, the function in the above drawing is given a 5, and gives back a 16. That means this particular
+function turns 5 into 16—always. That particular function can never take in a 5 and give back a 14. This
+“rule of consistency” is a very important constraint on the nature of functions.</p>
+<p>NOTE: This rule does not treat the inputs and outputs the same!</p>
+<p>For instance, consider the function y = x2. This function takes both 3 and -3 and turns them into 9 (two
+different inputs, same output). That is allowed. However, it is not reversible! If you take a 9 and turn it into
+both a 3 and a –3 (two different outputs, same input), you are not a function.</p>
+<p>PICTURE</p>
+<p>Table 1.2: If 3 goes in, 9 comes out. If –3 goes in, 9 also comes out. No problem: x2 is a function.</p>
+<p>PICTURE</p>
+<p>Table 1.3: If 9 goes in, both –3 and 3 come out. This violates the rule of consistency: no function can do
+this</p>
+<p>This asymmetry has the potential to cause a great deal of confusion, but it is a very important aspect of
+functions.</p>
+<p><b>1.5 FourWays to Represent a Function</b></p>
+<p>Modern Calculus texts emphasize that a function can be expressed in four different ways.</p>
+<p>1. Verbal - This is the first way functions are presented in the function game: “Double and add six.”</p>
+<p>2. Algebraic - This is the most common, most concise, and most powerful representation: 2x + 6 . Note
+that in an algebraic representation, the input number is represented as a variable (in this case, an x).</p>
+<p>3. Numerical - This can be done as a list of value pairs, as (4, 14) — meaning that if a 4 goes in, a 14
+comes out. (You may recognize this as (x, y) points used in graphing.)</p>
+<p>4. Graphical - This is discussed in detail in the section on graphing.</p>
+<p>These are not four different types of functions: they are four different views of the same function. One of
+the most important skills in Algebra is converting a function between these different forms, and this theme
+will recur in different forms throughout the text.</p>
+<p><b>1.6 Domain and Range</b></p>
+</p>Consider the function y =
+p
+x. If this function is given a 9 it hands back a 3. If this function is given a 2 it
+hands back. . .well, it hands back
+p
+2, which is approximately 1.4. The answer cannot be specified exactly
+as a fraction or decimal, but it is a perfectly good answer nonetheless.</p>
+<p>On the other hand, what if this function is handed –4? There is no
+p
+??4, so the function has no number to
+hand back. If our function is a computer or calculator, it responds with an error message. So we see that this
+function is able to respond to the numbers 9 and 2, but it is not able to respond in any way to the number
+-4. Mathematically, we express this by saying that 9 and 2 are in the “domain” of the square root function,
+and –4 is not in the domain of this function.</p>
+<p>Definition 1.1: Domain</p>
+<p>The domain of a function is all the numbers that it can successfully act on. Put another way, it is
+all the numbers that can go into the function.</p>
+<p>A square root cannot successfully act on a negative number. We say that “The domain of
+p
+x is all numbers
+such that
+” meaning that if you give this function zero or a positive number, it can act on it; if you give this function
+a negative number, it cannot.</p>
+<p>A subtler example is the function y =
+p
+x + 7. Does this function have the same domain as the previous
+function? No, it does not. If you hand this function a –4 it successfully hands back
+p
+3 (about 1.7). –4 is in
+the domain of this function. On the other hand, if you hand this function a –8 it attempts to take
+p
+??1 and
+fails; –8 is not in the domain of this function. If you play with a few more numbers, you should be able to
+convince yourself that the domain of this function is all numbers x such that x  ??7.</p>
+<p>You are probably familiar with two mathematical operations that are not allowed. The first is, you are not
+allowed to take the square root of a negative number. As we have seen, this leads to restrictions on the
+domain of any function that includes square roots.</p>
+<p>The second restriction is, you are not allowed to divide by zero. This can also restrict the domain of functions.
+For instance, the function y = 1
+x2??4 has as its domain all numbers except x = 2 and x = ??2. These
+two numbers both cause the function to attempt to divide by 0, and hence fail. If you ask a calculator to
+plug x = 2 into this function, you will get an error message.</p>
+<p>So: if you are given a function, how can you find its domain? Look for any number that puts a negative
+number under the square root; these numbers are not in the domain. Look for any number that causes the
+function to divide by zero; these numbers are not in the domain. All other numbers are in the domain.</p>
+
+<p><table style="width:100%">
+  <tr>
+    <td>Function</td>
+    <td>Domain</td> 
+    <td>Comments</td>
+  </tr>
+  <tr>
+    <td>x</td>
+    <td>x  0</td> 
+    <td>You can take the square root of
+0, or of any positive number, but
+you cannot take the square root
+of a negative number.</td>
+  </tr>
+<tr>
+    <td>x + 7</td>
+    <td>x  ??7</td> 
+    <td>If you plug in any number
+greater than or equal to –7, you
+will be taking a legal square root.
+If you plug in a number less than
+–7, you will be taking the square
+root of a negative number.This
+domain can also be understood
+graphically: the graph y =
+p
+x
+has been moved 7 units to the
+left. See “horizontal permutations”
+below.</td>
+  </tr>
+<tr>
+    <td>1/x</td>
+    <td>x = 0</td> 
+    <td>In other words, the domain is
+“all numbers except 0.” You are
+not allowed to divide by 0. You
+are allowed to divide by anything
+else.</td>
+  </tr>
+<tr>
+    <td>1/x-3</td>
+    <td>x = 3</td> 
+    <td>If x = 3 then you are dividing
+by 0, which is not allowed. If
+x = 0you are dividing by –3,
+which is allowed. So be careful!
+The rule is not “when you are dividing,
+x cannot be 0.” The rule
+is “ x can never be any value that
+would put a 0 in the denominator.”</td>
+  </tr><tr>
+    <td>1/x2-4</td>
+    <td>x = 2</td> 
+    <td>Or, “ xcan be any number except
+2 or –2.” Either of these x values
+will put a 0 in the denominator,
+so neither one is allowed.</td>
+  </tr><tr>
+    <td>2x + x2 ?? 3x + 4</td>
+    <td>All numbers</td> 
+    <td>You can plug any x value into
+this function and it will come
+back with a number.</td>
+  </tr><tr>
+    <td>x-3/x??5</td>
+    <td>x  3</br>
+x 6= 5</td> 
+    <td>In words, the domain is all numbers
+greater than or equal to 3,
+except the number 5. Numbers
+less than 3 put negative numbers
+under the square root; 5 causes a
+division by 0.</td>
+  </tr>
+</table>
+</p>
+<p>You can confirm all these results with your calculator; try plugging numbers into these functions, and see
+when you get errors!</p>
+<p>A related concept is range</p>.
+<p>Definition 1.2: Range</p>
+<p>The range of a function is all the numbers that it may possibly produce. Put another way, it is all
+the numbers that can come out of the function.</p>
+<p>To illustrate this example, let us return to the function y =
+p
+x + 7. Recall that we said the domain of this
+function was all numbers x such that x  ??7; in other words, you are allowed to put any number greater
+than or equal to –7 into this function.</p>
+<p>What numbers might come out of this function? If you put in a –7 you get out a 0. (
+p
+0 = 0) If you put in
+a –6 you get out
+p
+1 = 1. As you increase the x value, the y values also increase. However, if you put in
+x = ??8 nothing comes out at all. Hence, the range of this function is all numbers y such that y  0. That
+is, this function is capable of handing back 0 or any positive number, but it will never hand back a negative
+number.</p>
+<p>It’s easy to get the words domain and range confused—and it’s important to keep them distinct, because
+although they are related concepts, they are different from each other. One trick that sometimes helps is
+to remember that, in everyday useage, “your domain” is your home, your land—it is where you begin. A
+function begins in its own domain. It ends up somewhere out on the range.</p>
+
+<p>1.6.1 A different notation for domain and range</p>
+<p>Domains and ranges above are sometimes expressed as intervals, using the following rules:</p>
+<p>Parentheses () mean “an interval starting or ending here, but not including this number”</p>
+<p>Square brackets [] mean “an interval starting or ending here, including this number”</p>
+<p>This is easiest to explain with examples.</p>
+
+<p><table style="width:100%">
+  <tr>
+    <td>This notation...</td>
+    <td>...means this...</td> 
+    <td>...or in other words</td>
+  </tr>
+  <tr>
+    <td>(??3, 5)</td>
+    <td>All numbers between –3 and 5,
+not including –3 and 5.</td> 
+    <td>??3 < x < 5</td>
+  </tr>
+ <tr>
+    <td>[??3, 5]</td>
+    <td>All numbers between –3 and 5,
+including –3 and 5.</td> 
+    <td>??3  x  5</td>
+  </tr>
+<tr>
+    <td>[??3, 5)</td>
+    <td>All numbers between –3 and 5,
+including –3 but not 5.</td> 
+    <td>??3  x < 5</td>
+  </tr>
+<tr>
+    <td>(??¥, 10]</td>
+    <td>All numbers less than or equal to
+10.</td> 
+    <td>x  10</td>
+  </tr>
+<tr>
+    <td>(23,¥)</td>
+    <td>All numbers greater than 23.</td> 
+    <td>x > 23</td>
+  </tr>
+<tr>
+    <td>(??¥, 4) (4,¥)</td>
+    <td>All numbers less than 4, and all
+numbers greater than 4. In other
+words, all numbers except 4.</td> 
+    <td>x 6= 4</td>
+  </tr>
+</table></p>
+
+
+<p>1.7 Functions in the RealWorld</p>
+<p>Why are functions so important that they form the heart of math from Algebra II onward?</p>
+<p>Functions are used whenever one variable depends on another variable. This relationship between two
+variables is the most important in mathematics. It is a way of saying “If you tell me what x is, I can tell you
+what y is.” We say that y “depends on” x, or y “is a function of” x.</p>
+<p>A few examples:</p>
+<p>Example 1.3: Function Concepts – Functions in the Real World</p>
+<p>"The area of a circle depends on its radius."</p>
+<p>"The amount of money Alice makes depends on the number of hours she works."</p>
+<p>“Max threw a ball. The height of the ball depends on how many seconds it has been in the
+air.”</p>
+<p>In each case, there are two variables. Given enough information about the scenario, you could assert that if
+you tell me this variable, I will tell you that one. For instance, suppose you know that Alice makes $100
+per day. Then we could make a chart like this.</p>
+
+<p><table style="width:100%">
+  <tr>
+    <td>If Alice works this many days...</td>
+    <td>...she makes this many dollars</td> 
+    
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td> 
+    
+  </tr>
+<tr>
+    <td>1</td>
+    <td>100</td> 
+    
+  </tr><tr>
+    <td>1 1/2</td>
+    <td>150</td> 
+    
+  </tr><tr>
+    <td>8</td>
+    <td>800</td> 
+    
+  </tr>
+</table></p>
+
+<p>If you tell me how long she has worked, I will tell you how much money she has made. Her earnings
+“depend on” how long she works.</p>
+<p>The two variables are referred to as the dependent variable and the independent variable. The dependent
+variable is said to “depend on” or “be a function of” the independent variable. “The height of the ball is a
+function of the time.”</p>
+<p>Example 1.4: Bad Examples of Functional Relationships</p>
+<p>"The number of Trojan soldiers depends on the number of Greek soldiers."</p>
+<p>"The time depends on the height of the ball."</p>
+<p>The first of these two examples is by far the most common. It is simply not true. There may be a relationship
+between these two quantities—for instance, the sum of these two variables might be the total number of
+soldiers, and the difference between these two quantities might suggest whether the battle will be a fair
+one. But there is no dependency relationship—that is, no way to say “If you tell me the number of Greek
+soldiers, I will tell you the number of Trojan soldiers”—so this is not a function.</p>
+<p>The second example is subtler: it confuses the dependent and the independent variables. The height
+depends on the time, not the other way around. More on this in the discussion of “Inverse Functions".</p>
+
+
+
+
+
+</body>
+</html> 

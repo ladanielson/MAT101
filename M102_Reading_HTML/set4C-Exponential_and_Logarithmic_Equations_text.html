@@ -1,0 +1,494 @@
+<!DOCTYPE html> <!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/) Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  NEEDS PAGES-->
+<html> <head> <title>MAT-102: 4C-Exponential and Logarithmic Equations</title>
+<style type="text/css">
+td
+{
+    padding:0 0 0 15px; <!--add space between table columns-->
+}
+</style>
+<style> table#collapseborder  {
+    border-collapse: collapse; }
+    table#collapseborder, tr#collapseborder, td#collapseborder {border:1px solid black; padding: 10px}
+</style>
+<style>
+table, td
+{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+table.center
+{
+  margin-left:auto;
+  margin-right:auto;
+}
+</style>
+ <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script> <script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+</head>
+
+
+<body>
+<h1>MAT-102: 4C-Exponential and Logarithmic Equations</h1>
+
+<b>Objectives:</b>
+<ul>
+  <li>Solve exponential equations.</li>
+  <li>Solve logarithmic equations.</li>
+</ul>
+
+<p>In this section we will develop techniques for solving equations involving exponential and logarithmic functions.
+Suppose, for instance, we wanted to solve the equation $2^x = 128.$  If we happen to see that $128 = 2^7$
+then we have the solution to the equation: $x = 7$. However, if we change the equation slightly to $2^x = 129$,
+this method  leaves a lot to be desired. The exponent we need on $2$ to get $129$ does not easily come to mind.
+Here's were logs come to the rescue.  Just like squaring both sides of an equation is a reasonable strategy when
+working with radicals, "logging" both sides allows us to use the rules of logarithms to solve exponential
+equations. We could take the logarithm base $2$ of both sides, but this sometimes presents a problem:
+<table style="width:75%" align="center">
+  <tr>
+    <td align ="right">$2^x = 129$</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align ="right">$\log_2(2^x) = \log_2(129)$</td>
+    <td>Take the logarithm base $2$ of both sides</td>
+  </tr>
+  <tr>
+    <td align ="right">$x = \log_2(129)$</td>
+     <td> Use the fact that $\log_2(x)$ is the inverse function of $2^x$.
+     </td>
+  </tr>
+</table>
+</p>
+We've solved for $x$, but how do we calculate $\log_2(129)$? Most calculators
+do not have a button for a logarithm base $2$. If you think about it, there are
+an infinite number of bases we could consider for a logarithm.  Your calculator
+probably has two logarithm buttons, one for $\ln(x)$ and another for $\log(x)$,
+base $e$ and $10$ respectively.  Fortunately, all is not lost. Let's see how
+we would solve the problem limited by our choice of bases. We'll use base $e$
+for this problem.
+</p>
+<p><b> Example 4C-1:</b>
+<table style="width:75%" align="center">
+  <tr>
+    <td align ="right">$2^x = 129$</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align ="right">$\ln(2^x) = \ln(129)$</td>
+    <td>Take the natural logarithm of both sides</td>
+  </tr>
+  <tr>
+    <td align ="right">$x\ln(2) = \ln(129)$</td>
+     <td> Use the Power Rule for logs to bring down the $x$ in the exponent.
+     </td>
+  </tr>
+    <tr>
+    <td align ="right">$ \dfrac{x\ln(2)}{\ln(2)} =  \dfrac{\ln(129)}{\ln(2)}$</td>
+     <td> Since $\ln(2)$ is a perfectly good number, divide both sides by it.
+     </td>
+  </tr>
+    <tr>
+    <td align ="right">$x =  \dfrac{\ln(129)}{\ln(2)}$</td>
+     <td> We have solved for $x$
+     </td>
+  </tr>
+  <tr>
+    <td align ="right">$x \approx 7.011227$</td>
+     <td> Use a calculator to get the approximate value.
+     </td>
+      <tr>
+    <td align ="right">Check our answer: $2^{7.011227} \approx 128.9999$</td>
+     <td> $\checkmark$
+     </td>
+</table>
+Note that if we had used the common log instead of the natural log our last step would
+have been $x = \dfrac{\log(129)}{\log(2)}$ and punching this into a calculator gives
+$x \approx 7.011227$.  Using either base $e$ or base $10$ gives the same
+answer--what a comforting thought!
+</p>
+<p>
+We'll work a few more examples of solving exponential equations and then move on to
+solving equations involving logs.
+</p>
+<p><b> Example 4C-2:</b> Solve the equation: $4^{x+1} = 11$
+ <table style="width:75%" align="center">
+  <tr>
+    <td align ="right">$4^{x+1} = 11$</td>
+    <td>Let's try this one with the common log. </td>
+ </tr>
+  <tr>
+    <td align ="right">$\log(4^{x+1}) = \log(11)$</td>
+    <td>Take the log of both sides.</td>
+  </tr>
+  <tr>
+    <td align ="right">$(x+1)\log(4) = \log(11)$ </td>
+     <td>Use the Power Rule</td>
+  </tr>
+  <tr>
+    <td align ="right">$\dfrac{(x+1)\log(4)}{\log(4)} = \dfrac{\log(11)}{\log(4)}$</td>
+    <td>Divide both sides by $\log(4)$</td>
+  </tr>
+  <tr>
+    <td align ="right">$x+1 = \dfrac{\log(11)}{\log(4)}$</td>
+    <td>Reduce and subtract $1$ from both sides</td>
+ </tr>
+  <tr>
+    <td align ="right">$x = \dfrac{\log(11)}{\log(4)} - 1$</td>
+    <td>This answer is fine or use a calculator to get a decimal approximation.</td>
+ </tr>
+ <tr>
+    <td align ="right">$ x \approx 0.729716$</td>
+    <td></td>
+ </tr>
+</table>
+
+
+</p>
+<p><b> Example 4C-3:</b> Solve for $t$: $3^{2-3t} = 2(5^t)$
+ <table style="width:75%" align="center">
+  <tr>
+    <td align ="right">$3^{2-3t} = 2(5^t)$</td>
+    <td>The issue is that the variables are in the exponent.</td>
+ </tr>
+  <tr>
+    <td align ="right">$\ln(3^{2-3t}) = \ln(2(5^t))$</td>
+    <td>Taking the natural log of both sides will allow us to bring down the exponents.</td>
+  </tr>
+  <tr>
+    <td align ="right"> $(2-3t)\ln(3) = \ln(2(5^t))$</td>
+     <td>We can bring down the exponent on the left, but the exponent is only on the $5$
+     on the right, so we'll need to separate the $2$ from the $5^t$ before we can use the Power Rule. </td>
+  </tr>
+  <tr>
+    <td align ="right">$(2-3t)\ln(3) = \ln(2) + \ln(5^t)$</td>
+    <td>Use the Product Rule</td>
+  </tr>
+    <tr>
+    <td align ="right">$(2-3t)\ln(3) = \ln(2) + t\ln(5)$</td>
+    <td>Now we can use the Power rule on the $5^t$.</td>
+ </tr>
+   <tr>
+    <td align ="right">$2\ln(3)-3t\ln(3) = \ln(2) + t\ln(5)$</td>
+    <td>Distribute the $\ln(3)$ to separate the $-3t$ from the $2$</td>
+ </tr>
+   <tr>
+    <td align ="right">$2\ln(3) - \ln(2) = t\ln(5)+3t\ln(3)$</td>
+    <td>Add $3t\ln(3)$ and subtract $\ln(2)$ from both sides to get the $t$'s on one side</td>
+ </tr>
+   <tr>
+    <td align ="right">$2\ln(3) - \ln(2) = t\left(\ln(5)+3\ln(3)\right)$</td>
+    <td>Factor out the $t$ on the right</td>
+ </tr>
+   <tr>
+    <td align ="right">$\dfrac{2\ln(3) - \ln(2)}{\ln(5)+3\ln(3)} = t$</td>
+    <td>Divide both sides by $\ln(5)+3\ln(3)$</td>
+ </tr>
+   <tr>
+    <td align ="right">$t \approx 0.3066245$</td>
+    <td>If you wish, use a calculator to get an approximate decimal value.</td>
+ </tr>
+</table>
+
+</p>
+<p><b> Example 4C-4:</b> Solve: $5^{2x} + 1 = 9$
+ <table style="width:75%" align="center">
+  <tr>
+    <td align ="right">$5^{2x} + 1 = 9$</td>
+    <td>Taking the log of a sum will not help us since there is no "Sum" Rule. </td>
+ </tr>
+  <tr>
+    <td align ="right">$5^{2x} = 8$</td>
+    <td>    Move the $1$ to the other side by subtracting it from both sides.</td>
+  </tr>
+  <tr>
+    <td align ="right">$\log(5^{2x}) = \log(8)$</td>
+     <td>Now, we can take the log of both sides.</td>
+  </tr>
+  <tr>
+    <td align ="right">$2x\log(5) = \log(8)$</td>
+    <td>Apply the Power Rule.</td>
+  </tr>
+    <tr>
+    <td align ="right">$x = \dfrac{\log(8)}{2\log(5)}$</td>
+    <td>Divide both sides by $2\log(5)$</td>
+ </tr>
+   <tr>
+    <td align ="right">$x \approx 0.646015$</td>
+    <td></td>
+ </tr>
+</table>
+</p>
+<p>
+The next example is a special case for when the bases are the same.
+</p>
+<p><b> Example 4C-5:</b> Solve: $3^{x+2} = 9^{x}$
+ <table style="width:75%" align="center">
+  <tr>
+    <td align ="right">$3^{x+2} = 9^{x}$</td>
+    <td>We could solve this one by taking logs of both sides, but let's consider another approach. </td>
+ </tr>
+  <tr>
+    <td align ="right">$3^{x+2} = (3^2)^x$</td>
+    <td>Instead, rewrite the right side to use base $3$ by writing $9$ as $3^2$.</td>
+  </tr>
+  <tr>
+    <td align ="right">$3^{x+2} = 3^{2x}$</td>
+     <td>Combine the exponents on the right with the Power Rule for exponents.</td>
+  </tr>
+  <tr>
+    <td align ="right">$x+ 2 = 2x$</td>
+    <td>Exponential functions have unique output for each input. Since the outputs are equal, the inputs must be equal.</td>
+  </tr>
+    <tr>
+    <td align ="right">$2 = 2x - x$</td>
+    <td>Subtract $x$ from both sides</td>
+ </tr>
+   <tr>
+    <td align ="right">$2 = x$</td>
+    <td>Simplify and we have our solution.</td>
+ </tr>
+</table>
+</p>
+<p>
+Okay, let's get a few log equations under our belts and this section will soon be history!  It shouldn't
+surprise you that solving log equations usually involves reverting to an exponential form.
+</p>
+<p><b> Example 4C-6:</b> Solve:  $\log_3(x+1) = 2$
+ <table style="width:75%" align="center">
+  <tr>
+    <td align ="right">$\log_3(x+1) = 2$</td>
+    <td>We have to get the $x$ out of the logarithm in order to solve for it.</td>
+ </tr>
+  <tr>
+    <td align ="right">$3^{2} = x+1$</td>
+    <td>Change the equation to exponential form.</td>
+  </tr>
+  <tr>
+    <td align ="right">$9 - 1 = x$</td>
+     <td>Subtract $1$ from both sides.</td>
+  </tr>
+  <tr>
+    <td align ="right">$x = 8$</td>
+    <td>Simplify.</td>
+  </tr>
+   <tr>
+    <td align ="right">Let's check our answer: $\log_3(8+1) = \log_3(9) = 2$</td>
+    <td>$\checkmark$</td>
+ </tr>
+</table>
+<p>
+One problem that may arise when we switch a log equation into an exponential equation is
+the difference in the domains of the two functions. While exponential functions will accept
+any number, logarithms can only have positive numbers as input. So, a solution to an
+exponential equation may not work in the original log equation. This situation is similar
+to when you solved equations with square roots by squaring. You may get extra answers and
+the only way to know if a solution is really a solution is to check your answers.
+</p>
+
+</p>
+<p><b> Example 4C-7:</b> Solve: $\log_2(x) + \log_2(x+2) = 3$
+ <table style="width:75%" align="center">
+  <tr>
+    <td align ="right">$\log_2(x) + \log_2(x+2) = 3$</td>
+    <td>We can rewrite this as an exponential if we have one log.</td>
+ </tr>
+  <tr>
+    <td align ="right">$\log_2\left(x(x+2)\right) = 3$</td>
+    <td>Use the Product Rule to combine the logs.</td>
+  </tr>
+  <tr>
+    <td align ="right">$2^3 = x(x+2)$ </td>
+     <td>Change to exponential form </td>
+  </tr>
+  <tr>
+    <td align ="right">$8 = x^2 + 2x$</td>
+    <td>Multiply out the expressions</td>
+  </tr>
+    <tr>
+    <td align ="right">$0 = x^2 + 2x - 8$</td>
+    <td>This is a quadratic equation, so set it equal to zero.</td>
+ </tr>
+   <tr>
+    <td align ="right">$0 = (x + 4)(x - 2)$</td>
+    <td>Factor</td>
+ </tr>
+   <tr>
+    <td align ="right">$x + 4 = 0$ or $x - 2 = 0$</td>
+    <td>Set the factors equal to zero.</td>
+ </tr>
+   <tr>
+    <td align ="right">$x = -4$ or $x = 2$</td>
+    <td>Solve.</td>
+ </tr>
+ </table>
+ Now, we have to check both answers to make sure they work in the original log equation.
+ </br> </br>
+  <table style="width:75%" align="center"  id="collapseborder">
+   <tr>
+    <td  id="collapseborder"><u> Check:</u> $x=-4$
+         </br>
+         $\log_2(-4) + \log_2(-4+2)$
+        </br>
+        You cannot take the logarithm of a negative number.
+    </td>
+    <td  id="collapseborder"><u>Check:</u> $x=2$
+    </br>
+    $\log_2(2) + \log_2(2+2)=\log_2(2) + \log_2(4)$
+    </br>
+     $= 1 + 2 = 3$ $\checkmark$
+    </td>
+ </tr>
+</table>
+</br>
+    Only $x = 2$ is a solution.
+
+</p>
+<p><b> Example 4C-8:</b> Solve: $\log x = 1 - \log(x-3)$
+ <table style="width:75%" align="center">
+  <tr>
+    <td align ="right"> $\log x = 1 - \log(x-3)$</td>
+    <td>We need to have only one log to convert to exponential form.</td>
+ </tr>
+  <tr>
+    <td align ="right"> $\log x + \log(x-3)= 1$</td>
+    <td>Add $\log(x-3)$ to both sides.</td>
+  </tr>
+  <tr>
+    <td align ="right"> $\log(x(x-3)) = 1$</td>
+     <td>Use the Product Rule </td>
+  </tr>
+  <tr>
+    <td align ="right">$10^1 = x(x-3)$</td>
+    <td>Switch to exponential form</td>
+  </tr>
+    <tr>
+    <td align ="right">$10 = x^2 - 3x$</td>
+    <td>Multiply out the expressions</td>
+ </tr>
+  <tr>
+    <td align ="right">$0 = x^2 - 3x - 10$</td>
+    <td>Set equal to zero to solve the quadratic equation.</td>
+  </tr>
+    <tr>
+    <td align ="right">$0 = (x - 5)(x + 2)$</td>
+    <td>Factor</td>
+ </tr>
+  <tr>
+    <td align ="right">$x - 5 = 0$ or $x+2 = 0$</td>
+    <td>Set the factors equal to zero to solve</td>
+  </tr>
+    <tr>
+    <td align ="right">$x = 5$ or $x = -2$</td>
+    <td>Solve</td>
+ </tr>
+ </table>
+ Checking the answers:
+  <table style="width:75%" align="center"  id="collapseborder".>
+  <tr>
+    <td  id="collapseborder"><u>Check:</u> $x = 5$
+    </br>
+    $\log 5 \approx 0.69897$  and $1 - \log(5-3) =  1 - \log(2)  \approx 0.69897$ $\checkmark$
+    </td>
+    <td  id="collapseborder"><u>Check:</u> $x = -2$
+    </br>
+    We run into problems with $\log(-2)$.
+    </td>
+  </tr>
+</table>
+</br>
+The only solution is $x = 5$.
+</p>
+<p>
+For this next example, we will use the fact that logarithm functions give unique output values. If the output
+values are equal, then the input values have to be equal.
+</p>
+
+<p><b> Example 4C-9:</b>  Solve for $c$: $\ln(c) + \ln(2c) = \ln(x+1)$
+ <table style="width:75%" align="center">
+  <tr>
+    <td align ="right" >$\ln(c) + \ln(2c) = \ln(x+1)$</td>
+    <td>Use the Product Rule on the left side to combine the logarithms</td>
+ </tr>
+  <tr>
+    <td  align ="right">$\ln(2c^2) = \ln(x+1)$</td>
+    <td>Here, the results of the two logarithms are equal, so the input values must be equal.</td>
+  </tr>
+  <tr>
+    <td align ="right">$2c^2 = x+1$</td>
+     <td>Divide both sides by $2$ </td>
+  </tr>
+  <tr>
+    <td align ="right">$c^2 = \dfrac{x+1}{2}$</td>
+    <td>Now, take the square root of both sides.</td>
+  </tr>
+    <tr>
+    <td align ="right">$c = \pm\sqrt{\dfrac{x+1}{2}}$</td>
+    <td>Note that the original equation will not allow a
+    negative value to be plugged in.</td>
+  </tr>
+  <tr>
+  <td align ="right">$c = \sqrt{\dfrac{x+1}{2}}$</td>
+  <td>Hence, this is the only solution.</td>
+
+  </tr>
+</table>
+
+<p><b> Example 4C-10:</b> Suppose you invest $P_0$ dollars in a bank account with an annual
+ interest rate of $2\%$ (i.e. interest is paid once per year).  The amount, $A$, in your account
+ after $t$ years, if you make no other deposits and no withdrawals, may be calculated by the following formula:
+$$A = P_0(1.02)^t.$$
+Now, suppose you invested $\$1000$ in the account. Assume no other deposits and no withdrawals are made.
+</br><ol type="a">
+       <li> How much will be in the account after 10 years?
+       </br>
+       Solution: We just need to substitute $t=10$ and $P_0 = 1000$ and calculate the result:
+       $$ \begin{align}
+         A  &  = 1000(1.02)^{10} \\
+         A  & \approx 1,218.99 \\
+         \end{align}$$
+       The account will have $\$1,218.99$ at the end of $10$ years.
+       </br> </br>
+       </li>
+       <li> How many years will it take before the account has $\$1500$ in it?
+       </br>
+       Solution: This time we know, $A = 1500$ and $P_0 = 1000.$ We need to find the value for $t$:
+       $$ \begin{align}
+         1500  &  = 1000(1.02)^t \\
+         \frac{1500}{1000}  &  = (1.02)^t \\
+         \ln(1.5)  &  = \ln(1.02)^t \\
+         \ln(1.5)   &  = t\ln(1.02) \\
+         \frac{\ln(1.5)}{\ln(1.02)} & = t \\
+         t  & \approx 20.475 \\
+         \end{align}$$
+         The account will have at least $\$1,500$ roughly in the middle of year $20$. Since the
+         bank only pays interest once a year, you will get the amount at the end of year $20$.</li>
+     </ol>
+
+
+ <table style="width:75%" align="center">
+  <tr>
+    <td></td>
+    <td></td>
+ </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td> </td>
+     <td>
+ </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+</p>
+
+</body> </html> 

@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<!-- Source URL: http://www.wallace.ccfaculty.org/book/Beginning_and_Intermediate_Algebra.pdf
+Saylor URL: http://www.saylor.org/courses/ma001/
+Attributed to: Tyler Wallace
+Saylor.org,  pages 192-193-->
+
+
+<html>
+<head>
+<title>MAT-102: Module 3B-Polynomial Functions</title>
+<style type="text/css">
+td
+{
+    padding:0 0 0 15px; <!--add space between table columns-->
+}
+<style>
+table, td
+{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+table.center
+{
+  margin-left:auto;
+  margin-right:auto;
+}
+</style>
+<style>
+.boxed {
+  border: 2px solid blue ;
+}
+</style>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+
+</head>
+
+<body>
+
+<H1>MAT-102: 3B-Polynomial Functions</H1>
+
+<b>Objectives:</b>
+<ul>
+  <li>Evaluate, add, subtract and multiply polynomials.</li>
+  <li>Identify graphs of polynomial functions.</li>
+  <li>Determine the degree and  intercepts of polynomial functions.</li>
+</ul>
+
+
+<p>Many applications in mathematics have to do with what are called polynomials.
+Polynomials are made up of terms. Terms are a product of numbers and/or variables.
+For example, $5x$, $2y^3$, $-4$  and $ab^3c$ are all terms. Each term has a
+<b>coefficient</b>, the number, and a <b>degree</b>, the power of the variable
+in the term--if there is more than one variable, then the degree is the sum of the
+exponents on the variables.
+</p>
+
+<p><b>Example 3B-1:</b></p>
+Here is the breakdown of coefficients and degrees for the examples we just gave:
+<p><center>
+<table class = "center">
+  <tr>
+     <td align="center">Term</td>
+     <td>Coefficient</td>
+     <td>Degree</td>
+  </tr>
+  <tr>
+     <td align="center">$5x$</td>
+     <td align="center">$5$</td>
+     <td>$1$ since $x = x^1$</td>
+  </tr>
+  <tr>
+     <td align="center">$2y^3$</td>
+     <td align="center">$2$</td>
+     <td>$3$</td>
+   </tr>
+   <tr>
+   <td align="center">$-4$</td>
+     <td align="center">$-4$</td>
+     <td>$0$ since $-4 = -4(1)$ and $1 = x^0$</td>
+      </tr>
+   <tr>
+      <td align="center">$ab^3c$</td>
+     <td align="center">$1$ (why?) </td>
+     <td>$5$ since $ab^3c = a^1b^3c^1$ nad $1+3+1=5$</td>
+  </tr>
+</table>
+</center>
+</p>
+
+Terms are connected to each other by addition or subtraction. Expressions are often named
+ based on the number of terms in them. A <b>monomial</b> has one term, such as
+ $3x^2.$ A  <b>binomial</b> has two terms, such as $a^2 - b^2.$ A <b>trinomial</b> has three terms,
+such as $ax^2 + bx + c.$ The term <b>polynomial</b> means many terms. Monomials,
+binomials, trinomials, and expressions with more terms all fall under the umbrella of “polynomials”.
+The term with the largest degree is called the <b>leading term</b> of the polynomial and the degree
+of the leading term is called the <b>degree of the polynomial</b>.
+
+<p><b>Example 3B-2:</b></p>
+Here are some examples:
+<p><center>
+<table class = "center">
+  <tr>
+     <td align="center">Polynomial</td>
+     <td>Leading term</td>
+     <td>Degree</td>
+  </tr>
+  <tr>
+     <td align="center">$1.12x^2 + 5.4x - 1.7$</td>
+     <td align="center">$1.12x^2$</td>
+     <td align="center">$2$</td>
+  </tr>
+  <tr>
+     <td align="center">$21 + 3w^4-w^2$</td>
+     <td align="center">$3w^4$</td>
+     <td align="center">$4$</td>
+   </tr>
+   <tr>
+   <td align="center">$10+2x+4xy- 7xy^2$</td>
+      <td align="center">$7xy^2$</td>
+     <td align="center">$3$</td>
+      </tr>
+         <tr>
+   <td align="center">$5x+2$</td>
+      <td align="center">$5x$</td>
+     <td align="center">$1$</td>
+      </tr>
+               <tr>
+   <td align="center">$-4$</td>
+      <td align="center">$-4$</td>
+     <td align="center">$0$</td>
+      </tr>
+</table>
+</center>
+</p>
+</p>
+<p>
+If we know what the variable in a polynomial represents we can replace the variable
+with the number and evaluate the polynomial as shown in the following
+example.</p>
+
+<p><b>Example 3B-3:</b> Evaluate  $2x^2 - 4x + 6$ when $x = -4$ </p>
+
+<p><center>
+<table class = "center">
+  <tr>
+    <td align="right">$2x^2 - 4x + 6$</td>
+    <td>Replace variable $x$ with $-4$</td>
+  </tr>
+  <tr>
+    <td align="right">$2(-4)^2 - 4(-4) + 6$</td>
+    <td>Exponents first</td>
+  </tr>
+  <tr>
+    <td align="right">$2(16) - 4(-4) + 6$</td>
+    <td>Multiplication (we can do all terms at once)</td>
+  </tr>
+  <tr>
+    <td align="right">$32 + 16 + 6$</td>
+    <td>Add</td>
+  </tr>
+  <tr>
+    <td align="right">$54$</td>
+    <td>Our Solution</td>
+  </tr>
+</table>
+</center>
+</p>
+
+<p>It is important to be careful with negative variables and exponents. Remember
+the exponent only affects the number it is physically attached to. This means
+$-3^2 = -9$ because the exponent is only attached to the $3.$ Also, $(-3)^2=9$ because
+the exponent is attached to the parentheses and affects everything inside. When
+we replace a variable with parentheses like in the previous example, the substituted
+value is in parentheses. So in the example,  $(-4)^2 = 16$. However, consider
+the next example.</p>
+
+<p><b>Example 3B-4:</b> Evaluate $-x^2 + 2x + 6$ when $x=3$</p>
+
+<p><center>
+<table class = "center">
+  <tr>
+    <td align="right">$-x^2 + 2x + 6$</td>
+    <td>Replace variable $x$ with $3$</td>
+  </tr>
+ <tr>
+    <td align="right">$-(3)^2 + 2(3) + 6$</td>
+    <td>Exponent only on the $3$, not negative $3$</td>
+  </tr>
+ <tr>
+    <td align="right">$-9 + 2(3) + 6$</td>
+    <td>Multiply</td>
+  </tr>
+ <tr>
+    <td align="right">$-9 + 6 + 6$</td>
+    <td>Add</td>
+  </tr>
+ <tr>
+    <td align="right">$3$</td>
+    <td>Our Solution</td>
+  </tr>
+</table>
+</center>
+</p>
+
+
+<p><b>World View Note</b>: Ada Lovelace in 1842 described a Difference Engine that
+would be used to calculate values of polynomials. Her work became the foundation
+for what would become the modern computer (the programming language
+Ada was named in her honor) more than 100 years after her death from cancer.
+</p>
+
+<H2>$\S$3B.1 Adding and Subtracting Polynomials</H2>
+<p>Generally when working with polynomials we do not know the value of the variable,
+so we will try to simplify instead. The simplest operation with polynomials
+is addition. When adding polynomials we are simply combining like terms. Consider
+the following example
+</p>
+
+<p><b>Example 3B-5:</b>Add the two cubic polynomials</p>
+
+<p><center>
+<table class = "center">
+  <tr>
+    <td>$(4x^3 - 2x + 8) + (3x^3 - 9x^2 - 11)$</td>
+    <td>Combine like terms: </br>
+                 $4x^3 + 3x^3 = 7x^3$ and </br>
+                 $8-11=-3$</td>
+  </tr>
+<tr>
+    <td align ="center">$7x^3 - 9x^2 - 2x - 3$</td>
+    <td>Our Solution</td>
+
+  </tr>
+</table>
+</center>
+</p>
+
+<p>Generally final answers for polynomials are written so the exponents on the variable
+count down. <i>Example 3B-3</i> demonstrates this with the exponent counting down
+$3,$ $2,$ $1,$ $0$ (recall $x^0=1$). Note that this is not a rule for writing polynomials--just
+an easy way to organize the terms and to make the degree of the polynomial clear. The
+polynomial in <i>Example 3B-3</i> could just as well be written as: $ - 3 - 2x - 9x^2 + 7x^3$
+or $ - 2x  + 7x^3 - 3 - 9x^2$, but then we have to "search" through the terms to determine the degree.
+</p>
+<p>Subtracting polynomials is almost as fast. One extra step
+comes from the minus in front of the parentheses. When we have a negative in
+front of parentheses we distribute it through, changing the signs of everything
+inside. The same is done for the subtraction sign.</p>
+
+<p><b>Example 3B-6:</b></p>
+
+<p><center>
+<table class = "center">
+  <tr>
+    <td>$(5x^2 - 2x + 7) - (3x^2 + 6x - 4)$</td>
+    <td>Distribute negative through second part</td>
+  </tr>
+<tr>
+    <td align ="center">$5x^2 - 2x + 7 - 3x^2 - 6x + 4$</td>
+    <td>Combine like terms </br>
+    $5x^2 - 3x^2 =2x^2$ and </br>
+    $-2x - 6x = -8x$, and </br>
+    $7 + 4 = 11$</td>
+  </tr>
+<tr>
+    <td align ="center">$2x^2 - 8x + 11$</td>
+    <td>Our Solution</td>
+  </tr>
+</table>
+</center>
+</p>
+
+<p>Addition and subtraction can also be combined into the same problem as shown
+in this final example.</p>
+
+<p><b>Example 3B-7:</b></p>
+
+<p><center>
+<table class = "center">
+  <tr>
+    <td>$(2x^2 - 4x + 3) + (5x^2 - 6x + 1) - (x^2 - 9x + 8)$</td>
+    <td>Distribute negative through</td>
+  </tr>
+<tr>
+    <td align ="center">$2x^2 - 4x + 3 + 5x^2 - 6x + 1 - x^2 + 9x - 8$</td>
+    <td>Combine like terms</td>
+  </tr>
+<tr>
+    <td align ="center">$6x^2-x-4$</td>
+    <td>Our Solution</td>
+  </tr>
+</table>
+
+</center>
+</p>
+
+<H2>$\S$3B.2 Multiplying Polynomials</H2>
+Adding or subtracting polynomials is pretty straight forward--just combine terms which have the same
+variables with the same degrees. Multiplying polynomials may seem complicated, but the basic idea is
+that you must "thoroughly" multiply them together--every term in one must multiply every term in the
+other.
+
+<table>
+ <tr>
+    <td align="right"><img src="set3B-Polynomial_Functions_01.png" width="70%"></td>
+    <td>There are $4$ multiplications when multiplying $(4x + 3) (3x - 2)$:</br></br>
+    Notice that the term $4x$ must be multiplied by both $3x$ and $-2$ (indicated by the red lines)</br>
+   Notice that the term $3$ must also be multiplied by both $3x$ and $-2$ (indicated by the blue lines)</td>
+
+  </tr>
+</table>
+
+<p>
+In the next two examples, the multiplication is written out so that you may see how every term
+in the first polynomial multiplies every term in the second.  Sometimes you may see how to
+do the multiplication without writing down all the steps, but writing the steps helps make
+sure you get it right.
+</p>
+
+<p><b>Example 3B-8:</b> Multiply:</p>
+<p><center>
+<table class = "center">
+  <tr>
+    <td align="center">$(4x + 3) (3x - 2)$</td>
+    <td></td>
+  </tr>
+<tr>
+    <td align="center">$4x(3x-2) + 3(3x-2)$</td>
+    <td>Each term of the first multiplies the second</td>
+  </tr>
+<tr>
+    <td align="center">$12x^2 -8x + 9x - 6$</td>
+    <td>Combine like terms</td>
+  </tr>
+  <tr>
+    <td align="center">$12x^2 + x - 6$</td>
+    <td>Done</td>
+  </tr>
+</table>
+</center>
+
+<p><b>Example 3B-9:</b> Multiply:</p>
+<p><center>
+<table class = "center">
+  <tr>
+    <td align="center">$(x - 2) (4x^2 - x +5)$</td>
+    <td></td>
+  </tr>
+<tr>
+    <td align="center">$x(4x^2 - x +5) - 2(4x^2 - x +5)$</td>
+    <td>Each term of the first multiplies the second</td>
+  </tr>
+<tr>
+    <td align="center">$4x^3 - x^2 + 5x -8x^2 + 2x - 10$</td>
+    <td>Combine like terms</td>
+  </tr>
+  <tr>
+    <td align="center">$4x^3 - 9x^2 + 7x - 10$</td>
+    <td>Done</td>
+  </tr>
+</table>
+</center>
+
+
+<p><b>Example 3B-10:</b> What happens if we multiply in the reverse order?</p>
+<p><center>
+<table class = "center">
+  <tr>
+    <td align="center">$(4x^2 - x +5)(x - 2) $</td>
+    <td></td>
+  </tr>
+<tr>
+    <td align="center">$4x^2(x-2) - x(x-2) +5(x-2)$</td>
+    <td>Each term of the first multiplies the second</td>
+  </tr>
+<tr>
+    <td align="center">$4x^3 - 8x^2 - x^2 +2x + 5x - 10$</td>
+    <td>Combine like terms</td>
+  </tr>
+  <tr>
+    <td align="center">$4x^3 - 9x^2 + 7x - 10$</td>
+    <td>We got the same thing--that's good!</td>
+  </tr>
+</table>
+</center>
+<!--
+<p>
+You may notice that we are not going to cover dividing with polynomials in this course.  EXPLAIN WHY NOT?
+</p>
+-->
+
+<H2>$\S$3B.3 Graphs of Polynomials</H2>
+
+<p>
+So far, we have considered the terminology of polynomials and how to combine them with addition, subtraction and multiplication.  Now let us consider them as functions. What does the graph of a polynomial look like? Here are a few examples:
+<!--
+</br>
+THREE SMALL GRAPHS IN A ROW: $f(x) = x^2+1$, $g(x) = -x^2-x+2$, $h(x) = \frac{2}{7}x^3-\frac{1}{7}x^2-3x$, $k(x) = x^4-2x^3-2x^2$-->
+</p>
+<div  align="center"><img src="set3B-Polynomial_Functions_02.png" width="70%"></div>
+
+  </tr>
+</table>
+<p>
+Each of these graphs look quite different from each other, but share some characteristics.
+<ul>
+  <li> The graphs are all "connected" with smooth bends.  They do not look like piece-wise functions.</li>
+    <li> The domain of each consists of all real numbers. (Why?)</li>
+  <li> The "ends" of the graph eventually settles into an upward or downward curve. (Note: The graph doesn't really "end", it continues indefinitely, but if you go out far enough, eventually it will consistently move in one direction, either up or down.)</li>
+   <li> The graphs all have one vertical intercept, but the number of horizontal intercepts varies from none to many.</li>
+</ul>
+</p>
+
+<p><b>Example 3B-11:</b> Consider the graph of $f(x) = x^2+1$. We'll use the low tech but
+effective method of plotting points: </p>
+<p><center>
+<table class = "center">
+  <tr>
+
+    <td>$\begin{array}{c|c}
+    x & y \\ \hline
+   -2 & 5 \\
+   -1 & 2 \\
+    0 & 1 \\
+    1 & 2 \\
+    2 & 5 \\
+  \end{array}
+$</td>
+  <td> <img src="set3B-Polynomial_Functions_03.png" width="50%"></td>
+  </tr>
+</table>
+</center>
+The $y$-intercept is at $y=1$ and there is no $x$-intercept since the equation $0 = x^2+1$ has
+no solution that is a real number. Notice that if we plot points for values of $x$ further to the left of
+$-2$,  the function will produce large positive $y$ values since any negative number squared is positive.
+If we try $x$ values to  the right of $2$, we clearly get large positive values for $y$.  We are confident
+this graph extends  upward in both directions.
+</p>
+
+<p><b>Example 3B-12:</b>  Now, consider $g(x) = -x^2-x+2$.  </p>
+<p>The $y$-intercept is easy to find:
+         $$ \begin{align}
+                y & = -0^2 - 0 +2\\
+                y & = 2\\
+          \end{align}$$
+The $x$-intercept takes a little more work:  How to find when $0 =-x^2-x+2$?  Here's when all that time
+you spent learning how to factor comes in handy.  We won't do a lot of factoring in this course and the
+"guess and check" method will be sufficient.
+</p>
+<p><center>
+<table class = "center">
+  <tr>
+    <td>$0 =-x^2-x+2$</td>
+    <td>Multiply both sides by $-1$</td>
+  </tr>
+    <tr>
+    <td>$0 =x^2+x-2$</td>
+    <td>Let's focus on the polynomial and set up to factor,</td>
+  </tr>
+   <tr>
+    <td>$(x + \Box  )(x +\Box  )$</td>
+    <td>We need values which multiply to get $-2$</td>
+  </tr>
+     <tr>
+    <td>$(x - 2 )(x + 1)$</td>
+    <td>Try $-2$ and $1$ and check to see if they work.</td>
+  </tr>
+   <tr>
+    <td>
+             $ \begin{align}
+                (x-2)(x+1)  &  = x(x + 1) - 2(x + 1)\\
+                 & = x^2 + x - 2x - 2\\
+                 & = x^2 - x - 2
+          \end{align}$
+    </td>
+    <td>$-2$ and $1$ don't work, so try $2$ and $-1$.</td>
+  </tr>
+   <tr>
+    <td>
+                 $ \begin{align}
+                  (x+2)(x-1) &  = x(x - 1) + 2(x - 1)\\
+                 & = x^2 - x + 2x - 22\\
+                 & = x^2 + x - 2
+          \end{align}$
+
+    </td>
+    <td>Bingo</td>
+  </tr>
+</table>
+</center>
+Now, back to the equation: $0 = (x+2)(x-1)$.  The only way to get zero when two numbers are multiplied is for one of the
+numbers to be zero:
+<p><center>
+<table class = "center">
+  <tr>
+    <td> $x + 2 = 0$</td>
+    <td> or </td>
+        <td> $x -1 = 0$</td>
+  </tr>
+    <tr>
+    <td> $x = -2$</td>
+    <td>  </td>
+        <td> $x = 1$</td>
+  </tr>
+</table>
+</center>
+</p>
+To see what the "end behavior" is,  note that the leading term produces values of much greater magnitude
+than the other terms in the polynomial. For example, when $x = 10$, the leading term makes: $-(10)^2=-100$.
+The rest of the polynomial only makes, $-(10)+2 = -8$ and if we go just a little further out, say $x = 15$,
+compare the leading term's value to the rest of the polynomial:  $-(15)^2=-225$ versus $-(15)+2 = -13$.
+What about the graph for negative values of $x$? Check out: $-(-15)^2=-225$ versus $-(-15)+2 = 17$.  We
+can see that the leading term will produce negative $y$-values for $x$ values to the far left or right.
+Our analysis shows that both ends of $g(x)$ are downward having negative $y$ values.
+
+<!--
+<p>
+NOTE:  Usually we "read" a graph from left to right and in the case of $g(x)$, we'd say the $g(x)$ is moving upward
+on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGHT WAY TO APPROACH IT .
+??????
+</p>
+-->
+
+<p><center>
+<table class = "center">
+  <tr>
+
+    <td>Plotting a few more points gives the graph:</td>
+  <td> <img src="set3B-Polynomial_Functions_04.png" width="50%"></td>
+  </tr>
+</table>
+</center>
+
+
+<p><b>Example 3B-13:</b> Let's graph $h(x) = \frac{2}{7}x^3-\frac{1}{7}x^2-3x$.  </p>
+<p>It's easy to see that the
+$y$-intercept is at $y=0$. We need to factor the polynomial to find the $x$-intercepts. Here's a "tip of the day": factoring
+is easier if you factor out the denominators and anything else the terms have in common. Notice below that when we
+factor out the $\frac{1}{7}$, we have to adjust the $3$ so that if the $\frac{1}{7}$ were multiplied back in, we'd still
+have $3$.<br/>
+                     $$ \begin{align}
+                   0 = \frac{2}{7}x^3-\frac{1}{7}x^2-3x &  = \frac{1}{7}x(2x^2-x-21)\\
+                 0 & = \frac{1}{7}x(2x- 7)(x+3)
+          \end{align}$$
+  <p><center>
+<table class = "center">
+  <tr>
+    <td> So, $x = 0$, </td>
+  <td> $2x - 7 = 0$</td>
+    <td> or,  $x + 3 = 0$</td>
+  </tr>
+    <tr>
+    <td> </td>
+  <td align="right"> $x = \frac{7}{2}$</td>
+    <td align="right"> $x = -3$</td>
+  </tr>
+</table>
+</center>
+   For the end behavior: The leading term is $\frac{2}{7}x^3$, the power $3$
+   will make negative $y$ values for negative $x$ values and positive $y$ values
+   for positive $x$ values.  The left end will be "down" and the right end will go "up".
+</p>
+
+<p><center>
+<table class = "center">
+  <tr>
+    <td>
+     Plotting a few more points gives the graph:
+    </td>
+  <td> <img src="set3B-Polynomial_Functions_05.png" width="50%"></td>
+  </tr>
+</table>
+</center>
+
+<p><b>Example 3B-14:</b> Finally, we'll graph $k(x) = x^4-2x^3-2x^2$.
+</p>
+<p>
+The $y$-intercept is at $y=0$, but we have a problem when trying to factor to
+find the $x$-intercepts:
+                     $$ \begin{align}
+                   x^4-2x^3-2x^2 &  =  x^2(x^2 - 2x - 2) \\
+          \end{align}$$
+The only two combinations that multiply to get $-2$ for a "nice" factorization are $1$ and $-2$, or $-1$ and $2$. Checking we
+see that
+<center>
+<table class = "center">
+  <tr>
+    <td> $(x + 1)(x - 2) = x^2 - x - 2$ </td>
+   <td> and </td>
+    <td>$(x - 1)(x + 2) = x^2 + x - 2$ </td>
+  </tr>
+</table>
+</center>
+<p/>
+<p>
+But neither gives $x^2 - 2x - 2$.  Luckily, for quadratic polynomials, there is a formula
+which will give the solutions to equations like, $x^2 - 2x - 2 = 0$, the Quadratic Formula.
+We pause to recall what it says:
+</p>
+<p>
+
+<div class="boxed">
+<b>Quadratic Formula</b> For $ax^2 + bx + c = 0$, the solutions are found by
+$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.$$
+</div>
+</p>
+<p>
+Now we may breathe easier, knowing we can still find the $x$-intercepts even if
+we can't factor the polynomial--by the way the Quadratic formula works even if
+the polynomial factors nicely--gives you something to think about!
+</p>
+<p>
+Back to the graph: So far, we had $x^4-2x^3-2x^2 =  x^2(x^2 - 2x - 2)$ which means
+<center>
+<table class = "center">
+  <tr>
+    <td> $x^2 = 0$  </td>
+   <td> or </td>
+    <td>$x^2 - 2x - 2 = 0$ </td>
+  </tr>
+</table>
+</center>
+ and clearly, $x=0$ is one of the $x$-intercepts.  Now, consider the "not so easy" to factor part: $x^2 - 2x - 2 = 0$.  Here, $a=1$, $b=-2$ and $c=-2$. With help from the Quadratic
+formula:
+                     $$ \begin{align}
+                   x  & = \frac{-(-2) \pm \sqrt{(-2)^2-4(1)(-2)}}{2(1)} \\
+                      & = \frac{2 \pm \sqrt{4+8}}{2} \\
+                      & = \frac{2 \pm \sqrt{12}}{2} \\
+                   x = \frac{2 + \sqrt{12}}{2}  & \mbox{ or }  x = \frac{2 - \sqrt{12}}{2}
+          \end{align}$$
+and using a calculator: $x = \frac{2 + \sqrt{12}}{2} \approx 2.732$ or $x = \frac{2 - \sqrt{12}}{2} \approx -0.732$.  At last! We have the $x$-intercepts and we only need to determine the end behavior.  The leading term is $x^4$ and any number raised to the $4$th power
+produces a positive number. Hence, both ends are upward.
+</p>
+
+
+
+<p><center>
+<table class = "center">
+  <tr>
+
+    <td>  Plot a few more points and we are done:</td>
+  <td> <img src="set3B-Polynomial_Functions_06.png" width="50%"></td>
+  </tr>
+</table>
+</center>
+
+<p><b>Example 3B-15:</b> We should probably work a few problems with the Quadratic formula, just for practice:
+<ol type="a">
+    <li> Solve: $x^2 + 3x = 1$
+           <br/>
+           First, we must rewrite this as an equivalent equation equalling $0$.  That is, subtract $1$ from both sides of the equation.
+            $$ \begin{align}
+                   x^2 + 3x  & = 1 \\
+                   x^2 + 3x - 1   & = 0 \\
+          \end{align}$$
+
+           With just a few tries, we can see that we are not going to make a $3$ from integers that multiply to get $-1$.  This indicates we must use the Quadratic Formula: $ax^2 + bx + c = 0$.
+           For this particular equation we have $a=1$, $b=3$ and $c=-1$:
+            $$ \begin{align}
+                   x   &   = \frac{-3 \pm \sqrt{3^2 - 4(1)(-1)}}{2(1)} \\
+                  x   &   = \frac{-3 \pm \sqrt{9 +4}}{2} \\
+                  x  &   = \frac{-3 \pm \sqrt{13}}{2} \\
+          \end{align}$$
+ Remember that there are two values here.  We wrote $\pm$ as a short-cut. The answers are: $x = \frac{-3 + \sqrt{13}}{2} $
+ or $x = \frac{-3 - \sqrt{13}}{2} $.
+           </li>
+    <li> Solve: $x^2 + x  + 5 = 0$
+           <br/> Note that $a = 1$, $b = 1$ and $c = 5$:
+           $$ \begin{align}
+                   x   &   = \frac{-1 \pm \sqrt{1^2 - 4(1)(5)}}{2(1)} \\
+                  x   &   = \frac{-1 \pm \sqrt{1 - 20}}{2} \\
+                  x  &   = \frac{-1 \pm \sqrt{-19}}{2} \\
+          \end{align}$$
+          But, there is no real number that squares itself to get $-19$. Since the Quadratic Formula always finds the
+          solution to a quadratic equation, there must not be any solutions for this equation. Our answer is : No solution.
+           </li>
+    <li> Solve: $8x^3 - 24x^2 + 18x = 0$
+    <br/>
+    This equation is not a quadratic, but if we factor it we get:  $2x(4x^2 - 12x + 9) = 0$. One solution is $x = 0$ since we could
+    have $2x=0$.  Using the quadratic formula for $4x^2 - 12x + 9=0$ with $a=4$, $b=-12$ and $c=9$:
+               $$ \begin{align}
+                   x   &   = \frac{-(-12) \pm \sqrt{(-12)^2 - 4(4)(9)}}{2(4)} \\
+                  x   &   = \frac{12 \pm \sqrt{144 - 144}}{8} \\
+                  x  &   = \frac{12 \pm \sqrt{0}}{8} \\
+                  x  &   = \frac{12}{8} \\
+                  x  &   = \frac{3}{2} \\
+          \end{align}$$
+    Hence, the solutions are $x = 0$ or $x = \frac{3}{2}$.  (Seems like we should have more solutions for all that work!)
+    </li>
+</ol>
+</p>
+<p><b>Note:</b> Why study polynomials?  What are they good for?  Many functions are difficult to calculate without a calculator
+or computer, for example, trigonometric functions.  How DO calculators or computers calculate values for these functions? The answer
+ is based on polynomials which are easier to calculate since they only involve multiplying and addition/subtraction. The graph
+ below shows how the polynomial $f(x) = x - \frac{1}{6}x^3 + \frac{1}{120}x^5$ approximates the function $g(x) = \sin(x)$ for $-3 \leq x \leq3$.
+
+<p><center>
+<table class = "center">
+  <tr>
+
+    <td>??</td>
+  <td> <img src="set3B-Polynomial_Functions_07.png" width="50%"></td>
+  </tr>
+</table>
+</center>
+
+</body>
+</html>
+
+
+
