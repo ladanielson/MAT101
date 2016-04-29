@@ -38,10 +38,11 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!-- such as a chapter or section -->
 <mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 <!-- <mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="fr-FR"> -->
-
+<docinfo>
 	<latex-image-preamble>    
-        \usepackage{tikz}
+        \usepackage{pgfplots}
      </latex-image-preamble>
+    </docinfo>
 
     
     <book xml:id="mat101-book">
