@@ -145,6 +145,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             <mrow>-15\amp\amp\amp\text{Our Solution}</mrow>
             </md></p>
     </example>
+
+    <p>If you were to sketch out a number line to solve Example<nbsp /><xref ref="example-add-two-neg" />, you would start at negative <m>4</m> then move left <m>11</m> positions.  The result would end up at <m>-15</m>.</p>
 </section>
 
 <section xml:id="sec-int-mult-div">
