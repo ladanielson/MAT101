@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!--********************************************************************
-Copyright 2015 Robert A. Beezer
-This file is part of MathBook XML.
-MathBook XML is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 or version 3 of the
-License (at your option).
-MathBook XML is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-You should have received a copy of the GNU General Public License
-along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
+
 *********************************************************************-->
-<!-- This file was originally part of the book     -->
-<!-- (as copied on 2015/07/12)                     -->
-<!--                                               -->
-<!--   Abstract Algebra: Theory and Applications   -->
-<!--                                               -->
-<!-- Copyright (C) 1997-2014  Thomas W. Judson     -->
+
 
 <chapter xml:id="preliminaries" xmlns:xi="http://www.w3.org/2001/XInclude">
 
-<!-- % TWJ, 2010/03/31 -->
 <!-- % Chapters now begin with Chapter 1 -->
 
 <title>Set 00-Preliminaries: Signed Numbers and Operations of Numbers</title>
@@ -60,7 +43,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 	</ul>
 </p>
 
-<p>Recall that adding a <m>\color{green}{\text{positive}}</m>  integer equates to moving <m>\color{green}{\text{right}}</m> on the number line.</p>
+<p>Recall that adding a <m>\color{green}{\text{positive}}</m> integer equates to moving <m>\color{green}{\text{right}}</m> on the number line.</p>
     <example xml:id="example-numberline-ex-1plus3"> 
 	<title>Add Positive <m>3</m> to <m>1</m></title>
   <!-- Our own-->
@@ -88,7 +71,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         </md></p>
 </example>
 
-<p>Similarly, adding a \(\color{red}{\text{negative}}\) integer equates to moving \(\color{red}{\text{left}}\)  on the number line.</p>
+<p>Similarly, adding a <m>\color{red}{\text{negative}}</m> integer equates to moving <m>\color{red}{\text{left}}</m> on the number line.</p>
 
 <example xml:id="example-numberline-ex-1minus3"> 
 	<title>Add Negative <m>3</m> to <m>1</m></title>
@@ -117,7 +100,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <example xml:id="example-numberline-ex-neg1minus2"> 
 	<title>Add Negative <m>2</m> to <m>-1</m></title>
   <!-- Our own-->
-  	<p><m>-1+(-2)</m> Start at <m>-1</m> on the number line. </p>
+  	<p><m>-1+(-2)</m> Start at <m>-1</m> on the number line.</p>
 		<figure xml:id="figure-numberline-ex-neg1minus2">
         	<image xml:id="numberline-ex-neg1minus2" width="70%">
         		<latex-image-code><![CDATA[
@@ -133,7 +116,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				</latex-image-code>
 			</image>
 		</figure>
-	 <p>Move two positions left.   <m>-3</m> Our Solution</p>
+	 <p>Move two positions left. <m>-3</m> Our Solution</p>
 </example>
 
     <p>Notice in Example<nbsp /><xref ref="example-numberline-ex-neg1minus2" /> that adding two negative numbers is equivalent to adding the two corresponding positive numbers, but the final result is negative: <m>1+2=3</m> and <m>-1+(-2) = -3</m>.  However in Example<nbsp /><xref ref="example-numberline-ex-1minus3" /> we see that adding a negative number to a positive number is actually related to subtraction: <m>1+(-3)=-2</m> can be computed by first subtracting the corresponding positive integers, but the final result is negative: <m>3-1=2</m> and <m>1+(-3)=-2</m>.</p>
@@ -147,16 +130,232 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     </example>
 
     <p>If you were to sketch out a number line to solve Example<nbsp /><xref ref="example-add-two-neg" />, you would start at negative <m>4</m> then move left <m>11</m> positions.  The result would end up at <m>-15</m>.</p>
+
+    <p> When adding integers with signs that don't match, say one positive and one negative number, we will consider the corresponding positive integers, subtract the smaller from the larger,  then use the sign from the larger number in our result. This means if the larger number is positive, the answer is positive. If the larger number is negative, the answer is negative. Consider the following examples:</p>
+
+    <example xml:id="example-add-diff-signs">
+        <title>Add Integers of Different Signs</title>
+          <p><md><mrow>-5+2\amp\amp\amp\text{Different signs: subtract}</mrow>
+            <mrow>5-2=3\amp\amp\amp\text{Use sign from bigger number: }-5\text{ negative}</mrow>
+            <mrow>-3\amp\amp\amp\text{Our Solution}</mrow>
+            </md></p>
+    </example>
+
+    <example xml:id="example-add-diff-signs2">
+        <title>Add Integers of Different Signs</title>
+          <p><md><mrow>-14+20\amp\amp\amp\text{Different signs: subtract}</mrow>
+            <mrow>20-14=6\amp\amp\amp\text{Use sign from bigger number: }20\text{ positive}</mrow>
+            <mrow>6\amp\amp\amp\text{Our Solution}</mrow>
+            </md></p>
+    </example>
+
+    <p>Subtraction with negative integers can be done by converting the problem to an addition problem which can then be solved using the above methods. The way we change from a subtraction problem to an addition problem is to <em>add the opposite</em> of the number after the subtraction sign.</p>
+
+      <example xml:id="example-add-the-opposite">
+        <title>Subtract Integers: add the opposite</title>
+          <p><md><mrow>7-(-6)\amp\amp\amp\text{Add the opposite of }-6</mrow>
+            <mrow>7+(6)\amp\amp\amp\text{Addition of positive integers}</mrow>
+            <mrow>13\amp\amp\amp\text{Our Solution}</mrow>
+            </md></p>
+    </example>
+
+    <example xml:id="example-add-the-opposite2">
+        <title>Subtract Integers: add the opposite</title>
+          <p><md><mrow>6-8\amp\amp\amp\text{Add the opposite of }8</mrow>
+            <mrow>6+(-8)\amp\amp\amp\text{Different signs: subtract}</mrow>
+            <mrow>8-6=2\amp\amp\amp\text{Use sign from bigger number: }-8\text{ negative}</mrow>
+            <mrow>-2\amp\amp\amp\text{Our Solution}</mrow>
+            </md></p>
+    </example>
 </section>
 
 <section xml:id="sec-int-mult-div">
         <title>Integer Multiplication and Division</title>
 
+      <p>Multiplication and division of integers both work in a very similar pattern. The
+  short description of the process is:  
+    <ul>
+      <li>Multiply and divide like normal.</li>
+      <li>If the signs match (both positive or both negative) the answer is positive. </li>
+      <li>If the signs don't match (one positive and one negative) then the answer is negative.</li>
+    </ul>
+    This is shown in the following examples: </p>
+
+    <example xml:id="example-multiply-different">
+    <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 11 pg 9-->
+        <title>Multiply: different signs</title>
+          <p><md><mrow>(4)(-6)\amp\amp\amp\text{Multiply like normal}</mrow>
+            <mrow>4\cdot 6 = 24\amp\amp\amp\text{Signs do not match, answer is negative}</mrow>
+            <mrow>-24\amp\amp\amp\text{Our Solution}</mrow>
+            </md></p>
+    </example>
+
+    <example xml:id="example-divide-same">
+    <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 12 pg 9-->
+        <title>Divide: same signs</title>
+          <p><md><mrow>-36\div -9\amp\amp\amp\text{Divide like normal}</mrow>
+            <mrow>36\div 9=4\amp\amp\amp\text{Signs match, answer is positive}</mrow>
+            <mrow>4\amp\amp\amp\text{Our Solution}</mrow>
+            <mrow>-36\div -9 = \frac{-36}{-9}\amp\amp\amp\text{Note: we could also write the fraction for division.}</mrow>
+            </md></p>
+    </example>
+
+    <example xml:id="example-multiply-same">
+    <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 13 pg 9-->
+        <title>Multiply: same signs</title>
+          <p><md><mrow>(-2)(-6)\amp\amp\amp\text{Multiply like normal}</mrow>
+            <mrow>2\cdot 6 = 12\amp\amp\amp\text{Signs match, answer is positive}</mrow>
+            <mrow>12\amp\amp\amp\text{Our Solution}</mrow>
+            </md></p>
+    </example>
+
+    <example xml:id="example-divide-different">
+    <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 14 pg 9-->
+        <title>Divide: same signs</title>
+          <p><md><mrow>15\div -3 = \dfrac{15}{-3}\amp\amp\amp\text{Divide like normal}</mrow>
+            <mrow>15\div 3=5\amp\amp\amp\text{Signs do not match, answer is negative}</mrow>
+            <mrow>-5\amp\amp\amp\text{Our Solution}</mrow>
+            </md></p>
+    </example>
+
+    <p>Exponents are used to denote repeated multiplication of an integer times itself.</p>
+
+    <example xml:id="example-exponent-square">
+    <!-- Ours-->
+        <title>Exponents: Evaluate <m>6^2</m></title>
+          <p><md><mrow>6^2\amp\amp\amp\text{Compute six squared}</mrow>
+            <mrow>6^2=(6)(6)\amp\amp\amp\text{The exponent is }2</mrow>
+            <mrow>(6)(6)=6 \cdot 6\amp\amp\amp\text{The base }6\text{ is multiplied by itself two times}</mrow>
+            <mrow>36\amp\amp\amp\text{Our Solution}</mrow>
+            </md></p>
+    </example>
+    <example xml:id="example-exponent-cube">
+    <!-- Ours-->
+        <title>Exponents: Evaluate <m>(-5)^3</m></title>
+          <p><md><mrow>(-5)^3\amp\amp\amp\text{Compute }-5\text{ cubed}</mrow>
+            <mrow>(-5)^3=(-5)(-5)(-5)\amp\amp\amp\text{The exponent is }3</mrow>
+            <mrow>-5 \cdot -5 \cdot -5\amp\amp\amp\text{Base }-5\text{ is multiplied by itself three times}</mrow>
+            <mrow>-125\amp\amp\amp\text{Our Solution (there are three negatives)}</mrow>
+            </md></p>
+    </example>
+    <p>A few things to be careful of when working with integers. First be sure not to
+  confuse a problem like <m>-3-8</m> with <m>-3(-8)</m>. The second problem is a multiplication
+  problem because there is nothing between the <m>3</m> and the parenthesis. If
+  there is no operation written in between the parts, then we assume that means we
+  are multiplying. The  <m>-3-8</m> problem is subtraction because the subtraction separates
+  the 3 from what comes after it. Another item to watch out for is to be
+  careful not to mix up the pattern for adding and subtracting integers with the
+  pattern for multiplying and dividing integers. They can look very similar, for
+  example if the signs match on addition, the we keep the negative, <m>-3 + (-7) = -
+  10</m>, but if the signs match on multiplication, the answer is positive, <m>(-3)(-7) =
+  21</m>.</p>
 </section>
 
 <section xml:id="sec-num-ops">
         <title>Operations of Numbers</title>
+    <p>  When simplifying expressions it is important that we simplify them in the correct order. Consider the following problem done two different ways:</p>
+    <example xml:id="example-simplify-incorrect">
+      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 24 pg 18-->
+    <title><m>\color{red}{\text{WARNING! }}</m>Only one below solution is correct:</title>
+    <p>Consider <m>2+5\cdot 3:</m>
+        <md><mrow>\underbrace{2+5}\cdot 3\amp\amp\amp\text{Add first}</mrow>
+            <mrow>7\cdot 3\amp\amp\amp\text{Multiply next }</mrow>
+            <mrow>21\amp\amp\amp\text{Solution One}</mrow>
+            <mrow>\color{red}{\text{Versus}}</mrow>
+            <mrow>2+\underbrace{5 · 3}\amp\amp\amp\text{Multiply first}</mrow>
+            <mrow>2+15\amp\amp\amp\text{Add next }</mrow>
+            <mrow>17\amp\amp\amp\text{Solution Two}</mrow>
+        </md></p>
+    </example>
+    <p>Example<nbsp /><xref ref="example-simplify-incorrect" /> illustrates that if the same problem is done two different ways we will arrive at two different solutions. However, only one method can be correct. It turns out the second method, with solution <m>17</m>, is the correct method. The order of operations ends with the most basic of operations, addition (or subtraction). Before addition is completed we must do repeated addition or multiplication (or division). Before multiplication is completed we must do repeated multiplication or exponents. When we want to do something out of order and make it come first we will put it in parentheses (or grouping symbols). The following list is the order of operations we will use to simplify expressions.</p>
 
+    <p><term>Order of Operations:</term>
+      <ul><li>Parentheses</li>
+          <li>Exponents</li>
+          <li>Multiply and Divide (Left to Right)</li>
+          <li>Add and Subtract (Left to Right)</li>
+      </ul></p>
+
+    <p>Multiply and Divide are on the same level because they are the same operation (division is just multiplying by the reciprocal). This means they must be done left to right, so some problems we will divide first, others we will multiply first. The same is true for adding and subtracting (subtracting is just adding the opposite). Often students use the word <term>PEMDAS</term> to remember the order of operations, as the first letter of each operation creates the word <term>PEMDAS</term>.  However, it is the author’s suggestion to think about <term>PEMDAS</term> as a vertical word written as:
+    <ul><li>P</li>
+        <li>E</li>
+        <li>M</li>
+        <li>D</li>
+        <li>A</li>
+        <li>S</li></ul>
+    so we don’t forget that multiplication and division are done left to right (same with addition and subtraction). Another way students remember the order of operations is to think of a phrase such as <em>Please Excuse My Dear Aunt Sally</em> where each word starts with the same letters as the order of operations start with.</p>
+    <example xml:id="example-order-of-operations-pema">
+      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 25 pg 19-->
+    <title>Order of Operations: PEMA</title>
+    <p>Consider <m>2+3(9-4)^2</m>:
+        <md><mrow>2 + 3(\underbrace{9 - 4})^2\amp\amp\amp\text{Parentheses first (subtract)}</mrow>
+            <mrow>2 + 3\underbrace{(5)^2}\amp\amp\amp\text{Exponents}</mrow>
+            <mrow>2 + \underbrace{3(25)}\amp\amp\amp\text{Multiply}</mrow>
+            <mrow>\underbrace{2 + 75}\amp\amp\amp\text{Add}</mrow>
+            <mrow>77\amp\amp\amp\text{Our Solution}</mrow>
+        </md></p>
+    </example>
+    <p>It is very important to remember to multiply and divide from from left to right!</p>
+
+    <example xml:id="example-order-of-operations-dm">
+      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 26 pg 19-->
+    <title>Order of Operations: DM</title>
+    <p>Consider <m>30 \div 3 \cdot 2</m>:
+        <md><mrow>\underbrace{30 \div 3} \cdot 2\amp\amp\amp\text{Divide first (left to right!)}</mrow>
+            <mrow>\underbrace{10 \cdot 2}\amp\amp\amp\text{Multiply}</mrow>
+            <mrow>20\amp\amp\amp\text{Our Solution}</mrow>
+        </md></p>
+    </example>
+
+    <p>In the previous example, if we had multiplied first, five would have been  the answer which is incorrect.</p>
+
+    <p>If there are several parenthesis in a problem we will start with the inner most parenthesis and work our way out. Inside each parenthesis we simplify using the order of operations as well. To make it easier to know which parenthesis goes with which parenthesis, different types of parenthesis will be used such as { } and [ ] and ( ), these parenthesis all mean the same thing, they are parenthesis and must be evaluated first.</p>
+    <example xml:id="example-order-of-operations-parentheses">
+      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 27 pg 19-->
+    <title>Order of Operations: Parentheses</title>
+    <p>Consider <m>2\{8^2 - 7[32 - 4(3^2 + 1)]( - 1)\}</m>:
+        <md><mrow>2\{8^2 - 7[32 - 4(\underbrace{3^2} + 1)]( - 1)\}\amp\amp\amp\text{Inner most parentheses (): exponents first}</mrow>
+            <mrow>2\{8^2 - 7[32 - 4(\underbrace{9 + 1})]( - 1)\}\amp\amp\amp\text{Add inside () parentheses}</mrow>
+            <mrow>2\{8^2 - 7[32 -\underbrace{ 4(10)}]( - 1)\}\amp\amp\amp\text{Multiply inside next inner parentheses []}</mrow>
+            <mrow>2\{8^2 - 7[\underbrace{32 - 40}]( - 1)\}\amp\amp\amp\text{Subtract inside [] parentheses}</mrow>
+            <mrow>2\{\underbrace{8^2} - 7[ - 8]( - 1)\}\amp\amp\amp\text{Exponents next inside \{\}}</mrow>
+            <mrow>2\{64\underbrace{- 7[ - 8]}( - 1)\}\amp\amp\amp\text{Multiply left to right, sign with the number}</mrow>
+            <mrow>2\{64 + \underbrace{56( - 1)}\}\amp\amp\amp\text{Finish multiplying}</mrow>
+            <mrow>2\{\underbrace{64 - 56}\}\amp\amp\amp\text{Subtract inside \{\} parentheses}</mrow>
+            <mrow>\underbrace{2\{8\}}\amp\amp\amp\text{Multiply}</mrow>
+            <mrow>16\amp\amp\amp\text{Our Solution}</mrow>
+        </md></p>
+    </example>
+    <p>As the above example illustrates, it can take several steps to complete a problem. The key to successfully solve order of operations problems is to take the time to show your work and do one step at a time. This will reduce the chance of making a mistake along the way.</p>
+    <p>There are several types of grouping symbols that can be used besides parentheses. One type is a fraction bar. If we have a fraction, the entire numerator and the entire denominator must be evaluated before we reduce the fraction. In these cases we can simplify in both the numerator and denominator at the same time. </p>
+    <example xml:id="example-order-of-operations-fraction">
+      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 28 pg 20-->
+    <title>Order of Operations: Fraction</title>
+    <p>Consider <m>\dfrac{2^4-(-8)\cdot 3}{15\div 5 -1}</m>:
+        <md><mrow>\dfrac{\overbrace{2^4} - ( - 8) \cdot 3}{\underbrace{15 \div 5} - 1}\amp\amp\amp\text{Exponent in the numerator, divide in denominator}</mrow>
+            <mrow>\dfrac{16 - \overbrace{( - 8) \cdot 3}}{\underbrace{3 - 1}}\amp\amp\amp\text{Multiply in the numerator, subtract in denominator}</mrow>
+            <mrow>\dfrac{\overbrace{16 - (-24)}}{2}\amp\amp\amp\text{Add the opposite to simplify numerator, denominator is done}</mrow>
+            <mrow>\dfrac{40}{2}\amp\amp\amp\text{Reduce: divide}</mrow>
+            <mrow>20\amp\amp\amp\text{Our Solution}</mrow>
+        </md></p>
+    </example>
+    <p>Absolute value is another type of grouping symbol that also has an operation with it. When we have absolute value we will evaluate everything inside the absolute value, just as if it were a normal set of parentheses. Then once the inside is completed we will take the absolute value, or distance from zero, to make the result positive.</p>
+    <example xml:id="example-order-of-operations-absolute-value">
+      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 29 pg 20-->
+    <title>Order of Operations: Absolute Value</title>
+    <p>Consider <m>1 + 3| - 4^2 - ( - 8)| + 2|3 + ( - 5)^2|</m>:
+        <md><mrow>1+3|-\underbrace{4^2}-(-8)|+2|3+\underbrace{(-5)^2}|\amp\amp\amp\text{Inside absolute values first: exponents}</mrow>
+            <mrow>1 + 3|\underbrace{- 16 - ( - 8)}| + 2|\underbrace{3 + 25}|\amp\amp\amp\text{Add inside absolute values}</mrow>
+            <mrow>1 + 3\underbrace{| - 8|} + 2\underbrace{|28|}\amp\amp\amp\text{Evaluate absolute values}</mrow>
+            <mrow>1 + \underbrace{3(8)} + 2(28)\amp\amp\amp\text{Multiply left to right}</mrow>
+            <mrow>1 + 24 + \underbrace{2(28)}\amp\amp\amp\text{Finish multiplying}</mrow>
+            <mrow>\underbrace{1 + 24} + 56\amp\amp\amp\text{Add left to right}</mrow>
+            <mrow>\underbrace{25 + 56}\amp\amp\amp\text{Add}</mrow>
+            <mrow>81\amp\amp\amp\text{Our Solution}</mrow> 
+        </md></p>
+    </example>
+    <p>The above example also illustrates an important point about exponents. Exponents  are considered to be on the number they are attached to. This means when we see <m>- 4^2</m>, only the <m>4</m> is squared, giving us <m>-(4^2)</m> or <m>-16</m>. But when the negative is in parentheses, such as <m>(-5)^2</m> the negative is part of the number and is also squared giving us a positive solution, <m>25</m>.</p>
+    <p>In algebra we will often need to simplify an expression to make it easier to use.  There are three basic forms of simplifying which we will review in Section <xref ref="sec-work-with-vars"/>.</p>
 </section>
 
 <section xml:id="sec-work-with-vars">
