@@ -1,0 +1,14 @@
+
+In the LaTeXtoLaTeX directory, this command will convert html files
+in one directory into mbx files in another directory.
+
+./ltol.py ../M101_Reading_HTML/ ../M101_Reading_MBX/
+
+
+Note that the individual chapter files are created each time you run
+that command, but the main index.mbx file has to be created by hand.
+
+Then run xsltproc on index.mbx
+
+The pictures will be missing because the files beed to be moved to the
+MBX directory.
