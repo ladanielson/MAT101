@@ -360,6 +360,72 @@
 
 <section xml:id="sec-work-with-vars">
         <title>Working with Variables</title>
+    <p>The first form of simplifying expressions is used when we know what number each variable in the expression represents. If we know what they represent we can replace each variable with the equivalent number and simplify what remains using order of operations.</p>
+    <example xml:id="example-evaluate-expression">
+      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 30 pg 22-->
+    <title>Evaluate <m>p(q +6)</m></title>
+    <p>Consider <m>p(q +6)</m> when <m>p=3</m> and <m>q=5</m>:
+        <md><mrow>p(q +6)\amp\amp\amp\text{Replace }p\text{ with }3\text{ and }q\text{ with }5</mrow>
+            <mrow>(3)((5)+6)\amp\amp\amp\text{Evaluate parentheses}</mrow>
+            <mrow>(3)(11)\amp\amp\amp\text{Multiply}</mrow>
+            <mrow>33\amp\amp\amp\text{Our Solution}</mrow> 
+        </md></p>
+    </example>
+    <p>Whenever a variable is replaced with something, we will put the new number inside a set of parentheses. Notice the <m>3</m> and <m>5</m> in the previous example are in parentheses. This is to preserve operations that are sometimes lost in a simple replacement. Sometimes the parentheses won’t make a difference, but it is a good habit to always use them to prevent problems later.</p>
+    <example xml:id="example-evaluate-expression2">
+      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 31 pg 22-->
+    <title>Evaluate <m>x+zx(3-z)\left(\dfrac{x}{3} \right)</m></title>
+    <p>Consider <m>x+zx(3-z)\left(\dfrac{x}{3} \right)</m> when <m>x=-6</m> and <m>z=-2</m>:
+        <md><mrow>x+zx(3-z)\left(\dfrac{x}{3} \right)\amp\amp\amp\text{Replace all }x\text{'s with }-6</mrow>
+            <mrow>\amp\amp\amp\text{ and }z\text{'s with }-2</mrow>
+            <mrow>(-6)+(-2)(-6)(3-(-2))\left(\dfrac{(-6)}{3} \right)\amp\amp\amp\text{Evaluate parentheses}</mrow>
+            <mrow>-6+(-2)(-6)(5)(-2)\amp\amp\amp\text{Multiply left to right}</mrow>
+            <mrow>-6+(60)(-2)\amp\amp\amp\text{Multiply}</mrow>
+            <mrow>-6-120\amp\amp\amp\text{Subtract}</mrow>
+            <mrow>-126\amp\amp\amp\text{Our Solution}</mrow> 
+        </md></p>
+    </example>
+    <p>It will be more common in our study of algebra that we do not know the value of the variables. In this case, we will have to simplify what we can and leave the variables in our final solution. One way we can simplify expressions is to combine like terms. Like terms are terms where the variables match exactly (exponents included). Examples of like terms would be <m>3xy</m> and <m>-7xy</m> or <m>3a^2b</m> and <m>8a^2b</m> or <m>-3</m> and <m>5</m>. If we have like terms we are allowed to add (or subtract) the numbers in front of the variables, then keep the variables the same. This is shown in the following examples:</p>
+    <example xml:id="example-combine-like-terms">
+      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 32 pg 23-->
+    <title>Simplify: <m>5x-2y-8x+7y</m></title>
+    <p>Consider <m>5x-2y-8x+7y</m>:
+        <md><mrow>5x-2y-8x+7y\amp\amp\amp\text{Identify like terms}</mrow>
+            <mrow>5x-8x\text{ and }-2y+7y\amp\amp\amp\text{Combine like terms: subtract, add}</mrow>
+            <mrow>-3x+5y\amp\amp\amp\text{Our Solution}</mrow> 
+        </md></p>
+    </example>
+    <example xml:id="example-combine-like-terms2">
+      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 33 pg 23-->
+    <title>Simplify: <m>8x^2-3x+7-2x^2+4x-3</m></title>
+    <p>Consider <m>8x^2-3x+7-2x^2+4x-3</m>:
+        <md><mrow>8x^2-3x+7-2x^2+4x-3\amp\amp\amp\text{Identify like terms}</mrow>
+            <mrow>8x^2-2x^2\text{ and }-3x+4x\text{ and }7-3\amp\amp\amp\text{Combine like terms: subtract, add}</mrow>
+            <mrow>6x^2+x+4\amp\amp\amp\text{Our Solution}</mrow> 
+        </md></p>
+    </example>
+    <p>As we combine like terms we need to interpret subtraction signs as part of the following term. This means if we see a subtraction sign, we treat the following term like a negative term, the sign always stays with the term.</p>
+    <p>A final method to simplify is known as <term>distributing</term>. Often as we work with problems there will be a set of parentheses that make solving a problem difficult, if not impossible. To get rid of these unwanted parentheses we have the distributive property. Using this property we multiply the number in front of the parentheses by each term inside of the parentheses.</p>
+    <p><term>Distributive Property:</term> <m>a(b+c)=ab+ac</m></p>
+    <p>Several examples of using the distributive property are given below.</p>
+    <example xml:id="example-distribute-a-positive">
+      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 34 pg 23-->
+    <title>Simplify: <m>4(2x-7)</m></title>
+    <p><md><mrow>4(2x-7)\amp\amp\amp\text{Disribute: multiply each term by }4</mrow>
+            <mrow>(4)2x+(4)(-7)\amp\amp\amp\text{Multiply}</mrow>
+            <mrow>8x-28\amp\amp\amp\text{Our Solution}</mrow> 
+        </md></p>
+    </example>
+    <example xml:id="example-distribute-a-negative">
+      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 35 pg 23-->
+    <title>Simplify: <m>-7(5x-6)</m></title>
+    <p><md><mrow>-7(5x-6)\amp\amp\amp\text{Disribute: multiply each term by }-7</mrow>
+            <mrow>(-7)5x+(-7)(-6)\amp\amp\amp\text{Multiply}</mrow>
+            <mrow>-35x+42\amp\amp\amp\text{Our Solution}</mrow> 
+        </md></p>
+    </example>
+    <p>In the previous example we again use the fact that the sign goes with the number. This means we treat the <m>-6</m> as a negative number, this gives <m>(-7)(-6) = 42</m>, a positive number. The most common error in distributing is a sign error, <b>be very careful with your signs!</b></p>
+    <p>It is possible to distribute just a negative through parentheses. If we have a negative in front of parentheses we can think of it like a <m>-1</m> in front and distribute the <m>-1</m> through. This is shown in the following example.</p>
 </section>
 
 
