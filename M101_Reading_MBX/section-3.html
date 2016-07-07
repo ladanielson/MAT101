@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--* Generated from MathBook XML source *-->
+<!--*    on 2016-07-07T11:37:49-06:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Operations of Numbers</title>
+<meta name="Keywords" content="Authored in MathBook XML">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+// contrib directory for accessibility menu, moot after v2.6+?
+MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        // [Contrib]accessibility menu moot after v2.6+?
+        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", "[Contrib]/a11y/accessibility-menu.js", ],
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    "HTML-CSS": {
+        scale: 88,
+    },
+});
+    </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-2.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<div style="display:none;">\(
+\newcommand{\lt}{ &lt; }
+\newcommand{\gt}{ &gt; }
+\newcommand{\amp}{ &amp; }
+\)</div>
+<header id="masthead"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading">
+<span class="title">Survey of Algebra and Probability</span><span class="subtitle">MAT 101</span>
+</h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="previous-button toolbar-item button" href="section-2.html">Previous</a><a class="up-button button toolbar-item" href="chapter-1.html">Up</a><a class="next-button button toolbar-item" href="section-4.html">Next</a>
+</div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-2.html">Previous</a><a class="up-button button toolbar-item" href="chapter-1.html">Up</a><a class="next-button button toolbar-item" href="section-4.html">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link active"><a href="chapter-1.html"><span class="codenumber">1</span><span class="title">MAT-101: Set 00-Preliminaries</span></a></h2>
+<ul>
+<li><a href="section-1.html">Integer Addition and Subtraction</a></li>
+<li><a href="section-2.html">Integer Multiplication and Division</a></li>
+<li><a href="section-3.html" class="active">Operations of Numbers</a></li>
+<li><a href="section-4.html">Working with Variables</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html"><span class="codenumber">2</span><span class="title">MAT-101: Set 1A-Fractions</span></a></h2>
+<ul>
+<li><a href="section-5.html">Fractions</a></li>
+<li><a href="section-6.html">Multiplication and Division of Fractions</a></li>
+<li><a href="section-7.html">Common Denominators</a></li>
+<li><a href="section-8.html">Addition and Subtraction of Fractions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html"><span class="codenumber">3</span><span class="title">MAT-101: Set 1B-Percents and Estimation</span></a></h2>
+<ul>
+<li><a href="section-9.html">Percents</a></li>
+<li><a href="section-10.html">Converting Between Percents and Decimals</a></li>
+<li><a href="section-11.html">Determining a Percent of a Number</a></li>
+<li><a href="section-12.html">Decimals on the Real Number Line</a></li>
+<li><a href="section-13.html">Rounding Decimals</a></li>
+<li><a href="section-14.html">Estimation</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html"><span class="codenumber">4</span><span class="title">MAT-101: Set 1C-Sets, Intervals and Inequalities</span></a></h2>
+<ul>
+<li><a href="section-15.html">Sets</a></li>
+<li><a href="section-16.html">Union Of Two Sets</a></li>
+<li><a href="section-17.html">Intersection Of Two Sets</a></li>
+<li><a href="section-18.html">Universal Set</a></li>
+<li><a href="section-19.html">Complement of a Set</a></li>
+<li><a href="section-20.html">Venn Diagrams</a></li>
+<li><a href="section-21.html">Intervals and Inequalities</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-3"><header title="Section 1.3 Operations of Numbers"><h1 class="heading hide-type" alt="Section 1.3 Operations of Numbers">
+<span class="type">Section</span><span class="codenumber">1.3</span><span class="title">Operations of Numbers</span>
+</h1></header><p id="p-26">  When simplifying expressions it is important that we simplify them in the correct order. Consider the following problem done two different ways: </p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-15" id="example-15"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.3.1</span><span class="title"> \(\color{red}{\text{WARNING!}}\) Only one below solution is correct:</span>
+</h5></article></a></div>
+<div id="hk-example-15" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-27">
+
+  
+
+</p>
+<figure class="figure-like" id="table-15">
+\(\underbrace{2+5} \cdot 3\)
+Add First
+\(\color{red}{\text{versus}}\)
+\(2+\underbrace{5 \cdot 3}\)
+Multiply First
+  
+\(7 \cdot 3\)
+Multiply
+
+\(2+ 15\)
+Add
+  
+\(21\)
+Solution
+
+\(17\)
+Solution
+  </figure><p id="p-28">
+The previous example illustrates that if the same problem is done two different ways we will arrive at two different solutions. However, only one method can be correct. It turns out the second method, with solution \(17\), is the correct method. The order of operations ends with the most basic of operations, addition (or subtraction). Before addition is completed we must do repeated addition or multiplication (or division). Before multiplication is completed we must do repeated multiplication or exponents. When we want to do something out of order and make it come first we will put it in parenthesis (or grouping symbols). This list then is our order of operations we will use to simplify expressions. </p>
+<p id="p-29">Order of Operations:</p>
+<p id="p-30">Parenthesis (Grouping)</p>
+<p id="p-31">Exponents</p>
+<p id="p-32">Multiply and Divide (Left to Right)</p>
+<p id="p-33">Add and Subtract (Left to Right)</p>PEMDASPEMDASPEMDAS P 
+  E 
+  MD 
+  AS<p id="p-34">so we don't forget that multiplication and division are done left to right (same with addition and subtraction). Another way students remember the order of operations is to think of a phrase such as “Please Excuse My Dear Aunt Sally” where each word starts with the same letters as the order of operations start with.</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-16" id="example-16"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.3.2</span><span class="title"> Order of Operations</span>
+</h5></article></a></div>
+<div id="hk-example-16" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-35">
+
+  
+</p>
+<figure class="figure-like" id="table-16">
+\(2 + 3(\underbrace{9 - 4})^2\)
+Parenthesis first (subtract)
+  
+\(2 + 3\underbrace{(5)^2}\)
+Exponents
+  
+\(2 + \underbrace{3(25)}\)
+Multiply
+  
+\(\underbrace{2 + 75}\)
+Add
+  
+\(77\)
+Our Solution
+  </figure><p id="p-36">
+It is very important to remember to multiply and divide from from left to right!
+</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-17" id="example-17"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.3.3</span><span class="title"> Order of Operations</span>
+</h5></article></a></div>
+<div id="hk-example-17" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-37">
+
+  
+
+</p>
+<figure class="figure-like" id="table-17">
+\(\underbrace{30 \div 3} \cdot 2\)
+Divide first (left to right!)
+  
+\(\underbrace{10 \cdot 2}\)
+Multiply
+  
+\(20\)
+Our Solution
+  </figure><p id="p-38">
+  In the previous example, if we had multiplied first, five would have been  the answer which is incorrect.</p>
+<p id="p-39">If there are several parenthesis in a problem we will start with the inner most parenthesis and work our way out. Inside each parenthesis we simplify using the order of operations as well. To make it easier to know which parenthesis goes with which parenthesis, different types of parenthesis will be used such as { } and [ ] and ( ), these parenthesis all mean the same thing, they are parenthesis and must be evaluated first.</p> Example 00-18: Order of Operations<figure class="figure-like" id="table-18">
+\(2\{8^2 - 7[32 - 4(\underbrace{3^2} + 1)]( - 1)\}\)
+Inner most parenthesis, exponents first
+  
+\(2\{8^2 - 7[32 - 4(\underbrace{9 + 1})]( - 1)\}\)
+Add inside those parenthesis
+  
+\(2\{8^2 - 7[32 -\underbrace{ 4(10)}]( - 1)\}\)
+Multiply inside inner most parenthesis
+  
+\(2\{8^2 - 7[\underbrace{32 - 40}]( - 1)\}\)
+Subtract inside those parenthesis
+  
+\(2\{\underbrace{8^2} - 7[ - 8]( - 1)\}\)
+Exponents next
+  
+\(2\{64\underbrace{- 7[ - 8]}( - 1)\}\)
+Multiply left to right, sign with the number
+  
+\(2\{64 + \underbrace{56( - 1)}\}\)
+Finish multiplying
+  
+\(2\{\underbrace{64 - 56}\}\)
+Subtract inside parenthesis
+  
+\(\underbrace{2\{8\}}\)
+Multiply
+  
+\(16\)
+Our Solution
+  </figure><p id="p-40">
+As the above example illustrates, it can take several steps to complete a problem. The key to successfully solve order of operations problems is to take the time to show your work and do one step at a time. This will reduce the chance of making a mistake along the way. </p>
+<p id="p-41">
+There are several types of grouping symbols that can be used besides parenthesis. One type is a fraction bar. If we have a fraction, the entire numerator and the entire denominator must be evaluated before we reduce the fraction. In these cases we can simplify in both the numerator and denominator at the same time. </p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-18" id="example-18"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.3.4</span><span class="title"> Order of Operations: Fraction</span>
+</h5></article></a></div>
+<div id="hk-example-18" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-42">
+
+
+</p>
+<figure class="figure-like" id="table-19">
+\(\dfrac{\overbrace{2^4} - ( - 8) \cdot 3}{\underbrace{15 \div 5} - 1}\)
+Exponent in the numerator, divide in denominator
+  
+\(\dfrac{16 - \overbrace{( - 8) \cdot 3}}{\underbrace{3 - 1}}\)
+Multiply in the numerator, subtract in denominator
+  
+\(\dfrac{\overbrace{16 - (-24)}}{2}\)
+Add the opposite to simplify numerator, denominator is done.
+  
+\(\dfrac{40}{2}\)
+Reduce, divide
+  
+\(20\)
+Our Solution
+  </figure><p id="p-43">
+Another type of grouping symbol that also has an operation  with  it,  absolute value. When we have absolute value we will evaluate everything inside the absolute value, just as if it were a normal parenthesis. Then once the inside is completed we will take the absolute value, or distance from zero, to make the number positive.</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-19" id="example-19"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.3.5</span><span class="title"> Order of Operations: Absolute Value</span>
+</h5></article></a></div>
+<div id="hk-example-19" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-44">
+
+
+
+</p>
+<figure class="figure-like" id="table-20">
+\(1 + 3| - \underbrace{4^2} - ( - 8)| + 2|3 + \underbrace{( - 5)^2}|\)
+Evaluate absolute values first, exponents
+  
+\(1 + 3|\underbrace{- 16 - ( - 8)}| + 2|\underbrace{3 + 25}|\)
+Add inside absolute values
+  
+\(1 + 3\underbrace{| - 8|} + 2\underbrace{|28|}\)
+Evaluate absolute values
+  
+\(1 + \underbrace{3(8)} + 2(28)\)
+Multiply left to right
+  
+\(1 + 24 + \underbrace{2(28)}\)
+Finish multiplying
+  
+\(\underbrace{1 + 24} + 56\)
+Add left to right
+  
+\(\underbrace{25 + 56}\)
+Add
+  
+\(81\)
+Our Solution
+  </figure><p id="p-45">
+The above example also illustrates an important point about exponents. Exponents  are considered to be on the number they are attached to. This means when we see \(- 4^2\), only the \(4\) is squared, giving us \(-(4^2)\) or \(-16\). But when the negative is in parentheses, such as \((-5)^2\) the negative is part of the number and is also squared giving us a positive solution, \(25\). </p>
+<p id="p-46">
+In algebra we will often need to simplify an expression to make it easier to use.  There are three basic forms of simplifying which we will review here. </p></article></div></section></div></main>
+</div>
+</body>
+</html>
