@@ -1,0 +1,957 @@
+<chapter>
+<title>MAT-101: Set 00-Preliminaries</title>
+<introduction>
+<ul>
+<li>Add, subtract, multiply and divide positive and negative
+    numbers.</li>
+  <li> Evaluate expressions using the order of operations, including the use of absolute value.</li>
+  <li> Simplify algebraic expressions by substituting given values, distributing, and combining like terms.</li>
+</ul>
+</introduction>
+
+<section>
+<title>Integer Addition and Subtraction</title>
+
+<p> A small picture of the integers is provided on the number line below: </p>
+   <figure xml:id="figure-numberline">
+          <image xml:id="numberline" width="70%">
+            <latex-image-code><![CDATA[
+              \begin{tikzpicture} [scale = 0.5, transform shape]
+            \draw[<->] (-5.5,0) -- (5.5,0);
+                  \foreach \x in {-5,...,5}
+                      \draw (\x, 0.1) -- (\x, -0.1) node [below] {$\x$};
+          \end{tikzpicture}]]>
+        </latex-image-code>
+      </image>
+    </figure>
+<p>
+The number line actually goes on forever in both directions.  The<b> positive integers</b> are the whole numbers to the right of (or greater than) <m>0: 1, 2, 3, \dots</m>. The<b> negative integers</b> are the whole numbers to the left of (or less than) <m>0: -1, -2, -3, \dots</m>.  Some interesting facts to note are:
+<ul>
+  <li>The integer <m>0</m> is neither positive nor negative.</li>
+  <li>As we move to the right on the number line, the integers increase in value.  <m>3</m> is greater than <m>2</m>, written <m>3\gt 2</m>.  But <m>-2</m> is greater than <m>-3</m>, written <m>-2\gt -3</m>.</li>
+</ul>
+</p>
+
+<p>
+Recall that adding a <m>\color{green}{\text{positive}}</m>  integer equates to moving <m>\color{green}{\text{right}}</m> on the number line.
+</p>
+
+<example>
+<title> Add Positive <m>3</m> to <m>1</m></title>
+<p>
+
+  <!-- Our own-->
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>1+3</m></td>
+<td>Start at <m>1</m> on the number line.</td>
+  </tr>
+<tr>
+<td align="right"><figure xml:id="figure-numberline-ex-1plus3">
+          <image xml:id="numberline-ex-1plus3" width="70%">
+            <latex-image-code><![CDATA[
+              \begin{tikzpicture} [scale = 0.5, transform shape]
+            \draw[<->] (-5.5,0) -- (5.5,0);
+                  \foreach \x in {-5,...,5}
+                      \draw (\x, 0.1) -- (\x, -0.1) node [below] {$\x$};
+                \draw[color=green, ->] (0:1) arc (180:15:.5);
+                \draw[color=green, ->] (0:2) arc (180:15:.5);
+                \draw[color=green, ->] (0:3) arc (180:15:.5);
+                \filldraw[color=blue] (1,0) circle (.1);
+                \filldraw[color=green] (4,0) circle (.1);
+          \end{tikzpicture}]]>
+        </latex-image-code>
+      </image>
+        </figure></td>
+<td>Move three positions right.</td>
+  </tr>
+<tr>
+<td align="right"><m>4</m></td>
+<td>Our Solution: We knew that!</td>
+  </tr>
+</table>
+<p>
+Similarly, adding a <m>\color{red}{\text{negative}}</m> integer equates to moving <m>\color{red}{\text{left}}</m>  on the number line.
+</p>
+
+</example>
+
+<example>
+<title> Add Negative <m>3</m> to <m>1</m></title>
+<p>
+
+  <!-- Our own-->
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>1+(-3)</m></td>
+<td>Start at <m>1</m> on the number line.</td>
+  </tr>
+<tr>
+<td align="right"><figure xml:id="figure-numberline-ex-1minus3">
+          <image xml:id="numberline-ex-1minus3" width="70%">
+            <latex-image-code><![CDATA[
+              \begin{tikzpicture} [scale = 0.5, transform shape]
+            \draw[<->] (-5.5,0) -- (5.5,0);
+                  \foreach \x in {-5,...,5}
+                      \draw (\x, 0.1) -- (\x, -0.1) node [below] {$\x$};
+               \draw[color=red, ->] (0:1) arc (0:165:.5);
+               \draw[color=red, ->] (0:0) arc (0:165:.5);
+               \draw[color=red, ->] (0:-1) arc (0:165:.5);
+               \filldraw[color=blue] (1,0) circle (.1);
+               \filldraw[color=red] (-2,0) circle (.1);
+          \end{tikzpicture}]]>
+        </latex-image-code>
+      </image>
+    </figure></td>
+<td>Move three positions left.</td>
+  </tr>
+<tr>
+<td align="right"><m>-2</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Add Negative <m>2</m> to <m>-1</m></title>
+<p>
+
+  <!-- Our own-->
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>-1+(-2)</m></td>
+<td>Start at <m>-1</m> on the number line.</td>
+  </tr>
+<tr>
+<td align="right"><figure xml:id="figure-numberline-ex-neg1minus2">
+          <image xml:id="numberline-ex-neg1minus2" width="70%">
+            <latex-image-code><![CDATA[
+              \begin{tikzpicture} [scale = 0.5, transform shape]
+            \draw[<->] (-5.5,0) -- (5.5,0);
+                  \foreach \x in {-5,...,5}
+                      \draw (\x, 0.1) -- (\x, -0.1) node [below] {$\x$};
+                \draw[color=red, ->] (0:-1) arc (0:165:.5);
+                \draw[color=red, ->] (0:-2) arc (0:165:.5);
+                \filldraw[color=blue] (-1,0) circle (.1);
+                \filldraw[color=red] (-3,0) circle (.1);
+          \end{tikzpicture}]]>
+        </latex-image-code>
+      </image>
+    </figure></td>
+<td>Move two positions left.</td>
+  </tr>
+<tr>
+<td align="right"><m>-3</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+<p>
+Notice in <b>Example 00-3</b> that adding two negative numbers is equivalent to adding the two corresponding positive numbers, but the final result is negative: <m>1+2=3</m> and <m>-1+(-2) = -3</m>.  However in <b>Example 00-2</b> we see that adding a negative number to a positive number is actually related to subtraction: <m>1+(-3)=-2</m> can be computed by first subtracting the corresponding positive integers, but the final result is negative: <m>3-1=2</m> and <m>1+(-3)=-2</m>.
+</p>
+
+
+</example>
+
+<example>
+<title> Add Two Negative Integers </title>
+<p>
+
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>-4+(-11)</m></td>
+<td>Adding two negatives: add positives <m>4+11=15</m>, the result is negative</td>
+  </tr>
+<tr>
+<td align="right"><m>-15</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+<p>
+If you were to sketch out a number line to solve <b>Example 00-4:</b>, you would start at negative <m>4</m> then move left <m>11</m> positions.  The result would end up at <m>-15</m>.
+</p>
+
+<p> When adding integers with signs that don't match, say one positive and one negative number, we will consider the corresponding positive integers, subtract the smaller from the larger,  then use the sign from the larger
+  number in our result. This means if the larger number is positive, the answer is positive. If the larger number is negative, the answer is negative. Consider the following   examples: </p>
+</example>
+
+<example>
+<title> Add Integers of Different Signs</title>
+<p>
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>-5+2</m></td>
+<td>Different signs: subtract <m>5-2=3</m>, use sign from bigger number (<m>-5</m>), negative</td>
+  </tr>
+<tr>
+<td align="right"><m>-3</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Add Integers of Different Signs </title>
+<p>
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>-14+20</m></td>
+<td>Different signs: subtract <m>20-14=6</m>, use sign from bigger number (<m>+20 </m>), positive</td>
+  </tr>
+<tr>
+<td align="right"><m>6</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+<p> Subtraction with negative integers can be done by converting the problem to an addition problem which can then be solved using the above methods. The way we change from a subtraction problem to an addition problem is to<em> add the opposite</em> of the number after the subtraction sign. </p>
+
+</example>
+
+<example>
+<title> Subtract Integers: add the opposite</title>
+<p>
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>7-(-6)</m></td>
+<td><em>Add the opposite</em> of <m>-6</m></td>
+  </tr>
+<tr>
+<td align="right"><m>7+(6)</m></td>
+<td>Addition of positive integers</td>
+  </tr>
+<tr>
+<td align="right"><m>13</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Subtract Integers: add the opposite</title>
+<p>
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>6-8</m></td>
+<td><em>Add the opposite</em> of <m>8</m></td>
+  </tr>
+<tr>
+<td align="right"><m>6+(-8)</m></td>
+<td>Different signs: subtract <m>8-6=2</m>, use sign from bigger number (<m>-8</m>), negative</td>
+  </tr>
+<tr>
+<td align="right"><m>-2</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+</example>
+</section>
+
+<section>
+<title>Integer Multiplication and Division</title>
+
+
+<p> Multiplication and division of integers both work in a very similar pattern. The
+  short description of the process is we multiply and divide like normal, if the signs
+  match (both positive or both negative) the answer is positive. If the signs don't
+  match (one positive and one negative) then the answer is negative. This is shown
+  in the following examples: </p>
+
+<example>
+<title> Multiply</title>
+<p>
+
+  <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 11 pg 9-->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>(4)(-6)</m></td>
+<td>Signs do not match, answer is negative</td>
+  </tr>
+<tr>
+<td align="right"><m>-24</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Divide </title>
+<p>
+
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 12 pg 9-->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>-36\div -9</m></td>
+<td>Signs match, answer is positive
+        (Note that we could also write <m>\frac{-36}{-9}</m> for division)</td>
+  </tr>
+<tr>
+<td align="right"><m>4</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Multiply</title>
+<p>
+
+  <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 13 pg 9-->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>(-2)(-6)</m></td>
+<td>Signs match, answer is positive</td>
+  </tr>
+<tr>
+<td align="right"><m>12</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Divide</title>
+<p>
+
+  <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 14 pg 9-->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>15\div -3 = \dfrac{15}{-3}</m></td>
+<td>Signs do not match, answer is negative</td>
+  </tr>
+<tr>
+<td align="right"><m>-5</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+<p>
+Exponents are used to denote repeated multiplication of an integer times itself.
+</p>
+
+</example>
+
+<example>
+<title> Exponents: Evaluate <m>6^2</m></title>
+<p>
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>6^2=(6)(6) </m></td>
+<td>The exponent <m>2</m> means the base <m>6</m> is multiplied by itself <m>2</m> times
+        (Note that we could also write <m>6\cdot6 </m> for multiplication)</td>
+  </tr>
+<tr>
+<td align="right"><m>36</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Exponents: Evaluate <m>(-5)^3</m></title>
+<p>
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>(-5)^3=(-5)(-5)(-5) </m></td>
+<td>The exponent <m>3</m> means the base <m>-5</m> is multiplied by itself <m>3</m> times (there are <m>3</m> negatives)</td>
+  </tr>
+<tr>
+<td align="right"><m>-125</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+<p>A few things to be careful of when working with integers. First be sure not to
+  confuse a problem like <m>-3-8</m> with <m>-3(-8)</m>. The second problem is a multiplication
+  problem because there is nothing between the <m>3</m> and the parenthesis. If
+  there is no operation written in between the parts, then we assume that means we
+  are multiplying. The  <m>-3-8</m> problem is subtraction because the subtraction separates
+  the 3 from what comes after it. Another item to watch out for is to be
+  careful not to mix up the pattern for adding and subtracting integers with the
+  pattern for multiplying and dividing integers. They can look very similar, for
+  example if the signs match on addition, the we keep the negative, <m>-3 + (-7) = -
+  10</m>, but if the signs match on multiplication, the answer is positive, <m>(-3)(-7) =
+  21</m>. </p>
+
+</example>
+</section>
+
+<section>
+<title>Operations of Numbers</title>
+
+
+<p>  When simplifying expressions it is important that we simplify them in the correct order. Consider the following problem done two different ways: </p>
+
+<example>
+<title> <m>\color{red}{\text{WARNING!}}</m> Only one below solution is correct:</title>
+<p>
+
+  <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 24 pg 18-->
+
+</p>
+<table class = "center">
+  <tr>
+<td><m>\underbrace{2+5} \cdot 3</m></td>
+<td>Add First</td>
+<td><m>\color{red}{\text{versus}}</m></td>
+<td><m>2+\underbrace{5 \cdot 3}</m></td>
+<td>Multiply First</td>
+  </tr>
+<tr>
+<td><m>7 \cdot 3</m></td>
+<td>Multiply</td>
+<td></td>
+<td><m>2+ 15</m></td>
+<td>Add</td>
+  </tr>
+<tr>
+<td><m>21</m></td>
+<td>Solution</td>
+<td></td>
+<td><m>17</m></td>
+<td>Solution</td>
+  </tr>
+</table>
+<p>
+The previous example illustrates that if the same problem is done two different ways we will arrive at two different solutions. However, only one method can be correct. It turns out the second method, with solution <m>17</m>, is the correct method. The order of operations ends with the most basic of operations, addition (or subtraction). Before addition is completed we must do repeated addition or multiplication (or division). Before multiplication is completed we must do repeated multiplication or exponents. When we want to do something out of order and make it come first we will put it in parenthesis (or grouping symbols). This list then is our order of operations we will use to simplify expressions. </p>
+<p><b><u>Order of Operations:</u></b></p>
+  <p>Parenthesis (Grouping)</p>
+  <p>Exponents</p>
+  <p>Multiply and Divide (Left to Right)</p>
+  <p>Add and Subtract (Left to Right)</p>
+Multiply and Divide are on the same level because they are the same operation (division is just multiplying by the reciprocal). This means they must be done left to right, so some problems we will divide first, others we will multiply first. The same is true for adding and subtracting (subtracting is just adding the opposite).
+Often students use the word <b>PEMDAS</b> to remember the order of operations, as the first letter of each operation creates the word <b>PEMDAS</b>.  However, it is the author's suggestion to think about <b>PEMDAS</b> as a vertical word written as: 
+<b> P 
+  E 
+  MD 
+  AS</b>
+<p>so we don't forget that multiplication and division are done left to right (same with addition and subtraction). Another way students remember the order of operations is to think of a phrase such as <q>Please Excuse My Dear Aunt Sally</q> where each word starts with the same letters as the order of operations start with.</p>
+</example>
+
+<example>
+<title> Order of Operations</title>
+<p>
+
+  <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 25 pg 19-->
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>2 + 3(\underbrace{9 - 4})^2</m></td>
+<td>Parenthesis first (subtract)</td>
+  </tr>
+<tr>
+<td align="right"><m>2 + 3\underbrace{(5)^2}</m></td>
+<td>Exponents</td>
+  </tr>
+<tr>
+<td align="right"><m>2 + \underbrace{3(25)}</m></td>
+<td>Multiply</td>
+  </tr>
+<tr>
+<td align="right"><m>\underbrace{2 + 75}</m></td>
+<td>Add</td>
+  </tr>
+<tr>
+<td align="right"><m>77</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+<p>
+It is very important to remember to multiply and divide from from left to right!
+</p>
+</example>
+
+<example>
+<title> Order of Operations</title>
+<p>
+
+  <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 26 pg 19-->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>\underbrace{30 \div 3} \cdot 2</m></td>
+<td>Divide first (left to right!)</td>
+  </tr>
+<tr>
+<td align="right"><m>\underbrace{10 \cdot 2}</m></td>
+<td>Multiply</td>
+  </tr>
+<tr>
+<td align="right"><m>20</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+<p>
+  In the previous example, if we had multiplied first, five would have been  the answer which is incorrect.</p>
+<p>If there are several parenthesis in a problem we will start with the inner most parenthesis and work our way out. Inside each parenthesis we simplify using the order of operations as well. To make it easier to know which parenthesis goes with which parenthesis, different types of parenthesis will be used such as { } and [ ] and ( ), these parenthesis all mean the same thing, they are parenthesis and must be evaluated first.</p>
+<h3> Example 00-18: Order of Operations</h3>
+  <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 27 pg 19-->
+
+<table class = "center">
+  <tr>
+<td align="right"><m>2\{8^2 - 7[32 - 4(\underbrace{3^2} + 1)]( - 1)\}</m></td>
+<td>Inner most parenthesis, exponents first</td>
+  </tr>
+<tr>
+<td align="right"><m>2\{8^2 - 7[32 - 4(\underbrace{9 + 1})]( - 1)\}</m></td>
+<td>Add inside those parenthesis</td>
+  </tr>
+<tr>
+<td align="right"><m>2\{8^2 - 7[32 -\underbrace{ 4(10)}]( - 1)\}</m></td>
+<td>Multiply inside inner most parenthesis</td>
+  </tr>
+<tr>
+<td align="right"><m>2\{8^2 - 7[\underbrace{32 - 40}]( - 1)\}</m></td>
+<td>Subtract inside those parenthesis</td>
+  </tr>
+<tr>
+<td align="right"><m>2\{\underbrace{8^2} - 7[ - 8]( - 1)\}</m></td>
+<td>Exponents next</td>
+  </tr>
+<tr>
+<td align="right"><m>2\{64\underbrace{- 7[ - 8]}( - 1)\}</m></td>
+<td>Multiply left to right, sign with the number</td>
+  </tr>
+<tr>
+<td align="right"><m>2\{64 + \underbrace{56( - 1)}\}</m></td>
+<td>Finish multiplying</td>
+  </tr>
+<tr>
+<td align="right"><m>2\{\underbrace{64 - 56}\}</m></td>
+<td>Subtract inside parenthesis</td>
+  </tr>
+<tr>
+<td align="right"><m>\underbrace{2\{8\}}</m></td>
+<td>Multiply</td>
+  </tr>
+<tr>
+<td align="right"><m>16</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+<p>
+As the above example illustrates, it can take several steps to complete a problem. The key to successfully solve order of operations problems is to take the time to show your work and do one step at a time. This will reduce the chance of making a mistake along the way. </p>
+<p>
+There are several types of grouping symbols that can be used besides parenthesis. One type is a fraction bar. If we have a fraction, the entire numerator and the entire denominator must be evaluated before we reduce the fraction. In these cases we can simplify in both the numerator and denominator at the same time. </p>
+</example>
+
+<example>
+<title> Order of Operations: Fraction</title>
+<p>
+
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 28 pg 20-->
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>\dfrac{\overbrace{2^4} - ( - 8) \cdot 3}{\underbrace{15 \div 5} - 1}</m></td>
+<td>Exponent in the numerator, divide in denominator</td>
+  </tr>
+<tr>
+<td align="right"><m>\dfrac{16 - \overbrace{( - 8) \cdot 3}}{\underbrace{3 - 1}}</m></td>
+<td>Multiply in the numerator, subtract in denominator</td>
+  </tr>
+<tr>
+<td align="right"><m>\dfrac{\overbrace{16 - (-24)}}{2}</m></td>
+<td>Add the opposite to simplify numerator, denominator is done.</td>
+  </tr>
+<tr>
+<td align="right"><m>\dfrac{40}{2}</m></td>
+<td>Reduce, divide</td>
+  </tr>
+<tr>
+<td align="right"><m>20</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+<p>
+Another type of grouping symbol that also has an operation  with  it,  absolute value. When we have absolute value we will evaluate everything inside the absolute value, just as if it were a normal parenthesis. Then once the inside is completed we will take the absolute value, or distance from zero, to make the number positive.</p>
+</example>
+
+<example>
+<title> Order of Operations: Absolute Value</title>
+<p>
+
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 29 pg 20-->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>1 + 3| - \underbrace{4^2} - ( - 8)| + 2|3 + \underbrace{( - 5)^2}|</m></td>
+<td>Evaluate absolute values first, exponents</td>
+  </tr>
+<tr>
+<td align="right"><m>1 + 3|\underbrace{- 16 - ( - 8)}| + 2|\underbrace{3 + 25}|</m></td>
+<td>Add inside absolute values</td>
+  </tr>
+<tr>
+<td align="right"><m>1 + 3\underbrace{| - 8|} + 2\underbrace{|28|}</m></td>
+<td>Evaluate absolute values</td>
+  </tr>
+<tr>
+<td align="right"><m>1 + \underbrace{3(8)} + 2(28)</m></td>
+<td>Multiply left to right</td>
+  </tr>
+<tr>
+<td align="right"><m>1 + 24 + \underbrace{2(28)}</m></td>
+<td>Finish multiplying</td>
+  </tr>
+<tr>
+<td align="right"><m>\underbrace{1 + 24} + 56</m></td>
+<td>Add left to right</td>
+  </tr>
+<tr>
+<td align="right"><m>\underbrace{25 + 56}</m></td>
+<td>Add</td>
+  </tr>
+<tr>
+<td align="right"><m>81</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+<p>
+The above example also illustrates an important point about exponents. Exponents  are considered to be on the number they are attached to. This means when we see <m>- 4^2</m>, only the <m>4</m> is squared, giving us <m>-(4^2)</m> or <m>-16</m>. But when the negative is in parentheses, such as <m>(-5)^2</m> the negative is part of the number and is also squared giving us a positive solution, <m>25</m>. </p>
+<p>
+In algebra we will often need to simplify an expression to make it easier to use.  There are three basic forms of simplifying which we will review here. </p>
+
+</example>
+</section>
+
+<section>
+<title>Working with Variables</title>
+
+
+<p>
+The first form of simplifying expressions is used when we know what number each
+variable in the expression represents. If we know what they represent we can
+replace each variable with the equivalent number and simplify what remains using
+order of operations. </p>
+
+<example>
+<title> Evaluate Expression</title>
+<p>
+
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 30 pg 22-->
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>p(q +6)</m> when <m>p=3</m> and <m>q=5</m></td>
+<td>Replace <m>p</m> with <m>3</m> and <m>q</m> with <m>5</m></td>
+  </tr>
+<tr>
+<td align="right"><m>(3)((5)+6)</m></td>
+<td>Evaluate parenthesis</td>
+  </tr>
+<tr>
+<td align="right"><m>(3)(11)</m></td>
+<td>Multiply</td>
+  </tr>
+<tr>
+<td align="right"><m>33</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+<p>
+Whenever a variable is replaced with something, we will put the new number
+inside a set of parenthesis. Notice the <m>3</m> and <m>5</m> in the previous example are in
+parenthesis. This is to preserve operations that are sometimes lost in a simple
+replacement. Sometimes the parenthesis won't make a difference, but it is a good
+habit to always use them to prevent problems later. </p>
+</example>
+
+<example>
+<title> Evaluate Expression</title>
+<p>
+
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 31 pg 22-->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>x+zx(3-z)\left(\dfrac{x}{3} \right)</m>
+        when <m>x=-6</m> and <m>z =-2</m></td>
+<td >Replace all <m>x</m>'s with <m>-6</m> and <m>z</m>'s with <m>-2</m></td>
+  </tr>
+<tr>
+<td align="right"><m>(-6)+(-2)(-6)(3-(-2))\left(\dfrac{(-6)}{3} \right)</m></td>
+<td>Evaluate parenthesis</td>
+  </tr>
+<tr>
+<td align="right"><m>-6+(-2)(-6)(5)(-2)</m></td>
+<td>Multiply left to right</td>
+  </tr>
+<tr>
+<td align="right"><m>-6+(12)(5)(-2)</m></td>
+<td >Multiply left to right</td>
+  </tr>
+<tr>
+<td align="right"><m>-6+(60)(-2)</m></td>
+<td>Multiply</td>
+  </tr>
+<tr>
+<td align="right"><m>-6-120</m></td>
+<td>Subtract</td>
+  </tr>
+<tr>
+<td align="right"><m>-126</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+<p>
+It will be more common in our study of algebra that we do not know the value of
+the variables. In this case, we will have to simplify what we can and leave the
+variables in our final solution. One way we can simplify expressions is to combine
+like terms. Like terms are terms where the variables match exactly (exponents
+included). Examples of like terms would be <m>3xy</m> and <m>-7xy</m> or <m>3a^2b</m> and <m>8a^2b</m> or <m>-3</m> and <m>5</m>. If we have like terms we are allowed to add (or subtract) the numbers in
+front of the variables, then keep the variables the same. This is shown in the following
+examples: </p>
+</example>
+
+<example>
+<title> Combine Like Terms</title>
+<p>
+
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 32 pg 23-->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>5x-2y -8x+7y</m></td>
+<td>Combine like terms <m>5x-8x</m> and <m>-2y +7y</m></td>
+  </tr>
+<tr>
+<td align="right"><m>-3x+5y</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Combine Like Terms</title>
+<p>
+
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 33 pg 23-->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>8x^2-3x+7-2x^2+4x-3</m></td>
+<td>Combine like terms <m>8x^2-2x^2</m> and <m>-3x+4x</m> and <m>7-3</m></td>
+  </tr>
+<tr>
+<td align="right"><m>6x^2+x+4</m></td>
+<td>Our Solution <div class="WWbox">
+                       Type <b>x^2 </b> for <m> x^2 </m> in <tt>WeBWorK</tt>
+                       </div></td>
+  </tr>
+</table>
+<p>
+As we combine like terms we need to interpret subtraction signs as part of the following
+term. This means if we see a subtraction sign, we treat the following term
+like a negative term, the sign always stays with the term. </p><p>
+A final method to simplify is known as distributing. Often as we work with problems
+there will be a set of parenthesis that make solving a problem difficult, if not
+impossible. To get rid of these unwanted parenthesis we have the distributive
+property. Using this property we multiply the number in front of the parenthesis
+by each term inside of the parenthesis. </p>
+<b>Distributive Property:</b> <m>a(b+c)=ab+ac</m>
+<p>
+Several examples of using the distributive property are given below. </p>
+</example>
+
+<example>
+<title> Distribute a Positive</title>
+<p>
+
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 34 pg 23-->
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>4(2x-7)</m></td>
+<td>Multiply each term by <m>4</m></td>
+  </tr>
+<tr>
+<td align="right"><m>8x-28</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Distribute a Negative</title>
+<p>
+
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 35 pg 23-->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>-7(5x-6)</m></td>
+<td>Multiply each term by <m>-7</m></td>
+  </tr>
+<tr>
+<td align="right"><m>-35x+42</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+<p>
+In the previous example we again use the fact that the sign goes with the number.
+This means we treat the <m>-6</m> as a negative number, this gives <m>(-7)(-6) = 42</m>, a
+positive number. The most common error in distributing is a sign error, <b>be very
+careful with your signs!</b> </p><p>
+It is possible to distribute just a negative through parenthesis. If we have a negative
+in front of parenthesis we can think of it like a <m>-1</m> in front and distribute the
+<m>-1</m> through. This is shown in the following example. </p>
+</example>
+
+<example>
+<title> Distribute a Negative</title>
+<p>
+
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 36 pg 24-->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>-(4x-5y +6)</m></td>
+<td>Negative can be thought of as <m>-1</m></td>
+  </tr>
+<tr>
+<td align="right"><m>-1(4x-5y +6)</m></td>
+<td>Multiply each term by <m>-1</m></td>
+  </tr>
+<tr>
+<td align="right"><m>-4x+5y -6</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+<p>
+Distributing through parenthesis and combining like terms can be combined into
+one problem. Order of operations tells us to multiply (distribute) first then add or
+subtract last (combine like terms). Thus we do each problem in two steps, distribute
+then combine. </p>
+</example>
+
+<example>
+<title> Simplify</title>
+<p>
+
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 37 pg 24-->
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>5+3(2x-4)</m></td>
+<td>Distribute <m>3</m>, multiplying each term</td>
+  </tr>
+<tr>
+<td align="right"><m>5+6x-12</m></td>
+<td>Combine like terms <m>5-12</m></td>
+  </tr>
+<tr>
+<td align="right"><m>-7+6x</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Simplify</title>
+<p>
+
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 38 pg 24-->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>3x-2(4x-5)</m></td>
+<td>Distribute <m>-2</m>, multiplying each term</td>
+  </tr>
+<tr>
+<td align="right"><m>3x-8x+10</m></td>
+<td>Combine like terms <m>3x-8x</m></td>
+  </tr>
+<tr>
+<td align="right"><m>-5x+10</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+<p>
+In the previous example we distributed <m>-2</m>, not just <m>2</m>. This is because we will
+always treat subtraction like a negative sign that goes with the number after it.
+This makes a big difference when we multiply by the <m>-5</m> inside the parenthesis,
+we now have a positive answer. Following are more involved examples of distributing
+and combining like terms. </p>
+</example>
+
+<example>
+<title> Simplify</title>
+<p>
+
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 39 pg 24-->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>2(5x-8)-6(4x+3)</m></td>
+<td>Distribute <m>2</m> into first parenthesis and <m>-6</m> into second</td>
+  </tr>
+<tr>
+<td align="right"><m>10x-16-24x-18</m></td>
+<td>Combine like terms <m>10x-24x</m> and <m>-16-18</m></td>
+  </tr>
+<tr>
+<td align="right"><m>-14x-34</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Simplify</title>
+<p>
+
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 40 pg 24-->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>4(3x-8)-(2x-7)</m></td>
+<td>Negative (subtract) in middle can be thought of as <m>-1</m></td>
+  </tr>
+<tr>
+<td align="right"><m>4(3x-8)-1(2x-7)</m></td>
+<td>Distribute <m>4</m> into first parenthesis and <m>-1</m> into second</td>
+  </tr>
+<tr>
+<td align="right"><m>12x-32-2x+7</m></td>
+<td>Combine like terms <m>12x-2x</m> and <m>-32+7</m></td>
+  </tr>
+<tr>
+<td align="right"><m>10x-25</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+</example>
+</section>
+</chapter>

@@ -1,0 +1,587 @@
+<chapter>
+<title>MAT-101: Set 4B-Probability</title>
+<introduction>
+<ul>
+<li>Determine sample and event spaces.</li>
+   <li>Calculate probabilities using event and sample spaces.</li>
+   <li>Calculate probabilities from one- and two-way tables.</li>
+    <li>Calculate probabilities using Venn diagrams.</li>
+  </ul>
+</introduction>
+
+  <p>
+   <!--   This is CoconinoCC_chapter_4_Probability.pdf page 111 -->
+  One story about how probability theory was developed is that a gambler wanted to know when to bet more and when to bet less. He talked to a couple of friends of his that happened to be mathematicians. Their names were Pierre de Fermat and Blaise Pascal. Since then many other mathematicians have worked to develop probability theory.
+  </p>
+
+  <p>
+  Understanding probabilities are important in life. Examples of mundane questions that
+probability can answer for you are if you need to carry an umbrella or wear a heavy coat on a given day. More important questions that probability can help with are your chances that the car you are buying will need more maintenance, your chances of passing a class, your chances of winning the lottery, your chances of being in a car accident, and the chances that the U.S. will be attacked by terrorists. Most people do not have a very good understanding of probability, so they worry about being attacked by a terrorist but not about being in a car accident. The probability of being in a terrorist attack is much smaller than the probability of being in a car accident, thus it actually would make more sense to worry about driving. Also, the chance of you winning the lottery is very small, yet many people will spend the money on lottery tickets. Yet, if instead they saved the money that they spend on the lottery, they would have more money. In general, events that have a low probability (under <m>5\%</m>) are unlikely to occur. Whereas, if an event has a high probability of happening (over <m>80\%</m>), then there is a good chance that the event will happen. This chapter will present some of the theory that you need to help make a determination of whether an event is likely to happen or not.
+  </p>
+
+<section>
+<title>Experiments and Sample Spaces</title>
+
+
+<p>
+First you need some definitions.
+<b>Experiment</b>: an activity that has specific results that can occur, but it is unknown which results will occur.
+<b>Outcomes</b>: the results of an experiment. 
+<b>Event</b>: a set <m>A</m> of certain outcomes of an experiment that you want to have happen. 
+<b>Sample Space</b>: collection of all possible outcomes of the experiment. Usually denoted as <m>SS</m>. 
+<b>Event space</b>: the set of outcomes that make up an event. The symbol is usually a capital letter.
+</p>
+
+<p>
+If all of the outcomes in a sample space are equally likely to happen, then the probability of an event <m>A</m> is calculated as follows.
+</p>
+<p>
+The<b> probability </b>of event <m>A</m> happening is
+\[P(A) = \dfrac{\text{# of outcomes in event space <m>A</m>}}{\text{# of outcomes in sample space <m>SS</m>}}=\dfrac{n(A)}{n(SS)}\]
+</p>
+
+<!--<p>
+If two coins are tossed, what is the probability that both coins will fall heads? The problem seems simple enough, but it is not uncommon to hear the incorrect answer <m>\dfrac{1}{3}</m>. A student may incorrectly reason that if two coins are tossed there are three possibilities, one head, two heads, or no heads. Therefore, the probability
+of two heads is one out of three. The answer is wrong because if we toss two coins there are <b>four</b> possibilities and not three. For clarity, assume that one coin is a penny and the other a nickel. Then we have the following four possibilities:
+</p>
+<p>
+HH HT TH TT
+</p>
+<p>
+The possibility HT, for example, indicates a head on the penny and a tail on the nickel, while TH represents a tail on the penny and a head on the nickel.
+</p>
+<p>
+It is for this reason, we emphasize the need for understanding sample spaces.
+</p>
+<p>
+An act of flipping coins, rolling dice, drawing cards, or surveying people are referred to as an <b>experiment</b>.
+</p>
+<p><b>Definition</b>: A <b>sample space, <m>S</m></b> of an experiment is the <u>set</u> of all possible outcomes. </p>-->
+
+<example>
+<title> One Die</title>
+<p>
+ 
+ Consider the experiment of rolling an ordinary 6-sided die (and observing the number of dots showing up on the roll).
+ <!--   This is like http://cnx.org/content/col10613/1.5/ Example 13.1 page 209, but modified to match our webwork  -->
+
+</p>
+<table  align="center">
+  <tr>
+<td align="right"><m>SS=\{1,2,3,4,5,6 \}</m></td>
+<td>The sample space has <m>6</m> outcomes.</td>
+  </tr>
+<tr>
+<td align="right">Determine the probability of rolling a <m>6</m>.</td>
+<td>First write the event space, <m>A</m>.</td>
+  </tr>
+<tr>
+<td align="right">The <b><u>event space</u> for rolling a <m>6</m></b>: <m>A=\{6 \}</m></td>
+<td>The event <m>A</m> contains <m>1</m> outcome.</td>
+  </tr>
+<tr>
+<td align="right"><m>P(A) = \dfrac{\text{# of outcomes in event space <m>A</m>}}{\text{# of outcomes in sample space <m>SS</m>}}</m>
+  <m>=\dfrac{n(A)}{n(SS)}=\dfrac{1}{6}\approx 0.1667 </m></td>
+<td>Our First Solution: The probability of rolling a <m>6</m> is <m>\dfrac{1}{6}\approx 0.1667 </m> or about <m>16.67\%</m>.</td>
+  </tr>
+<tr>
+<td align="right">Determine the probability of rolling an even number.</td>
+<td>First write the event space, <m>B</m>.</td>
+  </tr>
+<tr>
+<td align="right">The <b><u>event space</u> for rolling an even number</b>: <m>B=\{2,4,6 \}</m></td>
+<td>The event <m>B</m> contains <m>3</m> outcomes, the even numbers on the die.</td>
+  </tr>
+<tr>
+<td align="right"><m>P(B) =\dfrac{n(B)}{n(SS)}=\dfrac{3}{6}=\dfrac{1}{2}=0.5</m></td>
+<td>Our Second Solution: The probability of rolling an even number is <m>\dfrac{1}{2}=0.5</m> or <m>50\%</m>.</td>
+  </tr>
+</table>
+
+ </example>
+
+<example>
+<title> Three Children--Gender sample space</title>
+<p>
+ 
+ A family has three children. Write a sample space (for the possible genders of children in the family).
+ <!--   This is T http://cnx.org/content/col10613/1.5/ Example 13.2 page 210  -->
+
+</p>
+<table  align="center">
+  <tr>
+<td align="right">Let <m>B</m> represent a boy. Let <m>G</m> represent a girl.</td>
+<td>First determine the number of outcomes in the sample space.</td>
+  </tr>
+<tr>
+<td colspan="2">There are two choices for each child's gender. We create a table as in  <b>Set4A-Sets and Counting</b>.</td>
+  <tr>
+<td colspan="2" align ="center">
+                <table align="center"  border="1">
+  <tr>
+<td   align="center">Child 1</td>
+<td   align="center">Child 2</td>
+<td   align="center">Child 3</td>
+  </tr>
+<tr>
+<td   align ="center"><m>2</m></td>
+<td   align="center"><m>2</m></td>
+<td   align ="center"><m>2</m></td>
+  </tr>
+</table></td>
+  </tr>
+<tr>
+<td align="right"><m>2\cdot 2 \cdot 2  </m></td>
+<td>Multiply the possibilities using the <b>Multiplication Axiom</b></td>
+  </tr>
+<tr>
+<td align="right"><m>8</m></td>
+<td>There are <m>8</m> elements in the sample space.</td>
+  </tr>
+<tr>
+<td align="right">Illustrate the possibilities with a tree diagram.
+    The tree has <m>8</m> endpoints as expected, 
+    one for each element in the sample space.
+
+    The possibility <m>BGB</m>, for example, 
+    indicates that the first born is a boy, 
+    the second born a girl, and the third a boy.</td>
+<td><image source="set4B_Probability_01.png" /></td>
+  </tr>
+<tr>
+<td align="right"><m>SS=\{BBB,BBG,BGB,BGG,GBB,GBG,GGB,GGG \}</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+
+ </example>
+
+<example>
+<title> Three Children--Probability of at least 2 girls</title>
+<p>
+ 
+ A family has three children. Determine the probability of the family having at least two girls.
+ <!--   our own -->
+ </p>
+<table  align="center">
+  <tr>
+<td align="right"><m>SS=\{BBB,BBG,BGB,BGG,GBB,GBG,GGB,GGG \}</m></td>
+<td>The sample space has <m>8</m> outcomes.</td>
+  </tr>
+<tr>
+<td align="right">Determine the probability of the family having at least two girls.</td>
+<td>First write the event space, <m>A</m>.</td>
+  </tr>
+<tr>
+<td align="right"><m>A=\{BGG, GBG, GGB, GGG \}</m></td>
+<td>The event <m>A</m> contains <m>4</m> outcomes with at least <m>2</m> girls.</td>
+  </tr>
+<tr>
+<td align="right"><m>P(A) = \dfrac{\text{# of outcomes in event space <m>A</m>}}{\text{# of outcomes in sample space <m>SS</m>}}=\dfrac{4}{8}=\dfrac{1}{2}=0.5</m></td>
+<td>Our Solution: The probability of the family having at least two girls is <m>\dfrac{1}{2}</m> or <m>50\%</m>.</td>
+  </tr>
+</table>
+
+
+
+
+</example>
+
+<example>
+<title> Two Dice--Sample Space</title>
+<p>
+ 
+Two fair dice are rolled. Write the sample space.
+ <!--   This is T http://cnx.org/content/col10613/1.5/ Example 13.3 page 210  -->
+
+</p>
+<table  align="center">
+  <tr>
+<td align="right">We assume one of the dice is red, and the other green.</td>
+<td>We create a table as before.</td>
+  </tr>
+<tr>
+<td colspan="2" align ="center">
+                <table align="center"  border="1">
+  <tr>
+<td  align="center"><m>\,</m></td>
+<td  align="center" colspan="6"><m>\color{green}{\text{Green}}</m></td>
+  </tr>
+<tr>
+<td   align="center"><m>\color{red}{\text{Red}}</m></td>
+<td   align="center"><m>\color{green}{1}</m></td>
+<td   align="center"><m>\color{green}{2}</m></td>
+<td   align="center"><m>\color{green}{3}</m></td>
+<td   align="center"><m>\color{green}{4}</m></td>
+<td   align="center"><m>\color{green}{5}</m></td>
+<td   align="center"><m>\color{green}{6}</m></td>
+  </tr>
+<tr>
+<td  align="center"><m>\color{red}{1}</m></td>
+<td   align ="center"><m>(\color{red}{1},\color{green}{1})</m></td>
+<td   align="center"><m>(\color{red}{1},\color{green}{2})</m></td>
+<td   align ="center"><m>(\color{red}{1},\color{green}{3})</m></td>
+<td   align ="center"><m>(\color{red}{1},\color{green}{4})</m></td>
+<td   align="center"><m>(\color{red}{1},\color{green}{5})</m></td>
+<td   align ="center"><m>(\color{red}{1},\color{green}{6})</m></td>
+  </tr>
+<tr>
+<td  align="center"><m>\color{red}{2}</m></td>
+<td   align ="center"><m>(\color{red}{2},\color{green}{1})</m></td>
+<td   align="center"><m>(\color{red}{2},\color{green}{2})</m></td>
+<td   align ="center"><m>(\color{red}{2},\color{green}{3})</m></td>
+<td   align ="center"><m>(\color{red}{2},\color{green}{4})</m></td>
+<td   align="center"><m>(\color{red}{2},\color{green}{5})</m></td>
+<td   align ="center"><m>(\color{red}{2},\color{green}{6})</m></td>
+  </tr>
+<tr>
+<td  align="center"><m>\color{red}{3}</m></td>
+<td   align ="center"><m>(\color{red}{3},\color{green}{1})</m></td>
+<td   align="center"><m>(\color{red}{3},\color{green}{2})</m></td>
+<td   align ="center"><m>(\color{red}{3},\color{green}{3})</m></td>
+<td   align ="center"><m>(\color{red}{3},\color{green}{4})</m></td>
+<td   align="center"><m>(\color{red}{3},\color{green}{5})</m></td>
+<td   align ="center"><m>(\color{red}{3},\color{green}{6})</m></td>
+  </tr>
+<tr>
+<td  align="center"><m>\color{red}{4}</m></td>
+<td   align ="center"><m>(\color{red}{4},\color{green}{1})</m></td>
+<td   align="center"><m>(\color{red}{4},\color{green}{2})</m></td>
+<td   align ="center"><m>(\color{red}{4},\color{green}{3})</m></td>
+<td   align ="center"><m>(\color{red}{4},\color{green}{4})</m></td>
+<td   align="center"><m>(\color{red}{4},\color{green}{5})</m></td>
+<td   align ="center"><m>(\color{red}{4},\color{green}{6})</m></td>
+  </tr>
+<tr>
+<td  align="center"><m>\color{red}{5}</m></td>
+<td   align ="center"><m>(\color{red}{5},\color{green}{1})</m></td>
+<td   align="center"><m>(\color{red}{5},\color{green}{2})</m></td>
+<td   align ="center"><m>(\color{red}{5},\color{green}{3})</m></td>
+<td   align ="center"><m>(\color{red}{5},\color{green}{4})</m></td>
+<td   align="center"><m>(\color{red}{5},\color{green}{5})</m></td>
+<td   align ="center"><m>(\color{red}{5},\color{green}{6})</m></td>
+  </tr>
+<tr>
+<td  align="center"><m>\color{red}{6}</m></td>
+<td   align ="center"><m>(\color{red}{6},\color{green}{1})</m></td>
+<td   align="center"><m>(\color{red}{6},\color{green}{2})</m></td>
+<td   align ="center"><m>(\color{red}{6},\color{green}{3})</m></td>
+<td   align ="center"><m>(\color{red}{6},\color{green}{4})</m></td>
+<td   align="center"><m>(\color{red}{6},\color{green}{5})</m></td>
+<td   align ="center"><m>(\color{red}{6},\color{green}{6})</m></td>
+  </tr>
+</table>
+  </tr>
+<tr>
+<td align="right"><m>SS=\{(1,1), (1,2),...,(6,6) \}</m></td>
+<td>Our Solution: The sample space is the <m>36=6\times 6</m> outcomes listed in the table above.</td>
+  </tr>
+</table></td>
+  </tr>
+</example>
+
+<example>
+<title> Two Dice--Probabilities of certain sums</title>
+<p>
+ Two fair dice are rolled. Determine the following probabilities.
+ <!--   This matches our WeBWorK  -->
+
+  </p>
+<table  align="center">
+  <tr>
+<td align="right"><m>SS</m> is written above in <b>Example 4B-4</b>.</td>
+<td>The sample space has <m>36</m> outcomes.</td>
+  </tr>
+<tr>
+<td colspan="2">(a) Determine the probability of rolling a sum of <m>6</m>.  First write <m>D</m> for the sum of the dots showing.Then write the event space <m>(D=6)</m>.</td>
+  </tr>
+<tr>
+<td><m> (D=6) = </m>  
+  <m> \{(\color{red}{1},\color{green}{5}), (\color{red}{2},\color{green}{4}),  (\color{red}{3},\color{green}{3}), (\color{red}{4},\color{green}{2}),   (\color{red}{5},\color{green}{1})\}</m></td>
+<td>The event <m>(D=6)</m> contains <m>5</m> outcomes with a sum of <m>6</m>.</td>
+  </tr>
+<tr>
+<td align="right"><m>P(D=6) =\dfrac{n(D)}{n(SS)}=\dfrac{5}{36}\approx 0.1389</m></td>
+<td>Our Solution (a): The probability of a sum of <m>6</m> on the two dice is <m>\dfrac{5}{36}</m> or about <m>13.89\%</m>.</td>
+  </tr>
+<tr>
+<td colspan="2">(b) Determine the probability of rolling a sum less than or equal to <m>4</m>.  First write the event space, <m>(D \leq 4)</m>.</td>
+  </tr>
+<tr>
+<td><m> (D \leq 4)=</m> 
+  <m> \{(\color{red}{1},\color{green}{1}), (\color{red}{1},\color{green}{2}),  (\color{red}{1},\color{green}{3}), (\color{red}{2},\color{green}{1}),   (\color{red}{2},\color{green}{2}), (\color{red}{3},\color{green}{1}) \}</m></td>
+<td>The event <m>(D \leq 4)</m> contains <m>6</m> outcomes with a sum of <m>4</m> or less.</td>
+  </tr>
+<tr>
+<td align="right"><m>P(D \leq 4) =\dfrac{n(D \leq 4)}{n(SS)}=\dfrac{6}{36}=\dfrac{1}{6}\approx 0.1667</m></td>
+<td>Our Solution (b): The probability of a sum less than or equal to <m>4</m> on the two dice is <m>\dfrac{1}{6}</m> or about <m>16.67\%</m>.</td>
+  </tr>
+</table>
+
+</example>
+
+<example>
+<title> Cards--Sample space and probabilities</title>
+<p>
+ 
+Suppose you conduct an experiment where you pull a card from a standard deck of cards. Recall this deck has <m>4</m> suits (black spades <m>S</m>, black clubs <m>C</m>, <font color="#FF0000"/>red diamonds <m>D</m>, and <font color="#FF0000"/>red hearts <m>H</m>) each with <m>13</m> cards (numbers <m>2</m> through <m>10</m>, jack <m>J</m>, queen <m>Q</m>, king <m>K</m>, and ace <m>A</m>). We will generally consider the face cards to be the jacks, hearts, queens, kings, and aces. Determine the following probabilities.
+ <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.2 Example 4.2.3, page 117 -->
+ </p>
+<table  align="center">
+  <tr>
+<td><m>SS=</m> 
+  <m> \{2S, 3S, 4S, 5S, 6S, 7S, 8S, 9S, 10S, JS, QS, KS, AS, </m> 
+   <m>2C, 3C, 4C, 5C, 6C, 7C, 8C, 9C, 10C, JC, QC, KC, AC, </m> 
+   <m>\color{red}{2D}, \color{red}{3D}, \color{red}{4D}, \color{red}{5D},   \color{red}{6D}, \color{red}{7D}, \color{red}{8D}, \color{red}{9D}, \color{red}{10D}, \color{red}{JD}, \color{red}{QD}, \color{red}{KD}, \color{red}{AD},</m>
+   <m>\color{red}{2H}, \color{red}{3H}, \color{red}{4H}, \color{red}{5H}, \color{red}{6H}, \color{red}{7H}, \color{red}{8H}, \color{red}{9H}, \color{red}{10H}, \color{red}{JH}, \color{red}{QH}, \color{red}{KH}, \color{red}{AH}\}</m></td>
+<td>The sample space has <m>52</m> outcomes, one for each card in the deck.</td>
+  </tr>
+<tr>
+<td colspan="2">(a) Determine the probability of selecting a spade.  First write the <b>event space</b>, <m>Spade</m>.</td>
+  </tr>
+<tr>
+<td><m> Spade=</m> 
+  <m>\{2S, 3S, 4S, 5S, 6S, 7S, 8S, 9S, 10S, JS, QS, KS, AS \}</m></td>
+<td>The event <m>Spade</m> contains <m>13</m> outcomes.</td>
+  </tr>
+<tr>
+<td align="right"><m>P(Spade) = \dfrac{n(Spade)}{n(SS)}=\dfrac{13}{52}=\dfrac{1}{4}=0.25</m></td>
+<td>Our Solution (a): The probability of selecting a spade is <m>\dfrac{13}{52}</m> or <m>25\%</m>.</td>
+  </tr>
+<tr>
+<td colspan="2">(b) Determine the probability of selecting a jack. First write the <b>event space</b>, <m>Jack</m>.</td>
+  </tr>
+<tr>
+<td align="right"><m>Jack=\{JS, JC, \color{red}{JH}, \color{red}{JD} \}</m></td>
+<td>The event <m>Jack</m> contains <m>4</m> outcomes.</td>
+  </tr>
+<tr>
+<td align="right"><m>P(Jack) =\dfrac{n(Jack)}{n(SS)}=\dfrac{4}{52}=\dfrac{1}{13}\approx  0.07692</m></td>
+<td>Our Solution (b): The probability of selecting a jack is <m>\dfrac{4}{52}</m> or about <m>7.69\%</m>.</td>
+  </tr>
+<tr>
+<td colspan="2">(c) Determine the probability of selecting a club or a face card. First write the <b>event space</b>, <m>Club \cup Face</m>.</td>
+  </tr>
+<tr>
+<td><m>Club \cup Face=</m> 
+  <m>\{2C, 3C, 4C, 5C, 6C, 7C, 8C, 9C, 10C, JC, QC, KC, AC, </m>
+  <m> JS, QS, KS, AS, \color{red}{JD}, \color{red}{QD}, \color{red}{KD}, \color{red}{AD}, \color{red}{JH}, \color{red}{QH}, \color{red}{KH}, \color{red}{AH}\}</m></td>
+<td>The event <m>Club \cup Face</m> contains <m>25</m> outcomes.</td>
+  </tr>
+<tr>
+<td align="right"><m>P (Club \cup Face)=  \dfrac{n(Club \cup Face)}{n(SS)}=\dfrac{25}{52} \approx  0.480769</m></td>
+<td>Our Solution (c): The probability of selecting a club or a face card is <m>\dfrac{25}{52}</m> or about <m>48.08\%</m>.</td>
+  </tr>
+</table>
+
+
+  <p>
+It is also possible to compute probabilities based on the number of times an event <m>A</m> occurred.
+</p>
+<p>
+The<b> probability </b>of event <m>A</m> is
+\[P(A) = \dfrac{n(A)}{\text{Total # of outcomes}}\]
+</p>
+
+ </example>
+
+<example>
+<title> One-Way Table Probabilities</title>
+<p>
+ 
+ A bag of chocolate candies contained the following distribution of colors.
+
+
+                </p>
+<table align="center"  border="1">
+  <tr>
+<td  align="center">Blue <m>(B)</m></td>
+<td  align="center">Purple <m>(P)</m></td>
+<td  align="center">Green <m>(G)</m></td>
+<td  align="center">Orange <m>(O)</m></td>
+<td  align="center">Red <m>(R)</m></td>
+<td  align="center">Yellow <m>(Y)</m></td>
+<td  align="center">Total</td>
+  </tr>
+<tr>
+<td  align="center"><m>481</m></td>
+<td  align="center"><m>371</m></td>
+<td  align="center"><m>483</m></td>
+<td  align="center"><m>544</m></td>
+<td  align="center"><m>372</m></td>
+<td  align="center"><m>369</m></td>
+<td  align="center"><m>2620</m></td>
+  </tr>
+</table>
+
+ If all of the candies are placed in a bowl and one is selected at random, determine the probability of selecting the following candies.
+ <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.1 Homework Problem 1, page 113 -->
+
+<table  align="center">
+  <tr>
+<td align="right">Determine the probability of selecting a blue candy.</td>
+<td>Label the event space <m>B</m> for blue.</td>
+  </tr>
+<tr>
+<td align="right"><m>P(B) = \dfrac{n(B)}{\text{Total #}}=\dfrac{481}{2620}\approx 0.1835</m></td>
+<td>Our First Solution: The probability of selecting a blue candy is <m>\dfrac{481}{2620}</m> or about <m>18.35\%</m>.</td>
+  </tr>
+<tr>
+<td align="right">Determine the probability of selecting a purple or yellow candy.</td>
+<td>Label the event spaces: <m>P</m> for purple and <m>Y</m> for yellow.</td>
+  </tr>
+<tr>
+<td align="right">Then the event purple OR yellow is denoted <m>P\cup Y</m>.</td>
+<td><m>n(P\cup Y)=371+369=740</m></td>
+  </tr>
+<tr>
+<td align="right"><m>P(P\cup Y) = \dfrac{n(P\cup Y)}{\text{Total #}}=\dfrac{740}{2620}\approx 0.2824</m></td>
+<td>Our Second Solution: The probability of selecting a purple or yellow candy is <m>\dfrac{740}{2620}</m> or about <m>28.24\%</m>.</td>
+  </tr>
+</table>
+
+ </example>
+
+<example>
+<title> Two-Way Table Probabilities</title>
+<p>
+ 
+ The number of people who survived the Titanic based on class and gender is in the below table ("Encyclopedia Titanica," 2013). Suppose a person is picked at random from the survivors.
+
+
+                </p>
+<table align="center"  border="1">
+  <tr>
+<td  align="center" rowspan="2" style="vertical-align:bottom">Class</td>
+<td  align="center" colspan="2">Gender</td>
+<td  align="center" rowspan="2" style="vertical-align:bottom">Total</td>
+  </tr>
+<tr>
+<td>Female <m>(F)</m></td>
+<td>Male <m>(M)</m></td>
+  </tr>
+<tr>
+<td  align="center">1st</td>
+<td  align="center"><m>134</m></td>
+<td  align="center"><m>59</m></td>
+<td  align="center"><m>193</m></td>
+  </tr>
+<tr>
+<td  align="center">2nd</td>
+<td  align="center"><m>94</m></td>
+<td  align="center"><m>25</m></td>
+<td  align="center"><m>119</m></td>
+  </tr>
+<tr>
+<td  align="center">3rd</td>
+<td  align="center"><m>80</m></td>
+<td  align="center"><m>58</m></td>
+<td  align="center"><m>138</m></td>
+  </tr>
+<tr>
+<td  align="center">Total</td>
+<td  align="center"><m>308</m></td>
+<td  align="center"><m>142</m></td>
+<td  align="center"><m>450</m></td>
+  </tr>
+</table>
+
+Determine the following probabilities.
+ <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Homework Problem 11, page 140 -->
+
+<table  align="center">
+  <tr>
+<td align="right">Determine the probability that a survivor was female.</td>
+<td>Label the event space <m>F</m> for female.</td>
+  </tr>
+<tr>
+<td align="right"><m>P(F) = \dfrac{n(F)}{\text{Total #}}=\dfrac{308}{450}\approx 0.6844</m></td>
+<td>Our First Solution: The probability that a survivor was female is <m>\dfrac{308}{450}</m> or about <m>68.44\%</m>.</td>
+  </tr>
+<tr>
+<td align="right">Determine the probability that a survivor was female and in the 1st class.</td>
+<td>Label the event space <m>F\cap 1st</m> for female AND in the 1st class.</td>
+  </tr>
+<tr>
+<td align="right"><m>n(F\cap 1st)=134</m></td>
+<td>The number of survivors in both the <m>F</m> column and 1st row.</td>
+  </tr>
+<tr>
+<td align="right"><m>P(F\cap 1st) = \dfrac{n(F\cap 1st)}{\text{Total #}}=\dfrac{134}{450}\approx 0.2978</m></td>
+<td>Our Second Solution: The probability that a survivor was a first-class female is <m>\dfrac{134}{450}</m> or about <m>29.78\%</m>.</td>
+  </tr>
+<tr>
+<td align="right">Determine the probability that a survivor was female or in the 1st class.</td>
+<td>Label the event space <m>F\cup 1st</m> for female OR in the 1st class.</td>
+  </tr>
+<tr>
+<td align="right"><m>n(F\cup 1st)=134+94+80+59=367</m></td>
+<td>The number of survivors in either the <m>F</m> column or 1st row.</td>
+  </tr>
+<tr>
+<td align="right"><m>P(F\cup 1st) = \dfrac{n(F\cup 1st)}{\text{Total #}}=\dfrac{367}{450}\approx 0.8156</m></td>
+<td>Our Third Solution: The probability that a survivor was female OR in first class is <m>\dfrac{367}{450}</m> or about <m>81.56\%</m>.</td>
+  </tr>
+</table>
+
+<p>
+It may be useful to calculate probabilities using a Venn diagram.
+</p>
+
+</example>
+
+<example>
+<title> Venn Diagram Probabilities</title>
+<p>
+ 
+Recall in <b>Example 4A-4:</b>  we considered a survey of <m>100</m> people in California indicating that <m>60</m> people had visited Disneyland, <m>15</m> had visited Knott's Berry Farm, and <m>6</m> had visited both.  Determine the following probabilities using the Venn diagram.
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"> Let set <m>D</m> represent those surveyed who have visited Disneyland.
+    Let set <m>K</m> represent those surveyed who have visited Knott's Berry Farm.
+    We completed the Venn diagram at the right.</td>
+<td><image source="set4A_Sets_and_Counting_09.png" /></td>
+  </tr>
+<tr>
+<td align="right">Determine the probability that a person surveyed went to Disneyland.</td>
+<td>Label the event space <m>D</m> for Disneyland.</td>
+  </tr>
+<tr>
+<td align="right"><m>n(D)=54+6=60</m></td>
+<td>The number of people surveyed who went to Disneyland.</td>
+  </tr>
+<tr>
+<td align="right"><m>P(D) = \dfrac{n(D)}{\text{Total #}}=\dfrac{60}{100}= 0.6</m></td>
+<td>Our First Solution: The probability that a person surveyed went to Disneyland is <m>\dfrac{60}{100}</m> or <m>60\%</m>.</td>
+  </tr>
+<tr>
+<td align="right">Determine the probability that a person surveyed went to both parks.</td>
+<td>Label the event space <m>D\cap K</m> for Disneyland AND Knott's.</td>
+  </tr>
+<tr>
+<td align="right"><m>n(D\cap K)=6</m></td>
+<td>The number of people surveyed who went to both parks.</td>
+  </tr>
+<tr>
+<td align="right"><m>P(D\cap K) = \dfrac{n(D\cap K)}{\text{Total #}}=\dfrac{6}{100}= 0.06</m></td>
+<td>Our Second Solution: The probability that a person surveyed went to both parks is <m>\dfrac{6}{100}</m> or <m>6\%</m>.</td>
+  </tr>
+<tr>
+<td align="right">Determine the probability that a person surveyed went to either Knott's or Disneyland (or both).</td>
+<td>Label the event space <m>D\cup K</m> for Disneyland OR Knott's.</td>
+  </tr>
+<tr>
+<td align="right"><m>n(D\cup K)=54+6+9=69</m></td>
+<td>The number of people surveyed who went to either park (or both).</td>
+  </tr>
+<tr>
+<td align="right"><m>P(D\cup K) =\dfrac{69}{100}= 0.69</m></td>
+<td>Our Third Solution: The probability that a person surveyed went to either park is <m>\dfrac{69}{100}</m> or <m>69\%</m>.</td>
+  </tr>
+</table>
+
+</table> </example>
+</section>
+</chapter>
