@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--* Generated from MathBook XML source *-->
+<!--*    on 2016-07-07T11:37:49-06:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Fractions</title>
+<meta name="Keywords" content="Authored in MathBook XML">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+// contrib directory for accessibility menu, moot after v2.6+?
+MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        // [Contrib]accessibility menu moot after v2.6+?
+        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", "[Contrib]/a11y/accessibility-menu.js", ],
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    "HTML-CSS": {
+        scale: 88,
+    },
+});
+    </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-2.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<div style="display:none;">\(
+\newcommand{\lt}{ &lt; }
+\newcommand{\gt}{ &gt; }
+\newcommand{\amp}{ &amp; }
+\)</div>
+<header id="masthead"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading">
+<span class="title">Survey of Algebra and Probability</span><span class="subtitle">MAT 101</span>
+</h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="previous-button toolbar-item button" href="chapter-2.html">Previous</a><a class="up-button button toolbar-item" href="chapter-2.html">Up</a><a class="next-button button toolbar-item" href="section-6.html">Next</a>
+</div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-2.html">Previous</a><a class="up-button button toolbar-item" href="chapter-2.html">Up</a><a class="next-button button toolbar-item" href="section-6.html">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="chapter-1.html"><span class="codenumber">1</span><span class="title">MAT-101: Set 00-Preliminaries</span></a></h2>
+<ul>
+<li><a href="section-1.html">Integer Addition and Subtraction</a></li>
+<li><a href="section-2.html">Integer Multiplication and Division</a></li>
+<li><a href="section-3.html">Operations of Numbers</a></li>
+<li><a href="section-4.html">Working with Variables</a></li>
+</ul>
+<h2 class="link active"><a href="chapter-2.html"><span class="codenumber">2</span><span class="title">MAT-101: Set 1A-Fractions</span></a></h2>
+<ul>
+<li><a href="section-5.html" class="active">Fractions</a></li>
+<li><a href="section-6.html">Multiplication and Division of Fractions</a></li>
+<li><a href="section-7.html">Common Denominators</a></li>
+<li><a href="section-8.html">Addition and Subtraction of Fractions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html"><span class="codenumber">3</span><span class="title">MAT-101: Set 1B-Percents and Estimation</span></a></h2>
+<ul>
+<li><a href="section-9.html">Percents</a></li>
+<li><a href="section-10.html">Converting Between Percents and Decimals</a></li>
+<li><a href="section-11.html">Determining a Percent of a Number</a></li>
+<li><a href="section-12.html">Decimals on the Real Number Line</a></li>
+<li><a href="section-13.html">Rounding Decimals</a></li>
+<li><a href="section-14.html">Estimation</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html"><span class="codenumber">4</span><span class="title">MAT-101: Set 1C-Sets, Intervals and Inequalities</span></a></h2>
+<ul>
+<li><a href="section-15.html">Sets</a></li>
+<li><a href="section-16.html">Union Of Two Sets</a></li>
+<li><a href="section-17.html">Intersection Of Two Sets</a></li>
+<li><a href="section-18.html">Universal Set</a></li>
+<li><a href="section-19.html">Complement of a Set</a></li>
+<li><a href="section-20.html">Venn Diagrams</a></li>
+<li><a href="section-21.html">Intervals and Inequalities</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-5"><header title="Section 2.1 Fractions"><h1 class="heading hide-type" alt="Section 2.1 Fractions">
+<span class="type">Section</span><span class="codenumber">2.1</span><span class="title">Fractions</span>
+</h1></header><p id="p-68">
+Working with fractions is a very important foundation to algebra. Here we will
+briefly review reducing, multiplying, dividing, adding, and subtracting fractions.
+As this is a review, concepts will not be explained in detail as other lessons are.
+</p>
+<figure class="figure-like" id="figure-fraction-bar-one-third"><object type="image/svg+xml" style="width:70%; margin:auto; display:block;" data="images/fraction-bar-one-third.svg" alt=""><p style="margin:auto">&lt;&lt;SVG image is unavailable, or your browser cannot render it&gt;&gt;</p></object></figure><p id="p-69">
+A fraction can be used to represent parts of a whole.
+The fraction bar shown above represents the fraction \(\frac{1}{3}\) since one of three equal parts of the bar is shaded. Recall that the integer \(7\) can be written as the fraction.
+</p>
+<p id="p-70">
+We always like our final answers when working with fractions to be reduced
+(the numerator and denominator are divided by their greatest common factor (GCF)). This is shown in the following example:
+</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-31" id="example-31"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">2.1.1</span><span class="title"> Reduce a Fraction</span>
+</h5></article></a></div>
+<div id="hk-example-31" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-71">
+
+
+</p>
+<figure class="figure-like" id="table-32">
+\(\dfrac{36}{84}\)
+Both numerator and denominator are divisible by \(4\)
+  
+\(\dfrac{36 \div 4}{84 \div 4} = \dfrac{9}{21}\)
+Both numerator and denominator are still divisible by \(3\)
+  
+\(\dfrac{9 \div 3}{21 \div 3} = \dfrac{3}{7}\)
+Our solution 
+                       Type 3/7 for \( \dfrac{3}{7} \) in WeBWorK
+                       
+  </figure><p id="p-72">
+The previous example could have been done in one step by dividing both numerator
+and denominator by \(12.\) We also could have divided by \(2\) twice and then
+divided by \(3\) once (in any order). It is not important which method we use as
+long as we continue reducing our fraction until it cannot be reduced any further.  Another way to reduce th fraction in Example 1A-1 is given in the next example
+</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-32" id="example-32"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">2.1.2</span><span class="title"> Reduce a Fraction</span>
+</h5></article></a></div>
+<div id="hk-example-32" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-73">
+
+</p>
+<figure class="figure-like" id="table-33">
+\(\dfrac{36}{84}\)
+Both numerator and denominator are divisible by \(12\)
+  
+\(36 = (3)(12)\)
+Write \(36\) as a product involving \(12\)
+  
+\(84 = (7)(12)\)
+Write \(84\) as a product involving \(12\)
+  
+\(\dfrac{36}{84}=\dfrac{(3)(12)}{ (7)(12)} \)
+Rewrite our fraction, \(\dfrac{12}{12}=1 \) (\(12\) parts of \(12\) is one whole)
+  
+\(\dfrac{(3)}{ (7)}\cdot\dfrac{(12)}{ (12)}  = \dfrac{3}{7}\)
+Our solution
+  </figure><p id="p-74">
+The last step above utilizes multiplication of fractions which is discussed next.
+</p></article></div></section></div></main>
+</div>
+</body>
+</html>

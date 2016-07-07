@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--* Generated from MathBook XML source *-->
+<!--*    on 2016-07-07T11:37:49-06:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Integer Addition and Subtraction</title>
+<meta name="Keywords" content="Authored in MathBook XML">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+// contrib directory for accessibility menu, moot after v2.6+?
+MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        // [Contrib]accessibility menu moot after v2.6+?
+        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", "[Contrib]/a11y/accessibility-menu.js", ],
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    "HTML-CSS": {
+        scale: 88,
+    },
+});
+    </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-2.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<div style="display:none;">\(
+\newcommand{\lt}{ &lt; }
+\newcommand{\gt}{ &gt; }
+\newcommand{\amp}{ &amp; }
+\)</div>
+<header id="masthead"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading">
+<span class="title">Survey of Algebra and Probability</span><span class="subtitle">MAT 101</span>
+</h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="previous-button toolbar-item button" href="chapter-1.html">Previous</a><a class="up-button button toolbar-item" href="chapter-1.html">Up</a><a class="next-button button toolbar-item" href="section-2.html">Next</a>
+</div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-1.html">Previous</a><a class="up-button button toolbar-item" href="chapter-1.html">Up</a><a class="next-button button toolbar-item" href="section-2.html">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link active"><a href="chapter-1.html"><span class="codenumber">1</span><span class="title">MAT-101: Set 00-Preliminaries</span></a></h2>
+<ul>
+<li><a href="section-1.html" class="active">Integer Addition and Subtraction</a></li>
+<li><a href="section-2.html">Integer Multiplication and Division</a></li>
+<li><a href="section-3.html">Operations of Numbers</a></li>
+<li><a href="section-4.html">Working with Variables</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html"><span class="codenumber">2</span><span class="title">MAT-101: Set 1A-Fractions</span></a></h2>
+<ul>
+<li><a href="section-5.html">Fractions</a></li>
+<li><a href="section-6.html">Multiplication and Division of Fractions</a></li>
+<li><a href="section-7.html">Common Denominators</a></li>
+<li><a href="section-8.html">Addition and Subtraction of Fractions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html"><span class="codenumber">3</span><span class="title">MAT-101: Set 1B-Percents and Estimation</span></a></h2>
+<ul>
+<li><a href="section-9.html">Percents</a></li>
+<li><a href="section-10.html">Converting Between Percents and Decimals</a></li>
+<li><a href="section-11.html">Determining a Percent of a Number</a></li>
+<li><a href="section-12.html">Decimals on the Real Number Line</a></li>
+<li><a href="section-13.html">Rounding Decimals</a></li>
+<li><a href="section-14.html">Estimation</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html"><span class="codenumber">4</span><span class="title">MAT-101: Set 1C-Sets, Intervals and Inequalities</span></a></h2>
+<ul>
+<li><a href="section-15.html">Sets</a></li>
+<li><a href="section-16.html">Union Of Two Sets</a></li>
+<li><a href="section-17.html">Intersection Of Two Sets</a></li>
+<li><a href="section-18.html">Universal Set</a></li>
+<li><a href="section-19.html">Complement of a Set</a></li>
+<li><a href="section-20.html">Venn Diagrams</a></li>
+<li><a href="section-21.html">Intervals and Inequalities</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-1"><header title="Section 1.1 Integer Addition and Subtraction"><h1 class="heading hide-type" alt="Section 1.1 Integer Addition and Subtraction">
+<span class="type">Section</span><span class="codenumber">1.1</span><span class="title">Integer Addition and Subtraction</span>
+</h1></header><p id="p-1"> A small picture of the integers is provided on the number line below: </p>
+<figure class="figure-like" id="figure-numberline"><object type="image/svg+xml" style="width:70%; margin:auto; display:block;" data="images/numberline.svg" alt=""><p style="margin:auto">&lt;&lt;SVG image is unavailable, or your browser cannot render it&gt;&gt;</p></object></figure><p id="p-2">
+The number line actually goes on forever in both directions.  The positive integers are the whole numbers to the right of (or greater than) \(0: 1, 2, 3, \dots\). The negative integers are the whole numbers to the left of (or less than) \(0: -1, -2, -3, \dots\).  Some interesting facts to note are:
+<ul style="list-style-type: disc;">
+<li id="li-4">The integer \(0\) is neither positive nor negative.</li>
+<li id="li-5">As we move to the right on the number line, the integers increase in value.  \(3\) is greater than \(2\), written \(3\gt 2\).  But \(-2\) is greater than \(-3\), written \(-2\gt -3\).</li>
+</ul>
+</p>
+<p id="p-3">
+Recall that adding a \(\color{green}{\text{positive}}\)  integer equates to moving \(\color{green}{\text{right}}\) on the number line.
+</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-1" id="example-1"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.1.1</span><span class="title"> Add Positive \(3\) to \(1\)</span>
+</h5></article></a></div>
+<div id="hk-example-1" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-4">
+
+  
+</p>
+<figure class="figure-like" id="table-1">
+\(1+3\)
+Start at \(1\) on the number line.
+  
+<figure class="figure-like" id="figure-numberline-ex-1plus3"><object type="image/svg+xml" style="width:70%; margin:auto; display:block;" data="images/numberline-ex-1plus3.svg" alt=""><p style="margin:auto">&lt;&lt;SVG image is unavailable, or your browser cannot render it&gt;&gt;</p></object></figure>
+Move three positions right.
+  
+\(4\)
+Our Solution: We knew that!
+  </figure><p id="p-5">
+Similarly, adding a \(\color{red}{\text{negative}}\) integer equates to moving \(\color{red}{\text{left}}\)  on the number line.
+</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-2" id="example-2"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.1.2</span><span class="title"> Add Negative \(3\) to \(1\)</span>
+</h5></article></a></div>
+<div id="hk-example-2" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-6">
+
+  
+</p>
+<figure class="figure-like" id="table-2">
+\(1+(-3)\)
+Start at \(1\) on the number line.
+  
+<figure class="figure-like" id="figure-numberline-ex-1minus3"><object type="image/svg+xml" style="width:70%; margin:auto; display:block;" data="images/numberline-ex-1minus3.svg" alt=""><p style="margin:auto">&lt;&lt;SVG image is unavailable, or your browser cannot render it&gt;&gt;</p></object></figure>
+Move three positions left.
+  
+\(-2\)
+Our Solution
+  </figure></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-3" id="example-3"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.1.3</span><span class="title"> Add Negative \(2\) to \(-1\)</span>
+</h5></article></a></div>
+<div id="hk-example-3" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-7">
+
+  
+</p>
+<figure class="figure-like" id="table-3">
+\(-1+(-2)\)
+Start at \(-1\) on the number line.
+  
+<figure class="figure-like" id="figure-numberline-ex-neg1minus2"><object type="image/svg+xml" style="width:70%; margin:auto; display:block;" data="images/numberline-ex-neg1minus2.svg" alt=""><p style="margin:auto">&lt;&lt;SVG image is unavailable, or your browser cannot render it&gt;&gt;</p></object></figure>
+Move two positions left.
+  
+\(-3\)
+Our Solution
+  </figure><p id="p-8">
+Notice in Example 00-3 that adding two negative numbers is equivalent to adding the two corresponding positive numbers, but the final result is negative: \(1+2=3\) and \(-1+(-2) = -3\).  However in Example 00-2 we see that adding a negative number to a positive number is actually related to subtraction: \(1+(-3)=-2\) can be computed by first subtracting the corresponding positive integers, but the final result is negative: \(3-1=2\) and \(1+(-3)=-2\).
+</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-4" id="example-4"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.1.4</span><span class="title"> Add Two Negative Integers </span>
+</h5></article></a></div>
+<div id="hk-example-4" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-9">
+
+
+</p>
+<figure class="figure-like" id="table-4">
+\(-4+(-11)\)
+Adding two negatives: add positives \(4+11=15\), the result is negative
+  
+\(-15\)
+Our Solution
+  </figure><p id="p-10">
+If you were to sketch out a number line to solve Example 00-4:, you would start at negative \(4\) then move left \(11\) positions.  The result would end up at \(-15\).
+</p>
+<p id="p-11"> When adding integers with signs that don't match, say one positive and one negative number, we will consider the corresponding positive integers, subtract the smaller from the larger,  then use the sign from the larger
+  number in our result. This means if the larger number is positive, the answer is positive. If the larger number is negative, the answer is negative. Consider the following   examples: </p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-5" id="example-5"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.1.5</span><span class="title"> Add Integers of Different Signs</span>
+</h5></article></a></div>
+<div id="hk-example-5" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-12">
+
+</p>
+<figure class="figure-like" id="table-5">
+\(-5+2\)
+Different signs: subtract \(5-2=3\), use sign from bigger number (\(-5\)), negative
+  
+\(-3\)
+Our Solution
+  </figure></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-6" id="example-6"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.1.6</span><span class="title"> Add Integers of Different Signs </span>
+</h5></article></a></div>
+<div id="hk-example-6" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-13">
+
+</p>
+<figure class="figure-like" id="table-6">
+\(-14+20\)
+Different signs: subtract \(20-14=6\), use sign from bigger number (\(+20 \)), positive
+  
+\(6\)
+Our Solution
+  </figure><p id="p-14"> Subtraction with negative integers can be done by converting the problem to an addition problem which can then be solved using the above methods. The way we change from a subtraction problem to an addition problem is to<!--Style me with CSS--><em> add the opposite</em> of the number after the subtraction sign. </p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-7" id="example-7"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.1.7</span><span class="title"> Subtract Integers: add the opposite</span>
+</h5></article></a></div>
+<div id="hk-example-7" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-15">
+
+</p>
+<figure class="figure-like" id="table-7">
+\(7-(-6)\)
+<!--Style me with CSS--><em>Add the opposite</em> of \(-6\)
+  
+\(7+(6)\)
+Addition of positive integers
+  
+\(13\)
+Our Solution
+  </figure></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-8" id="example-8"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.1.8</span><span class="title"> Subtract Integers: add the opposite</span>
+</h5></article></a></div>
+<div id="hk-example-8" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-16">
+
+</p>
+<figure class="figure-like" id="table-8">
+\(6-8\)
+<!--Style me with CSS--><em>Add the opposite</em> of \(8\)
+  
+\(6+(-8)\)
+Different signs: subtract \(8-6=2\), use sign from bigger number (\(-8\)), negative
+  
+\(-2\)
+Our Solution
+  </figure></article></div></section></div></main>
+</div>
+</body>
+</html>
