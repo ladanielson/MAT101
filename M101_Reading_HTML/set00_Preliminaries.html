@@ -30,7 +30,17 @@ Based on a work at http://wallace.ccfaculty.org/book/book.html. pages 8-9, 18-24
 </ul>
 <h2>Integer Addition and Subtraction</h2>
 <p> A small picture of the integers is provided on the number line below: </p>
-   <td><img src="set00_Preliminaries_NumberLine.png"></td>
+   <figure xml:id="figure-numberline">
+          <image xml:id="numberline" width="70%">
+            <latex-image-code><![CDATA[
+              \begin{tikzpicture} [scale = 0.5, transform shape]
+            \draw[<->] (-5.5,0) -- (5.5,0);
+                  \foreach \x in {-5,...,5}
+                      \draw (\x, 0.1) -- (\x, -0.1) node [below] {$\x$};
+          \end{tikzpicture}]]>
+        </latex-image-code>
+      </image>
+    </figure>
 <p>
 The number line actually goes on forever in both directions.  The<b> positive integers</b> are the whole numbers to the right of (or greater than) \(0: 1, 2, 3, \dots\). The<b> negative integers</b> are the whole numbers to the left of (or less than) \(0: -1, -2, -3, \dots\).  Some interesting facts to note are:
 <ul>
@@ -52,7 +62,22 @@ Recall that adding a \(\color{green}{\text{positive}}\)  integer equates to movi
       <td>Start at \(1\) on the number line.  </td>
     </tr>
      <tr>
-      <td align="right"><img src="set00_Preliminaries_Ex_01.png"></td>
+      <td align="right"><figure xml:id="figure-numberline-ex-1plus3">
+          <image xml:id="numberline-ex-1plus3" width="70%">
+            <latex-image-code><![CDATA[
+              \begin{tikzpicture} [scale = 0.5, transform shape]
+            \draw[<->] (-5.5,0) -- (5.5,0);
+                  \foreach \x in {-5,...,5}
+                      \draw (\x, 0.1) -- (\x, -0.1) node [below] {$\x$};
+                \draw[color=green, ->] (0:1) arc (180:15:.5);
+                \draw[color=green, ->] (0:2) arc (180:15:.5);
+                \draw[color=green, ->] (0:3) arc (180:15:.5);
+                \filldraw[color=blue] (1,0) circle (.1);
+                \filldraw[color=green] (4,0) circle (.1);
+          \end{tikzpicture}]]>
+        </latex-image-code>
+      </image>
+        </figure></td>
       <td>Move three positions right. </td>
     </tr>
     <tr>
@@ -75,7 +100,22 @@ Similarly, adding a \(\color{red}{\text{negative}}\) integer equates to moving \
       <td>Start at \(1\) on the number line.  </td>
     </tr>
      <tr>
-      <td align="right"><img src="set00_Preliminaries_Ex_02.png"></td>
+      <td align="right"><figure xml:id="figure-numberline-ex-1minus3">
+          <image xml:id="numberline-ex-1minus3" width="70%">
+            <latex-image-code><![CDATA[
+              \begin{tikzpicture} [scale = 0.5, transform shape]
+            \draw[<->] (-5.5,0) -- (5.5,0);
+                  \foreach \x in {-5,...,5}
+                      \draw (\x, 0.1) -- (\x, -0.1) node [below] {$\x$};
+               \draw[color=red, ->] (0:1) arc (0:165:.5);
+               \draw[color=red, ->] (0:0) arc (0:165:.5);
+               \draw[color=red, ->] (0:-1) arc (0:165:.5);
+               \filldraw[color=blue] (1,0) circle (.1);
+               \filldraw[color=red] (-2,0) circle (.1);
+          \end{tikzpicture}]]>
+        </latex-image-code>
+      </image>
+    </figure></td>
       <td>Move three positions left. </td>
     </tr>
     <tr>
@@ -94,7 +134,21 @@ Similarly, adding a \(\color{red}{\text{negative}}\) integer equates to moving \
       <td>Start at \(-1\) on the number line.  </td>
     </tr>
      <tr>
-      <td align="right"><img src="set00_Preliminaries_Ex_03.png"></td>
+      <td align="right"><figure xml:id="figure-numberline-ex-neg1minus2">
+          <image xml:id="numberline-ex-neg1minus2" width="70%">
+            <latex-image-code><![CDATA[
+              \begin{tikzpicture} [scale = 0.5, transform shape]
+            \draw[<->] (-5.5,0) -- (5.5,0);
+                  \foreach \x in {-5,...,5}
+                      \draw (\x, 0.1) -- (\x, -0.1) node [below] {$\x$};
+                \draw[color=red, ->] (0:-1) arc (0:165:.5);
+                \draw[color=red, ->] (0:-2) arc (0:165:.5);
+                \filldraw[color=blue] (-1,0) circle (.1);
+                \filldraw[color=red] (-3,0) circle (.1);
+          \end{tikzpicture}]]>
+        </latex-image-code>
+      </image>
+    </figure></td>
       <td>Move two positions left. </td>
     </tr>
     <tr>
