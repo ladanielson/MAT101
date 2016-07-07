@@ -65,7 +65,7 @@ def transformMAT101(text):
     thetext = re.sub(r"\s*<h1>","\n<title>", thetext)
     thetext = re.sub(r"</h1>\s*","</title>\n", thetext)
 
-    thetext = re.sub(r"<h3>Objectives:</h3>\s*<ul>\s*(.*?)</ul>","<objectives>\n<ul>\n" + r"\1" + "</ul>\n</objectives>", thetext,0, re.DOTALL)
+    thetext = re.sub(r"<h3>Objectives:</h3>\s*<ul>\s*(.*?)</ul>","<introduction>\n<ul>\n" + r"\1" + "</ul>\n</introduction>", thetext,0, re.DOTALL)
 
     # add the closing section tags, then convert h2 to section/title
     thetext = re.sub(r"<h2>","</section>\n<h2>",thetext)
