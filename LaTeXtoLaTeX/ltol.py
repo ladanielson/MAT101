@@ -41,7 +41,7 @@ elif os.path.isdir(component.inputname) and os.path.isdir(component.outputname):
     outputdir = outputdir + "/"              # and then put it back
     latexfiles = glob.glob(inputdir + "/*.html")
     for inputfilename in latexfiles:
-        outputfilename = re.sub(".*/([^/]+)", outputdir + r"\1", inputfilename)
+        outputfilename = re.sub(r".*\\([^\\]+)", outputdir + r"\1", inputfilename)
         outputfilename = re.sub("html$", "mbx", outputfilename)
         if inputfilename == outputfilename:
             print "big problem, quitting"
