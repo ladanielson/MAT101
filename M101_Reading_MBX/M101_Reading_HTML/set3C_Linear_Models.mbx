@@ -1,0 +1,451 @@
+<chapter>
+<title>MAT-101: Set 3C-Linear Models</title>
+<introduction>
+<ul>
+<li>Determine the slope of a given linear model and describe its meaning, in context.</li>
+  <li>Use a given linear model to solve problems.</li>
+  <li>Create a linear model from data to solve problems.</li>
+</ul>
+</introduction>
+
+<section>
+<title>Linear Models</title>
+
+
+<p>Now that you have an understanding of lines, we will consider linear models.  A <b>linear model</b> is an equation for a line that is connected to a real-world situation or data. What does this mean? </p>
+<p>Recall when we write the equation for a line:</p>
+\[y=mx+b\]
+<p>that <m>y</m> represents the <b>dependent variable</b> (sometimes called the "response" variable) and <m>x</m> represents the <b>independent variable</b> (sometimes called the "predictor"). Plugging in a particular value of <m>x</m> gives, or "predicts," a corresponding value for the response <m>y</m>. The value of the slope <m>m</m> of the line represents the estimated change in the response variable <m>y</m> for a one-unit change in the predictor variable <m>x</m>. Finally, the value of <m>b</m> (the <m>y</m>-intercept ) is the value of the response <m>y</m> when the predictor <m>x</m> is zero. To summarize:
+<ul>
+  <li><m>y</m> is the <b>response</b> variable (it responds to changes in <m>x</m>)</li>
+  <li><m>x</m> is the <b>predictor</b> variable</li>
+  <li><m>m</m> represents the estimated change in the response <m>y</m> for a one-unit change in the predictor <m>x</m></li>
+  <li><m>b</m> is the value of the response <m>y</m> when the predictor <m>x=0</m> </li>
+</ul>
+</p>
+
+<p>Recall that points in the plane are denoted <m> (x,y)=(independent, dependent) =(predictor, response).</m> Consider some examples of linear models.</p>
+
+<example>
+<title> Determine Slope and Intercept of Given Model</title>
+<p>
+
+Suppose you are driving from Caldwell to LaGrande, OR to watch the Yotes play a game against Eastern Oregon University.  When you reach Ontario, OR (which is 30 miles into the drive) you are able to set your cruise control at 65 miles per hour (mph) for the remainder of the trip.  The linear function <m>D=65t + 30</m> represents your distance from Caldwell <m>t</m> hours after turning on the cruise control.  Notice when <m>t=0</m>, your distance <m>D=30</m> which corresponds to you being 30 miles from Caldwell (and in Ontario).
+<!-- These are our own!-->
+</p>
+<table>
+  <tr>
+<td align="right">Determine the slope and intercept for the model.</td>
+<td>Recognize the model as a line in slope-intercept form
+    <m>y=mx+b</m></td>
+  </tr>
+<tr>
+<td align="right"><m>D=65t+30</m></td>
+<td>The response is <m>D=</m> your distance from Caldwell, 
+    the predictor is <m>t=</m> the time you have had the cruise on</td>
+  </tr>
+<tr>
+<td align="right">slope <m>=65</m>
+    intercept <m>=30</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+
+
+</example>
+
+<example>
+<title> Slope in Context</title>
+<p>
+
+Continue with the linear model <m>D=65t + 30</m> representing your distance <m>D</m> (in miles) from Caldwell <m>t</m> hours after cruise. Describe what the slope means.
+<!-- Our Own-->
+</p>
+<table>
+  <tr>
+<td align="right"><m>m=65</m> mph is positive</td>
+<td>Recall slope is <m>\dfrac{\text{rise}}{\text{run}}=\frac{\text{change in } D\text{ miles}}{\text{change in } t\text{ hour}}</m></td>
+  </tr>
+<tr>
+<td align="right">Your distance <em>increases</em> 
+     at a rate of <m>65</m> miles for each hour using cruise</td>
+<td>Describe in context</td>
+  </tr>
+<tr>
+<td align="right">For each additional hour driving using cruise
+    the model predicts you will travel an additional <m>65</m> miles</td>
+<td>Our Solution for an additional hour</td>
+  </tr>
+<tr>
+<td align="right">For an additional  <m>2</m> hours driving using cruise
+    the model predicts you will travel an additional <m>(65)(2) = 130</m> miles</td>
+<td>Our Solution for an additional <m>2</m> hours</td>
+  </tr>
+</table>
+
+</example>
+
+<example>
+<title> Solve for a Predictor Given a Response</title>
+<p>
+
+Continue with the linear model <m>D=65t + 30</m> representing your distance <m>D</m> (in miles) from Caldwell <m>t</m> hours after using cruise. How many hours after setting your cruise control will you be <m>225</m> miles from Caldwell?
+<!--Our own-->
+</p>
+<table>
+  <tr>
+<td align="right"><m>D=</m> distance from Caldwell</td>
+<td>Recall what the response variable represents</td>
+  </tr>
+<tr>
+<td align="right">When is <m>225=D</m>?</td>
+<td>Write an equation to model the problem</td>
+  </tr>
+<tr>
+<td align="right"><m>225=65t+30</m></td>
+<td><b><em>This is an equation to model the problem. </em></b> 
+    Solve for <m>t</m>: subtract <m>30</m> from both sides</td>
+  </tr>
+<tr>
+<td align="right"><m>195=65t</m></td>
+<td>Divide both sides by <m>65</m></td>
+  </tr>
+<tr>
+<td align="right"><m>3=t</m></td>
+<td>State what this means in context</td>
+  </tr>
+<tr>
+<td align="right">After <m>t=3</m> hours of cruise control 
+     you are <m>225</m> miles from Caldwell</td>
+<td>Our solution</td>
+  </tr>
+<tr>
+<td align="right">The graph of the linear model demonstrates the
+    <m>D</m>-intercept of <m>30</m> miles,
+    increasing slope of <m>65</m> mph and 
+    distance of <m>225</m>miles when the time is <m>3</m> hours.</td>
+<td><image source="set3C_Linear_Models_Ex_1.png" /></td>
+  </tr>
+</table>
+
+</example>
+
+<example>
+<title> Determine Slope and Intercept of Given Model</title>
+<p>
+
+A study of king penguins looked for a relationship between how deep the penguins dive to seek food and how long they stay underwater.  The data from the study produced the linear model <m>DD = 0.0072D + 3</m>, where <m>DD</m> represents the dive duration in minutes (min) and <m>D</m> represents the depth in meters (m).
+<!-- This problem was inspired by WW03 125 Stats Problem 13-->
+</p>
+<table>
+  <tr>
+<td align="right">Determine the slope and intercept for the model.</td>
+<td>Recognize the model as a line in slope-intercept form <m>y=mx+b</m>.</td>
+  </tr>
+<tr>
+<td align="right"><m>DD = 0.0072D + 3</m></td>
+<td>The response is <m>DD</m> the dive duration (min), 
+    the predictor is <m>D</m> the depth (m)</td>
+  </tr>
+<tr>
+<td align="right">slope<m>=0.0072 </m>
+    intercept <m>= 3</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+
+</example>
+
+<example>
+<title> Slope in Context</title>
+<p>
+
+Continue with the linear model <m>DD = 0.0072D + 3</m>, where <m>DD</m> represents the dive duration in minutes (min) and <m>D</m> represents the depth in meters (m). Describe what the slope means.
+<!-- Our Own-->
+</p>
+<table>
+  <tr>
+<td align="right"><m>m=0.0072</m> min/m is positive</td>
+<td>Recall slope is <m>\dfrac{\text{rise}}{\text{run}}=\frac{\text{change in } DD \text{ min}}{\text{change in } D\text{ m}}</m></td>
+  </tr>
+<tr>
+<td align="right">The dive duration <em>increases</em>
+     at a rate of <m>0.0072</m> minute for each additional meter in depth</td>
+<td>Describe in context</td>
+  </tr>
+<tr>
+<td align="right">For each additional meter in diving depth the model predicts
+     a penguin remains under water an additional <m>.0072</m> minute</td>
+<td>Our Solution for an additional meter</td>
+  </tr>
+<tr>
+<td align="right">For an additional  <m>100</m> meters in diving depth the model predicts
+      a penguin remains under water an additional <m>(0.0072)(100) = 0.72</m> minute
+     or about <m>(0.72)(60)\approx 43 </m> seconds</td>
+<td>Our Solution for an additional <m>100</m> meters</td>
+  </tr>
+</table>
+
+</example>
+
+<example>
+<title> Determine Response Given a Predictor</title>
+<p>
+
+Continue with the linear model <m>DD = 0.0072D + 3</m>, where <m>DD</m> represents the dive duration in minutes (min) and <m>D</m> represents the depth in meters (m). According to the model, how long does a typical dive to a depth of <m>300</m> meters last?
+<!--Our own-->
+</p>
+<table>
+  <tr>
+<td align="right"><m>DD=</m> dive duration</td>
+<td>Recall what the response variable represents</td>
+  </tr>
+<tr>
+<td align="right"><m>D=</m> depth</td>
+<td>Recall what the predictor variable represents</td>
+  </tr>
+<tr>
+<td align="right"><m>D=300</m> m</td>
+<td>We are given a depth and asked to determine the duration for that depth</td>
+  </tr>
+<tr>
+<td align="right"><m>DD=0.0072(300) + 3</m></td>
+<td>Plug the given depth into the model and simplify</td>
+  </tr>
+<tr>
+<td align="right"><m>DD=5.16</m></td>
+<td>State what this means in context</td>
+  </tr>
+<tr>
+<td align="right">The dive duration is predicted to be <m>5.16</m> minutes for a depth of <m>300</m> meters</td>
+<td>Our solution</td>
+  </tr>
+</table>
+
+
+<p>Often researchers record observations over time and use a linear model to represent the situation. Consider some examples.</p>
+
+</example>
+
+<example>
+<title> Data Points</title>
+<p>
+
+In 1980, the gross domestic product (GDP) of the United States was <m>3</m> trillion dollars.  In 1990 it was <m>6</m> trillion dollars.  Let the predictor <m>t</m> denote time and the response <m>GDP</m> denote the GDP (in trillions).  Since the first given observation is from 1980, let <m>t=0</m> correspond to the year 1980.  Identify points that represent the data.</p>
+<!-- Our own-->
+</p>
+<table>
+  <tr>
+<td align="right"><m>t=</m> year after 1980</td>
+<td><m>GDP=</m> GDP ( trillion <m> \\$</m>)</td>
+  </tr>
+<tr>
+<td align="right"><m>t=0</m>, <m>GDP=3</m></td>
+<td>Corresponds to the year 1980 with a GDP of <m>\$3</m> trillion</td>
+  </tr>
+<tr>
+<td align="right"><m>(0,3)</m></td>
+<td>Points in the plane are written <m>(x,y)=(predictor, response)=(t,GDP)</m></td>
+  </tr>
+<tr>
+<td align="right"><m>t=10</m>, <m>GDP=6</m></td>
+<td>Corresponds to the year 1990 (ten years after 1980) with a GDP of <m>\$6</m> trillion</td>
+  </tr>
+<tr>
+<td align="right"><m>(10,6)</m></td>
+<td>Points in the plane are written <m>(t,GDP)</m></td>
+  </tr>
+<tr>
+<td align="right"><m>(0,3)</m> and <m>(10,6)</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+
+</example>
+
+<example>
+<title> Model Data</title>
+<p>
+
+Continue with the GDP example.  
+Determine a linear model for the data points <m>(0,3)</m> and <m>(10,6)</m>. </p>
+<!-- Our own-->
+</p>
+<table>
+  <tr>
+<td align="right">First determine the slope between
+     <m>(0, 3)</m> and <m>(10,6)</m></td>
+<td>Identify <m>t_1, GDP_1, t_2, GDP_2</m></td>
+  </tr>
+<tr>
+<td align="right"> <m>(t_1, GDP_1)</m> and <m>(t_2,GDP_2)</m></td>
+<td>Use slope formula <m>m=\dfrac{\text{change in }GDP}{\text{change in }time}=\dfrac{GDP_2-GDP_1}{t_2-t_1}</m></td>
+  </tr>
+<tr>
+<td align="right"><m>m=\dfrac{6-3}{10-0}</m></td>
+<td>Simplify</td>
+  </tr>
+<tr>
+<td align="right"><m>m=\dfrac{3}{10}=.3</m></td>
+<td>Now find the <m>GDP</m>-intercept</td>
+  </tr>
+<tr>
+<td align="right"><m>(0,3)</m></td>
+<td>The first point is the value of <m>GDP</m> when <m>t=0</m>
+     which means <m>b=3</m>, the <m>GDP</m>-intercept</td>
+  </tr>
+<tr>
+<td align="right"><m>GDP=0.3t+3</m></td>
+<td>Our solution</td>
+  </tr>
+</table>
+
+</example>
+
+<example>
+<title> Solve for a Predictor Given a Response</title>
+<p>
+
+Continue with the GDP example.  
+Use the linear model to determine the year when the GDP will reach <m>\$13.5</m> trillion.</p>
+<!-- Our own-->
+</p>
+<table>
+  <tr>
+<td align="right"><m>GDP=</m> GDP (in trillions of dollars)</td>
+<td>Recall what the response variable represents</td>
+  </tr>
+<tr>
+<td align="right"><m>t=</m> time (in years after 1980)</td>
+<td>Recall what the predictor variable represents</td>
+  </tr>
+<tr>
+<td align="right">When will <m>13.5=GDP</m>?</td>
+<td>Write an equation to model the problem</td>
+  </tr>
+<tr>
+<td align="right"><m>13.5=.3t+3</m></td>
+<td><b><em>This is an equation to model the problem.</em></b>
+    Solve for <m>t</m>: subtract <m>3</m> from both sides</td>
+  </tr>
+<tr>
+<td align="right"><m>10.5=.3t</m></td>
+<td>Divide both sides by <m>.3</m></td>
+  </tr>
+<tr>
+<td align="right"><m>35=t</m></td>
+<td><m>t</m> is years after 1980</td>
+  </tr>
+<tr>
+<td align="right"><m>1980+ 35 = 2015</m></td>
+<td>State what this means in context</td>
+  </tr>
+<tr>
+<td align="right">Using the linear model, the GDP will be
+     <m>\$13.5</m> trillion in the year 2015</td>
+<td>Our solution</td>
+  </tr>
+</table>
+
+</example>
+
+<example>
+<title> Data Points</title>
+<p>
+
+An advertiser goes to a printer and is charged <m>\$47</m> for <m>100</m> copies of one flyer and <m>\$63</m> for <m>259</m> copies of another flyer. Let the predictor <m>n</m> denote the number of copies and the response <m>C</m> denote the cost.  Identify points that represent the data.
+<!-- From MAT 102 WW Problem 4-->
+</p>
+<table>
+  <tr>
+<td align="right"><m>n=</m> number of copies</td>
+<td><m>C=</m> cost (<m>\$</m>)</td>
+  </tr>
+<tr>
+<td align="right"><m>n=100</m>, <m>C=47</m></td>
+<td>Corresponds to the cost <m>\$47</m> for <m>100</m> copies</td>
+  </tr>
+<tr>
+<td align="right"><m>(100,47)</m></td>
+<td>Points in the plane are written <m>(predictor,response)=(n,C)</m></td>
+  </tr>
+<tr>
+<td align="right"><m>n=259</m>, <m>C=63</m></td>
+<td>Corresponds to the cost <m>\$63</m> for <m>259</m> copies</td>
+  </tr>
+<tr>
+<td align="right"><m>(259,63)</m></td>
+<td>Points in the plane are written <m>(n,C)</m></td>
+  </tr>
+<tr>
+<td align="right"><m>(100,47)</m> and <m>(259,63)</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+
+</example>
+
+<example>
+<title> Model Data</title>
+<p>
+
+Continue with the copies example. 
+  Determine a linear model for the data points <m>(100,47)</m> and <m>(259,63)</m>. </p>
+<!-- Our own-->
+</p>
+<table>
+  <tr>
+<td align="right">First determine the slope between
+     <m>(100, 47)</m> and <m>(259,63)</m></td>
+<td>Identify <m>n_1, C_1, n_2, C_2</m></td>
+  </tr>
+<tr>
+<td align="right"> <m>(n_1, C_1)</m> and <m>(n_2,C_2)</m></td>
+<td>Use slope formula <m>m=\dfrac{C_2-C_1}{n_2-n_1}</m></td>
+  </tr>
+<tr>
+<td align="right"><m>m=\dfrac{63-47}{259-100}</m></td>
+<td>Simplify</td>
+  </tr>
+<tr>
+<td align="right">slope <m>=m=\dfrac{16}{159}</m></td>
+<td>Now find the <m>C</m>-intercept, <m>b</m></td>
+  </tr>
+<tr>
+<td align="right"><m>C=\dfrac{16}{159}n+b</m></td>
+<td>Choose one of the points to plug into the line</td>
+  </tr>
+<tr>
+<td align="right"><m>(100,47)</m></td>
+<td> <m>(n,C)</m>, plug the corresponding values in for <m>n</m> and <m>C</m></td>
+  </tr>
+<tr>
+<td align="right"><m>47=\dfrac{16}{159}(100)+b</m></td>
+<td>Simplify</td>
+  </tr>
+<tr>
+<td align="right"><m>47=\dfrac{1600}{159}+b</m></td>
+<td>Subtract <m>\dfrac{1600}{159}</m> from both sides</td>
+  </tr>
+<tr>
+<td align="right"><m>47-\dfrac{1600}{159}=b</m>
+        or <m>b\approx 36.9371 </m></td>
+<td>Write the equation with the derived <m>m</m> and <m>b</m></td>
+  </tr>
+<tr>
+<td align="right"><m>C=\dfrac{16}{159}n+36.9371</m></td>
+<td>Our solution <div class="WWbox">
+                         It is generally a good idea to maintain <m>3</m> to <m>5</m> decimals of accuracy when submitting answers in <tt>WeBWorK</tt>
+                         </div></td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+</example>
+</section>
+</chapter>

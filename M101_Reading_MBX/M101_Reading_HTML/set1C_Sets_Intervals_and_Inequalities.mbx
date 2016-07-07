@@ -1,0 +1,641 @@
+<chapter>
+<title>MAT-101: Set 1C-Sets, Intervals and Inequalities</title>
+<introduction>
+<ul>
+<li>Use set operations including union, intersection and complement. </li>
+          <li> Use Venn diagrams to illustrate relations between sets.</li>
+          <li> Use inequality and interval notation.</li>
+        </ul>
+</introduction>
+
+<section>
+<title>Sets</title>
+
+
+<p>
+In this section, we will familiarize ourselves with set operations and notations, so that we can apply these
+concepts to both counting and probability problems. We begin by defining some terms.</p>
+
+<p> A <b>set</b> is a collection of objects, and its members are called the <b>elements</b> of the set. We name the set by
+using capital letters, and enclose its members in braces <m>{\cdots}</m>. Suppose we need to list the members of the chess
+club. We use the following set notation:
+
+\[C=\{\text{Ken, Bob, Tran, Shanti, Eric}\}\]
+
+A set that has no members is called an <b>empty set</b>. The empty set is denoted by the symbol <m>\emptyset</m> or with empty curly braces <m>\{\}</m>.</p>
+<p>
+Two sets are <b>equal</b> if they have the same elements.
+</p>
+<p>
+A set <m>A</m> is a <b>subset</b> of a set <m>B</m> if every member of <m>A</m> is also a member of <m>B</m>. For example, suppose <m>C = \{\text{Al, Bob, Chris, David, Ed}\}</m> and <m>A = \{\text{Bob, David}\}</m>. Then <m>A</m> is a subset of <m>C</m>, written as <m>A\subseteq C</m>.
+</p>
+
+<p>
+Notes: Every set is a subset of itself, <m>A \subseteq A</m>. The empty set is a subset of every set, <m>\emptyset \subseteq A</m>.
+</p>
+
+
+</section>
+
+<section>
+<title>Union Of Two Sets</title>
+
+<p>
+
+Let <m>A</m> and <m>B</m> be two sets, then the union of <m>A</m> and <m>B</m>, written as <m>A\cup B</m>, is the set of all elements that are either in <m>A</m> or in <m>B</m>, or in both <m>A</m> and <m>B</m>.  When you see the union symbol <m>\cup</m> you should think <em>or</em>.
+</p>
+
+<example>
+<title> Union</title>
+<p>
+
+
+Let <m>A=\{1,4,5,6,8\}</m> and   <m>B=\{4,5,6,7\}</m> be two sets of integers.
+<!-- Modeled after WeBWorK Problems/MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_01_CompoundIneq.pg -->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right">Determine <m>A\cup B</m></td>
+<td>The union is the collection of all elements from both sets:
+    integers in <m>A</m> <b>OR</b> <m>B</m>  (or both)</td>
+  </tr>
+<tr>
+<td align="right"><m>A\cup B=\{1,4,5,6,7,8 \}</m></td>
+<td>Our Solution <div class="WWbox">
+                       Type <b>{1,4,5,6,7,8} </b> for <m>\{1,4,5,6,7,8 \} </m> in <tt>WeBWorK.</tt> Elements of sets are contained in curly braces.
+                       </div></td>
+  </tr>
+</table>
+<p>
+Notice in the solution to<b> Example 1C-1</b>, the integer <m>4</m> is not written in the list of elements twice even thought it is in both sets <m>A</m> and <m>B</m>.  This is because there is only one integer <m>4</m>.
+</p>
+
+</example>
+</section>
+
+<section>
+<title>Intersection Of Two Sets</title>
+
+<p>
+Let <m>A</m> and <m>B</m> be two sets, then the intersection of <m>A</m> and <m>B</m>, written as <m>A\cap B</m>, is the set of all elements that are common to both sets <m>A</m> and <m>B</m>. That is to say the set of all elements in <m>A</m> that are also in <m>B</m>.  When you see the intersection symbol <m>\cap</m> you should think <em>and</em>.
+</p>
+
+<example>
+<title> Intersection</title>
+<p>
+
+Let <m>A=\{1,4,5,6,8\}</m> and   <m>B=\{4,5,6,7\}</m> be two sets of integers.
+<!-- Modeled after WeBWorK Problems/MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_01_CompoundIneq.pg -->
+
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right">Find <m>A\cap B</m></td>
+<td>The intersection is the collection of all elements common to  both sets:
+    integers in <m>A</m> <b>AND</b> <m>B</m>  (common to both)</td>
+  </tr>
+<tr>
+<td align="right"><m>A\cap B=\{4,5,6 \}</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+</example>
+</section>
+
+<section>
+<title>Universal Set</title>
+
+<p>
+A <b>universal set</b> <m>U</m> is the set consisting of all elements under consideration.  For example, if we were interested in computing probabilities of particular poker hands the universal set would be the set of all <m>52</m> cards in a regular deck of cards.  If we were interested in GPAs of students at C of I, the universal set <m>U=\{\text{GPAs of all students at C of I}\}</m>.  Or the universal set could even be <m>U=\{1,2,...,9,10  \}</m>, the set consisting of the first <m>10</m> positive integers.
+</p>
+
+</section>
+
+<section>
+<title>Complement of a Set</title>
+
+<p>
+Let <m>A</m> be any set, then the complement of set <m>A</m>, written as <m>A'</m>, is the set consisting of elements in the universal set <m>U</m> that are not in <m>A</m>. When you see the complement symbol <m>'</m> you should think <em>not</em> or <em>outside</em>.
+</p>
+
+<example>
+<title> Set Complement</title>
+<p>
+
+
+Let the universal set <m>U=\{0,1,2,3,4,5,6,7\}</m>. Let  <m>A=\{0,1,2,3,6\}</m>.
+<!-- Modeled after WeBWorK Problems/MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_01_CompoundIneq.pg -->
+</p>
+<table class = "center">
+  <tr>
+<td align="right">Find <m>A'</m></td>
+<td>The complement of <m>A</m> is the collection of all elements in <m>U</m> that are <b>NOT</b> in <m>A</m></td>
+  </tr>
+<tr>
+<td align="right"><m>A'=\{4,5,7 \}</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Set Operations</title>
+<p>
+
+Let the universal set <m>U=\{0,1,2,3,4,5,6,7\}</m>. Let  <m>A=\{0,1,2,3,6\}</m> and <m>B=\{0, 3, 4, 6\}</m>.
+<!-- Modeled after WeBWorK Problems/MAT123_Templates/setAppliedMath_08_01_Sets/AppMath_08_Sets.pg -->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right">Determine <m>A\cap B'</m></td>
+<td>First identify the set <m>B'</m>: elements in <m>U</m> <b>NOT</b> in <m>B</m></td>
+  </tr>
+<tr>
+<td align="right"><m>B'=\{1,2,5,7 \}</m></td>
+<td>Intersection is <b>AND</b>: elements in <m>A</m> <b>AND</b> <m>B</m></td>
+  </tr>
+<tr>
+<td align="right"><m>A\cap B'=\{1,2 \}</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Set Operations</title>
+<p>
+
+Let the universal set <m>U=\{0,1,2,3,4,5,6,7\}</m>. Let  <m>A=\{0,1,2,3,6\}</m> and <m>B=\{0, 3, 4, 6\}</m>.
+<!-- Modeled after WeBWorK Problems/MAT123_Templates/setAppliedMath_08_01_Sets/AppMath_08_Sets.pg -->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right">Find <m>(A\cup B)'</m></td>
+<td>Parentheses first: identify <m>(A\cup B)</m>--union is <b>OR</b></td>
+  </tr>
+<tr>
+<td align="right"><m>(A\cup B)=\{0,1,2,3,4,6 \}</m></td>
+<td>Next consider the complement--<b>OUTSIDE</b> this set</td>
+  </tr>
+<tr>
+<td align="right"><m>(A\cup B)'=\{5,7 \}</m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+</example>
+</section>
+
+<section>
+<title>Venn Diagrams</title>
+
+
+<p>
+We now use Venn diagrams to illustrate the relations between sets. In the late 1800s, an English logician
+named John Venn developed a method to represent relationships between sets. He represented these relationships
+using diagrams, which are now known as Venn diagrams. A Venn diagram represents a set as the
+interior of a circle. Often two or more circles are enclosed in a rectangle where the rectangle represents the
+universal set. To visualize an intersection or union of a set is easy.  Below are a few examples.
+</p>
+
+<p><table style="center">
+  <tr>
+<td><image source="set1C_Sets_Intervals_and_Inequalities_Union.png" /></td>
+<td> The shaded region represents the collection of all elements
+     that are either in <m>A</m> or in <m>B</m>, or in both <m>A</m> and <m>B</m>.
+    The region is <m>A\cup B</m></td>
+  </tr>
+</table></p>
+
+<p><table style="center">
+  <tr>
+<td><image source="set1C_Sets_Intervals_and_Inequalities_Intersection.png" /></td>
+<td>The shaded region represents the collection of all elements that are common to both <m>A</m> and <m>B</m>
+    The region is <m>A\cap B</m></td>
+  </tr>
+</table></p>
+
+<p><table style="center">
+  <tr>
+<td><image source="set1C_Sets_Intervals_and_Inequalities_Complement.png" /></td>
+<td>The shaded region represents the collection of all elements that are <b>NOT</b> in <m>A</m>.
+    The region is <m>A'</m></td>
+  </tr>
+</table></p>
+
+<p>
+We will now consider sets of numbers defined using inequalities.
+</p>
+
+
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace is licensed under a Creative Commons
+Attribution 3.0 Unported License. (http://creativecommons.org/licenses/by/3.0/)
+Based on a work at http://wallace.ccfaculty.org/book/book.html. pages 118 -->
+
+</section>
+
+<section>
+<title>Intervals and Inequalities</title>
+
+<p>
+When <m>x = 4</m> we have a specific value for our variable.
+With inequalities we will give a range of values for our variable. To do this we
+will not use equals, but one of the following symbols:
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>\gt</m></td>
+<td>Greater than</td>
+  </tr>
+<tr>
+<td align="right"> <m>\geq</m></td>
+<td>Greater than or equal to <div class="WWbox">
+                       Type the two symbols <b><gt /> = </b> together for <m>\geq</m>  in <tt>WeBWorK</tt>
+                       </div></td>
+  </tr>
+<tr>
+<td align="right"><m>\lt</m></td>
+<td>Less than</td>
+  </tr>
+<tr>
+<td align="right"><m>\leq</m></td>
+<td>Less than or equal to <div class="WWbox">
+                       Type the two symbols <b><lt /> = </b> together for <m>\leq</m>  in <tt>WeBWorK</tt>
+                       </div></td>
+  </tr>
+</table>
+<p>
+If we have an expression such as <m>x \lt 4</m> this means our variable can be any number
+smaller than <m>4</m> such as <m>-2, 0, 3, 3.9</m> or even <m>3.999999999</m> as long as it is smaller
+than <m>4</m>. In other words, <m>x \lt 4</m> is the set of all numbers less than <m>4</m>.
+If we have an expression such as <m>x \geq -2</m>, this means our variable can be
+any number greater than or equal to <m>-2</m>, such as <m>5, 0,-1,-1.9999</m>, or even <m>-2</m>.
+In other words, <m>x \geq -2</m> is the set of all numbers greater than or equal to <m>-2</m>.
+</p>
+<p>
+Because we don't have one set value for our variable, it is often useful to draw a
+picture of the solutions to the inequality on a number line. We will start from the
+value in the problem and bold the lower part of the number line if the variable is
+smaller than the number, and bold the upper part of the number line if the variable
+is larger. The value itself we will mark with an open or closed circle: open for less
+than or greater than, and a closed circle for less than or equal to or greater
+than or equal to.
+</p>
+<p>
+Once the graph is drawn we can quickly convert the graph into what is called
+interval notation. Interval notation gives two numbers, the first is the smallest
+value, the second is the largest value. We will use square brackets if the inequality includes
+<b>or equal to</b> (so either <m>\leq</m> or <m>\geq</m>).  We will use round brackets if the inequality is
+strictly less than or greater than (so either <m>\lt</m> or <m>\gt</m>).   If there is no largest value, we can use <m>\infty</m>
+(infinity). If there is no smallest value, we can use <m>-\infty</m> negative infinity. If we
+use either positive or negative infinity we will always use a curved bracket for that
+value.
+</p>
+
+<example>
+<title> Relating an Inequality, Graph and Interval</title>
+<p>
+
+Graph the inequality and give the interval notation.
+<!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 151 pg 119
+and WeBWorK
+Problems/MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_03_LinearIneq.pg-->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>x\geq 4</m></td>
+<td>Start at <m>4</m> and shade above
+Use a closed circle for greater than or equal to</td>
+  </tr>
+<tr>
+<td align="right"><image source="set1C_Sets_Intervals_and_Inequalities_Ex_06.png" /></td>
+<td>Our graph</td>
+  </tr>
+<tr>
+<td align="right"><m>[4,\infty )</m></td>
+<td>Interval notation <div class="WWbox">
+                       Type <b>[4,inf)</b> for the interval  <m> [4,\infty )</m> in <tt>WeBWorK</tt>
+                       </div></td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Relating an Inequality, Graph and Interval</title>
+<p>
+
+Graph the inequality and give the interval notation.
+<!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 151 pg 119
+and WeBWorK
+Problems/MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_02_LinearIneq.pg
+ -->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>x\lt -4</m></td>
+<td>Start at <m>-4</m> and shade below
+Use an open circle for less than</td>
+  </tr>
+<tr>
+<td align="right"><image source="set1C_Sets_Intervals_and_Inequalities_Ex_07.png" /></td>
+<td>Our graph</td>
+  </tr>
+<tr>
+<td align="right"><m>(-\infty, -4)</m></td>
+<td>Interval notation <div class="WWbox">
+                       Type <b>(-inf,-4)</b> for the interval  <m> (-\infty, -4)</m> in <tt>WeBWorK</tt>
+                       </div></td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Relating an Inequality, Graph and Interval</title>
+<p>
+
+Graph the inequality and give the interval notation.
+<!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 151 pg 119
+and WeBWorK
+MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_04_LinearIneq.pg
+ -->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>-3\lt x \lt 1</m></td>
+<td>Start at <m>-3</m> and shade above to <m>1</m>
+Use open circles for less than</td>
+  </tr>
+<tr>
+<td align="right"><image source="set1C_Sets_Intervals_and_Inequalities_Ex_08.png" /></td>
+<td>Our graph</td>
+  </tr>
+<tr>
+<td align="right"><m>(-3, 1)</m></td>
+<td>Interval notation</td>
+  </tr>
+</table>
+<p>
+Intervals represent sets of numbers.  This means we can perform set operations on intervals.  For example:
+</p>
+
+</example>
+
+<example>
+<title> Union of Two Overlapping Intervals</title>
+<p>
+
+<!-- Modeled after
+and WeBWorK
+MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_04_LinearIneq.pg
+ -->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><image source="set1C_Sets_Intervals_and_Inequalities_Ex_09.png" /></td>
+<td>The <b>union</b> of the points in the graph
+would be all values in either the first interval
+<b>OR</b> in the second (or in both)
+For example, <m>-3</m> is in the top interval <m>(-\infty, 2]</m>, so <m>-3</m> is in the union
+and <m>2.7</m> is in the bottom interval <m>(-2, \infty)</m>, so <m>2.7</m> is in the union
+and <m>-\frac{1}{3}</m> is in both intervals, so <m>-\frac{1}{3}</m> is in the union
+Notice every real number is either in the top or bottom interval (or in both)</td>
+  </tr>
+<tr>
+<td align="right"><m>(-\infty, \infty)</m></td>
+<td>An interval describing the union <div class="WWbox">
+                       Type <b>(-inf,inf)</b> for the interval  <m> (-\infty, \infty)</m> in <tt>WeBWorK</tt>
+                       </div></td>
+  </tr>
+<tr>
+<td align="right"><m>-\infty \lt x \lt \infty</m></td>
+<td>An inequality describing the union <div class="WWbox">
+                       Type <b>-inf <lt /> x <lt /> inf</b> for the inequality <m>-\infty \lt x \lt \infty</m> in <tt>WeBWorK</tt>
+                       </div></td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Intersection of Two Overlapping Intervals</title>
+<p>
+
+<!-- Modeled after
+and WeBWorK
+MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_04_LinearIneq.pg
+ -->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><image source="set1C_Sets_Intervals_and_Inequalities_Ex_09.png" /></td>
+<td>The <b>intersection</b> of the points in the graph
+would be all values in both the first interval <b>AND</b> the second 
+This is points common to both (or in the overlap)
+For example, <m>-3</m> is NOT in the bottom interval <m>(-2, \infty)</m>, so <m>-3</m> is NOT in the intersection
+and <m>2.7</m> is NOT in the top interval <m>(-\infty, 2]</m>, so <m>2.7</m> is NOT in the intersection
+but since <m>-\frac{1}{3}</m> is in both intervals, <m>-\frac{1}{3}</m> IS in the intersection</td>
+  </tr>
+<tr>
+<td align="right"><m>(-2, 2]</m></td>
+<td>An interval describing the intersection</td>
+  </tr>
+<tr>
+<td align="right"><m>-2 \lt x \leq 2</m></td>
+<td>An inequality describing the intersection</td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Union of Two Overlapping Intervals</title>
+<p>
+
+Describe the <b>union</b> of the points in the graph.
+<!-- Modeled after
+and WeBWorK
+MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_05_CompoundIneq.pg
+ -->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><image source="set1C_Sets_Intervals_and_Inequalities_Ex_11.png" /></td>
+<td>
+        Recall the <b>union</b> of the points in the graph would be all values in either the first interval <b>OR</b> in the second (or in both)
+        For example, <m>-3</m> is in both the top and bottom intervals, so <m>-3</m> is in the union
+        and <m>2.7</m> is in the bottom interval, so <m>2.7</m> is in the union
+        but <m>5</m> is in neither interval, so <m>5</m> is NOT in the union
+        Notice every number in the bottom interval is in the union (as is every number in the top interval)</td>
+  </tr>
+<tr>
+<td align="right"><m>(-\infty, 4)</m></td>
+<td>An interval describing the union</td>
+  </tr>
+<tr>
+<td align="right"><m>x \lt 4</m></td>
+<td>An inequality describing the union</td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Intersection of Two Overlapping Intervals</title>
+<p>
+
+Describe the <b>intersection</b> of the points in the graph.
+<!-- Modeled after
+and WeBWorK
+MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_05_CompoundIneq.pg
+ -->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><image source="set1C_Sets_Intervals_and_Inequalities_Ex_11.png" /></td>
+<td>Recall the <b>intersection</b> of the points in the graph
+would be all values in both the first interval <b>AND</b> the second 
+This is points common to both (or in the overlap)
+For example, <m>-3</m> is in both the top and bottom intervals, so <m>-3</m> is in the intersection
+        But <m>2.7</m> is in the bottom interval but not the top, so <m>2.7</m> is NOT in the intersection
+        and <m>5</m> is in neither interval, so <m>5</m> is NOT in the intersection
+Notice the overlap of the two intervals is all numbers in the first interval</td>
+  </tr>
+<tr>
+<td align="right"><m>(-\infty, -3]</m></td>
+<td>An interval describing the intersection</td>
+  </tr>
+<tr>
+<td align="right"><m>x \leq -3</m></td>
+<td>An inequality describing the intersection <div class="WWbox">
+                       Type <b>x <lt /> = -3</b> for the inequality <m>x \leq -3</m> in <tt>WeBWorK</tt>
+                       </div></td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Union of Two Non-Overlapping Intervals</title>
+<p>
+
+Describe the <b>union</b> of the points in the graph.
+<!-- Modeled after
+and WeBWorK
+MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_07_CompoundIneq.pg
+ -->
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><image source="set1C_Sets_Intervals_and_Inequalities_Ex_13.png" /></td>
+<td> Recall the <b>union</b> of the points in the graph would be all values in either the first interval <b>OR</b> in the second (or in both)</td>
+  </tr>
+<tr>
+<td align="right"><m>(-\infty, -2]\cup [1,\infty)</m></td>
+<td>A union of intervals describing the union <div class="WWbox">
+                       Type capital <b>U</b> for <m>\cup </m> the union symbol in <tt>WeBWorK</tt> 
+                       <b>(-inf,-2]U[1,inf)</b> for <m>(-\infty, -2]\cup [1,\infty)</m>
+                       </div></td>
+  </tr>
+<tr>
+<td align="right"><m>x\leq -2</m> or <m>x\geq 1</m></td>
+<td>A compound inequality describing the union</td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title>  Intersection of Two Non-Overlapping Intervals</title>
+<p>
+
+<!-- Modeled after
+and WeBWorK
+MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_05_CompoundIneq.pg
+ -->
+  Describe the <b>intersection</b> of the points in the graph.
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><image source="set1C_Sets_Intervals_and_Inequalities_Ex_13.png" /></td>
+<td>The <b>intersection</b> of the points in the graph
+would be all values common to both (overlap)</td>
+  </tr>
+<tr>
+<td align="right">None</td>
+<td>There are no values common to both intervals  <div class="WWbox">
+                       Type <b>None</b> for empty sets
+                        in <tt>WeBWorK</tt>
+                       </div></td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Solving Compound Inequalities</title>
+<p>
+
+<!-- Modeled after
+and WeBWorK
+MAT101_Templates/set1C-Sets_Intervals_Inequalities/22_inequalities.pg
+ -->
+Solve the compound inequality.
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>x \leq -3</m> and <m>x \lt 4</m> 
+    First sketch the intervals on a graph  
+    Write the compound inequality in interval notation:<b> AND</b> is intersection</td>
+<td ><image source="set1C_Sets_Intervals_and_Inequalities_Ex_11.png" /></td>
+  </tr>
+<tr>
+<td align="right"><m>(-\infty,  -3] \cap ( -\infty, 4)</m></td>
+<td>The values common to both intervals are shaded red</td>
+  </tr>
+<tr>
+<td align="right"><m> (-\infty,  -3] </m></td>
+<td>Our Solution  <div class="WWbox">
+                        You may enter either the interval <b>(-inf,-3]</b> 
+                        or the inequality notation <b>x <m>\lt =  </m> -3</b> in <tt>WeBWorK</tt>
+                       </div></td>
+  </tr>
+</table>
+</example>
+
+<example>
+<title> Solving Compound Inequalities</title>
+<p>
+
+<!-- Modeled after
+and WeBWorK
+MAT101_Templates/set1C-Sets_Intervals_Inequalities/22_inequalities.pg
+ -->
+Solve the compound inequality.
+
+</p>
+<table class = "center">
+  <tr>
+<td align="right"><m>x \leq 2</m> and <m>x \gt -2</m> 
+    First sketch the intervals on a graph  
+    Write the compound inequality in interval notation:<b> AND</b> is intersection</td>
+<td ><image source="set1C_Sets_Intervals_and_Inequalities_Ex_09.png" /></td>
+  </tr>
+<tr>
+<td align="right"><m>(-\infty,  2] \cap ( -2, \infty)</m></td>
+<td>The values common to both intervals are in the overlap</td>
+  </tr>
+<tr>
+<td align="right"><m> (-2, 2] </m></td>
+<td>Our Solution</td>
+  </tr>
+</table>
+</example>
+</section>
+</chapter>

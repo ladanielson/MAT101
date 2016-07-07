@@ -1,0 +1,94 @@
+<chapter>
+<title>MAT-101: WeBWorK Quick Reference</title>
+
+<section>
+<title>Real Numbers</title>
+
+
+<ul>
+<li>It is generally a good idea to maintain <m>3</m> to <m>5</m> decimals of accuracy when submitting answers in <tt>WeBWorK</tt></li>
+  <li>Type <b>3/7</b> for <m> \dfrac{3}{7} </m></li>
+  <li>Type <b>.375 </b> for <m> .375 </m></li>
+  <li>Type <b>7.25% </b> for <m>7.25\% </m></li>
+
+  <li></li>
+</ul>
+
+
+</section>
+
+<section>
+<title>Arithmetic Operations</title>
+
+<ul>
+  <li>Type <b>x^2 </b> for <m> x^2 </m></li>
+</ul>
+
+
+</section>
+
+<section>
+<title>Set Operations</title>
+
+<ul>
+  <li>Type <b>{1,4,5,6,7,8} </b> for <m>\{1,4,5,6,7,8 \} </m> in <tt>WeBWorK.</tt> Elements of sets are contained in curly braces.</li>
+  <li>Type capital <b>U</b> for <m>\cup </m> the union symbol</li>
+  <li> Type <b>(-inf,-2]U[1,inf)</b> for <m>(-\infty, -2]\cup [1,\infty)</m></li>
+  <li>Type <b>None</b> for empty sets</li>
+</ul>
+
+
+</section>
+
+<section>
+<title>Intervals</title>
+
+<ul>
+  <li>Type <b>[4,inf)</b> for the interval  <m> [4,\infty )</m></li>
+  <li>Type <b>(-inf,-4)</b> for the interval  <m> (-\infty, -4)</m></li>
+  <li>Type <b>(-inf,inf)</b> for the interval  <m> (-\infty, \infty)</m></li>
+</ul>
+
+
+</section>
+
+<section>
+<title>Inequalities</title>
+
+<ul>
+  <li>Type the two symbols <b><gt />= </b> together for <m>\geq</m></li>
+  <li>Type the two symbols <b><lt />= </b> together for <m>\leq</m></li>
+  <li>Type <b>-inf <lt />x <lt />inf</b> for the inequality <m>-\infty \lt x \lt \infty</m></li>
+  <li>Type <b>x <lt />= -3</b> for the inequality <m>x \leq -3</m></li>
+</ul>
+
+
+</section>
+
+<section>
+<title>Equations</title>
+
+<ul>
+  <li>2 solutions: Type <b>x=7 or x=-7</b></li>
+  <li>0 solutions: Type <b>No solution</b></li>
+</ul>
+
+
+
+</section>
+
+<section>
+<title>Graphs and Lines</title>
+
+<ul>
+  <li>Points in the plane are entered as <b>(#,#)=(horizontal #, vertical #)=(independent, dependent)=(predictor, response)</b></li>
+  <li>For the first quadrant, type <b>Q1</b>, for the second quadrant, type <b>Q2</b>, etc.</li>
+  <li>Type <b>undefined</b> for the slope of a vertical line in <tt>WeBWorK</tt></li>
+</ul>
+
+
+
+
+
+</section>
+</chapter>
