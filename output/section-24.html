@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--* Generated from MathBook XML source *-->
+<!--*    on 2016-07-07T19:09:41-06:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Linear Equation Applications</title>
+<meta name="Keywords" content="Authored in MathBook XML">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+// contrib directory for accessibility menu, moot after v2.6+?
+MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        // [Contrib]accessibility menu moot after v2.6+?
+        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", "[Contrib]/a11y/accessibility-menu.js", ],
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    "HTML-CSS": {
+        scale: 88,
+    },
+});
+    </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-2.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<div style="display:none;">\(
+\newcommand{\lt}{ &lt; }
+\newcommand{\gt}{ &gt; }
+\newcommand{\amp}{ &amp; }
+\)</div>
+<header id="masthead"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><span class="title">Title goes here</span></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="previous-button toolbar-item button" href="section-23.html">Previous</a><a class="up-button button toolbar-item" href="chapter-4.html">Up</a><a class="next-button button toolbar-item" href="section-25.html">Next</a>
+</div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-23.html">Previous</a><a class="up-button button toolbar-item" href="chapter-4.html">Up</a><a class="next-button button toolbar-item" href="section-25.html">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="chapter-1.html"><span class="codenumber">1</span><span class="title">MAT-101: Set 00-Preliminaries</span></a></h2>
+<ul>
+<li><a href="section-1.html">Integer Addition and Subtraction</a></li>
+<li><a href="section-2.html">Integer Multiplication and Division</a></li>
+<li><a href="section-3.html">Operations of Numbers</a></li>
+<li><a href="section-4.html">Working with Variables</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html"><span class="codenumber">2</span><span class="title">MAT-101: Set 1A-Fractions</span></a></h2>
+<ul>
+<li><a href="section-5.html">Fractions</a></li>
+<li><a href="section-6.html">Multiplication and Division of Fractions</a></li>
+<li><a href="section-7.html">Common Denominators</a></li>
+<li><a href="section-8.html">Addition and Subtraction of Fractions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html"><span class="codenumber">3</span><span class="title">MAT-101: Set 1B-Percents and Estimation</span></a></h2>
+<ul>
+<li><a href="section-9.html">Percents</a></li>
+<li><a href="section-10.html">Converting Between Percents and Decimals</a></li>
+<li><a href="section-11.html">Determining a Percent of a Number</a></li>
+<li><a href="section-12.html">Decimals on the Real Number Line</a></li>
+<li><a href="section-13.html">Rounding Decimals</a></li>
+<li><a href="section-14.html">Estimation</a></li>
+</ul>
+<h2 class="link active"><a href="chapter-4.html"><span class="codenumber">4</span><span class="title">MAT-101: Set 2A-Linear Equations and Inequalities</span></a></h2>
+<ul>
+<li><a href="section-15.html">Linear Equations</a></li>
+<li><a href="section-16.html">Addition Problems</a></li>
+<li><a href="section-17.html">Subtraction Problems</a></li>
+<li><a href="section-18.html">Multiplication Problems</a></li>
+<li><a href="section-19.html">Division Problems</a></li>
+<li><a href="section-20.html">Linear Equations - Two-Step Equations</a></li>
+<li><a href="section-21.html">Solving Linear Equations-General Equations</a></li>
+<li><a href="section-22.html">Linear Inequalities</a></li>
+<li><a href="section-23.html">Compound Inequalities</a></li>
+<li><a href="section-24.html" class="active">Linear Equation Applications</a></li>
+<li><a href="section-25.html">Practical Percent Problems</a></li>
+<li><a href="section-26.html">Percent Increase or Decrease</a></li>
+<li><a href="section-27.html">Discount</a></li>
+</ul>
+<h2 class="link"><a href="chapter-5.html"><span class="codenumber">5</span><span class="title">MAT-101: Set 2B-Absolute Value Equations and Inequalities</span></a></h2>
+<ul><li><a href="section-28.html">Absolute Value Equations</a></li></ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-24"><header title="Section 4.10 Linear Equation Applications"><h1 class="heading hide-type" alt="Section 4.10 Linear Equation Applications">
+<span class="type">Section</span><span class="codenumber">4.10</span><span class="title">Linear Equation Applications</span>
+</h1></header><p id="p-187">Applications are better known as "story problems." Story problems can be challenging, but are a powerful use of mathematics. Often it takes a bit of practice to convert the
+English sentence into a mathematical sentence. This is what we will focus on here
+with some basic number and parts problems.</p>
+<p id="p-188">A few important phrases are described below that can give us clues for how to set
+up a problem.</p>
+<ul style="list-style-type: disc;">
+<li id="li-18">A number (or unknown, a value, etc) often becomes our variable</li>
+<li id="li-19">Is (or other forms of is: was, will be, are, etc) often represents equals (\(=\))</li>
+<li id="li-20">More than often represents addition and is usually built backwards,
+writing the second part plus the first</li>
+<li id="li-21">Less than often represents subtraction and is usually built backwards as
+well, writing the second part minus the first</li>
+<li id="li-22">Times often represents multiplicaton </li>
+<li id="li-23">Of often represents multiplicaton in percent problems </li>
+</ul>
+<p id="p-194">Using these key phrases we can take a number problem and set up an equation
+and solve.</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-83" id="example-83"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">4.10.1</span><span class="title"> Application</span>
+</h5></article></a></div>
+<div id="hk-example-83" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-195">
+
+
+If \(28\) less than five times a certain number is \(232\), what is the number?
+</p>
+<figure class="figure-like" id="table-88">
+\(5x-28\)
+Subtraction is built backwards, multiply the unknown by \(5\)
+  
+\(5x-28=232\)
+Is translates to equals
+  
+\(\,\,\,\,\,\underline{+28\,\,+28}\)
+Add 28 to both sides
+  
+\(5x=260\)
+The variable is multiplied by \(5\)
+  
+\(\overline{5}\,\,\,\,\,\,\,\,\,\,\overline{5}\,\,\,\)
+Divide both sides by \(5\)
+  
+\(x=52\)
+The number is \(52\).
+  </figure></article></div></section></div></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--* Generated from MathBook XML source *-->
+<!--*    on 2016-07-07T19:09:40-06:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Working with Variables</title>
+<meta name="Keywords" content="Authored in MathBook XML">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+// contrib directory for accessibility menu, moot after v2.6+?
+MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        // [Contrib]accessibility menu moot after v2.6+?
+        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", "[Contrib]/a11y/accessibility-menu.js", ],
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    "HTML-CSS": {
+        scale: 88,
+    },
+});
+    </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-2.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<div style="display:none;">\(
+\newcommand{\lt}{ &lt; }
+\newcommand{\gt}{ &gt; }
+\newcommand{\amp}{ &amp; }
+\)</div>
+<header id="masthead"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><span class="title">Title goes here</span></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="previous-button toolbar-item button" href="section-3.html">Previous</a><a class="up-button button toolbar-item" href="chapter-1.html">Up</a><a class="next-button button toolbar-item" href="chapter-2.html">Next</a>
+</div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-3.html">Previous</a><a class="up-button button toolbar-item" href="chapter-1.html">Up</a><a class="next-button button toolbar-item" href="chapter-2.html">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link active"><a href="chapter-1.html"><span class="codenumber">1</span><span class="title">MAT-101: Set 00-Preliminaries</span></a></h2>
+<ul>
+<li><a href="section-1.html">Integer Addition and Subtraction</a></li>
+<li><a href="section-2.html">Integer Multiplication and Division</a></li>
+<li><a href="section-3.html">Operations of Numbers</a></li>
+<li><a href="section-4.html" class="active">Working with Variables</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html"><span class="codenumber">2</span><span class="title">MAT-101: Set 1A-Fractions</span></a></h2>
+<ul>
+<li><a href="section-5.html">Fractions</a></li>
+<li><a href="section-6.html">Multiplication and Division of Fractions</a></li>
+<li><a href="section-7.html">Common Denominators</a></li>
+<li><a href="section-8.html">Addition and Subtraction of Fractions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html"><span class="codenumber">3</span><span class="title">MAT-101: Set 1B-Percents and Estimation</span></a></h2>
+<ul>
+<li><a href="section-9.html">Percents</a></li>
+<li><a href="section-10.html">Converting Between Percents and Decimals</a></li>
+<li><a href="section-11.html">Determining a Percent of a Number</a></li>
+<li><a href="section-12.html">Decimals on the Real Number Line</a></li>
+<li><a href="section-13.html">Rounding Decimals</a></li>
+<li><a href="section-14.html">Estimation</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html"><span class="codenumber">4</span><span class="title">MAT-101: Set 2A-Linear Equations and Inequalities</span></a></h2>
+<ul>
+<li><a href="section-15.html">Linear Equations</a></li>
+<li><a href="section-16.html">Addition Problems</a></li>
+<li><a href="section-17.html">Subtraction Problems</a></li>
+<li><a href="section-18.html">Multiplication Problems</a></li>
+<li><a href="section-19.html">Division Problems</a></li>
+<li><a href="section-20.html">Linear Equations - Two-Step Equations</a></li>
+<li><a href="section-21.html">Solving Linear Equations-General Equations</a></li>
+<li><a href="section-22.html">Linear Inequalities</a></li>
+<li><a href="section-23.html">Compound Inequalities</a></li>
+<li><a href="section-24.html">Linear Equation Applications</a></li>
+<li><a href="section-25.html">Practical Percent Problems</a></li>
+<li><a href="section-26.html">Percent Increase or Decrease</a></li>
+<li><a href="section-27.html">Discount</a></li>
+</ul>
+<h2 class="link"><a href="chapter-5.html"><span class="codenumber">5</span><span class="title">MAT-101: Set 2B-Absolute Value Equations and Inequalities</span></a></h2>
+<ul><li><a href="section-28.html">Absolute Value Equations</a></li></ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-4"><header title="Section 1.4 Working with Variables"><h1 class="heading hide-type" alt="Section 1.4 Working with Variables">
+<span class="type">Section</span><span class="codenumber">1.4</span><span class="title">Working with Variables</span>
+</h1></header><p id="p-47">
+The first form of simplifying expressions is used when we know what number each
+variable in the expression represents. If we know what they represent we can
+replace each variable with the equivalent number and simplify what remains using
+order of operations. </p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-20" id="example-20"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.4.1</span><span class="title"> Evaluate Expression</span>
+</h5></article></a></div>
+<div id="hk-example-20" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-48">
+
+
+</p>
+<figure class="figure-like" id="table-21">
+\(p(q +6)\) when \(p=3\) and \(q=5\)
+Replace \(p\) with \(3\) and \(q\) with \(5\)
+  
+\((3)((5)+6)\)
+Evaluate parenthesis
+  
+\((3)(11)\)
+Multiply
+  
+\(33\)
+Our Solution
+  </figure><p id="p-49">
+Whenever a variable is replaced with something, we will put the new number
+inside a set of parenthesis. Notice the \(3\) and \(5\) in the previous example are in
+parenthesis. This is to preserve operations that are sometimes lost in a simple
+replacement. Sometimes the parenthesis won't make a difference, but it is a good
+habit to always use them to prevent problems later. </p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-21" id="example-21"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.4.2</span><span class="title"> Evaluate Expression</span>
+</h5></article></a></div>
+<div id="hk-example-21" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-50">
+
+
+
+</p>
+<figure class="figure-like" id="table-22">
+\(x+zx(3-z)\left(\dfrac{x}{3} \right)\)
+        when \(x=-6\) and \(z =-2\)
+Replace all \(x\)'s with \(-6\) and \(z\)'s with \(-2\)
+  
+\((-6)+(-2)(-6)(3-(-2))\left(\dfrac{(-6)}{3} \right)\)
+Evaluate parenthesis
+  
+\(-6+(-2)(-6)(5)(-2)\)
+Multiply left to right
+  
+\(-6+(12)(5)(-2)\)
+Multiply left to right
+  
+\(-6+(60)(-2)\)
+Multiply
+  
+\(-6-120\)
+Subtract
+  
+\(-126\)
+Our Solution
+  </figure><p id="p-51">
+It will be more common in our study of algebra that we do not know the value of
+the variables. In this case, we will have to simplify what we can and leave the
+variables in our final solution. One way we can simplify expressions is to combine
+like terms. Like terms are terms where the variables match exactly (exponents
+included). Examples of like terms would be \(3xy\) and \(-7xy\) or \(3a^2b\) and \(8a^2b\) or \(-3\) and \(5\). If we have like terms we are allowed to add (or subtract) the numbers in
+front of the variables, then keep the variables the same. This is shown in the following
+examples: </p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-22" id="example-22"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.4.3</span><span class="title"> Combine Like Terms</span>
+</h5></article></a></div>
+<div id="hk-example-22" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-52">
+
+
+
+</p>
+<figure class="figure-like" id="table-23">
+\(5x-2y -8x+7y\)
+Combine like terms \(5x-8x\) and \(-2y +7y\)
+  
+\(-3x+5y\)
+Our Solution
+  </figure></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-23" id="example-23"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.4.4</span><span class="title"> Combine Like Terms</span>
+</h5></article></a></div>
+<div id="hk-example-23" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-53">
+
+
+
+</p>
+<figure class="figure-like" id="table-24">
+\(8x^2-3x+7-2x^2+4x-3\)
+Combine like terms \(8x^2-2x^2\) and \(-3x+4x\) and \(7-3\)
+  
+\(6x^2+x+4\)
+Our Solution 
+                       Type x^2  for \( x^2 \) in WeBWorK
+                       
+  </figure><p id="p-54">
+As we combine like terms we need to interpret subtraction signs as part of the following
+term. This means if we see a subtraction sign, we treat the following term
+like a negative term, the sign always stays with the term. </p>
+<p id="p-55">
+A final method to simplify is known as distributing. Often as we work with problems
+there will be a set of parenthesis that make solving a problem difficult, if not
+impossible. To get rid of these unwanted parenthesis we have the distributive
+property. Using this property we multiply the number in front of the parenthesis
+by each term inside of the parenthesis. </p>Distributive Property:\(a(b+c)=ab+ac\)<p id="p-56">
+Several examples of using the distributive property are given below. </p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-24" id="example-24"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.4.5</span><span class="title"> Distribute a Positive</span>
+</h5></article></a></div>
+<div id="hk-example-24" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-57">
+
+
+</p>
+<figure class="figure-like" id="table-25">
+\(4(2x-7)\)
+Multiply each term by \(4\)
+  
+\(8x-28\)
+Our Solution
+  </figure></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-25" id="example-25"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.4.6</span><span class="title"> Distribute a Negative</span>
+</h5></article></a></div>
+<div id="hk-example-25" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-58">
+
+
+
+</p>
+<figure class="figure-like" id="table-26">
+\(-7(5x-6)\)
+Multiply each term by \(-7\)
+  
+\(-35x+42\)
+Our Solution
+  </figure><p id="p-59">
+In the previous example we again use the fact that the sign goes with the number.
+This means we treat the \(-6\) as a negative number, this gives \((-7)(-6) = 42\), a
+positive number. The most common error in distributing is a sign error, be very
+careful with your signs! </p>
+<p id="p-60">
+It is possible to distribute just a negative through parenthesis. If we have a negative
+in front of parenthesis we can think of it like a \(-1\) in front and distribute the
+\(-1\) through. This is shown in the following example. </p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-26" id="example-26"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.4.7</span><span class="title"> Distribute a Negative</span>
+</h5></article></a></div>
+<div id="hk-example-26" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-61">
+
+
+
+</p>
+<figure class="figure-like" id="table-27">
+\(-(4x-5y +6)\)
+Negative can be thought of as \(-1\)
+  
+\(-1(4x-5y +6)\)
+Multiply each term by \(-1\)
+  
+\(-4x+5y -6\)
+Our Solution
+  </figure><p id="p-62">
+Distributing through parenthesis and combining like terms can be combined into
+one problem. Order of operations tells us to multiply (distribute) first then add or
+subtract last (combine like terms). Thus we do each problem in two steps, distribute
+then combine. </p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-27" id="example-27"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.4.8</span><span class="title"> Simplify</span>
+</h5></article></a></div>
+<div id="hk-example-27" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-63">
+
+
+</p>
+<figure class="figure-like" id="table-28">
+\(5+3(2x-4)\)
+Distribute \(3\), multiplying each term
+  
+\(5+6x-12\)
+Combine like terms \(5-12\)
+  
+\(-7+6x\)
+Our Solution
+  </figure></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-28" id="example-28"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.4.9</span><span class="title"> Simplify</span>
+</h5></article></a></div>
+<div id="hk-example-28" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-64">
+
+
+
+</p>
+<figure class="figure-like" id="table-29">
+\(3x-2(4x-5)\)
+Distribute \(-2\), multiplying each term
+  
+\(3x-8x+10\)
+Combine like terms \(3x-8x\)
+  
+\(-5x+10\)
+Our Solution
+  </figure><p id="p-65">
+In the previous example we distributed \(-2\), not just \(2\). This is because we will
+always treat subtraction like a negative sign that goes with the number after it.
+This makes a big difference when we multiply by the \(-5\) inside the parenthesis,
+we now have a positive answer. Following are more involved examples of distributing
+and combining like terms. </p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-29" id="example-29"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.4.10</span><span class="title"> Simplify</span>
+</h5></article></a></div>
+<div id="hk-example-29" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-66">
+
+
+
+</p>
+<figure class="figure-like" id="table-30">
+\(2(5x-8)-6(4x+3)\)
+Distribute \(2\) into first parenthesis and \(-6\) into second
+  
+\(10x-16-24x-18\)
+Combine like terms \(10x-24x\) and \(-16-18\)
+  
+\(-14x-34\)
+Our Solution
+  </figure></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-30" id="example-30"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.4.11</span><span class="title"> Simplify</span>
+</h5></article></a></div>
+<div id="hk-example-30" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-67">
+
+
+
+</p>
+<figure class="figure-like" id="table-31">
+\(4(3x-8)-(2x-7)\)
+Negative (subtract) in middle can be thought of as \(-1\)
+  
+\(4(3x-8)-1(2x-7)\)
+Distribute \(4\) into first parenthesis and \(-1\) into second
+  
+\(12x-32-2x+7\)
+Combine like terms \(12x-2x\) and \(-32+7\)
+  
+\(10x-25\)
+Our Solution
+  </figure></article></div></section></div></main>
+</div>
+</body>
+</html>

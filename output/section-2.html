@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--* Generated from MathBook XML source *-->
+<!--*    on 2016-07-07T19:09:40-06:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Integer Multiplication and Division</title>
+<meta name="Keywords" content="Authored in MathBook XML">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+// contrib directory for accessibility menu, moot after v2.6+?
+MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        // [Contrib]accessibility menu moot after v2.6+?
+        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", "[Contrib]/a11y/accessibility-menu.js", ],
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    "HTML-CSS": {
+        scale: 88,
+    },
+});
+    </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-2.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<div style="display:none;">\(
+\newcommand{\lt}{ &lt; }
+\newcommand{\gt}{ &gt; }
+\newcommand{\amp}{ &amp; }
+\)</div>
+<header id="masthead"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><span class="title">Title goes here</span></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="previous-button toolbar-item button" href="section-1.html">Previous</a><a class="up-button button toolbar-item" href="chapter-1.html">Up</a><a class="next-button button toolbar-item" href="section-3.html">Next</a>
+</div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-1.html">Previous</a><a class="up-button button toolbar-item" href="chapter-1.html">Up</a><a class="next-button button toolbar-item" href="section-3.html">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link active"><a href="chapter-1.html"><span class="codenumber">1</span><span class="title">MAT-101: Set 00-Preliminaries</span></a></h2>
+<ul>
+<li><a href="section-1.html">Integer Addition and Subtraction</a></li>
+<li><a href="section-2.html" class="active">Integer Multiplication and Division</a></li>
+<li><a href="section-3.html">Operations of Numbers</a></li>
+<li><a href="section-4.html">Working with Variables</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html"><span class="codenumber">2</span><span class="title">MAT-101: Set 1A-Fractions</span></a></h2>
+<ul>
+<li><a href="section-5.html">Fractions</a></li>
+<li><a href="section-6.html">Multiplication and Division of Fractions</a></li>
+<li><a href="section-7.html">Common Denominators</a></li>
+<li><a href="section-8.html">Addition and Subtraction of Fractions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html"><span class="codenumber">3</span><span class="title">MAT-101: Set 1B-Percents and Estimation</span></a></h2>
+<ul>
+<li><a href="section-9.html">Percents</a></li>
+<li><a href="section-10.html">Converting Between Percents and Decimals</a></li>
+<li><a href="section-11.html">Determining a Percent of a Number</a></li>
+<li><a href="section-12.html">Decimals on the Real Number Line</a></li>
+<li><a href="section-13.html">Rounding Decimals</a></li>
+<li><a href="section-14.html">Estimation</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html"><span class="codenumber">4</span><span class="title">MAT-101: Set 2A-Linear Equations and Inequalities</span></a></h2>
+<ul>
+<li><a href="section-15.html">Linear Equations</a></li>
+<li><a href="section-16.html">Addition Problems</a></li>
+<li><a href="section-17.html">Subtraction Problems</a></li>
+<li><a href="section-18.html">Multiplication Problems</a></li>
+<li><a href="section-19.html">Division Problems</a></li>
+<li><a href="section-20.html">Linear Equations - Two-Step Equations</a></li>
+<li><a href="section-21.html">Solving Linear Equations-General Equations</a></li>
+<li><a href="section-22.html">Linear Inequalities</a></li>
+<li><a href="section-23.html">Compound Inequalities</a></li>
+<li><a href="section-24.html">Linear Equation Applications</a></li>
+<li><a href="section-25.html">Practical Percent Problems</a></li>
+<li><a href="section-26.html">Percent Increase or Decrease</a></li>
+<li><a href="section-27.html">Discount</a></li>
+</ul>
+<h2 class="link"><a href="chapter-5.html"><span class="codenumber">5</span><span class="title">MAT-101: Set 2B-Absolute Value Equations and Inequalities</span></a></h2>
+<ul><li><a href="section-28.html">Absolute Value Equations</a></li></ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-2"><header title="Section 1.2 Integer Multiplication and Division"><h1 class="heading hide-type" alt="Section 1.2 Integer Multiplication and Division">
+<span class="type">Section</span><span class="codenumber">1.2</span><span class="title">Integer Multiplication and Division</span>
+</h1></header><p id="p-17"> Multiplication and division of integers both work in a very similar pattern. The
+  short description of the process is we multiply and divide like normal, if the signs
+  match (both positive or both negative) the answer is positive. If the signs don't
+  match (one positive and one negative) then the answer is negative. This is shown
+  in the following examples: </p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-9" id="example-9"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.2.1</span><span class="title"> Multiply</span>
+</h5></article></a></div>
+<div id="hk-example-9" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-18">
+
+  
+
+</p>
+<figure class="figure-like" id="table-9">
+\((4)(-6)\)
+Signs do not match, answer is negative
+  
+\(-24\)
+Our Solution
+  </figure></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-10" id="example-10"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.2.2</span><span class="title"> Divide </span>
+</h5></article></a></div>
+<div id="hk-example-10" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-19">
+
+
+
+</p>
+<figure class="figure-like" id="table-10">
+\(-36\div -9\)
+Signs match, answer is positive
+        (Note that we could also write \(\frac{-36}{-9}\) for division)
+  
+\(4\)
+Our Solution
+  </figure></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-11" id="example-11"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.2.3</span><span class="title"> Multiply</span>
+</h5></article></a></div>
+<div id="hk-example-11" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-20">
+
+  
+
+</p>
+<figure class="figure-like" id="table-11">
+\((-2)(-6)\)
+Signs match, answer is positive
+  
+\(12\)
+Our Solution
+  </figure></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-12" id="example-12"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.2.4</span><span class="title"> Divide</span>
+</h5></article></a></div>
+<div id="hk-example-12" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-21">
+
+  
+
+</p>
+<figure class="figure-like" id="table-12">
+\(15\div -3 = \dfrac{15}{-3}\)
+Signs do not match, answer is negative
+  
+\(-5\)
+Our Solution
+  </figure><p id="p-22">
+Exponents are used to denote repeated multiplication of an integer times itself.
+</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-13" id="example-13"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.2.5</span><span class="title"> Exponents: Evaluate \(6^2\)</span>
+</h5></article></a></div>
+<div id="hk-example-13" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-23">
+
+</p>
+<figure class="figure-like" id="table-13">
+\(6^2=(6)(6) \)
+The exponent \(2\) means the base \(6\) is multiplied by itself \(2\) times
+        (Note that we could also write \(6\cdot6 \) for multiplication)
+  
+\(36\)
+Our Solution
+  </figure></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-14" id="example-14"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.2.6</span><span class="title"> Exponents: Evaluate \((-5)^3\)</span>
+</h5></article></a></div>
+<div id="hk-example-14" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-24">
+
+</p>
+<figure class="figure-like" id="table-14">
+\((-5)^3=(-5)(-5)(-5) \)
+The exponent \(3\) means the base \(-5\) is multiplied by itself \(3\) times (there are \(3\) negatives)
+  
+\(-125\)
+Our Solution
+  </figure><p id="p-25">A few things to be careful of when working with integers. First be sure not to
+  confuse a problem like \(-3-8\) with \(-3(-8)\). The second problem is a multiplication
+  problem because there is nothing between the \(3\) and the parenthesis. If
+  there is no operation written in between the parts, then we assume that means we
+  are multiplying. The  \(-3-8\) problem is subtraction because the subtraction separates
+  the 3 from what comes after it. Another item to watch out for is to be
+  careful not to mix up the pattern for adding and subtracting integers with the
+  pattern for multiplying and dividing integers. They can look very similar, for
+  example if the signs match on addition, the we keep the negative, \(-3 + (-7) = -
+  10\), but if the signs match on multiplication, the answer is positive, \((-3)(-7) =
+  21\). </p></article></div></section></div></main>
+</div>
+</body>
+</html>
