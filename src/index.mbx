@@ -2,15 +2,16 @@
 <mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">`
 
 <book>
-    <title>Title goes here</title>
+    <title>Survey of Algebra and Probability</title>
+        <subtitle>MAT 101</subtitle>
 
 <xi:include href="./set00_Preliminaries.mbx" />
 <xi:include href="./set1A_Fractions.mbx" />
 <xi:include href="./set1B_Percents_and_Estimation.mbx" />
 <xi:include href="./set2A_Linear_Equations_and_Inequalities.mbx" />
 <xi:include href="./set2B_Absolute_Value_Equations_and_Inequalities.mbx" />
-<!--
 <xi:include href="./set2C_Exponents_and_Scientific_Notation.mbx" />
+<!--
 <xi:include href="./set3A_Interpreting_Graphs.mbx" />
 <xi:include href="./set3B_Lines.mbx" />
 <xi:include href="./set3C_Linear_Models.mbx" />
