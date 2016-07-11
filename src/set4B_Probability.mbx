@@ -9,6 +9,10 @@
   </ul>
 </introduction>
 
+<section>
+<title>Introduction</title>
+
+
   <p>
    <!--   This is CoconinoCC_chapter_4_Probability.pdf page 111 -->
   One story about how probability theory was developed is that a gambler wanted to know when to bet more and when to bet less. He talked to a couple of friends of his that happened to be mathematicians. Their names were Pierre de Fermat and Blaise Pascal. Since then many other mathematicians have worked to develop probability theory.
@@ -18,6 +22,9 @@
   Understanding probabilities are important in life. Examples of mundane questions that
 probability can answer for you are if you need to carry an umbrella or wear a heavy coat on a given day. More important questions that probability can help with are your chances that the car you are buying will need more maintenance, your chances of passing a class, your chances of winning the lottery, your chances of being in a car accident, and the chances that the U.S. will be attacked by terrorists. Most people do not have a very good understanding of probability, so they worry about being attacked by a terrorist but not about being in a car accident. The probability of being in a terrorist attack is much smaller than the probability of being in a car accident, thus it actually would make more sense to worry about driving. Also, the chance of you winning the lottery is very small, yet many people will spend the money on lottery tickets. Yet, if instead they saved the money that they spend on the lottery, they would have more money. In general, events that have a low probability (under <m>5\%</m>) are unlikely to occur. Whereas, if an event has a high probability of happening (over <m>80\%</m>), then there is a good chance that the event will happen. This chapter will present some of the theory that you need to help make a determination of whether an event is likely to happen or not.
   </p>
+
+
+</section>
 
 <section>
 <title>Experiments and Sample Spaces</title>
@@ -64,7 +71,7 @@ An act of flipping coins, rolling dice, drawing cards, or surveying people are r
  
  Consider the experiment of rolling an ordinary 6-sided die (and observing the number of dots showing up on the roll).
  <!--   This is like http://cnx.org/content/col10613/1.5/ Example 13.1 page 209, but modified to match our webwork  -->
-
+<p>
 </p>
 <table  align="center">
   <tr>
@@ -96,7 +103,7 @@ An act of flipping coins, rolling dice, drawing cards, or surveying people are r
 <td align="right"><m>P(B) =\dfrac{n(B)}{n(SS)}=\dfrac{3}{6}=\dfrac{1}{2}=0.5</m></td>
 <td>Our Second Solution: The probability of rolling an even number is <m>\dfrac{1}{2}=0.5</m> or <m>50\%</m>.</td>
   </tr>
-</table>
+</table></p>
 
  </example>
 
@@ -106,7 +113,7 @@ An act of flipping coins, rolling dice, drawing cards, or surveying people are r
  
  A family has three children. Write a sample space (for the possible genders of children in the family).
  <!--   This is T http://cnx.org/content/col10613/1.5/ Example 13.2 page 210  -->
-
+<p>
 </p>
 <table  align="center">
   <tr>
@@ -115,8 +122,10 @@ An act of flipping coins, rolling dice, drawing cards, or surveying people are r
   </tr>
 <tr>
 <td colspan="2">There are two choices for each child's gender. We create a table as in  <b>Set4A-Sets and Counting</b>.</td>
+<!--
   <tr>
-<td colspan="2" align ="center">
+-->
+    <td colspan="2" align ="center">FIX ME!!<!--
                 <table align="center"  border="1">
   <tr>
 <td   align="center">Child 1</td>
@@ -150,9 +159,9 @@ An act of flipping coins, rolling dice, drawing cards, or surveying people are r
   </tr>
 <tr>
 <td align="right"><m>SS=\{BBB,BBG,BGB,BGG,GBB,GBG,GGB,GGG \}</m></td>
-<td>Our Solution</td>
+<td>Our Solution--></td>
   </tr>
-</table>
+</table></p>
 
  </example>
 
@@ -162,6 +171,7 @@ An act of flipping coins, rolling dice, drawing cards, or surveying people are r
  
  A family has three children. Determine the probability of the family having at least two girls.
  <!--   our own -->
+ <p>
  </p>
 <table  align="center">
   <tr>
@@ -180,10 +190,7 @@ An act of flipping coins, rolling dice, drawing cards, or surveying people are r
 <td align="right"><m>P(A) = \dfrac{\text{# of outcomes in event space <m>A</m>}}{\text{# of outcomes in sample space <m>SS</m>}}=\dfrac{4}{8}=\dfrac{1}{2}=0.5</m></td>
 <td>Our Solution: The probability of the family having at least two girls is <m>\dfrac{1}{2}</m> or <m>50\%</m>.</td>
   </tr>
-</table>
-
-
-
+</table></p>
 
 </example>
 
@@ -193,7 +200,7 @@ An act of flipping coins, rolling dice, drawing cards, or surveying people are r
  
 Two fair dice are rolled. Write the sample space.
  <!--   This is T http://cnx.org/content/col10613/1.5/ Example 13.3 page 210  -->
-
+<p>
 </p>
 <table  align="center">
   <tr>
@@ -201,7 +208,7 @@ Two fair dice are rolled. Write the sample space.
 <td>We create a table as before.</td>
   </tr>
 <tr>
-<td colspan="2" align ="center">
+<td colspan="2" align ="center">FIX ME!!<!--
                 <table align="center"  border="1">
   <tr>
 <td  align="center"><m>\,</m></td>
@@ -274,18 +281,18 @@ Two fair dice are rolled. Write the sample space.
   </tr>
 <tr>
 <td align="right"><m>SS=\{(1,1), (1,2),...,(6,6) \}</m></td>
-<td>Our Solution: The sample space is the <m>36=6\times 6</m> outcomes listed in the table above.</td>
+<td>-->Our Solution: The sample space is the <m>36=6\times 6</m> outcomes listed in the table above.</td>
   </tr>
-</table></td>
-  </tr>
-</example>
+</table></p>
+               
+  </example>
 
 <example>
-<title> Two Dice--Probabilities of certain sums</title>
+<title> Two Dice-Probabilities of certain sums</title>
 <p>
  Two fair dice are rolled. Determine the following probabilities.
  <!--   This matches our WeBWorK  -->
-
+<p>
   </p>
 <table  align="center">
   <tr>
@@ -316,7 +323,7 @@ Two fair dice are rolled. Write the sample space.
 <td align="right"><m>P(D \leq 4) =\dfrac{n(D \leq 4)}{n(SS)}=\dfrac{6}{36}=\dfrac{1}{6}\approx 0.1667</m></td>
 <td>Our Solution (b): The probability of a sum less than or equal to <m>4</m> on the two dice is <m>\dfrac{1}{6}</m> or about <m>16.67\%</m>.</td>
   </tr>
-</table>
+</table></p>
 
 </example>
 
@@ -326,6 +333,7 @@ Two fair dice are rolled. Write the sample space.
  
 Suppose you conduct an experiment where you pull a card from a standard deck of cards. Recall this deck has <m>4</m> suits (black spades <m>S</m>, black clubs <m>C</m>, <font color="#FF0000"/>red diamonds <m>D</m>, and <font color="#FF0000"/>red hearts <m>H</m>) each with <m>13</m> cards (numbers <m>2</m> through <m>10</m>, jack <m>J</m>, queen <m>Q</m>, king <m>K</m>, and ace <m>A</m>). We will generally consider the face cards to be the jacks, hearts, queens, kings, and aces. Determine the following probabilities.
  <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.2 Example 4.2.3, page 117 -->
+ <p>
  </p>
 <table  align="center">
   <tr>
@@ -372,7 +380,7 @@ Suppose you conduct an experiment where you pull a card from a standard deck of 
 <td align="right"><m>P (Club \cup Face)=  \dfrac{n(Club \cup Face)}{n(SS)}=\dfrac{25}{52} \approx  0.480769</m></td>
 <td>Our Solution (c): The probability of selecting a club or a face card is <m>\dfrac{25}{52}</m> or about <m>48.08\%</m>.</td>
   </tr>
-</table>
+</table></p>
 
 
   <p>
@@ -390,9 +398,8 @@ The<b> probability </b>of event <m>A</m> is
 <p>
  
  A bag of chocolate candies contained the following distribution of colors.
-
-
-                </p>
+<p>
+    </p>
 <table align="center"  border="1">
   <tr>
 <td  align="center">Blue <m>(B)</m></td>
@@ -412,11 +419,11 @@ The<b> probability </b>of event <m>A</m> is
 <td  align="center"><m>369</m></td>
 <td  align="center"><m>2620</m></td>
   </tr>
-</table>
-
- If all of the candies are placed in a bowl and one is selected at random, determine the probability of selecting the following candies.
+</table></p>
+<p>
+ If all of the candies are placed in a bowl and one is selected at random, determine the probability of selecting the following candies.</p>
  <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.1 Homework Problem 1, page 113 -->
-
+<p>
 <table  align="center">
   <tr>
 <td align="right">Determine the probability of selecting a blue candy.</td>
@@ -438,7 +445,7 @@ The<b> probability </b>of event <m>A</m> is
 <td align="right"><m>P(P\cup Y) = \dfrac{n(P\cup Y)}{\text{Total #}}=\dfrac{740}{2620}\approx 0.2824</m></td>
 <td>Our Second Solution: The probability of selecting a purple or yellow candy is <m>\dfrac{740}{2620}</m> or about <m>28.24\%</m>.</td>
   </tr>
-</table>
+</table></p>
 
  </example>
 
@@ -447,9 +454,8 @@ The<b> probability </b>of event <m>A</m> is
 <p>
  
  The number of people who survived the Titanic based on class and gender is in the below table ("Encyclopedia Titanica," 2013). Suppose a person is picked at random from the survivors.
-
-
-                </p>
+<p>
+  </p>
 <table align="center"  border="1">
   <tr>
 <td  align="center" rowspan="2" style="vertical-align:bottom">Class</td>
@@ -484,11 +490,11 @@ The<b> probability </b>of event <m>A</m> is
 <td  align="center"><m>142</m></td>
 <td  align="center"><m>450</m></td>
   </tr>
-</table>
-
-Determine the following probabilities.
+</table></p>
+<p>
+Determine the following probabilities.</p>
  <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Homework Problem 11, page 140 -->
-
+<p>
 <table  align="center">
   <tr>
 <td align="right">Determine the probability that a survivor was female.</td>
@@ -522,7 +528,7 @@ Determine the following probabilities.
 <td align="right"><m>P(F\cup 1st) = \dfrac{n(F\cup 1st)}{\text{Total #}}=\dfrac{367}{450}\approx 0.8156</m></td>
 <td>Our Third Solution: The probability that a survivor was female OR in first class is <m>\dfrac{367}{450}</m> or about <m>81.56\%</m>.</td>
   </tr>
-</table>
+</table></p>
 
 <p>
 It may be useful to calculate probabilities using a Venn diagram.
@@ -536,6 +542,7 @@ It may be useful to calculate probabilities using a Venn diagram.
  
 Recall in <b>Example 4A-4:</b>  we considered a survey of <m>100</m> people in California indicating that <m>60</m> people had visited Disneyland, <m>15</m> had visited Knott's Berry Farm, and <m>6</m> had visited both.  Determine the following probabilities using the Venn diagram.
 
+<p>
 </p>
 <table class = "center">
   <tr>
@@ -580,8 +587,9 @@ Recall in <b>Example 4A-4:</b>  we considered a survey of <m>100</m> people in C
 <td align="right"><m>P(D\cup K) =\dfrac{69}{100}= 0.69</m></td>
 <td>Our Third Solution: The probability that a person surveyed went to either park is <m>\dfrac{69}{100}</m> or <m>69\%</m>.</td>
   </tr>
-</table>
+</table></p>
 
-</table> </example>
+
+</example>
 </section>
 </chapter>
