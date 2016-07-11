@@ -231,7 +231,7 @@ Continue with the linear model <m>DD = 0.0072D + 3</m>, where <m>DD</m> represen
 <title> Data Points</title>
 <p>
 
-In 1980, the gross domestic product (GDP) of the United States was <m>3</m> trillion dollars.  In 1990 it was <m>6</m> trillion dollars.  Let the predictor <m>t</m> denote time and the response <m>GDP</m> denote the GDP (in trillions).  Since the first given observation is from 1980, let <m>t=0</m> correspond to the year 1980.  Identify points that represent the data.</p>
+In 1980, the gross domestic product (GDP) of the United States was <m>3</m> trillion dollars.  In 1990 it was <m>6</m> trillion dollars.  Let the predictor <m>t</m> denote time and the response <m>GDP</m> denote the GDP (in trillions).  Since the first given observation is from 1980, let <m>t=0</m> correspond to the year 1980.  Identify points that represent the data.
 <!-- Our own-->
 </p>
 <table>
@@ -268,7 +268,7 @@ In 1980, the gross domestic product (GDP) of the United States was <m>3</m> tril
 <p>
 
 Continue with the GDP example.  
-Determine a linear model for the data points <m>(0,3)</m> and <m>(10,6)</m>. </p>
+Determine a linear model for the data points <m>(0,3)</m> and <m>(10,6)</m>. 
 <!-- Our own-->
 </p>
 <table>
@@ -307,7 +307,7 @@ Determine a linear model for the data points <m>(0,3)</m> and <m>(10,6)</m>. </p
 <p>
 
 Continue with the GDP example.  
-Use the linear model to determine the year when the GDP will reach <m>\$13.5</m> trillion.</p>
+Use the linear model to determine the year when the GDP will reach <m>\$13.5</m> trillion.
 <!-- Our own-->
 </p>
 <table>
@@ -390,7 +390,7 @@ An advertiser goes to a printer and is charged <m>\$47</m> for <m>100</m> copies
 <p>
 
 Continue with the copies example. 
-  Determine a linear model for the data points <m>(100,47)</m> and <m>(259,63)</m>. </p>
+  Determine a linear model for the data points <m>(100,47)</m> and <m>(259,63)</m>. 
 <!-- Our own-->
 </p>
 <table>
@@ -439,12 +439,6 @@ Continue with the copies example.
                          </div></td>
   </tr>
 </table>
-
-
-
-
-
-
 
 </example>
 </section>
