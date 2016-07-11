@@ -18,7 +18,7 @@
    <!--   This is CoconinoCC_chapter_4_Probability.pdf page 116 -->
 The examples and WeBWorK problems of <b>Set 4B-Probability</b> demonstrated some important probability results which are summarized below.
   </p>
-
+<p>
   <div class="boxed">
          <b>Probability Properties</b>
             <ol>
@@ -28,7 +28,7 @@ The examples and WeBWorK problems of <b>Set 4B-Probability</b> demonstrated some
               <li>The probabilities of all the outcomes in a sample space add up to <m>1</m>.</li>
             </ol>
 
-        </div>
+        </div></p>
         
   <p>
   Note that events with a probability closer to <m>1</m> are more likely to occur.  Events with a small probability (closer to <m>0</m>) are less likely to occur.
@@ -45,11 +45,11 @@ The examples and WeBWorK problems of <b>Set 4B-Probability</b> demonstrated some
 <p>
 Recall the <b>complement</b> of set <m>A</m>, written as <m>A'</m>, is the set consisting of elements in the universal set <m>U</m> that are <b>NOT</b> in <m>A</m>.
 </p>
-
+<p>
 <div class="boxed">
     If two events are <b>complementary events</b> then their probabilities add up to one.  That is 
     <m>P(A) + P(A') =1</m>, or <m>P(A)=1-P(A')</m>, or <m>P(A')=1-P(A)</m>.
-</div>
+</div></p>
 
 <example>
 <title> Complementary Events--Flu</title>
@@ -58,7 +58,7 @@ Recall the <b>complement</b> of set <m>A</m>, written as <m>A'</m>, is the set c
  Suppose you know the probability of not getting the flu is <m>0.24</m>. What is the probability of getting the flu?
 
  <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.2 Example 4.2.5(b), page 121 -->
-
+<p>
  </p>
 <table  align="center">
   <tr>
@@ -77,11 +77,7 @@ Recall the <b>complement</b> of set <m>A</m>, written as <m>A'</m>, is the set c
 <td align="right"><m>P(F)=1-0.24=0.76</m></td>
 <td>Our Solution: The probability of getting the flu is  <m>0.76</m> or <m>76\%</m>. Since the probability of getting the flu is greater than the probability of not getting the flu, it is more likely to get the flu than not.</td>
   </tr>
-</table>
-
-
-
-
+</table></p>
 
  </example>
 
@@ -92,6 +88,7 @@ Recall the <b>complement</b> of set <m>A</m>, written as <m>A'</m>, is the set c
  In an experiment of picking a card from a deck, what is the probability of <b>not</b> getting a card that is a Queen?
 
  <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.2 Example 4.2.5, page 121 -->
+ <p>
  </p>
 <table  align="center">
   <tr>
@@ -119,9 +116,9 @@ Recall the <b>complement</b> of set <m>A</m>, written as <m>A'</m>, is the set c
 <td align="right"><m>P(Queen') = 1-\dfrac{4}{52}=\dfrac{38}{52}\approx  0.7308</m></td>
 <td>Our Solution: The probability of not selecting a queen is <m>\dfrac{38}{52}</m> or about <m>73.08\%</m>.</td>
   </tr>
-</table>
+</table></p>
 
-  <p>
+<p>
 The complement is useful when you are trying to find the probability of an event that
 involves the words "at least" or an event that involves the words "at most". As an example of an at least event is suppose you want to find the probability of making <em><b>at least</b></em> <m>\$50,000</m> when you graduate from college. That means you want the probability of your salary being greater than or equal to <m>\$50,000</m>. An example of an at most event is suppose you want to find the probability of rolling a die and getting <em><b>at most</b></em> a <m>4</m>. That means that you want to get less than or equal to a <m>4</m> on the die. The reason to use the complement is that sometimes it is easier to find the probability of the complement and then subtract from <m>1</m>.
 </p>
@@ -134,7 +131,7 @@ involves the words "at least" or an event that involves the words "at most". As 
 
 Two fair dice are rolled. Determine the probability of rolling a sum of at least a <m>4</m>.
  <!--   This matches our WeBWorK  -->
-
+<p>
   </p>
 <table  align="center">
   <tr>
@@ -162,7 +159,7 @@ complement.</td>
 <td align="right"><m>P(D\ge 4) = 1-P(D\lt 4)= 1-\dfrac{3}{36}=\dfrac{33}{36}\approx  0.9167</m></td>
 <td>Our Solution: The probability of rolling a sum of at least a <m>4</m> is <m>\dfrac{33}{36}</m> or about <m>91.67\%</m>.</td>
   </tr>
-</table>
+</table></p>
 
 </example>
 </section>
@@ -177,6 +174,7 @@ complement.</td>
 In an experiment of picking one card from a deck, what is the probability of getting a Jack and an Ace? What is the probability of getting a Jack or an Ace? What is the probability of getting a Spade or an Ace?
 
  <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.2 Example 4.2.5, page 121 -->
+ <p>
  </p>
 <table  align="center">
   <tr>
@@ -217,7 +215,7 @@ card.</td>
 <td align="right"><m>P(S\cup A) =\dfrac{16}{52}\approx 0.3077</m></td>
 <td>Our Solution (c): The probability of getting a Spade or an Ace is <m>\dfrac{16}{52}</m> or approximately <m>30.77\%</m>.</td>
   </tr>
-</table>
+</table></p>
 
 <p>
 The first part of <b>Example 4C-4</b> demonstrates an <b>impossible event</b>: selecting a Jack and an Ace on one draw.  The second and third parts demonstrate another probability concept.  Notice that:
@@ -239,15 +237,14 @@ together. There is overlap, mainly the ace of spades. The <m>P(S \cap A) \neq 0<
 <p>
 When two events cannot happen at the same time, they are called <b>mutually exclusive</b>. In the above situation, the events Jack and Ace are mutually exclusive, while the events Spade and Ace are not mutually exclusive.
 </p>
-
- <div class="boxed">
-
+<p>
+<div class="boxed">
 <b>Addition Rules:</b> 
     If two events <m>A</m> and <m>B</m> are mutually exclusive, then
     <m>P(A\cup B) =P(A)+ P(B)</m> and <m>P(A\cap B)=0</m>.  
     If two events <m>A</m> and <m>B</m> are not mutually exclusive, then
      <m>P(A\cup B) =P(A)+ P(B) -P(A\cap B)</m>.
-</div>
+</div></p>
 
 </example>
 
@@ -256,9 +253,8 @@ When two events cannot happen at the same time, they are called <b>mutually excl
 <p>
 
 (Recall <b>Example 4B-8</b>.) The number of people who survived the Titanic based on class and gender is in the below table ("Encyclopedia Titanica," 2013).
-
-
-                </p>
+<p>
+  </p>
 <table align="center"  border="1">
   <tr>
 <td align="center" rowspan="2" style="vertical-align:bottom">Class</td>
@@ -293,10 +289,10 @@ When two events cannot happen at the same time, they are called <b>mutually excl
 <td align="center"><m>142</m></td>
 <td align="center"><m>450</m></td>
   </tr>
-</table>
+</table></p>
 
  <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Homework Problem 11, page 140 -->
-
+<p>
 <table  align="center">
   <tr>
 <td align="right">Determine if the events survivor is a female and survivor is in the 1st class are mutually exclusive.</td>
@@ -333,8 +329,8 @@ Suppose you want to figure out if you should buy a new car. When you first go an
 <p>
 
 (Recall <b>Example 4B-8</b>.) The number of people who survived the Titanic based on class and gender is in the below table ("Encyclopedia Titanica," 2013). Suppose a person is picked at random from the survivors.
-
-                </p>
+<p>
+  </p>
 <table align="center"  border="1">
   <tr>
 <td align="center" rowspan="2" style="vertical-align:bottom">Class</td>
@@ -369,11 +365,12 @@ Suppose you want to figure out if you should buy a new car. When you first go an
 <td align="center"><m>142</m></td>
 <td align="center"><m>450</m></td>
   </tr>
-</table>
-
+</table></p>
+<p>
 Determine the following probabilities.
+</p>
  <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Homework Problem 11, page 140 -->
-
+<p>
 <table  align="center">
   <tr>
 <td>(a) Determine the probability that a survivor was in the first class.</td>
@@ -395,9 +392,7 @@ Determine the following probabilities.
 <td align="right"><m>P(F | 1st) = \dfrac{n(F\cap 1st)}{\text{n(1st)}}=\dfrac{134}{193}\approx 0.6943</m></td>
 <td>Our Solution (b): The probability that a survivor was a female given the person was in the first class is <m>\dfrac{134}{193}</m> or about <m>69.43\%</m>.</td>
   </tr>
-</table>
-
-
+</table></p>
 
 </example>
 
@@ -406,7 +401,7 @@ Determine the following probabilities.
 <p>
  Two fair dice are rolled. Determine the probability of rolling a sum of <m>5</m>, given that the first die is a <m>2</m>.
  <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.2 Example 4.3.1, page 130 -->
-
+<p>
   </p>
 <table  align="center">
   <tr>
@@ -425,7 +420,7 @@ Determine the following probabilities.
 <td align="right"><m>P(D=5|\text{the first die is a }2)=\dfrac{1}{6}\approx  0.1667</m></td>
 <td>Our Solution: The probability of rolling a sum of <m>5</m>, given that the first die is a <m>2</m> is <m>\dfrac{1}{6}</m> or about <m>16.67\%</m>.</td>
   </tr>
-</table>
+</table></p>
 
 </example>
 
@@ -435,7 +430,7 @@ Determine the following probabilities.
  Suppose you pick a card from a deck. What is the probability of getting a Spade, given that the card is a Jack?
 
  <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Example 4.3.1d, page 131 -->
-
+<p>
   </p>
 <table  align="center">
   <tr>
@@ -454,7 +449,7 @@ Determine the following probabilities.
 <td align="right"><m>P(Spade|\text{the card is a }Jack)=\dfrac{1}{4}=  0.25</m></td>
 <td>Our Solution: The probability of getting a Spade, given that the card is a Jack is <m>\dfrac{1}{4}</m> or <m>25\%</m>.</td>
   </tr>
-</table>
+</table></p>
 <p>
 If you look at the results of <b>Example 4C-8:</b>, notice that you get <m>P(Spade|\text{the card is a }Jack)=\dfrac{1}{4}</m> which is exactly the same as <m>P(Spade)=\dfrac{13}{52}</m> since there are <m>13</m> spades. This means that knowing that the card is a Jack did not change the probability that the card is a Spade. This added knowledge did not help you in any way. It is as if that information was not given at all. However, if you compare the conditional probability of  <b>Example 4C-4</b> <m>P(D=5|\text{the first die is a }2)=\dfrac{1}{6}\approx 16.67\% </m> with <m>P(D=5)=\dfrac{n(D=5)}{36}=\dfrac{4}{36}\approx 11.11\%</m>, you will notice that they are not the same answer. In this case, knowing that the first die is a <m>2</m> did change the probability of getting a sum of <m>5</m>. In the first case, the events <m>Spade</m> and <m>\text{the card is a }Jack</m> are called<b> independent events</b>. In the second case, the events sum of <m>5</m> and first die is a <m>2</m> are
 called <b>dependent events</b>.
@@ -468,18 +463,19 @@ called <b>dependent events</b>.
 
 <p>
 Events <m>A</m> and <m>B</m> are considered <b>independent events</b> if the fact that one event happens does not change the probability of the other event happening. In other words, events <m>A</m> and <m>B</m> are independent if the fact that <m>B</m> has happened does not affect the probability of event <m>A</m> happening and the fact that <m>A</m> has happened does not affect the probability of event <m>B</m> happening. Otherwise, the two events are dependent. </p>
-
+<p>
 <div class="boxed">
 In symbols, <m>A</m> and <m>B</m> are <b>independent</b> if
 <m>P(A|B) = P(A)</m> or <m>P(B|A) = P(B)</m>.
-</div>
+</div></p>
 
 <example>
 <title> Independent Events--Titanic</title>
 <p>
 
 (Recall <b>Example 4B-8</b>.) The number of people who survived the Titanic based on class and gender is in the below table ("Encyclopedia Titanica," 2013). Suppose a person is picked at random from the survivors.
-                </p>
+<p>
+  </p>
 <table align="center"  border="1">
   <tr>
 <td align="center" rowspan="2" style="vertical-align:bottom">Class</td>
@@ -514,10 +510,10 @@ In symbols, <m>A</m> and <m>B</m> are <b>independent</b> if
 <td align="center"><m>142</m></td>
 <td align="center"><m>450</m></td>
   </tr>
-</table>
+</table></p>
 
  <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Homework Problem 11, page 140 -->
-
+<p>
 <table  align="center">
   <tr>
 <td align="right">Determine if the events survivor is a female and survivor is in 1st class are independent.</td>
@@ -540,7 +536,7 @@ In symbols, <m>A</m> and <m>B</m> are <b>independent</b> if
 <td align="right">The events survivor is a female and survivor is in 1st class are NOT independent.</td>
 <td>Our Solution</td>
   </tr>
-</table>
+</table></p>
 
 </example>
 
@@ -550,7 +546,7 @@ In symbols, <m>A</m> and <m>B</m> are <b>independent</b> if
 
 Two fair dice are rolled. Are the events "sum of 7" and "first die is a 3" independent?
  <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Example 4.3.2a, page 132 -->
-
+<p>
   </p>
 <table  align="center">
   <tr>
@@ -593,7 +589,7 @@ Two fair dice are rolled. Are the events "sum of 7" and "first die is a 3" indep
 <td align="right"><m>P(A|B)=\dfrac{1}{6}=\dfrac{6}{36}=P(A)</m></td>
 <td>Our Solution: The events "sum of 7" and "first die is a 3" independent.</td>
   </tr>
-</table>
+</table></p>
 
 <p>Two events <m>A</m> and <m>B</m> are independent if the fact that <m>B</m> has happened does not affect the probability of event <m>A</m> happening.  In the case of offspring, we consider the genders to be independent.  This means, the probability of the gender of the second child is not affected by the actual gender of the first child born.  Consider the following example. </p>
 
@@ -605,7 +601,7 @@ Two fair dice are rolled. Are the events "sum of 7" and "first die is a 3" indep
 
 Male calico cats are quite rare.  In fact, the probability of a cat having a boy calico kitten is only <m>3\%</m>.  Suppose a cat has <m>3</m> calico kittens.  Use a <b>probability tree</b> to determine the following probabilities.
  <!--   Our own -->
-
+<p>
 </p>
 <table>
   <tr>
@@ -671,11 +667,7 @@ Male calico cats are quite rare.  In fact, the probability of a cat having a boy
   <m>=1-(0.97)^3\approx 1-0.9127=0.0873</m></td>
 <td>Our Solution (b): The probability of at least one of the calico kittens being a boy is approximately <m>8.73\%</m>.</td>
   </tr>
-</table>
-
-
-
-
+</table></p>
 
 
 </example>
