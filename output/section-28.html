@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--* Generated from MathBook XML source *-->
-<!--*    on 2016-07-07T19:09:41-06:00    *-->
+<!--*    on 2016-07-11T11:17:07-06:00    *-->
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
@@ -50,19 +50,21 @@ MathJax.Hub.Config({
 \)</div>
 <header id="masthead"><div class="banner"><div class="container">
 <a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><span class="title">Title goes here</span></h1>
+<h1 class="heading">
+<span class="title">Survey of Algebra and Probability</span><span class="subtitle">MAT 101</span>
+</h1>
 <p class="byline"></p>
 </div>
 </div></div>
 <nav id="primary-navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="previous-button toolbar-item button" href="chapter-5.html">Previous</a><a class="up-button button toolbar-item" href="chapter-5.html">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+<a class="previous-button toolbar-item button" href="chapter-5.html">Previous</a><a class="up-button button toolbar-item" href="chapter-5.html">Up</a><a class="next-button button toolbar-item" href="section-29.html">Next</a>
 </div>
 <button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-5.html">Previous</a><a class="up-button button toolbar-item" href="chapter-5.html">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-5.html">Previous</a><a class="up-button button toolbar-item" href="chapter-5.html">Up</a><a class="next-button button toolbar-item" href="section-29.html">Next</a>
 </div>
 </div></nav></header><div class="page">
 <aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
@@ -106,13 +108,25 @@ MathJax.Hub.Config({
 <li><a href="section-27.html">Discount</a></li>
 </ul>
 <h2 class="link active"><a href="chapter-5.html"><span class="codenumber">5</span><span class="title">MAT-101: Set 2B-Absolute Value Equations and Inequalities</span></a></h2>
-<ul><li><a href="section-28.html" class="active">Absolute Value Equations</a></li></ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+<ul>
+<li><a href="section-28.html" class="active">Absolute Value Equations</a></li>
+<li><a href="section-29.html">Absolute Value Inequalities</a></li>
+<li><a href="section-30.html">Absolute Value Applications</a></li>
+</ul>
+<h2 class="link"><a href="chapter-6.html"><span class="codenumber">6</span><span class="title">MAT-101: Set 2C-Exponents and Scientific Notation</span></a></h2>
+<ul>
+<li><a href="section-31.html">Exponent Properties</a></li>
+<li><a href="section-32.html">Negative Exponents</a></li>
+<li><a href="section-33.html">Scientific Notation</a></li>
+<li><a href="section-34.html">Addition and Subtraction Using Scientific Notation</a></li>
+<li><a href="section-35.html">Multiplication and Division Using Scientific Notation</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
 </div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-28"><header title="Section 5.1 Absolute Value Equations"><h1 class="heading hide-type" alt="Section 5.1 Absolute Value Equations">
 <span class="type">Section</span><span class="codenumber">5.1</span><span class="title">Absolute Value Equations</span>
 </h1></header><p id="p-218">
 Absolute value is defined as distance from zero.  Consider both integers \(5\) and \(-5\).   Since both positive and negative \(5\) have a distance of \(5\) units from \(0\) on the number line, both have an absolute value of \(5\).</p>
 <figure class="figure-like" id="table-99">
-\(|5|=5 \text{ and } |-5|=5\)
+\(\left|5\right|=5 \text{ and } \left|-5\right|=5\)
 <img width="90%" src="set2B_Absolute_Value_Equations_and_Inequalities_Intro.png" alt="">
   </figure><p id="p-219">
 Thus when solving equations with absolute value we can end up with more than one possible answer. This is because the expression inside the absolute value can be either positive or negative and we must account for both possibilities when solving equations. This is illustrated in the following example.
@@ -126,8 +140,9 @@ Thus when solving equations with absolute value we can end up with more than one
 
 </p>
 <figure class="figure-like" id="table-100">
-\(|x| = 7\)
-Absolute value can be positive or negative
+\(\left|x\right| = 7\)
+||
+    Absolute value can be positive or negative
   
 \(x=7\) or \(x=-7\)
 Our Solution 
@@ -151,20 +166,20 @@ Notice absolute value is not alone on the LHS
 \(\underline{-5\phantom{12345}-5}\)
 Subtract \(5\) from both sides
   
-\(\abs(x) = 3\)
+\(\left|x\right| = 3\)
 Absolute value can be positive or negative
   
 \(x=3\) or \(x=-3\)
 Our Solution
   </figure><p id="p-224">
-Check our two solutions: Substitute both back in the original equation \(5+\abs(x)= 8\).
+Check our two solutions: Substitute both back in the original equation \(5+\left|x\right|= 8\).
 </p>
 <figure class="figure-like" id="table-102">
 \(\underline{x=3:}\)
 \(\underline{x=-3:}\)
   
-\(5+\abs(3)\)
-\(5+\abs(-3)\)
+\(5+\left|3\right|\)
+\(5+\left|-3\right|\)
   
 \(5+3 = 8\checkmark\)
 \(5+3 = 8 \checkmark\)
@@ -181,19 +196,183 @@ Both \(x=3\) and \(x=-3\) satisfy the equation
 
 </p>
 <figure class="figure-like" id="table-103">
-\(-4\abs(x)=-20\)
+\(-4\left|x\right|=-20\)
 Notice absolute value is not alone on the LHS
     Isolate the absolute value first
   
 \(\overline{-4}\phantom{123456}\overline{-4}\)
 Divide both sides by \(-4\)
   
-\(\abs(x)F = 5\)
+\(\left|x\right| = 5\)
 Absolute value can be positive or negative
   
 \(x=5\) or \(x=-5\)
 Our Solution
-  </figure><p id="p-226">Notice we never combine what is inside the absolute value with what is outside the absolute value. This is very important as it will often change the final result to an incorrect solution. The next example requires two steps to isolate the absolute value. The idea is the same as a two-step equation, add or subtract, then multiply or divide.</p></article></div></section></div></main>
+  </figure><p id="p-226">Notice we never combine what is inside the absolute value with what is outside the absolute value. This is very important as it will often change the final result to an incorrect solution. The next example requires two steps to isolate the absolute value. The idea is the same as a two-step equation, add or subtract, then multiply or divide.</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-97" id="example-97"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">5.1.4</span><span class="title"> Two-Step Absolute Value Equation</span>
+</h5></article></a></div>
+<div id="hk-example-97" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-227">
+
+
+
+<p id="p-228">
+</p>
+<figure class="figure-like" id="table-104">
+\(5\left|x\right|-4 = 26\)
+Notice absolute value is not alone on the LHS
+    Isolate the absolute value first
+  
+\(\underline{+4\phantom{12}+4}\)
+Add \(4\) to both sides
+  
+\(5\left|x\right| = 30\)
+Absolute value still not alone
+  
+\(\overline{5\,}\phantom{12345}\overline{\,5\,}\)
+Divide both sides by \(5\)
+  
+\(\left|x\right| = 6\)
+Absolute value can be positive or negative
+  
+\(x=6\) or \(x=-6\)
+Our Solution
+  </figure>
+</p>
+<p id="p-229">Again we see the same process: isolate the absolute value first, then consider the positive and negative solutions. Often the absolute value will have more than just a variable in it. In this case we will have to solve the resulting equations when we consider the positive and negative possibilities. This is shown in the next example.</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-98" id="example-98"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">5.1.5</span><span class="title"> Absolute Value of an Expression</span>
+</h5></article></a></div>
+<div id="hk-example-98" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-230">
+
+
+<p id="p-231">
+</p>
+<figure class="figure-like" id="table-105">
+\(\left|2x-1\right| = 7\)
+Absolute value can be positive or negative
+  
+\(2x-1=7\)  
+    or  \(2x-1=-7\)
+Two equations to solve
+  </figure>
+</p>
+<p id="p-232">Now notice we have two equations to solve, each equation will give us a different solution. Both equations solve (separately) like any other two-step equation.</p>
+<p id="p-233">
+<figure class="figure-like" id="table-106">
+\(2x-1=7\)
+ \(\phantom{1234}\) OR
+\(2x-1=-7\)
+  
+\(\underline{+1\,+1}\)
+ \(\phantom{1234}\)
+\(\underline{+1\phantom{12}+1}\)
+  
+\(2x=8\)
+ \(\phantom{1234}\)
+\(2x=-6\)
+  
+\(\overline{2}\phantom{1234}\overline{2}\)
+ \(\phantom{1234}\)
+\(\overline{2}\phantom{1234}\overline{\,2\,}\)
+  
+\(x=4\)
+ \(\phantom{1234}\) OR
+\(x=-3\)
+  
+\(\phantom{1}\)
+\(x = 4\) or \(x = -3\)
+Our Solution
+  </figure>
+</p>
+<p id="p-234">Again, it is important to remember that the absolute value must be alone first before we consider the positive and negative possibilities. This is illustrated in the below example.</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-99" id="example-99"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">5.1.6</span><span class="title"> Isolate Absolute Value First</span>
+</h5></article></a></div>
+<div id="hk-example-99" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-235">
+
+
+<p id="p-236">
+</p>
+<figure class="figure-like" id="table-107">
+\(2-4\left|2x + 3\right| = -18\)
+  </figure>
+</p>
+<p id="p-237">To get the absolute value alone we first need to subtract the \(2\) from both sides, then divide by  \(-4\) (the coefficient on the absolute value).  Notice we cannot combine the \(2\) and  \(-4\) because they are not like terms: the \(-4\) is multiplied by the absolute value expression.  Also notice we do not distribute the \(-4\) into the absolute value.  This is because the numbers outside cannot be combined with the numbers inside the absolute value. Thus we get the absolute value alone in the following way:</p>
+<p id="p-238">
+<figure class="figure-like" id="table-108">
+\(2-4\left|2x + 3\right| = -18\)
+Notice absolute value is not alone
+  
+\(\underline{-2\phantom{1234567890123}-2}\)
+Subtract \(2\) from both sides
+  
+\(-4\left|2x + 3\right| = - 20\)
+Absolute value still not alone
+  
+\(\overline{-4\,}\phantom{123456789}\overline{\,-4\,}\)
+Divide both sides by \(-4\)
+  
+\(\left|2x+3\right| = 5\)
+Absolute value can be positive or negative
+  
+\(2x+3=5\) 
+   or\(\phantom{1234}\) 
+     \(2x+3=-5\)
+Two equations to solve
+  </figure>
+</p>
+<p id="p-239">Now we solve these two remaining equations to find our solutions.</p>
+<figure class="figure-like" id="table-109">
+\(2x+3=5\)
+ \(\phantom{1234}\) OR
+\(2x+3=-5\)
+  
+\(\underline{-3\,-3}\)
+\(\phantom{1234}\)
+\(\underline{-3\,\,\,\,\,-3}\)
+  
+\(2x=2\)
+ \(\phantom{1234}\)
+\(2x=-8\)
+  
+\(\overline{2}\phantom{12345}\overline{2}\)
+ \(\phantom{1234}\)
+\(\overline{2}\,\,\,\,\,\,\,\,\,\,\,\,\overline{\,2\,}\)
+  
+\(x=1\)
+ \(\phantom{1234}\)OR
+\(x=-4\)
+  
+\(\phantom{1}\)
+\(x = 1\) or \(x = -4\)
+Our Solution
+  </figure><p id="p-240">As we are solving absolute value equations it is important to be aware of special cases. Remember the result of an absolute value must always be positive. Notice what happens in the next example.</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-100" id="example-100"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">5.1.7</span><span class="title"> Absolute Values Can't Be Negative</span>
+</h5></article></a></div>
+<div id="hk-example-100" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-241">
+
+
+<p id="p-242">
+</p>
+<figure class="figure-like" id="table-110">
+\(7+\left|2x-5\right|=4\)
+Notice absolute value is not alone
+  
+\(\underline{-7\phantom{123456789}-7}\)
+Subtract \(7\) from both sides
+  
+\(\left|2x-5\right| = \color{red}{-3}\)
+STOP! Result of absolute value can't be negative!
+  
+No solution
+Our Solution 
+                     Type No solution in WeBWorK
+                     
+  </figure>
+</p>
+<p id="p-243">Notice in the above example, the absolute value expressions equals a negative number! This is impossible with absolute value. When this occurs we STOP and conclude there is no solution.</p></article></div></section></div></main>
 </div>
 </body>
 </html>
