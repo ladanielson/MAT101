@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--* Generated from MathBook XML source *-->
-<!--*    on 2016-07-07T19:05:43-06:00    *-->
+<!--*    on 2016-07-11T11:17:07-06:00    *-->
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Absolute Value Equations</title>
+<title>Absolute Value Inequalities</title>
 <meta name="Keywords" content="Authored in MathBook XML">
 <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
@@ -50,19 +50,21 @@ MathJax.Hub.Config({
 \)</div>
 <header id="masthead"><div class="banner"><div class="container">
 <a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><span class="title">Title goes here</span></h1>
+<h1 class="heading">
+<span class="title">Survey of Algebra and Probability</span><span class="subtitle">MAT 101</span>
+</h1>
 <p class="byline"></p>
 </div>
 </div></div>
 <nav id="primary-navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="previous-button toolbar-item button" href="section-28.html">Previous</a><a class="up-button button toolbar-item" href="chapter-5.html">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+<a class="previous-button toolbar-item button" href="section-28.html">Previous</a><a class="up-button button toolbar-item" href="chapter-5.html">Up</a><a class="next-button button toolbar-item" href="section-30.html">Next</a>
 </div>
 <button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-28.html">Previous</a><a class="up-button button toolbar-item" href="chapter-5.html">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-28.html">Previous</a><a class="up-button button toolbar-item" href="chapter-5.html">Up</a><a class="next-button button toolbar-item" href="section-30.html">Next</a>
 </div>
 </div></nav></header><div class="page">
 <aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
@@ -107,96 +109,272 @@ MathJax.Hub.Config({
 </ul>
 <h2 class="link active"><a href="chapter-5.html"><span class="codenumber">5</span><span class="title">MAT-101: Set 2B-Absolute Value Equations and Inequalities</span></a></h2>
 <ul>
-<li><a href="section-28.html">Objectives:</a></li>
-<li><a href="section-29.html" class="active">Absolute Value Equations</a></li>
+<li><a href="section-28.html">Absolute Value Equations</a></li>
+<li><a href="section-29.html" class="active">Absolute Value Inequalities</a></li>
+<li><a href="section-30.html">Absolute Value Applications</a></li>
+</ul>
+<h2 class="link"><a href="chapter-6.html"><span class="codenumber">6</span><span class="title">MAT-101: Set 2C-Exponents and Scientific Notation</span></a></h2>
+<ul>
+<li><a href="section-31.html">Exponent Properties</a></li>
+<li><a href="section-32.html">Negative Exponents</a></li>
+<li><a href="section-33.html">Scientific Notation</a></li>
+<li><a href="section-34.html">Addition and Subtraction Using Scientific Notation</a></li>
+<li><a href="section-35.html">Multiplication and Division Using Scientific Notation</a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
-</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-29"><header title="Section 5.2 Absolute Value Equations"><h1 class="heading hide-type" alt="Section 5.2 Absolute Value Equations">
-<span class="type">Section</span><span class="codenumber">5.2</span><span class="title">Absolute Value Equations</span>
-</h1></header><p id="p-218">
-Absolute value is defined as distance from zero.  Consider both integers \(5\) and \(-5\).   Since both positive and negative \(5\) have a distance of \(5\) units from \(0\) on the number line, both have an absolute value of \(5\).</p>
-<figure class="figure-like" id="table-99">
-\(|5|=5 \text{ and } |-5|=5\)
-<img width="90%" src="set2B_Absolute_Value_Equations_and_Inequalities_Intro.png" alt="">
-  </figure><p id="p-219">
-Thus when solving equations with absolute value we can end up with more than one possible answer. This is because the expression inside the absolute value can be either positive or negative and we must account for both possibilities when solving equations. This is illustrated in the following example.
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-29"><header title="Section 5.2 Absolute Value Inequalities"><h1 class="heading hide-type" alt="Section 5.2 Absolute Value Inequalities">
+<span class="type">Section</span><span class="codenumber">5.2</span><span class="title">Absolute Value Inequalities</span>
+</h1></header><p id="p-244">
+When an inequality has an absolute value we will have to remove the absolute
+value in order to graph the solution or give interval notation. The way we remove
+the absolute value depends on the direction of the inequality symbol.
 </p>
-<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-94" id="example-94"><article class="example-like"><h5 class="heading">
-<span class="type">Example</span><span class="codenumber">5.2.1</span><span class="title"> Absolute Value Equation: Two Solutions</span>
+<p id="p-245">
+Consider \(\left|x\right|\lt 2\).
+</p>
+<p id="p-246">
+Absolute value is defined as distance from zero. Another way to read this
+inequality would be the distance from zero is less than \(2\). On a number line we
+will shade all points that are less than \(2\) units away from zero.
+</p>
+<p id="p-247"><img width="90%" src="set2B_Absolute_Value_Equations_and_Inequalities_Interval_.png" alt=""></p>
+<p id="p-248">
+This graph looks just like the graphs of the three part compound inequalities!
+When the absolute value is less than a positive number we will remove the absolute value
+by changing the problem to a three part inequality, with the negative value on the
+left and the positive value on the right:
+\[\left|x\right| \lt 2 \text{ is equivalent to  } \color{blue}{-2 \lt x \lt 2}\]
+as the graph above illustrates.
+</p>
+<p id="p-249">
+Consider \(\left|x\right|\gt 2\).
+</p>
+<p id="p-250">
+Absolute value is defined as distance from zero. Another way to read this
+inequality would be the distance from zero is greater than \(2\). On the number line we shade all points that are more than \(2\) units away from zero.
+</p>
+<p id="p-251"><img width="90%" src="set2B_Absolute_Value_Equations_and_Inequalities_Interval2_.png" alt=""></p>
+<p id="p-252">
+This graph looks just like the graphs of the OR compound inequalities! When the
+absolute value is greater than a positive number we will remove the absolute value by
+changing the problem to an OR inequality, the first inequality looking just like
+the problem with no absolute value, the second flipping the inequality symbol and
+changing the value to a negative:
+\[\left|x\right| \gt 2 \text{ is equivalent to  } \color{blue}{x\gt 2} \text{ or }\color{red}{ x \lt -2}\]
+as the graph above illustrates.
+</p>
+<p id="p-253">
+For all absolute value inequalities we can also express our answers in interval
+notation which is done the same way it is done for standard compound inequalities.
+</p>
+<p id="p-254">
+We can solve absolute value inequalities much like we solved absolute value equations.
+<ol style="list-style-type: decimal;">
+<li id="li-27">Isolate the absolute value</li>
+<li id="li-29">"Remove" the absolute value</li>
+<li id="li-32">Solve the inequalities</li>
+</ol></p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-101" id="example-101"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">5.2.1</span><span class="title"> Absolute Value Inequality: OR inequality</span>
 </h5></article></a></div>
-<div id="hk-example-94" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-220">
+<div id="hk-example-101" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-255">
 
+<p id="p-256">
+Solve, graph, and give interval notation for the solution.</p>
 
-
+<p id="p-257">
 </p>
-<figure class="figure-like" id="table-100">
-\(|x| = 7\)
-Absolute value can be positive or negative
+<figure class="figure-like" id="table-111">
+\(\left|4x-5\right|\geq 6\)
+Absolute value is greater than a positive number, use OR inequality
   
-\(x=7\) or \(x=-7\)
-Our Solution 
-                       Type x=7 or x=-7 in WeBWorK
-                       
-  </figure><p id="p-221">Notice that we have determined two possibilities, both the positive and negative. Either way, the absolute value of our number will be positive \(7\).</p>
-<p id="p-222">Important: First isolate the absolute value, then "remove the absolute value" by considering both the positive and negative solutions separately. Notice in the next two examples, all the numbers outside of the absolute value are "moved to the other side" first before we remove the absolute value bars and consider both positive and negative solutions.
+\(4x-5\geq 6\) OR \(4x-5\leq -6\)
+Solve both inequalities
+  
+\(\underline{+5\phantom{1}+5}\phantom{1234567}\underline{+5\phantom{12}+5}\)
+Add \(5\) to both sides of each inequality
+  
+\(4x\geq 11\) OR \(4x\leq -1\)
+Divide both sides by \(4\)
+  
+\(\overline{4}\phantom{1234}\overline{4}\phantom{1234}\overline{4}\phantom{12345}\overline{4}\)
+\(\,\)
+  
+\(\color{blue}{x\geq \dfrac{11}{4}}\) OR \(\color{red}{x\leq -\dfrac{1}{4}}\)
+Graph the solutions
+  
+<img width="90%" src="set2B_Absolute_Value_Equations_and_Inequalities_Ex_8.png" alt="">
+Our graph
+  
+\(\left(-\infty,-\dfrac{1}{4}\right]\cup\left[\dfrac{11}{4},\infty\right)\)
+Interval notation
+  </figure></p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-102" id="example-102"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">5.2.2</span><span class="title">Absolute Value Inequality: OR inequality</span>
+</h5></article></a></div>
+<div id="hk-example-102" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-258">
+
+Solve, graph, and give interval notation for the solution.
+
+
+<p id="p-259">
+</p>
+<figure class="figure-like" id="table-112">
+\(-4-3\left|x\right|\leq -16\)
+Isolate the absolute value: Add \(4\) to both sides
+  
+\(\underline{+4\phantom{123456789}+4}\)
+\(\,\)
+  
+\(-3\left|x\right|\leq -12\)
+Divide both sides by negative 3
+  
+\(\overline{-3}\phantom{123456}\overline{-3}\)
+Dividing by a negative switches the inequality direction
+  
+\(\left|x\right|\color{red}{\geq} 4\)
+Absolute value is greater, use OR
+  
+\(\color{blue}{x\geq 4}\) OR \(\color{red}{x\leq -4}\)
+Graph
+  
+<img width="90%" src="set2B_Absolute_Value_Equations_and_Inequalities_Ex_9.png" alt="">
+Our graph
+  
+\((-\infty,-4]\cup[4,\infty)\)
+Interval notation
+  </figure>
+</p>
+<p id="p-260">
+In the previous example, we cannot combine \(-4\) and \(-3\) because they are not like
+terms, the \(-3\) has an absolute value term attached. So we must first clear the \(-4\) by
+adding \(4\), then divide by \(-3\). The next example is similar.
 </p></article></div>
-<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-95" id="example-95"><article class="example-like"><h5 class="heading">
-<span class="type">Example</span><span class="codenumber">5.2.2</span><span class="title"> Isolate Absolute Value First</span>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-103" id="example-103"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">5.2.3</span><span class="title"> Absolute Value Inequality: three part inequality</span>
 </h5></article></a></div>
-<div id="hk-example-95" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-223">
+<div id="hk-example-103" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-261">
+
+Solve, graph, and give interval notation for the solution.
 
 
+<p id="p-262">
 </p>
-<figure class="figure-like" id="table-101">
-\(5+\abs(x) = 8\)
-Notice absolute value is not alone on the LHS
-    Isolate the absolute value first
+<figure class="figure-like" id="table-113">
+\(9-2|4x+1|\gt 3\)
+Subtract \(9\) from both sides
   
-\(\underline{-5\phantom{12345}-5}\)
+\(\underline{-9\phantom{12345678910}-9}\)
+\(\,\)
+  
+\(-2|4x+1|\gt -6\)
+Divide both sides by \(-2\)
+  
+\(\overline{-2}\phantom{123456789}\overline{-2}\)
+Dividing by a negative switches the inequality direction
+  
+\(|4x+1|\color{red}{\lt} 3\)
+Absolute value is less, use three part inequality
+  
+\(-3\lt 4x+1\lt 3\)
+Subtract 1 from all three parts
+  
+\(\underline{-1\phantom{12345}-1\phantom{1}-1}\)
+\(\,\)
+  
+\(-4\lt 4x \lt 2\)
+Divide all three parts by \(4\)
+  
+\(\overline{4}\phantom{123}\overline{4}\phantom{123}\overline{4}\)
+\(\,\)
+  
+\(\color{green}{-1\lt x \lt\dfrac{1}{2}}\)
+Graph
+  
+<img width="90%" src="set2B_Absolute_Value_Equations_and_Inequalities_Ex_10.png" alt="">
+Our graph
+  
+\(\left(-1,\dfrac{1}{2}\right)\)
+Interval notation
+  </figure>
+</p>
+<p id="p-263">
+In the previous example, we cannot distribute the \(-2\) into the absolute value.
+We can never distribute or combine things outside the absolute value with what is
+inside the absolute value. Our only way to solve is to first isolate the absolute
+value by clearing the values around it, then either make a compound inequality
+(an OR or a three part) to solve.
+</p>
+<p id="p-264">
+It is important to remember as we are solving these equations, the absolute value
+is always positive. If we end up with an absolute value less than a negative
+number, then we will have no solution! Similarly, if we end up with an absolute value greater than a negative,
+this will always happen. Here the answer will be all real numbers.
+</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-104" id="example-104"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">5.2.4</span><span class="title"> Absolute Value Less than Negative Number</span>
+</h5></article></a></div>
+<div id="hk-example-104" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-265">
+
+<p id="p-266">Solve, graph, and give interval notation for the solution.</p>
+
+
+<p id="p-267">
+</p>
+<figure class="figure-like" id="table-114">
+\(12+4|6x-1|\lt 4\)
+Subtract \(12\) from both sides
+  
+\(\underline{-12\phantom{123456789}-12}\)
+\(\,\)
+  
+\(4\left|6x-1\right|\lt -8\)
+Divide both sides by \(4\)
+  
+\(\overline{4}\phantom{12345678910}\overline{4}\)
+Dividing by a positive: DON'T switch the inequality direction
+  
+\(\left|6x-1\right|\lt -2\)
+STOP:Absolute value can't be less than a negative!
+  
+No solution
+Our Solution
+  </figure>
+</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-105" id="example-105"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">5.2.5</span><span class="title"> Absolute Value Greater than Negative Number</span>
+</h5></article></a></div>
+<div id="hk-example-105" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-268">
+
+Solve, graph, and give interval notation for the solution.
+
+
+<p id="p-269">
+</p>
+<figure class="figure-like" id="table-115">
+\(5-6|x+7|\leq 17\)
 Subtract \(5\) from both sides
   
-\(\abs(x) = 3\)
-Absolute value can be positive or negative
+\(\underline{-5\phantom{123456789}-5}\)
+\(\,\)
   
-\(x=3\) or \(x=-3\)
-Our Solution
-  </figure><p id="p-224">
-Check our two solutions: Substitute both back in the original equation \(5+\abs(x)= 8\).
-</p>
-<figure class="figure-like" id="table-102">
-\(\underline{x=3:}\)
-\(\underline{x=-3:}\)
+\(-6\left|x+7\right|\leq 12\)
+Divide both sides by \(-6\)
   
-\(5+\abs(3)\)
-\(5+\abs(-3)\)
+\(\overline{-6}\phantom{12345678910}\overline{-6}\)
+Dividing by a negative switches the inequality direction
   
-\(5+3 = 8\checkmark\)
-\(5+3 = 8 \checkmark\)
+\(\left|x+7\right|\color{red}{\geq} -2\)
+Absolute value always greater than negative!
   
-Both \(x=3\) and \(x=-3\) satisfy the equation
-\( \checkmark\)
-  </figure></article></div>
-<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-96" id="example-96"><article class="example-like"><h5 class="heading">
-<span class="type">Example</span><span class="codenumber">5.2.3</span><span class="title"> Isolate Absolute Value First</span>
-</h5></article></a></div>
-<div id="hk-example-96" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-225">
-
-
-
-</p>
-<figure class="figure-like" id="table-103">
-\(-4\abs(x)=-20\)
-Notice absolute value is not alone on the LHS
-    Isolate the absolute value first
+\(x\) can be any real number: 
+    \(-\infty\lt x \lt\infty\) 
+    or\(\phantom{1234}\)
+ Our Solution: Inequality notation
   
-\(\overline{-4}\phantom{123456}\overline{-4}\)
-Divide both sides by \(-4\)
-  
-\(\abs(x)F = 5\)
-Absolute value can be positive or negative
-  
-\(x=5\) or \(x=-5\)
-Our Solution
-  </figure><p id="p-226">Notice we never combine what is inside the absolute value with what is outside the absolute value. This is very important as it will often change the final result to an incorrect solution. The next example requires two steps to isolate the absolute value. The idea is the same as a two-step equation, add or subtract, then multiply or divide.</p></article></div></section></div></main>
+ \((-\infty, \infty)\)
+ Our Solution: Interval notation
+  </figure>
+</p></article></div></section></div></main>
 </div>
 </body>
 </html>
