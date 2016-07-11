@@ -4,7 +4,7 @@
 <ul>
 <li>Use set theory and Venn diagrams to solve counting problems. </li>
    <li>Use tree diagrams and the Multiplication Axiom to solve counting problems.</li>
-  </ul>
+</ul>
 </introduction>
 
 <section>
@@ -37,6 +37,7 @@ Two sets <m>A</m> and <m>B</m> are called <b>disjoint</b> sets if their intersec
 
 List all the subsets of the set of primary colors <m>P = \{ \text{red, yellow, blue} \}</m>.
 <!--  http://cnx.org/content/col10613/1.5/ Example 11.1 page 170 -->
+<p>
 </p>
 <table class = "center" style="width:75%" >
  <tr align="Center" span ="">
@@ -64,6 +65,8 @@ List all the subsets of the set of primary colors <m>P = \{ \text{red, yellow, b
                     </div></td>
   </tr>
 </table>
+</p>
+
 </example>
 
 <example>
@@ -72,8 +75,9 @@ List all the subsets of the set of primary colors <m>P = \{ \text{red, yellow, b
 
 Let the universal set <m>U=\{\text{red, orange, yellow, green, gold, blue, indigo, violet, purple, black}\}</m>, <m>P = \{ \text{red, yellow, blue} \}</m>, <m>Y = \{ \text{purple, gold} \}</m> and <m>N = \{ \text{red, black} \}</m>.
 <!-- Modeled after  http://cnx.org/content/col10613/1.5/ Example 11.1 page 170 -->
+<p>
 </p>
-<table class = "center">
+<table>
   <tr>
 <td align="right"><m>P\cup N=\{\text{red, yellow, blue, black} \}</m></td>
 <td>The union is the set of all elements that are either in <m>P</m> <b>OR</b> in <m>N</m>, or in both</td>
@@ -90,14 +94,14 @@ Let the universal set <m>U=\{\text{red, orange, yellow, green, gold, blue, indig
 <td align="right"><m>P'=\{\text{orange, green, gold, indigo, violet, purple, black} \}</m></td>
 <td>The elements in <m>U</m> <b>NOT</b> in <m>P</m></td>
   </tr>
-</table>
+</table></p>
+
 <p>
 Recall a Venn diagram represents a set as the
 interior of a circle. Often two or more circles are enclosed in a rectangle where the rectangle represents the
 universal set. These diagrams allow us to visualize an intersection or union of two sets or the complement of a set.  We will now use Venn
 diagrams to sort various populations and count objects.  We use the notation <m>n(A)</m> to represent the number of elements in set <m>A</m>.  For example, <m>n(P\cup N) = 4</m> in <b>Example 4A-2</b>.
 </p>
-
 
 </example>
 
@@ -108,7 +112,7 @@ diagrams to sort various populations and count objects.  We use the notation <m>
 Suppose a survey of car enthusiasts showed that over a certain time period, <m>30</m> drove cars with automatic transmissions, <m>20</m> drove cars with standard transmissions, and <m>12</m> drove cars of both types. If every person in the survey drove cars with one of these transmissions, how many people
 participated in the survey?
 <!--   http://cnx.org/content/col10613/1.5/ Example 11.6 page 171 -->
-
+<p>
 </p>
 <table class = "center">
   <tr>
@@ -117,9 +121,7 @@ participated in the survey?
   </tr>
 <tr>
 <td align="right">Since <m>12</m> drove cars of both types
-    Record <m>\color{red}{12}</m> in <m>A</m> AND <m>S</m> <m>=A\cap S</m>.
-  
-  That is <m>n(A\cap S)=\color{red}{12}</m>.</td>
+    Record <m>\color{red}{12}</m> in <m>A</m> AND <m>S</m> <m>=A\cap S</m>.That is <m>n(A\cap S)=\color{red}{12}</m>.</td>
 <td><image source="set4A_Sets_and_Counting_01.png" /></td>
   </tr>
 <tr>
@@ -129,7 +131,8 @@ participated in the survey?
      Let <m>\color{green}{y}</m> be the number in <m>S</m> but <b>NOT</b> in <m>A</m>.
      Then <m>\color{green}{y}=n(S\cap A')</m>.</td>
 <td><image source="set4A_Sets_and_Counting_02.png" /></td>
-  <tr>
+  </tr>
+<tr>
 <td align =" right"> Because <m>30</m> people drove cars with automatic transmissions, 
     the circle <m>A</m> must contain <m>30</m> total people. 
     This means <m>x + 12 = 30</m>.
@@ -150,18 +153,17 @@ participated in the survey?
 <tr>
 <td align ="right">Now that all the information is sorted out, 
         it is easy to read from the diagram that:</td>
-<td>
-
-         <m>\color{blue}{18}</m> people drove cars with automatic transmissions only, 
-         <m>\color{red}{12}</m> people drove both types of cars, and 
-
-          <m>\color{green}{8}</m> drove cars with standard transmissions only.</td>
+<td><m>\color{blue}{18}</m> people drove cars with automatic transmissions only, 
+      <m>\color{red}{12}</m> people drove both types of cars, and 
+      <m>\color{green}{8}</m> drove cars with standard transmissions only.</td>
   </tr>
 <tr>
 <td align="right"><m>18+12+8=38</m></td>
 <td>Our Solution: <m>38</m> people participated in the survey.</td>
   </tr>
 </table>
+</p>
+
 </example>
 
 <example>
@@ -170,8 +172,9 @@ participated in the survey?
  
 A survey of <m>100</m> people in California indicates that <m>60</m> people have visited Disneyland, <m>15</m> have visited Knott's Berry Farm, and <m>6</m> have visited both. How many people have visited neither place?
 <!--   http://cnx.org/content/col10613/1.5/ Example 11.7 page 171 -->
+<p>
 </p>
-<table class = "center">
+<table>
   <tr>
 <td align="right">Let set <m>D</m> represent those surveyed who have visited Disneyland.</td>
 <td>Let set <m>K</m> represent those surveyed who have visited Knott's Berry Farm.</td>
@@ -183,6 +186,7 @@ A survey of <m>100</m> people in California indicates that <m>60</m> people have
      Let <m>\color{green}{y}=n(K\cap D')</m>.</td>
 <td><image source="set4A_Sets_and_Counting_05.png" /></td>
   </tr>
+<tr>
 <td align =" right"> Because <m>60</m> people visited Disneyland, 
     <m>D</m> must contain <m>60</m> total people. 
     This means <m>x + 6 = 60</m>.
@@ -215,18 +219,18 @@ A survey of <m>100</m> people in California indicates that <m>60</m> people have
         Subtract <m>69</m> from both sides to get
          <m>z = 31</m>.
           Record <m>\color{brown}{31}</m> in <m>(D\cup K)'</m>.</td>
-</td>
 <td><image source="set4A_Sets_and_Counting_09.png" /></td>
   </tr>
 <tr>
 <td align="right"><m>31=n(D\cup K)'</m></td>
 <td>Our Solution: <m>31</m> people have visited neither place.</td>
   </tr>
-</table>
-<p>
-Looking back at the final Venn diagram of the survey of <m>100</m> people in California, we can organize the results in a two-way table as follows:
+</table></p>
+
+<p>Looking back at the final Venn diagram of the survey of <m>100</m> people in California, we can organize the results in a two-way table as follows:
 </p>
 
+<p>
 <table align="center" border="1">
   <tr>
 <td align="center"><m>\,</m></td>
@@ -252,7 +256,8 @@ Looking back at the final Venn diagram of the survey of <m>100</m> people in Cal
 <td  align ="center"><m>40</m></td>
 <td  align ="center"><m>100</m></td>
   </tr>
-</table>
+</table></p>
+
 <p>
 Notice from the above table, we can determine particular counts.  For example, at the bottom of the Disneyland column is the boxed number <m>\fbox{60}</m>, which is the total number of people surveyed who visited Disneyland.  The red <m>\color{red}{6}</m> is the intersection of row Knott's and column Disneyland, which is <m>n(D\cap K)</m>, the number of people who visited both parks.  The <m>\color{brown}{31}=n(D'\cap K')</m> means <m>\color{brown}{31}</m> did not attend either park.
 </p>
@@ -279,6 +284,7 @@ Since we have <m>3</m> exercise categories (jog, swim, cycle) we will use three 
 Use the exercise survey results above to assign a number to each region in a corresponding Venn diagram.
 <!--   http://cnx.org/content/col10613/1.5/ Example 11.8 page 172 -->
 
+<p>
 </p>
 <table class = "center">
   <tr>
@@ -302,19 +308,17 @@ Use the exercise survey results above to assign a number to each region in a cor
       Since <m>7</m> swim and cycle
    <m>z+3=7</m>, so <m>\color{brown}{z = 4}</m>.
    After replacing <m>x,y,z</m> with these values
-   label the regions <m>\color{red}{m}, \color{blue}{n},\color{green}{ p}</m>.
-    <td><image source="set4A_Sets_and_Counting_11.png" /></td>
+   label the regions <m>\color{red}{m}, \color{blue}{n},\color{green}{ p}</m>.</td>
+<td><image source="set4A_Sets_and_Counting_11.png" /></td>
   </tr>
 <tr>
-
-  <tr>
 <td align="right">Since <m>50</m> people jog
    <m>m + 11+3+6=50</m>, so <m>\color{red}{m =30 }</m>.
      Since <m>30</m> swim
    <m>n+11+3+4=30</m>, so <m>\color{blue}{n = 12}</m>.
       Since <m>35</m> cycle
-   <m>p+6+3+4=35</m>, so <m>\color{green}{p = 22}</m>.
-    <td><image source="set4A_Sets_and_Counting_12.png" /></td>
+   <m>p+6+3+4=35</m>, so <m>\color{green}{p = 22}</m>.</td>
+<td><image source="set4A_Sets_and_Counting_12.png" /></td>
   </tr>
 <tr>
 <td align =" right">  By adding all the entries in all three sets, 
@@ -328,7 +332,8 @@ Use the exercise survey results above to assign a number to each region in a cor
 <td align="right">Our Solution</td>
 <td><image source="set4A_Sets_and_Counting_14.png" /></td>
   </tr>
-</table>
+</table></p>
+
 </example>
 
 <example>
@@ -338,6 +343,7 @@ Use the exercise survey results above to assign a number to each region in a cor
 Use the completed Venn diagram from <b>Example 4A-5</b> to determine the number of people surveyed who jog but do not swim or cycle.
 
 <!--   http://cnx.org/content/col10613/1.5/ Example 11.8(a) page 172 -->
+<p>
 </p>
 <table class = "center">
   <tr>
@@ -350,7 +356,9 @@ Use the completed Venn diagram from <b>Example 4A-5</b> to determine the number 
 <td align="right"><m>30</m></td>
 <td>Our Solution: <m>30</m> people jog but do not swim or cycle.</td>
   </tr>
-</table>
+</table></p>
+
+
 </example>
 
 <example>
@@ -359,6 +367,7 @@ Use the completed Venn diagram from <b>Example 4A-5</b> to determine the number 
  
 Use the completed Venn diagram from <b>Example 4A-5</b> to determine the number of people surveyed who take part in only one of the activities.
 <!--   http://cnx.org/content/col10613/1.5/ Example 11.8(b) page 172 -->
+<p>
 </p>
 <table class = "center">
   <tr>
@@ -371,7 +380,9 @@ Use the completed Venn diagram from <b>Example 4A-5</b> to determine the number 
 <td align="right"><m>30+12+22=64</m></td>
 <td>Our Solution: <m>64</m> people take part in only one of the activities.</td>
   </tr>
-</table>
+</table></p>
+
+
 </example>
 
 <example>
@@ -380,6 +391,7 @@ Use the completed Venn diagram from <b>Example 4A-5</b> to determine the number 
  
 Use the completed Venn diagram from <b>Example 4A-5</b> to determine the number of people surveyed who do not take part in any of these activities.
 <!--   http://cnx.org/content/col10613/1.5/ Example 11.8(c) page 172 -->
+<p>
 </p>
 <table class = "center">
   <tr>
@@ -392,7 +404,8 @@ Use the completed Venn diagram from <b>Example 4A-5</b> to determine the number 
 <td align="right"><m>12</m></td>
 <td>Our Solution: <m>12</m> people do not take part in any of these activities.</td>
   </tr>
-</table>
+</table></p>
+
 </example>
 </section>
 
@@ -412,6 +425,7 @@ introduce the multiplication axiom, we first consider some examples.
 A restaurant has a special choose <m>2</m> dinner deal: for one low price a customer may select one of two appetizers and one of four main courses.  How many different dinner combinations consisting of one appetizer and one main course are possible?
 
 <!--   Modeled after http://cnx.org/content/col10613/1.5/ Example 11.9 page 173 but less sexist!! -->
+<p>
 </p>
 <table class = "center">
   <tr>
@@ -440,7 +454,9 @@ A restaurant has a special choose <m>2</m> dinner deal: for one low price a cust
   </tr>
 
   </tr>
-</table><p>
+</table></p>
+
+  <p>
  The tree diagram gives us all eight possibilities. The method involves two steps. First we choose an appetizer. We have two choices: <m>a_1</m> or <m>a_2</m>. If we choose <m>a_1</m>, we have
 four main dishes to go with it; <m>m_1, m_2, m_3</m> and <m>m_4</m>. Similarly if we choose <m>a_2</m>, we can select any one of the four main dishes, again. The tree diagram helps us visualize these
 possibilities.
@@ -459,6 +475,7 @@ The reader should note that the process involves two steps. For the first step o
 
 <!--   Modeled after http://cnx.org/content/col10613/1.5/ Example 11.10 page 174 but less sexist!! -->
 
+<p>
 </p>
 <table class ="center">
   <tr>
@@ -479,7 +496,9 @@ The reader should note that the process involves two steps. For the first step o
 <td align =" right">24</td>
 <td>Our Solution: There are <m>24</m> possible different dinner combinations consisting of one appetizer, one main course, and one dessert.</td>
   </tr>
-</table><p>
+</table></p>
+
+   <p>
    The important thing to observe here, again, is that this is a three step process. There are two choices for the first step of choosing an appetizer. For each choice of a appetizer, there are four choices of a main course, and for each combination of an appetizer and main course, there are three choices of selecting a dessert. All in all, we have <m>2\times 4\times 3 = 24</m> different possibilities.
    </p>
 
@@ -490,13 +509,14 @@ The reader should note that the process involves two steps. For the first step o
    Let us now try to solve <b>Example 4A-10:</b> without a tree diagram. Recall that the problem involved three steps: choosing an appetizer, choosing a main course, and choosing a dessert. The number of ways of choosing each are listed below.
    </p>
 
+    <p>
     <table align="center"  border="1">
   <tr>
 <td  align="center">The number of ways
     of choosing an appetizer</td>
 <td  align="center">The number of ways
      of choosing a main course</td>
-<td align="center"">The number of ways
+<td align="center">The number of ways
      of choosing a dessert</td>
   </tr>
 <tr>
@@ -504,7 +524,7 @@ The reader should note that the process involves two steps. For the first step o
 <td  align="center"><m>4</m></td>
 <td  align ="center"><m>3</m></td>
   </tr>
-</table>
+</table></p>
 <p>
 By multiplying these three numbers we get <m>2\cdot 4\cdot 3=24</m>, which is what we got when we did the problem using a tree diagram.  The procedure we just employed is called the multiplication axiom.
 </p>
@@ -521,11 +541,13 @@ The general multiplication axiom is not limited to just two tasks and can be use
  
  A truck license plate consists of a letter followed by four digits. How many such license plates are possible?
  <!--   This is T http://cnx.org/content/col10613/1.5/ Example 11.12 page 176  -->
-
+<p>
  </p>
 <table  align="center">
   <tr>
-<td colspan="2">Since there are <m>26</m> letters and <m>10</m> digits, we have the number of choices for each listed in the below table.</td>
+<td colspan="2">FIX ME!! <!--
+
+  Since there are <m>26</m> letters and <m>10</m> digits, we have the number of choices for each listed in the below table.</td>
   <tr>
 <td colspan="2" align ="center">
   <table align="center"  border="1">
@@ -552,9 +574,9 @@ The general multiplication axiom is not limited to just two tasks and can be use
   </tr>
 <tr>
 <td>260,000</td>
-<td>Our Solution: There are 260,000 possible such license plates</td>
+<td>Our Solution: There are 260,000 possible such license plates--> I'm broken!</td>
   </tr>
-</table>
+</table></p>
 
   </example>
 
@@ -568,7 +590,7 @@ The general multiplication axiom is not limited to just two tasks and can be use
  </p>
 <table  align="center">
   <tr>
-<td colspan="2">Since there are two choices for each question, we have</td>
+<td colspan="2"> FIX ME! <!--Since there are two choices for each question, we have</td>
   <tr>
 <td colspan="2" align ="center">
                 <table align="center"  border="1">
@@ -590,7 +612,7 @@ The general multiplication axiom is not limited to just two tasks and can be use
   </tr>
 <tr>
 <td align="right"><m>8</m></td>
-<td>Our Solution: There are <m>8</m> different ways.</td>
+<td>-->Our Solution: There are <m>8</m> different ways.</td>
   </tr>
 </table>
  <p>
@@ -609,7 +631,7 @@ The reader should note that the first letter in each possibility is the answer c
  
  In how many different ways can four people be seated in a row?
  <!--   This is T http://cnx.org/content/col10613/1.5/ Example 11.14 page 177  -->
-
+<p>
  </p>
 <table  align="center">
   <tr>
@@ -617,8 +639,9 @@ The reader should note that the first letter in each possibility is the answer c
   </tr>
 <tr>
 <td colspan="2">There are four choices for the first chair we choose. Once a person sits down in that chair, there are only three choices for the second chair, and so on. We list as shown below.</td>
-  <tr>
-<td colspan="2" align ="center">
+  </tr>
+<tr>
+<td colspan="2" align ="center"> FIX ME!! <!--
                 <table align="center"  border="1">
   <tr>
 <td  align="center">Choices for chair 1</td>
@@ -640,14 +663,9 @@ The reader should note that the first letter in each possibility is the answer c
   </tr>
 <tr>
 <td align="right"><m>24</m></td>
-<td>Our Solution: There are <m>24</m> different ways.</td>
+<td>-->Our Solution: There are <m>24</m> different ways.</td>
   </tr>
-</table>
-
-
-
-
-
+</table></p>
 
 </example>
 </section>
