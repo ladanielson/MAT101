@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--* Generated from MathBook XML source *-->
+<!--*    on 2016-07-11T15:48:08-06:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Tree Diagrams and the Multiplication Axiom</title>
+<meta name="Keywords" content="Authored in MathBook XML">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+// contrib directory for accessibility menu, moot after v2.6+?
+MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        // [Contrib]accessibility menu moot after v2.6+?
+        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", "[Contrib]/a11y/accessibility-menu.js", ],
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    "HTML-CSS": {
+        scale: 88,
+    },
+});
+    </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-2.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<div style="display:none;">\(
+\newcommand{\lt}{ &lt; }
+\newcommand{\gt}{ &gt; }
+\newcommand{\amp}{ &amp; }
+\)</div>
+<header id="masthead"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading">
+<span class="title">Survey of Algebra and Probability</span><span class="subtitle">MAT 101</span>
+</h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="previous-button toolbar-item button" href="section-41.html">Previous</a><a class="up-button button toolbar-item" href="chapter-10.html">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-41.html">Previous</a><a class="up-button button toolbar-item" href="chapter-10.html">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="chapter-1.html"><span class="codenumber">1</span><span class="title">MAT-101: Set 00-Preliminaries</span></a></h2>
+<ul>
+<li><a href="section-1.html">Integer Addition and Subtraction</a></li>
+<li><a href="section-2.html">Integer Multiplication and Division</a></li>
+<li><a href="section-3.html">Operations of Numbers</a></li>
+<li><a href="section-4.html">Working with Variables</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html"><span class="codenumber">2</span><span class="title">MAT-101: Set 1A-Fractions</span></a></h2>
+<ul>
+<li><a href="section-5.html">Fractions</a></li>
+<li><a href="section-6.html">Multiplication and Division of Fractions</a></li>
+<li><a href="section-7.html">Common Denominators</a></li>
+<li><a href="section-8.html">Addition and Subtraction of Fractions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html"><span class="codenumber">3</span><span class="title">MAT-101: Set 1B-Percents and Estimation</span></a></h2>
+<ul>
+<li><a href="section-9.html">Percents</a></li>
+<li><a href="section-10.html">Converting Between Percents and Decimals</a></li>
+<li><a href="section-11.html">Determining a Percent of a Number</a></li>
+<li><a href="section-12.html">Decimals on the Real Number Line</a></li>
+<li><a href="section-13.html">Rounding Decimals</a></li>
+<li><a href="section-14.html">Estimation</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html"><span class="codenumber">4</span><span class="title">MAT-101: Set 2A-Linear Equations and Inequalities</span></a></h2>
+<ul>
+<li><a href="section-15.html">Linear Equations</a></li>
+<li><a href="section-16.html">Addition Problems</a></li>
+<li><a href="section-17.html">Subtraction Problems</a></li>
+<li><a href="section-18.html">Multiplication Problems</a></li>
+<li><a href="section-19.html">Division Problems</a></li>
+<li><a href="section-20.html">Linear Equations - Two-Step Equations</a></li>
+<li><a href="section-21.html">Solving Linear Equations-General Equations</a></li>
+<li><a href="section-22.html">Linear Inequalities</a></li>
+<li><a href="section-23.html">Compound Inequalities</a></li>
+<li><a href="section-24.html">Linear Equation Applications</a></li>
+<li><a href="section-25.html">Practical Percent Problems</a></li>
+<li><a href="section-26.html">Percent Increase or Decrease</a></li>
+<li><a href="section-27.html">Discount</a></li>
+</ul>
+<h2 class="link"><a href="chapter-5.html"><span class="codenumber">5</span><span class="title">MAT-101: Set 2B-Absolute Value Equations and Inequalities</span></a></h2>
+<ul>
+<li><a href="section-28.html">Absolute Value Equations</a></li>
+<li><a href="section-29.html">Absolute Value Inequalities</a></li>
+<li><a href="section-30.html">Absolute Value Applications</a></li>
+</ul>
+<h2 class="link"><a href="chapter-6.html"><span class="codenumber">6</span><span class="title">MAT-101: Set 2C-Exponents and Scientific Notation</span></a></h2>
+<ul>
+<li><a href="section-31.html">Exponent Properties</a></li>
+<li><a href="section-32.html">Negative Exponents</a></li>
+<li><a href="section-33.html">Scientific Notation</a></li>
+<li><a href="section-34.html">Addition and Subtraction Using Scientific Notation</a></li>
+<li><a href="section-35.html">Multiplication and Division Using Scientific Notation</a></li>
+</ul>
+<h2 class="link"><a href="chapter-7.html"><span class="codenumber">7</span><span class="title">MAT-101: Set 3A-Interpreting Graphs</span></a></h2>
+<ul>
+<li><a href="section-36.html">The Cartesian Coordinate Plane</a></li>
+<li><a href="section-37.html">Intercepts</a></li>
+</ul>
+<h2 class="link"><a href="chapter-8.html"><span class="codenumber">8</span><span class="title">MAT-101: Set 3B-Lines</span></a></h2>
+<ul>
+<li><a href="section-38.html">Slope</a></li>
+<li><a href="section-39.html">Slope-Intercept Form</a></li>
+</ul>
+<h2 class="link"><a href="chapter-9.html"><span class="codenumber">9</span><span class="title">MAT-101: Set 3C-Linear Models</span></a></h2>
+<ul><li><a href="section-40.html">Linear Models</a></li></ul>
+<h2 class="link active"><a href="chapter-10.html"><span class="codenumber">10</span><span class="title">MAT-101: Set 4A-Sets and Counting</span></a></h2>
+<ul>
+<li><a href="section-41.html">Sets</a></li>
+<li><a href="section-42.html" class="active">Tree Diagrams and the Multiplication Axiom</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-42"><header title="Section 10.2 Tree Diagrams and the Multiplication Axiom"><h1 class="heading hide-type" alt="Section 10.2 Tree Diagrams and the Multiplication Axiom">
+<span class="type">Section</span><span class="codenumber">10.2</span><span class="title">Tree Diagrams and the Multiplication Axiom</span>
+</h1></header><p id="p-482">
+In this Module, we are developing counting techniques that will be used in the following Module to study probability. One of the most fundamental of such techniques is called the Multiplication Axiom. Before we
+introduce the multiplication axiom, we first consider some examples.
+</p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-191" id="example-191"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">10.2.1</span><span class="title"> 2-Step Tree Diagram</span>
+</h5></article></a></div>
+<div id="hk-example-191" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-483">
+ 
+A restaurant has a special choose \(2\) dinner deal: for one low price a customer may select one of two appetizers and one of four main courses.  How many different dinner combinations consisting of one appetizer and one main course are possible?
+
+
+<p id="p-484">
+</p>
+<figure class="figure-like" id="table-209">
+Label the two appetizers \(a_1\) and \(a_2\).
+Label the four main dishes \(m_1, m_2, m_3\) and \(m_4\).
+  
+Create a tree diagram 
+    for this problem.
+    Step 1: Since we may select 
+    one of two appetizers, 
+    the tree begins with two branches, one for each of \(a_1\) and \(a_2\).
+    Step 2: Then since we may select 
+    one of four main course options, 
+    each of the first two branches leads to four more branches.  
+    The tree has \(2\times 4 = 8\) endpoints,
+    one for each of the \(8\) dinner special combinations.
+    <img width="90%" src="set4A_Sets_and_Counting_18.png" alt="">
+
+  
+\(8\)
+Our Solution: There are \(8\) possible 
+        different dinner combinations  consisting of one appetizer and one main course.  
+        For example, one combination \(a_2, m_3 \) represents 
+        the choice of appetizer \(2\) with main course \(3\).
+  
+
+  </figure></p>
+<p id="p-485">
+ The tree diagram gives us all eight possibilities. The method involves two steps. First we choose an appetizer. We have two choices: \(a_1\) or \(a_2\). If we choose \(a_1\), we have
+four main dishes to go with it; \(m_1, m_2, m_3\) and \(m_4\). Similarly if we choose \(a_2\), we can select any one of the four main dishes, again. The tree diagram helps us visualize these
+possibilities.
+</p>
+<p id="p-486">
+The reader should note that the process involves two steps. For the first step of choosing an appetizer, there are two choices, and for each choice of an appetizer, there are four choices of a main dish. So altogether there \(2\cdot 4=8\) possibilities. If, in the above example, we add a dessert, we have the following problem:
+  </p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-192" id="example-192"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">10.2.2</span><span class="title"> 3-Step Tree Diagram</span>
+</h5></article></a></div>
+<div id="hk-example-192" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-487">
+ 
+  A restaurant has a special choose \(3\) dinner deal: for one low price a customer may select one of two appetizers, one of four main courses, and one of three desserts.  How many different dinner combinations consisting of one appetizer, one main course and one dessert are possible?
+
+
+
+<p id="p-488">
+</p>
+<figure class="figure-like" id="table-210">
+Label the two appetizers \(a_1\) and \(a_2\).
+
+    Label the four main dishes \(m_1, m_2, m_3\) and \(m_4\).
+    Label the three desserts \(d_1, d_2\) and \(d_3\). 
+
+    The tree diagram at the right results.
+
+    (Note that only 6 of the actual possible dinner combinations are listed at the far right.) 
+
+    The tree has \(2\times 4\times 3 = 24\) endpoints,
+    one for each of the \(24\) dinner special combinations.
+<img width="407" height="273" src="set4A_Sets_and_Counting_19.png" alt="">
+  
+24
+Our Solution: There are \(24\) possible different dinner combinations consisting of one appetizer, one main course, and one dessert.
+  </figure></p>
+<p id="p-489">
+   The important thing to observe here, again, is that this is a three step process. There are two choices for the first step of choosing an appetizer. For each choice of a appetizer, there are four choices of a main course, and for each combination of an appetizer and main course, there are three choices of selecting a dessert. All in all, we have \(2\times 4\times 3 = 24\) different possibilities.
+   </p>
+<p id="p-490">
+   The tree diagrams help us visualize the different possibilities, but they are not practical when the possibilities are numerous. Besides, we are mostly interested in counting the number of elements in the set and not the actual possibilities. But once the problem is envisioned, we can solve it without a tree diagram. The two examples we just solved may have given us a clue to do just that.
+   </p>
+<p id="p-491">
+   Let us now try to solve Example 4A-10: without a tree diagram. Recall that the problem involved three steps: choosing an appetizer, choosing a main course, and choosing a dessert. The number of ways of choosing each are listed below.
+   </p>
+<p id="p-492">
+    <figure class="figure-like" id="table-211">
+The number of ways
+    of choosing an appetizer
+The number of ways
+     of choosing a main course
+The number of ways
+     of choosing a dessert
+  
+\(2\)
+\(4\)
+\(3\)
+  </figure></p>
+<p id="p-493">
+By multiplying these three numbers we get \(2\cdot 4\cdot 3=24\), which is what we got when we did the problem using a tree diagram.  The procedure we just employed is called the multiplication axiom.
+</p>
+<p id="p-494">The Multiplication Axiom: If a task can be done in \(m\) ways, and a second task can be done in \(n\) ways, then the operation involving the first task followed by the second can be performed in \(m\cdot n\) ways.</p>
+<p id="p-495">
+The general multiplication axiom is not limited to just two tasks and can be used for any number of tasks.
+</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-193" id="example-193"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">10.2.3</span><span class="title"> Multiplication Axiom</span>
+</h5></article></a></div>
+<div id="hk-example-193" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-496">
+ 
+ A truck license plate consists of a letter followed by four digits. How many such license plates are possible?
+ 
+<p id="p-497">
+ </p>
+<figure class="figure-like" id="table-212">
+FIX ME!!  I'm broken!
+  </figure></p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-194" id="example-194"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">10.2.4</span><span class="title"> Multiplication Axiom</span>
+</h5></article></a></div>
+<div id="hk-example-194" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-498">
+ 
+  In how many different ways can a \(3\)-question true-false test be answered?
+ 
+
+ </p>
+<figure class="figure-like" id="table-213">
+ FIX ME! Our Solution: There are \(8\) different ways.
+  </figure><p id="p-499">
+ We list all eight possibilities below:</p>
+<p id="p-500">TTT, TTF, TFT, TFF, FTT, FTF, FFT, FFF</p>
+<p id="p-501">
+The reader should note that the first letter in each possibility is the answer corresponding to the first question, the second letter corresponds to the answer to the second question and so on. For example, TFF, says that the answer to the first question is given as true, and the answers to the second and third questions false.
+</p></article></div>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-195" id="example-195"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">10.2.5</span><span class="title"> Multiplication Axiom</span>
+</h5></article></a></div>
+<div id="hk-example-195" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-502">
+ 
+ In how many different ways can four people be seated in a row?
+ 
+<p id="p-503">
+ </p>
+<figure class="figure-like" id="table-214">
+Suppose we put four chairs in a row, and proceed to put four people in these seats.
+  
+There are four choices for the first chair we choose. Once a person sits down in that chair, there are only three choices for the second chair, and so on. We list as shown below.
+  
+ FIX ME!! Our Solution: There are \(24\) different ways.
+  </figure></p></article></div></section></div></main>
+</div>
+</body>
+</html>
