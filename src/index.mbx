@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">`
-
+<docinfo>
+	<latex-image-preamble>
+        \usepackage{pgfplots}               % loads tikz package
+        \usepackage{xcolor}
+        \pgfplotsset{axis x line = middle,
+                     axis y line = middle}
+        \usetikzlibrary{backgrounds}
+        \usetikzlibrary{arrows,matrix,patterns,shapes}
+    </latex-image-preamble>
+</docinfo>
 <book>
     <title>Survey of Algebra and Probability</title>
         <subtitle>MAT 101</subtitle>
@@ -14,8 +23,9 @@
 <xi:include href="./set3A_Interpreting_Graphs.mbx" />
 <xi:include href="./set3B_Lines.mbx" />
 <xi:include href="./set3C_Linear_Models.mbx" />
-<xi:include href="./set4A_Sets_and_Counting.mbx" />
 <!--
+
+<xi:include href="./set4A_Sets_and_Counting.mbx" />
 <xi:include href="./set4B_Probability.mbx" />
 <xi:include href="./set4C_Probability_Rules.mbx" />
 -->
