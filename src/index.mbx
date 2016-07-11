@@ -4,6 +4,7 @@
 	<latex-image-preamble>
         \usepackage{pgfplots}               % loads tikz package
         \usepackage{xcolor}
+        \definecolor{M101_green}{RGB}{0,60,0}
         \pgfplotsset{axis x line = middle,
                      axis y line = middle}
         \usetikzlibrary{backgrounds}
