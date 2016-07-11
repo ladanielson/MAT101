@@ -1,58 +1,58 @@
 <!--**************************************-->
 <!--* Generated from MathBook XML source *-->
-<!--*    on 2016-07-11T16:20:05-06:00    *-->
+<!--*    on 2016-07-11T16:54:40-06:00    *-->
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
 <!--**************************************-->
 <article class="example-like"><h5 class="heading">
-<span class="type">Example</span><span class="codenumber">11.2.6</span><span class="title"> Cards--Sample space and probabilities</span>
+<span class="type">Example</span><span class="codenumber">11.1.3</span><span class="title"> 2-Group Venn Diagram</span>
 </h5>
 <p>
  
-Suppose you conduct an experiment where you pull a card from a standard deck of cards. Recall this deck has \(4\) suits (black spades \(S\), black clubs \(C\), red diamonds \(D\), and red hearts \(H\)) each with \(13\) cards (numbers \(2\) through \(10\), jack \(J\), queen \(Q\), king \(K\), and ace \(A\)). We will generally consider the face cards to be the jacks, hearts, queens, kings, and aces. Determine the following probabilities.
- 
- <p>
- </p>
-<figure class="figure-like" id="table-220">
-\(SS=\) 
-  \( \{2S, 3S, 4S, 5S, 6S, 7S, 8S, 9S, 10S, JS, QS, KS, AS, \) 
-   \(2C, 3C, 4C, 5C, 6C, 7C, 8C, 9C, 10C, JC, QC, KC, AC, \) 
-   \(\color{red}{2D}, \color{red}{3D}, \color{red}{4D}, \color{red}{5D},   \color{red}{6D}, \color{red}{7D}, \color{red}{8D}, \color{red}{9D}, \color{red}{10D}, \color{red}{JD}, \color{red}{QD}, \color{red}{KD}, \color{red}{AD},\)
-   \(\color{red}{2H}, \color{red}{3H}, \color{red}{4H}, \color{red}{5H}, \color{red}{6H}, \color{red}{7H}, \color{red}{8H}, \color{red}{9H}, \color{red}{10H}, \color{red}{JH}, \color{red}{QH}, \color{red}{KH}, \color{red}{AH}\}\)
-The sample space has \(52\) outcomes, one for each card in the deck.
-  
-(a) Determine the probability of selecting a spade.  First write the event space, \(Spade\).
-  
-\( Spade=\) 
-  \(\{2S, 3S, 4S, 5S, 6S, 7S, 8S, 9S, 10S, JS, QS, KS, AS \}\)
-The event \(Spade\) contains \(13\) outcomes.
-  
-\(P(Spade) = \dfrac{n(Spade)}{n(SS)}=\dfrac{13}{52}=\dfrac{1}{4}=0.25\)
-Our Solution (a): The probability of selecting a spade is \(\dfrac{13}{52}\) or \(25\%\).
-  
-(b) Determine the probability of selecting a jack. First write the event space, \(Jack\).
-  
-\(Jack=\{JS, JC, \color{red}{JH}, \color{red}{JD} \}\)
-The event \(Jack\) contains \(4\) outcomes.
-  
-\(P(Jack) =\dfrac{n(Jack)}{n(SS)}=\dfrac{4}{52}=\dfrac{1}{13}\approx  0.07692\)
-Our Solution (b): The probability of selecting a jack is \(\dfrac{4}{52}\) or about \(7.69\%\).
-  
-(c) Determine the probability of selecting a club or a face card. First write the event space, \(Club \cup Face\).
-  
-\(Club \cup Face=\) 
-  \(\{2C, 3C, 4C, 5C, 6C, 7C, 8C, 9C, 10C, JC, QC, KC, AC, \)
-  \( JS, QS, KS, AS, \color{red}{JD}, \color{red}{QD}, \color{red}{KD}, \color{red}{AD}, \color{red}{JH}, \color{red}{QH}, \color{red}{KH}, \color{red}{AH}\}\)
-The event \(Club \cup Face\) contains \(25\) outcomes.
-  
-\(P (Club \cup Face)=  \dfrac{n(Club \cup Face)}{n(SS)}=\dfrac{25}{52} \approx  0.480769\)
-Our Solution (c): The probability of selecting a club or a face card is \(\dfrac{25}{52}\) or about \(48.08\%\).
-  </figure></p>
+Suppose a survey of car enthusiasts showed that over a certain time period, \(30\) drove cars with automatic transmissions, \(20\) drove cars with standard transmissions, and \(12\) drove cars of both types. If every person in the survey drove cars with one of these transmissions, how many people
+participated in the survey?
+
 <p>
-It is also possible to compute probabilities based on the number of times an event \(A\) occurred.
 </p>
-<p>
-The probability of event \(A\) is
-\[P(A) = \dfrac{n(A)}{\text{Total # of outcomes}}\]
-</p></article><span class="incontext"><a href="section-44.html#example-201">in-context</a></span>
+<figure class="figure-like" id="table-222">
+Let set \(A\) represent those surveyed with automatic transmissions.
+Let set \(S\) represent those surveyed with standard transmissions.
+  
+Since \(12\) drove cars of both types
+    Record \(\color{red}{12}\) in \(A\) AND \(S\) \(=A\cap S\).That is \(n(A\cap S)=\color{red}{12}\).
+<img width="90%" src="set4A_Sets_and_Counting_01.png" alt="">
+  
+
+    Let \(\color{blue}{x}\) be the number in \(A\) but NOT in \(S\).
+    Then \(\color{blue}{x}=n(A\cap S')\).
+     Let \(\color{green}{y}\) be the number in \(S\) but NOT in \(A\).
+     Then \(\color{green}{y}=n(S\cap A')\).
+<img width="90%" src="set4A_Sets_and_Counting_02.png" alt="">
+  
+ Because \(30\) people drove cars with automatic transmissions, 
+    the circle \(A\) must contain \(30\) total people. 
+    This means \(x + 12 = 30\).
+        Subtract \(12\) from both sides to get
+         \(x = 18\).
+    Record \(\color{blue}{18}\) in \(A\) but NOT in \(S\).
+<img width="90%" src="set4A_Sets_and_Counting_03.png" alt="">
+  
+ Because \(20\) people drove cars with standard transmissions, 
+    the circle \(S\) must contain \(20\) total people. 
+    This means \(y + 12 = 20\).
+        Subtract \(12\) from both sides to get
+         \(y = 8\).
+    Record \(\color{green}{8}\) in \(S\) but NOT in \(A\).
+<img width="90%" src="set4A_Sets_and_Counting_04.png" alt="">
+  
+Now that all the information is sorted out, 
+        it is easy to read from the diagram that:
+\(\color{blue}{18}\) people drove cars with automatic transmissions only, 
+      \(\color{red}{12}\) people drove both types of cars, and 
+      \(\color{green}{8}\) drove cars with standard transmissions only.
+  
+\(18+12+8=38\)
+Our Solution: \(38\) people participated in the survey.
+  </figure>
+</p></article><span class="incontext"><a href="section-48.html#example-201">in-context</a></span>
