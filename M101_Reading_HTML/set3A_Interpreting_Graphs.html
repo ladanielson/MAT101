@@ -101,6 +101,7 @@ right zero so the point is \(C(0,-2)\).</td>
   </tr>
 </table>
 
+
 <p>Just as we can give the coordinates for a set of points, we can take a set of points and plot them on the plane.</p>
 
 <h3>Example 3A-2: Graph Points</h3>
@@ -134,7 +135,7 @@ backwards). Note that \(D\) is in Q3.</td>
  <p>The last three points have zeros in them. We still treat these points just like the
 other points. If there is a zero there is just no movement.</p>
 
-<center>
+<p>
 <table style="width:100%">
   <tr>
     <td align="right"><img src="set3A_Interpreting_Graphs_Ex_02c.png"></td>
@@ -154,7 +155,7 @@ movement. Thus the point is the origin.</td>
 
   </tr>
 </table>
-</center>
+</p>
 
 <p>The main purpose of graphs is not to plot random points, but rather to give a
 picture of the solutions to an equation. We may have an equation such as \(y =
@@ -193,24 +194,24 @@ Determine if the point \((1,-1)\) is a solution to the equation \(y = 2x - 3\)
 
 
 <h3>Example 3A-4: Investigate Solution</h3>
-Determine if the point \((-9,7)\) is a solution to the equation \(y = |x+5|+4\).
+Determine if the point \((-9,7)\) is a solution to the equation \(y = \left|x+5\right|+4\).
 <!-- Our own-modeled after WeBWorK 3A problem 4-->
 <table>
  <tr>
-    <td align="right">\(y = |x+5|+4\)</td>
+    <td align="right">\(y = \left|x+5\right|+4\)</td>
     <td>Substitute \(x=-9\) and \(y=7\) in the equation.</td>
 
   </tr>
 
   <tr>
-    <td align="right">\(7 = |-9+5|+4\)</td>
+    <td align="right">\(7 = \left|-9+5\right|+4\)</td>
     <td>Simplify: Inside absolute value first</td>
 
   </tr>
 
   <tr>
-    <td align="right">\(7 = |-4|+4\)</td>
-    <td>\(|-4|=4\)</td>
+    <td align="right">\(7 = \left|-4\right|+4\)</td>
+    <td>\(\left|-4\right|=4\)</td>
 
   </tr>
 
@@ -232,39 +233,43 @@ Determine if the point \((-9,7)\) is a solution to the equation \(y = |x+5|+4\).
  For the equation \(Q = P^2-3\), find the \(Q\)-coordinate for each value of \(P\) in the table.
 <!-- Our own-modeled after WeBWorK 3A problem 6-->
 <table>
-<tr>
-        <td> <table border="1">
-                <tr>
-                  <th>\(P\)</th>
-                  <th>\(Q\)</th>
-                </tr>
-
-                <tr>
-                  <td>\(-3\)</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>\(-1\)</td>
-                  <td></td>
-                </tr>
-
-                <tr>
-                  <td>\(0\)</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>\(1\)</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>\(5\)</td>
-                  <td></td>
-                </tr> </table>
-        </td>
-        <td>We will plug each given \(P\) value in the equation and solve for \(Q\)</td>
+  <tr>
+    <td> <!--<table border="1">-->
+      \(
+        
+          \begin{array}{c|c}
+            P & Q \\
+            \hline
+            -3 & \, \\
+            -1 & \, \\
+            0 & \, \\
+            1 & \, \\
+            5 & \, \\
+          \end{array}
+        
+      \)
+    </td>
+    <td>We will plug each given \(P\) value in the equation and solve for \(Q\)</td>
   </tr>
 
-  <tr></tr>
+  <tr>
+    <td> <!--<table border="1">-->
+      \(
+        \begin{array}{c|c}
+            P & Q \\
+            \hline
+            -3 & 6 \\
+            -1 & -2 \\
+            0 & -3 \\
+            1 & -2 \\
+            5 & 22 \\
+          \end{array}
+      \)
+    </td>
+    <td>Work below \(Q\)</td>
+  </tr>
+
+<!--  <tr>\(\,\)</tr></table>
 
    <tr>
     <td align="right"><table border ="1">
@@ -295,8 +300,10 @@ Determine if the point \((-9,7)\) is a solution to the equation \(y = |x+5|+4\).
 </tr>
                       </table>
 </td>
-
-    <td>Find each \(Q\)-coordinate by replacing \(P\) with the given value in the equation \(Q = P^2-3\)
+-->
+<tr>
+    <td>Find each \(Q\)-coordinate by replacing \(P\) with the given value in the equation \(Q = P^2-3\)</td>
+  <td>
 \(P=-3; Q =(-3)^2-3=(-3)(-3)-3=9-3=6\)</br>
 \(P=-1; Q =(-1)^2-3=(-1)(-1)-3=1-3=-2\)</br>
 \(P=0; Q =(0)^2-3=(0)(0)-3=0-3=-3\)</br>
@@ -304,7 +311,8 @@ Determine if the point \((-9,7)\) is a solution to the equation \(y = |x+5|+4\).
 \(P=5; Q =(5)^2-3=(5)(5)-3=25-3=22\)</td>
 
   </tr>
- </p>  </table>
+</table>
+
 
 <p>We may be interested in what type of solutions are possible with the equation \(y =
 2x - 3\).  We can visualize the solution by making a graph of possible \(x\) and \(y\) combinations that make this equation a true statement. We will have to start by
@@ -315,29 +323,29 @@ Graph \(y=2x-3\). We make a table of values.
 <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 121 pg 91-->
 <table>
   <tr>
-    <td align="right"><table border ="1">
+    <td align="right">THis needs to be fixed!!<!--<table border ="1">
                       <tr>
   <th>\(x\)</th>
   <th>\(y\)</th>
 </tr>
                       <tr>
   <td>\(-1\)</td>
-  <td></td>
+  <td>\(\,\)</td>
 </tr>
                       <tr>
   <td>\(0\)</td>
-  <td></td>
+  <td>\(\,\)</td>
 </tr>
                       <tr>
   <td>\(1\)</td>
-  <td></td>
+  <td>\(\,\)</td>
 </tr>
                       </table>
 </td>
     <td>We will test three values for \(x\). Any three can be used</td>
 
   </tr>
-        <tr></tr>
+        <tr>\(\,\)</tr>
     <tr>
     <td align="right"><table border ="1">
                       <tr>
@@ -373,7 +381,7 @@ Graph \(y=2x-3\). We make a table of values.
     <td align="right"><img src="set3A_Interpreting_Graphs_Ex_06.png"></td>
     <td>Plot each point. </br></br>
 In the next set <b>3B-Lines</b>, we will see that this particular equation determines a line.  Thus, once the points are plotted on the graph, connect
-the dots to make a line.</br></br>
+the dots to make a line.</br></br>-->
 The graph is our solution</td>
 
   </tr>
@@ -390,22 +398,22 @@ Graph \(2x-3y=6\). We will use a table of values.
 <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 122 pg 92-->
 <table>
   <tr>
-    <td align="right"><table border ="1">
+    <td align="right">FIX ME! <!--<table border ="1">
                       <tr>
   <th>\(x\)</th>
   <th>\(y\)</th>
 </tr>
                       <tr>
   <td>\(-3\)</td>
-  <td></td>
+  <td>\(\,\)</td>
 </tr>
                       <tr>
   <td>\(0\)</td>
-  <td></td>
+  <td>\(\,\)</td>
 </tr>
                       <tr>
   <td>\(3\)</td>
-  <td></td>
+  <td>\(\,\)</td>
 </tr>
                       </table>
 </td>
@@ -538,23 +546,23 @@ Graph \(2x-3y=6\). We will use a table of values.
   </tr>
    <tr>
     <td ><img src="set3A_Interpreting_Graphs_Ex_07.png"></td>
-    <td>Graph points and connect dots</br></br></br>
+    <td>Graph points and connect dots</br></br></br>-->
 Our Solution</td>
 
   </tr>
 </table>
-</p>
+
 
 <p>
 Notice that there are two points on the graph of the equation that lie on an axis.  One is the point in the table \((0,-2)\). It lies on the \(y\)-axis and is called a \(y\)-intercept. Another is the point \((3,0)\).  It lies on the \(x\)-axis and is called an \(x\)-intercept.
 </p>
 
 <h3>Example 3A-8: Graph an Absolute Value Equation</h3>
-Graph \(y=|x|\). We make a table of values.
+Graph \(y=\left|x\right|\). We make a table of values.
 
 <table>
   <tr>
-    <td align="right"><table border ="1">
+    <td align="right">FIX ME!<!--<table border ="1">
                       <tr>
   <th>\(x\)</th>
   <th>\(y\)</th>
@@ -567,26 +575,26 @@ Graph \(y=|x|\). We make a table of values.
 
 <tr>
   <td>\(-1\)</td>
-  <td></td>
+  <td>\(\,\)</td>
 </tr>
 <tr>
   <td>\(0\)</td>
-  <td></td>
+  <td>\(\,\)</td>
 </tr>
 <tr>
   <td>\(1\)</td>
-  <td></td>
+  <td>\(\,\)</td>
 </tr>
 <tr>
   <td>\(2\)</td>
-  <td></td>
+  <td>\(\,\)</td>
 </tr>
                       </table>
 </td>
     <td>We will test five values for \(x\). Any five can be used</td>
 
   </tr>
-        <tr></tr>
+        <tr>\(\,\)</tr>
     <tr>
     <td align="right"><table border ="1">
                       <tr>
@@ -617,9 +625,9 @@ Graph \(y=|x|\). We make a table of values.
     <td>Evaluate each by replacing \(x\) with the given value
     \(x=-2; y =|-2|=2\)</br>
 \(x=-1; y =|-1|=1\)</br>
-\(x=0; y =|0|=0\)</br>
-\(x=1; y =|1|=1\)</br>
-\(x=2; y =|2|=2\)</br></td>
+\(x=0; y =\left|0\right|=0\)</br>
+\(x=1; y =\left|1\right|=1\)</br>
+\(x=2; y =\left|2\right|=2\)</br></td>
 
   </tr>
 
@@ -632,8 +640,8 @@ Graph \(y=|x|\). We make a table of values.
     <td align="right"><img src="set3A_Interpreting_Graphs_Ex_08.png"></td>
     <td>Plot each point. </br></br>
 
-The graph is our solution.</br></br>
-Notice the graph of \(y=|x|\) lies entirely above the \(y\)-axis except for at the origin.</td>
+The graph is our solution.</br></br>-->
+Notice the graph of \(y=\left|x\right|\) lies entirely above the \(y\)-axis except for at the origin.</td>
 
   </tr>
 </table>
@@ -705,7 +713,7 @@ Determine the \(y\)-intercept of \(y = 3x+2\).
 <td align="right">The \(x\)-intercept is labeled on the graph of the equation</td>
 <td><img src="set3A_Interpreting_Graphs_Ex_10.png"/></td>
 </tr>
-</table></p>
+</table>
 
 
 <p>
@@ -714,43 +722,44 @@ we may slightly abuse the notation and say "The \(x\)-intercept is \(\dfrac{-2}{
 </p>
 
 <h3>Example 3A-11: Investigate Equation Relationships Graphically</h3>
-Consider the graph of \(y=|x+1|\) in red together with the line \(y=3\) in blue below. For what values of \(x\) does \(|x+1|=3\)?
+Consider the graph of \(y=\left|x+1\right|\) in red together with the line \(y=3\) in blue below. For what values of \(x\) does \(\left|x+1\right|=3\)?
 <!-- Our own-modeled after WeBWorK 3A problem 17-->
 <table>
  <tr>
     <td align="right"><img src="set3A_Interpreting_Graphs_Ex_11.png"></td>
-    <td>Using the graph, we see the red \(y=|x+1|\) and blue line \(y=3\) intersect at the two points \((-4,3)\) and \((2,3)\).</br></br>
-    Thus, \(|x+1|=3\) at \(x=-4,2\).</td>
+    <td>Using the graph, we see the red \(y=\left|x+1\right|\) and blue line \(y=3\) intersect at the two points \((-4,3)\) and \((2,3)\).</br></br>
+    Thus, \(\left|x+1\right|=3\) at \(x=-4,2\).</td>
 
   </tr>
 
   </table>
 
   <h3>Example 3A-12: Investigate Equation Relationships Graphically</h3>
-  Consider the graph of \(y=|x+1|\) in red together with the line \(y=3\) in blue below. For what values of \(x\) is \(|x+1|\lt 3\)?
+  Consider the graph of \(y=\left|x+1\right|\) in red together with the line \(y=3\) in blue below. For what values of \(x\) is \(\left|x+1\right|\lt 3\)?
 <!-- Our own-modeled after WeBWorK 3A problem 17-->
 <table>
  <tr>
     <td align="right"><img src="set3A_Interpreting_Graphs_Ex_12.png"></td>
-    <td>Using the graph, we see the red \(y=|x+1|\) lies below the blue line \(y=3\) for \(x\) values between \(-4\) and \(2\).</br></br>
-    Thus, \(|x+1|\lt 3\) for all \(x\) in the interval \((-4,2)\).</td>
+    <td>Using the graph, we see the red \(y=\left|x+1\right|\) lies below the blue line \(y=3\) for \(x\) values between \(-4\) and \(2\).</br></br>
+    Thus, \(\left|x+1\right|\lt 3\) for all \(x\) in the interval \((-4,2)\).</td>
 
   </tr>
 
   </table>
 
  <h3>Example 3A-13: Investigate Equation Relationships Graphically</h3>
- Consider the graph of \(y=|x+1|\) in red together with the line \(y=3\) in blue below. For what values of \(x\) is \(|x+1|\gt 3\)? </p>
+ Consider the graph of \(y=\left|x+1\right|\) in red together with the line \(y=3\) in blue below. For what values of \(x\) is \(\left|x+1\right|\gt 3\)? 
 <!-- Our own-modeled after WeBWorK 3A problem 6-->
 <table>
  <tr>
     <td align="right"><img src="set3A_Interpreting_Graphs_Ex_13.png"></td>
-    <td>Using the graph, we see the red \(y=|x+1|\) lies above the blue line \(y=3\) for \(x\) values less than \(-4\) or above \(2\).</br></br>
-    Thus, \(|x+1|\gt 3\) for all \(x\) in the compound interval \((-\infty,-4)\cup (2,\infty)\).</td>
+    <td>Using the graph, we see the red \(y=\left|x+1\right|\) lies above the blue line \(y=3\) for \(x\) values less than \(-4\) or above \(2\).</br></br>
+    Thus, \(\left|x+1\right|\gt 3\) for all \(x\) in the compound interval \((-\infty,-4)\cup (2,\infty)\).</td>
 
   </tr>
 
   </table>
+
 
 </body>
 
