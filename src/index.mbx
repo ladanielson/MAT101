@@ -36,6 +36,7 @@
 <xi:include href="./set3C_Linear_Models.mbx" />
 <xi:include href="./set4A_Sets_and_Counting.mbx" />
 <xi:include href="./set4B_Probability.mbx" />
+<!--
 <xi:include href="./set4C_Probability_Rules.mbx" />
 <<<<<<< bb43ba414a9eecc1c301dc1f6f1afbe6b5e89816
 =======
