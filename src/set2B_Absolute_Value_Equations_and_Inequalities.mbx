@@ -1,28 +1,22 @@
 <chapter>
 <title>MAT-101: Set 2B-Absolute Value Equations and Inequalities</title>
-
-<section>
-<title>Objectives:</title>
-
-
+<introduction>
 <ul>
-  <li>Solve linear absolute value equations. </li>
+<li>Solve linear absolute value equations. </li>
   <li>Solve, graph and give interval notation for the solution to inequalities with absolute values.</li>
   <li>Solve linear distance equations and inequalities problems.</li>
 </ul>
-
-
-</section>
+</introduction>
 
 <section>
 <title>Absolute Value Equations</title>
 
 
 <p>
-Absolute value is defined as distance from zero.  Consider both integers <m>5</m> and <m>-5</m>.   Since both positive and negative <m>5</m> have a distance of <m>5</m> units from <m>0</m> on the number line, both have an absolute value of <m>5</m>.
+Absolute value is defined as distance from zero.  Consider both integers <m>5</m> and <m>-5</m>.   Since both positive and negative <m>5</m> have a distance of <m>5</m> units from <m>0</m> on the number line, both have an absolute value of <m>5</m>.</p>
 <table  align="center">
   <tr>
-<td align ="right"><m>|5|=5 \text{ and } |-5|=5</m></td>
+<td align ="right"><m>\left|5\right|=5 \text{ and } \left|-5\right|=5</m></td>
 <td><image source="set2B_Absolute_Value_Equations_and_Inequalities_Intro.png" /></td>
   </tr>
 </table>
@@ -40,8 +34,9 @@ Thus when solving equations with absolute value we can end up with more than one
 </p>
 <table class = "center">
   <tr>
-<td align="right"><m>|x| = 7</m></td>
-<td>Absolute value can be positive or negative</td>
+<td align="right"><m>\left|x\right| = 7</m></td>
+||
+    <td>Absolute value can be positive or negative</td>
   </tr>
 <tr>
 <td align="right"><m>x=7</m> or <m>x=-7</m></td>
@@ -65,7 +60,7 @@ Thus when solving equations with absolute value we can end up with more than one
 </p>
 <table class = "center">
   <tr>
-<td align="right"><m>5+|x| = 8</m></td>
+<td align="right"><m>5+\abs(x) = 8</m></td>
 <td>Notice absolute value is not alone on the <b>LHS</b>
     <font color="#FF0000"/>Isolate the absolute value first</td>
   </tr>
@@ -74,7 +69,7 @@ Thus when solving equations with absolute value we can end up with more than one
 <td>Subtract <m>5</m> from both sides</td>
   </tr>
 <tr>
-<td align="right"><m>|x| = 3</m></td>
+<td align="right"><m>\left|x\right| = 3</m></td>
 <td>Absolute value can be positive or negative</td>
   </tr>
 <tr>
@@ -83,7 +78,7 @@ Thus when solving equations with absolute value we can end up with more than one
   </tr>
 </table>
 <p>
-Check our two solutions: Substitute both back in the original equation <m>5+|x| = 8</m>.
+Check our two solutions: Substitute both back in the original equation <m>5+\left|x\right|= 8</m>.
 </p>
 
 <table class = "center">
@@ -92,8 +87,8 @@ Check our two solutions: Substitute both back in the original equation <m>5+|x| 
 <td><m>\underline{x=-3:}</m></td>
   </tr>
 <tr>
-<td align="right"><m>5+|3|</m></td>
-<td><m>5+|-3|</m></td>
+<td align="right"><m>5+\left|3\right|</m></td>
+<td><m>5+\left|-3\right|</m></td>
   </tr>
 <tr>
 <td align="right"><m>5+3 = 8\checkmark</m></td>
@@ -115,7 +110,7 @@ Check our two solutions: Substitute both back in the original equation <m>5+|x| 
 </p>
 <table class = "center">
   <tr>
-<td align="right"><m>-4|x|=-20</m></td>
+<td align="right"><m>-4\left|x\right|=-20</m></td>
 <td>Notice absolute value is not alone on the <b>LHS</b>
     <font color="#FF0000"/>Isolate the absolute value first</td>
   </tr>
@@ -124,7 +119,7 @@ Check our two solutions: Substitute both back in the original equation <m>5+|x| 
 <td>Divide both sides by <m>-4</m></td>
   </tr>
 <tr>
-<td align="right"><m>|x| = 5</m></td>
+<td align="right"><m>\left|x\right| = 5</m></td>
 <td>Absolute value can be positive or negative</td>
   </tr>
 <tr>
@@ -142,10 +137,11 @@ Check our two solutions: Substitute both back in the original equation <m>5+|x| 
 
 <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 87 pg 53-->
 
+<p>
 </p>
 <table class = "center">
   <tr>
-<td align="right"><m>5|x|-4 = 26</m></td>
+<td align="right"><m>5\left|x\right|-4 = 26</m></td>
 <td>Notice absolute value is not alone on the <b>LHS</b>
     <font color="#FF0000"/>Isolate the absolute value first</td>
   </tr>
@@ -154,7 +150,7 @@ Check our two solutions: Substitute both back in the original equation <m>5+|x| 
 <td>Add <m>4</m> to both sides</td>
   </tr>
 <tr>
-<td align="right"><m>5|x| = 30</m></td>
+<td align="right"><m>5\left|x\right| = 30</m></td>
 <td>Absolute value still not alone</td>
   </tr>
 <tr>
@@ -162,7 +158,7 @@ Check our two solutions: Substitute both back in the original equation <m>5+|x| 
 <td>Divide both sides by <m>5</m></td>
   </tr>
 <tr>
-<td align="right"><m>|x| = 6</m></td>
+<td align="right"><m>\left|x\right| = 6</m></td>
 <td>Absolute value can be positive or negative</td>
   </tr>
 <tr>
@@ -170,6 +166,8 @@ Check our two solutions: Substitute both back in the original equation <m>5+|x| 
 <td>Our Solution</td>
   </tr>
 </table>
+</p>
+
 <p>Again we see the same process: isolate the absolute value first, then consider the positive and negative solutions. Often the absolute value will have more than just a variable in it. In this case we will have to solve the resulting equations when we consider the positive and negative possibilities. This is shown in the next example.</p>
 
 </example>
@@ -179,11 +177,11 @@ Check our two solutions: Substitute both back in the original equation <m>5+|x| 
 <p>
 
 <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 88 pg 53-->
-
+<p>
 </p>
 <table class = "center">
   <tr>
-<td align="right"><m>|2x-1| = 7</m></td>
+<td align="right"><m>\left|2x-1\right| = 7</m></td>
 <td>Absolute value can be positive or negative</td>
   </tr>
 <tr>
@@ -192,8 +190,11 @@ Check our two solutions: Substitute both back in the original equation <m>5+|x| 
 <td>Two equations to solve</td>
   </tr>
 </table>
+</p>
+
 <p>Now notice we have two equations to solve, each equation will give us a different solution. Both equations solve (separately) like any other two-step equation.</p>
 
+<p>
 <table class = "center">
   <tr>
 <td align="right"><m>2x-1=7</m></td>
@@ -226,6 +227,8 @@ Check our two solutions: Substitute both back in the original equation <m>5+|x| 
 <td align="left">Our Solution</td>
   </tr>
 </table>
+</p>
+
 <p>Again, it is important to remember that the absolute value must be alone first before we consider the positive and negative possibilities. This is illustrated in the below example.</p>
 
 </example>
@@ -235,18 +238,21 @@ Check our two solutions: Substitute both back in the original equation <m>5+|x| 
 <p>
 
 <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 89 pg 54-->
-
+<p>
 </p>
 <table class = "center">
   <tr>
-<m>2-4|2x + 3| = -18</m>
+<td><m>2-4\left|2x + 3\right| = -18</m></td>
   </tr>
 </table>
+</p>
+
 <p>To get the absolute value alone we first need to subtract the <m>2</m> from both sides, then divide by  <m>-4</m> (the coefficient on the absolute value).  Notice we cannot combine the <m>2</m> and  <m>-4</m> because they are not like terms: the <m>-4</m> is multiplied by the absolute value expression.  Also notice we do not distribute the <m>-4</m> into the absolute value.  This is because the numbers outside cannot be combined with the numbers inside the absolute value. Thus we get the absolute value alone in the following way:</p>
 
+<p>
 <table class = "center">
   <tr>
-<td align="right"><m>2-4|2x + 3| = -18</m></td>
+<td align="right"><m>2-4\left|2x + 3\right| = -18</m></td>
 <td>Notice absolute value is not alone</td>
   </tr>
 <tr>
@@ -254,7 +260,7 @@ Check our two solutions: Substitute both back in the original equation <m>5+|x| 
 <td>Subtract <m>2</m> from both sides</td>
   </tr>
 <tr>
-<td align="right"><m>-4|2x + 3| = - 20</m></td>
+<td align="right"><m>-4\left|2x + 3\right| = - 20</m></td>
 <td>Absolute value still not alone</td>
   </tr>
 <tr>
@@ -262,7 +268,7 @@ Check our two solutions: Substitute both back in the original equation <m>5+|x| 
 <td>Divide both sides by <m>-4</m></td>
   </tr>
 <tr>
-<td align="right"><m>|2x+3| = 5</m></td>
+<td align="right"><m>\left|2x+3\right| = 5</m></td>
 <td>Absolute value can be positive or negative</td>
   </tr>
 <tr>
@@ -272,6 +278,8 @@ Check our two solutions: Substitute both back in the original equation <m>5+|x| 
 <td>Two equations to solve</td>
   </tr>
 </table>
+</p>
+
 <p>Now we solve these two remaining equations to find our solutions.</p>
 
 <table class = "center">
@@ -295,16 +303,19 @@ Check our two solutions: Substitute both back in the original equation <m>5+|x| 
 <td> <m>\phantom{1234}</m></td>
 <td align="right"><m>\overline{2}\,\,\,\,\,\,\,\,\,\,\,\,\overline{\,2\,}</m></td>
   </tr>
+<tr>
 <td align="right"><m>x=1</m></td>
 <td> <m>\phantom{1234}</m>OR</td>
 <td align="right"><m>x=-4</m></td>
   </tr>
 <tr>
-<td><m>\phantom{1}</m></td>
+<td align="right"><m>\phantom{1}</m></td>
 <td><m>x = 1</m> or <m>x = -4</m></td>
 <td align="left">Our Solution</td>
   </tr>
 </table>
+
+
 <p>As we are solving absolute value equations it is important to be aware of special cases. Remember the result of an absolute value must always be positive. Notice what happens in the next example.</p>
 
 </example>
@@ -314,12 +325,11 @@ Check our two solutions: Substitute both back in the original equation <m>5+|x| 
 <p>
 
 <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 90 pg 55-->
-
-
+<p>
 </p>
 <table class = "center">
   <tr>
-<td align="right"><m>7+|2x-5|=4</m></td>
+<td align="right"><m>7+\left|2x-5\right|=4</m></td>
 <td>Notice absolute value is not alone</td>
   </tr>
 <tr>
@@ -327,16 +337,19 @@ Check our two solutions: Substitute both back in the original equation <m>5+|x| 
 <td>Subtract <m>7</m> from both sides</td>
   </tr>
 <tr>
-<td align="right"><m>|2x-5| = \color{red}{-3}</m></td>
+<td align="right"><m>\left|2x-5\right| = \color{red}{-3}</m></td>
 <td><font color="#FF0000"/><b>STOP!</b> Result of absolute value can't be negative!</td>
   </tr>
 <tr>
 <td align ="right">No solution</td>
 <td>Our Solution <div class="WWbox">
-                       Type <b>No solution</b> in <tt>WeBWorK</tt>
-                       </div></td>
+                     Type <b>No solution</b> in <tt>WeBWorK</tt>
+                     </div></td>
   </tr>
 </table>
+</p>
+
+
 <p>Notice in the above example, the absolute value expressions equals a negative number! This is impossible with absolute value. When this occurs we <font color="#FF0000"/><b>STOP</b> and conclude there is no solution.</p>
 
 
@@ -358,26 +371,27 @@ the absolute value depends on the direction of the inequality symbol.
 </p>
 
 <p>
-Consider <m>|x|<2</m>.
+Consider <m>\left|x\right|\lt 2</m>.
 </p>
 
 <p>
 Absolute value is defined as distance from zero. Another way to read this
 inequality would be the distance from zero is <b>less</b> than <m>2</m>. On a number line we
-will shade all points that are <b>less than</b> 2 units away from zero.
+will shade all points that are <b>less than</b> <m>2</m> units away from zero.
 </p>
 
-<image source="set2B_Absolute_Value_Equations_and_Inequalities_Interval_.png" /><p>
+<p><image source="set2B_Absolute_Value_Equations_and_Inequalities_Interval_.png" /></p>
+<p>
 This graph looks just like the graphs of the three part compound inequalities!
 When the absolute value is less than a positive number we will remove the absolute value
 by changing the problem to a three part inequality, with the negative value on the
 left and the positive value on the right:
-\[|x| \lt 2 \text{ is equivalent to  } \color{blue}{-2 \lt x \lt 2}\]
+\[\left|x\right| \lt 2 \text{ is equivalent to  } \color{blue}{-2 \lt x \lt 2}\]
 as the graph above illustrates.
 </p>
 
 <p>
-Consider <m>|x|>2</m>.
+Consider <m>\left|x\right|\gt 2</m>.
 </p>
 
 <p>
@@ -385,13 +399,15 @@ Absolute value is defined as distance from zero. Another way to read this
 inequality would be the distance from zero is <b>greater</b> than <m>2</m>. On the number line we shade all points that are <b>more than</b> <m>2</m> units away from zero.
 </p>
 
-<image source="set2B_Absolute_Value_Equations_and_Inequalities_Interval2_.png" /><p>
+<p><image source="set2B_Absolute_Value_Equations_and_Inequalities_Interval2_.png" /></p>
+
+<p>
 This graph looks just like the graphs of the OR compound inequalities! When the
 absolute value is greater than a positive number we will remove the absolute value by
 changing the problem to an OR inequality, the first inequality looking just like
 the problem with no absolute value, the second flipping the inequality symbol and
 changing the value to a negative:
-\[|x| \gt 2 \text{ is equivalent to  } \color{blue}{x\gt 2} \text{ or }\color{red}{ x \lt -2}\]
+\[\left|x\right| \gt 2 \text{ is equivalent to  } \color{blue}{x\gt 2} \text{ or }\color{red}{ x \lt -2}\]
 as the graph above illustrates.
 </p>
 
@@ -404,37 +420,34 @@ notation which is done the same way it is done for standard compound inequalitie
 We can solve absolute value inequalities much like we solved absolute value equations.
 <ol>
   <li>Isolate the absolute value</li>
-  <ul>
-    <li>If <m>|\cdot|</m>  is less than a negative number, <font color="#FF0000"/>STOP: No solution</li>
-  </ul>
-
+    <ul>
+      <li>If <m>\left|\cdot\right|</m>  is less than a negative number, <font color="#FF0000"/>STOP: No solution</li>
+    </ul>
   <li>"Remove" the absolute value</li>
-  <ul>
-    <li>If <m>|\text{expression}|\lt p</m>  is<b> less than a positive number</b> make a three part inequality:
+    <ul>
+      <li>If <m>\left|\text{expression}\right|\lt p</m>  is<b> less than a positive number</b> make a three part inequality:
          <m>-p\lt \text{expression}\lt p</m></li>
-    <li>If <m>|\text{expression}|>p</m>  is <b>greater than a positive number</b> make an OR inequality: 
+      <li>If <m>\left|\text{expression}\right|>p</m>  is <b>greater than a positive number</b> make an OR inequality: 
         <m>\text{expression}\gt p</m> or <m>\text{expression}\lt -p</m> </li>
-  </ul>
-
+    </ul>
   <li>Solve the inequalities</li>
-  <ul>
-    <li><b>Important: </b> if we multiply or divide by a negative number the inequality symbol will switch directions!</li>
-  </ul>
-
-</ol>
+    <ul>
+      <li><b>Important: </b> if we multiply or divide by a negative number the inequality symbol will switch directions!</li>
+    </ul>
+</ol></p>
 
 <example>
 <title> Absolute Value Inequality: OR inequality</title>
 <p>
 
-Solve, graph, and give interval notation for the solution.
+<p>
+Solve, graph, and give interval notation for the solution.</p>
 <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 160 pg 129-->
-
-
+<p>
 </p>
 <table class = "center">
   <tr>
-<td align="right"><m>|4x-5|\geq 6</m></td>
+<td align="right"><m>\left|4x-5\right|\geq 6</m></td>
 <td>Absolute value is greater than a positive number, use OR inequality</td>
   </tr>
 <tr>
@@ -465,8 +478,7 @@ Solve, graph, and give interval notation for the solution.
 <td align="right"><m>\left(-\infty,-\dfrac{1}{4}\right]\cup\left[\dfrac{11}{4},\infty\right)</m></td>
 <td>Interval notation</td>
   </tr>
-</table>
-</p>
+</table></p>
 
 
 </example>
@@ -478,10 +490,11 @@ Solve, graph, and give interval notation for the solution.
 Solve, graph, and give interval notation for the solution.
 <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 161 pg 130-->
 
+<p>
 </p>
 <table class = "center">
   <tr>
-<td align="right"><m>-4-3|x|\leq -16</m></td>
+<td align="right"><m>-4-3\left|x\right|\leq -16</m></td>
 <td>Isolate the absolute value: Add <m>4</m> to both sides</td>
   </tr>
 <tr>
@@ -489,7 +502,7 @@ Solve, graph, and give interval notation for the solution.
 <td><m>\,</m></td>
   </tr>
 <tr>
-<td align="right"><m>-3|x|\leq -12</m></td>
+<td align="right"><m>-3\left|x\right|\leq -12</m></td>
 <td>Divide both sides by negative 3</td>
   </tr>
 <tr>
@@ -497,7 +510,7 @@ Solve, graph, and give interval notation for the solution.
 <td>Dividing by a negative switches the inequality direction</td>
   </tr>
 <tr>
-<td align="right"><m>|x|\color{red}{\geq} 4</m></td>
+<td align="right"><m>\left|x\right|\color{red}{\geq} 4</m></td>
 <td>Absolute value is greater, use OR</td>
   </tr>
 <tr>
@@ -531,6 +544,7 @@ adding <m>4</m>, then divide by <m>-3</m>. The next example is similar.
 Solve, graph, and give interval notation for the solution.
 <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 162 pg 131-->
 
+<p>
 </p>
 <table class = "center">
   <tr>
@@ -582,6 +596,8 @@ Solve, graph, and give interval notation for the solution.
 <td>Interval notation</td>
   </tr>
 </table>
+</p>
+
 <p>
 In the previous example, we cannot distribute the <m>-2</m> into the absolute value.
 We can never distribute or combine things outside the absolute value with what is
@@ -603,9 +619,10 @@ this will always happen. Here the answer will be all real numbers.
 <title> Absolute Value Less than Negative Number</title>
 <p>
 
-Solve, graph, and give interval notation for the solution.
+<p>Solve, graph, and give interval notation for the solution.</p>
 <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 163 pg 131-->
 
+<p>
 </p>
 <table class = "center">
   <tr>
@@ -617,15 +634,15 @@ Solve, graph, and give interval notation for the solution.
 <td><m>\,</m></td>
   </tr>
 <tr>
-<td align="right"><m>4|6x-1|\lt -8</m></td>
+<td align="right"><m>4\left|6x-1\right|\lt -8</m></td>
 <td>Divide both sides by <m>4</m></td>
   </tr>
 <tr>
 <td align="right"><m>\overline{4}\phantom{12345678910}\overline{4}</m></td>
-<td>Dividing by a positive--DON'T switch the inequality direction</td>
+<td>Dividing by a positive: DON'T switch the inequality direction</td>
   </tr>
 <tr>
-<td align="right"><m>|6x-1|\lt -2</m></td>
+<td align="right"><m>\left|6x-1\right|\lt -2</m></td>
 <td><font color="#FF0000"/>STOP:Absolute value can't be less than a negative!</td>
   </tr>
 <tr>
@@ -645,6 +662,7 @@ Solve, graph, and give interval notation for the solution.
 Solve, graph, and give interval notation for the solution.
 <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 164 pg 131-->
 
+<p>
 </p>
 <table class = "center">
   <tr>
@@ -656,7 +674,7 @@ Solve, graph, and give interval notation for the solution.
 <td><m>\,</m></td>
   </tr>
 <tr>
-<td align="right"><m>-6|x+7|\leq 12</m></td>
+<td align="right"><m>-6\left|x+7\right|\leq 12</m></td>
 <td>Divide both sides by <m>-6</m></td>
   </tr>
 <tr>
@@ -664,7 +682,7 @@ Solve, graph, and give interval notation for the solution.
 <td>Dividing by a negative switches the inequality direction</td>
   </tr>
 <tr>
-<td align="right"><m>|x+7|\color{red}{\geq} -2</m></td>
+<td align="right"><m>\left|x+7\right|\color{red}{\geq} -2</m></td>
 <td>Absolute value <b>always</b> greater than negative!</td>
   </tr>
 <tr>
@@ -678,6 +696,8 @@ Solve, graph, and give interval notation for the solution.
 <td> Our Solution: Interval notation</td>
   </tr>
 </table>
+</p>
+
 </example>
 </section>
 
@@ -691,8 +711,9 @@ Solve, graph, and give interval notation for the solution.
 <title> Distance Equation</title>
 <p>
 
-Suppose the distance between <m>x</m> and <m>4</m> is exactly <m>7</m>. Determine <m>x</m>.
+<p>Suppose the distance between <m>x</m> and <m>4</m> is exactly <m>7</m>. Determine <m>x</m>.</p>
 <!-- Our own like WeBWorK 1C Problem 15-->
+<p>
 </p>
 <table class = "center">
   <tr>
@@ -708,8 +729,11 @@ Suppose the distance between <m>x</m> and <m>4</m> is exactly <m>7</m>. Determin
 <tr>
 <td align="right"><m>x-4=7</m> or <m>x-4=-7</m></td>
 <td>Two equations to solve</td>
-</td>
-</table><table class = "center">
+  </tr>
+</table></p>
+
+<p>
+<table class = "center">
   <tr>
 <td align="right"><m>x-4=7</m></td>
 <td> <m>\phantom{1234}</m> OR</td>
@@ -730,14 +754,20 @@ Suppose the distance between <m>x</m> and <m>4</m> is exactly <m>7</m>. Determin
 <td><m>x = 11</m> or <m>x = -3</m></td>
 <td align="left">Our Solution</td>
   </tr>
-</table></example>
+</table></p>
+
+
+
+</example>
 
 <example>
 <title> Distance (Three-Part Inequality)</title>
 <p>
 
-Suppose the distance between <m>x</m> and zero is less than or equal to <m>6</m>. Determine <m>x</m>.
+<p>Suppose the distance between <m>x</m> and zero is less than or equal to <m>6</m>. Determine <m>x</m>.</p>
 <!-- Our own like WeBWorK 1C Problem 18-->
+<p>
+
 </p>
 <table class = "center">
   <tr>
@@ -750,7 +780,7 @@ Suppose the distance between <m>x</m> and zero is less than or equal to <m>6</m>
 <td>Simplify the absolute value expression</td>
   </tr>
 <tr>
-<td align="right"><m>|x|\leq 6</m></td>
+<td align="right"><m>\left|x\left|\leq 6</m></td>
 <td>Absolute value is less, use three part inequality</td>
   </tr>
 <tr>
@@ -759,14 +789,18 @@ Suppose the distance between <m>x</m> and zero is less than or equal to <m>6</m>
   </tr>
 </table>
 
+</p>
+
+
 </example>
 
 <example>
 <title> Distance (OR Inequality)</title>
 <p>
 
-Suppose the distance between <m>x</m> and <m>-14</m> is greater than <m>3</m>. Determine <m>x</m>.
+<p>Suppose the distance between <m>x</m> and <m>-14</m> is greater than <m>3</m>. Determine <m>x</m>.</p>
 <!-- Our own like WeBWorK 1C Problem 20-->
+<p>
 </p>
 <table class = "center">
   <tr>
@@ -799,8 +833,7 @@ Suppose the distance between <m>x</m> and <m>-14</m> is greater than <m>3</m>. D
 <td align="right"><m>(-\infty,-17)\cup(-11,\infty)</m></td>
 <td>Our Solution: interval notation</td>
   </tr>
-</table>
-
+</table></p>
 </example>
 </section>
 </chapter>
