@@ -22,6 +22,7 @@
             \fill[fill=M101_green!50!white] (1,0) rectangle (2,10);
             \fill[fill=M101_green!50!white] (2,0) rectangle (3,3);
             \draw[step=1cm,black, thick] (0,0) grid (10,10);
+            \node at (11, 5) [] {$23\%$};
     \end{tikzpicture}}
     ]]><!-- <amp /> -->
 <!-- <m>23\%</m> -->
