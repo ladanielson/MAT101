@@ -203,7 +203,24 @@ universal set. To visualize an intersection or union of a set is easy.  Below ar
 
 <p><table style="center">
   <tr>
-<td><image source="set1C_Sets_Intervals_and_Inequalities_Union.png" /></td>
+    <td>
+<p align="center">
+  <figure xml:id="figure-Venn-A-union-B">
+    <image xml:id="Venn-A-union-B" width="70%">
+      <latex-image-code><![CDATA[
+        \begin{tikzpicture}
+            \draw \universe;
+            \node[anchor=south east] at (current bounding box.south east) {$U$};
+            \node[anchor=south] at (current bounding box.north) {$A \cup B$};
+            \draw[filled] \firstcircle node {$A$}
+                  \secondcircle node {$B$};
+        \end{tikzpicture}}
+        ]]>
+      </latex-image-code>
+    </image>
+  </figure>
+</p>
+</td>
 <td> The shaded region represents the collection of all elements
      that are either in <m>A</m> or in <m>B</m>, or in both <m>A</m> and <m>B</m>.
     The region is <m>A\cup B</m></td>
@@ -212,7 +229,27 @@ universal set. To visualize an intersection or union of a set is easy.  Below ar
 
 <p><table style="center">
   <tr>
-<td><image source="set1C_Sets_Intervals_and_Inequalities_Intersection.png" /></td>
+<td>
+  <p align="center">
+  <figure xml:id="figure-Venn-A-intersect-B">
+    <image xml:id="Venn-A-intersect-B" width="70%">
+      <latex-image-code><![CDATA[
+        \begin{tikzpicture}
+          \draw \universe;
+          \node[anchor=south east] at (current bounding box.south east) {$U$};
+          \begin{scope}
+            \clip \firstcircle;
+            \fill[filled] \secondcircle;
+          \end{scope}
+          \draw[outline] \firstcircle node {$A$};
+          \draw[outline] \secondcircle node {$B$};
+          \node[anchor=south] at (current bounding box.north) {$A \cap B$};
+        \end{tikzpicture}}
+        ]]>
+      </latex-image-code>
+    </image>
+  </figure>
+</p></td>
 <td>The shaded region represents the collection of all elements that are common to both <m>A</m> and <m>B</m>
     The region is <m>A\cap B</m></td>
   </tr>
@@ -220,7 +257,27 @@ universal set. To visualize an intersection or union of a set is easy.  Below ar
 
 <p><table style="center">
   <tr>
-<td><image source="set1C_Sets_Intervals_and_Inequalities_Complement.png" /></td>
+<td>
+  <p align="center">
+  <figure xml:id="figure-Venn-A-complement">
+    <image xml:id="Venn-A-complement" width="70%">
+      <latex-image-code><![CDATA[
+        \begin{tikzpicture}
+          \fill[color = M101_green!50!white ] \universe;
+            \node[anchor=south east] at (current bounding box.south east)
+            {$U$};
+            \draw \universe;
+            \node[anchor=south] at (current bounding box.north) {$A'$};
+            \fill[color = white] \firstcircle;
+            \draw[outline] \firstcircle node {$A$};
+            \draw[outline] \secondcircle node {$B$};
+        \end{tikzpicture}}
+        ]]>
+      </latex-image-code>
+    </image>
+  </figure>
+</p>
+</td>
 <td>The shaded region represents the collection of all elements that are <b>NOT</b> in <m>A</m>.
     The region is <m>A'</m></td>
   </tr>
@@ -312,7 +369,24 @@ Problems/MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_03_Linear
 Use a closed circle for greater than or equal to</td>
   </tr>
 <tr>
-<td align="right"><image source="set1C_Sets_Intervals_and_Inequalities_Ex_06.png" /></td>
+<td align="right">
+  <p align="center">
+  <figure xml:id="figure-interval-x-geq-4">
+    <image xml:id="interval-x-geq-4" width="70%">
+      <latex-image-code><![CDATA[
+        \begin{tikzpicture}
+          \draw[<->] (-5.5,0) -- (5.5,0);
+          \foreach \x in {-5,...,5}
+              \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+          \fill[fill=red] (4,.5) circle (.1cm);
+          \draw[->, red] (4,.5) -- (5.5,.5);
+        \end{tikzpicture}}
+        ]]>
+      </latex-image-code>
+    </image>
+  </figure>
+</p>
+</td>
 <td>Our graph</td>
   </tr>
 <tr>
@@ -342,7 +416,24 @@ Problems/MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_02_Linear
 Use an open circle for less than</td>
   </tr>
 <tr>
-<td align="right"><image source="set1C_Sets_Intervals_and_Inequalities_Ex_07.png" /></td>
+<td align="right">
+  <p align="center">
+  <figure xml:id="figure-interval-x-lt-neg4">
+    <image xml:id="interval-x-lt-neg4" width="70%">
+      <latex-image-code><![CDATA[
+        \begin{tikzpicture}
+          \draw[<->] (-5.5,0) -- (5.5,0);
+          \foreach \x in {-5,...,5}
+              \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+          \draw[color=red] (-4,.5) circle (.1cm);
+          \draw[<-, red] (-5.5,.5) -- (-4.1,.5);
+        \end{tikzpicture}}
+        ]]>
+      </latex-image-code>
+    </image>
+  </figure>
+</p>
+</td>
 <td>Our graph</td>
   </tr>
 <tr>
@@ -372,7 +463,25 @@ MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_04_LinearIneq.pg
 Use open circles for less than</td>
   </tr>
 <tr>
-<td align="right"><image source="set1C_Sets_Intervals_and_Inequalities_Ex_08.png" /></td>
+<td align="right">
+  <p align="center">
+  <figure xml:id="figure-interval-neg3-lt-x-lt-1">
+    <image xml:id="interval-neg3-lt-x-lt-1" width="70%">
+      <latex-image-code><![CDATA[
+        \begin{tikzpicture}
+          \draw[<->] (-5.5,0) -- (5.5,0);
+          \foreach \x in {-5,...,5}
+            \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+         \draw[color=blue] (-3,.5) circle (.1cm);
+         \draw[color=blue] (1,.5) circle (.1cm);
+         \draw[blue] (-2.9,.5) -- (.9,.5);
+        \end{tikzpicture}}
+        ]]>
+      </latex-image-code>
+    </image>
+  </figure>
+</p>
+</td>
 <td>Our graph</td>
   </tr>
 <tr>
@@ -398,7 +507,26 @@ MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_04_LinearIneq.pg
 </p>
 <table class = "center">
   <tr>
-<td align="right"><image source="set1C_Sets_Intervals_and_Inequalities_Ex_09.png" /></td>
+<td align="right">
+  <p align="center">
+  <figure xml:id="figure-intervals-overlapping">
+    <image xml:id="intervals-overlapping" width="70%">
+      <latex-image-code><![CDATA[
+        \begin{tikzpicture}
+          \draw[<->] (-5.5,0) -- (5.5,0);
+          \foreach \x in {-5,...,5}
+            \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+          \fill[color=green] (2,1) circle (.1cm);
+          \draw[green, <-] (-5.5,1) -- (2,1);
+          \draw[color=blue] (-2,.5) circle (.1cm);
+          \draw[blue, ->] (-1.9,.5) -- (5.5,.5);
+        \end{tikzpicture}}
+        ]]>
+      </latex-image-code>
+    </image>
+  </figure>
+</p>
+</td>
 <td>The <b>union</b> of the points in the graph
 would be all values in either the first interval
 <b>OR</b> in the second (or in both)
@@ -434,7 +562,13 @@ MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_04_LinearIneq.pg
 </p>
 <table class = "center">
   <tr>
-<td align="right"><image source="set1C_Sets_Intervals_and_Inequalities_Ex_09.png" /></td>
+<td align="right">
+  <p align="center">
+  <figure xml:id="figure-intervals-overlapping-copy">
+    <image source="../output/images/intervals-overlapping.svg" width="70%" />
+  </figure>
+</p>
+</td>
 <td>The <b>intersection</b> of the points in the graph
 would be all values in both the first interval <b>AND</b> the second 
 This is points common to both (or in the overlap)
@@ -466,7 +600,26 @@ MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_05_CompoundIneq.pg
 </p>
 <table class = "center">
   <tr>
-<td align="right"><image source="set1C_Sets_Intervals_and_Inequalities_Ex_11.png" /></td>
+<td align="right">
+  <p align="center">
+  <figure xml:id="figure-intervals-overlapping2">
+    <image xml:id="intervals-overlapping2" width="70%">
+      <latex-image-code><![CDATA[
+        \begin{tikzpicture}
+          \draw[<->] (-5.5,0) -- (5.5,0);
+          \foreach \x in {-5,...,5}
+            \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+          \fill[color=red] (-3,1) circle (.1cm);
+          \draw[red, <-] (-5.5,1) -- (-3,1);
+          \draw[color=green] (4,.5) circle (.1cm);
+          \draw[green, <-] (-5.5,.5) -- (3.9,.5);
+        \end{tikzpicture}}
+        ]]>
+      </latex-image-code>
+    </image>
+  </figure>
+</p>
+</td>
 <td>
         Recall the <b>union</b> of the points in the graph would be all values in either the first interval <b>OR</b> in the second (or in both)
         For example, <m>-3</m> is in both the top and bottom intervals, so <m>-3</m> is in the union
@@ -498,7 +651,13 @@ MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_05_CompoundIneq.pg
 </p>
 <table class = "center">
   <tr>
-<td align="right"><image source="set1C_Sets_Intervals_and_Inequalities_Ex_11.png" /></td>
+<td align="right">
+  <p align="center">
+  <figure xml:id="figure-intervals-overlapping2-copy">
+    <image source="../output/images/intervals-overlapping2.svg" width="70%" />
+  </figure>
+</p>
+</td>
 <td>Recall the <b>intersection</b> of the points in the graph
 would be all values in both the first interval <b>AND</b> the second 
 This is points common to both (or in the overlap)
@@ -533,7 +692,26 @@ MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_07_CompoundIneq.pg
 </p>
 <table class = "center">
   <tr>
-<td align="right"><image source="set1C_Sets_Intervals_and_Inequalities_Ex_13.png" /></td>
+<td align="right">
+  <p align="center">
+  <figure xml:id="figure-interval-non-overlapping">
+    <image xml:id="interval-non-overlapping" width="70%">
+      <latex-image-code><![CDATA[
+        \begin{tikzpicture}
+          \draw[<->] (-5.5,0) -- (5.5,0);
+          \foreach \x in {-5,...,5}
+            \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+          \fill[color=green] (1,1) circle (.1cm);
+          \draw[green, ->] (1,1) -- (5.5,1);
+          \fill[color=red] (-2,.5) circle (.1cm);
+          \draw[red, <-] (-5.5,.5) -- (-2,.5);
+        \end{tikzpicture}}
+        ]]>
+      </latex-image-code>
+    </image>
+  </figure>
+</p>
+</td>
 <td> Recall the <b>union</b> of the points in the graph would be all values in either the first interval <b>OR</b> in the second (or in both)</td>
   </tr>
 <tr>
@@ -563,7 +741,11 @@ MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_05_CompoundIneq.pg
 </p>
 <table class = "center">
   <tr>
-<td align="right"><image source="set1C_Sets_Intervals_and_Inequalities_Ex_13.png" /></td>
+<td align="right">
+  <figure xml:id="figure-interval-non-overlapping-copy">
+    <image source="../output/images/interval-non-overlapping.svg" width="70%" />
+  </figure>
+</td>
 <td>The <b>intersection</b> of the points in the graph
 would be all values common to both (overlap)</td>
   </tr>
@@ -593,7 +775,13 @@ Solve the compound inequality.
 <td align="right"><m>x \leq -3</m> and <m>x \lt 4</m> 
     First sketch the intervals on a graph  
     Write the compound inequality in interval notation:<b> AND</b> is intersection</td>
-<td ><image source="set1C_Sets_Intervals_and_Inequalities_Ex_11.png" /></td>
+<td >
+  <p align="center">
+  <figure xml:id="figure-intervals-overlapping2-copy2">
+    <image source="../output/images/intervals-overlapping2.svg" width="70%" />
+  </figure>
+</p>
+</td>
   </tr>
 <tr>
 <td align="right"><m>(-\infty,  -3] \cap ( -\infty, 4)</m></td>
@@ -625,7 +813,13 @@ Solve the compound inequality.
 <td align="right"><m>x \leq 2</m> and <m>x \gt -2</m> 
     First sketch the intervals on a graph  
     Write the compound inequality in interval notation:<b> AND</b> is intersection</td>
-<td ><image source="set1C_Sets_Intervals_and_Inequalities_Ex_09.png" /></td>
+<td>
+  <p align="center">
+  <figure xml:id="figure-intervals-overlapping-copy2">
+    <image source="../output/images/intervals-overlapping.svg" width="70%" />
+  </figure>
+</p>
+</td>
   </tr>
 <tr>
 <td align="right"><m>(-\infty,  2] \cap ( -2, \infty)</m></td>
