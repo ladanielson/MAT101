@@ -15,8 +15,7 @@
 <p align="center">
   <figure xml:id="figure-decimal-square-labeled">
           <image xml:id="decimal-square-labeled" width="70%">
-            <latex-image-code><!-- \begin{tabular}{ll}
-    \raisebox{-.5\height}{ --><![CDATA[
+            <latex-image-code><![CDATA[
         \begin{tikzpicture}
             \fill[fill=M101_green!50!white] (0,0) rectangle (1,10);
             \fill[fill=M101_green!50!white] (1,0) rectangle (2,10);
@@ -24,9 +23,7 @@
             \draw[step=1cm,black, thick] (0,0) grid (10,10);
             \node at (11, 5) [] {$23\%$};
     \end{tikzpicture}}
-    ]]><!-- <amp /> -->
-<!-- <m>23\%</m> -->
-<!-- \end{tabular} -->
+    ]]>
         </latex-image-code>
       </image>
     </figure>
