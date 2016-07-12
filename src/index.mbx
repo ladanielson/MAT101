@@ -5,6 +5,15 @@
         \usepackage{pgfplots}               % loads tikz package
         \usepackage{xcolor}
         \definecolor{M101_green}{RGB}{0,60,0}
+        \def\firstcircle{(0,0) circle (1.5cm)}
+		\def\secondcircle{(0:2cm) circle (1.5cm)}
+		\def\universe{(-2,-2) rectangle (4,2)}
+
+		\colorlet{circle edge}{M101_green}
+		\colorlet{circle area}{M101_green!50!white}
+
+		\tikzset{filled/.style={fill=circle area, draw=circle edge, thick},
+    outline/.style={draw=circle edge, thick}}
         \pgfplotsset{axis x line = middle,
                      axis y line = middle}
         \usetikzlibrary{backgrounds}
