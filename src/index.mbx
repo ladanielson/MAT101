@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">`
-
+<docinfo>
+	<latex-image-preamble>
+        \usepackage{pgfplots}               % loads tikz package
+        \usepackage{xcolor}
+        \definecolor{M101_green}{RGB}{0,60,0}
+        \pgfplotsset{axis x line = middle,
+                     axis y line = middle}
+        \usetikzlibrary{backgrounds}
+        \usetikzlibrary{arrows,matrix,patterns,shapes}
+    </latex-image-preamble>
+</docinfo>
 <book>
     <title>Survey of Algebra and Probability</title>
         <subtitle>MAT 101</subtitle>
