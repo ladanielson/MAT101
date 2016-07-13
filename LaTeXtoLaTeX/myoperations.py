@@ -80,11 +80,15 @@ def transformMAT101(text):
     # then convert <h3>Example to example/title tags
     thetext = re.sub(r"<h3>Example.*?:(.*?)</h3>","<example>\n<title>" + r"\1" + "</title>\n",thetext)
     
-    thetext = re.sub(r"(<example>.*?</title>)(.*?)<table",r"\1\n<p>\2</p>\n<table",thetext,0,re.DOTALL)
+    thetext = re.sub(r"(<example>.[,100]</title>)(.*?)<table",r"\1\n<p>\2</p>\n<table",thetext,0,re.DOTALL)
     
-
-    thetext = re.sub(r"\\\(","<m>",thetext)
-    thetext = re.sub(r"\\\)","</m>",thetext)
+    # replace $ and $$ by LaTeX style, crudely
+    while '$$' in thetext:
+        thetext = re.sub(r"\$\$",r"\\begin{equation}",thetext,1)
+        thetext = re.sub(r"\$\$",r"\\end{equation}",thetext,1)
+    while '$' in thetext:
+        thetext = re.sub(r"\$",r"\\(",thetext,1)
+        thetext = re.sub(r"\$",r"\\)",thetext,1)
 
     thetext = re.sub(r"<img ([^>]+?)\s*/>",r"<image \1 />",thetext)
     thetext = re.sub(r"<img ([^>]+?)\s*>",r"<image \1 />",thetext)
@@ -97,7 +101,16 @@ def transformMAT101(text):
 
     thetext = re.sub(r"&",r"<amp />",thetext)
 
+    thetext = re.sub(r'<table\s+class\s*=\s*"center">(.*?)</table>',MAT101tables,thetext,0,re.DOTALL)
+
 #    thetext = re.sub(r"\\%","<percent />",thetext)
+
+    # math to MBX markup
+    thetext = re.sub(r"\\\(","<m>",thetext)
+    thetext = re.sub(r"\\\)","</m>",thetext)
+
+    # delete empty paragraphs
+    thetext = re.sub(r"<p>\s*</p>","",thetext)
 
     # improve some spacing
 
@@ -106,10 +119,73 @@ def transformMAT101(text):
     thetext = re.sub(r"\s*<tr>\s*","\n  <tr>\n",thetext)
     thetext = re.sub(r"\s*</tr>\s*","\n  </tr>\n",thetext)
 
+    thetext = re.sub(r"\s*<title>\s*","\n<title>",thetext)
+    thetext = re.sub(r"\s*</title>\s*","<title>\n",thetext)
+
+    thetext = re.sub(r"\s*<p>\s*","\n<p>\n",thetext)
+    thetext = re.sub(r"\s*</p>\s*","\n</p>\n",thetext)
+
     thetext = re.sub(r"\s*<section","\n\n<section",thetext)
     thetext = re.sub(r"\s*<example","\n\n<example",thetext)
 
     thetext += "\n</chapter>"
 
     return thetext
+
+def MAT101tables(txt):
+
+    the_text = txt.group(1)
+    the_text = the_text.strip()
+
+    # remove spacing hacks:  $\,$, $\,\,\,\,\,$, etc
+    the_text = re.sub(r"\\\((\\,)*\\\)","",the_text)
+
+    if "<table" in the_text:
+        return the_text  # because there should only be one table here
+    # do one row at a time
+    the_text = re.sub(r'\s*<tr>(.*?)</tr>\s*',MAT101tablerows,the_text,0,re.DOTALL)
+
+    return "<md>" + the_text + "\n</md>\n"
+
+def MAT101tablerows(txt):
+
+    the_text = txt.group(1)
+    the_text = the_text.strip()
+
+    if "<tr" in the_text:
+        return the_text  # because there should only be one table here
+    # delete first and last cell edges
+    the_text = re.sub(r'^\s*<td>',r"",the_text)
+    the_text = re.sub(r'^\s*<td [^>]*>',r"",the_text)
+    the_text = re.sub(r'</td>\s*$',r"",the_text)
+
+    the_text = re.sub(r'</td>\s*<td>',r"&",the_text)
+#    the_cells = re.split(r'</td>\s*<td>', the_text)
+
+#    if "\\amp\\amp\\amp" in the_text:
+#        the_text += "}"
+#        try:
+#            text_before, text_after = the_text.split("\\amp\\amp\\amp")
+#            text_before = re.sub("</*m>","",text_before)
+#            text_before = re.sub(r"\\\(","",text_before)
+#            text_before = re.sub(r"\\\)","",text_before)
+#            the_text = text_before + text_after
+#        except ValueError:
+#            print "too many amp"
+#            print the_text
+
+    the_cells = the_text.split(r"&")
+    the_new_cells = []
+    for cell in the_cells:  # need to decide if a cell is math or text or mixed
+        cell = cell.strip()
+        cell = r"\\text{" + cell + "}"
+        # now there may be math in text, which we don't want
+        cell = re.sub(r'\\\(',r"}\\(",cell)
+        cell = re.sub(r'\\\)',r"\\)\\text{",cell)
+        cell = re.sub(r"\\text{\s*}","",cell)
+        the_new_cells.append(cell)
+
+    the_new_text = "\\amp\\amp\\amp".join(the_new_cells)
+
+    return "<mrow>" + the_new_text + "</mrow>" + "\n"
 
