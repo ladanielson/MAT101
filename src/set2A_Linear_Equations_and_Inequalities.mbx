@@ -1017,7 +1017,24 @@ Solve and give the interval notation.
 <td>Graph, starting at <m>-3</m>, going down with ] for less than or equal to</td>
   </tr>
 <tr>
-<td align="right"><image source="set2A_Linear_Equations_and_Inequalities_Ex_26.png" /></td>
+<td align="right">
+  <p align="center">
+  <figure xml:id="figure-inequality-solution-x-leq-neg3">
+    <image xml:id="inequality-solution-x-leq-neg3">
+      <latex-image-code><![CDATA[
+        \begin{tikzpicture}
+          \draw[<->] (-5.5,0) -- (5.5,0);
+          \foreach \x in {-5,...,5}
+            \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+          \fill[color=red] (-3,.5) circle (.1cm);
+          \draw[red, <-] (-5.5,.5) -- (-3,.5);
+        \end{tikzpicture}}
+        ]]>
+      </latex-image-code>
+    </image>
+  </figure>
+</p>
+</td>
 <td>Our graph</td>
   </tr>
 <tr>
@@ -1081,7 +1098,24 @@ Solve and give the interval notation.
 <td>Be careful with graph, <m>x</m> is larger!</td>
   </tr>
 <tr>
-<td align="right"><image source="set2A_Linear_Equations_and_Inequalities_Ex_27.png" /></td>
+<td align="right">
+<p align="center">
+  <figure xml:id="figure-inequality-solution-x-gt-4">
+    <image xml:id="inequality-solution-x-gt-4">
+      <latex-image-code><![CDATA[
+        \begin{tikzpicture}
+          \draw[<->] (-5.5,0) -- (5.5,0);
+          \foreach \x in {-5,...,5}
+            \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+          \draw[color=blue] (4,.5) circle (.1cm);
+          \draw[blue, ->] (4.1,.5) -- (5.5,.5);
+        \end{tikzpicture}}
+        ]]>
+      </latex-image-code>
+    </image>
+  </figure>
+</p>
+</td>
 <td>Our graph</td>
   </tr>
 <tr>
@@ -1127,7 +1161,26 @@ Solve the compound inequality, graph the solution, and express it in both inequa
 <td align="right"><m>-4\leq 2x-4 \lt 2 </m>
     The inequality requires the expression
     <m>\color{blue}{2x-4} </m> to lie in the interval <m>[-4,2) </m></td>
-<td><image source="set2A_Linear_Equations_and_Inequalities_Ex_28.png" /></td>
+<td>
+<p align="center">
+  <figure xml:id="figure-inequality-solution-neg4-leq-2x-4-lt-2">
+    <image xml:id="inequality-solution-neg4-leq-2x-4-lt-2">
+      <latex-image-code><![CDATA[
+        \begin{tikzpicture}
+          \draw[<->] (-5.5,0) -- (5.5,0);
+          \foreach \x in {-5,...,5}
+            \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+          \fill[color=blue] (-4,.5) circle (.1cm);
+          \draw[color=blue] (2,.5) circle (.1cm);
+          \draw[blue] (-4,.5) -- (1.9,.5);
+          \node[anchor=south, color=blue] at (-1,.5) {$2x-4$};
+        \end{tikzpicture}}
+        ]]>
+      </latex-image-code>
+    </image>
+  </figure>
+</p>
+</td>
   </tr>
 <tr>
 <td align="right"><m>-4\leq 2x-4 \lt 2 </m></td>
@@ -1147,7 +1200,26 @@ Solve the compound inequality, graph the solution, and express it in both inequa
   </tr>
 <tr>
 <td align="right"><m>0\leq \color{red}{x} \lt 3 </m></td>
-<td><image source="set2A_Linear_Equations_and_Inequalities_Ex_28b.png" /></td>
+<td>
+<p align="center">
+  <figure xml:id="figure-inequality-solution-zero-leq-x-lt-3">
+    <image xml:id="inequality-solution-zero-leq-x-lt-3">
+      <latex-image-code><![CDATA[
+        \begin{tikzpicture}
+          \draw[<->] (-5.5,0) -- (5.5,0);
+          \foreach \x in {-5,...,5}
+            \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+          \fill[color=red] (0,.5) circle (.1cm);
+          \draw[color=red] (3,.5) circle (.1cm);
+          \draw[red] (0,.5) -- (2.9,.5);
+          \node[anchor=south, color=red] at (1.5,.5) {$x$};
+        \end{tikzpicture}}
+        ]]>
+      </latex-image-code>
+    </image>
+  </figure>
+</p>
+</td>
   </tr>
 <tr>
 <td align="right"><m>0\leq x \lt 3 </m></td>
@@ -1173,7 +1245,26 @@ Solve the compound inequality, graph the solution, and express it in both inequa
 <td align="right"><m>-3\lt 7-2x \leq -1 </m>
     The inequality requires the expression
     <m>\color{blue}{7-2x} </m> to lie in the interval <m>(-3,-1] </m></td>
-<td><image source="set2A_Linear_Equations_and_Inequalities_Ex_29.png" /></td>
+<td>
+<p align="center">
+  <figure xml:id="figure-inequality-solution-neg3-leq-7-2x-lt-neg1">
+    <image xml:id="inequality-solution-neg3-leq-7-2x-lt-neg1">
+      <latex-image-code><![CDATA[
+        \begin{tikzpicture}
+          \draw[<->] (-5.5,0) -- (5.5,0);
+          \foreach \x in {-5,...,5}
+            \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+          \draw[color=blue] (-3,.5) circle (.1cm);
+          \fill[color=blue] (-1,.5) circle (.1cm);
+          \draw[blue] (-2.9,.5) -- (-1,.5);
+          \node[anchor=south, color=blue] at (-2,.5) {$7-2x$};
+        \end{tikzpicture}}
+        ]]>
+      </latex-image-code>
+    </image>
+  </figure>
+</p>
+</td>
   </tr>
 <tr>
 <td align="right"><m>-3\lt 7-2x \leq -1 </m></td>
@@ -1193,7 +1284,26 @@ Solve the compound inequality, graph the solution, and express it in both inequa
   </tr>
 <tr>
 <td align="right"><m>5\gt \color{red}{x} \geq 4 </m></td>
-<td><image source="set2A_Linear_Equations_and_Inequalities_Ex_29b.png" /></td>
+<td>
+<p align="center">
+  <figure xml:id="figure-inequality-solution-4-leq-x-lt-5">
+    <image xml:id="inequality-solution-4-leq-x-lt-5">
+      <latex-image-code><![CDATA[
+        \begin{tikzpicture}
+          \draw[<->] (-5.5,0) -- (5.5,0);
+          \foreach \x in {-5,...,5}
+            \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+          \fill[color=red] (4,.5) circle (.1cm);
+          \draw[color=red] (5,.5) circle (.1cm);
+          \draw[red] (4,.5) -- (4.9,.5);
+          \node[anchor=south, color=red] at (4.5,.5) {$x$};
+        \end{tikzpicture}}
+        ]]>
+      </latex-image-code>
+    </image>
+  </figure>
+</p>
+</td>
   </tr>
 <tr>
 <td align="right"><m>4\leq x \lt 5 </m></td>
