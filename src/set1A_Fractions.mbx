@@ -15,7 +15,7 @@ briefly review reducing, multiplying, dividing, adding, and subtracting fraction
 As this is a review, concepts will not be explained in detail as other lessons are.
 </p>
     <td align="right"><figure xml:id="figure-fraction-bar-one-third">
-          <image xml:id="fraction-bar-one-third" width="70%">
+          <image xml:id="fraction-bar-one-third">
             <latex-image-code><!-- \begin{tabular}{ll}
                 \raisebox{-.5\height}{ --><![CDATA[
                 \begin{tikzpicture}
