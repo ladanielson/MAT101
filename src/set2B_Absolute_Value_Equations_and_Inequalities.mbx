@@ -1,23 +1,39 @@
 <chapter>
 <title>MAT-101: Set 2B-Absolute Value Equations and Inequalities</title>
 <introduction>
-<ul>
-<li>Solve linear absolute value equations. </li>
-  <li>Solve, graph and give interval notation for the solution to inequalities with absolute values.</li>
-  <li>Solve linear distance equations and inequalities problems.</li>
-</ul>
+  <ul>
+    <li>Solve linear absolute value equations. </li>
+    <li>Solve, graph and give interval notation for the solution to inequalities with absolute values.</li>
+    <li>Solve linear distance equations and inequalities problems.</li>
+  </ul>
 </introduction>
 
 <section>
-<title>Absolute Value Equations</title>
-
-
-<p>
-Absolute value is defined as distance from zero.  Consider both integers <m>5</m> and <m>-5</m>.   Since both positive and negative <m>5</m> have a distance of <m>5</m> units from <m>0</m> on the number line, both have an absolute value of <m>5</m>.</p>
+  <title>Absolute Value Equations</title>
+<p>Absolute value is defined as distance from zero.  Consider both integers <m>5</m> and <m>-5</m>.   Since both positive and negative <m>5</m> have a distance of <m>5</m> units from <m>0</m> on the number line, both have an absolute value of <m>5</m>.</p>
 <table  align="center">
   <tr>
 <td align ="right"><m>\left|5\right|=5 \text{ and } \left|-5\right|=5</m></td>
-<td><image source="set2B_Absolute_Value_Equations_and_Inequalities_Intro.png" /></td>
+<td>
+<p align="center">
+  <figure xml:id="figure-absolute-value-x-equal-5">
+    <image xml:id="absolute-value-x-equal-5">
+      <latex-image-code><![CDATA[
+        \begin{tikzpicture}
+          \draw[<->] (-5.5,0) -- (5.5,0);
+          \foreach \x in {-5,...,5}
+            \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+          \fill[color=red] (4,.5) circle (.1cm);
+          \draw[color=red] (5,.5) circle (.1cm);
+          \draw[red] (4,.5) -- (4.9,.5);
+          \node[anchor=south, color=red] at (4.5,.5) {$x$};
+        \end{tikzpicture}}
+        ]]>
+      </latex-image-code>
+    </image>
+  </figure>
+</p>
+</td>
   </tr>
 </table>
 
@@ -34,23 +50,23 @@ Thus when solving equations with absolute value we can end up with more than one
 </p>
 <table class = "center">
   <tr>
-<td align="right"><m>\left|x\right| = 7</m></td>
-||
+    <td align="right"><m>\left|x\right| = 7</m></td>
     <td>Absolute value can be positive or negative</td>
   </tr>
-<tr>
-<td align="right"><m>x=7</m> or <m>x=-7</m></td>
-<td>Our Solution <div class="WWbox">
+  <tr>
+    <td align="right"><m>x=7</m> or <m>x=-7</m></td>
+    <td>Our Solution <div class="WWbox">
                        Type <b>x=7 or x=-7</b> in <tt>WeBWorK</tt>
                        </div></td>
   </tr>
 </table>
 <p>Notice that we have determined two possibilities, both the positive and negative. Either way, the absolute value of our number will be positive <m>7</m>.</p>
+</example>
 
 <p><b><font color="#FF0000"/>Important:</b> First isolate the absolute value, then "remove the absolute value" by considering both the positive and negative solutions separately. Notice in the next two examples, all the numbers outside of the absolute value are "moved to the other side" first before we remove the absolute value bars and consider both positive and negative solutions.
 </p>
 
-</example>
+
 
 <example>
 <title> Isolate Absolute Value First</title>
@@ -60,21 +76,21 @@ Thus when solving equations with absolute value we can end up with more than one
 </p>
 <table class = "center">
   <tr>
-<td align="right"><m>5+\abs(x) = 8</m></td>
-<td>Notice absolute value is not alone on the <b>LHS</b>
+    <td align="right"><m>5+\abs(x) = 8</m></td>
+    <td>Notice absolute value is not alone on the <b>LHS</b>
     <font color="#FF0000"/>Isolate the absolute value first</td>
   </tr>
-<tr>
-<td align="right"><m>\underline{-5\phantom{12345}-5}</m></td>
-<td>Subtract <m>5</m> from both sides</td>
+  <tr>
+    <td align="right"><m>\underline{-5\phantom{12345}-5}</m></td>
+    <td>Subtract <m>5</m> from both sides</td>
   </tr>
-<tr>
-<td align="right"><m>\left|x\right| = 3</m></td>
-<td>Absolute value can be positive or negative</td>
+  <tr>
+    <td align="right"><m>\left|x\right| = 3</m></td>
+    <td>Absolute value can be positive or negative</td>
   </tr>
-<tr>
-<td align="right"><m>x=3</m> or <m>x=-3</m></td>
-<td>Our Solution</td>
+  <tr>
+    <td align="right"><m>x=3</m> or <m>x=-3</m></td>
+    <td>Our Solution</td>
   </tr>
 </table>
 <p>
@@ -83,20 +99,20 @@ Check our two solutions: Substitute both back in the original equation <m>5+\lef
 
 <table class = "center">
   <tr>
-<td align="right"><m>\underline{x=3:}</m></td>
-<td><m>\underline{x=-3:}</m></td>
+    <td align="right"><m>\underline{x=3:}</m></td>
+    <td><m>\underline{x=-3:}</m></td>
   </tr>
-<tr>
-<td align="right"><m>5+\left|3\right|</m></td>
-<td><m>5+\left|-3\right|</m></td>
+  <tr>
+    <td align="right"><m>5+\left|3\right|</m></td>
+    <td><m>5+\left|-3\right|</m></td>
   </tr>
-<tr>
-<td align="right"><m>5+3 = 8\checkmark</m></td>
-<td><m>5+3 = 8 \checkmark</m></td>
+  <tr>
+    <td align="right"><m>5+3 = 8\checkmark</m></td>
+    <td><m>5+3 = 8 \checkmark</m></td>
   </tr>
-<tr>
-<td align="right">Both <m>x=3</m> and <m>x=-3</m> satisfy the equation</td>
-<td><m> \checkmark</m></td>
+  <tr>
+    <td align="right">Both <m>x=3</m> and <m>x=-3</m> satisfy the equation</td>
+    <td><m> \checkmark</m></td>
   </tr>
 </table>
 </example>
@@ -110,26 +126,24 @@ Check our two solutions: Substitute both back in the original equation <m>5+\lef
 </p>
 <table class = "center">
   <tr>
-<td align="right"><m>-4\left|x\right|=-20</m></td>
-<td>Notice absolute value is not alone on the <b>LHS</b>
+    <td align="right"><m>-4\left|x\right|=-20</m></td>
+    <td>Notice absolute value is not alone on the <b>LHS</b>
     <font color="#FF0000"/>Isolate the absolute value first</td>
   </tr>
-<tr>
-<td align="right"><m>\overline{-4}\phantom{123456}\overline{-4}</m></td>
-<td>Divide both sides by <m>-4</m></td>
+  <tr>
+    <td align="right"><m>\overline{-4}\phantom{123456}\overline{-4}</m></td>
+    <td>Divide both sides by <m>-4</m></td>
   </tr>
-<tr>
-<td align="right"><m>\left|x\right| = 5</m></td>
-<td>Absolute value can be positive or negative</td>
+  <tr>
+    <td align="right"><m>\left|x\right| = 5</m></td>
+    <td>Absolute value can be positive or negative</td>
   </tr>
-<tr>
-<td align="right"><m>x=5</m> or <m>x=-5</m></td>
-<td>Our Solution</td>
+  <tr>
+    <td align="right"><m>x=5</m> or <m>x=-5</m></td>
+    <td>Our Solution</td>
   </tr>
-</table>
+</table></example>
 <p>Notice we never combine what is inside the absolute value with what is outside the absolute value. This is very important as it will often change the final result to an incorrect solution. The next example requires two steps to isolate the absolute value. The idea is the same as a two-step equation, add or subtract, then multiply or divide.</p>
-
-</example>
 
 <example>
 <title> Two-Step Absolute Value Equation</title>
@@ -137,568 +151,580 @@ Check our two solutions: Substitute both back in the original equation <m>5+\lef
 
 <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 87 pg 53-->
 
-<p>
 </p>
+
 <table class = "center">
   <tr>
-<td align="right"><m>5\left|x\right|-4 = 26</m></td>
-<td>Notice absolute value is not alone on the <b>LHS</b>
+    <td align="right"><m>5\left|x\right|-4 = 26</m></td>
+    <td>Notice absolute value is not alone on the <b>LHS</b>
     <font color="#FF0000"/>Isolate the absolute value first</td>
   </tr>
-<tr>
-<td align="right"><m>\underline{+4\phantom{12}+4}</m></td>
-<td>Add <m>4</m> to both sides</td>
+  <tr>
+    <td align="right"><m>\underline{+4\phantom{12}+4}</m></td>
+    <td>Add <m>4</m> to both sides</td>
   </tr>
-<tr>
-<td align="right"><m>5\left|x\right| = 30</m></td>
-<td>Absolute value still not alone</td>
+  <tr>
+    <td align="right"><m>5\left|x\right| = 30</m></td>
+    <td>Absolute value still not alone</td>
   </tr>
-<tr>
-<td align="right"><m>\overline{5\,}\phantom{12345}\overline{\,5\,}</m></td>
-<td>Divide both sides by <m>5</m></td>
+  <tr>
+    <td align="right"><m>\overline{5\,}\phantom{12345}\overline{\,5\,}</m></td>
+    <td>Divide both sides by <m>5</m></td>
   </tr>
-<tr>
-<td align="right"><m>\left|x\right| = 6</m></td>
-<td>Absolute value can be positive or negative</td>
+  <tr>
+    <td align="right"><m>\left|x\right| = 6</m></td>
+    <td>Absolute value can be positive or negative</td>
   </tr>
-<tr>
-<td align="right"><m>x=6</m> or <m>x=-6</m></td>
-<td>Our Solution</td>
+  <tr>
+    <td align="right"><m>x=6</m> or <m>x=-6</m></td>
+    <td>Our Solution</td>
   </tr>
-</table>
-</p>
+</table></example>
 
 <p>Again we see the same process: isolate the absolute value first, then consider the positive and negative solutions. Often the absolute value will have more than just a variable in it. In this case we will have to solve the resulting equations when we consider the positive and negative possibilities. This is shown in the next example.</p>
-
-</example>
 
 <example>
 <title> Absolute Value of an Expression</title>
 <p>
 
 <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 88 pg 53-->
-<p>
 </p>
 <table class = "center">
   <tr>
-<td align="right"><m>\left|2x-1\right| = 7</m></td>
-<td>Absolute value can be positive or negative</td>
+    <td align="right"><m>\left|2x-1\right| = 7</m></td>
+    <td>Absolute value can be positive or negative</td>
   </tr>
-<tr>
-<td align="right"><m>2x-1=7</m>  
+  <tr>
+    <td align="right"><m>2x-1=7</m>  
     or  <m>2x-1=-7</m></td>
-<td>Two equations to solve</td>
+    <td>Two equations to solve</td>
   </tr>
 </table>
-</p>
 
 <p>Now notice we have two equations to solve, each equation will give us a different solution. Both equations solve (separately) like any other two-step equation.</p>
 
-<p>
+
 <table class = "center">
   <tr>
-<td align="right"><m>2x-1=7</m></td>
-<td> <m>\phantom{1234}</m> OR</td>
-<td align="right"><m>2x-1=-7</m></td>
+    <td align="right"><m>2x-1=7</m></td>
+    <td><m>\phantom{1234}</m> OR</td>
+    <td align="right"><m>2x-1=-7</m></td>
   </tr>
-<tr>
-<td align="right"><m>\underline{+1\,+1}</m></td>
-<td> <m>\phantom{1234}</m></td>
-<td align="right"><m>\underline{+1\phantom{12}+1}</m></td>
+  <tr>
+    <td align="right"><m>\underline{+1\,+1}</m></td>
+    <td><m>\phantom{1234}</m></td>
+    <td align="right"><m>\underline{+1\phantom{12}+1}</m></td>
   </tr>
-<tr>
-<td align="right"><m>2x=8</m></td>
-<td> <m>\phantom{1234}</m></td>
-<td align="right"><m>2x=-6</m></td>
+  <tr>
+    <td align="right"><m>2x=8</m></td>
+    <td><m>\phantom{1234}</m></td>
+    <td align="right"><m>2x=-6</m></td>
   </tr>
-<tr>
-<td align="right"><m>\overline{2}\phantom{1234}\overline{2}</m></td>
-<td> <m>\phantom{1234}</m></td>
-<td align="right"><m>\overline{2}\phantom{1234}\overline{\,2\,}</m></td>
+  <tr>
+    <td align="right"><m>\overline{2}\phantom{1234}\overline{2}</m></td>
+    <td><m>\phantom{1234}</m></td>
+    <td align="right"><m>\overline{2}\phantom{1234}\overline{\,2\,}</m></td>
   </tr>
-<tr>
-<td align="right"><m>x=4</m></td>
-<td> <m>\phantom{1234}</m> OR</td>
-<td align="right"><m>x=-3</m></td>
+  <tr>
+    <td align="right"><m>x=4</m></td>
+    <td><m>\phantom{1234}</m> OR</td>
+    <td align="right"><m>x=-3</m></td>
   </tr>
-<tr>
-<td><m>\phantom{1}</m></td>
-<td><m>x = 4</m> or <m>x = -3</m></td>
-<td align="left">Our Solution</td>
+  <tr>
+    <td><m>\phantom{1}</m></td>
+    <td><m>x = 4</m> or <m>x = -3</m></td>
+    <td align="left">Our Solution</td>
   </tr>
-</table>
-</p>
+</table></example>
+
 
 <p>Again, it is important to remember that the absolute value must be alone first before we consider the positive and negative possibilities. This is illustrated in the below example.</p>
 
-</example>
 
 <example>
 <title> Isolate Absolute Value First</title>
 <p>
 
 <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 89 pg 54-->
-<p>
+
 </p>
 <table class = "center">
   <tr>
-<td><m>2-4\left|2x + 3\right| = -18</m></td>
+    <td><m>2-4\left|2x + 3\right| = -18</m></td>
   </tr>
 </table>
-</p>
+
 
 <p>To get the absolute value alone we first need to subtract the <m>2</m> from both sides, then divide by  <m>-4</m> (the coefficient on the absolute value).  Notice we cannot combine the <m>2</m> and  <m>-4</m> because they are not like terms: the <m>-4</m> is multiplied by the absolute value expression.  Also notice we do not distribute the <m>-4</m> into the absolute value.  This is because the numbers outside cannot be combined with the numbers inside the absolute value. Thus we get the absolute value alone in the following way:</p>
 
-<p>
+
 <table class = "center">
   <tr>
-<td align="right"><m>2-4\left|2x + 3\right| = -18</m></td>
-<td>Notice absolute value is not alone</td>
+    <td align="right"><m>2-4\left|2x + 3\right| = -18</m></td>
+    <td>Notice absolute value is not alone</td>
   </tr>
-<tr>
-<td align="right"><m>\underline{-2\phantom{1234567890123}-2}</m></td>
-<td>Subtract <m>2</m> from both sides</td>
+  <tr>
+    <td align="right"><m>\underline{-2\phantom{1234567890123}-2}</m></td>
+    <td>Subtract <m>2</m> from both sides</td>
   </tr>
-<tr>
-<td align="right"><m>-4\left|2x + 3\right| = - 20</m></td>
-<td>Absolute value still not alone</td>
+  <tr>
+    <td align="right"><m>-4\left|2x + 3\right| = - 20</m></td>
+    <td>Absolute value still not alone</td>
   </tr>
-<tr>
-<td align="right"><m>\overline{-4\,}\phantom{123456789}\overline{\,-4\,}</m></td>
-<td>Divide both sides by <m>-4</m></td>
+  <tr>
+    <td align="right"><m>\overline{-4\,}\phantom{123456789}\overline{\,-4\,}</m></td>
+    <td>Divide both sides by <m>-4</m></td>
   </tr>
-<tr>
-<td align="right"><m>\left|2x+3\right| = 5</m></td>
-<td>Absolute value can be positive or negative</td>
+  <tr>
+    <td align="right"><m>\left|2x+3\right| = 5</m></td>
+    <td>Absolute value can be positive or negative</td>
   </tr>
-<tr>
-<td align="right"><m>2x+3=5</m> 
-   or<m>\phantom{1234}</m> 
+  <tr>
+    <td align="right"><m>2x+3=5</m>or<m>\phantom{1234}</m> 
      <m>2x+3=-5</m></td>
-<td>Two equations to solve</td>
+    <td>Two equations to solve</td>
   </tr>
 </table>
-</p>
+
 
 <p>Now we solve these two remaining equations to find our solutions.</p>
 
 <table class = "center">
   <tr>
-<td align="right"><m>2x+3=5</m></td>
-<td> <m>\phantom{1234}</m> OR</td>
-<td align="right"><m>2x+3=-5</m></td>
+    <td align="right"><m>2x+3=5</m></td>
+    <td> <m>\phantom{1234}</m> OR</td>
+    <td align="right"><m>2x+3=-5</m></td>
   </tr>
-<tr>
-<td align="right"><m>\underline{-3\,-3}</m></td>
-<td><m>\phantom{1234}</m></td>
-<td align="right"><m>\underline{-3\,\,\,\,\,-3}</m></td>
+  <tr>
+    <td align="right"><m>\underline{-3\,-3}</m></td>
+    <td><m>\phantom{1234}</m></td>
+    <td align="right"><m>\underline{-3\,\,\,\,\,-3}</m></td>
   </tr>
-<tr>
-<td align="right"><m>2x=2</m></td>
-<td> <m>\phantom{1234}</m></td>
-<td align="right"><m>2x=-8</m></td>
+  <tr>
+    <td align="right"><m>2x=2</m></td>
+    <td> <m>\phantom{1234}</m></td>
+    <td align="right"><m>2x=-8</m></td>
   </tr>
-<tr>
-<td align="right"><m>\overline{2}\phantom{12345}\overline{2}</m></td>
-<td> <m>\phantom{1234}</m></td>
-<td align="right"><m>\overline{2}\,\,\,\,\,\,\,\,\,\,\,\,\overline{\,2\,}</m></td>
+  <tr>
+    <td align="right"><m>\overline{2}\phantom{12345}\overline{2}</m></td>
+    <td> <m>\phantom{1234}</m></td>
+    <td align="right"><m>\overline{2}\,\,\,\,\,\,\,\,\,\,\,\,\overline{\,2\,}</m></td>
   </tr>
-<tr>
-<td align="right"><m>x=1</m></td>
-<td> <m>\phantom{1234}</m>OR</td>
-<td align="right"><m>x=-4</m></td>
+  <tr>
+    <td align="right"><m>x=1</m></td>
+    <td> <m>\phantom{1234}</m>OR</td>
+    <td align="right"><m>x=-4</m></td>
   </tr>
-<tr>
-<td align="right"><m>\phantom{1}</m></td>
-<td><m>x = 1</m> or <m>x = -4</m></td>
-<td align="left">Our Solution</td>
+  <tr>
+    <td align="right"><m>\phantom{1}</m></td>
+    <td><m>x = 1</m> or <m>x = -4</m></td>
+    <td align="left">Our Solution</td>
   </tr>
-</table>
+</table></example>
 
 
 <p>As we are solving absolute value equations it is important to be aware of special cases. Remember the result of an absolute value must always be positive. Notice what happens in the next example.</p>
 
-</example>
 
 <example>
 <title> Absolute Values Can't Be Negative</title>
 <p>
 
 <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 90 pg 55-->
-<p>
+
 </p>
 <table class = "center">
   <tr>
-<td align="right"><m>7+\left|2x-5\right|=4</m></td>
-<td>Notice absolute value is not alone</td>
+    <td align="right"><m>7+\left|2x-5\right|=4</m></td>
+    <td>Notice absolute value is not alone</td>
   </tr>
-<tr>
-<td align="right"><m>\underline{-7\phantom{123456789}-7}</m></td>
-<td>Subtract <m>7</m> from both sides</td>
+  <tr>
+    <td align="right"><m>\underline{-7\phantom{123456789}-7}</m></td>
+    <td>Subtract <m>7</m> from both sides</td>
   </tr>
-<tr>
-<td align="right"><m>\left|2x-5\right| = \color{red}{-3}</m></td>
-<td><font color="#FF0000"/><b>STOP!</b> Result of absolute value can't be negative!</td>
+  <tr>
+    <td align="right"><m>\left|2x-5\right| = \color{red}{-3}</m></td>
+    <td><font color="#FF0000"/><b>STOP!</b> Result of absolute value can't be negative!</td>
   </tr>
-<tr>
-<td align ="right">No solution</td>
-<td>Our Solution <div class="WWbox">
+  <tr>
+    <td align ="right">No solution</td>
+    <td>Our Solution <div class="WWbox">
                      Type <b>No solution</b> in <tt>WeBWorK</tt>
                      </div></td>
   </tr>
-</table>
-</p>
+</table></example>
 
 
 <p>Notice in the above example, the absolute value expressions equals a negative number! This is impossible with absolute value. When this occurs we <font color="#FF0000"/><b>STOP</b> and conclude there is no solution.</p>
 
-
-</example>
 </section>
 
 <section>
-<title>Absolute Value Inequalities</title>
-
-
+  <title>Absolute Value Inequalities</title>
 <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace is licensed under a Creative Commons
 Attribution 3.0 Unported License. (http://creativecommons.org/licenses/by/3.0/)
 Based on a work at http://wallace.ccfaculty.org/book/book.html. pages 128-131-->
+<p>When an inequality has an absolute value we will have to remove the absolute value in order to graph the solution or give interval notation. The way we remove the absolute value depends on the direction of the inequality symbol.</p>
 
-<p>
-When an inequality has an absolute value we will have to remove the absolute
-value in order to graph the solution or give interval notation. The way we remove
-the absolute value depends on the direction of the inequality symbol.
+<p>Consider <m>\left|x\right|\lt 2</m>.</p>
+
+<p>Absolute value is defined as distance from zero. Another way to read this
+inequality would be the distance from zero is <b>less</b> than <m>2</m>. On a number line we will shade all points that are <b>less than</b> <m>2</m> units away from zero.</p>
+
+<p align="center">
+  <figure xml:id="figure-absolute-value-x-lt-2">
+    <image xml:id="absolute-value-x-lt-2">
+      <latex-image-code><![CDATA[
+        \begin{tikzpicture}
+          \draw[<->] (-5.5,0) -- (5.5,0);
+          \foreach \x in {-5,...,5}
+            \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+          \draw[color=blue] (-2,.5) circle (.1cm);
+          \draw[color=blue] (2,.5) circle (.1cm);
+          \draw[blue] (-1.9,.5) -- (1.9,.5);
+          \node[anchor=south, color=blue] at (0,.5) {$-2<x<2$};
+        \end{tikzpicture}}
+        ]]>
+      </latex-image-code>
+    </image>
+  </figure>
+</p>
+<p>This graph looks just like the graphs of the three part compound inequalities! When the absolute value is less than a positive number we will remove the absolute value by changing the problem to a three part inequality, with the negative value on theleft and the positive value on the right:
+  \[\left|x\right| \lt 2 \text{ is equivalent to  } \color{blue}{-2 \lt x \lt 2}\]
+as the graph above illustrates.</p>
+
+<p>Consider <m>\left|x\right|\gt 2</m>.</p>
+
+<p>Absolute value is defined as distance from zero. Another way to read this
+inequality would be the distance from zero is <b>greater</b> than <m>2</m>. On the number line we shade all points that are <b>more than</b> <m>2</m> units away from zero.</p>
+
+<p align="center">
+  <figure xml:id="figure-absolute-value-x-gt-2">
+    <image xml:id="absolute-value-x-gt-2">
+      <latex-image-code><![CDATA[
+        \begin{tikzpicture}
+          \draw[<->] (-5.5,0) -- (5.5,0);
+          \foreach \x in {-5,...,5}
+            \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+          \draw[color=red] (-2,.5) circle (.1cm);
+          \draw[red, <-] (-5.5,.5) -- (-2.1,.5);
+          \node[anchor=south, color=red] at (-4,.5) {$x<-2$};
+          \draw[color=blue] (2,.5) circle (.1cm);
+          \draw[blue, ->] (2.1,.5) -- (5.5,.5);
+          \node[anchor=south, color=blue] at (4,.5) {$x>2$};
+        \end{tikzpicture}}
+        ]]>
+      </latex-image-code>
+    </image>
+  </figure>
 </p>
 
-<p>
-Consider <m>\left|x\right|\lt 2</m>.
-</p>
-
-<p>
-Absolute value is defined as distance from zero. Another way to read this
-inequality would be the distance from zero is <b>less</b> than <m>2</m>. On a number line we
-will shade all points that are <b>less than</b> <m>2</m> units away from zero.
-</p>
-
-<p><image source="set2B_Absolute_Value_Equations_and_Inequalities_Interval_.png" /></p>
-<p>
-This graph looks just like the graphs of the three part compound inequalities!
-When the absolute value is less than a positive number we will remove the absolute value
-by changing the problem to a three part inequality, with the negative value on the
-left and the positive value on the right:
-\[\left|x\right| \lt 2 \text{ is equivalent to  } \color{blue}{-2 \lt x \lt 2}\]
-as the graph above illustrates.
-</p>
-
-<p>
-Consider <m>\left|x\right|\gt 2</m>.
-</p>
-
-<p>
-Absolute value is defined as distance from zero. Another way to read this
-inequality would be the distance from zero is <b>greater</b> than <m>2</m>. On the number line we shade all points that are <b>more than</b> <m>2</m> units away from zero.
-</p>
-
-<p><image source="set2B_Absolute_Value_Equations_and_Inequalities_Interval2_.png" /></p>
-
-<p>
-This graph looks just like the graphs of the OR compound inequalities! When the
-absolute value is greater than a positive number we will remove the absolute value by
-changing the problem to an OR inequality, the first inequality looking just like
-the problem with no absolute value, the second flipping the inequality symbol and
-changing the value to a negative:
+<p>This graph looks just like the graphs of the OR compound inequalities! When the absolute value is greater than a positive number we will remove the absolute value by changing the problem to an OR inequality, the first inequality looking just like the problem with no absolute value, the second flipping the inequality symbol and changing the value to a negative:
 \[\left|x\right| \gt 2 \text{ is equivalent to  } \color{blue}{x\gt 2} \text{ or }\color{red}{ x \lt -2}\]
-as the graph above illustrates.
-</p>
+as the graph above illustrates.</p>
 
-<p>
-For all absolute value inequalities we can also express our answers in interval
-notation which is done the same way it is done for standard compound inequalities.
-</p>
+<p>For all absolute value inequalities we can also express our answers in intervalnotation which is done the same way it is done for standard compound inequalities.</p>
 
-<p>
-We can solve absolute value inequalities much like we solved absolute value equations.
-<ol>
-  <li>Isolate the absolute value</li>
-    <ul>
-      <li>If <m>\left|\cdot\right|</m>  is less than a negative number, <font color="#FF0000"/>STOP: No solution</li>
-    </ul>
-  <li>"Remove" the absolute value</li>
-    <ul>
-      <li>If <m>\left|\text{expression}\right|\lt p</m>  is<b> less than a positive number</b> make a three part inequality:
+<p>We can solve absolute value inequalities much like we solved absolute value equations.
+  <ol>
+    <li>Isolate the absolute value</li>
+      <ul>
+        <li>If <m>\left|\cdot\right|</m>  is less than a negative number, <font color="#FF0000"/>STOP: No solution</li>
+      </ul>
+    <li>"Remove" the absolute value</li>
+      <ul>
+        <li>If <m>\left|\text{expression}\right|\lt p</m>  is<b> less than a positive number</b> make a three part inequality:
          <m>-p\lt \text{expression}\lt p</m></li>
-      <li>If <m>\left|\text{expression}\right|>p</m>  is <b>greater than a positive number</b> make an OR inequality: 
+        <li>If <m>\left|\text{expression}\right|\gt p</m> is <b>greater than a positive number</b> make an OR inequality: 
         <m>\text{expression}\gt p</m> or <m>\text{expression}\lt -p</m> </li>
-    </ul>
-  <li>Solve the inequalities</li>
-    <ul>
-      <li><b>Important: </b> if we multiply or divide by a negative number the inequality symbol will switch directions!</li>
-    </ul>
-</ol></p>
+      </ul>
+    <li>Solve the inequalities</li>
+      <ul>
+        <li><b>Important: </b> if we multiply or divide by a negative number the inequality symbol will switch directions!</li>
+      </ul>
+  </ol>
+</p>
 
 <example>
 <title> Absolute Value Inequality: OR inequality</title>
-<p>
-
-<p>
-Solve, graph, and give interval notation for the solution.</p>
+<p>Solve, graph, and give interval notation for the solution.</p>
 <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 160 pg 129-->
 <p>
-</p>
+
 <table class = "center">
   <tr>
-<td align="right"><m>\left|4x-5\right|\geq 6</m></td>
-<td>Absolute value is greater than a positive number, use OR inequality</td>
+    <td align="right"><m>\left|4x-5\right|\geq 6</m></td>
+    <td>Absolute value is greater than a positive number, use OR inequality</td>
   </tr>
-<tr>
-<td align="right"><m>4x-5\geq 6</m> OR <m>4x-5\leq -6</m></td>
-<td>Solve both inequalities</td>
+  <tr>
+    <td align="right"><m>4x-5\geq 6</m> OR <m>4x-5\leq -6</m></td>
+    <td>Solve both inequalities</td>
   </tr>
-<tr>
-<td align="right"><m>\underline{+5\phantom{1}+5}\phantom{1234567}\underline{+5\phantom{12}+5}</m></td>
-<td>Add <m>5</m> to both sides of each inequality</td>
+  <tr>
+    <td align="right"><m>\underline{+5\phantom{1}+5}\phantom{1234567}\underline{+5\phantom{12}+5}</m></td>
+    <td>Add <m>5</m> to both sides of each inequality</td>
   </tr>
-<tr>
-<td align="right"><m>4x\geq 11</m> OR <m>4x\leq -1</m></td>
-<td>Divide both sides by <m>4</m></td>
+  <tr>
+    <td align="right"><m>4x\geq 11</m> OR <m>4x\leq -1</m></td>
+    <td>Divide both sides by <m>4</m></td>
   </tr>
-<tr>
-<td align="right"><m>\overline{4}\phantom{1234}\overline{4}\phantom{1234}\overline{4}\phantom{12345}\overline{4}</m></td>
-<td><m>\,</m></td>
+  <tr>
+    <td align="right"><m>\overline{4}\phantom{1234}\overline{4}\phantom{1234}\overline{4}\phantom{12345}\overline{4}</m></td>
+    <td><m>\,</m></td>
   </tr>
-<tr>
-<td align="right"><m>\color{blue}{x\geq \dfrac{11}{4}}</m> OR <m>\color{red}{x\leq -\dfrac{1}{4}}</m></td>
-<td>Graph the solutions</td>
+  <tr>
+    <td align="right"><m>\color{blue}{x\geq \dfrac{11}{4}}</m> OR <m>\color{red}{x\leq -\dfrac{1}{4}}</m></td>
+    <td>Graph the solutions</td>
   </tr>
-<tr>
-<td align="right"><image source="set2B_Absolute_Value_Equations_and_Inequalities_Ex_8.png" /></td>
-<td>Our graph</td>
+  <tr>
+    <td align="right">
+      <p align="center">
+        <figure xml:id="figure-absolute-value-4x-5-geq-6">
+          <image xml:id="absolute-value-4x-5-geq-6">
+            <latex-image-code><![CDATA[
+              \begin{tikzpicture}
+                \draw[<->] (-5.5,0) -- (5.5,0);
+                \foreach \x in {-5,...,5}
+                  \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+                \fill[color=red] (-.25,.5) circle (.1cm);
+                \draw[red, <-] (-5.5,.5) -- (-.35,.5);
+                \node[anchor=south, color=red] at (-3,.5) {$x\leq -\frac{1}{4}$};
+                \fill[color=blue] (2.75,.5) circle (.1cm);
+                \draw[blue, ->] (2.85,.5) -- (5.5,.5);
+                \node[anchor=south, color=blue] at (4,.5) {$x\geq\frac{11}{4}$};
+              \end{tikzpicture}}
+              ]]>
+            </latex-image-code>
+          </image>
+        </figure>
+      </p>
+    </td>
+    <td>Our graph</td>
   </tr>
-<tr>
-<td align="right"><m>\left(-\infty,-\dfrac{1}{4}\right]\cup\left[\dfrac{11}{4},\infty\right)</m></td>
-<td>Interval notation</td>
+  <tr>
+    <td align="right"><m>\left(-\infty,-\dfrac{1}{4}\right]\cup\left[\dfrac{11}{4},\infty\right)</m></td>
+    <td>Interval notation</td>
   </tr>
-</table></p>
-
-
-</example>
+</table></p></example>
 
 <example>
 <title>Absolute Value Inequality: OR inequality</title>
-<p>
-
-Solve, graph, and give interval notation for the solution.
-<!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 161 pg 130-->
+<p>Solve, graph, and give interval notation for the solution.
+<!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 161 pg 130--></p>
 
 <p>
-</p>
 <table class = "center">
   <tr>
-<td align="right"><m>-4-3\left|x\right|\leq -16</m></td>
-<td>Isolate the absolute value: Add <m>4</m> to both sides</td>
+    <td align="right"><m>-4-3\left|x\right|\leq -16</m></td>
+    <td>Isolate the absolute value: Add <m>4</m> to both sides</td>
   </tr>
-<tr>
-<td align="right"><m>\underline{+4\phantom{123456789}+4}</m></td>
-<td><m>\,</m></td>
+  <tr>
+    <td align="right"><m>\underline{+4\phantom{123456789}+4}</m></td>
+    <td><m>\,</m></td>
   </tr>
-<tr>
-<td align="right"><m>-3\left|x\right|\leq -12</m></td>
-<td>Divide both sides by negative 3</td>
+  <tr>
+    <td align="right"><m>-3\left|x\right|\leq -12</m></td>
+    <td>Divide both sides by negative 3</td>
   </tr>
-<tr>
-<td align="right"><m>\overline{-3}\phantom{123456}\overline{-3}</m></td>
-<td>Dividing by a negative switches the inequality direction</td>
+  <tr>
+    <td align="right"><m>\overline{-3}\phantom{123456}\overline{-3}</m></td>
+    <td>Dividing by a negative switches the inequality direction</td>
   </tr>
-<tr>
-<td align="right"><m>\left|x\right|\color{red}{\geq} 4</m></td>
-<td>Absolute value is greater, use OR</td>
+  <tr>
+    <td align="right"><m>\left|x\right|\color{red}{\geq} 4</m></td>
+    <td>Absolute value is greater, use OR</td>
   </tr>
-<tr>
-<td align="right"><m>\color{blue}{x\geq 4}</m> OR <m>\color{red}{x\leq -4}</m></td>
-<td>Graph</td>
+  <tr>
+    <td align="right"><m>\color{blue}{x\geq 4}</m> OR <m>\color{red}{x\leq -4}</m></td>
+    <td>Graph</td>
   </tr>
-<tr>
-<td align="right"><image source="set2B_Absolute_Value_Equations_and_Inequalities_Ex_9.png" /></td>
-<td>Our graph</td>
+  <tr>
+    <td align="right">
+      <p align="center">
+        <figure xml:id="figure-absolute-value-4-3absx-leq-16">
+          <image xml:id="absolute-value-4-3absx-leq-16">
+            <latex-image-code><![CDATA[
+              \begin{tikzpicture}
+                \draw[<->] (-5.5,0) -- (5.5,0);
+                \foreach \x in {-5,...,5}
+                  \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+                \fill[color=red] (-4,.5) circle (.1cm);
+                \draw[red, <-] (-5.5,.5) -- (-4,.5);
+                \node[anchor=south, color=red] at (-4.75,.5) {$x\leq -4$};
+                \fill[color=blue] (4,.5) circle (.1cm);
+                \draw[blue, ->] (4,.5) -- (5.5,.5);
+                \node[anchor=south, color=blue] at (4.75,.5) {$x\geq 4$};
+              \end{tikzpicture}}
+              ]]>
+            </latex-image-code>
+          </image>
+        </figure>
+      </p>
+    </td>
+    <td>Our graph</td>
   </tr>
-<tr>
-<td align="right"><m>(-\infty,-4]\cup[4,\infty)</m></td>
-<td>Interval notation</td>
+  <tr>
+    <td align="right"><m>(-\infty,-4]\cup[4,\infty)</m></td>
+    <td>Interval notation</td>
   </tr>
-</table>
-</p>
+</table></p></example>
 
-
-<p>
-In the previous example, we cannot combine <m>-4</m> and <m>-3</m> because they are not like
-terms, the <m>-3</m> has an absolute value term attached. So we must first clear the <m>-4</m> by
-adding <m>4</m>, then divide by <m>-3</m>. The next example is similar.
-</p>
-
-</example>
+<p>In the previous example, we cannot combine <m>-4</m> and <m>-3</m> because they are not like terms, the <m>-3</m> has an absolute value term attached. So we must first clear the <m>-4</m> by adding <m>4</m>, then divide by <m>-3</m>. The next example is similar.</p>
 
 <example>
-<title> Absolute Value Inequality: three part inequality</title>
-<p>
-
-Solve, graph, and give interval notation for the solution.
-<!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 162 pg 131-->
+  <title> Absolute Value Inequality: three part inequality</title>
+    <p>Solve, graph, and give interval notation for the solution.
+<!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 162 pg 131--></p>
 
 <p>
-</p>
 <table class = "center">
   <tr>
-<td align="right"><m>9-2|4x+1|\gt 3</m></td>
-<td>Subtract <m>9</m> from both sides</td>
+    <td align="right"><m>9-2|4x+1|\gt 3</m></td>
+    <td>Subtract <m>9</m> from both sides</td>
   </tr>
-<tr>
-<td align="right"><m>\underline{-9\phantom{12345678910}-9}</m></td>
-<td><m>\,</m></td>
+  <tr>
+    <td align="right"><m>\underline{-9\phantom{12345678910}-9}</m></td>
+    <td><m>\,</m></td>
   </tr>
-<tr>
-<td align="right"><m>-2|4x+1|\gt -6</m></td>
-<td>Divide both sides by <m>-2</m></td>
+  <tr>
+    <td align="right"><m>-2|4x+1|\gt -6</m></td>
+    <td>Divide both sides by <m>-2</m></td>
   </tr>
-<tr>
-<td align="right"><m>\overline{-2}\phantom{123456789}\overline{-2}</m></td>
-<td>Dividing by a negative switches the inequality direction</td>
+  <tr>
+    <td align="right"><m>\overline{-2}\phantom{123456789}\overline{-2}</m></td>
+    <td>Dividing by a negative switches the inequality direction</td>
   </tr>
-<tr>
-<td align="right"><m>|4x+1|\color{red}{\lt} 3</m></td>
-<td>Absolute value is less, use three part inequality</td>
+  <tr>
+    <td align="right"><m>|4x+1|\color{red}{\lt} 3</m></td>
+    <td>Absolute value is less, use three part inequality</td>
   </tr>
-<tr>
-<td align="right"><m>-3\lt 4x+1\lt 3</m></td>
-<td>Subtract 1 from all three parts</td>
+  <tr>
+    <td align="right"><m>-3\lt 4x+1\lt 3</m></td>
+    <td>Subtract 1 from all three parts</td>
   </tr>
-<tr>
-<td align="right"><m>\underline{-1\phantom{12345}-1\phantom{1}-1}</m></td>
-<td><m>\,</m></td>
+  <tr>
+    <td align="right"><m>\underline{-1\phantom{12345}-1\phantom{1}-1}</m></td>
+    <td><m>\,</m></td>
   </tr>
-<tr>
-<td align="right"><m>-4\lt 4x \lt 2</m></td>
-<td>Divide all three parts by <m>4</m></td>
+  <tr>
+    <td align="right"><m>-4\lt 4x \lt 2</m></td>
+    <td>Divide all three parts by <m>4</m></td>
   </tr>
-<tr>
-<td align="right"><m>\overline{4}\phantom{123}\overline{4}\phantom{123}\overline{4}</m></td>
-<td><m>\,</m></td>
+  <tr>
+    <td align="right"><m>\overline{4}\phantom{123}\overline{4}\phantom{123}\overline{4}</m></td>
+    <td><m>\,</m></td>
   </tr>
-<tr>
-<td align="right"><m>\color{green}{-1\lt x \lt\dfrac{1}{2}}</m></td>
-<td>Graph</td>
+  <tr>
+    <td align="right"><m>\color{green}{-1\lt x \lt\dfrac{1}{2}}</m></td>
+    <td>Graph</td>
   </tr>
-<tr>
-<td align="right"><image source="set2B_Absolute_Value_Equations_and_Inequalities_Ex_10.png" /></td>
-<td>Our graph</td>
+  <tr>
+    <td align="right">
+      <p align="center">
+        <figure xml:id="figure-absolute-value-neg1-lt-x-lt-half">
+          <image xml:id="absolute-value-neg1-lt-x-lt-half">
+            <latex-image-code><![CDATA[
+              \begin{tikzpicture}
+                \draw[<->] (-5.5,0) -- (5.5,0);
+                \foreach \x in {-5,...,5}
+                  \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+                \draw[color=M101_green] (-1,.5) circle (.1cm);
+                \draw[color=M101_green] (.5,.5) circle (.1cm);
+                \draw[M101_green] (-.9,.5) -- (.4,.5);
+                \node[anchor=south, color=M101_green] at (-.35,.5) {$-1 < x <\frac{1}{2}$};
+              \end{tikzpicture}}
+              ]]>
+            </latex-image-code>
+          </image>
+        </figure>
+      </p>
+    </td>
+    <td>Our graph</td>
   </tr>
-<tr>
-<td align="right"><m>\left(-1,\dfrac{1}{2}\right)</m></td>
-<td>Interval notation</td>
+  <tr>
+    <td align="right"><m>\left(-1,\dfrac{1}{2}\right)</m></td>
+    <td>Interval notation</td>
   </tr>
-</table>
-</p>
+</table></p></example>
 
-<p>
-In the previous example, we cannot distribute the <m>-2</m> into the absolute value.
-We can never distribute or combine things outside the absolute value with what is
-inside the absolute value. Our only way to solve is to first isolate the absolute
-value by clearing the values around it, then either make a compound inequality
-(an OR or a three part) to solve.
-</p>
 
-<p>
-It is important to remember as we are solving these equations, the absolute value
-is always positive. If we end up with an absolute value less than a negative
-number, then we will have no solution! Similarly, if we end up with an absolute value greater than a negative,
-this will always happen. Here the answer will be all real numbers.
-</p>
+<p>In the previous example, we cannot distribute the <m>-2</m> into the absolute value. We can never distribute or combine things outside the absolute value with what is inside the absolute value. Our only way to solve is to first isolate the absolute value by clearing the values around it, then either make a compound inequality (an OR or a three part) to solve.</p>
 
-</example>
+<p>It is important to remember as we are solving these equations, the absolute value is always positive. If we end up with an absolute value less than a negative number, then we will have no solution! Similarly, if we end up with an absolute value greater than a negative, this will always happen. Here the answer will be all real numbers.</p>
+
+
 
 <example>
-<title> Absolute Value Less than Negative Number</title>
-<p>
-
+  <title> Absolute Value Less than Negative Number</title>
 <p>Solve, graph, and give interval notation for the solution.</p>
 <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 163 pg 131-->
 
 <p>
-</p>
 <table class = "center">
   <tr>
-<td align="right"><m>12+4|6x-1|\lt 4</m></td>
-<td>Subtract <m>12</m> from both sides</td>
+    <td align="right"><m>12+4|6x-1|\lt 4</m></td>
+    <td>Subtract <m>12</m> from both sides</td>
   </tr>
-<tr>
-<td align="right"><m>\underline{-12\phantom{123456789}-12}</m></td>
-<td><m>\,</m></td>
+  <tr>
+    <td align="right"><m>\underline{-12\phantom{123456789}-12}</m></td>
+    <td><m>\,</m></td>
   </tr>
-<tr>
-<td align="right"><m>4\left|6x-1\right|\lt -8</m></td>
-<td>Divide both sides by <m>4</m></td>
+  <tr>
+    <td align="right"><m>4\left|6x-1\right|\lt -8</m></td>
+    <td>Divide both sides by <m>4</m></td>
   </tr>
-<tr>
-<td align="right"><m>\overline{4}\phantom{12345678910}\overline{4}</m></td>
-<td>Dividing by a positive: DON'T switch the inequality direction</td>
+  <tr>
+    <td align="right"><m>\overline{4}\phantom{12345678910}\overline{4}</m></td>
+    <td>Dividing by a positive: DON'T switch the inequality direction</td>
   </tr>
-<tr>
-<td align="right"><m>\left|6x-1\right|\lt -2</m></td>
-<td><font color="#FF0000"/>STOP:Absolute value can't be less than a negative!</td>
+  <tr>
+    <td align="right"><m>\left|6x-1\right|\lt -2</m></td>
+    <td><font color="#FF0000"/>STOP:Absolute value can't be less than a negative!</td>
   </tr>
-<tr>
-<td align="right">No solution</td>
-<td>Our Solution</td>
+  <tr>
+    <td align="right">No solution</td>
+    <td>Our Solution</td>
   </tr>
-</table>
-</p>
-
-
-</example>
+</table></p></example>
 
 <example>
 <title> Absolute Value Greater than Negative Number</title>
-<p>
-
-Solve, graph, and give interval notation for the solution.
-<!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 164 pg 131-->
+<p>Solve, graph, and give interval notation for the solution.
+<!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 164 pg 131--></p>
 
 <p>
-</p>
 <table class = "center">
   <tr>
-<td align="right"><m>5-6|x+7|\leq 17</m></td>
-<td>Subtract <m>5</m> from both sides</td>
+    <td align="right"><m>5-6|x+7|\leq 17</m></td>
+    <td>Subtract <m>5</m> from both sides</td>
   </tr>
-<tr>
-<td align="right"><m>\underline{-5\phantom{123456789}-5}</m></td>
-<td><m>\,</m></td>
+  <tr>
+    <td align="right"><m>\underline{-5\phantom{123456789}-5}</m></td>
+    <td><m>\,</m></td>
   </tr>
-<tr>
-<td align="right"><m>-6\left|x+7\right|\leq 12</m></td>
-<td>Divide both sides by <m>-6</m></td>
+  <tr>
+    <td align="right"><m>-6\left|x+7\right|\leq 12</m></td>
+    <td>Divide both sides by <m>-6</m></td>
   </tr>
-<tr>
-<td align="right"><m>\overline{-6}\phantom{12345678910}\overline{-6}</m></td>
-<td>Dividing by a negative switches the inequality direction</td>
+  <tr>
+    <td align="right"><m>\overline{-6}\phantom{12345678910}\overline{-6}</m></td>
+    <td>Dividing by a negative switches the inequality direction</td>
   </tr>
-<tr>
-<td align="right"><m>\left|x+7\right|\color{red}{\geq} -2</m></td>
-<td>Absolute value <b>always</b> greater than negative!</td>
+  <tr>
+    <td align="right"><m>\left|x+7\right|\color{red}{\geq} -2</m></td>
+    <td>Absolute value <b>always</b> greater than negative!</td>
   </tr>
-<tr>
-<td align="right"><m>x</m> can be any real number: 
+  <tr>
+    <td align="right"><m>x</m> can be any real number: 
     <m>-\infty\lt x \lt\infty</m> 
     or<m>\phantom{1234}</m></td>
-<td> Our Solution: Inequality notation</td>
+    <td> Our Solution: Inequality notation</td>
   </tr>
-<tr>
-<td align ="right"> <m>(-\infty, \infty)</m></td>
-<td> Our Solution: Interval notation</td>
+  <tr>
+    <td align ="right"> <m>(-\infty, \infty)</m></td>
+    <td> Our Solution: Interval notation</td>
   </tr>
-</table>
-</p>
-
-</example>
+</table></p></example>
 </section>
 
 <section>
@@ -754,11 +780,7 @@ Solve, graph, and give interval notation for the solution.
 <td><m>x = 11</m> or <m>x = -3</m></td>
 <td align="left">Our Solution</td>
   </tr>
-</table></p>
-
-
-
-</example>
+</table></p></example>
 
 <example>
 <title> Distance (Three-Part Inequality)</title>
@@ -780,28 +802,20 @@ Solve, graph, and give interval notation for the solution.
 <td>Simplify the absolute value expression</td>
   </tr>
 <tr>
-<td align="right"><m>\left|x\left|\leq 6</m></td>
+<td align="right"><m>\left|x\right|\leq 6</m></td>
 <td>Absolute value is less, use three part inequality</td>
   </tr>
 <tr>
 <td align="right"><m>-6\leq x \leq 6</m></td>
 <td>Inequality notation</td>
   </tr>
-</table>
-
-</p>
-
-
-</example>
+</table></p></example>
 
 <example>
 <title> Distance (OR Inequality)</title>
-<p>
-
 <p>Suppose the distance between <m>x</m> and <m>-14</m> is greater than <m>3</m>. Determine <m>x</m>.</p>
 <!-- Our own like WeBWorK 1C Problem 20-->
 <p>
-</p>
 <table class = "center">
   <tr>
 <td align="right"><m>\color{red}{\text{distance }} \color{green}{\text{between }} x \text{ and } </m>-14<m>  \color{red}{\text{ is greater than }} \color{blue}{3}</m></td>
@@ -833,7 +847,6 @@ Solve, graph, and give interval notation for the solution.
 <td align="right"><m>(-\infty,-17)\cup(-11,\infty)</m></td>
 <td>Our Solution: interval notation</td>
   </tr>
-</table></p>
-</example>
+</table></p></example>
 </section>
 </chapter>
