@@ -1,0 +1,81 @@
+# Simple makefile for MAT101
+# Do not modify this file! Changes will be overwritten by updates.
+
+# Copy this file to ./Makefile and change the copy.
+
+# Windows users: you need to use a linux-like shell, such as
+# the one that comes with Git Bash, to make use of this Makefile.
+# I have left the _win variables in place to help you if you want
+# to try to make it work with the Windows cmd.exe shell. Godspeed.
+
+# Windows: All sample paths of the form /path/to/... need to be replaced
+# by paths with forward slashes, no colon, and an initial slash. So
+# C:\Users\Cheryl\ becomes /c/users/cheryl (or /C/Users/Cheryl).
+
+xsltproc = /path/to/xsltproc
+xsltproc_win = $(subst /c,c:,$(xsltproc))
+mathbook = /path/to/mathbook
+mathbook_win = $(subst /c,c:,$(mathbook))
+
+xsl_html = $(mathbook)/xsl/mathbook-html.xsl
+xsl_html_win = $(subst /c,c:,$(xsl_html))
+
+# Do you need to change this to user?
+mbx = $(mathbook)/script/mbx
+mbx_win = $(subst /c,c:,$(mbx_win))
+
+mat101 = /path/to/MAT101
+mat101_win = $(subst /c,c:,$(mat101))
+
+src = $(mat101)/src
+src_win = $(mat101_win)/src
+output = $(mat101)/output
+output_win = $(subst /,\,$(mat101_win))\output
+images = $(output)/images
+images_win = $(output_win)\images
+mbx_source = $(src)/index.mbx
+mbx_source_win = $(src_win)/index.mbx
+mbx_target = $(output)/book-1.html
+mbx_target_win = $(output_win)/book-1.html
+
+INSTALL = install
+RM = rm -frv
+
+# If you are using the Windows cmd.exe shell, uncomment the next four lines
+# and use only the _win targets (see below)
+
+# often install is found in c:/Program Files (x86)/Git/bin
+# you need GNU make version >= 3.82, preferably >= 4.1
+
+# INSTALL = 'c:/Program Files (x86)/Git/bin/install.exe'
+# RM = rd /s /q
+# SHELL = C:/Windows/System32/cmd.exe
+
+# If you are using the Windows cmd.exe shell, replace all the
+# variables (e.g., $(mbx_target), etc.) below with their _win variants
+
+.PHONY = all mbx images clean clean_images
+
+all: mbx images
+
+mbx: $(mbx_target)
+
+$(mbx_target):
+    $(INSTALL) --directory $(output)/knowl
+    $(xsltproc) --xinclude --output $(output)/ $(xsl_html) $(mbx_source)
+
+images: $(images)/LAST_BUILT
+
+$(images)/LAST_BUILT:
+    $(INSTALL) --directory $(images)
+    $(mbx) -vv -c latex-image -f svg -d $(images) $(mbx_source)
+    touch $(images)/LAST_BUILT
+
+clean_images:
+    $(RM) $(output)/images
+    $(INSTALL) -d $(output)/images
+
+clean:
+    $(RM) $(output)
+    $(INSTALL) -d $(output)/images
+
