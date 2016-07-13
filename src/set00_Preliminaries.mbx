@@ -14,7 +14,7 @@
 
 <p> A small picture of the integers is provided on the number line below: </p>
    <figure xml:id="figure-numberline">
-          <image xml:id="numberline" width="70%">
+          <image xml:id="numberline">
             <latex-image-code><![CDATA[
               \begin{tikzpicture} [scale = 0.5, transform shape]
             \draw[<->] (-5.5,0) -- (5.5,0);
@@ -49,7 +49,7 @@ Recall that adding a <m>\color{green}{\text{positive}}</m>  integer equates to m
   </tr>
 <tr>
 <td align="right"><figure xml:id="figure-numberline-ex-1plus3">
-          <image xml:id="numberline-ex-1plus3" width="70%">
+          <image xml:id="numberline-ex-1plus3">
             <latex-image-code><![CDATA[
               \begin{tikzpicture} [scale = 0.5, transform shape]
             \draw[<->] (-5.5,0) -- (5.5,0);
@@ -90,7 +90,7 @@ Similarly, adding a <m>\color{red}{\text{negative}}</m> integer equates to movin
   </tr>
 <tr>
 <td align="right"><figure xml:id="figure-numberline-ex-1minus3">
-          <image xml:id="numberline-ex-1minus3" width="70%">
+          <image xml:id="numberline-ex-1minus3">
             <latex-image-code><![CDATA[
               \begin{tikzpicture} [scale = 0.5, transform shape]
             \draw[<->] (-5.5,0) -- (5.5,0);
@@ -127,7 +127,7 @@ Similarly, adding a <m>\color{red}{\text{negative}}</m> integer equates to movin
   </tr>
 <tr>
 <td align="right"><figure xml:id="figure-numberline-ex-neg1minus2">
-          <image xml:id="numberline-ex-neg1minus2" width="70%">
+          <image xml:id="numberline-ex-neg1minus2">
             <latex-image-code><![CDATA[
               \begin{tikzpicture} [scale = 0.5, transform shape]
             \draw[<->] (-5.5,0) -- (5.5,0);

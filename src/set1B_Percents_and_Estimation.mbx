@@ -14,7 +14,7 @@
 <b><em>Percent</em></b> means "parts per hundred."  The below figure represents <m>23\%</m>. 
 <p align="center">
   <figure xml:id="figure-decimal-square-labeled">
-          <image xml:id="decimal-square-labeled" width="70%">
+          <image xml:id="decimal-square-labeled">
             <latex-image-code><![CDATA[
         \begin{tikzpicture}
             \fill[fill=M101_green!50!white] (0,0) rectangle (1,10);
@@ -265,7 +265,7 @@ Determine the location of the decimals on the number line.
 <td align="right"><m>2.5=2 + 0.5 = 2 + \dfrac{50}{100}= 2+\dfrac{1}{2}</m>
      is a number half-way between <m>2</m> and <m>3</m></td>
 <td><figure xml:id="figure-numberline-2.5">
-          <image xml:id="numberline-2.5" width="70%">
+          <image xml:id="numberline-2.5">
             <latex-image-code><![CDATA[
               \begin{tikzpicture}
                   \draw[<->] (-5.5,0) -- (5.5,0);
@@ -283,7 +283,7 @@ Determine the location of the decimals on the number line.
      but less than <m>0.90=\dfrac{90}{100}</m> which means it
      is a number between <m>0.8</m> and <m>0.9</m></td>
 <td><figure xml:id="figure-numberline-0.84">
-          <image xml:id="numberline-0.84" width="70%">
+          <image xml:id="numberline-0.84">
             <latex-image-code><![CDATA[
               \begin{tikzpicture}
                   \draw[<->] (-1,0) -- (11,0);

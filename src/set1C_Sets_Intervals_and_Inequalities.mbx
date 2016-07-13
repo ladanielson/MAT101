@@ -206,7 +206,7 @@ universal set. To visualize an intersection or union of a set is easy.  Below ar
     <td>
 <p align="center">
   <figure xml:id="figure-Venn-A-union-B">
-    <image xml:id="Venn-A-union-B" width="70%">
+    <image xml:id="Venn-A-union-B">
       <latex-image-code><![CDATA[
         \begin{tikzpicture}
             \draw \universe;
@@ -232,7 +232,7 @@ universal set. To visualize an intersection or union of a set is easy.  Below ar
 <td>
   <p align="center">
   <figure xml:id="figure-Venn-A-intersect-B">
-    <image xml:id="Venn-A-intersect-B" width="70%">
+    <image xml:id="Venn-A-intersect-B">
       <latex-image-code><![CDATA[
         \begin{tikzpicture}
           \draw \universe;
@@ -260,7 +260,7 @@ universal set. To visualize an intersection or union of a set is easy.  Below ar
 <td>
   <p align="center">
   <figure xml:id="figure-Venn-A-complement">
-    <image xml:id="Venn-A-complement" width="70%">
+    <image xml:id="Venn-A-complement">
       <latex-image-code><![CDATA[
         \begin{tikzpicture}
           \fill[color = M101_green!50!white ] \universe;
@@ -372,7 +372,7 @@ Use a closed circle for greater than or equal to</td>
 <td align="right">
   <p align="center">
   <figure xml:id="figure-interval-x-geq-4">
-    <image xml:id="interval-x-geq-4" width="70%">
+    <image xml:id="interval-x-geq-4">
       <latex-image-code><![CDATA[
         \begin{tikzpicture}
           \draw[<->] (-5.5,0) -- (5.5,0);
@@ -419,7 +419,7 @@ Use an open circle for less than</td>
 <td align="right">
   <p align="center">
   <figure xml:id="figure-interval-x-lt-neg4">
-    <image xml:id="interval-x-lt-neg4" width="70%">
+    <image xml:id="interval-x-lt-neg4">
       <latex-image-code><![CDATA[
         \begin{tikzpicture}
           \draw[<->] (-5.5,0) -- (5.5,0);
@@ -466,7 +466,7 @@ Use open circles for less than</td>
 <td align="right">
   <p align="center">
   <figure xml:id="figure-interval-neg3-lt-x-lt-1">
-    <image xml:id="interval-neg3-lt-x-lt-1" width="70%">
+    <image xml:id="interval-neg3-lt-x-lt-1">
       <latex-image-code><![CDATA[
         \begin{tikzpicture}
           \draw[<->] (-5.5,0) -- (5.5,0);
@@ -510,7 +510,7 @@ MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_04_LinearIneq.pg
 <td align="right">
   <p align="center">
   <figure xml:id="figure-intervals-overlapping">
-    <image xml:id="intervals-overlapping" width="70%">
+    <image xml:id="intervals-overlapping">
       <latex-image-code><![CDATA[
         \begin{tikzpicture}
           \draw[<->] (-5.5,0) -- (5.5,0);
@@ -565,7 +565,7 @@ MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_04_LinearIneq.pg
 <td align="right">
   <p align="center">
   <figure xml:id="figure-intervals-overlapping-copy">
-    <image source="../output/images/intervals-overlapping.svg" width="70%" />
+    <image source="../output/images/intervals-overlapping.svg" />
   </figure>
 </p>
 </td>
@@ -603,7 +603,7 @@ MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_05_CompoundIneq.pg
 <td align="right">
   <p align="center">
   <figure xml:id="figure-intervals-overlapping2">
-    <image xml:id="intervals-overlapping2" width="70%">
+    <image xml:id="intervals-overlapping2">
       <latex-image-code><![CDATA[
         \begin{tikzpicture}
           \draw[<->] (-5.5,0) -- (5.5,0);
@@ -654,7 +654,7 @@ MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_05_CompoundIneq.pg
 <td align="right">
   <p align="center">
   <figure xml:id="figure-intervals-overlapping2-copy">
-    <image source="../output/images/intervals-overlapping2.svg" width="70%" />
+    <image source="../output/images/intervals-overlapping2.svg" />
   </figure>
 </p>
 </td>
@@ -695,7 +695,7 @@ MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_07_CompoundIneq.pg
 <td align="right">
   <p align="center">
   <figure xml:id="figure-interval-non-overlapping">
-    <image xml:id="interval-non-overlapping" width="70%">
+    <image xml:id="interval-non-overlapping">
       <latex-image-code><![CDATA[
         \begin{tikzpicture}
           \draw[<->] (-5.5,0) -- (5.5,0);
@@ -743,7 +743,7 @@ MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_05_CompoundIneq.pg
   <tr>
 <td align="right">
   <figure xml:id="figure-interval-non-overlapping-copy">
-    <image source="../output/images/interval-non-overlapping.svg" width="70%" />
+    <image source="../output/images/interval-non-overlapping.svg" />
   </figure>
 </td>
 <td>The <b>intersection</b> of the points in the graph
@@ -778,7 +778,7 @@ Solve the compound inequality.
 <td >
   <p align="center">
   <figure xml:id="figure-intervals-overlapping2-copy2">
-    <image source="../output/images/intervals-overlapping2.svg" width="70%" />
+    <image source="../output/images/intervals-overlapping2.svg" />
   </figure>
 </p>
 </td>
@@ -816,7 +816,7 @@ Solve the compound inequality.
 <td>
   <p align="center">
   <figure xml:id="figure-intervals-overlapping-copy2">
-    <image source="../output/images/intervals-overlapping.svg" width="70%" />
+    <image source="../output/images/intervals-overlapping.svg" />
   </figure>
 </p>
 </td>
