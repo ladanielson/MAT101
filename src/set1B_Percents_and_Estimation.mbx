@@ -1,411 +1,309 @@
 <chapter>
-<title>MAT-101: Set 1B-Percents and Estimation</title>
-<introduction>
-<ul>
-<li>Convert between percent and decimal.</li>
-  <li> Estimate sums, differences, products, quotients and percents.</li>
-  </ul>
-</introduction>
-
-<section>
-<title>Percents</title>
-
-
-<b><em>Percent</em></b> means "parts per hundred."  The below figure represents <m>23\%</m>. 
-<p align="center">
-  <figure xml:id="figure-decimal-square-labeled">
-          <image xml:id="decimal-square-labeled">
-            <latex-image-code><![CDATA[
-        \begin{tikzpicture}
-            \fill[fill=M101_green!50!white] (0,0) rectangle (1,10);
-            \fill[fill=M101_green!50!white] (1,0) rectangle (2,10);
-            \fill[fill=M101_green!50!white] (2,0) rectangle (3,3);
-            \draw[step=1cm,black, thick] (0,0) grid (10,10);
-            \node at (11, 5) [] {$23\%$};
-    \end{tikzpicture}}
-    ]]>
-        </latex-image-code>
-      </image>
-    </figure>
-</p>
-<p>
-A large square has been partitioned into <m>10\times 10 = 100</m> equal parts.  We have shaded <m>23</m> of the <m>100</m>
-possible little squares, or <m>23\%</m> of the total number of little squares.
-</p>
-
-
-<p>
-To change a percent to a decimal, we need only remember that percent means
-"parts per hundred."  Recalling <b>Set 1A-Fractions</b>, <m>23\%=\dfrac{23}{100}</m> or <m>23</m> parts out of <m>100</m>.  Dividing <m>23</m> by <m>100</m> yields  <m>23\%=\dfrac{23}{100}=0.23</m>.  Recall that in the decimal representation, <m>2</m> is in the <b>tenths</b> position and <m>3</m> is in the <b>hundredths</b> position of the decimal <m>0.23</m>.
-</p>
-
-
-</section>
-
-<section>
-<title>Converting Between Percents and Decimals</title>
-
-<example>
-<title> Convert a Percent to a Decimal</title>
-<p>
-
-Convert <m>37.5\%</m> into a decimal.
-
-
-</p>
-<table class = "center">
-  <tr>
-<td align="right"><m>37.5\%</m></td>
-<td>Percent means parts per hundred: drop the percent symbol and write the <m>37.5</m> over <m>100</m></td>
-  </tr>
-<tr>
-<td align="right"><m>\dfrac{37.5}{100}</m></td>
-<td>Dividing by 100 moves the decimal point <m>2</m> places left</td>
-  </tr>
-<tr>
-<td align="right"><m>.375</m></td>
-<td>Our Solution <div class="WWbox">
-                       Type <b>.375 </b> for <m> .375 </m> in <tt>WeBWorK</tt>
-                       </div></td>
-  </tr>
-</table>
-
-<p>
-This last example motivates the following simple rule. To change a percent to a decimal, drop
-the percent symbol and move the decimal point two places to the left.
-</p>
-
-
-</example>
-
-<example>
-<title> Convert a Percent to a Decimal</title>
-<p>
-
-Convert <m>2\frac{1}{2}\%</m> into a decimal.
-
-</p>
-<table class = "center">
-  <tr>
-<td align="right"><m>2\frac{1}{2}\%</m></td>
-<td>The fraction <m>\frac{1}{2}=\frac{5}{10}=.5</m></td>
-  </tr>
-<tr>
-<td align="right"><m>2.5\%</m></td>
-<td>Drop the percent symbol and move the decimal point two places to the left</td>
-  </tr>
-<tr>
-<td align="right"><m>.025</m></td>
-<td>Our Solution</td>
-  </tr>
-</table>
-
-<p>
-Changing a decimal to a percent is the exact opposite of changing a percent
-to a decimal: move the decimal point two places to the right and add a percent symbol.
-</p>
-
- </example>
-
-<example>
-<title> Convert a Decimal to a Percent</title>
-<p>
-
- Convert <m>0.0725</m> to a percent.
- <!-- Cite http://mathrev.redwoods.edu/PreAlgText/chapter7.pdf  Example 6 pg 505-->
-
-</p>
-<table class = "center">
-  <tr>
-<td align="right"><m>.0725</m></td>
-<td>Move the decimal point two places to the right and add a percent symbol</td>
-  </tr>
-<tr>
-<td align="right"><m>7.25\%</m></td>
-<td>Our Solution <div class="WWbox">
-                       Type <b>7.25% </b> for <m>7.25\% </m> in <tt>WeBWorK</tt>
-                       </div></td>
-  </tr>
-</table>
-
-</example>
-
-<example>
-<title> Convert a Decimal to a Percent</title>
-<p>
-
- Convert <m>1.025</m> to a percent.
-  <!-- Cite http://mathrev.redwoods.edu/PreAlgText/chapter7.pdf  Example 7 pg 505-->
-
-</p>
-<table class = "center">
-  <tr>
-<td align="right"><m>1.025</m></td>
-<td>Move the decimal point two places to the right and add a percent symbol</td>
-  </tr>
-<tr>
-<td align="right"><m>102.5\%</m></td>
-<td>Our Solution</td>
-  </tr>
-</table>
-</example>
-
-<example>
-<title> Determine a Percent</title>
-<p>
-
-Suppose that results of a survey revealed <m>173</m> out of <m>325</m> respondents had brown eyes.  Give the percent of respondents having brown eyes.
-  <!-- Our own  -->
-
-</p>
-<table class = "center">
-  <tr>
-<td align="right"><m>172</m> out of <m>325</m></td>
-<td>Determine the fraction with brown eyes</td>
-  </tr>
-<tr>
-<td align="right"><m>\dfrac{172}{325}</m></td>
-<td>Compute the equivalent decimal: divide <m>172</m> by <m>325</m> on your calculator</td>
-  </tr>
-<tr>
-<td align="right"><m>0.52923...</m></td>
-<td>Move the decimal point two places to the right and add a percent symbol</td>
-  </tr>
-<tr>
-<td align="right"><m>52.923\%</m></td>
-<td>Our Solution: <m>52.923\%</m> of the respondents have brown eyes
-    <div class="WWbox">
-                        It is generally a good idea to maintain <m>3</m> to <m>5</m> decimals of accuracy when submitting answers in <tt>WeBWorK</tt>
-                       </div></td>
-  </tr>
-</table>
-
-</example>
-</section>
-
-<section>
-<title>Determining a Percent of a Number</title>
-
-
-<p>
-One type of percent problems involves determining a specific percent of a given number.
-</p>
-
-<example>
-<title> Determine a Percent of a Number</title>
-<p>
-
- <!-- Cite http://mathrev.redwoods.edu/PreAlgText/chapter7.pdf  Example 1 pg 512-->
-
-</p>
-<table class = "center">
-  <tr>
-<td align="right">Find <m>25\%</m> of <m>640</m>.</td>
-<td>Here <em> of</em> means multiplication</td>
-  </tr>
-<tr>
-<td align="right"><m>25\%\cdot 640</m></td>
-<td>Change <m>25\%</m> to a decimal</td>
-  </tr>
-<tr>
-<td align="right"><m>.25\cdot 640</m></td>
-<td>Multiply (check this with a calculator!)</td>
-  </tr>
-<tr>
-<td align="right"><m>160</m></td>
-<td>Our Solution</td>
-  </tr>
-</table>
-
-</example>
-
-<example>
-<title> Determine a Percent of a Number</title>
-<p>
-
- <!-- This one is ours!  For WeBWorK-->
-</p>
-<table class = "center">
-  <tr>
-<td align="right">Find <m>175\%</m> of <m>30</m>.</td>
-<td>Here <em> of</em> means multiplication</td>
-  </tr>
-<tr>
-<td align="right"><m>175\%\cdot 30</m></td>
-<td>Change <m>175\%</m> to a decimal</td>
-  </tr>
-<tr>
-<td align="right"><m>1.75\cdot 30</m></td>
-<td>Multiply</td>
-  </tr>
-<tr>
-<td align="right"><m>52.5</m></td>
-<td>Our Solution</td>
-  </tr>
-</table>
-</example>
-</section>
-
-<section>
-<title>Decimals on the Real Number Line</title>
-
-<p>
-As a decimal, <m>23</m> parts out of <m>100</m> is <m>23\%=\dfrac{23}{100}=0.23</m>.  We see that <m>100\%=\dfrac{100}{100}=1</m> is all <m>100</m> parts out of <m>100</m>.  This means <m>0.23</m> is a number less than <m>1</m> but greater than <m>0</m> since <m>0=\dfrac{0}{100}</m> zero parts out of <m>100</m>.
-</p>
-
-<example>
-<title> Decimals on the Number Line</title>
-<p>
-
-Determine the location of the decimals on the number line.
- <!-- This one is ours!  For WeBWorK-->
-</p>
-<table class = "center">
-  <tr>
-<td align="right"><m>2.5=2 + 0.5 = 2 + \dfrac{50}{100}= 2+\dfrac{1}{2}</m>
-     is a number half-way between <m>2</m> and <m>3</m></td>
-<td><figure xml:id="figure-numberline-2.5">
-          <image xml:id="numberline-2.5">
-            <latex-image-code><![CDATA[
-              \begin{tikzpicture}
-                  \draw[<->] (-5.5,0) -- (5.5,0);
-                  \fill[fill=red] (2.5,0) circle (.15cm);
-                  \draw (2.5, .1) node [above] {2.5};
-                  \foreach \x in {-5,...,5}
-                      \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
-              \end{tikzpicture}]]>
-        </latex-image-code>
-      </image>
-    </figure></td>
-  </tr>
-<tr>
-<td align="right"><m>0.84=\dfrac{84}{100}</m> is more than <m>0.80=\dfrac{80}{100}</m>
-     but less than <m>0.90=\dfrac{90}{100}</m> which means it
-     is a number between <m>0.8</m> and <m>0.9</m></td>
-<td><figure xml:id="figure-numberline-0.84">
+  <title>MAT-101: Set 1B-Percents and Estimation</title>
+  <introduction>
+    <ul>
+      <li>Convert between percent and decimal.</li>
+      <li>Estimate sums, differences, products, quotients and percents.</li>
+    </ul>
+  </introduction>
+  <section>
+    <title>Percents</title>
+    <b>
+      <em>Percent</em>
+    </b>means "parts per hundred."  The below figure represents
+    <m>23\%</m>.
+    <p>
+      <figure xml:id="figure-decimal-square-labeled">
+        <image xml:id="decimal-square-labeled">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \fill[fill=M101_green!50!white] (0,0) rectangle (1,10); \fill[fill=M101_green!50!white] (1,0) rectangle (2,10); \fill[fill=M101_green!50!white] (2,0) rectangle (3,3); \draw[step=1cm,black, thick] (0,0) grid (10,10); \node at (11, 5) [] {$23\%$}; \end{tikzpicture}} ]]></latex-image-code>
+        </image>
+      </figure>
+    </p>
+    <p>A large square has been partitioned into
+      <m>10\times 10 = 100</m>equal parts.  We have shaded
+      <m>23</m>of the
+      <m>100</m>possible little squares, or
+      <m>23\%</m>of the total number of little squares.
+    </p>
+    <p>To change a percent to a decimal, we need only remember that percent means "parts per hundred."  Recalling
+      <b>Set 1A-Fractions</b>,
+      <m>23\%=\dfrac{23}{100}</m>or
+      <m>23</m>parts out of
+      <m>100</m>.  Dividing
+      <m>23</m>by
+      <m>100</m>yields
+      <m>23\%=\dfrac{23}{100}=0.23</m>.  Recall that in the decimal representation,
+      <m>2</m>is in the
+      <b>tenths</b>position and
+      <m>3</m>is in the
+      <b>hundredths</b>position of the decimal
+      <m>0.23</m>.
+    </p>
+  </section>
+  <section>
+    <title>Converting Between Percents and Decimals</title>
+    <example>
+      <title>Convert a Percent to a Decimal</title>
+      <p>Convert
+        <m>37.5\%</m>into a decimal.
+      </p>
+      <md>
+        <mrow>\text{
+          \(37.5\%\)} \amp\amp\amp \text{Percent means parts per hundred: drop the percent symbol and write the
+          \(37.5\) over
+          \(100\)}</mrow>
+        <mrow>\text{
+          \(\dfrac{37.5}{100}\)} \amp\amp\amp \text{Dividing by 100 moves the decimal point
+          \(2\) places left}</mrow>
+        <mrow>\text{
+          \(.375\)} \amp\amp\amp \text{Our Solution
+          <div class="WWbox">Type
+            <b>.375</b>for
+            \(.375\) in
+            <tt>WeBWorK</tt>
+          </div>}
+        </mrow>
+      </md>
+    </example>
+    <p>This last example motivates the following simple rule. To change a percent to a decimal, drop the percent symbol and move the decimal point two places to the left.</p>
+    <example>
+      <title>Convert a Percent to a Decimal</title>
+      <p>Convert
+        <m>2\frac{1}{2}\%</m>into a decimal.
+      </p>
+      <md>
+        <mrow>\text{
+          \(2\frac{1}{2}\%\)} \amp\amp\amp \text{The fraction
+          \(\frac{1}{2}=\frac{5}{10}=.5\)}</mrow>
+        <mrow>\text{
+          \(2.5\%\)} \amp\amp\amp \text{Drop the percent symbol and move the decimal point two places to the left}</mrow>
+        <mrow>\text{
+          \(.025\)} \amp\amp\amp \text{Our Solution}</mrow>
+      </md>
+    </example>
+    <p>Changing a decimal to a percent is the exact opposite of changing a percent to a decimal: move the decimal point two places to the right and add a percent symbol.</p>
+    <example>
+      <title>Convert a Decimal to a Percent</title>
+      <p>Convert
+        <m>0.0725</m>to a percent.
+        <!-- Cite http://mathrev.redwoods.edu/PreAlgText/chapter7.pdf  Example 6 pg 505-->
+      </p>
+      <md>
+        <mrow>\text{
+          \(.0725\)} \amp\amp\amp \text{Move the decimal point two places to the right and add a percent symbol}</mrow>
+        <mrow>\text{
+          \(7.25\%\)} \amp\amp\amp \text{Our Solution
+          <div class="WWbox">Type
+            <b>7.25%</b>for
+            \(7.25\%\) in
+            <tt>WeBWorK</tt>
+          </div>}
+        </mrow>
+      </md>
+    </example>
+    <example>
+      <title>Convert a Decimal to a Percent</title>
+      <p>Convert
+        <m>1.025</m>to a percent.
+        <!-- Cite http://mathrev.redwoods.edu/PreAlgText/chapter7.pdf  Example 7 pg 505-->
+      </p>
+      <md>
+        <mrow>\text{
+          \(1.025\)} \amp\amp\amp \text{Move the decimal point two places to the right and add a percent symbol}</mrow>
+        <mrow>\text{
+          \(102.5\%\)} \amp\amp\amp \text{Our Solution}</mrow>
+      </md>
+    </example>
+    <example>
+      <title>Determine a Percent</title>
+      <p>Suppose that results of a survey revealed
+        <m>173</m>out of
+        <m>325</m>respondents had brown eyes.  Give the percent of respondents having brown eyes.
+        <!-- Our own  -->
+      </p>
+      <md>
+        <mrow>\text{
+          \(172\) out of
+          \(325\)} \amp\amp\amp \text{Determine the fraction with brown eyes}</mrow>
+        <mrow>\text{
+          \(\dfrac{172}{325}\)} \amp\amp\amp \text{Compute the equivalent decimal: divide
+          \(172\) by
+          \(325\) on your calculator}</mrow>
+        <mrow>\text{
+          \(0.52923...\)} \amp\amp\amp \text{Move the decimal point two places to the right and add a percent symbol}</mrow>
+        <mrow>\text{
+          \(52.923\%\)} \amp\amp\amp \text{Our Solution:
+          \(52.923\%\) of the respondents have brown eyes
+          <div class="WWbox">It is generally a good idea to maintain
+            \(3\) to
+            \(5\) decimals of accuracy when submitting answers in
+            <tt>WeBWorK</tt>
+          </div>}
+        </mrow>
+      </md>
+    </example>
+  </section>
+  <section>
+    <title>Determining a Percent of a Number</title>
+    <p>One type of percent problems involves determining a specific percent of a given number.</p>
+    <example>
+      <title>Determine a Percent of a Number</title>
+      <p>
+        <!-- Cite http://mathrev.redwoods.edu/PreAlgText/chapter7.pdf  Example 1 pg 512-->
+      </p>
+      <md>
+        <mrow>\text{Find
+          \(25\%\) of
+          \(640\).} \amp\amp\amp \text{Here
+          <em>of</em>means multiplication}
+        </mrow>
+        <mrow>\text{
+          \(25\%\cdot 640\)} \amp\amp\amp \text{Change
+          \(25\%\) to a decimal}</mrow>
+        <mrow>\text{
+          \(.25\cdot 640\)} \amp\amp\amp \text{Multiply (check this with a calculator!)}</mrow>
+        <mrow>\text{
+          \(160\)} \amp\amp\amp \text{Our Solution}</mrow>
+      </md>
+    </example>
+    <example>
+      <title>Determine a Percent of a Number</title>
+      <p>
+        <!-- This one is ours!  For WeBWorK-->
+      </p>
+      <md>
+        <mrow>\text{Find
+          \(175\%\) of
+          \(30\).} \amp\amp\amp \text{Here
+          <em>of</em>means multiplication}
+        </mrow>
+        <mrow>\text{
+          \(175\%\cdot 30\)} \amp\amp\amp \text{Change
+          \(175\%\) to a decimal}</mrow>
+        <mrow>\text{
+          \(1.75\cdot 30\)} \amp\amp\amp \text{Multiply}</mrow>
+        <mrow>\text{
+          \(52.5\)} \amp\amp\amp \text{Our Solution}</mrow>
+      </md>
+    </example>
+  </section>
+  <section>
+    <title>Decimals on the Real Number Line</title>
+    <p>As a decimal,
+      <m>23</m>parts out of
+      <m>100</m>is
+      <m>23\%=\dfrac{23}{100}=0.23</m>.  We see that
+      <m>100\%=\dfrac{100}{100}=1</m>is all
+      <m>100</m>parts out of
+      <m>100</m>.  This means
+      <m>0.23</m>is a number less than
+      <m>1</m>but greater than
+      <m>0</m>since
+      <m>0=\dfrac{0}{100}</m>zero parts out of
+      <m>100</m>.
+    </p>
+    <example>
+      <title>Decimals on the Number Line</title>
+      <p>Determine the location of the decimals on the number line.
+        <!-- This one is ours!  For WeBWorK-->
+      </p>
+      <md>
+        <mrow>2.5=2 + 0.5 = 2 + \dfrac{50}{100}= 2+\dfrac{1}{2}</mrow>
+        <mrow>\text{is a number half-way between
+          \(2\) and
+          \(3\)}</mrow>
+      </md>
+      <figure xml:id="figure-numberline-2.5">
+        <image xml:id="numberline-2.5">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+            <->] (-5.5,0) -- (5.5,0); \fill[fill=red] (2.5,0) circle (.15cm); \draw (2.5, .1) node [above] {2.5}; \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \end{tikzpicture}]]></latex-image-code>
+          </image>
+        </figure>}
+        <md>
+          <mrow>\text{
+            \(0.84=\dfrac{84}{100}\) is more than
+            \(0.80=\dfrac{80}{100}\)}</mrow>
+          <mrow>\text{but less than
+            \(0.90=\dfrac{90}{100}\) which means it}</mrow>
+          <mrow>\text{is a number between
+            \(0.8\) and
+            \(0.9\)}</mrow>
+        </md>
+        <figure xml:id="figure-numberline-0.84">
           <image xml:id="numberline-0.84">
-            <latex-image-code><![CDATA[
-              \begin{tikzpicture}
-                  \draw[<->] (-1,0) -- (11,0);
-                  \fill[fill=red] (8.4,0) circle (.15cm);
-                  \draw (8.4, .1) node [above] {.84};
-                  \draw (0,0.1) -- (0, -0.1) node [below] {0};
-                  \draw (10,0.1) -- (10, -0.1) node [below] {1.0};
-                    \foreach \x in {1,...,9}
-                        \draw (\x, 0.1) -- (\x, -0.1) node [below] {0.\x};
-              \end{tikzpicture}]]>
-        </latex-image-code>
-      </image>
-    </figure></td>
-  </tr>
-</table>
-<!-- Cite Prealgebra Textbook
-Free PreAlgebra 1st Edition
-This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License..
-Based on a work at http://home.comcast.net/~cherylwilcox1/site/ Lesson 32 Arithmetic with Decimals-->
-</example>
-</section>
-
-<section>
-<title>Rounding Decimals</title>
-
-<p>
-This is a situation where our experience with whole numbers is valuable. Rounding a decimal number to a given place
-value or a given number of decimal places is very similar to rounding whole numbers.
-</p>
-
-<example>
-<title> Rounding to Tenths</title>
-<p>
-
- <!-- Cite http://home.comcast.net/~cherylwilcox1/site/ Lesson 32  Example pg 4-->
-
-</p>
-<table class = "center">
-  <tr>
-<td align="right">Round <m>6.7291</m> to the nearest tenth.</td>
-<td>Find the tenths place: one place after the decimal</td>
-  </tr>
-<tr>
-<td align="right"><m>6.\color{red}{7}291</m></td>
-<td> <m>\color{red}{7}</m> is in the tenths place. The <span style="color:blue;">next</span> digit is the trigger.</td>
-  </tr>
-<tr>
-<td align="right"><m>6.\color{red}{7}\color{blue}{2}91</m></td>
-<td>Since the trigger <m>\color{blue}{2}</m>  is less than <m>5</m>, we do not round up.</td>
-  </tr>
-<tr>
-<td align="right"><m>6.7</m></td>
-<td>Our Solution</td>
-  </tr>
-</table>
-
-</example>
-
-<example>
-<title> Rounding to Hundredths</title>
-<p>
-
- <!-- Cite http://home.comcast.net/~cherylwilcox1/site/ Lesson 32  Example pg 4-->
-
-</p>
-<table class = "center">
-  <tr>
-<td align="right">Round <m>6.7291</m> to the nearest hundredth.</td>
-<td>Find the hundredths place: two places after the decimal</td>
-  </tr>
-<tr>
-<td align="right"><m>6.7\color{red}{2}91</m></td>
-<td> <m>\color{red}{2}</m> is in the hundredths place. The <span style="color:blue;">next</span> digit is the trigger.</td>
-  </tr>
-<tr>
-<td align="right"><m>6.7\color{red}{2}\color{blue}{9}1</m></td>
-<td>Since the trigger <m>\color{blue}{9}</m>  is greater than <m>5</m>, we round up.</td>
-  </tr>
-<tr>
-<td align="right"><m>6.73</m></td>
-<td>Our Solution</td>
-  </tr>
-</table>
-
-</example>
-</section>
-
-<section>
-<title>Estimation</title>
-
-<p>
-There are times when an estimate or approximation of an arithmetic operation is useful.  For example, when determining the reasonableness of a result.
-</p>
-
-<example>
-<title> Estimating</title>
-<p>
-
-Estimate the product by rounding each of the given values to the nearest tenth.
-
-</p>
-<table class = "center">
-  <tr>
-<td align="right"> <m>5.924\times 6.675</m></td>
-<td>Identify the triggers for each value</td>
-  </tr>
-<tr>
-<td align="right"><m>5.\color{red}{9}\color{blue}{2}4\times 6.\color{red}{6}\color{blue}{7}5</m></td>
-<td> The trigger <m>\color{blue}{2}</m> is less than <m>5</m>: round down, the trigger <m>\color{blue}{7}</m> is greater than <m>5</m>: round up</td>
-  </tr>
-<tr>
-<td align="right"><m>5.9\times 6.7 </m></td>
-<td>Multiply</td>
-  </tr>
-<tr>
-<td align="right"><m>39.53</m></td>
-<td>Our Solution</td>
-  </tr>
-</table>
-
-
-
-</example>
-</section>
-</chapter>
+            <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+              <->] (-1,0) -- (11,0); \fill[fill=red] (8.4,0) circle (.15cm); \draw (8.4, .1) node [above] {.84}; \draw (0,0.1) -- (0, -0.1) node [below] {0}; \draw (10,0.1) -- (10, -0.1) node [below] {1.0}; \foreach \x in {1,...,9} \draw (\x, 0.1) -- (\x, -0.1) node [below] {0.\x}; \end{tikzpicture}]]></latex-image-code>
+            </image>
+          </figure>}
+          <!-- Cite Prealgebra Textbook Free PreAlgebra 1st Edition This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.. Based on a work at http://home.comcast.net/~cherylwilcox1/site/ Lesson 32 Arithmetic with Decimals-->
+        </example>
+      </section>
+      <section>
+        <title>Rounding Decimals</title>
+        <p>This is a situation where our experience with whole numbers is valuable. Rounding a decimal number to a given place value or a given number of decimal places is very similar to rounding whole numbers.</p>
+        <example>
+          <title>Rounding to Tenths</title>
+          <p>
+            <!-- Cite http://home.comcast.net/~cherylwilcox1/site/ Lesson 32  Example pg 4-->
+          </p>
+          <md>
+            <mrow>\text{Round
+              \(6.7291\) to the nearest tenth.} \amp\amp\amp \text{Find the tenths place: one place after the decimal}</mrow>
+            <mrow>\text{
+              \(6.\color{red}{7}291\)} \amp\amp\amp \text{
+              \(\color{red}{7}\) is in the tenths place. The
+              <span style="color:blue;">next</span>digit is the trigger.}
+            </mrow>
+            <mrow>\text{
+              \(6.\color{red}{7}\color{blue}{2}91\)} \amp\amp\amp \text{Since the trigger
+              \(\color{blue}{2}\) is less than
+              \(5\), we do not round up.}</mrow>
+            <mrow>\text{
+              \(6.7\)} \amp\amp\amp \text{Our Solution}</mrow>
+          </md>
+        </example>
+        <example>
+          <title>Rounding to Hundredths</title>
+          <p>
+            <!-- Cite http://home.comcast.net/~cherylwilcox1/site/ Lesson 32  Example pg 4-->
+          </p>
+          <md>
+            <mrow>\text{Round
+              \(6.7291\) to the nearest hundredth.} \amp\amp\amp \text{Find the hundredths place: two places after the decimal}</mrow>
+            <mrow>\text{
+              \(6.7\color{red}{2}91\)} \amp\amp\amp \text{
+              \(\color{red}{2}\) is in the hundredths place. The
+              <span style="color:blue;">next</span>digit is the trigger.}
+            </mrow>
+            <mrow>\text{
+              \(6.7\color{red}{2}\color{blue}{9}1\)} \amp\amp\amp \text{Since the trigger
+              \(\color{blue}{9}\) is greater than
+              \(5\), we round up.}</mrow>
+            <mrow>\text{
+              \(6.73\)} \amp\amp\amp \text{Our Solution}</mrow>
+          </md>
+        </example>
+      </section>
+      <section>
+        <title>Estimation</title>
+        <p>There are times when an estimate or approximation of an arithmetic operation is useful.  For example, when determining the reasonableness of a result.</p>
+        <example>
+          <title>Estimating</title>
+          <p>Estimate the product by rounding each of the given values to the nearest tenth.</p>
+          <md>
+            <mrow>\text{
+              \(5.924\times 6.675\)} \amp\amp\amp \text{Identify the triggers for each value}</mrow>
+            <mrow>\text{
+              \(5.\color{red}{9}\color{blue}{2}4\times 6.\color{red}{6}\color{blue}{7}5\)} \amp\amp\amp \text{ The trigger
+              \(\color{blue}{2}\) is less than
+              \(5\): round down, the trigger
+              \(\color{blue}{7}\) is greater than
+              \(5\): round up}</mrow>
+            <mrow>\text{
+              \(5.9\times 6.7\)} \amp\amp\amp \text{Multiply}</mrow>
+            <mrow>\text{
+              \(39.53\)} \amp\amp\amp \text{Our Solution}</mrow>
+          </md>
+        </example>
+      </section>
+    </chapter>
