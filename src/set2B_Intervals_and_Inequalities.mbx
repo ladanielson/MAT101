@@ -1,0 +1,387 @@
+<section>
+  <title>2B-Intervals and Inequalities</title>
+  <introduction>
+    <ul>
+      <li>Use inequality and interval notation.</li>
+    </ul>
+  </introduction>
+  
+  <subsection>
+    <title>Intervals and Inequalities</title>
+    <p>When
+      <m>x = 4</m>we have a specific value for our variable. With inequalities we will give a range of values for our variable. To do this we will not use equals, but one of the following symbols:
+    </p>
+    <md>
+      <mrow>\text{
+        \(\gt\)} \amp\amp\amp \text{Greater than}</mrow>
+      <mrow>\text{
+        \(\geq\)} \amp\amp\amp \text{Greater than or equal to
+        <div class="WWbox">Type the two symbols
+          <b>
+            <gt />=
+          </b>together for
+          \(\geq\) in
+          <tt>WeBWorK</tt>
+        </div>}
+      </mrow>
+      <mrow>\text{
+        \(\lt\)} \amp\amp\amp \text{Less than}</mrow>
+      <mrow>\text{
+        \(\leq\)} \amp\amp\amp \text{Less than or equal to
+        <div class="WWbox">Type the two symbols
+          <b>
+            <lt />=
+          </b>together for
+          \(\leq\) in
+          <tt>WeBWorK</tt>
+        </div>}
+      </mrow>
+    </md>
+    <p>If we have an expression such as
+      <m>x \lt 4</m>this means our variable can be any number smaller than
+      <m>4</m>such as
+      <m>-2, 0, 3, 3.9</m>or even
+      <m>3.999999999</m>as long as it is smaller than
+      <m>4</m>. In other words,
+      <m>x \lt 4</m>is the set of all numbers less than
+      <m>4</m>. If we have an expression such as
+      <m>x \geq -2</m>, this means our variable can be any number greater than or equal to
+      <m>-2</m>, such as
+      <m>5, 0,-1,-1.9999</m>, or even
+      <m>-2</m>. In other words,
+      <m>x \geq -2</m>is the set of all numbers greater than or equal to
+      <m>-2</m>.
+    </p>
+    <p>Because we don't have one set value for our variable, it is often useful to draw a picture of the solutions to the inequality on a number line. We will start from the value in the problem and bold the lower part of the number line if the variable is smaller than the number, and bold the upper part of the number line if the variable is larger. The value itself we will mark with an open or closed circle: open for less than or greater than, and a closed circle for less than or equal to or greater than or equal to.</p>
+    <p>Once the graph is drawn we can quickly convert the graph into what is called interval notation. Interval notation gives two numbers, the first is the smallest value, the second is the largest value. We will use square brackets if the inequality includes
+      <b>or equal to</b>(so either
+      <m>\leq</m>or
+      <m>\geq</m>).  We will use round brackets if the inequality is strictly less than or greater than (so either
+      <m>\lt</m>or
+      <m>\gt</m>).   If there is no largest value, we can use
+      <m>\infty</m>(infinity). If there is no smallest value, we can use
+      <m>-\infty</m>negative infinity. If we use either positive or negative infinity we will always use a curved bracket for that value.
+    </p>
+    <example>
+      <title>Relating an Inequality, Graph and Interval</title>
+      <p>Graph the inequality and give the interval notation.
+        <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 151 pg 119 and WeBWorK Problems/MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_03_LinearIneq.pg-->
+      </p>
+      <md>
+        <mrow>\text{
+          \(x\geq 4\)} \amp\amp\amp \text{Start at
+          \(4\) and shade above Use a closed circle for greater than or equal to}</mrow>
+      </md>
+      <figure xml:id="figure-interval-x-geq-4">
+        <image xml:id="interval-x-geq-4">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+            <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \fill[fill=red] (4,.5) circle (.1cm); \draw[->, red] (4,.5) -- (5.5,.5); \end{tikzpicture}} ]]></latex-image-code>
+          </image>
+        </figure>
+        <md>
+          <mrow>\amp\amp\amp \text{Our Graph}</mrow>
+          <mrow>\text{
+            \([4,\infty )\)} \amp\amp\amp \text{Interval notation
+            <div class="WWbox">Type
+              <b>[4,inf)</b>for the interval
+              \([4,\infty )\) in
+              <tt>WeBWorK</tt>
+            </div>}
+          </mrow>
+        </md>
+      </example>
+      <example>
+        <title>Relating an Inequality, Graph and Interval</title>
+        <p>Graph the inequality and give the interval notation.
+          <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 151 pg 119 and WeBWorK Problems/MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_02_LinearIneq.pg -->
+        </p>
+        <md>
+          <mrow>\text{
+            \(x\lt -4\)} \amp\amp\amp \text{Start at
+            \(-4\) and shade below Use an open circle for less than}</mrow>
+        </md>
+        <figure xml:id="figure-interval-x-lt-neg4">
+          <image xml:id="interval-x-lt-neg4">
+            <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+              <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \draw[color=red] (-4,.5) circle (.1cm); \draw[
+                <-, red] (-5.5,.5) -- (-4.1,.5); \end{tikzpicture}} ]]></latex-image-code>
+              </image>
+            </figure>
+            <md>
+              <mrow>\amp\amp\amp\text{Our Graph}</mrow>
+              <mrow>\text{
+                \((-\infty, -4)\)} \amp\amp\amp \text{Interval notation
+                <div class="WWbox">Type
+                  <b>(-inf,-4)</b>for the interval
+                  \((-\infty, -4)\) in
+                  <tt>WeBWorK</tt>
+                </div>}
+              </mrow>
+            </md>
+          </example>
+          <example>
+            <title>Relating an Inequality, Graph and Interval</title>
+            <p>Graph the inequality and give the interval notation.
+              <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 151 pg 119 and WeBWorK MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_04_LinearIneq.pg -->
+            </p>
+            <md>
+              <mrow>\text{
+                \(-3\lt x \lt 1\)} \amp\amp\amp \text{Start at
+                \(-3\) and shade above to
+                \(1\) Use open circles for less than}</mrow>
+            </md>
+            <figure xml:id="figure-interval-neg3-lt-x-lt-1">
+              <image xml:id="interval-neg3-lt-x-lt-1">
+                <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                  <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \draw[color=blue] (-3,.5) circle (.1cm); \draw[color=blue] (1,.5) circle (.1cm); \draw[blue] (-2.9,.5) -- (.9,.5); \end{tikzpicture}} ]]></latex-image-code>
+                </image>
+              </figure>
+              <md>
+                <mrow>\amp\amp\amp\text{Our Graph}</mrow>
+                <mrow>\text{
+                  \((-3, 1)\)} \amp\amp\amp \text{Interval notation}</mrow>
+              </md>
+            </example>
+            <p>Intervals represent sets of numbers.  This means we can perform set operations on intervals.  For example:</p>
+            <example>
+              <title>Union of Two Overlapping Intervals</title>
+              <p>
+                <!-- Modeled after and WeBWorK MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_04_LinearIneq.pg -->
+              </p>
+              <figure xml:id="figure-intervals-overlapping">
+                <image xml:id="intervals-overlapping">
+                  <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                    <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \fill[color=green] (2,1) circle (.1cm); \draw[green,
+                      <-] (-5.5,1) -- (2,1); \draw[color=blue] (-2,.5) circle (.1cm); \draw[blue, ->] (-1.9,.5) -- (5.5,.5); \end{tikzpicture}} ]]></latex-image-code>
+                    </image>
+                  </figure>
+                  <p>The
+                    <b>union</b>of the points in the graph would be all values in either the first interval
+                    <b>OR</b>in the second (or in both) For example,
+                    <m>-3</m>is in the top interval
+                    <m>(-\infty, 2]</m>, so
+                    <m>-3</m>is in the union and
+                    <m>2.7</m>is in the bottom interval
+                    <m>(-2, \infty)</m>, so
+                    <m>2.7</m>is in the union and
+                    <m>-\frac{1}{3}</m>is in both intervals, so
+                    <m>-\frac{1}{3}</m>is in the union Notice every real number is either in the top or bottom interval (or in both)
+                  </p>
+                  <md>
+                    <mrow>\text{
+                      \((-\infty, \infty)\) } \amp\amp\amp \text{An interval describing the union
+                      <div class="WWbox">Type
+                        <b>(-inf,inf)</b>for the interval
+                        \((-\infty, \infty)\)  in
+                        <tt>WeBWorK</tt>
+                      </div>}
+                    </mrow>
+                    <mrow>\text{
+                      \(-\infty \lt x \lt \infty\) } \amp\amp\amp \text{An inequality describing the union
+                      <div class="WWbox">Type
+                        <b>-inf
+                          <lt />x
+                          <lt />inf
+                        </b>for the inequality
+                        \(-\infty \lt x \lt \infty\)  in
+                        <tt>WeBWorK</tt>
+                      </div>}
+                    </mrow>
+                  </md>
+                </example>
+                <example>
+                  <title>Intersection of Two Overlapping Intervals</title>
+                  <p>
+                    <!-- Modeled after and WeBWorK MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_04_LinearIneq.pg -->
+                  </p>
+                  <figure xml:id="figure-intervals-overlapping-copy">
+                    <image source="../output/images/intervals-overlapping.svg" />
+                  </figure>
+                  <p>The
+                    <b>intersection</b>of the points in the graph would be all values in both the first interval
+                    <b>AND</b>the second This is points common to both (or in the overlap) For example,
+                    <m>-3</m>is NOT in the bottom interval
+                    <m>(-2, \infty)</m>, so
+                    <m>-3</m>is NOT in the intersection and
+                    <m>2.7</m>is NOT in the top interval
+                    <m>(-\infty, 2]</m>, so
+                    <m>2.7</m>is NOT in the intersection but since
+                    <m>-\frac{1}{3}</m>is in both intervals,
+                    <m>-\frac{1}{3}</m>IS in the intersection
+                  </p>
+                  <md>
+                    <mrow>\text{
+                      \((-2, 2]\) } \amp\amp\amp \text{An interval describing the intersection}</mrow>
+                    <mrow>\text{
+                      \(-2 \lt x \leq 2\) } \amp\amp\amp \text{An inequality describing the intersection}</mrow>
+                  </md>
+                </example>
+                <example>
+                  <title>Union of Two Overlapping Intervals</title>
+                  <p>Describe the
+                    <b>union</b>of the points in the graph.
+                    <!-- Modeled after and WeBWorK MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_05_CompoundIneq.pg -->
+                  </p>
+                  <figure xml:id="figure-intervals-overlapping2">
+                    <image xml:id="intervals-overlapping2">
+                      <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                        <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \fill[color=red] (-3,1) circle (.1cm); \draw[red,
+                          <-] (-5.5,1) -- (-3,1); \draw[color=green] (4,.5) circle (.1cm); \draw[green, <-] (-5.5,.5) -- (3.9,.5); \end{tikzpicture}} ]]></latex-image-code>
+                        </image>
+                      </figure>
+                      <p>Recall the
+                        <b>union</b>of the points in the graph would be all values in either the first interval
+                        <b>OR</b>in the second (or in both) For example,
+                        <m>-3</m>is in both the top and bottom intervals, so
+                        <m>-3</m>is in the union and
+                        <m>2.7</m>is in the bottom interval, so
+                        <m>2.7</m>is in the union but
+                        <m>5</m>is in neither interval, so
+                        <m>5</m>is NOT in the union Notice every number in the bottom interval is in the union (as is every number in the top interval)
+                      </p>
+                      <md>
+                        <mrow>\text{
+                          \((-\infty, 4)\) } \amp\amp\amp \text{An interval describing the union}</mrow>
+                        <mrow>\text{
+                          \(x \lt 4\) } \amp\amp\amp \text{An inequality describing the union}</mrow>
+                      </md>
+                    </example>
+                    <example>
+                      <title>Intersection of Two Overlapping Intervals</title>
+                      <p>Describe the
+                        <b>intersection</b>of the points in the graph.
+                        <!-- Modeled after and WeBWorK MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_05_CompoundIneq.pg -->
+                      </p>
+                      <figure xml:id="figure-intervals-overlapping2-copy">
+                        <image source="../output/images/intervals-overlapping2.svg" />
+                      </figure>
+                      <p>Recall the
+                        <b>intersection</b>of the points in the graph would be all values in both the first interval
+                        <b>AND</b>the second This is points common to both (or in the overlap) For example,
+                        <m>-3</m>is in both the top and bottom intervals, so
+                        <m>-3</m>is in the intersection But
+                        <m>2.7</m>is in the bottom interval but not the top, so
+                        <m>2.7</m>is NOT in the intersection and
+                        <m>5</m>is in neither interval, so
+                        <m>5</m>is NOT in the intersection Notice the overlap of the two intervals is all numbers in the first interval
+                      </p>
+                      <md>
+                        <mrow>\text{
+                          \((-\infty, -3]\) } \amp\amp\amp \text{An interval describing the intersection}</mrow>
+                        <mrow>\text{
+                          \(x \leq -3\) } \amp\amp\amp \text{An inequality describing the intersection
+                          <div class="WWbox">Type
+                            <b>x
+                              <lt />= -3
+                            </b>for the inequality
+                            \(x \leq -3\)  in
+                            <tt>WeBWorK</tt>
+                          </div>}
+                        </mrow>
+                      </md>
+                    </example>
+                    <example>
+                      <title>Union of Two Non-Overlapping Intervals</title>
+                      <p>Describe the
+                        <b>union</b>of the points in the graph.
+                        <!-- Modeled after and WeBWorK MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_07_CompoundIneq.pg -->
+                      </p>
+                      <figure xml:id="figure-interval-non-overlapping">
+                        <image xml:id="interval-non-overlapping">
+                          <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                            <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \fill[color=green] (1,1) circle (.1cm); \draw[green, ->] (1,1) -- (5.5,1); \fill[color=red] (-2,.5) circle (.1cm); \draw[red,
+                              <-] (-5.5,.5) -- (-2,.5); \end{tikzpicture}} ]]></latex-image-code>
+                            </image>
+                          </figure>
+                          <p>Recall the
+                            <b>union</b>of the points in the graph would be all values in either the first interval
+                            <b>OR</b>in the second (or in both)
+                          </p>
+                          <md>
+                            <mrow>\text{
+                              \((-\infty, -2]\cup [1,\infty)\) } \amp\amp\amp \text{A union of intervals describing the union
+                              <div class="WWbox">Type capital
+                                <b>U</b>for
+                                \(\cup\) the union symbol in
+                                <tt>WeBWorK</tt>
+                                <b>(-inf,-2]U[1,inf)</b>for
+                                \((-\infty, -2]\cup [1,\infty)\)
+                              </div>}
+                            </mrow>
+                            <mrow>\text{
+                              \(x\leq -2\)  or
+                              \(x\geq 1\) } \amp\amp\amp \text{A compound inequality describing the union}</mrow>
+                          </md>
+                        </example>
+                        <example>
+                          <title>Intersection of Two Non-Overlapping Intervals</title>
+                          <p>
+                            <!-- Modeled after and WeBWorK MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_05_CompoundIneq.pg -->Describe the
+                            <b>intersection</b> of the points in the graph.
+                          </p>
+                          <figure xml:id="figure-interval-non-overlapping-copy">
+                            <image source="../output/images/interval-non-overlapping.svg" />
+                          </figure>
+                          <p>The
+                            <b>intersection</b> of the points in the graph would be all values common to both (overlap).
+                          </p>
+                          <md>
+                          <mrow>\text{None} \amp\amp\amp \text{There are no values common to both intervals
+                            <div class="WWbox">Type
+                              <b>None</b>for empty sets in
+                              <tt>WeBWorK</tt>
+                            </div>}
+                          </mrow>
+                        </md>
+                      </example>
+                      <example>
+                        <title>Solving Compound Inequalities</title>
+                        <p>
+                          <!-- Modeled after and WeBWorK MAT101_Templates/set1C-Sets_Intervals_Inequalities/22_inequalities.pg -->Solve the compound inequality.</p>
+                          <p>
+                            <m>x \leq -3</m> and
+                            <m>x \lt 4</m></p>
+                            <p> First sketch the intervals on a graph. Write the compound inequality in interval notation:
+                            <b>AND</b> is intersection.
+                          </p>
+                          <figure xml:id="figure-intervals-overlapping2-copy2">
+                            <image source="../output/images/intervals-overlapping2.svg" />
+                          </figure>
+                          <md>
+                            <mrow>\text{
+                              \((-\infty,  -3] \cap ( -\infty, 4)\) } \amp\amp\amp \text{The values common to both intervals are shaded red}</mrow>
+                            <mrow>\text{
+                              \((-\infty,  -3]\) } \amp\amp\amp \text{Our Solution
+                              <div class="WWbox">You may enter either the interval
+                                <b>(-inf,-3]</b>or the inequality notation
+                                <b>x
+                                  \lt = -3</b>in
+                                <tt>WeBWorK</tt>
+                              </div>}
+                            </mrow>
+                          </md>
+                        </example>
+                        <example>
+                          <title>Solving Compound Inequalities</title>
+                          <p>
+                            <!-- Modeled after and WeBWorK MAT101_Templates/set1C-Sets_Intervals_Inequalities/22_inequalities.pg -->Solve the compound inequality.
+                          </p>
+                          <p>
+                            <m>x \leq 2</m>and
+                            <m>x \gt -2</m></p> 
+                            <p>First sketch the intervals on a graph. Write the compound inequality in interval notation:
+                            <b>AND</b> is intersection.
+                          </p>
+                          <figure xml:id="figure-intervals-overlapping-copy2">
+                            <image source="../output/images/intervals-overlapping.svg" />
+                          </figure>
+                          <md>
+                            <mrow>\text{
+                              \((-\infty,  2] \cap ( -2, \infty)\) } \amp\amp\amp \text{The values common to both intervals are in the overlap}</mrow>
+                            <mrow>\text{
+                              \((-2, 2]\) } \amp\amp\amp \text{Our Solution}</mrow>
+                          </md>
+                        </example>
+                      </subsection>
+                    </section>
+                    
