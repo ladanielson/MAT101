@@ -1,0 +1,679 @@
+<section>
+  <title>2C-Applications--FIX ME!!</title>
+  <introduction>
+    <ul>
+      <li>Solve linear absolute value equations.</li>
+      <li>Solve, graph and give interval notation for the solution to inequalities with absolute values.</li>
+      <li>Solve linear distance equations and inequalities problems.</li>
+    </ul>
+  </introduction>
+  <subsection>
+    <title>Absolute Value Equations</title>
+    <p>Absolute value is defined as distance from zero.  Consider both integers
+      <m>5</m> and
+      <m>-5</m>.   Since both positive and negative
+      <m>5</m> have a distance of
+      <m>5</m> units from
+      <m>0</m> on the number line, both have an absolute value of
+      <m>5</m>.
+    </p>
+    <md>
+      <mrow>\text{
+        \(\lvert 5\rvert =5 \text{ and } \lvert -5\rvert =5\)} \amp\amp\amp \text{
+        <p align="center">
+          <figure xml:id="figure-absolute-value-x-equal-5">
+            <image xml:id="absolute-value-x-equal-5">
+              <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \fill[color=red] (4,.5) circle (.1cm); \draw[color=red] (5,.5) circle (.1cm); \draw[red] (4,.5) -- (4.9,.5); \node[anchor=south, color=red] at (4.5,.5) {$x$}; \end{tikzpicture}} ]]></latex-image-code>
+              </image>
+            </figure>
+          </p>}
+        </mrow>
+      </md>
+      <p>Thus when solving equations with absolute value we can end up with more than one possible answer. This is because the expression inside the absolute value can be either positive or negative and we must account for both possibilities when solving equations. This is illustrated in the following example.</p>
+      <example>
+        <title>Absolute Value Equation: Two Solutions</title>
+        <p>
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 84 pg 52-->
+        </p>
+        <md>
+          <mrow>\text{
+            \(\lvert x\rvert  = 7\)} \amp\amp\amp \text{Absolute value can be positive or negative}
+          </mrow>
+          <mrow>\text{
+            \(x=7\) or
+            \(x=-7\)} \amp\amp\amp \text{Our Solution
+            <div class="WWbox">Type
+              <b>x=7 or x=-7</b>in
+              <tt>WeBWorK</tt>
+            </div>}
+          </mrow>
+        </md>
+        <p>Notice that we have determined two possibilities, both the positive and negative. Either way, the absolute value of our number will be positive
+          <m>7</m>.
+        </p>
+      </example>
+      <p>
+        <b>
+          <font color="#FF0000"/>Important:
+        </b>First isolate the absolute value, then "remove the absolute value" by considering both the positive and negative solutions separately. Notice in the next two examples, all the numbers outside of the absolute value are "moved to the other side" first before we remove the absolute value bars and consider both positive and negative solutions.
+      </p>
+      <example>
+        <title>Isolate Absolute Value First</title>
+        <p>
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 85 pg 52-->
+        </p>
+        <md>
+          <mrow>\text{
+            \(5+\lvert x\rvert = 8\)} \amp\amp\amp \text{Notice absolute value is not alone on the
+            <b>LHS</b>
+            <font color="#FF0000"/>Isolate the absolute value first}
+          </mrow>
+          <mrow>\text{
+            \(\underline{-5\phantom{12345}-5}\)} \amp\amp\amp \text{Subtract
+            \(5\) from both sides}
+          </mrow>
+          <mrow>\text{
+            \(\lvert x\rvert  = 3\)} \amp\amp\amp \text{Absolute value can be positive or negative}
+          </mrow>
+          <mrow>\text{
+            \(x=3\) or
+            \(x=-3\)} \amp\amp\amp \text{Our Solution}
+          </mrow>
+        </md>
+        <p>Check our two solutions: Substitute both back in the original equation
+          <m>5+\lvert x\rvert = 8</m>.
+        </p>
+        <md>
+          <mrow>\text{
+            \(\underline{x=3:}\)} \amp\amp\amp \text{
+            \(\underline{x=-3:}\)}
+          </mrow>
+          <mrow>\text{
+            \(5+\lvert 3\rvert \)} \amp\amp\amp \text{
+            \(5+\lvert -3\rvert \)}
+          </mrow>
+          <mrow>\text{
+            \(5+3 = 8\checkmark\)} \amp\amp\amp \text{
+            \(5+3 = 8 \checkmark\)}
+          </mrow></md>
+          <p>Both
+            <m>x=3</m> and
+            <m>x=-3</m> satisfy the equation <m>\checkmark</m>
+          </p>
+      </example>
+      <example>
+        <title>Isolate Absolute Value First</title>
+        <p>
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 86 pg 52-->
+        </p>
+        <md>
+          <mrow>\text{
+            \(-4\lvert x\rvert =-20\)} \amp\amp\amp \text{Notice absolute value is not alone on the
+            <b>LHS</b>
+            <font color="#FF0000"/>Isolate the absolute value first}
+          </mrow>
+          <mrow>\text{
+            \(\overline{-4}\phantom{123456}\overline{-4}\)} \amp\amp\amp \text{Divide both sides by
+            \(-4\)}
+          </mrow>
+          <mrow>\text{
+            \(\lvert x\rvert  = 5\)} \amp\amp\amp \text{Absolute value can be positive or negative}
+          </mrow>
+          <mrow>\text{
+            \(x=5\) or
+            \(x=-5\)} \amp\amp\amp \text{Our Solution}
+          </mrow>
+        </md>
+      </example>
+      <p>Notice we never combine what is inside the absolute value with what is outside the absolute value. This is very important as it will often change the final result to an incorrect solution. The next example requires two steps to isolate the absolute value. The idea is the same as a two-step equation, add or subtract, then multiply or divide.</p>
+      <example>
+        <title>Two-Step Absolute Value Equation</title>
+        <p>
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 87 pg 53-->
+        </p>
+        <md>
+          <mrow>\text{
+            \(5\lvert x\rvert -4 = 26\)} \amp\amp\amp \text{Notice absolute value is not alone on the
+            <b>LHS</b>
+            <font color="#FF0000"/>Isolate the absolute value first}
+          </mrow>
+          <mrow>\text{
+            \(\underline{+4\phantom{12}+4}\)} \amp\amp\amp \text{Add
+            \(4\) to both sides}
+          </mrow>
+          <mrow>\text{
+            \(5\lvert x\rvert  = 30\)} \amp\amp\amp \text{Absolute value still not alone}
+          </mrow>
+          <mrow>\text{
+            \(\overline{5\,}\phantom{12345}\overline{\,5\,}\)} \amp\amp\amp \text{Divide both sides by
+            \(5\)}
+          </mrow>
+          <mrow>\text{
+            \(\lvert x\rvert  = 6\)} \amp\amp\amp \text{Absolute value can be positive or negative}
+          </mrow>
+          <mrow>\text{
+            \(x=6\) or
+            \(x=-6\)} \amp\amp\amp \text{Our Solution}
+          </mrow>
+        </md>
+      </example>
+      <p>Again we see the same process: isolate the absolute value first, then consider the positive and negative solutions. Often the absolute value will have more than just a variable in it. In this case we will have to solve the resulting equations when we consider the positive and negative possibilities. This is shown in the next example.</p>
+      <example>
+        <title>Absolute Value of an Expression</title>
+        <p>
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 88 pg 53-->
+        </p>
+        <md>
+          <mrow>\text{
+            \(\lvert 2x-1\rvert  = 7\)} \amp\amp\amp \text{Absolute value can be positive or negative}
+          </mrow>
+          <mrow>\text{
+            \(2x-1=7\) or
+            \(2x-1=-7\)} \amp\amp\amp \text{Two equations to solve}
+          </mrow>
+        </md>
+        <p>Now notice we have two equations to solve, each equation will give us a different solution. Both equations solve (separately) like any other two-step equation.</p>
+        <md>
+          <mrow>2x-1=7\amp\amp\amp\text{ OR }\amp\amp\amp2x-1=-7</mrow>
+          <mrow>\underline{+1\,+1}\amp\amp\amp\text{ }\amp\amp\amp\underline{+1\phantom{12}+1}</mrow>
+          <mrow>2x=8\amp\amp\amp\text{ }\amp\amp\amp 2x=-6</mrow>
+          <mrow>\overline{2}\phantom{1234}\overline{2}\amp\amp\amp\phantom{1234}\amp\amp\amp\overline{2}\phantom{1234}\overline{\,2\,}</mrow>
+          <mrow>x=4\amp\amp\amp\text{OR}\amp\amp\amp x=-3</mrow>
+          <mrow>\text{}\amp\amp\amp x=4\text{ or }x=-3\amp\amp\amp\text{Our Solution}</mrow>
+        </md>
+      </example>
+      <p>Again, it is important to remember that the absolute value must be alone first before we consider the positive and negative possibilities. This is illustrated in the below example.</p>
+      <example>
+        <title>Isolate Absolute Value First</title>
+        <p>
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 89 pg 54-->
+        </p>
+        <md>
+          <mrow>2-4\lvert 2x + 3\rvert  = -18</mrow>
+        </md>
+        <p>To get the absolute value alone we first need to subtract the
+          <m>2</m> from both sides, then divide by
+          <m>-4</m>(the coefficient on the absolute value).  Notice we cannot combine the
+          <m>2</m> and
+          <m>-4</m> because they are not like terms: the
+          <m>-4</m> is multiplied by the absolute value expression.  Also notice we do not distribute the
+          <m>-4</m> into the absolute value.  This is because the numbers outside cannot be combined with the numbers inside the absolute value. Thus we get the absolute value alone in the following way:
+        </p>
+        <md>
+          <mrow>\text{
+            \(2-4\lvert 2x + 3\rvert  = -18\)} \amp\amp\amp \text{Notice absolute value is not alone}
+          </mrow>
+          <mrow>\text{
+            \(\underline{-2\phantom{1234567890123}-2}\)} \amp\amp\amp \text{Subtract
+            \(2\) from both sides }
+          </mrow>
+          <mrow>\text{
+            \(-4\lvert 2x + 3\rvert  = - 20\)} \amp\amp\amp \text{Absolute value still not alone}
+          </mrow>
+          <mrow>\text{
+            \(\overline{-4\,}\phantom{123456789}\overline{\,-4\,}\)} \amp\amp\amp \text{Divide both sides by
+            \(-4\)}
+          </mrow>
+          <mrow>\text{
+            \(\lvert 2x+3\rvert  = 5\)} \amp\amp\amp \text{Absolute value can be positive or negative}
+          </mrow>
+          <mrow>2x+3=5\text{ or }2x+3=-5\amp\amp\amp \text{Two equations to solve}</mrow>
+        </md>
+        <p>Now we solve these two remaining equations to find our solutions.</p>
+        <md>
+          <mrow>2x+3=5\amp\amp\amp\text{ OR }2x+3=-5</mrow>
+          <mrow>\underline{-3\,-3}\amp\amp\amp\text{ }\amp\amp\amp\underline{-3\,\,\,\,\,-3}</mrow>
+          <mrow>2x=2\amp\amp\amp\text{ }\amp\amp\amp2x=-8</mrow>
+          <mrow>\overline{2}\phantom{12345}\overline{2}\amp\amp\amp\text{ }\amp\amp\amp \overline{2}\,\,\,\,\,\,\,\,\,\,\,\,\overline{\,2\,}</mrow>
+          <mrow>x=1\amp\amp\amp\text{ OR }\amp\amp\amp x=-4</mrow>
+          <mrow>\text{ }\amp\amp\amp x=1\text{ or }x=-4\amp\amp\amp\text{Our Solution}</mrow>
+        </md>
+      </example>
+      <p>As we are solving absolute value equations it is important to be aware of special cases. Remember the result of an absolute value must always be positive. Notice what happens in the next example.</p>
+      <example>
+        <title>Absolute Values Can't Be Negative</title>
+        <p>
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 90 pg 55-->
+        </p>
+        <md>
+          <mrow>\text{
+            \(7+\lvert 2x-5\rvert =4\)} \amp\amp\amp \text{Notice absolute value is not alone}
+          </mrow>
+          <mrow>\text{
+            \(\underline{-7\phantom{123456789}-7}\)} \amp\amp\amp \text{Subtract
+            \(7\) from both sides }
+          </mrow>
+          <mrow>\text{
+            \(\lvert 2x-5\rvert  = \color{red}{-3}\)} \amp\amp\amp \text{
+            <font color="#FF0000"/>
+            <b>STOP!</b>Result of absolute value can't be negative! }
+          </mrow>
+          <mrow>\text{No solution} \amp\amp\amp \text{Our Solution
+            <div class="WWbox">Type
+              <b>No solution</b>in
+              <tt>WeBWorK</tt>
+            </div>}
+          </mrow>
+        </md>
+      </example>
+      <p>Notice in the above example, the absolute value expressions equals a negative number! This is impossible with absolute value. When this occurs we
+        <font color="#FF0000"/>
+        <b>STOP</b>and conclude there is no solution.
+      </p>
+    </subsection>
+    <subsection>
+      <title>Absolute Value Inequalities</title>
+      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace is licensed under a Creative Commons Attribution 3.0 Unported License. (http://creativecommons.org/licenses/by/3.0/) Based on a work at http://wallace.ccfaculty.org/book/book.html. pages 128-131-->
+      <p>When an inequality has an absolute value we will have to remove the absolute value in order to graph the solution or give interval notation. The way we remove the absolute value depends on the direction of the inequality symbol.</p>
+      <p>Consider
+        <m>\lvert x\rvert \lt 2</m>.
+      </p>
+      <p>Absolute value is defined as distance from zero. Another way to read this inequality would be the distance from zero is
+        <b>less</b>than
+        <m>2</m>. On a number line we will shade all points that are
+        <b>less than</b>
+        <m>2</m> units away from zero.
+      </p>
+      <p align="center">
+        <figure xml:id="figure-absolute-value-x-lt-2">
+          <image xml:id="absolute-value-x-lt-2">
+            <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+              <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \draw[color=blue] (-2,.5) circle (.1cm); \draw[color=blue] (2,.5) circle (.1cm); \draw[blue] (-1.9,.5) -- (1.9,.5); \node[anchor=south, color=blue] at (0,.5) {$-2
+                <x<2$}; \end{tikzpicture}} ]]></latex-image-code>
+              </image>
+            </figure>
+          </p>
+          <p>This graph looks just like the graphs of the three part compound inequalities! When the absolute value is less than a positive number we will remove the absolute value by changing the problem to a three part inequality, with the negative value on theleft and the positive value on the right: \[\lvert x\rvert  \lt 2 \text{ is equivalent to  } \color{blue}{-2 \lt x \lt 2}\] as the graph above illustrates.</p>
+          <p>Consider
+            <m>\lvert x\rvert \gt 2</m>.
+          </p>
+          <p>Absolute value is defined as distance from zero. Another way to read this inequality would be the distance from zero is
+            <b>greater</b>than
+            <m>2</m>. On the number line we shade all points that are
+            <b>more than</b>
+            <m>2</m> units away from zero.
+          </p>
+          <p align="center">
+            <figure xml:id="figure-absolute-value-x-gt-2">
+              <image xml:id="absolute-value-x-gt-2">
+                <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                  <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \draw[color=red] (-2,.5) circle (.1cm); \draw[red,
+                    <-] (-5.5,.5) -- (-2.1,.5); \node[anchor=south, color=red] at (-4,.5) {$x<-2$}; \draw[color=blue] (2,.5) circle (.1cm); \draw[blue, ->] (2.1,.5) -- (5.5,.5); \node[anchor=south, color=blue] at (4,.5) {$x>2$}; \end{tikzpicture}} ]]></latex-image-code>
+                  </image>
+                </figure>
+              </p>
+              <p>This graph looks just like the graphs of the OR compound inequalities! When the absolute value is greater than a positive number we will remove the absolute value by changing the problem to an OR inequality, the first inequality looking just like the problem with no absolute value, the second flipping the inequality symbol and changing the value to a negative: \[\lvert x\rvert  \gt 2 \text{ is equivalent to  } \color{blue}{x\gt 2} \text{ or }\color{red}{ x \lt -2}\] as the graph above illustrates.</p>
+              <p>For all absolute value inequalities we can also express our answers in intervalnotation which is done the same way it is done for standard compound inequalities.</p>
+              <p>We can solve absolute value inequalities much like we solved absolute value equations.
+                <ol>
+                  <li>Isolate the absolute value</li>
+                  <ul>
+                    <li>If
+                      <m>\lvert \cdot\rvert </m> is less than a negative number,
+                      <font color="#FF0000"/>STOP: No solution
+                    </li>
+                  </ul>
+                  <li>"Remove" the absolute value</li>
+                  <ul>
+                    <li>If
+                      <m>\lvert \text{expression}\rvert \lt p</m> is
+                      <b>less than a positive number</b>make a three part inequality:
+                      <m>-p\lt \text{expression}\lt p</m>
+                    </li>
+                    <li>If
+                      <m>\lvert \text{expression}\rvert \gt p</m> is
+                      <b>greater than a positive number</b>make an OR inequality:
+                      <m>\text{expression}\gt p</m> or
+                      <m>\text{expression}\lt -p</m>
+                    </li>
+                  </ul>
+                  <li>Solve the inequalities</li>
+                  <ul>
+                    <li>
+                      <b>Important:</b>if we multiply or divide by a negative number the inequality symbol will switch directions!
+                    </li>
+                  </ul>
+                </ol>
+              </p>
+              <example>
+                <title>Absolute Value Inequality: OR inequality</title>
+                <p>Solve, graph, and give interval notation for the solution.</p>
+                <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 160 pg 129-->
+                <p>
+                  <md>
+                    <mrow>\text{
+                      \(\lvert 4x-5\rvert \geq 6\)} \amp\amp\amp \text{Absolute value is greater than a positive number, use OR inequality}
+                    </mrow>
+                    <mrow>\text{
+                      \(4x-5\geq 6\) OR
+                      \(4x-5\leq -6\)} \amp\amp\amp \text{Solve both inequalities}
+                    </mrow>
+                    <mrow>\text{
+                      \(\underline{+5\phantom{1}+5}\phantom{1234567}\underline{+5\phantom{12}+5}\)} \amp\amp\amp \text{Add
+                      \(5\) to both sides of each inequality }
+                    </mrow>
+                    <mrow>\text{
+                      \(4x\geq 11\) OR
+                      \(4x\leq -1\)} \amp\amp\amp \text{Divide both sides by
+                      \(4\)}
+                    </mrow>
+                    <mrow>\text{
+                      \(\overline{4}\phantom{1234}\overline{4}\phantom{1234}\overline{4}\phantom{12345}\overline{4}\)} \amp\amp\amp \text{
+                      \(\,\)}
+                    </mrow>
+                    <mrow>\text{
+                      \(\color{blue}{x\geq \dfrac{11}{4}}\) OR
+                      \(\color{red}{x\leq -\dfrac{1}{4}}\)} \amp\amp\amp \text{Graph the solutions}
+                    </mrow></md>
+                    
+                      <p align="center">
+                        <figure xml:id="figure-absolute-value-4x-5-geq-6">
+                          <image xml:id="absolute-value-4x-5-geq-6">
+                            <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                              <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \fill[color=red] (-.25,.5) circle (.1cm); \draw[red,
+                                <-] (-5.5,.5) -- (-.35,.5); \node[anchor=south, color=red] at (-3,.5) {$x\leq -\frac{1}{4}$}; \fill[color=blue] (2.75,.5) circle (.1cm); \draw[blue, ->] (2.85,.5) -- (5.5,.5); \node[anchor=south, color=blue] at (4,.5) {$x\geq\frac{11}{4}$}; \end{tikzpicture}} ]]></latex-image-code>
+                              </image>
+                            </figure>
+                          </p> <p>Our graph</p>
+                        <md>
+                        <mrow>\text{
+                          \(\left(-\infty,-\dfrac{1}{4}\right]\cup\left[\dfrac{11}{4},\infty\right)\)} \amp\amp\amp \text{Interval notation}
+                        </mrow>
+                      </md>
+                    </p>
+                  </example>
+                  <example>
+                    <title>Absolute Value Inequality: OR inequality</title>
+                    <p>Solve, graph, and give interval notation for the solution.
+                      <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 161 pg 130-->
+                    </p>
+                    <p>
+                      <md>
+                        <mrow>\text{
+                          \(-4-3\lvert x\rvert \leq -16\)} \amp\amp\amp \text{Isolate the absolute value: Add
+                          \(4\) to both sides }
+                        </mrow>
+                        <mrow>\text{
+                          \(\underline{+4\phantom{123456789}+4}\)} \amp\amp\amp \text{
+                          \(\,\)}
+                        </mrow>
+                        <mrow>\text{
+                          \(-3\lvert x\rvert \leq -12\)} \amp\amp\amp \text{Divide both sides by negative 3}
+                        </mrow>
+                        <mrow>\text{
+                          \(\overline{-3}\phantom{123456}\overline{-3}\)} \amp\amp\amp \text{Dividing by a negative switches the inequality direction}
+                        </mrow>
+                        <mrow>\text{
+                          \(\lvert x\rvert \color{red}{\geq} 4\)} \amp\amp\amp \text{Absolute value is greater, use OR}
+                        </mrow>
+                        <mrow>\text{
+                          \(\color{blue}{x\geq 4}\) OR
+                          \(\color{red}{x\leq -4}\)} \amp\amp\amp \text{Graph}
+                        </mrow></md>
+                        
+                          <p align="center">
+                            <figure xml:id="figure-absolute-value-4-3absx-leq-16">
+                              <image xml:id="absolute-value-4-3absx-leq-16">
+                                <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                                  <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \fill[color=red] (-4,.5) circle (.1cm); \draw[red,
+                                    <-] (-5.5,.5) -- (-4,.5); \node[anchor=south, color=red] at (-4.75,.5) {$x\leq -4$}; \fill[color=blue] (4,.5) circle (.1cm); \draw[blue, ->] (4,.5) -- (5.5,.5); \node[anchor=south, color=blue] at (4.75,.5) {$x\geq 4$}; \end{tikzpicture}} ]]></latex-image-code>
+                                  </image>
+                                </figure>
+                              </p><p>Our graph</p>
+                            <md>
+                            <mrow>\text{
+                              \((-\infty,-4]\cup[4,\infty)\)} \amp\amp\amp \text{Interval notation}
+                            </mrow>
+                          </md>
+                        </p>
+                      </example>
+                      <p>In the previous example, we cannot combine
+                        <m>-4</m> and
+                        <m>-3</m> because they are not like terms, the
+                        <m>-3</m> has an absolute value term attached. So we must first clear the
+                        <m>-4</m> by adding
+                        <m>4</m>, then divide by
+                        <m>-3</m>. The next example is similar.
+                      </p>
+                      <example>
+                        <title>Absolute Value Inequality: three part inequality</title>
+                        <p>Solve, graph, and give interval notation for the solution.
+                          <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 162 pg 131-->
+                        </p>
+                        <p>
+                          <md>
+                            <mrow>\text{
+                              \(9-2|4x+1|\gt 3\)} \amp\amp\amp \text{Subtract
+                              \(9\) from both sides }
+                            </mrow>
+                            <mrow>\text{
+                              \(\underline{-9\phantom{12345678910}-9}\)} \amp\amp\amp \text{
+                              \(\,\)}
+                            </mrow>
+                            <mrow>\text{
+                              \(-2|4x+1|\gt -6\)} \amp\amp\amp \text{Divide both sides by
+                              \(-2\)}
+                            </mrow>
+                            <mrow>\text{
+                              \(\overline{-2}\phantom{123456789}\overline{-2}\)} \amp\amp\amp \text{Dividing by a negative switches the inequality direction}
+                            </mrow>
+                            <mrow>\text{
+                              \(|4x+1|\color{red}{\lt} 3\)} \amp\amp\amp \text{Absolute value is less, use three part inequality}
+                            </mrow>
+                            <mrow>\text{
+                              \(-3\lt 4x+1\lt 3\)} \amp\amp\amp \text{Subtract 1 from all three parts}
+                            </mrow>
+                            <mrow>\text{
+                              \(\underline{-1\phantom{12345}-1\phantom{1}-1}\)} \amp\amp\amp \text{
+                              \(\,\)}
+                            </mrow>
+                            <mrow>\text{
+                              \(-4\lt 4x \lt 2\)} \amp\amp\amp \text{Divide all three parts by
+                              \(4\)}
+                            </mrow>
+                            <mrow>\text{
+                              \(\overline{4}\phantom{123}\overline{4}\phantom{123}\overline{4}\)} \amp\amp\amp \text{
+                              \(\,\)}
+                            </mrow>
+                            <mrow>\text{
+                              \(\color{green}{-1\lt x \lt\dfrac{1}{2}}\)} \amp\amp\amp \text{Graph}
+                            </mrow>
+                            </md>
+                              <p align="center">
+                                <figure xml:id="figure-absolute-value-neg1-lt-x-lt-half">
+                                  <image xml:id="absolute-value-neg1-lt-x-lt-half">
+                                    <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                                      <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \draw[color=M101_green] (-1,.5) circle (.1cm); \draw[color=M101_green] (.5,.5) circle (.1cm); \draw[M101_green] (-.9,.5) -- (.4,.5); \node[anchor=south, color=M101_green] at (-.35,.5) {$-1
+                                        < x <\frac{1}{2}$}; \end{tikzpicture}} ]]></latex-image-code>
+                                      </image>
+                                    </figure>
+                                  </p><p>Our graph</p>
+                                <md>
+                                <mrow>\text{
+                                  \(\left(-1,\dfrac{1}{2}\right)\)} \amp\amp\amp \text{Interval notation}
+                                </mrow>
+                              </md>
+                            </p>
+                          </example>
+                          <p>In the previous example, we cannot distribute the
+                            <m>-2</m> into the absolute value. We can never distribute or combine things outside the absolute value with what is inside the absolute value. Our only way to solve is to first isolate the absolute value by clearing the values around it, then either make a compound inequality (an OR or a three part) to solve.
+                          </p>
+                          <p>It is important to remember as we are solving these equations, the absolute value is always positive. If we end up with an absolute value less than a negative number, then we will have no solution! Similarly, if we end up with an absolute value greater than a negative, this will always happen. Here the answer will be all real numbers.</p>
+                          <example>
+                            <title>Absolute Value Less than Negative Number</title>
+                            <p>Solve, graph, and give interval notation for the solution.</p>
+                            <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 163 pg 131-->
+                            <p>
+                              <md>
+                                <mrow>\text{
+                                  \(12+4|6x-1|\lt 4\)} \amp\amp\amp \text{Subtract
+                                  \(12\) from both sides }
+                                </mrow>
+                                <mrow>\text{
+                                  \(\underline{-12\phantom{123456789}-12}\)} \amp\amp\amp \text{
+                                  \(\,\)}
+                                </mrow>
+                                <mrow>\text{
+                                  \(4\lvert 6x-1\rvert \lt -8\)} \amp\amp\amp \text{Divide both sides by
+                                  \(4\)}
+                                </mrow>
+                                <mrow>\text{
+                                  \(\overline{4}\phantom{12345678910}\overline{4}\)} \amp\amp\amp \text{Dividing by a positive: DON'T switch the inequality direction}
+                                </mrow>
+                                <mrow>\text{
+                                  \(\lvert 6x-1\rvert \lt -2\)} \amp\amp\amp \text{
+                                  <font color="#FF0000"/>STOP:Absolute value can't be less than a negative! }
+                                </mrow>
+                                <mrow>\text{No solution} \amp\amp\amp \text{Our Solution}</mrow>
+                              </md>
+                            </p>
+                          </example>
+                          <example>
+                            <title>Absolute Value Greater than Negative Number</title>
+                            <p>Solve, graph, and give interval notation for the solution.
+                              <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 164 pg 131-->
+                            </p>
+                            <p>
+                              <md>
+                                <mrow>\text{
+                                  \(5-6|x+7|\leq 17\)} \amp\amp\amp \text{Subtract
+                                  \(5\) from both sides }
+                                </mrow>
+                                <mrow>\text{
+                                  \(\underline{-5\phantom{123456789}-5}\)} \amp\amp\amp \text{
+                                  \(\,\)}
+                                </mrow>
+                                <mrow>\text{
+                                  \(-6\lvert x+7\rvert \leq 12\)} \amp\amp\amp \text{Divide both sides by
+                                  \(-6\)}
+                                </mrow>
+                                <mrow>\text{
+                                  \(\overline{-6}\phantom{12345678910}\overline{-6}\)} \amp\amp\amp \text{Dividing by a negative switches the inequality direction}
+                                </mrow>
+                                <mrow>\text{
+                                  \(\lvert x+7\rvert \color{red}{\geq} -2\)} \amp\amp\amp \text{Absolute value
+                                  <b>always</b>greater than negative! }
+                                </mrow>
+                                <mrow>\text{
+                                  \(x\) can be any real number:
+                                  \(-\infty\lt x \lt\infty\) or
+                                  \(\phantom{1234}\)} \amp\amp\amp \text{Our Solution: Inequality notation}
+                                </mrow>
+                                <mrow>\text{
+                                  \((-\infty, \infty)\)} \amp\amp\amp \text{Our Solution: Interval notation}
+                                </mrow>
+                              </md>
+                            </p>
+                          </example>
+                        </subsection>
+                        <subsection>
+                          <title>Absolute Value Applications</title>
+                          <p>Recall absolute value is defined as distance from zero.  We now consider some absolute value applications.</p>
+                          <example>
+                            <title>Distance Equation</title>
+                            <p>
+                              <p>Suppose the distance between
+                                <m>x</m> and
+                                <m>4</m> is exactly
+                                <m>7</m>. Determine
+                                <m>x</m>.
+                              </p>
+                              <!-- Our own like WeBWorK 1C Problem 15-->
+                              <p></p>
+                              <md>
+                                <mrow>\text{
+                                  \(\color{red}{\text{distance }} \color{green}{\text{between }} x \text{ and } 4  \color{red}{\text{ is exactly }} \color{blue}{7}\)} \amp\amp\amp \text{Translate the problem into symbols: distance is absolute value, between is subtraction,
+                                  \(=\) represents
+                                  <em>is</em>}
+                                </mrow>
+                                <mrow>\text{
+                                  \(\color{red}{|} x \color{green}{-} 4\color{red}{|} \color{red}{=} \color{blue}{7}\)} \amp\amp\amp \text{Absolute value can be positive or negative}
+                                </mrow>
+                                <mrow>\text{
+                                  \(x-4=7\) or
+                                  \(x-4=-7\)} \amp\amp\amp \text{Two equations to solve}
+                                </mrow>
+                              </md>
+                            </p>
+                            <p>
+                              <md>
+                                <mrow>x-4=7\amp\amp\amp\text{ OR }\amp\amp\amp x-4=-7</mrow>
+                                <mrow>\underline{+4\,+4}\amp\amp\amp\text{ }\amp\amp\amp\underline{+4\,\,\,\,\,+4}</mrow>
+                                <mrow>x=11\amp\amp\amp\text{ OR }\amp\amp\amp x=-3</mrow>
+                                <mrow>\text{ }\amp\amp\amp x = 11\text{ or } x = -3\amp\amp\amp\text{Our Solution}</mrow>
+                              </md>
+                            </p>
+                          </example>
+                          <example>
+                            <title>Distance (Three-Part Inequality)</title>
+                            <p>
+                              <p>Suppose the distance between
+                                <m>x</m> and zero is less than or equal to
+                                <m>6</m>. Determine
+                                <m>x</m>.
+                              </p>
+                              <!-- Our own like WeBWorK 1C Problem 18-->
+                              <p></p>
+                              <md>
+                                <mrow>\text{
+                                  \(\color{red}{\text{distance }} \color{green}{\text{between }} x \text{ and } 0  \color{red}{\text{ is less than or equal to }} \color{blue}{6}\)} \amp\amp\amp \text{Translate the problem into symbols: distance is absolute value, between is subtraction,
+                                  \(\leq\) represents
+                                  <em>less than or equal to</em>}
+                                </mrow>
+                                <mrow>\text{
+                                  \(\color{red}{|} x \color{green}{-} 0\color{red}{|} \color{red}{\leq} \color{blue}{6}\)} \amp\amp\amp \text{Simplify the absolute value expression}
+                                </mrow>
+                                <mrow>\text{
+                                  \(\lvert x\rvert \leq 6\)} \amp\amp\amp \text{Absolute value is less, use three part inequality}
+                                </mrow>
+                                <mrow>\text{
+                                  \(-6\leq x \leq 6\)} \amp\amp\amp \text{Inequality notation}
+                                </mrow>
+                              </md>
+                            </p>
+                          </example>
+                          <example>
+                            <title>Distance (OR Inequality)</title>
+                            <p>Suppose the distance between
+                              <m>x</m> and
+                              <m>-14</m> is greater than
+                              <m>3</m>. Determine
+                              <m>x</m>.
+                            </p>
+                            <!-- Our own like WeBWorK 1C Problem 20-->
+                            <p>
+                              <md>
+                                <mrow>\text{
+                                  \(\color{red}{\text{distance }} \color{green}{\text{between }} x \text{ and }\)-14
+                                  \(\color{red}{\text{ is greater than }} \color{blue}{3}\)} \amp\amp\amp \text{Translate the problem into symbols: distance is absolute value, between is subtraction,
+                                  \(\gt\) represents
+                                  <em>greater than</em>}
+                                </mrow>
+                                <mrow>\text{
+                                  \(\color{red}{|} x \color{green}{-} (-14)\color{red}{|} \color{red}{\gt} \color{blue}{3}\)} \amp\amp\amp \text{Simplify
+                                  \(-(-14)=+14\)}
+                                </mrow>
+                                <mrow>\text{
+                                  \(\color{red}{|} x + 14\color{red}{|} \color{red}{\gt} \color{blue}{3}\)} \amp\amp\amp \text{Absolute value is greater than positive, use OR}
+                                </mrow>
+                                <mrow>\text{
+                                  \(x+14 \gt 3 \phantom{12} \text{ OR }\phantom{12} x+14\lt -3\)} \amp\amp\amp \text{Subtract
+                                  \(14\)}
+                                </mrow>
+                                <mrow>\text{
+                                  \(\underline{-14\,-14\phantom{123456789}-14\phantom{1}-14}\)} \amp\amp\amp \text{
+                                  \(\,\)}
+                                </mrow>
+                                <mrow>\text{
+                                  \(x\gt -11\phantom{12} \text{ or }\phantom{12} x\lt -17\)} \amp\amp\amp \text{Our Solution: compound inequality}
+                                </mrow>
+                                <mrow>\text{
+                                  <m>(-\infty,-17)\cup(-11,\infty)</m>} \amp\amp\amp \text{Our Solution: interval notation}
+                                </mrow>
+                              </md>
+                            </p>
+                          </example>
+                        </subsection>
+                     </section>
+                     
