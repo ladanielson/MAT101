@@ -1,11 +1,11 @@
-<chapter>
-  <title>MAT-101: Set 1A-Fractions</title>
+<section>
+  <title>1A-Fractions</title>
   <introduction>
     <ul>
       <li>Reduce, add, subtract, multiply, and divide with fractions</li>
     </ul>
   </introduction>
-  <section>
+  <subsection>
     <title>Fractions</title>
     <p>Working with fractions is a very important foundation to algebra. Here we will briefly review reducing, multiplying, dividing, adding, and subtracting fractions. As this is a review, concepts will not be explained in detail as other lessons are.</p>
     <td align="right">
@@ -80,8 +80,8 @@
         </mrow>
       </md></example>
       <p>The last step above utilizes multiplication of fractions which is discussed next.</p>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Multiplication and Division of Fractions</title>
     <p>The easiest operation with fractions is multiplication. We can multiply fractions by multiplying straight across, multiplying numerators together and denominators together.</p>
     <example>
@@ -191,8 +191,8 @@
         </mrow>
       </md>
     </example>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Common Denominators</title>
     <p>To add and subtract fractions we will first have to determine the least common denominator (LCD). There are several ways to determine an LCD. One way is to determine the smallest multiple of the larger denominator that is also divisible by the smaller denominator.</p>
     <example>
@@ -221,8 +221,8 @@
         </mrow>
       </md>
     </example>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Addition and Subtraction of Fractions</title>
     <p>Adding and subtracting fractions is identical in process. If both fractions already have a common denominator we just add or subtract the numerators and keep the denominator.</p>
     <example>
@@ -317,5 +317,5 @@
         </mrow>
       </md>
     </example>
-  </section>
-</chapter>
+  </subsection>
+</section>

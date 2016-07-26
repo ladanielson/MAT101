@@ -1,5 +1,5 @@
-<chapter>
-  <title>MAT-101: Set 2A-Linear Equations and Inequalities</title>
+<section>
+  <title>2A-Linear Equations and Inequalities</title>
   <introduction>
     <ul>
       <li>Solve general linear equations (including equations with variables on both sides) by balancing and using inverse operations.</li>
@@ -8,7 +8,7 @@
       <li>Solve practical percent problems.</li>
     </ul>
   </introduction>
-  <section>
+  <subsection>
     <title>Linear Equations</title>
     <p>Solving linear equations is an important and fundamental skill in algebra. In algebra, we are often presented with a problem where the answer is known, but part of the problem is missing. The missing part of the problem is what we seek to find. An example of such a problem is shown below.</p>
     <example>
@@ -71,8 +71,8 @@
     <p>Due to the fact that this is not a true statement, this demonstrates that
       <m>3</m>is not the solution. However, depending on the complexity of the problem, this "guess and check" method is not very efficient. Thus, we take a more algebraic approach to solving equations. Here we will focus on what are called "one-step equations" or equations that only require one step to solve. While these equations often seem very fundamental, it is important to master the pattern for solving these problems so we can solve more complex problems.
     </p>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Addition Problems</title>
     <p>To solve equations, the general rule is to do the opposite. For example, consider the following:</p>
     <example>
@@ -108,8 +108,8 @@
         <mrow>x=4\amp\amp\amp -2=x \amp\amp\amp-3=x</mrow>
       </md>
     </example>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Subtraction Problems</title>
     <p>In a subtraction problem, we "counteract" negative numbers by adding them to both sides of the equation. For example, consider the following:</p>
     <example>
@@ -140,8 +140,8 @@
         <mrow>x=4\amp\amp\amp -3=x\amp\amp\amp 13=x</mrow>
       </md>
     </example>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Multiplication Problems</title>
     <p>With a multiplication problem, we "eliminate" a constant multiple by multiplying by the reciprocal (or dividing) on both sides. For example consider the following:</p>
     <example>
@@ -191,8 +191,8 @@
         <mrow>x =-3 \amp\amp\amp x=5 \amp\amp\amp 6=x</mrow>
       </md>
     </example>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Division Problems</title>
     <p>In division problems, "eliminate the denominator" by multiplying on both sides. For example consider:</p>
     <example>
@@ -222,8 +222,8 @@
       </md>
     </example>
     <p>The process described above is fundamental to solving equations. Once this process is mastered, the problems we will see have several more steps. These problems may seem more complex, but the process and patterns used will remain the same.</p>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Linear Equations - Two-Step Equations</title>
     <p>After mastering the technique for solving equations that are one-step equations, we are ready to consider two-step equations. As we solve two-step equations, the important thing to remember is that everything works backwards! When working with one-step equations, we learned that in order to clear a "plus five" in the equation, we would subtract five from both sides. We learned that to clear "divided by seven" we multiply by seven on both sides. The same pattern applies to the order of operations. When solving for our variable x, we use order of operations backwards as well. This means we will add or subtract first, then multiply or divide second (then exponents, and finally any parentheses or grouping symbols, but that's another lesson). So to solve the equation in the first example:</p>
     <example>
@@ -366,8 +366,8 @@
         \amp\amp\amp5=x\,\,\,\,\,\,\,\,</mrow>
       </md>
     </example>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Solving Linear Equations-General Equations</title>
     <p>Often as we are solving linear equations we will need to do some work to set them up into a form we are familiar with solving. This section will focus on manipulating an equation we are asked to solve in such a way that we can use our pattern for solving two-step equations to ultimately arrive at the solution.</p>
     <p>One such issue that needs to be addressed is parenthesis. Often the parenthesis can get in the way of solving an otherwise easy problem. As you might expect we can handle the parenthesis by using the distributive property. This is shown in the following example. Notice the first step is distributing, then it is solved like any other two-step equation.</p>
@@ -655,8 +655,8 @@
       </md>
       <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace is licensed under a Creative Commons Attribution 3.0 Unported License. (http://creativecommons.org/licenses/by/3.0/) Based on a work at http://wallace.ccfaculty.org/book/book.html. pages 120-->
     </example>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Linear Inequalities</title>
     <p>Solving inequalities is very similar to solving equations with one exception. Consider the following inequality and what happens when various operations are done to it. Notice what happens to the inequality sign as we add, subtract, multiply and divide by both positive and negative numbers to keep the statement a true statement.</p>
     <p>
@@ -778,8 +778,8 @@
             <m>4</m>. So we must shade above the
             <m>4</m>.
           </p>
-        </section>
-        <section>
+        </subsection>
+        <subsection>
           <title>Compound Inequalities</title>
           <p>Several inequalities can be combined together to form what are called compound inequalities. We will consider one type of compound inequality in this lesson.</p>
           <p>One type of compound inequality is an AND inequality. AND inequalities require both statements to be true. If one is false, they both are false. Number line graphs are useful when solving these inequalities.  When our solution is given in interval notation it will be expressed in a manner very similar to single inequalities.</p>
@@ -881,8 +881,8 @@
                       \([4,5)\)} \amp\amp\amp \text{Our Solution: Interval Notation}</mrow>
                     </md>
                   </example>
-                </section>
-                <section>
+                </subsection>
+                <subsection>
                   <title>Linear Equation Applications</title>
                   <p>Applications are better known as "story problems." Story problems can be challenging, but are a powerful use of mathematics. Often it takes a bit of practice to convert the English sentence into a mathematical sentence. This is what we will focus on here with some basic number and parts problems.</p>
                   <p>A few important phrases are described below that can give us clues for how to set up a problem.</p>
@@ -951,8 +951,8 @@
                       \(52\).}</mrow>
                     </md>
                   </example>
-                </section>
-                <section>
+                </subsection>
+                <subsection>
                   <title>Practical Percent Problems</title>
                   <p>There are three basic types of percent problems:
                     <ol>
@@ -1179,8 +1179,8 @@
                       </md>
                     </p>
                   </example>
-                </section>
-                <section>
+                </subsection>
+                <subsection>
                   <title>Percent Increase or Decrease</title>
                   <p>A person's salary can increase by a percentage. A town's population can decrease by a percentage. A clothing firm can discount its apparel.  Consider the following examples.</p>
                   <example>
@@ -1260,8 +1260,8 @@
                       \(9333\)} \amp\amp\amp \text{Our Solution}</mrow>
                     </md>
                   </example>
-                </section>
-                <section>
+                </subsection>
+                <subsection>
                   <title>Discount</title>
                   <p>Another important application of percent is the discounting of goods.</p>
                   <example>
@@ -1301,5 +1301,6 @@
                       \(\$263.50\)} \amp\amp\amp \text{Our Solution}</mrow>
                     </md>
                   </example>
-                </section>
-              </chapter>
+                </subsection>
+              </section>
+              

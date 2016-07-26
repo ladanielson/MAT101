@@ -1,5 +1,5 @@
-<chapter>
-  <title>MAT-101: Set 2C-Exponents and Scientific Notation</title>
+<section>
+  <title>2C-Exponents and Scientific Notation</title>
   <introduction>
     <ul>
       <li>Simplify expressions using the properties of exponents.</li>
@@ -9,7 +9,7 @@
       <li>Solve equations using scientific notation and exponent properties.</li>
     </ul>
   </introduction>
-  <section>
+  <subsection>
     <title>Exponent Properties</title>
     <p>Problems with exponents can often be simplified using a few important exponent properties. Recall from
       Set
@@ -382,8 +382,8 @@
     </example>
     <!-- <b>Example 2C-16:</b> <!## Cite Beginning and Intermediate Algebra by Tyler Wallace Example 212 pg 181##> <md><mrow>\text{\(\dfrac{3m^8 n^{12}}{(m^2 n^3)^3}\)} \amp\amp\amp \text{Use power rule in denominator}</mrow><mrow>\text{\(\dfrac{3m^8 n^{12}}{m^6 n^9}\)} \amp\amp\amp \text{Use quotient rule}</mrow><mrow>\text{\(3m^2 n^3\)} \amp\amp\amp \text{Our solution}</mrow></md> </p> <b>Example 2C-17:</b> <!## Cite Beginning and Intermediate Algebra by Tyler Wallace Example 213 pg 181##> <md><mrow>\text{\(\left(\dfrac{3a b^2(2a^4 b^2)^3}{6a^5 b^7}\right)^2\)} \amp\amp\amp \text{Simplify inside parenthesis first, using power rule in numerator}</mrow><mrow>\text{\(\left(\dfrac{3a b^2(8a^{12} b^6)}{6a^5 b^7}\right)^2\)} \amp\amp\amp \text{Simplify numerator using product rule}</mrow><mrow>\text{\(\left(\dfrac{24a^{13} b^8)}{6a^5 b^7}\right)^2\)} \amp\amp\amp \text{Simplify using the quotient rule}</mrow><mrow>\text{\((4a^8 b)^2\)} \amp\amp\amp \text{Now that the parenthesis are simplified, use the power rules}</mrow><mrow>\text{\(16a^{16}b^2\)} \amp\amp\amp \text{Our Solution}</mrow></md> </p> -->
     <p>Clearly these problems can quickly become quite involved. Remember to follow order of operations as a guide, simplify inside parenthesis first, then power rules, then product and quotient rules.</p>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Negative Exponents</title>
     <p>There are a few special exponent properties that deal with exponents that are not positive. The first is considered in the following example, which is worked out 2 different ways:</p>
     <example>
@@ -591,8 +591,8 @@
             \amp\amp\amp \left( \dfrac{a}{b}\right)^{-m}=\dfrac{b^m}{a^m}</mrow>
   </md>
 </p>
-</section>
-<section>
+</subsection>
+<subsection>
 <title>Scientific Notation</title>
 <p>One application of exponent properties comes from scientific notation. Scientific notation is used to represent really large or really small numbers. An example of a really large number would be the distance that light travels in a year in miles. An example of a really small number would be the mass of a single hydrogen atom in grams. Doing basic operations such as multiplication and division with these numbers would normally be very cumbersome. However, our exponent properties make this process much simpler.</p>
 <p>First we will take a look at what scientific notation is. Scientific notation is written as the product of two numbers:
@@ -670,8 +670,8 @@
   </md>
 </example>
 <p>Converting between standard notation and scientific notation is important to understand how scientific notation works and what it does. Here our main interest is to be able to perform operations with numbers in scientific notation using exponent properties.</p>
-</section>
-<section>
+</subsection>
+<subsection>
 <title>Addition and Subtraction Using Scientific Notation</title>
 <p>To add or subtract numbers expressed in scientific notation we could first write both numbers in standard notation, perform the operation, and then convert back to scientific notation.</p>
 <example>
@@ -766,8 +766,8 @@
           \(-8.367 \times 10^{14}\)} \amp\amp\amp \text{Our Solution}</mrow>
   </md>
 </example>
-</section>
-<section>
+</subsection>
+<subsection>
 <title>Multiplication and Division Using Scientific Notation</title>
 <p>Multiplication and division can be performed by performing the operation with the front number (multiply or divide) then using exponent properties to simplify the
   <m>10</m>'s.  Consider the following examples:
@@ -959,5 +959,5 @@
           \(1.99 \times 10^{-23}\) gram.}</mrow>
   </md>
 </example>
+</subsection>
 </section>
-</chapter>

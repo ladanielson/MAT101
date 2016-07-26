@@ -1,5 +1,5 @@
-<chapter xml:id="chapter-3A">
-  <title>MAT-101: Set 3A-Interpreting Graphs</title>
+<section xml:id="section-3A">
+  <title>3A-Interpreting Graphs</title>
   <introduction>
     <ul>
       <li>Identify the quadrants and coordinates of
@@ -12,7 +12,7 @@
       </li>
     </ul>
   </introduction>
-  <section>
+  <subsection>
     <title>The Cartesian Coordinate Plane</title>
     <p>Often, to get an idea of the behavior of an equation we will make a picture that represents the solutions to the equations. A graph is simply a picture of the solutions to an equation. Before we spend much time on making a visual representation of an equation, we first have to understand the basis of graphing. Following is an example of what is called the Cartesian coordinate plane (named in honor of the 17th century philosopher, mathematician and scientist, Rene Descartes).</p>
     <figure xml:id="figure-grid-quadrants">
@@ -335,8 +335,8 @@
                                                 <m>y</m>-axis except for at the origin.
                                               </p>
                                             </example>
-                                          </section>
-                                          <section>
+                                          </subsection>
+                                          <subsection>
                                             <title>Intercepts</title>
                                             <p>Intercepts are points on the graph which are on an axis.  Points on the
                                               <m>y</m>-axis will have an
@@ -517,5 +517,6 @@
                                                                               <m>(-\infty,-4)\cup (2,\infty)</m>.
                                                                             </p>
                                                                           </example>
-                                                                        </section>
-                                                                      </chapter>
+                                                                        </subsection>
+                                                                      </section>
+                                                                      

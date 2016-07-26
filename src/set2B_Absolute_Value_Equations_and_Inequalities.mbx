@@ -1,5 +1,5 @@
-<chapter>
-  <title>MAT-101: Set 2B-Absolute Value Equations and Inequalities</title>
+<section>
+  <title>2B-Absolute Value Equations and Inequalities</title>
   <introduction>
     <ul>
       <li>Solve linear absolute value equations.</li>
@@ -7,7 +7,7 @@
       <li>Solve linear distance equations and inequalities problems.</li>
     </ul>
   </introduction>
-  <section>
+  <subsection>
     <title>Absolute Value Equations</title>
     <p>Absolute value is defined as distance from zero.  Consider both integers
       <m>5</m> and
@@ -261,8 +261,8 @@
         <font color="#FF0000"/>
         <b>STOP</b>and conclude there is no solution.
       </p>
-    </section>
-    <section>
+    </subsection>
+    <subsection>
       <title>Absolute Value Inequalities</title>
       <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace is licensed under a Creative Commons Attribution 3.0 Unported License. (http://creativecommons.org/licenses/by/3.0/) Based on a work at http://wallace.ccfaculty.org/book/book.html. pages 128-131-->
       <p>When an inequality has an absolute value we will have to remove the absolute value in order to graph the solution or give interval notation. The way we remove the absolute value depends on the direction of the inequality symbol.</p>
@@ -566,8 +566,8 @@
                               </md>
                             </p>
                           </example>
-                        </section>
-                        <section>
+                        </subsection>
+                        <subsection>
                           <title>Absolute Value Applications</title>
                           <p>Recall absolute value is defined as distance from zero.  We now consider some absolute value applications.</p>
                           <example>
@@ -674,5 +674,6 @@
                               </md>
                             </p>
                           </example>
-                        </section>
-                      </chapter>
+                        </subsection>
+                     </section>
+                     
