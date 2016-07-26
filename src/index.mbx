@@ -23,19 +23,31 @@
 <book>
     <title>Survey of Algebra and Probability</title>
         <subtitle>MAT 101</subtitle>
-
+<chapter>
+    <title>Numbers</title>
 <xi:include href="./set00_Preliminaries.mbx" />
 <xi:include href="./set1A_Fractions.mbx" />
 <xi:include href="./set1B_Percents_and_Estimation.mbx" />
-<xi:include href="./set1C_Sets_Intervals_and_Inequalities.mbx" />
-<xi:include href="./set2A_Linear_Equations_and_Inequalities.mbx" />
-<xi:include href="./set2B_Absolute_Value_Equations_and_Inequalities.mbx" />
-<xi:include href="./set2C_Exponents_and_Scientific_Notation.mbx" />
+<xi:include href="./set1C_Exponents_and_Scientific_Notation.mbx" />
+</chapter>
+<chapter>
+    <title>Equations, Intervals, and Inequalities</title>
+<xi:include href="./set2A_Equations_and_Absolute_Value.mbx" />
+<xi:include href="./set2B_Intervals_and_Inequalities.mbx" />
+<xi:include href="./set2C_Applications.mbx" />
+
+</chapter>
+<chapter>
+    <title>Graphs</title>
 <xi:include href="./set3A_Interpreting_Graphs.mbx" />
 <xi:include href="./set3B_Lines.mbx" />
 <xi:include href="./set3C_Linear_Models.mbx" />
+</chapter>
+<chapter>
+    <title>Probability</title>
 <xi:include href="./set4A_Sets_and_Counting.mbx" />
 <xi:include href="./set4B_Probability.mbx" />
 <xi:include href="./set4C_Probability_Rules.mbx" />
+</chapter>
 </book>
 </mathbook>

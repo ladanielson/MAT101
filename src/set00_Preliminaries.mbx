@@ -1,5 +1,5 @@
-<chapter xml:id="preliminaries">
-  <title>MAT-101: Set 00-Preliminaries</title>
+<section xml:id="preliminaries">
+  <title>00-Preliminaries</title>
   <introduction>
     <ul>
       <li>Add, subtract, multiply and divide positive and negative numbers.</li>
@@ -7,7 +7,7 @@
       <li>Simplify algebraic expressions by substituting given values, distributing, and combining like terms.</li>
     </ul>
   </introduction>
-  <section>
+  <subsection>
     <title>Integer Addition and Subtraction</title>
     <p>A small picture of the integers is provided on the number line below:</p>
     <figure xml:id="figure-numberline">
@@ -170,8 +170,8 @@
                 <mrow>\text{\(-2\)} \amp\amp\amp \text{Our Solution}</mrow>
               </md>
             </example>
-          </section>
-          <section>
+          </subsection>
+          <subsection>
             <title>Integer Multiplication and Division</title>
             <p>Multiplication and division of integers both work in a very similar pattern. The short description of the process is we multiply and divide like normal, if the signs match (both positive or both negative) the answer is positive. If the signs don't match (one positive and one negative) then the answer is negative. This is shown in the following examples:</p>
             <example>
@@ -242,8 +242,8 @@
               <m>-3 + (-7) = - 10</m>, but if the signs match on multiplication, the answer is positive,
               <m>(-3)(-7) = 21</m>.
             </p>
-          </section>
-          <section>
+          </subsection>
+          <subsection>
             <title>Operations of Numbers</title>
             <p>When simplifying expressions it is important that we simplify them in the correct order. Consider the following problem done two different ways:</p>
             <example>
@@ -363,8 +363,8 @@
               <m>25</m>.
             </p>
             <p>In algebra we will often need to simplify an expression to make it easier to use.  There are three basic forms of simplifying which we will review here.</p>
-          </section>
-          <section>
+          </subsection>
+          <subsection>
             <title>Working with Variables</title>
             <p>The first form of simplifying expressions is used when we know what number each variable in the expression represents. If we know what they represent we can replace each variable with the equivalent number and simplify what remains using order of operations.</p>
             <example>
@@ -527,5 +527,6 @@
                 <mrow>\text{\(10x-25\)} \amp\amp\amp \text{Our Solution}</mrow>
               </md>
             </example>
-          </section>
-        </chapter>
+          </subsection>
+        </section>
+ 

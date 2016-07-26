@@ -1,12 +1,12 @@
-<chapter>
-  <title>MAT-101: Set 1B-Percents and Estimation</title>
+<section>
+  <title>1B-Percents and Estimation</title>
   <introduction>
     <ul>
       <li>Convert between percent and decimal.</li>
       <li>Estimate sums, differences, products, quotients and percents.</li>
     </ul>
   </introduction>
-  <section>
+  <subsection>
     <title>Percents</title>
     <b>
       <em>Percent</em>
@@ -39,8 +39,8 @@
       <b>hundredths</b>position of the decimal
       <m>0.23</m>.
     </p>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Converting Between Percents and Decimals</title>
     <example>
       <title>Convert a Percent to a Decimal</title>
@@ -142,8 +142,8 @@
         </mrow>
       </md>
     </example>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Determining a Percent of a Number</title>
     <p>One type of percent problems involves determining a specific percent of a given number.</p>
     <example>
@@ -186,8 +186,8 @@
           \(52.5\)} \amp\amp\amp \text{Our Solution}</mrow>
       </md>
     </example>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Decimals on the Real Number Line</title>
     <p>As a decimal,
       <m>23</m>parts out of
@@ -237,8 +237,8 @@
           </figure>}
           <!-- Cite Prealgebra Textbook Free PreAlgebra 1st Edition This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.. Based on a work at http://home.comcast.net/~cherylwilcox1/site/ Lesson 32 Arithmetic with Decimals-->
         </example>
-      </section>
-      <section>
+      </subsection>
+      <subsection>
         <title>Rounding Decimals</title>
         <p>This is a situation where our experience with whole numbers is valuable. Rounding a decimal number to a given place value or a given number of decimal places is very similar to rounding whole numbers.</p>
         <example>
@@ -283,8 +283,8 @@
               \(6.73\)} \amp\amp\amp \text{Our Solution}</mrow>
           </md>
         </example>
-      </section>
-      <section>
+      </subsection>
+      <subsection>
         <title>Estimation</title>
         <p>There are times when an estimate or approximation of an arithmetic operation is useful.  For example, when determining the reasonableness of a result.</p>
         <example>
@@ -305,5 +305,5 @@
               \(39.53\)} \amp\amp\amp \text{Our Solution}</mrow>
           </md>
         </example>
-      </section>
-    </chapter>
+      </subsection>
+    </section>

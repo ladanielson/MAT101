@@ -1,5 +1,5 @@
-<chapter>
-  <title>MAT-101: Set 1C-Sets, Intervals and Inequalities</title>
+<section>
+  <title>1C-Sets, Intervals and Inequalities</title>
   <introduction>
     <ul>
       <li>Use set operations including union, intersection and complement.</li>
@@ -7,7 +7,7 @@
       <li>Use inequality and interval notation.</li>
     </ul>
   </introduction>
-  <section>
+  <subsection>
     <title>Sets</title>
     <p>In this section, we will familiarize ourselves with set operations and notations, so that we can apply these concepts to both counting and probability problems. We begin by defining some terms.</p>
     <p>A
@@ -37,8 +37,8 @@
       <m>A \subseteq A</m>. The empty set is a subset of every set,
       <m>\emptyset \subseteq A</m>.
     </p>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Union Of Two Sets</title>
     <p>Let
       <m>A</m>and
@@ -82,8 +82,8 @@
       <m>B</m>.  This is because there is only one integer
       <m>4</m>.
     </p>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Intersection Of Two Sets</title>
     <p>Let
       <m>A</m>and
@@ -115,8 +115,8 @@
           A\cap B=\{4,5,6 \} } \amp\amp\amp \text{Our Solution}</mrow>
       </md>
     </example>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Universal Set</title>
     <p>A
       <term>universal set</term>
@@ -126,8 +126,8 @@
       <m>U=\{1,2,...,9,10  \}</m>, the set consisting of the first
       <m>10</m>positive integers.
     </p>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Complement of a Set</title>
     <p>Let
       <m>A</m>be any set, then the complement of set
@@ -206,8 +206,8 @@
           \((A\cup B)'=\{5,7 \}\)} \amp\amp\amp \text{Our Solution}</mrow>
       </md>
     </example>
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Venn Diagrams</title>
     <p>We now use Venn diagrams to illustrate the relations between sets. In the late 1800s, an English logician named John Venn developed a method to represent relationships between sets. He represented these relationships using diagrams, which are now known as Venn diagrams. A Venn diagram represents a set as the interior of a circle. Often two or more circles are enclosed in a rectangle where the rectangle represents the universal set. To visualize an intersection or union of a set is easy.  Below are a few examples.</p>
     <figure xml:id="figure-Venn-A-union-B">
@@ -244,8 +244,8 @@
     </p>
     <p>We will now consider sets of numbers defined using inequalities.</p>
     <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace is licensed under a Creative Commons Attribution 3.0 Unported License. (http://creativecommons.org/licenses/by/3.0/) Based on a work at http://wallace.ccfaculty.org/book/book.html. pages 118 -->
-  </section>
-  <section>
+  </subsection>
+  <subsection>
     <title>Intervals and Inequalities</title>
     <p>When
       <m>x = 4</m>we have a specific value for our variable. With inequalities we will give a range of values for our variable. To do this we will not use equals, but one of the following symbols:
@@ -621,5 +621,6 @@
                               \((-2, 2]\) } \amp\amp\amp \text{Our Solution}</mrow>
                           </md>
                         </example>
-                      </section>
-                    </chapter>
+                      </subsection>
+                    </section>
+                    
