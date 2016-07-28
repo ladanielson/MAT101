@@ -1,672 +1,877 @@
-<chapter>
-<title>MAT-101: Set 4A-Sets and Counting</title>
-<introduction>
-<ul>
-<li>Use set theory and Venn diagrams to solve counting problems. </li>
-   <li>Use tree diagrams and the Multiplication Axiom to solve counting problems.</li>
-</ul>
-</introduction>
-
-<section>
-<title>Sets</title>
-
-
-<p> You are already familiar with the concept of sets from <b>Set 1C-Sets, Intervals and Inequalities</b>.  Recall:
-</p>
-
-<ul>
-     <li>A <b>set</b> is a collection of objects, and its members are called the <b>elements</b> of the set.</li>
-     <li>We name the set by using capital letters, and enclose its members in braces. For example, the set of primary colors could be denoted <m>P = \{ \text{red, yellow, blue} \}</m>.</li>
-     <li>A set that has no members is called an <b>empty set</b>. The empty set is denoted by the symbol <m>\emptyset</m> or with empty curly braces <m>\{\}</m>.</li>
-     <li>Two sets are <b>equal</b> if they have the same elements.</li>
-     <li>A set <m>A</m> is a <b>subset</b> of a set <m>B</m> if every member of <m>A</m> is also a member of <m>B</m>. For example, suppose and <m>A = \{\text{blue, red}\}</m>. Then <m>A</m> is a subset of <m>P</m>, written as <m>A\subseteq P</m>.</li>
-     <li> Every set is a subset of itself, <m>A \subseteq A</m>. The empty set is a subset of every set, <m>\emptyset \subseteq A</m>.</li>
-     <li>The <b>union</b> of <m>A</m> and <m>B</m>, written as <m>A\cup B</m>, is the set of all elements that are either in <m>A</m> <b>OR</b> in <m>B</m>, or in both <m>A</m> and <m>B</m>.</li>
-     <li>The <b>intersection</b> of <m>A</m> and <m>B</m>, written as <m>A\cap B</m>, is the set of all elements that are common to both sets <m>A</m> <b>AND</b> <m>B</m>.</li>
-     <li>A <b>universal set</b> <m>U</m> is the set consisting of all elements under consideration.</li>
-     <li>The <b>complement</b> of set <m>A</m>, written as <m>A'</m>, is the set consisting of elements in the universal set <m>U</m> that are <b>NOT</b> in <m>A</m>.</li>
-</ul>
-
-<p> A concept not discussed in <b>Set 1C</b> is disjoint sets.
-Two sets <m>A</m> and <m>B</m> are called <b>disjoint</b> sets if their intersection is an empty set.  This would be denoted <m>A\cap B = \emptyset</m>.  The following examples demonstrate the above ideas regarding sets.
-</p>
-
-<example>
-<title> Subsets</title>
-<p>
-
-List all the subsets of the set of primary colors <m>P = \{ \text{red, yellow, blue} \}</m>.
-<!--  http://cnx.org/content/col10613/1.5/ Example 11.1 page 170 -->
-<p>
-</p>
-<table class = "center" style="width:75%" >
- <tr align="Center" span ="">
-    <td colspan="4" align ="left"> The subsets are:</td>
-  </tr>
-<tr>
-<td><m>\{ \},</m></td>
-<td><m>\{\text{red} \},</m></td>
-<td><m>\{\text{yellow} \},</m></td>
-<td><m>\{\text{blue} \},</m></td>
-  </tr>
-<tr>
-<td><m>\{\text{red, yellow} \},</m></td>
-<td><m>\{\text{red, blue} \},</m></td>
-<td><m>\{\text{yellow, blue} \},</m></td>
-<td><m>\{\text{red, yellow, blue} \}</m></td>
-  </tr>
-<tr>
-<td colspan="2"> Note that the empty set <m>\{ \}</m> is a subset of every set, and a set is a subset of itself.</td>
-<td colspan="2"> Note also that there are <m>8= 2^3</m> subsets of the original set containing <m>3</m> elements. In general, a set with <m>n</m> elements will have <m>2^n</m> subsets!</td>
-  </tr>
-<tr>
-<td colspan="4"> <div class="WWbox">
-                    Use a comma between elements in a set: {red, yellow} and between subsets: {red},{red, yellow} when entering subsets in <tt>WeBWorK</tt>.
-                    </div></td>
-  </tr>
-</table>
-</p>
-
-</example>
-
-<example>
-<title> Union, Intersection, Complement</title>
-<p>
-
-Let the universal set <m>U=\{\text{red, orange, yellow, green, gold, blue, indigo, violet, purple, black}\}</m>, <m>P = \{ \text{red, yellow, blue} \}</m>, <m>Y = \{ \text{purple, gold} \}</m> and <m>N = \{ \text{red, black} \}</m>.
-<!-- Modeled after  http://cnx.org/content/col10613/1.5/ Example 11.1 page 170 -->
-<p>
-</p>
-<table>
-  <tr>
-<td align="right"><m>P\cup N=\{\text{red, yellow, blue, black} \}</m></td>
-<td>The union is the set of all elements that are either in <m>P</m> <b>OR</b> in <m>N</m>, or in both</td>
-  </tr>
-<tr>
-<td align="right"><m>P\cap N=\{\text{red} \}</m></td>
-<td>The intersection is the set of all elements that are common to both <m>P</m> <b>AND</b> <m>N</m></td>
-  </tr>
-<tr>
-<td align="right"><m>P\cap Y=\{ \}</m></td>
-<td><m>P</m> and <m>Y</m> have no elements in common, <m>P</m> and <m>Y</m> are disjoint</td>
-  </tr>
-<tr>
-<td align="right"><m>P'=\{\text{orange, green, gold, indigo, violet, purple, black} \}</m></td>
-<td>The elements in <m>U</m> <b>NOT</b> in <m>P</m></td>
-  </tr>
-</table></p>
-
-<p>
-Recall a Venn diagram represents a set as the
-interior of a circle. Often two or more circles are enclosed in a rectangle where the rectangle represents the
-universal set. These diagrams allow us to visualize an intersection or union of two sets or the complement of a set.  We will now use Venn
-diagrams to sort various populations and count objects.  We use the notation <m>n(A)</m> to represent the number of elements in set <m>A</m>.  For example, <m>n(P\cup N) = 4</m> in <b>Example 4A-2</b>.
-</p>
-
-</example>
-
-<example>
-<title> 2-Group Venn Diagram</title>
-<p>
- 
-Suppose a survey of car enthusiasts showed that over a certain time period, <m>30</m> drove cars with automatic transmissions, <m>20</m> drove cars with standard transmissions, and <m>12</m> drove cars of both types. If every person in the survey drove cars with one of these transmissions, how many people
-participated in the survey?
-<!--   http://cnx.org/content/col10613/1.5/ Example 11.6 page 171 -->
-<p>
-</p>
-<table class = "center">
-  <tr>
-<td align="right">Let set <m>A</m> represent those surveyed with automatic transmissions.</td>
-<td>Let set <m>S</m> represent those surveyed with standard transmissions.</td>
-  </tr>
-<tr>
-<td align="right">Since <m>12</m> drove cars of both types
-    Record <m>\color{red}{12}</m> in <m>A</m> AND <m>S</m> <m>=A\cap S</m>.That is <m>n(A\cap S)=\color{red}{12}</m>.</td>
-<td><image source="set4A_Sets_and_Counting_01.png" /></td>
-  </tr>
-<tr>
-<td align="right">
-    Let <m>\color{blue}{x}</m> be the number in <m>A</m> but <b>NOT</b> in <m>S</m>.
-    Then <m>\color{blue}{x}=n(A\cap S')</m>.
-     Let <m>\color{green}{y}</m> be the number in <m>S</m> but <b>NOT</b> in <m>A</m>.
-     Then <m>\color{green}{y}=n(S\cap A')</m>.</td>
-<td><image source="set4A_Sets_and_Counting_02.png" /></td>
-  </tr>
-<tr>
-<td align =" right"> Because <m>30</m> people drove cars with automatic transmissions, 
-    the circle <m>A</m> must contain <m>30</m> total people. 
-    This means <m>x + 12 = 30</m>.
-        Subtract <m>12</m> from both sides to get
-         <m>x = 18</m>.
-    Record <m>\color{blue}{18}</m> in <m>A</m> but <b>NOT</b> in <m>S</m>.</td>
-<td><image source="set4A_Sets_and_Counting_03.png" /></td>
-  </tr>
-<tr>
-<td align =" right"> Because <m>20</m> people drove cars with standard transmissions, 
-    the circle <m>S</m> must contain <m>20</m> total people. 
-    This means <m>y + 12 = 20</m>.
-        Subtract <m>12</m> from both sides to get
-         <m>y = 8</m>.
-    Record <m>\color{green}{8}</m> in <m>S</m> but <b>NOT</b> in <m>A</m>.</td>
-<td><image source="set4A_Sets_and_Counting_04.png" /></td>
-  </tr>
-<tr>
-<td align ="right">Now that all the information is sorted out, 
-        it is easy to read from the diagram that:</td>
-<td><m>\color{blue}{18}</m> people drove cars with automatic transmissions only, 
-      <m>\color{red}{12}</m> people drove both types of cars, and 
-      <m>\color{green}{8}</m> drove cars with standard transmissions only.</td>
-  </tr>
-<tr>
-<td align="right"><m>18+12+8=38</m></td>
-<td>Our Solution: <m>38</m> people participated in the survey.</td>
-  </tr>
-</table>
-</p>
-
-</example>
-
-<example>
-<title> 2-Group Venn Diagram</title>
-<p>
- 
-A survey of <m>100</m> people in California indicates that <m>60</m> people have visited Disneyland, <m>15</m> have visited Knott's Berry Farm, and <m>6</m> have visited both. How many people have visited neither place?
-<!--   http://cnx.org/content/col10613/1.5/ Example 11.7 page 171 -->
-<p>
-</p>
-<table>
-  <tr>
-<td align="right">Let set <m>D</m> represent those surveyed who have visited Disneyland.</td>
-<td>Let set <m>K</m> represent those surveyed who have visited Knott's Berry Farm.</td>
-  </tr>
-<tr>
-<td align="right">Since <m>6</m> have visited both
-    Record <m>\color{red}{6}</m> in <m>=D\cap K</m>
-     Let <m>\color{blue}{x}=n(D\cap K')</m>.
-     Let <m>\color{green}{y}=n(K\cap D')</m>.</td>
-<td><image source="set4A_Sets_and_Counting_05.png" /></td>
-  </tr>
-<tr>
-<td align =" right"> Because <m>60</m> people visited Disneyland, 
-    <m>D</m> must contain <m>60</m> total people. 
-    This means <m>x + 6 = 60</m>.
-        Subtract <m>6</m> from both sides to get
-         <m>x = 54</m>.
-    Record <m>\color{blue}{54}</m> in <m>D</m> but <b>NOT</b> in <m>K</m>.</td>
-<td><image source="set4A_Sets_and_Counting_06.png" /></td>
-  </tr>
-<tr>
-<td align =" right"> Because <m>15</m> people visited Knott's, 
-     <m>K</m> must contain <m>15</m> total people. 
-    This means <m>y + 6 = 15</m>.
-        Subtract <m>6</m> from both sides to get
-         <m>y = 9</m>.
-    Record <m>\color{green}{9}</m> in <m>K</m> but <b>NOT</b> in <m>D</m>.</td>
-<td><image source="set4A_Sets_and_Counting_07.png" /></td>
-  </tr>
-<tr>
-<td align =" right">  Let <m>\color{brown}{z}</m> be the number in
-         the rectangle representing the universal set
-         <m>U</m> but <b>NOT</b> in <m>D</m> nor in <m>K</m>.
-     Thus <m>z=n(D\cup K)'</m>.</td>
-<td><image source="set4A_Sets_and_Counting_08.png" /></td>
-  </tr>
-<tr>
-<td align="right">Since <m>100</m> people participated in the survey,
-      <m>U</m> must contain <m>100</m> objects. 
-      This means <m>54+6+9+z = 100</m>
-      or <m>69+z=100</m>.
-        Subtract <m>69</m> from both sides to get
-         <m>z = 31</m>.
-          Record <m>\color{brown}{31}</m> in <m>(D\cup K)'</m>.</td>
-<td><image source="set4A_Sets_and_Counting_09.png" /></td>
-  </tr>
-<tr>
-<td align="right"><m>31=n(D\cup K)'</m></td>
-<td>Our Solution: <m>31</m> people have visited neither place.</td>
-  </tr>
-</table></p>
-
-<p>Looking back at the final Venn diagram of the survey of <m>100</m> people in California, we can organize the results in a two-way table as follows:
-</p>
-
-<p>
-<table align="center" border="1">
-  <tr>
-<td align="center"><m>\,</m></td>
-<td align="center">Disneyland (<m>D</m>)</td>
-<td align="center">Not Disneyland (<m>D'</m>)</td>
-<td align="center">Total</td>
-  </tr>
-<tr>
-<td  align ="center">Knott's (<m>K</m>)</td>
-<td  align ="center"><m>\color{red}{6}</m></td>
-<td  align ="center"><m>\color{green}{9}</m></td>
-<td  align ="center"><m>15</m></td>
-  </tr>
-<tr>
-<td  align ="center">Not Knott's (<m>K'</m>)</td>
-<td  align ="center"><m>\color{blue}{54}</m></td>
-<td  align ="center"><m>\color{brown}{31}</m></td>
-<td  align ="center"><m>85</m></td>
-  </tr>
-<tr>
-<td  align ="center">Total</td>
-<td  align ="center"><m>\fbox{60}</m></td>
-<td  align ="center"><m>40</m></td>
-<td  align ="center"><m>100</m></td>
-  </tr>
-</table></p>
-
-<p>
-Notice from the above table, we can determine particular counts.  For example, at the bottom of the Disneyland column is the boxed number <m>\fbox{60}</m>, which is the total number of people surveyed who visited Disneyland.  The red <m>\color{red}{6}</m> is the intersection of row Knott's and column Disneyland, which is <m>n(D\cap K)</m>, the number of people who visited both parks.  The <m>\color{brown}{31}=n(D'\cap K')</m> means <m>\color{brown}{31}</m> did not attend either park.
-</p>
-
-<p>
-We are not limited to <m>2</m> circles.  Suppose a survey of <m>100</m> exercise conscious people resulted in the following information:
-<ol>
-  <li><m>50</m> jog, <m>30</m> swim, and <m>35</m> cycle</li>
-  <li><m>14</m> jog and swim</li>
-  <li><m>7</m> swim and cycle</li>
-  <li><m>9</m> jog and cycle</li>
-  <li><m>3</m> people take part in all three activities</li>
-</ol>
-Since we have <m>3</m> exercise categories (jog, swim, cycle) we will use three circles, one for each group. Use the exercise survey results to assign a number to each region in a corresponding Venn diagram and then answer the given questions in the following examples:
-</p>
-
-
-</example>
-
-<example>
-<title> 3-Group Venn Diagram</title>
-<p>
- 
-Use the exercise survey results above to assign a number to each region in a corresponding Venn diagram.
-<!--   http://cnx.org/content/col10613/1.5/ Example 11.8 page 172 -->
-
-<p>
-</p>
-<table class = "center">
-  <tr>
-<td align="right">Let set <m>J</m> represent the joggers, set <m>S</m> the swimmers and set <m>C</m> the cyclers.</td>
-<td>We always begin by first assigning the number to the innermost region and then working our way out.</td>
-  </tr>
-<tr>
-<td align="right">Since <m>3</m> people participate in all three activities
-    place a <m>\color{red}{3}</m> in <m>=J\cap S\cap C</m>
-     Let <m>\color{blue}{x}=n((J\cap S)\cap C')</m>
-     (people that jog and swim but don't cycle).
-     Let <m>\color{green}{y}=n((J\cap C)\cap S')</m>.
-     Let <m>\color{brown}{z}=n((S\cap C)\cap J')</m>.</td>
-<td><image source="set4A_Sets_and_Counting_10.png" /></td>
-  </tr>
-<tr>
-<td align="right">Since <m>14</m> jog and swim
-   <m>x+3=14</m>, so <m>\color{blue}{x = 11}</m>.
-     Since <m>9</m> jog and cycle
-   <m>y+3=9</m>, so <m>\color{green}{y = 6}</m>.
-      Since <m>7</m> swim and cycle
-   <m>z+3=7</m>, so <m>\color{brown}{z = 4}</m>.
-   After replacing <m>x,y,z</m> with these values
-   label the regions <m>\color{red}{m}, \color{blue}{n},\color{green}{ p}</m>.</td>
-<td><image source="set4A_Sets_and_Counting_11.png" /></td>
-  </tr>
-<tr>
-<td align="right">Since <m>50</m> people jog
-   <m>m + 11+3+6=50</m>, so <m>\color{red}{m =30 }</m>.
-     Since <m>30</m> swim
-   <m>n+11+3+4=30</m>, so <m>\color{blue}{n = 12}</m>.
-      Since <m>35</m> cycle
-   <m>p+6+3+4=35</m>, so <m>\color{green}{p = 22}</m>.</td>
-<td><image source="set4A_Sets_and_Counting_12.png" /></td>
-  </tr>
-<tr>
-<td align =" right">  By adding all the entries in all three sets, 
-        we get a sum of <m>88</m>. 
-        Since <m>100</m> people were surveyed,
-        the number inside the universal set but outside of all three sets is 
-        <m>100-88=\color{red}{12}</m></td>
-<td><image source="set4A_Sets_and_Counting_13.png" /></td>
-  </tr>
-<tr>
-<td align="right">Our Solution</td>
-<td><image source="set4A_Sets_and_Counting_14.png" /></td>
-  </tr>
-</table></p>
-
-</example>
-
-<example>
-<title> 3-Group Venn Diagram</title>
-<p>
- 
-Use the completed Venn diagram from <b>Example 4A-5</b> to determine the number of people surveyed who jog but do not swim or cycle.
-
-<!--   http://cnx.org/content/col10613/1.5/ Example 11.8(a) page 172 -->
-<p>
-</p>
-<table class = "center">
-  <tr>
-<td align="right">The region which contains 
-    joggers who do not swim or cycle
-     is highlighted in <m>\color{red}{\text{red}}</m>.</td>
-<td><image source="set4A_Sets_and_Counting_15.png" /></td>
-  </tr>
-<tr>
-<td align="right"><m>30</m></td>
-<td>Our Solution: <m>30</m> people jog but do not swim or cycle.</td>
-  </tr>
-</table></p>
-
-
-</example>
-
-<example>
-<title> 3-Group Venn Diagram</title>
-<p>
- 
-Use the completed Venn diagram from <b>Example 4A-5</b> to determine the number of people surveyed who take part in only one of the activities.
-<!--   http://cnx.org/content/col10613/1.5/ Example 11.8(b) page 172 -->
-<p>
-</p>
-<table class = "center">
-  <tr>
-<td align="right">The regions which contain 
-    people taking part in exactly one activity
-     are highlighted in <m>\color{blue}{\text{blue}}</m>.</td>
-<td><image source="set4A_Sets_and_Counting_16.png" /></td>
-  </tr>
-<tr>
-<td align="right"><m>30+12+22=64</m></td>
-<td>Our Solution: <m>64</m> people take part in only one of the activities.</td>
-  </tr>
-</table></p>
-
-
-</example>
-
-<example>
-<title> 3-Group Venn Diagram</title>
-<p>
- 
-Use the completed Venn diagram from <b>Example 4A-5</b> to determine the number of people surveyed who do not take part in any of these activities.
-<!--   http://cnx.org/content/col10613/1.5/ Example 11.8(c) page 172 -->
-<p>
-</p>
-<table class = "center">
-  <tr>
-<td align="right">The region which contains 
-    people who do not take part in any of these activities
-     is highlighted in <m>\color{green}{\text{green}}</m>.</td>
-<td><image source="set4A_Sets_and_Counting_17.png" /></td>
-  </tr>
-<tr>
-<td align="right"><m>12</m></td>
-<td>Our Solution: <m>12</m> people do not take part in any of these activities.</td>
-  </tr>
-</table></p>
-
-</example>
-</section>
-
-<section>
-<title>Tree Diagrams and the Multiplication Axiom</title>
-
-
-<p>
-In this Module, we are developing counting techniques that will be used in the following Module to study probability. One of the most fundamental of such techniques is called the <b>Multiplication Axiom</b>. Before we
-introduce the multiplication axiom, we first consider some examples.
-</p>
-
-<example>
-<title> 2-Step Tree Diagram</title>
-<p>
- 
-A restaurant has a special choose <m>2</m> dinner deal: for one low price a customer may select one of two appetizers and one of four main courses.  How many different dinner combinations consisting of one appetizer and one main course are possible?
-
-<!--   Modeled after http://cnx.org/content/col10613/1.5/ Example 11.9 page 173 but less sexist!! -->
-<p>
-</p>
-<table class = "center">
-  <tr>
-<td align="right">Label the two appetizers <m>a_1</m> and <m>a_2</m>.</td>
-<td>Label the four main dishes <m>m_1, m_2, m_3</m> and <m>m_4</m>.</td>
-  </tr>
-<tr>
-<td align="right">Create a tree diagram 
-    for this problem.
-    <b>Step 1:</b> Since we may select 
-    one of two appetizers, 
-    the tree begins with two branches, one for each of <m>a_1</m> and <m>a_2</m>.
-    <b>Step 2: </b>Then since we may select 
-    one of four main course options, 
-    each of the first two branches leads to four more branches.  
-    The tree has <m>2\times 4 = 8</m> endpoints,
-    one for each of the <m>8</m> dinner special combinations.
-    <td><image source="set4A_Sets_and_Counting_18.png" /></td>
-</td>
-  <tr>
-<td align="right"><m>8</m></td>
-<td>Our Solution: There are <m>8</m> possible 
-        different dinner combinations  consisting of one appetizer and one main course.  
-        For example, one combination <m>a_2, m_3 </m> represents 
-        the choice of appetizer <m>2</m> with main course <m>3</m>.</td>
-  </tr>
-
-  </tr>
-</table></p>
-
-  <p>
- The tree diagram gives us all eight possibilities. The method involves two steps. First we choose an appetizer. We have two choices: <m>a_1</m> or <m>a_2</m>. If we choose <m>a_1</m>, we have
-four main dishes to go with it; <m>m_1, m_2, m_3</m> and <m>m_4</m>. Similarly if we choose <m>a_2</m>, we can select any one of the four main dishes, again. The tree diagram helps us visualize these
-possibilities.
-</p>
-<p>
-The reader should note that the process involves two steps. For the first step of choosing an appetizer, there are two choices, and for each choice of an appetizer, there are four choices of a main dish. So altogether there <m>2\cdot 4=8</m> possibilities. If, in the above example, we add a dessert, we have the following problem:
-  </p>
-
+<section xml:id="section-4A-sets-and-counting">
+  <title>4A-Sets and Counting</title>
+  <introduction>
+    <ul>
+      <li>Use set operations including union, intersection and complement.</li>
+      <li>Use Venn diagrams to illustrate relations between sets.</li>
+      <li>Use set theory and Venn diagrams to solve counting problems.</li>
+      <li>Use tree diagrams and the Multiplication Axiom to solve counting problems.</li>
+    </ul>
+  </introduction>
+  <subsection>
+    <title>Sets</title>
+    <p>In this section, we will familiarize ourselves with set operations and notations, so that we can apply these concepts to both counting and probability problems. We begin by defining some terms.</p>
+    <p>A
+      <b>set</b>is a collection of objects, and its members are called the
+      <b>elements</b>of the set. We name the set by using capital letters, and enclose its members in braces
+      <m>{\cdots}</m>. Suppose we need to list the members of the chess club. We use the following set notation: \[C=\{\text{Ken, Bob, Tran, Shanti, Eric}\}\] A set that has no members is called an
+      <b>empty set</b>. The empty set is denoted by the symbol
+      <m>\emptyset</m> or with empty curly braces
+      <m>\{\}</m>.
+    </p>
+    <p>Two sets are
+      <b>equal</b>if they have the same elements.
+    </p>
+    <p>A set
+      <m>A</m> is a
+      <b>subset</b>of a set
+      <m>B</m> if every member of
+      <m>A</m> is also a member of
+      <m>B</m>. For example, suppose
+      <m>C = \{\text{Al, Bob, Chris, David, Ed}\}</m> and
+      <m>A = \{\text{Bob, David}\}</m>. Then
+      <m>A</m> is a subset of
+      <m>C</m>, written as
+      <m>A\subseteq C</m>.
+    </p>
+    <p>Notes: Every set is a subset of itself,
+      <m>A \subseteq A</m>. The empty set is a subset of every set,
+      <m>\emptyset \subseteq A</m>.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Union Of Two Sets</title>
+    <p>Let
+      <m>A</m> and
+      <m>B</m> be two sets, then the union of
+      <m>A</m> and
+      <m>B</m>, written as
+      <m>A\cup B</m>, is the set of all elements that are either in
+      <m>A</m> or in
+      <m>B</m>, or in both
+      <m>A</m> and
+      <m>B</m>.  When you see the union symbol
+      <m>\cup</m> you should think
+      <em>or</em>.
+    </p>
+    <example xml:id="union">
+      <title>Union</title>
+      <p>Let
+        <m>A=\{1,4,5,6,8\}</m> and
+        <m>B=\{4,5,6,7\}</m> be two sets of integers.
+        <!-- Modeled after WeBWorK Problems/MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_01_CompoundIneq.pg -->
+      </p>
+      <md>
+        <mrow>\text{Determine \(A\cup B\)} \amp\amp\amp \text{The union is the collection of all elements from both sets:}</mrow>
+        <mrow>\amp\amp\amp \text{integers in \(A\)
+          <b>OR</b>\(B\)(or both)}
+        </mrow>
+        <mrow>A\cup B=\{1,4,5,6,7,8 \} \amp\amp\amp \text{Our Solution}</mrow>
+        <mrow>\text{Type
+          <b>{1,4,5,6,7,8}</b>for \(\{1,4,5,6,7,8 \}\) in
+          <b>WeBWorK</b>. Elements of sets are contained in curly braces.}
+        </mrow>
+      </md>
+    </example>
+    <p>Notice in the solution to Example
+      <xref ref="union" />, the integer
+      <m>4</m> is not written in the list of elements twice even thought it is in both sets
+      <m>A</m> and
+      <m>B</m>.  This is because there is only one integer
+      <m>4</m>.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Intersection Of Two Sets</title>
+    <p>Let
+      <m>A</m> and
+      <m>B</m> be two sets, then the intersection of
+      <m>A</m> and
+      <m>B</m>, written as
+      <m>A\cap B</m>, is the set of all elements that are common to both sets
+      <m>A</m> and
+      <m>B</m>. That is to say the set of all elements in
+      <m>A</m> that are also in
+      <m>B</m>.  When you see the intersection symbol
+      <m>\cap</m> you should think
+      <em>and</em>.
+    </p>
+    <example>
+      <title>Intersection</title>
+      <p>Let
+        <m>A=\{1,4,5,6,8\}</m> and
+        <m>B=\{4,5,6,7\}</m> be two sets of integers.
+        <!-- Modeled after WeBWorK Problems/MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_01_CompoundIneq.pg -->
+      </p>
+      <md>
+        <mrow>\text{Find A\cap B } \amp\amp\amp \text{The intersection is the collection of all elements common to  both sets: integers in A
+          <b>AND</b>B (common to both)}
+        </mrow>
+        <mrow>\text{A\cap B=\{4,5,6 \} } \amp\amp\amp \text{Our Solution}</mrow>
+      </md>
+    </example>
+  </subsection>
+  <subsection>
+    <title>Universal Set</title>
+    <p>A
+      <term>universal set</term>
+      <m>U</m> is the set consisting of all elements under consideration.  For example, if we were interested in computing probabilities of particular poker hands the universal set would be the set of all
+      <m>52</m> cards in a regular deck of cards.  If we were interested in GPAs of students at C of I, the universal set
+      <m>U=\{\text{GPAs of all students at C of I}\}</m>.  Or the universal set could even be
+      <m>U=\{1,2,...,9,10  \}</m>, the set consisting of the first
+      <m>10</m> positive integers.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Complement of a Set</title>
+    <p>Let
+      <m>A</m> be any set, then the complement of set
+      <m>A</m>, written as
+      <m>A'</m>, is the set consisting of elements in the universal set
+      <m>U</m> that are not in
+      <m>A</m>. When you see the complement symbol
+      <m>'</m> you should think
+      <em>not</em>or
+      <em>outside</em>.
+    </p>
+    <example>
+      <title>Set Complement</title>
+      <p>Let the universal set
+        <m>U=\{0,1,2,3,4,5,6,7\}</m>. Let
+        <m>A=\{0,1,2,3,6\}</m>.
+        <!-- Modeled after WeBWorK Problems/MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_01_CompoundIneq.pg -->
+      </p>
+      <md>
+        <mrow>\text{Find \(A'\)} \amp\amp\amp \text{The complement of \(A\) is the collection of all elements in \(U\) that are
+          <b>NOT</b>in \(A\)}
+        </mrow>
+        <mrow>\text{\(A'=\{4,5,7 \}\)} \amp\amp\amp \text{Our Solution}</mrow>
+      </md>
+    </example>
+    <example>
+      <title>Set Operations</title>
+      <p>Let the universal set
+        <m>U=\{0,1,2,3,4,5,6,7\}</m>. Let
+        <m>A=\{0,1,2,3,6\}</m> and
+        <m>B=\{0, 3, 4, 6\}</m>.
+        <!-- Modeled after WeBWorK Problems/MAT123_Templates/setAppliedMath_08_01_Sets/AppMath_08_Sets.pg -->
+      </p>
+      <md>
+        <mrow>\text{Determine \(A\cap B'\)} \amp\amp\amp \text{First identify the set \(B'\): elements in \(U\)
+          <b>NOT</b>in \(B\)}
+        </mrow>
+        <mrow>\text{\(B'=\{1,2,5,7 \}\)} \amp\amp\amp \text{Intersection is
+          <b>AND</b>: elements in \(A\)
+          <b>AND</b>\(B\)}
+        </mrow>
+        <mrow>\text{\(A\cap B'=\{1,2 \}\)} \amp\amp\amp \text{Our Solution}</mrow>
+      </md>
+    </example>
+    <example>
+      <title>Set Operations</title>
+      <p>Let the universal set
+        <m>U=\{0,1,2,3,4,5,6,7\}</m>. Let
+        <m>A=\{0,1,2,3,6\}</m> and
+        <m>B=\{0, 3, 4, 6\}</m>.
+        <!-- Modeled after WeBWorK Problems/MAT123_Templates/setAppliedMath_08_01_Sets/AppMath_08_Sets.pg -->
+      </p>
+      <md>
+        <mrow>\text{Find \((A\cup B)'\)} \amp\amp\amp \text{Parentheses first: identify \((A\cup B)\)--union is
+          <b>OR</b>}
+        </mrow>
+        <mrow>\text{\((A\cup B)=\{0,1,2,3,4,6 \}\)} \amp\amp\amp \text{Next consider the complement--
+          <b>OUTSIDE</b>this set}
+        </mrow>
+        <mrow>\text{\((A\cup B)'=\{5,7 \}\)} \amp\amp\amp \text{Our Solution}</mrow>
+      </md>
+    </example>
+  </subsection>
+  <subsection>
+    <title>Venn Diagrams</title>
+    <p>We now use Venn diagrams to illustrate the relations between sets. In the late 1800s, an English logician named John Venn developed a method to represent relationships between sets. He represented these relationships using diagrams, which are now known as Venn diagrams. A Venn diagram represents a set as the interior of a circle. Often two or more circles are enclosed in a rectangle where the rectangle represents the universal set. To visualize an intersection or union of a set is easy.  Below are a few examples.</p>
+    <figure xml:id="figure-Venn-A-union-B">
+      <image xml:id="Venn-A-union-B">
+        <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe; \node[anchor=south east] at (current bounding box.south east) {$U$}; \node[anchor=south] at (current bounding box.north) {$A \cup B$}; \draw[filled] \firstcircle node {$A$} \secondcircle node {$B$}; \end{tikzpicture}} ]]></latex-image-code>
+      </image>
+    </figure>
+    <p>The shaded region represents the collection of all elements that are either in
+      <m>A</m> or in
+      <m>B</m>, or in both
+      <m>A</m> and
+      <m>B</m>. The region is
+      <m>A\cup B</m>
+    </p>
+    <figure xml:id="figure-Venn-A-intersect-B">
+      <image xml:id="Venn-A-intersect-B">
+        <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe; \node[anchor=south east] at (current bounding box.south east) {$U$}; \begin{scope} \clip \firstcircle; \fill[filled] \secondcircle; \end{scope} \draw[outline] \firstcircle node {$A$}; \draw[outline] \secondcircle node {$B$}; \node[anchor=south] at (current bounding box.north) {$A \cap B$}; \end{tikzpicture}} ]]></latex-image-code>
+      </image>
+    </figure>
+    <p>The shaded region represents the collection of all elements that are common to both
+      <m>A</m> and
+      <m>B</m> The region is
+      <m>A\cap B</m>
+    </p>
+    <figure xml:id="figure-Venn-A-complement">
+      <image xml:id="Venn-A-complement">
+        <latex-image-code><![CDATA[\begin{tikzpicture} \fill[color = M101_green!50!white ] \universe; \node[anchor=south east] at (current bounding box.south east) {$U$}; \draw \universe; \node[anchor=south] at (current bounding box.north) {$A'$}; \fill[color = white] \firstcircle; \draw[outline] \firstcircle node {$A$}; \draw[outline] \secondcircle node {$B$}; \end{tikzpicture}} ]]></latex-image-code>
+      </image>
+    </figure>
+    <p>The shaded region represents the collection of all elements that are
+      <b>NOT</b>in
+      <m>A</m>. The region is
+      <m>A'</m>
+    </p>
+    <p>We will now consider sets of numbers defined using inequalities.</p>
+    <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace is licensed under a Creative Commons Attribution 3.0 Unported License. (http://creativecommons.org/licenses/by/3.0/) Based on a work at http://wallace.ccfaculty.org/book/book.html. pages 118 -->
+  </subsection>
+  <subsection>
+    <title>Sets</title>
+    <p>You are already familiar with the concept of sets from
+      <b>Set 1C-Sets, Intervals and Inequalities</b>.  Recall:
+    </p>
+    <ul>
+      <li>A
+        <b>set</b>is a collection of objects, and its members are called the
+        <b>elements</b>of the set.
+      </li>
+      <li>We name the set by using capital letters, and enclose its members in braces. For example, the set of primary colors could be denoted
+        <m>P = \{ \text{red, yellow, blue} \}</m>.
+      </li>
+      <li>A set that has no members is called an
+        <b>empty set</b>. The empty set is denoted by the symbol
+        <m>\emptyset</m> or with empty curly braces
+        <m>\{\}</m>.
+      </li>
+      <li>Two sets are
+        <b>equal</b>if they have the same elements.
+      </li>
+      <li>A set
+        <m>A</m> is a
+        <b>subset</b>of a set
+        <m>B</m> if every member of
+        <m>A</m> is also a member of
+        <m>B</m>. For example, suppose and
+        <m>A = \{\text{blue, red}\}</m>. Then
+        <m>A</m> is a subset of
+        <m>P</m>, written as
+        <m>A\subseteq P</m>.
+      </li>
+      <li>Every set is a subset of itself,
+        <m>A \subseteq A</m>. The empty set is a subset of every set,
+        <m>\emptyset \subseteq A</m>.
+      </li>
+      <li>The
+        <b>union</b>of
+        <m>A</m> and
+        <m>B</m>, written as
+        <m>A\cup B</m>, is the set of all elements that are either in
+        <m>A</m>
+        <b>OR</b>in
+        <m>B</m>, or in both
+        <m>A</m> and
+        <m>B</m>.
+      </li>
+      <li>The
+        <b>intersection</b>of
+        <m>A</m> and
+        <m>B</m>, written as
+        <m>A\cap B</m>, is the set of all elements that are common to both sets
+        <m>A</m>
+        <b>AND</b>
+        <m>B</m>.
+      </li>
+      <li>A
+        <b>universal set</b>
+        <m>U</m> is the set consisting of all elements under consideration.
+      </li>
+      <li>The
+        <b>complement</b>of set
+        <m>A</m>, written as
+        <m>A'</m>, is the set consisting of elements in the universal set
+        <m>U</m> that are
+        <b>NOT</b>in
+        <m>A</m>.
+      </li>
+    </ul>
+    <p>A concept not discussed in
+      <b>Set 1C</b>is disjoint sets. Two sets
+      <m>A</m> and
+      <m>B</m> are called
+      <b>disjoint</b>sets if their intersection is an empty set.  This would be denoted
+      <m>A\cap B = \emptyset</m>.  The following examples demonstrate the above ideas regarding sets.
+    </p>
+    <example>
+      <title>Subsets</title>
+      <p>List all the subsets of the set of primary colors
+        <m>P = \{ \text{red, yellow, blue} \}</m>.
+        <!--  http://cnx.org/content/col10613/1.5/ Example 11.1 page 170 -->
+      </p>
+      <p>The subsets are:</p>
+      <p>
+        <m>\{ \},\{\text{red} \},\{\text{yellow} \},\{\text{blue} \},</m>
+      </p>
+      <p>
+        <m>\{\text{red, yellow} \},\{\text{red, blue} \},\{\text{yellow, blue} \},</m> and
+        <m>\{\text{red, yellow, blue} \}</m>
+      </p>
+      <p>Note that the empty set
+        <m>\{ \}</m> is a subset of every set, and a set is a subset of itself.
+      </p>
+      <p>Note also that there are
+        <m>8= 2^3</m> subsets of the original set containing
+        <m>3</m> elements. In general, a set with
+        <m>n</m> elements will have
+        <m>2^n</m> subsets!
+        <m>\checkmark</m>
+      </p>
+      <div class="WWbox">Use a comma between elements in a set: {red, yellow} and between subsets: {red},{red, yellow} when entering subsets in
+        <tt>WeBWorK</tt>.
+      </div>
+    </example>
+    <example xml:id = "example-union-intersection-complement">
+      <title>Union, Intersection, Complement</title>
+      <p>Let the universal set
+        <m>U=\{\text{red, orange, yellow, green, gold, blue, indigo, violet, purple, black}\}</m>,
+        <m>P = \{ \text{red, yellow, blue} \}</m>,
+        <m>Y = \{ \text{purple, gold} \}</m> and
+        <m>N = \{ \text{red, black} \}</m>.
+        <!-- Modeled after  http://cnx.org/content/col10613/1.5/ Example 11.1 page 170 -->
+      </p>
+      <md>
+        <mrow>P\cup N=\{\text{red, yellow, blue, black}\} \amp\amp\amp \text{The union is the set of all elements}</mrow>
+        <mrow>\text{}\amp\amp\amp\text{that are either in \(P\) OR in \(N\), or in both}
+        </mrow>
+        <mrow>P\cap N=\{\text{red} \} \amp\amp\amp \text{The intersection is the set of all elements}</mrow>
+        <mrow>\text{}\amp\amp\amp\text{that are common to both \(P\) AND \(N\)}
+        </mrow>
+        <mrow>P\cap Y=\{ \} \amp\amp\amp \text{\(P\) and \(Y\) have no elements in common,}</mrow>
+          <mrow>\text{}\amp\amp\amp\text{\(P\) and \(Y\) are disjoint}
+        </mrow>
+        <mrow>P'=\{\text{orange, green, gold, indigo, violet, purple, black} \} \amp\amp\amp \text{The elements in \(U\) NOT in \(P\checkmark\)}
+        </mrow>
+      </md></example>
+   
+    <p>Recall a Venn diagram represents a set as the interior of a circle. Often two or more circles are enclosed in a rectangle where the rectangle represents the universal set. These diagrams allow us to visualize an intersection or union of two sets or the complement of a set.  We will now use Venn diagrams to sort various populations and count objects.  We use the notation
+      <m>n(A)</m> to represent the number of elements in set
+      <m>A</m>.  For example,
+      <m>n(P\cup N) = 4</m> in Example <xref ref="example-union-intersection-complement" />.
+    </p>
+  <example>
+    <title>2-Group Venn Diagram</title>
+    <p>Suppose a survey of car enthusiasts showed that over a certain time period,
+      <m>30</m> drove cars with automatic transmissions,
+      <m>20</m> drove cars with standard transmissions, and
+      <m>12</m> drove cars of both types. If every person in the survey drove cars with one of these transmissions, how many people participated in the survey?
+      <!--   http://cnx.org/content/col10613/1.5/ Example 11.6 page 171 -->
+      <p></p>
+      <md>
+        <mrow>\text{Let set
+          <m>A</m> represent those surveyed with automatic transmissions. } \amp\amp\amp \text{Let set
+          <m>S</m> represent those surveyed with standard transmissions. }
+        </mrow>
+        <mrow>\text{Since
+          <m>12</m> drove cars of both types Record
+          <m>\color{red}{12}</m> in
+          <m>A</m> AND
+          <m>S</m>
+          <m>=A\cap S</m>.That is
+          <m>n(A\cap S)=\color{red}{12}</m>. } \amp\amp\amp \text{
+          <image source="set4A_Sets_and_Counting_01.png" />}
+        </mrow>
+        <mrow>\text{Let
+          <m>\color{blue}{x}</m> be the number in
+          <m>A</m> but
+          <b>NOT</b>in
+          <m>S</m>. Then
+          <m>\color{blue}{x}=n(A\cap S')</m>. Let
+          <m>\color{green}{y}</m> be the number in
+          <m>S</m> but
+          <b>NOT</b>in
+          <m>A</m>. Then
+          <m>\color{green}{y}=n(S\cap A')</m>. } \amp\amp\amp \text{
+          <image source="set4A_Sets_and_Counting_02.png" />}
+        </mrow>
+        <mrow>\text{Because
+          <m>30</m> people drove cars with automatic transmissions, the circle
+          <m>A</m> must contain
+          <m>30</m> total people. This means
+          <m>x + 12 = 30</m>. Subtract
+          <m>12</m> from both sides to get
+          <m>x = 18</m>. Record
+          <m>\color{blue}{18}</m> in
+          <m>A</m> but
+          <b>NOT</b>in
+          <m>S</m>. } \amp\amp\amp \text{
+          <image source="set4A_Sets_and_Counting_03.png" />}
+        </mrow>
+        <mrow>\text{Because
+          <m>20</m> people drove cars with standard transmissions, the circle
+          <m>S</m> must contain
+          <m>20</m> total people. This means
+          <m>y + 12 = 20</m>. Subtract
+          <m>12</m> from both sides to get
+          <m>y = 8</m>. Record
+          <m>\color{green}{8}</m> in
+          <m>S</m> but
+          <b>NOT</b>in
+          <m>A</m>. } \amp\amp\amp \text{
+          <image source="set4A_Sets_and_Counting_04.png" />}
+        </mrow>
+        <mrow>\text{Now that all the information is sorted out, it is easy to read from the diagram that:} \amp\amp\amp \text{
+          <m>\color{blue}{18}</m> people drove cars with automatic transmissions only,
+          <m>\color{red}{12}</m> people drove both types of cars, and
+          <m>\color{green}{8}</m> drove cars with standard transmissions only. }
+        </mrow>
+        <mrow>\text{
+          <m>18+12+8=38</m>} \amp\amp\amp \text{Our Solution:
+          <m>38</m> people participated in the survey. }
+        </mrow>
+      </md>
+    </p>
   </example>
-
-<example>
-<title> 3-Step Tree Diagram</title>
-<p>
- 
-  A restaurant has a special choose <m>3</m> dinner deal: for one low price a customer may select one of two appetizers, one of four main courses, and one of three desserts.  How many different dinner combinations consisting of one appetizer, one main course and one dessert are possible?
-
-<!--   Modeled after http://cnx.org/content/col10613/1.5/ Example 11.10 page 174 but less sexist!! -->
-
-<p>
-</p>
-<table class ="center">
-  <tr>
-<td align="right">Label the two appetizers <m>a_1</m> and <m>a_2</m>.
-
-    Label the four main dishes <m>m_1, m_2, m_3</m> and <m>m_4</m>.
-    Label the three desserts <m>d_1, d_2</m> and <m>d_3</m>. 
-
-    The tree diagram at the right results.
-
-    (Note that only 6 of the actual possible dinner combinations are listed at the far right.) 
-
-    The tree has <m>2\times 4\times 3 = 24</m> endpoints,
-    one for each of the <m>24</m> dinner special combinations.</td>
-<td><image source="set4A_Sets_and_Counting_19.png"  width ="407" height="273" /></td>
-  </tr>
-<tr>
-<td align =" right">24</td>
-<td>Our Solution: There are <m>24</m> possible different dinner combinations consisting of one appetizer, one main course, and one dessert.</td>
-  </tr>
-</table></p>
-
-   <p>
-   The important thing to observe here, again, is that this is a three step process. There are two choices for the first step of choosing an appetizer. For each choice of a appetizer, there are four choices of a main course, and for each combination of an appetizer and main course, there are three choices of selecting a dessert. All in all, we have <m>2\times 4\times 3 = 24</m> different possibilities.
-   </p>
-
-   <p>
-   The tree diagrams help us visualize the different possibilities, but they are not practical when the possibilities are numerous. Besides, we are mostly interested in counting the number of elements in the set and not the actual possibilities. But once the problem is envisioned, we can solve it without a tree diagram. The two examples we just solved may have given us a clue to do just that.
-   </p>
-   <p>
-   Let us now try to solve <b>Example 4A-10:</b> without a tree diagram. Recall that the problem involved three steps: choosing an appetizer, choosing a main course, and choosing a dessert. The number of ways of choosing each are listed below.
-   </p>
-
+  <example xml:id="example-disneyland-knotts">
+    <title>2-Group Venn Diagram</title>
+    <p>A survey of
+      <m>100</m> people in California indicates that
+      <m>60</m> people have visited Disneyland,
+      <m>15</m> have visited Knott's Berry Farm, and
+      <m>6</m> have visited both. How many people have visited neither place?
+      <!--   http://cnx.org/content/col10613/1.5/ Example 11.7 page 171 -->
+      <p></p>
+      <md>
+        <mrow>\text{Let set
+          <m>D</m> represent those surveyed who have visited Disneyland. } \amp\amp\amp \text{Let set
+          <m>K</m> represent those surveyed who have visited Knott's Berry Farm. }
+        </mrow>
+        <mrow>\text{Since
+          <m>6</m> have visited both Record
+          <m>\color{red}{6}</m> in
+          <m>=D\cap K</m> Let
+          <m>\color{blue}{x}=n(D\cap K')</m>. Let
+          <m>\color{green}{y}=n(K\cap D')</m>. } \amp\amp\amp \text{
+          <image source="set4A_Sets_and_Counting_05.png" />}
+        </mrow>
+        <mrow>\text{Because
+          <m>60</m> people visited Disneyland,
+          <m>D</m> must contain
+          <m>60</m> total people. This means
+          <m>x + 6 = 60</m>. Subtract
+          <m>6</m> from both sides to get
+          <m>x = 54</m>. Record
+          <m>\color{blue}{54}</m> in
+          <m>D</m> but
+          <b>NOT</b>in
+          <m>K</m>. } \amp\amp\amp \text{
+          <image source="set4A_Sets_and_Counting_06.png" />}
+        </mrow>
+        <mrow>\text{Because
+          <m>15</m> people visited Knott's,
+          <m>K</m> must contain
+          <m>15</m> total people. This means
+          <m>y + 6 = 15</m>. Subtract
+          <m>6</m> from both sides to get
+          <m>y = 9</m>. Record
+          <m>\color{green}{9}</m> in
+          <m>K</m> but
+          <b>NOT</b>in
+          <m>D</m>. } \amp\amp\amp \text{
+          <image source="set4A_Sets_and_Counting_07.png" />}
+        </mrow>
+        <mrow>\text{Let
+          <m>\color{brown}{z}</m> be the number in the rectangle representing the universal set
+          <m>U</m> but
+          <b>NOT</b>in
+          <m>D</m> nor in
+          <m>K</m>. Thus
+          <m>z=n(D\cup K)'</m>. } \amp\amp\amp \text{
+          <image source="set4A_Sets_and_Counting_08.png" />}
+        </mrow>
+        <mrow>\text{Since
+          <m>100</m> people participated in the survey,
+          <m>U</m> must contain
+          <m>100</m> objects. This means
+          <m>54+6+9+z = 100</m> or
+          <m>69+z=100</m>. Subtract
+          <m>69</m> from both sides to get
+          <m>z = 31</m>. Record
+          <m>\color{brown}{31}</m> in
+          <m>(D\cup K)'</m>. } \amp\amp\amp \text{
+          <image source="set4A_Sets_and_Counting_09.png" />}
+        </mrow>
+        <mrow>\text{
+          <m>31=n(D\cup K)'</m>} \amp\amp\amp \text{Our Solution:
+          <m>31</m> people have visited neither place. }
+        </mrow>
+      </md>
+    </p>
+    <p>Looking back at the final Venn diagram of the survey of
+      <m>100</m> people in California, we can organize the results in a two-way table as follows:
+    </p>
     <p>
-    <table align="center"  border="1">
-  <tr>
-<td  align="center">The number of ways
-    of choosing an appetizer</td>
-<td  align="center">The number of ways
-     of choosing a main course</td>
-<td align="center">The number of ways
-     of choosing a dessert</td>
-  </tr>
-<tr>
-<td  align ="center"><m>2</m></td>
-<td  align="center"><m>4</m></td>
-<td  align ="center"><m>3</m></td>
-  </tr>
-</table></p>
-<p>
-By multiplying these three numbers we get <m>2\cdot 4\cdot 3=24</m>, which is what we got when we did the problem using a tree diagram.  The procedure we just employed is called the multiplication axiom.
-</p>
-<p><b>The Multiplication Axiom</b>: If a task can be done in <m>m</m> ways, and a second task can be done in <m>n</m> ways, then the operation involving the first task followed by the second can be performed in <m>m\cdot n</m> ways.</p>
-<p>
-The general multiplication axiom is not limited to just two tasks and can be used for any number of tasks.
-</p>
-
- </example>
-
-<example>
-<title> Multiplication Axiom</title>
-<p>
- 
- A truck license plate consists of a letter followed by four digits. How many such license plates are possible?
- <!--   This is T http://cnx.org/content/col10613/1.5/ Example 11.12 page 176  -->
-<p>
- </p>
-<table  align="center">
-  <tr>
-<td colspan="2">FIX ME!! <!--
-
-  Since there are <m>26</m> letters and <m>10</m> digits, we have the number of choices for each listed in the below table.</td>
-  <tr>
-<td colspan="2" align ="center">
-  <table align="center"  border="1">
-  <tr>
-<td  align="center">Letter</td>
-<td  align="center">Digit</td>
-<td  align="center">Digit</td>
-<td  align="center">Digit</td>
-<td  align="center">Digit</td>
-</td>
-  </tr>
-<tr>
-<td  align ="center"><m>26</m></td>
-<td  align="center"><m>10</m></td>
-<td  align ="center"><m>10</m></td>
-<td  align ="center"><m>10</m></td>
-<td  align ="center"><m>10</m></td>
-  </tr>
-</table></td>
-  </tr>
-<tr>
-<td><m>26\cdot 10 \cdot 10 \cdot 10 \cdot 10</m></td>
-<td>Multiply the possibilities using the <b>Multiplication Axiom</b></td>
-  </tr>
-<tr>
-<td>260,000</td>
-<td>Our Solution: There are 260,000 possible such license plates--> I'm broken!</td>
-  </tr>
-</table></p>
-
+      <md>
+        <mrow>
+          <td align="center">
+            <m>\,</m>
+          </td>
+          <td align="center">Disneyland (
+            <m>D</m>)
+          </td>
+          <td align="center">Not Disneyland (
+            <m>D'</m>)
+          </td>
+          <td align="center">Total</td>
+        </mrow>
+        <mrow>
+          <td align ="center">Knott's (
+            <m>K</m>)
+          </td>
+          <td align ="center">
+            <m>\color{red}{6}</m>
+          </td>
+          <td align ="center">
+            <m>\color{green}{9}</m>
+          </td>
+          <td align ="center">
+            <m>15</m>
+          </td>
+        </mrow>
+        <mrow>
+          <td align ="center">Not Knott's (
+            <m>K'</m>)
+          </td>
+          <td align ="center">
+            <m>\color{blue}{54}</m>
+          </td>
+          <td align ="center">
+            <m>\color{brown}{31}</m>
+          </td>
+          <td align ="center">
+            <m>85</m>
+          </td>
+        </mrow>
+        <mrow>
+          <td align ="center">Total</td>
+          <td align ="center">
+            <m>\fbox{60}</m>
+          </td>
+          <td align ="center">
+            <m>40</m>
+          </td>
+          <td align ="center">
+            <m>100</m>
+          </td>
+        </mrow>
+      </md>
+    </p>
+    <p>Notice from the above table, we can determine particular counts.  For example, at the bottom of the Disneyland column is the boxed number
+      <m>\fbox{60}</m>, which is the total number of people surveyed who visited Disneyland.  The red
+      <m>\color{red}{6}</m> is the intersection of row Knott's and column Disneyland, which is
+      <m>n(D\cap K)</m>, the number of people who visited both parks.  The
+      <m>\color{brown}{31}=n(D'\cap K')</m> means
+      <m>\color{brown}{31}</m> did not attend either park.
+    </p>
+    <p>We are not limited to
+      <m>2</m> circles.  Suppose a survey of
+      <m>100</m> exercise conscious people resulted in the following information:
+      <ol>
+        <li>
+          <m>50</m> jog,
+          <m>30</m> swim, and
+          <m>35</m> cycle
+        </li>
+        <li>
+          <m>14</m> jog and swim
+        </li>
+        <li>
+          <m>7</m> swim and cycle
+        </li>
+        <li>
+          <m>9</m> jog and cycle
+        </li>
+        <li>
+          <m>3</m> people take part in all three activities
+        </li>
+      </ol>Since we have
+      <m>3</m> exercise categories (jog, swim, cycle) we will use three circles, one for each group. Use the exercise survey results to assign a number to each region in a corresponding Venn diagram and then answer the given questions in the following examples:
+    </p>
   </example>
+  <example>
+    <title>3-Group Venn Diagram</title>
+    <p>Use the exercise survey results above to assign a number to each region in a corresponding Venn diagram.
+      <!--   http://cnx.org/content/col10613/1.5/ Example 11.8 page 172 -->
+      <p></p>
+      <md>
+        <mrow>\text{Let set
+          <m>J</m> represent the joggers, set
+          <m>S</m> the swimmers and set
+          <m>C</m> the cyclers. } \amp\amp\amp \text{We always begin by first assigning the number to the innermost region and then working our way out.}
+        </mrow>
+        <mrow>\text{Since
+          <m>3</m> people participate in all three activities place a
+          <m>\color{red}{3}</m> in
+          <m>=J\cap S\cap C</m> Let
+          <m>\color{blue}{x}=n((J\cap S)\cap C')</m>(people that jog and swim but don't cycle). Let
+          <m>\color{green}{y}=n((J\cap C)\cap S')</m>. Let
+          <m>\color{brown}{z}=n((S\cap C)\cap J')</m>. } \amp\amp\amp \text{
+          <image source="set4A_Sets_and_Counting_10.png" />}
+        </mrow>
+        <mrow>\text{Since
+          <m>14</m> jog and swim
+          <m>x+3=14</m>, so
+          <m>\color{blue}{x = 11}</m>. Since
+          <m>9</m> jog and cycle
+          <m>y+3=9</m>, so
+          <m>\color{green}{y = 6}</m>. Since
+          <m>7</m> swim and cycle
+          <m>z+3=7</m>, so
+          <m>\color{brown}{z = 4}</m>. After replacing
+          <m>x,y,z</m> with these values label the regions
+          <m>\color{red}{m}, \color{blue}{n},\color{green}{ p}</m>. } \amp\amp\amp \text{
+          <image source="set4A_Sets_and_Counting_11.png" />}
+        </mrow>
+        <mrow>\text{Since
+          <m>50</m> people jog
+          <m>m + 11+3+6=50</m>, so
+          <m>\color{red}{m =30 }</m>. Since
+          <m>30</m> swim
+          <m>n+11+3+4=30</m>, so
+          <m>\color{blue}{n = 12}</m>. Since
+          <m>35</m> cycle
+          <m>p+6+3+4=35</m>, so
+          <m>\color{green}{p = 22}</m>. } \amp\amp\amp \text{
+          <image source="set4A_Sets_and_Counting_12.png" />}
+        </mrow>
+        <mrow>\text{By adding all the entries in all three sets, we get a sum of
+          <m>88</m>. Since
+          <m>100</m> people were surveyed, the number inside the universal set but outside of all three sets is
+          <m>100-88=\color{red}{12}</m>} \amp\amp\amp \text{
+          <image source="set4A_Sets_and_Counting_13.png" />}
+        </mrow>
+        <mrow>\text{Our Solution} \amp\amp\amp \text{
+          <image source="set4A_Sets_and_Counting_14.png" />}
+        </mrow>
+      </md>
+    </p>
+  </example>
+  <example>
+    <title>3-Group Venn Diagram</title>
+    <p>Use the completed Venn diagram from
+      <b>Example 4A-5</b>to determine the number of people surveyed who jog but do not swim or cycle.
+      <!--   http://cnx.org/content/col10613/1.5/ Example 11.8(a) page 172 -->
+      <p></p>
+      <md>
+        <mrow>\text{The region which contains joggers who do not swim or cycle is highlighted in
+          <m>\color{red}{\text{red}}</m>. } \amp\amp\amp \text{
+          <image source="set4A_Sets_and_Counting_15.png" />}
+        </mrow>
+        <mrow>\text{
+          <m>30</m>} \amp\amp\amp \text{Our Solution:
+          <m>30</m> people jog but do not swim or cycle. }
+        </mrow>
+      </md>
+    </p>
+  </example>
+  <example>
+    <title>3-Group Venn Diagram</title>
+    <p>Use the completed Venn diagram from
+      <b>Example 4A-5</b>to determine the number of people surveyed who take part in only one of the activities.
+      <!--   http://cnx.org/content/col10613/1.5/ Example 11.8(b) page 172 -->
+      <p></p>
+      <md>
+        <mrow>\text{The regions which contain people taking part in exactly one activity are highlighted in
+          <m>\color{blue}{\text{blue}}</m>. } \amp\amp\amp \text{
+          <image source="set4A_Sets_and_Counting_16.png" />}
+        </mrow>
+        <mrow>\text{
+          <m>30+12+22=64</m>} \amp\amp\amp \text{Our Solution:
+          <m>64</m> people take part in only one of the activities. }
+        </mrow>
+      </md>
+    </p>
+  </example>
+  <example>
+    <title>3-Group Venn Diagram</title>
+    <p>Use the completed Venn diagram from
+      <b>Example 4A-5</b>to determine the number of people surveyed who do not take part in any of these activities.
+      <!--   http://cnx.org/content/col10613/1.5/ Example 11.8(c) page 172 -->
+      <p></p>
+      <md>
+        <mrow>\text{The region which contains people who do not take part in any of these activities is highlighted in
+          <m>\color{green}{\text{green}}</m>. } \amp\amp\amp \text{
+          <image source="set4A_Sets_and_Counting_17.png" />}
+        </mrow>
+        <mrow>\text{
+          <m>12</m>} \amp\amp\amp \text{Our Solution:
+          <m>12</m> people do not take part in any of these activities. }
+        </mrow>
+      </md>
+    </p>
+  </example>
+</subsection>
+<subsection>
+  <title>Tree Diagrams and the Multiplication Axiom</title>
+  <p>In this Module, we are developing counting techniques that will be used in the following Module to study probability. One of the most fundamental of such techniques is called the
+    <b>Multiplication Axiom</b>. Before we introduce the multiplication axiom, we first consider some examples.
+  </p>
+  <example>
+    <title>2-Step Tree Diagram</title>
+    <p>A restaurant has a special choose
+      <m>2</m> dinner deal: for one low price a customer may select one of two appetizers and one of four main courses.  How many different dinner combinations consisting of one appetizer and one main course are possible?
+      <!--   Modeled after http://cnx.org/content/col10613/1.5/ Example 11.9 page 173 but less sexist!! -->
+      </p>
+      <p>Label the two appetizers
+          <m>a_1</m> and
+          <m>a_2</m>.</p>
+          <p>Label the four main dishes
+          <m>m_1, m_2, m_3</m> and
+          <m>m_4</m>.</p>
+        <p>Create a tree diagram for this problem.
+          <ol>
+            <li>Since we may select one of two appetizers, the tree begins with two branches, one for each of
+          <m>a_1</m> and
+          <m>a_2</m>.</li>
+          <li>Then since we may select one of four main course options, each of the first two branches leads to four more branches. The tree has
+          <m>2\times 4 = 8</m> endpoints, one for each of the
+          <m>8</m> dinner special combinations.</li>
+        </ol>
+      </p>
+          
+            <image source="set4A_Sets_and_Counting_18.png" />
+      <md>
+        <mrow>8\amp\amp\amp \text{Our Solution:}</mrow>
+        </md>
+        <p>There are
+          <m>8</m> possible different dinner combinations  consisting of one appetizer and one main course. For example, one combination
+          <m>a_2, m_3</m> represents the choice of appetizer
+          <m>2</m> with main course
+          <m>3\checkmark</m>.
+           </p></example>
+    <p>The tree diagram gives us all eight possibilities. The method involves two steps. First we choose an appetizer. We have two choices:
+      <m>a_1</m> or
+      <m>a_2</m>. If we choose
+      <m>a_1</m>, we have four main dishes to go with it;
+      <m>m_1, m_2, m_3</m> and
+      <m>m_4</m>. Similarly if we choose
+      <m>a_2</m>, we can select any one of the four main dishes, again. The tree diagram helps us visualize these possibilities.
+    </p>
+    <p>The reader should note that the process involves two steps. For the first step of choosing an appetizer, there are two choices, and for each choice of an appetizer, there are four choices of a main dish. So altogether there
+      <m>2\cdot 4=8</m> possibilities. If, in the above example, we add a dessert, we have the following problem:
+    </p>
 
-<example>
-<title> Multiplication Axiom</title>
-<p>
+  <example xml:id="example-3-step-tree">
+    <title>3-Step Tree Diagram</title>
+    <p>A restaurant has a special choose
+      <m>3</m> dinner deal: for one low price a customer may select one of two appetizers, one of four main courses, and one of three desserts.  How many different dinner combinations consisting of one appetizer, one main course and one dessert are possible?
+      <!--   Modeled after http://cnx.org/content/col10613/1.5/ Example 11.10 page 174 but less sexist!! -->
+      </p>
+      <p>Label the two appetizers
+          <m>a_1</m> and
+          <m>a_2</m>. 
+         </p>
+         <p>Label the four main dishes
+          <m>m_1, m_2, m_3</m> and
+          <m>m_4</m>.</p>
+          <p>Label the three desserts
+          <m>d_1, d_2</m> and
+          <m>d_3</m>.</p>
+           <p>The tree diagram below results. (Note that only 6 of the actual possible dinner combinations are listed at the far right.) The tree has
+          <m>2\times 4\times 3 = 24</m> endpoints, one for each of the
+          <m>24</m> dinner special combinations.</p>
+          <image source="set4A_Sets_and_Counting_19.png"  width ="407" height="273" />}
+        <md>
+        <mrow>24 \amp\amp\amp \text{Our Solution:}</mrow>
+        </md>
+        <p>There are
+          <m>24</m> possible different dinner combinations consisting of one appetizer, one main course, and one dessert.<m>\checkmark</m>
+        
+    </p></example>
+    <p>The important thing to observe here, again, is that this is a three step process. There are two choices for the first step of choosing an appetizer. For each choice of a appetizer, there are four choices of a main course, and for each combination of an appetizer and main course, there are three choices of selecting a dessert. All in all, we have
+      <m>2\times 4\times 3 = 24</m> different possibilities.
+    </p>
+    <p>The tree diagrams help us visualize the different possibilities, but they are not practical when the possibilities are numerous. Besides, we are mostly interested in counting the number of elements in the set and not the actual possibilities. But once the problem is envisioned, we can solve it without a tree diagram. The two examples we just solved may have given us a clue to do just that.</p>
+    <p>Let us now try to solve Example <xref ref="example-3-step-tree" /> without a tree diagram. Recall that the problem involved three steps: choosing an appetizer, choosing a main course, and choosing a dessert. The number of ways of choosing each are listed below.
+    </p>
+    <p>
+      <md>
+        <mrow>
+          <td align="center">The number of ways of choosing an appetizer</td>
+          <td align="center">The number of ways of choosing a main course</td>
+          <td align="center">The number of ways of choosing a dessert</td>
+        </mrow>
+        <mrow>
+          <td align ="center">
+            <m>2</m>
+          </td>
+          <td align="center">
+            <m>4</m>
+          </td>
+          <td align ="center">
+            <m>3</m>
+          </td>
+        </mrow>
+      </md>
+    </p>
+    <p>By multiplying these three numbers we get
+      <m>2\cdot 4\cdot 3=24</m>, which is what we got when we did the problem using a tree diagram.  The procedure we just employed is called the multiplication axiom.
+    </p>
+    <p>
+      <term>The Multiplication Axiom</term>: If a task can be done in
+      <m>m</m> ways, and a second task can be done in
+      <m>n</m> ways, then the operation involving the first task followed by the second can be performed in
+      <m>m\cdot n</m> ways.
+    </p>
+    <p>The general multiplication axiom is not limited to just two tasks and can be used for any number of tasks.</p>
  
-  In how many different ways can a <m>3</m>-question true-false test be answered?
- <!--   This is T http://cnx.org/content/col10613/1.5/ Example 11.13 page 176  -->
-
- </p>
-<table  align="center">
-  <tr>
-<td colspan="2"> FIX ME! <!--Since there are two choices for each question, we have</td>
-  <tr>
-<td colspan="2" align ="center">
-                <table align="center"  border="1">
-  <tr>
-<td  align="center">Question 1</td>
-<td  align="center">Question 2</td>
-<td  align="center">Question 3</td>
-  </tr>
-<tr>
-<td  align ="center"><m>2</m></td>
-<td  align="center"><m>2</m></td>
-<td  align ="center"><m>2</m></td>
-  </tr>
-</table></td>
-  </tr>
-<tr>
-<td><m>2\cdot 2 \cdot 2 </m></td>
-<td>Multiply the possibilities using the <b>Multiplication Axiom</b></td>
-  </tr>
-<tr>
-<td align="right"><m>8</m></td>
-<td>-->Our Solution: There are <m>8</m> different ways.</td>
-  </tr>
-</table>
- <p>
- We list all eight possibilities below:</p>
- <p>TTT, TTF, TFT, TFF, FTT, FTF, FFT, FFF</p>
-
-<p>
-The reader should note that the first letter in each possibility is the answer corresponding to the first question, the second letter corresponds to the answer to the second question and so on. For example, TFF, says that the answer to the first question is given as true, and the answers to the second and third questions false.
-</p>
-
- </example>
-
-<example>
-<title> Multiplication Axiom</title>
-<p>
- 
- In how many different ways can four people be seated in a row?
- <!--   This is T http://cnx.org/content/col10613/1.5/ Example 11.14 page 177  -->
-<p>
- </p>
-<table  align="center">
-  <tr>
-<td colspan="2">Suppose we put four chairs in a row, and proceed to put four people in these seats.</td>
-  </tr>
-<tr>
-<td colspan="2">There are four choices for the first chair we choose. Once a person sits down in that chair, there are only three choices for the second chair, and so on. We list as shown below.</td>
-  </tr>
-<tr>
-<td colspan="2" align ="center"> FIX ME!! <!--
-                <table align="center"  border="1">
-  <tr>
-<td  align="center">Choices for chair 1</td>
-<td  align="center">Choices for chair 2</td>
-<td  align="center">Choices for chair 3</td>
-<td  align="center">Choices for chair 4</td>
-  </tr>
-<tr>
-<td  align ="center"><m>4</m></td>
-<td  align="center"><m>3</m></td>
-<td  align ="center"><m>2</m></td>
-<td  align ="center"><m>1</m></td>
-  </tr>
-</table></td>
-  </tr>
-<tr>
-<td align="right"><m>4\cdot 3 \cdot 2 \cdot 1 </m></td>
-<td>Multiply the possibilities using the <b>Multiplication Axiom</b></td>
-  </tr>
-<tr>
-<td align="right"><m>24</m></td>
-<td>-->Our Solution: There are <m>24</m> different ways.</td>
-  </tr>
-</table></p>
-
-</example>
+  <example>
+    <title>Multiplication Axiom</title>
+    <p>A truck license plate consists of a letter followed by four digits. How many such license plates are possible?
+      <!--   This is T http://cnx.org/content/col10613/1.5/ Example 11.12 page 176  -->
+      </p>
+      <md>
+        <mrow>
+          <td colspan="2">FIX ME!!
+            <!-- Since there are <m>26</m> letters and <m>10</m> digits, we have the number of choices for each listed in the below table.</td> <tr> <td colspan="2" align ="center"> <table align="center"  border="1"> <tr> <td  align="center">Letter</td> <td  align="center">Digit</td> <td  align="center">Digit</td> <td  align="center">Digit</td> <td  align="center">Digit</td> </td> </mrow><mrow> <td  align ="center"><m>26</m></td> <td  align="center"><m>10</m></td> <td  align ="center"><m>10</m></td> <td  align ="center"><m>10</m></td> <td  align ="center"><m>10</m></td> </mrow></md></td> </tr><mrow> <td><m>26\cdot 10 \cdot 10 \cdot 10 \cdot 10</m></td> <td>Multiply the possibilities using the <b>Multiplication Axiom</b></td> </mrow><mrow> <td>260,000</td> <td>Our Solution: There are 260,000 possible such license plates-->I'm broken!
+          </td>
+        </mrow>
+      </md>
+   
+  </example>
+  <example>
+    <title>Multiplication Axiom</title>
+    <p>In how many different ways can a
+      <m>3</m>-question true-false test be answered?
+      <!--   This is T http://cnx.org/content/col10613/1.5/ Example 11.13 page 176  -->
+    </p>
+    <md>
+      <mrow>
+        <td colspan="2">FIX ME!
+          <!--Since there are two choices for each question, we have</td> <tr> <td colspan="2" align ="center"> <table align="center"  border="1"> <tr> <td  align="center">Question 1</td> <td  align="center">Question 2</td> <td  align="center">Question 3</td> </mrow><mrow> <td  align ="center"><m>2</m></td> <td  align="center"><m>2</m></td> <td  align ="center"><m>2</m></td> </mrow></md></td> </tr><mrow> <td><m>2\cdot 2 \cdot 2 </m></td> <td>Multiply the possibilities using the <b>Multiplication Axiom</b></td> </mrow><mrow> <td align="right"><m>8</m></td> <td>-->Our Solution: There are
+          <m>8</m> different ways.
+        </td>
+      </mrow>
+    </md>
+    <p>We list all eight possibilities below:</p>
+    <p>TTT, TTF, TFT, TFF, FTT, FTF, FFT, FFF</p>
+    <p>The reader should note that the first letter in each possibility is the answer corresponding to the first question, the second letter corresponds to the answer to the second question and so on. For example, TFF, says that the answer to the first question is given as true, and the answers to the second and third questions false.</p>
+  </example>
+  <example>
+    <title>Multiplication Axiom</title>
+    <p>In how many different ways can four people be seated in a row?
+      <!--   This is T http://cnx.org/content/col10613/1.5/ Example 11.14 page 177  -->
+      </p>
+      <md>
+        <mrow>\text{Suppose we put four chairs in a row, and proceed to put four people in these seats.}
+      </mrow>
+      <mrow>
+        \text{There are four choices for the first chair we choose. Once a person sits down in that chair, there are only three choices for the second chair, and so on. We list as shown below.}
+      </mrow>
+      <mrow>
+        <td colspan="2" align ="center">\text{FIX ME!!
+          <!-- <table align="center"  border="1"> <tr> <td  align="center">Choices for chair 1} \amp\amp\amp \text{Choices for chair 2}\text{Choices for chair 3} \amp\amp\amp \text{Choices for chair 4}</mrow><mrow> <td  align ="center"><m>4</m></td> <td  align="center"><m>3</m></td> <td  align ="center"><m>2</m></td> <td  align ="center"><m>1</m></td> </mrow></md></td> </tr><mrow>\text{<m>4\cdot 3 \cdot 2 \cdot 1 </m>} \amp\amp\amp \text{Multiply the possibilities using the <b>Multiplication Axiom</b>}</mrow><mrow>\text{<m>24</m>} \amp\amp\amp \text{-->Our Solution: There are
+          <m>24</m> different ways. }</td>
+        </mrow>
+      </md>
+    
+  </example>
+</subsection>
 </section>
-</chapter>
