@@ -73,10 +73,10 @@
                   y\text{-axis} \amp\amp\amp \text{Our Solution}</mrow>
               </md>
               <p>
-                <div class="WWbox">Points in the plane are entered as
+                <computation>Points in the plane are entered as
                   <b>(#,#)= (horizontal #, vertical #)=(independent, dependent)</b>in
                   <tt>WeBWorK</tt>.
-                </div>
+                </computation>
               </p>
             </example>
             <p>Just as we can give the coordinates for a set of points, we can take a set of points and plot them on the plane.</p>

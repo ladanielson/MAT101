@@ -4,8 +4,8 @@
     <ul>
       <li>Simplify expressions using the properties of exponents.</li>
       <li>Convert between standard and scientific notation.</li>
-      <li>Add and subtract expressions using scientific notation and exponent properties.</li>
       <li>Multiply and divide expressions using scientific notation and exponent properties.</li>
+      <li>Add and subtract expressions using scientific notation and exponent properties.</li>
       <li>Solve equations using scientific notation and exponent properties.</li>
     </ul>
   </introduction>
@@ -128,10 +128,11 @@
           \(7^8\)} \amp\amp\amp \text{Our Solution}</mrow>
       </md>
     </example>
+    <!--Remove this example
     <example>
       <title>Quotient Rule of Exponents</title>
       <p>
-        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 201 pg 178-->
+        <!## Cite Beginning and Intermediate Algebra by Tyler Wallace Example 201 pg 178##>
       </p>
       <md>
         <mrow>\text{
@@ -142,6 +143,7 @@
           \(\frac{5}{2} a^2 b^2 c\)} \amp\amp\amp \text{Our Solution}</mrow>
       </md>
     </example>
+    -->
     <p>A third property we will look at will have an exponent problem raised to a second exponent. This is investigated in the following example:</p>
     <example>
       <title>Powers with Exponents</title>
@@ -227,10 +229,10 @@
       <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 206 pg 179-->
       <md>
         <mrow>\text{
-            \((x^3y z^2)^4\)} \amp\amp\amp \text{Put the exponent of
+            \((x^3y)^4\)} \amp\amp\amp \text{Put the exponent of
             \(4\) on each factor, multiplying powers}</mrow>
         <mrow>\text{
-            \(x^{12} y^4 z^8\)} \amp\amp\amp \text{Our solution
+            \(x^{12} y^4\)} \amp\amp\amp \text{Our solution
           <div class="WWbox">In
             <tt>WeBWorK</tt>type multi-digit exponents in parentheses--
             <b>x^(12)</b>
@@ -890,13 +892,14 @@
             \(5.3 \times 10^{3}\)} \amp\amp\amp \text{Our Solution}</mrow>
   </md>
 </example>
+<!--REMOVE THESE? THEY ARE IN THE APPLICATION SECTION: 2C
 <p>We can use exponent properties to solve equations involving scientific notation.</p>
 <example>
   <title>Solve Equation with Scientific</title>
     <p>Solve the equation for
       <m>x</m>.
     </p>
-    <!--Our own-->
+    <!##Our own##>
   <md>
     <mrow>\text{
           \(7\times 10^{3}x = 1.4\times 10^{-7}\)} \amp\amp\amp \text{Solve for
@@ -934,7 +937,7 @@
       <m>12</m>grams of carbon is
       <m>6.022\times 10^{23}.</m>Determine the mass of one atom of carbon.
     </p>
-    <!-- Our own-->
+    <!## Our own##>
   <md>
     <mrow>\text{
           \(6.022\times 10^{23}\) atoms yields
@@ -959,5 +962,6 @@
           \(1.99 \times 10^{-23}\) gram.}</mrow>
   </md>
 </example>
+-->
 </subsection>
 </section>

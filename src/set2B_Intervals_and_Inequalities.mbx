@@ -3,6 +3,7 @@
   <introduction>
     <ul>
       <li>Use inequality and interval notation.</li>
+        <li>Solve and give interval notation to the solution of linear and compound inequalities.</li>
     </ul>
   </introduction>
   
@@ -383,5 +384,536 @@
                           </md>
                         </example>
                       </subsection>
-                    </section>
                     
+  <subsection>
+    <title>Linear Inequalities</title>
+    <p>Solving inequalities is very similar to solving equations with one exception. Consider the following inequality and what happens when various operations are done to it. Notice what happens to the inequality sign as we add, subtract, multiply and divide by both positive and negative numbers to keep the statement a true statement.</p>
+    <p>
+      <md>
+        <mrow>\text{Start with the true statement
+        \(5\gt 1\)} \amp\amp\amp \text{Add
+        \(3\) to both sides}</mrow>
+        <mrow>\text{We now have
+        \(8\gt 4\)} \amp\amp\amp \text{This is still true.  Now subtract
+        \(2\) from both sides}</mrow>
+        <mrow>\text{We now have
+        \(6\gt 2\)} \amp\amp\amp \text{This is still true.  Next multiply both sides by
+        \(3\)}</mrow>
+        <mrow>\text{We now have
+        \(18\gt 6\)} \amp\amp\amp \text{This is still true.  Now divide both sides by
+        \(2\)}</mrow>
+        <mrow>\text{We now have
+        \(9\gt 3\)} \amp\amp\amp \text{This is still true.  Next add
+        \(-1\) to both sides}</mrow>
+        <mrow>\text{We now have
+        \(8\gt 2\)} \amp\amp\amp \text{This is still true.  Next multiply both sides by
+        \(-1\)}</mrow>
+        <mrow>\text{We now have
+        \(-8\color{red}{\lt}-2\)} \amp\amp\amp \text{Notice the inequality sign changed direction to keep this true!}</mrow>
+        <mrow>\text{Continue with
+        \(-8\lt -2\)} \amp\amp\amp \text{Now divide both sides by
+        \(-2\)}</mrow>
+        <mrow>\text{We now have
+        \(4\color{red}{\gt}1\)} \amp\amp\amp \text{Notice the inequality sign changed direction again to keep this true!}</mrow>
+      </md>
+    </p>
+    <p>As the above problem illustrates, we can add, subtract, multiply, or divide on both sides of the inequality. But if we multiply or divide by a negative number, the symbol will need to "flip" directions. We will keep that in mind as we solve inequalities.</p>
+    <example>
+      <title>Solve an Inequality</title>
+      <p>Solve and give the interval notation.
+        <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 155 pg 120-->
+      </p>
+      <md>
+        <mrow>\text{
+        \(5-2x\geq 11\)} \amp\amp\amp \text{Subtract
+        \(5\) from both sides}</mrow>
+        <mrow>\text{
+        \(\underline{-5\phantom{12345}-5}\)} \amp\amp\amp \text{
+        \(\,\)}</mrow>
+        <mrow>\text{
+        \(-2x\geq 6\)} \amp\amp\amp \text{Divide both sides by
+        \(-2\)}</mrow>
+        <mrow>\text{
+        \(\overline{-2}\phantom{12}\overline{-2}\)} \amp\amp\amp \text{Divide by a negative: flip inequality sign!}</mrow>
+        <mrow>\text{
+        \(x\color{red}{\leq}-3\)} \amp\amp\amp \text{Graph, starting at
+        \(-3\), going down with ] for less than or equal to}</mrow>
+      </md>
+      <p align="center">
+        <figure xml:id="figure-inequality-solution-x-leq-neg3">
+          <image xml:id="inequality-solution-x-leq-neg3">
+            <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+              <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \fill[color=red] (-3,.5) circle (.1cm); \draw[red,
+                <-] (-5.5,.5) -- (-3,.5); \end{tikzpicture}} ]]></latex-image-code>
+              </image>
+            </figure>
+          </p>}
+          <p>Our graph</p>
+          <md>
+            <mrow>\text{
+            \((-\infty, -3]\)} \amp\amp\amp \text{Interval notation}</mrow>
+          </md>
+        </example>
+        <p>The inequality we solve can get as complex as the linear equations we solved. We will use all the same patterns to solve these inequalities as we did for solving equations. Just remember that any time we multiply or divide by a negative number the inequality symbol switches directions (multiplying or dividing by a positive does not change the symbol!)</p>
+        <example>
+          <title>Solve an Inequality</title>
+          <p>Solve and give the interval notation.
+            <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 156 pg 121-->
+          </p>
+          <md>
+            <mrow>\text{
+            \(3(2x-4)+4x\lt 4(3x-7)+8\)} \amp\amp\amp \text{Distribute}</mrow>
+            <mrow>\text{
+            \(6x-12+4x\lt 12x-28+8\)} \amp\amp\amp \text{Combine like terms}</mrow>
+            <mrow>\text{
+            \(10x-12\lt 12x-20\)} \amp\amp\amp \text{"Move" variable to one side}</mrow>
+            <mrow>\text{
+            \(\underline{-10x\phantom{12345}-10x}\phantom{1234}\)} \amp\amp\amp \text{Subtract
+            \(10x\) from both sides}</mrow>
+            <mrow>\text{
+            \(-12\lt 2x-20\)} \amp\amp\amp \text{Isolate variable on
+              <b>RHS</b>}
+            </mrow>
+            <mrow>\text{
+            \(\underline{+20\phantom{1234}+20}\)} \amp\amp\amp \text{Add
+            \(20\) to both sides}</mrow>
+            <mrow>\text{
+            \(8\lt 2x\)} \amp\amp\amp \text{Divide both sides by
+            \(2\)}</mrow>
+            <mrow>\text{
+            \(\overline{2}\phantom{123}\overline{2}\phantom{1}\)} \amp\amp\amp \text{Divide by a positive: DON'T flip inequality sign!}</mrow>
+            <mrow>\text{
+            \(4\lt x\)} \amp\amp\amp \text{Be careful with graph,
+            \(x\) is larger!}</mrow>
+          </md>
+
+              <p align="center">
+                <figure xml:id="figure-inequality-solution-x-gt-4">
+                  <image xml:id="inequality-solution-x-gt-4">
+                    <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                      <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \draw[color=blue] (4,.5) circle (.1cm); \draw[blue, ->] (4.1,.5) -- (5.5,.5); \end{tikzpicture}} ]]></latex-image-code>
+                    </image>
+                  </figure>
+                </p> 
+                <p>Our graph</p>
+              <md>
+              <mrow>\text{
+              \((4, \infty)\)} \amp\amp\amp \text{Interval notation}</mrow>
+            </md>
+          </example>
+          <p>It is important to be careful when the inequality is written backwards as in the previous example (
+            <m>4 \lt x</m>rather than
+            <m>x \gt 4</m>). Often students draw their graphs the wrong way when this is the case. The inequality symbol opens to the variable, this means the variable is greater than
+            <m>4</m>. So we must shade above the
+            <m>4</m>.
+          </p>
+        </subsection>
+        <subsection>
+          <title>Compound Inequalities</title>
+          <p>Several inequalities can be combined together to form what are called compound inequalities. We will consider one type of compound inequality in this lesson.</p>
+          <p>One type of compound inequality is an AND inequality. AND inequalities require both statements to be true. If one is false, they both are false. Number line graphs are useful when solving these inequalities.  When our solution is given in interval notation it will be expressed in a manner very similar to single inequalities.</p>
+          <example>
+            <title>Compound Inequality</title>
+            <p>Solve the compound inequality, graph the solution, and express it in both inequality and interval notation.
+              <!-- Modeled after our WeBWorK-->
+            </p>
+            <md>
+              <mrow>
+              -4\leq 2x-4 \lt 2\amp\amp\amp\text{The inequality requires the expression
+              \(\color{blue}{2x-4}\) to lie in the interval
+              \([-4,2)\)}</mrow></md>
+                <p align="center">
+                  <figure xml:id="figure-inequality-solution-neg4-leq-2x-4-lt-2">
+                    <image xml:id="inequality-solution-neg4-leq-2x-4-lt-2">
+                      <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                        <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \fill[color=blue] (-4,.5) circle (.1cm); \draw[color=blue] (2,.5) circle (.1cm); \draw[blue] (-4,.5) -- (1.9,.5); \node[anchor=south, color=blue] at (-1,.5) {$2x-4$}; \end{tikzpicture}} ]]></latex-image-code>
+                      </image>
+                    </figure>
+                  </p>
+                <md>
+                <mrow>\text{
+                \(-4\leq 2x-4 \lt 2\)} \amp\amp\amp \text{Add
+                \(4\) to all three parts of the compound inequality}</mrow>
+                <mrow>\text{
+                \(\underline{+4\phantom{1234}+4\phantom{1}+4}\)} \amp\amp\amp \text{
+                \(\,\)}</mrow>
+                <mrow>\text{
+                \(0\leq 2x \lt 6\)} \amp\amp\amp \text{Divide all three parts by
+                \(2\)}</mrow>
+                <mrow>\text{
+                \(\overline{ 2 }\phantom{123}\overline{ 2 }\phantom{1234}\overline{ 2 }\)} \amp\amp\amp \text{
+                \(\,\)}</mrow>
+                <mrow>\text{
+                \(0\leq \color{red}{x} \lt 3\)} \amp\amp\amp \text{ }</mrow></md>
+                  <p align="center">
+                    <figure xml:id="figure-inequality-solution-zero-leq-x-lt-3">
+                      <image xml:id="inequality-solution-zero-leq-x-lt-3">
+                        <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                          <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \fill[color=red] (0,.5) circle (.1cm); \draw[color=red] (3,.5) circle (.1cm); \draw[red] (0,.5) -- (2.9,.5); \node[anchor=south, color=red] at (1.5,.5) {$x$}; \end{tikzpicture}} ]]></latex-image-code>
+                        </image>
+                      </figure>
+                    </p>
+                  <md>
+                  <mrow>\text{
+                  \(0\leq x \lt 3\)} \amp\amp\amp \text{Our Solution: Inequality Notation}</mrow>
+                  <mrow>\text{
+                  \([0,3)\)} \amp\amp\amp \text{Our Solution: Interval Notation}</mrow>
+                </md>
+              </example>
+              <example>
+                <title>Compound Inequality (Negative Coefficient)</title>
+                <p>Solve the compound inequality, graph the solution, and express it in both inequality and interval notation.
+                  <!-- Modeled after our WeBWorK-->
+                </p>
+                <md>
+                  <mrow>
+                  -3\lt 7-2x \leq -1\amp\amp\amp\text{The inequality requires the expression
+                  \(\color{blue}{7-2x}\) to lie in the interval
+                  \((-3,-1]\)}</mrow></md>
+                    <p align="center">
+                      <figure xml:id="figure-inequality-solution-neg3-leq-7-2x-lt-neg1">
+                        <image xml:id="inequality-solution-neg3-leq-7-2x-lt-neg1">
+                          <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                            <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \draw[color=blue] (-3,.5) circle (.1cm); \fill[color=blue] (-1,.5) circle (.1cm); \draw[blue] (-2.9,.5) -- (-1,.5); \node[anchor=south, color=blue] at (-2,.5) {$7-2x$}; \end{tikzpicture}} ]]></latex-image-code>
+                          </image>
+                        </figure>
+                      </p>
+                    <md>
+                    <mrow>\text{
+                    \(-3\lt 7-2x \leq -1\)} \amp\amp\amp \text{Subtract
+                    \(7\) from all three parts of the compound inequality}</mrow>
+                    <mrow>\text{
+                    \(\underline{-7\phantom{1}-7\phantom{1234}-7}\)} \amp\amp\amp \text{
+                    \(\,\)}</mrow>
+                    <mrow>\text{
+                    \(-10\lt -2x \leq -8\)} \amp\amp\amp \text{Divide all three parts by
+                    \(-2\):
+                      <b>FLIP SIGNS</b>}
+                    </mrow>
+                    <mrow>\text{
+                    \(\overline{ -2 }\phantom{123}\overline{ -2 }\phantom{1234}\overline{ -2 }\)} \amp\amp\amp \text{
+                    \(\,\)}</mrow>
+                    <mrow>\text{
+                    \(5\gt \color{red}{x} \geq 4\)} \amp\amp\amp \text{ }</mrow></md>
+                      <p align="center">
+                        <figure xml:id="figure-inequality-solution-4-leq-x-lt-5">
+                          <image xml:id="inequality-solution-4-leq-x-lt-5">
+                            <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                              <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \fill[color=red] (4,.5) circle (.1cm); \draw[color=red] (5,.5) circle (.1cm); \draw[red] (4,.5) -- (4.9,.5); \node[anchor=south, color=red] at (4.5,.5) {$x$}; \end{tikzpicture}} ]]></latex-image-code>
+                            </image>
+                          </figure>
+                        </p>
+                      <md>
+                      <mrow>\text{
+                      \(4\leq x \lt 5\)} \amp\amp\amp \text{Our Solution: Inequality Notation}</mrow>
+                      <mrow>\text{
+                      \([4,5)\)} \amp\amp\amp \text{Our Solution: Interval Notation}</mrow>
+                    </md>
+                  </example>
+                </subsection>
+    <subsection>
+      <title>Absolute Value Inequalities</title>
+      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace is licensed under a Creative Commons Attribution 3.0 Unported License. (http://creativecommons.org/licenses/by/3.0/) Based on a work at http://wallace.ccfaculty.org/book/book.html. pages 128-131-->
+      <p>When an inequality has an absolute value we will have to remove the absolute value in order to graph the solution or give interval notation. The way we remove the absolute value depends on the direction of the inequality symbol.</p>
+      <p>Consider
+        <m>\lvert x\rvert \lt 2</m>.
+      </p>
+      <p>Absolute value is defined as distance from zero. Another way to read this inequality would be the distance from zero is
+        <b>less</b>than
+        <m>2</m>. On a number line we will shade all points that are
+        <b>less than</b>
+        <m>2</m> units away from zero.
+      </p>
+      <p align="center">
+        <figure xml:id="figure-absolute-value-x-lt-2">
+          <image xml:id="absolute-value-x-lt-2">
+            <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+              <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \draw[color=blue] (-2,.5) circle (.1cm); \draw[color=blue] (2,.5) circle (.1cm); \draw[blue] (-1.9,.5) -- (1.9,.5); \node[anchor=south, color=blue] at (0,.5) {$-2
+                <x<2$}; \end{tikzpicture}} ]]></latex-image-code>
+              </image>
+            </figure>
+          </p>
+          <p>This graph looks just like the graphs of the three part compound inequalities! When the absolute value is less than a positive number we will remove the absolute value by changing the problem to a three part inequality, with the negative value on theleft and the positive value on the right: \[\lvert x\rvert  \lt 2 \text{ is equivalent to  } \color{blue}{-2 \lt x \lt 2}\] as the graph above illustrates.</p>
+          <p>Consider
+            <m>\lvert x\rvert \gt 2</m>.
+          </p>
+          <p>Absolute value is defined as distance from zero. Another way to read this inequality would be the distance from zero is
+            <b>greater</b>than
+            <m>2</m>. On the number line we shade all points that are
+            <b>more than</b>
+            <m>2</m> units away from zero.
+          </p>
+          <p align="center">
+            <figure xml:id="figure-absolute-value-x-gt-2">
+              <image xml:id="absolute-value-x-gt-2">
+                <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                  <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \draw[color=red] (-2,.5) circle (.1cm); \draw[red,
+                    <-] (-5.5,.5) -- (-2.1,.5); \node[anchor=south, color=red] at (-4,.5) {$x<-2$}; \draw[color=blue] (2,.5) circle (.1cm); \draw[blue, ->] (2.1,.5) -- (5.5,.5); \node[anchor=south, color=blue] at (4,.5) {$x>2$}; \end{tikzpicture}} ]]></latex-image-code>
+                  </image>
+                </figure>
+              </p>
+              <p>This graph looks just like the graphs of the OR compound inequalities! When the absolute value is greater than a positive number we will remove the absolute value by changing the problem to an OR inequality, the first inequality looking just like the problem with no absolute value, the second flipping the inequality symbol and changing the value to a negative: \[\lvert x\rvert  \gt 2 \text{ is equivalent to  } \color{blue}{x\gt 2} \text{ or }\color{red}{ x \lt -2}\] as the graph above illustrates.</p>
+              <p>For all absolute value inequalities we can also express our answers in intervalnotation which is done the same way it is done for standard compound inequalities.</p>
+              <p>We can solve absolute value inequalities much like we solved absolute value equations.
+                <ol>
+                  <li>Isolate the absolute value</li>
+                  <ul>
+                    <li>If
+                      <m>\lvert \cdot\rvert </m> is less than a negative number,
+                      <font color="#FF0000"/>STOP: No solution
+                    </li>
+                  </ul>
+                  <li>"Remove" the absolute value</li>
+                  <ul>
+                    <li>If
+                      <m>\lvert \text{expression}\rvert \lt p</m> is
+                      <b>less than a positive number</b>make a three part inequality:
+                      <m>-p\lt \text{expression}\lt p</m>
+                    </li>
+                    <li>If
+                      <m>\lvert \text{expression}\rvert \gt p</m> is
+                      <b>greater than a positive number</b>make an OR inequality:
+                      <m>\text{expression}\gt p</m> or
+                      <m>\text{expression}\lt -p</m>
+                    </li>
+                  </ul>
+                  <li>Solve the inequalities</li>
+                  <ul>
+                    <li>
+                      <b>Important:</b>if we multiply or divide by a negative number the inequality symbol will switch directions!
+                    </li>
+                  </ul>
+                </ol>
+              </p>
+              <example>
+                <title>Absolute Value Inequality: OR inequality</title>
+                <p>Solve, graph, and give interval notation for the solution.</p>
+                <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 160 pg 129-->
+                <p>
+                  <md>
+                    <mrow>\text{
+                      \(\lvert 4x-5\rvert \geq 6\)} \amp\amp\amp \text{Absolute value is greater than a positive number, use OR inequality}
+                    </mrow>
+                    <mrow>\text{
+                      \(4x-5\geq 6\) OR
+                      \(4x-5\leq -6\)} \amp\amp\amp \text{Solve both inequalities}
+                    </mrow>
+                    <mrow>\text{
+                      \(\underline{+5\phantom{1}+5}\phantom{1234567}\underline{+5\phantom{12}+5}\)} \amp\amp\amp \text{Add
+                      \(5\) to both sides of each inequality }
+                    </mrow>
+                    <mrow>\text{
+                      \(4x\geq 11\) OR
+                      \(4x\leq -1\)} \amp\amp\amp \text{Divide both sides by
+                      \(4\)}
+                    </mrow>
+                    <mrow>\text{
+                      \(\overline{4}\phantom{1234}\overline{4}\phantom{1234}\overline{4}\phantom{12345}\overline{4}\)} \amp\amp\amp \text{
+                      \(\,\)}
+                    </mrow>
+                    <mrow>\text{
+                      \(\color{blue}{x\geq \dfrac{11}{4}}\) OR
+                      \(\color{red}{x\leq -\dfrac{1}{4}}\)} \amp\amp\amp \text{Graph the solutions}
+                    </mrow></md>
+                    
+                      <p align="center">
+                        <figure xml:id="figure-absolute-value-4x-5-geq-6">
+                          <image xml:id="absolute-value-4x-5-geq-6">
+                            <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                              <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \fill[color=red] (-.25,.5) circle (.1cm); \draw[red,
+                                <-] (-5.5,.5) -- (-.35,.5); \node[anchor=south, color=red] at (-3,.5) {$x\leq -\frac{1}{4}$}; \fill[color=blue] (2.75,.5) circle (.1cm); \draw[blue, ->] (2.85,.5) -- (5.5,.5); \node[anchor=south, color=blue] at (4,.5) {$x\geq\frac{11}{4}$}; \end{tikzpicture}} ]]></latex-image-code>
+                              </image>
+                            </figure>
+                          </p> <p>Our graph</p>
+                        <md>
+                        <mrow>\text{
+                          \(\left(-\infty,-\dfrac{1}{4}\right]\cup\left[\dfrac{11}{4},\infty\right)\)} \amp\amp\amp \text{Interval notation}
+                        </mrow>
+                      </md>
+                    </p>
+                  </example>
+                  <example>
+                    <title>Absolute Value Inequality: OR inequality</title>
+                    <p>Solve, graph, and give interval notation for the solution.
+                      <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 161 pg 130-->
+                    </p>
+                    <p>
+                      <md>
+                        <mrow>\text{
+                          \(-4-3\lvert x\rvert \leq -16\)} \amp\amp\amp \text{Isolate the absolute value: Add
+                          \(4\) to both sides }
+                        </mrow>
+                        <mrow>\text{
+                          \(\underline{+4\phantom{123456789}+4}\)} \amp\amp\amp \text{
+                          \(\,\)}
+                        </mrow>
+                        <mrow>\text{
+                          \(-3\lvert x\rvert \leq -12\)} \amp\amp\amp \text{Divide both sides by negative 3}
+                        </mrow>
+                        <mrow>\text{
+                          \(\overline{-3}\phantom{123456}\overline{-3}\)} \amp\amp\amp \text{Dividing by a negative switches the inequality direction}
+                        </mrow>
+                        <mrow>\text{
+                          \(\lvert x\rvert \color{red}{\geq} 4\)} \amp\amp\amp \text{Absolute value is greater, use OR}
+                        </mrow>
+                        <mrow>\text{
+                          \(\color{blue}{x\geq 4}\) OR
+                          \(\color{red}{x\leq -4}\)} \amp\amp\amp \text{Graph}
+                        </mrow></md>
+                        
+                          <p align="center">
+                            <figure xml:id="figure-absolute-value-4-3absx-leq-16">
+                              <image xml:id="absolute-value-4-3absx-leq-16">
+                                <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                                  <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \fill[color=red] (-4,.5) circle (.1cm); \draw[red,
+                                    <-] (-5.5,.5) -- (-4,.5); \node[anchor=south, color=red] at (-4.75,.5) {$x\leq -4$}; \fill[color=blue] (4,.5) circle (.1cm); \draw[blue, ->] (4,.5) -- (5.5,.5); \node[anchor=south, color=blue] at (4.75,.5) {$x\geq 4$}; \end{tikzpicture}} ]]></latex-image-code>
+                                  </image>
+                                </figure>
+                              </p><p>Our graph</p>
+                            <md>
+                            <mrow>\text{
+                              \((-\infty,-4]\cup[4,\infty)\)} \amp\amp\amp \text{Interval notation}
+                            </mrow>
+                          </md>
+                        </p>
+                      </example>
+                      <p>In the previous example, we cannot combine
+                        <m>-4</m> and
+                        <m>-3</m> because they are not like terms, the
+                        <m>-3</m> has an absolute value term attached. So we must first clear the
+                        <m>-4</m> by adding
+                        <m>4</m>, then divide by
+                        <m>-3</m>. The next example is similar.
+                      </p>
+                      <example>
+                        <title>Absolute Value Inequality: three part inequality</title>
+                        <p>Solve, graph, and give interval notation for the solution.
+                          <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 162 pg 131-->
+                        </p>
+                        <p>
+                          <md>
+                            <mrow>\text{
+                              \(9-2|4x+1|\gt 3\)} \amp\amp\amp \text{Subtract
+                              \(9\) from both sides }
+                            </mrow>
+                            <mrow>\text{
+                              \(\underline{-9\phantom{12345678910}-9}\)} \amp\amp\amp \text{
+                              \(\,\)}
+                            </mrow>
+                            <mrow>\text{
+                              \(-2|4x+1|\gt -6\)} \amp\amp\amp \text{Divide both sides by
+                              \(-2\)}
+                            </mrow>
+                            <mrow>\text{
+                              \(\overline{-2}\phantom{123456789}\overline{-2}\)} \amp\amp\amp \text{Dividing by a negative switches the inequality direction}
+                            </mrow>
+                            <mrow>\text{
+                              \(|4x+1|\color{red}{\lt} 3\)} \amp\amp\amp \text{Absolute value is less, use three part inequality}
+                            </mrow>
+                            <mrow>\text{
+                              \(-3\lt 4x+1\lt 3\)} \amp\amp\amp \text{Subtract 1 from all three parts}
+                            </mrow>
+                            <mrow>\text{
+                              \(\underline{-1\phantom{12345}-1\phantom{1}-1}\)} \amp\amp\amp \text{
+                              \(\,\)}
+                            </mrow>
+                            <mrow>\text{
+                              \(-4\lt 4x \lt 2\)} \amp\amp\amp \text{Divide all three parts by
+                              \(4\)}
+                            </mrow>
+                            <mrow>\text{
+                              \(\overline{4}\phantom{123}\overline{4}\phantom{123}\overline{4}\)} \amp\amp\amp \text{
+                              \(\,\)}
+                            </mrow>
+                            <mrow>\text{
+                              \(\color{green}{-1\lt x \lt\dfrac{1}{2}}\)} \amp\amp\amp \text{Graph}
+                            </mrow>
+                            </md>
+                              <p align="center">
+                                <figure xml:id="figure-absolute-value-neg1-lt-x-lt-half">
+                                  <image xml:id="absolute-value-neg1-lt-x-lt-half">
+                                    <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                                      <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \draw[color=M101_green] (-1,.5) circle (.1cm); \draw[color=M101_green] (.5,.5) circle (.1cm); \draw[M101_green] (-.9,.5) -- (.4,.5); \node[anchor=south, color=M101_green] at (-.35,.5) {$-1
+                                        < x <\frac{1}{2}$}; \end{tikzpicture}} ]]></latex-image-code>
+                                      </image>
+                                    </figure>
+                                  </p><p>Our graph</p>
+                                <md>
+                                <mrow>\text{
+                                  \(\left(-1,\dfrac{1}{2}\right)\)} \amp\amp\amp \text{Interval notation}
+                                </mrow>
+                              </md>
+                            </p>
+                          </example>
+                          <p>In the previous example, we cannot distribute the
+                            <m>-2</m> into the absolute value. We can never distribute or combine things outside the absolute value with what is inside the absolute value. Our only way to solve is to first isolate the absolute value by clearing the values around it, then either make a compound inequality (an OR or a three part) to solve.
+                          </p>
+                          <p>It is important to remember as we are solving these equations, the absolute value is always positive. If we end up with an absolute value less than a negative number, then we will have no solution! Similarly, if we end up with an absolute value greater than a negative, this will always happen. Here the answer will be all real numbers.</p>
+                          <example>
+                            <title>Absolute Value Less than Negative Number</title>
+                            <p>Solve, graph, and give interval notation for the solution.</p>
+                            <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 163 pg 131-->
+                            <p>
+                              <md>
+                                <mrow>\text{
+                                  \(12+4|6x-1|\lt 4\)} \amp\amp\amp \text{Subtract
+                                  \(12\) from both sides }
+                                </mrow>
+                                <mrow>\text{
+                                  \(\underline{-12\phantom{123456789}-12}\)} \amp\amp\amp \text{
+                                  \(\,\)}
+                                </mrow>
+                                <mrow>\text{
+                                  \(4\lvert 6x-1\rvert \lt -8\)} \amp\amp\amp \text{Divide both sides by
+                                  \(4\)}
+                                </mrow>
+                                <mrow>\text{
+                                  \(\overline{4}\phantom{12345678910}\overline{4}\)} \amp\amp\amp \text{Dividing by a positive: DON'T switch the inequality direction}
+                                </mrow>
+                                <mrow>\text{
+                                  \(\lvert 6x-1\rvert \lt -2\)} \amp\amp\amp \text{
+                                  <font color="#FF0000"/>STOP:Absolute value can't be less than a negative! }
+                                </mrow>
+                                <mrow>\text{No solution} \amp\amp\amp \text{Our Solution}</mrow>
+                              </md>
+                            </p>
+                          </example>
+                          <example>
+                            <title>Absolute Value Greater than Negative Number</title>
+                            <p>Solve, graph, and give interval notation for the solution.
+                              <!-- Modeled after Beginning and Intermediate Algebra by Tyler Wallace Example 164 pg 131-->
+                            </p>
+                            <p>
+                              <md>
+                                <mrow>\text{
+                                  \(5-6|x+7|\leq 17\)} \amp\amp\amp \text{Subtract
+                                  \(5\) from both sides }
+                                </mrow>
+                                <mrow>\text{
+                                  \(\underline{-5\phantom{123456789}-5}\)} \amp\amp\amp \text{
+                                  \(\,\)}
+                                </mrow>
+                                <mrow>\text{
+                                  \(-6\lvert x+7\rvert \leq 12\)} \amp\amp\amp \text{Divide both sides by
+                                  \(-6\)}
+                                </mrow>
+                                <mrow>\text{
+                                  \(\overline{-6}\phantom{12345678910}\overline{-6}\)} \amp\amp\amp \text{Dividing by a negative switches the inequality direction}
+                                </mrow>
+                                <mrow>\text{
+                                  \(\lvert x+7\rvert \color{red}{\geq} -2\)} \amp\amp\amp \text{Absolute value
+                                  <b>always</b>greater than negative! }
+                                </mrow>
+                                <mrow>\text{
+                                  \(x\) can be any real number:
+                                  \(-\infty\lt x \lt\infty\) or
+                                  \(\phantom{1234}\)} \amp\amp\amp \text{Our Solution: Inequality notation}
+                                </mrow>
+                                <mrow>\text{
+                                  \((-\infty, \infty)\)} \amp\amp\amp \text{Our Solution: Interval notation}
+                                </mrow>
+                              </md>
+                            </p>
+                          </example>
+                        </subsection>
+                    </section>
