@@ -2,28 +2,28 @@
   <title>3C-Linear Models</title>
   <introduction>
     <ul>
-      <li>Determine the slope of a given linear model and describe its meaning, in context.</li>
-      <li>Use a given linear model to solve problems.</li>
-      <li>Create a linear model from data to solve problems.</li>
+      <li> Determine the slope of a given linear model and describe its meaning, in context.</li>
+      <li> Use a given linear model to solve problems.</li>
+      <li> Create a linear model from data to solve problems.</li>
     </ul>
   </introduction>
   <subsection>
     <title>Linear Models</title>
     <p>Now that you have an understanding of lines, we will consider linear models.  A
-      <term>linear model</term>is an equation for a line that is connected to a real-world situation or data. What does this mean?
+      <term>linear model</term> is an equation for a line that is connected to a real-world situation or data. What does this mean?
     </p>
     <p>Recall when we write the slope-intercept equation
-      <xref ref="equation-slope-intercept" />for a line:
+      <xref ref="equation-slope-intercept" /> for a line:
     </p>
     <md>
-      <row>y=mx+b</row>
+      <mrow>y=mx+b</mrow>
     </md>
     <p>that
       <m>y</m> represents the
-      <term>dependent variable</term>(sometimes called the
+      <term>dependent variable</term> (sometimes called the
       <term>"response" variable</term>) and
       <m>x</m> represents the
-      <term>independent variable</term>(sometimes called the
+      <term>independent variable</term> (sometimes called the
       <term>"predictor"</term>). Plugging in a particular value of
       <m>x</m> gives, or "predicts," a corresponding value for the response
       <m>y</m>. The value of the slope
@@ -37,12 +37,12 @@
       <ul>
         <li>
           <m>y</m> is the
-          <term>response</term>variable (it responds to changes in
+          <term>response</term> variable (it responds to changes in
           <m>x</m>)
         </li>
         <li>
           <m>x</m> is the
-          <term>predictor</term>variable
+          <term>predictor</term> variable
         </li>
         <li>
           <m>m</m> represents the estimated change in the response
@@ -58,8 +58,8 @@
     </p>
     <p>Recall that points in the plane are denoted:
       <md>
-        <row>(x,y)=(independent, dependent) =(predictor, response)</row>
-      </md>Consider some examples of linear models.
+        <mrow>(x,y)=(independent, dependent) =(predictor, response)</mrow>
+      </md> Consider some examples of linear models.
     </p>
     <example xml:id="example-road-trip-intro">
       <title>Road Trip! Determine Slope and Intercept of Given Model</title>
@@ -76,10 +76,10 @@
           <col />
           <!--  -->
           <row halign="left">
-            <cell colspan="2">Determine the slope and intercept for the model.</cell>
+            <cell colspan="2"> Determine the slope and intercept for the model.</cell>
           </row>
           <row halign="left">
-            <cell colspan="2">Recognize the model as a line in slope-intercept form
+            <cell colspan="2"> Recognize the model as a line in slope-intercept form
               <m>y=mx+b</m>
               <xref ref="equation-slope-intercept" />
             </cell>
@@ -261,10 +261,10 @@
                 <col />
                 <!--  -->
                 <row halign="left">
-                  <cell colspan="2">Determine the slope and intercept for the model.</cell>
+                  <cell colspan="2"> Determine the slope and intercept for the model.</cell>
                 </row>
                 <row halign="left">
-                  <cell colspan="2">Recognize the model as a line in slope-intercept form
+                  <cell colspan="2"> Recognize the model as a line in slope-intercept form
                     <m>y=mx+b</m>
                     <xref ref="equation-slope-intercept" />
                   </cell>
@@ -450,7 +450,7 @@
                 </row>
                 <row>
                   <cell>
-                    <m>t=10</m>,
+                    <m>t=10,</m>
                     <m>GDP=6</m>
                   </cell>
                   <cell>Corresponds to the year 1990 (ten years after 1980) with a GDP of
@@ -480,8 +480,8 @@
             <p>Continue with the GDP Example
               <xref ref="example-GDP-intro" />. Determine a linear model for the data points
               <m>(0,3)</m> and
-              <m>(10,6)</m>.
-              <!-- Our own-->
+              <m>(10,6).</m>
+              <!--Our own-->
             </p>
             <table>
               <tabular>
@@ -491,22 +491,21 @@
                   <cell>
                     <line>First determine the slope between</line>
                     <line>
-                      <m>(0, 3)</m> and
+                      <m>(0,3)</m> and
                       <m>(10,6)</m>
                     </line>
                   </cell>
                   <cell>Identify
-                    <m>t_1, GDP_1, t_2, GDP_2</m>
+                    <m>t_1,GDP_1,t_2,GDP_2</m>
                   </cell>
                 </row>
                 <row>
                   <cell>
-                    <m>(t_1, GDP_1)</m> and
+                    <m>(t_1,GDP_1)</m> and
                     <m>(t_2,GDP_2)</m>
                   </cell>
                   <cell>Use slope formula:
-                    <m>m=\dfrac{\text{change in GDP}}{
-                    \text{change in time}}</m>
+                    <m>m=\dfrac{\text{change in GDP}}{\text{change in time}}</m>
                     <m>=\dfrac{GDP_2-GDP_1}{t_2-t_1}</m>
                   </cell>
                 </row>
@@ -551,8 +550,8 @@
             <p>Continue with the GDP Example
               <xref ref="example-GDP-intro" />. Use the linear model to determine the year when the GDP will reach
               <m>\$13.5</m> trillion.
-              <!-- Our own-->
             </p>
+              <!--Our own-->
             <table>
               <tabular>
                 <col halign="right" />
@@ -607,7 +606,7 @@
                 </row>
                 <row>
                   <cell>
-                    <m>1980+ 35 = 2015</m>
+                    <m>1980+35=2015</m>
                   </cell>
                   <cell>State what this means in context</cell>
                 </row>
@@ -630,7 +629,7 @@
               <m>\$63</m> for
               <m>259</m> copies of another flyer. Let the predictor
               <m>n</m> denote the number of copies and the response
-              <m>C</m> denote the cost.  Identify points that represent the data.
+              <m>C</m> denote the cost. Identify points that represent the data.
               <!-- From MAT 102 WW Problem 4-->
             </p>
             <table>
@@ -700,24 +699,24 @@
               <xref ref="example-copies-intro" />. Determine a linear model for the data points
               <m>(100,47)</m> and
               <m>(259,63)</m>.
-              <!-- Our own-->
             </p>
+              <!--Our own-->
             <table>
               <tabular>
                 <col halign="right" />
                 <col />
                 <row>
-                  <cell>First determine the slope between
-                    <m>(100, 47)</m> and
-                    <m>(259,63)</m>
+                  <cell><line>First determine the slope between</line>
+                    <line><m>(100,47)</m> and
+                    <m>(259,63)</m></line>
                   </cell>
                   <cell>Identify
-                    <m>n_1, C_1, n_2, C_2</m>
+                    <m>n_1,C_1,n_2,C_2</m>
                   </cell>
                 </row>
                 <row>
                   <cell>
-                    <m>(n_1, C_1)</m> and
+                    <m>(n_1,C_1)</m> and
                     <m>(n_2,C_2)</m>
                   </cell>
                   <cell>Use slope formula
