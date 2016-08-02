@@ -569,7 +569,7 @@
           <p>The tree has
             <m>8</m> endpoints, one for each element in the sample space. The possibility
             <m>BGB</m>, for example, indicates that the first kitten is a boy, the second born a girl, and the third a boy.</p>
-            <image source="set4B_Probability_01.png" width="100%" />
+            <image source="set4B_Probability_01.png" />
           <md>
           <mrow>\text{
             \(P(B)=0.03\)} \amp\amp\amp \text{Determine the probability of a girl using complementary events, since
@@ -583,7 +583,7 @@
             <m>0.03</m> chance of occurring. Each branch with an outcome of
             <m>G</m> has a
             <m>0.97</m> chance of occurring.</p>
-            <image source="set4C_Probability_Rules_01.png" width="100%" />
+            <image source="set4C_Probability_Rules_01.png" />
           <md>
           <mrow>\text{(a) Determine the probability of all
             \(3\) calico kittens being boys. } \amp\amp\amp \text{Multiply the probabilities along the path to the outcome

@@ -21,24 +21,29 @@
   <subsection>
     <title>Experiments and Sample Spaces</title>
     <p>First you need some definitions.
-      <b>Experiment</b>: an activity that has specific results that can occur, but it is unknown which results will occur.
-      <b>Outcomes</b>: the results of an experiment.
-      <b>Event</b>: a set
-      <m>A</m>of certain outcomes of an experiment that you want to have happen.
-      <b>Sample Space</b>: collection of all possible outcomes of the experiment. Usually denoted as
-      <m>SS</m>.
-      <b>Event space</b>: the set of outcomes that make up an event. The symbol is usually a capital letter.
+      <dl label="">
+        <li><title>Experiment</title>
+        <p>An activity that has specific results that can occur, but it is unknown which results will occur.</p></li>
+        <li><title>Outcomes</title><p>The results of an experiment.</p></li>
+        <li><title>Event</title><p>A set
+        <m>A</m>of certain outcomes of an experiment that you want to have happen.</p></li>
+        <li><title>Sample Space</title><p>collection of all possible outcomes of the experiment. Usually denoted as
+        <m>SS</m>.</p></li>
+        <li><title>Event space</title><p>The set of outcomes that make up an event. The symbol is usually a capital letter.</p></li>
+      </dl>
     </p>
     <p>If all of the outcomes in a sample space are equally likely to happen, then the probability of an event
       <m>A</m>is calculated as follows.
     </p>
     <p>The
-      <b>probability</b>of event
-      <m>A</m>happening is \[P(A) = \dfrac{\text{# of outcomes in event space
-      <m>A</m>}}{\text{# of outcomes in sample space
-      <m>SS</m>}}=\dfrac{n(A)}{n(SS)}\]
-    </p>
-    <!--<p> If two coins are tossed, what is the probability that both coins will fall heads? The problem seems simple enough, but it is not uncommon to hear the incorrect answer <m>\dfrac{1}{3}</m>. A student may incorrectly reason that if two coins are tossed there are three possibilities, one head, two heads, or no heads. Therefore, the probability of two heads is one out of three. The answer is wrong because if we toss two coins there are <b>four</b> possibilities and not three. For clarity, assume that one coin is a penny and the other a nickel. Then we have the following four possibilities: </p> <p> HH HT TH TT </p> <p> The possibility HT, for example, indicates a head on the penny and a tail on the nickel, while TH represents a tail on the penny and a head on the nickel. </p> <p> It is for this reason, we emphasize the need for understanding sample spaces. </p> <p> An act of flipping coins, rolling dice, drawing cards, or surveying people are referred to as an <b>experiment</b>. </p> <p><b>Definition</b>: A <b>sample space, <m>S</m></b> of an experiment is the <u>set</u> of all possible outcomes. </p>-->
+      <term>probability</term> of event
+      <m>A</m>happening is</p>
+      <mdn>
+        <mrow>P(A) = \dfrac{\text{# of outcomes in event space
+          <m>A</m>}}{\text{# of outcomes in sample space
+          <m>SS</m>}}=\dfrac{n(A)}{n(SS)}</mrow>
+      </mdn>
+    <!--<p> If two coins are tossed, what is the probability that both coins will fall heads? The problem seems simple enough, but it is not uncommon to hear the incorrect answer <m>\dfrac{1}{3}</m>. A student may incorrectly reason that if two coins are tossed there are three possibilities, one head, two heads, or no heads. Therefore, the probability of two heads is one out of three. The answer is wrong because if we toss two coins there are <b>four</b> possibilities and not three. For clarity, assume that one coin is a penny and the other a nickel. Then we have the following four possibilities: </p> <p> HH HT TH TT </p> <p> The possibility HT, for example, indicates a head on the penny and a tail on the nickel, while TH represents a tail on the penny and a head on the nickel. </p> <p> It is for this reason, we emphasize the need for understanding sample spaces. </p> <p> An act of flipping coins, rolling dice, drawing cards, or surveying people are referred to as an <term>experiment</term>. </p> <p><b>Definition</b>: A <term>sample space, <m>S</m></term> of an experiment is the <u>set</u> of all possible outcomes. </p>-->
     <example>
       <title>One Die</title>
       <p>Consider the experiment of rolling an ordinary 6-sided die (and observing the number of dots showing up on the roll).
@@ -133,7 +138,7 @@
       </md>
     </example>
     <example xml:id="example-2-dice-sample-space">
-      <title>Two Dice--Sample Space</title>
+      <title>Two Dice Sample Space</title>
       <p>Two fair dice are rolled. Write the sample space.
         <!--   This is T http://cnx.org/content/col10613/1.5/ Example 13.3 page 210  -->
       </p>
@@ -152,8 +157,7 @@
       </p>
       <md>
         <mrow>\text{
-              \(SS\) is written above in
-          <b>Example 4B-4</b>.} \amp\amp\amp \text{The sample space has
+              \(SS\) is written above in Example <xref ref="example-2-dice-sample-space" />.} \amp\amp\amp \text{The sample space has
               \(36\) outcomes.}
         </mrow>
       </md>

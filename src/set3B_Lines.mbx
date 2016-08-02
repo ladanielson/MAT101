@@ -26,46 +26,45 @@
       <p>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 123 pg 95-->
       </p>
-      <sidebyside widths="55% 40%" valign="middle">
-        <figure xml:id="figure-negative-slope">
-        <image xml:id="negative-slope" source="images/negative-slope.svg">
-          <latex-image-code><![CDATA[
-            \begin{tikzpicture}
-              \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
-              \draw[line width=0.55mm,black,<->] (-6,0) -- (6,0) node[anchor=north west] {$x$-axis};
-              \draw[line width=0.55mm,black,<->] (0,-6) -- (0,6) node[anchor=south east] {$y$-axis};
-              \foreach \x in {-4,-2,2,4}
-                  \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
-              \foreach \y in {-4,-2,2,4}
-                  \draw[line width=0.55mm,black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
-              \fill[color=black] (-4,3) circle (.15cm);
-              \fill[color=black] (2,-1) circle (.15cm);
-              \draw[line width=0.65mm,black,<->] (-6,4.333) -- (6,-3.667);
-              \draw[line width=0.75mm,red,->] (-4,3) -- (-4,-1) node[shift={(-1,2.5)}] {\Large Rise $-4$};
-              \draw[line width=0.75mm,blue,->] (-4,-1) -- (2,-1) node[shift={(-3,-.5)}] {\Large Run $6$};
-            \end{tikzpicture}} ]]></latex-image-code>
-            </image>
-          </figure>
-          <paragraphs>
-            <p>To determine the slope of this line we will consider the rise, or vertical change, and the run, or horizontal change. Drawing these lines in makes a slope triangle that we can use to count from one point to the next.</p>
-            <p>The graph goes down
-              <m>4</m>, right
-              <m>6</m>. This is rise
-              <m>-4</m>, run
-              <m>6</m>.</p>
-            <p>As a fraction it would be
-              <m>\frac{-4}{6}</m>. Reduce the fraction to get
-              <m>\frac{-2}{3}</m>. The slope is negative indicating this line falls.
-            </p>
-          </paragraphs>
+        <sidebyside widths="55% 40%" valign="middle" margins="0%">
+          <figure xml:id="figure-negative-slope">
+          <image xml:id="negative-slope">
+            <latex-image-code><![CDATA[
+              \begin{tikzpicture}
+                \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
+                \draw[line width=0.55mm,black,<->] (-6,0) -- (6,0) node[anchor=north west] {$x$-axis};
+                \draw[line width=0.55mm,black,<->] (0,-6) -- (0,6) node[anchor=south east] {$y$-axis};
+                \foreach \x in {-4,-2,2,4}
+                    \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
+                \foreach \y in {-4,-2,2,4}
+                    \draw[line width=0.55mm,black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
+                \fill[color=black] (-4,3) circle (.15cm);
+                \fill[color=black] (2,-1) circle (.15cm);
+                \draw[line width=0.65mm,black,<->] (-6,4.333) -- (6,-3.667);
+                \draw[line width=0.75mm,red,->] (-4,3) -- (-4,-1) node[shift={(-1,2.5)}] {\Large Rise $-4$};
+                \draw[line width=0.75mm,blue,->] (-4,-1) -- (2,-1) node[shift={(-3,-.5)}] {\Large Run $6$};
+              \end{tikzpicture}} ]]></latex-image-code>
+              </image>
+            </figure>
+            <paragraphs>
+              <p>To determine the slope of this line we will consider the rise, or vertical change, and the run, or horizontal change. Drawing these lines in makes a slope triangle that we can use to count from one point to the next.</p>
+              <p>The graph goes down
+                <m>4</m>, right
+                <m>6</m>. This is rise
+                <m>-4</m>, run
+                <m>6</m>.</p>
+              <p>As a fraction it would be
+                <m>\frac{-4}{6}</m>. Reduce the fraction to get
+                <m>\frac{-2}{3}</m>. The slope is negative indicating this line falls.
+              </p>
+            </paragraphs>
+          </sidebyside>
+          <sidebyside widths="55% 40%" valign="middle">
+            <p>Slope =
+            <m>-\frac{2}{3}</m></p>
+            <p>Our Solution<m>\checkmark</m>
+          </p>
         </sidebyside>
-        <sidebyside widths="20% 35% 40%" valign="middle">
-          <p></p>
-          <p>Slope =
-          <m>-\frac{2}{3}</m></p>
-          <p>Our Solution<m>\checkmark</m>
-        </p>
-      </sidebyside>
     </example>
     <example>
       <title>Determine Slope Given Graph</title>
@@ -289,9 +288,10 @@
       </md>
     </example>
     <p>
-      <m>\color{red}{\text{Note:}}</m> There is a big difference between a
+      <!-- <m>\color{red}{\text{Note:}}</m> There is a big difference between a -->
+      <alert>Note: There is a big difference between a
       <term>zero slope</term> and
-      <term>no slope</term>.
+      <term>no slope</term>.</alert>
       <ul>
         <li>
           <term>Zero</term> is an integer and it has a value:

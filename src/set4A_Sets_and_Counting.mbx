@@ -777,7 +777,7 @@
            <p>The tree diagram below results. (Note that only 6 of the actual possible dinner combinations are listed at the far right.) The tree has
           <m>2\times 4\times 3 = 24</m> endpoints, one for each of the
           <m>24</m> dinner special combinations.</p>
-          <image source="set4A_Sets_and_Counting_19.png"  width ="407" height="273" />}
+          <image source="set4A_Sets_and_Counting_19.png" />}
         <md>
         <mrow>24 \amp\amp\amp \text{Our Solution:}</mrow>
         </md>
