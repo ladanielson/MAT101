@@ -1,5 +1,5 @@
 <section xml:id="section-3A-graphs">
-  <title>3A-Interpreting Graphs</title>
+  <title>Interpreting Graphs</title>
   <introduction>
     <ul>
       <li>Identify the quadrants and coordinates of
@@ -14,7 +14,7 @@
   </introduction>
   <subsection>
     <title>The Cartesian Coordinate Plane</title>
-    <p>Often, to get an idea of the behavior of an equation we will make a picture that represents the solutions to the equations. A graph is simply a picture of the solutions to an equation. Before we spend much time on making a visual representation of an equation, we first have to understand the basis of graphing. Following is an example of what is called the Cartesian coordinate plane (named in honor of the 17th century philosopher, mathematician and scientist, Rene Descartes).</p>
+    <p>Often, to get an idea of the behavior of an equation we will make a picture that represents the solutions to the equations. A graph is simply a picture of the solutions to an equation. Before we spend much time on making a visual representation of an equation, we first have to understand the basis of graphing. Following is an example of what is called the Cartesian coordinate plane (named in honor of the 17th century philosopher, mathematician and scientist, Ren&#x00E9; Descartes).</p>
     <p>The plane is divided into four regions, called
       <term>quadrants</term>, by a horizontal number line (
       <m>x</m>-axis) and a vertical number line (
@@ -113,7 +113,7 @@
     -->
     </example>
   <assemblage>
-    <title>Entering Points in WeBWorK</title>
+    <title>WeBWorK: Entering Points</title>
     <p>Points in the plane are entered as
       <c>(#,#)= (horizontal #, vertical #)=(independent, dependent)</c>.
     </p>
@@ -924,7 +924,7 @@
     <m>x</m>-axis will have a
     <m>y</m>-coordinate of
     <m>0</m>.
-  </p>
+  </p> 
     <example>
   <title>Determine
     <m>y</m>-Intercepts: Set

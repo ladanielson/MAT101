@@ -1,5 +1,5 @@
-<section>
-  <title>1C-Exponents and Scientific Notation</title>
+<section xml:id="section-1C-exponents-and-scientific-notation">
+  <title>Exponents and Scientific Notation</title>
   <introduction>
     <ul>
       <li>Simplify expressions using the properties of exponents.</li>
@@ -13,7 +13,7 @@
     <title>Exponent Properties</title>
     <p>Problems with exponents can often be simplified using a few important exponent properties. Recall from
       Set
-      <xref ref="preliminaries" />exponents represent repeated multiplication:
+      <xref ref="section-00-preliminaries" />exponents represent repeated multiplication:
       <ul>
         <li>
           <m>x^1 = x</m>

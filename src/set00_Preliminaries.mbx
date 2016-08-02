@@ -1,5 +1,5 @@
-<section xml:id="preliminaries">
-  <title>00-Preliminaries</title>
+<section xml:id="section-00-preliminaries">
+  <title>Preliminaries</title>
   <introduction>
     <ul>
       <li>Add, subtract, multiply and divide positive and negative numbers.</li>
@@ -152,8 +152,8 @@
             <example>
               <title>Subtract Integers: add the opposite</title>
               <md>
-                <mrow>\text{\(7-(-6)\)} \amp\amp\amp \text{
-                  <em>Add the opposite</em>of \(-6\)}
+                <mrow>7-(-6) \amp\amp\amp \text{
+                  Add the opposite of \(-6\)}
                 </mrow>
                 <mrow>\text{\(7+(6)\)} \amp\amp\amp \text{Addition of positive integers}</mrow>
                 <mrow>\text{\(13\)} \amp\amp\amp \text{Our Solution}</mrow>
