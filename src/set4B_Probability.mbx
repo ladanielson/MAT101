@@ -620,19 +620,19 @@
               <cell>Total</cell>
             </row>
             <row bottom="minor">
-              <cell>1st</cell>
+              <cell><m>1st</m></cell>
               <cell><m>134</m></cell>
               <cell><m>59</m></cell>
               <cell><m>193</m></cell>
             </row>
             <row bottom="minor">
-              <cell>2nd</cell>
+              <cell><m>2nd</m></cell>
               <cell><m>94</m></cell>
               <cell><m>25</m></cell>
               <cell><m>119</m></cell>
             </row>
             <row bottom="minor">
-              <cell>3rd</cell>
+              <cell><m>3rd</m></cell>
               <cell><m>80</m></cell>
               <cell><m>58</m></cell>
               <cell><m>138</m></cell>
@@ -644,7 +644,7 @@
               <cell><m>450</m></cell>
             </row>
           </tabular>
-        </table>    
+        </table>
         Determine the following probabilities.</p>
         <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Homework Problem 11, page 140 -->
         <p>(a) Determine the probability that a survivor was female. Label the event space <m>F</m> for female.
@@ -653,15 +653,15 @@
           </md>
           The probability that a survivor was female is <m>\dfrac{308}{450}</m> or about <m>68.44\%.\checkmark</m>
         </p>
-        <p>(b) Determine the probability that a survivor was female and in the 1st class. Label the event space
-         <m>F\cap 1st</m> for female AND in the 1st class.
+        <p>(b) Determine the probability that a survivor was female and in the first class. Label the event space
+         <m>F\cap 1st</m> for female AND in the first class.
          <md>
-          <mrow>n(F\cap 1st)=134 \amp\amp\amp \text{The number of survivors in both the \(F\) column and 1st row.}</mrow>
+          <mrow>n(F\cap 1st)=134 \amp\amp\amp \text{The number of survivors in both the \(F\) column and \(1st\) row.}</mrow>
           <mrow>P(F\cap 1st) = \dfrac{n(F\cap 1st)}{\text{Total #}}=\dfrac{134}{450}\approx 0.2978 \amp\amp\amp \text{Our Solution (b):}</mrow>
           </md>
           The probability that a survivor was a first-class female is <m>\dfrac{134}{450}</m> or about <m>29.78\%.\checkmark</m>
         </p>
-        <p>(c) Determine the probability that a survivor was female or in the 1st class. Label the event space <m>F\cup 1st</m> for female OR in the 1st class.
+        <p>(c) Determine the probability that a survivor was female or in the 1st class. Label the event space <m>F\cup 1st</m> for female OR in the first class.
         <md>
           <mrow>n(F\cup 1st)=134+94+80+59=367 \amp\amp\amp \text{The number of survivors in either the \(F\) column or 1st row.}</mrow>
           <mrow>P(F\cup 1st) = \dfrac{n(F\cup 1st)}{\text{Total #}}=\dfrac{367}{450}\approx 0.8156\amp\amp\amp \text{Our Solution (c):}</mrow>
