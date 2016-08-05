@@ -958,16 +958,13 @@
           <mrow>7+\lvert 2x-5\rvert =4 \amp\amp\amp \text{Notice absolute value is not alone}</mrow>
           <mrow>\underline{-7\phantom{123456789}-7} \amp\amp\amp \text{Subtract
             \(7\) from both sides }</mrow>
-          <mrow>\lvert 2x-5\rvert  = \color{red}{-3} \amp\amp\amp \text{
-            <font color="#FF0000"/>
-            <term>STOP!</term> Result of absolute value can't be negative! }
+          <mrow>\lvert 2x-5\rvert  = \color{red}{-3} \amp\amp\amp \text{STOP! Result of absolute value can't be negative! }
           </mrow>
           <mrow>\text{No solution} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
       </example>
       <p>Notice in the above example, the absolute value expressions equals a negative number! This is impossible with absolute value. When this occurs we
-        <font color="#FF0000"/>
-        <term>STOP</term> and conclude there is no solution.
+        <alert>STOP</alert> and conclude there is no solution.
       </p>
       <assemblage>
         <title>WeBWorK: Enter "No solution"</title>
