@@ -1,23 +1,28 @@
 <section xml:id="section-2A-equations-and-absolute-value">
-  <title>Equations and Absolute Value</title>
+  <title>2A-Equations and Absolute Value</title>
   <introduction>
     <ul>
       <li>Solve equations (including equations with variables on both sides) by balancing and using inverse operations.</li>
-      <li>Solve linear absolute value equations.</li>    
-
+      <li>Solve linear absolute value equations.</li>
     </ul>
   </introduction>
   <subsection>
-    <title>Linear Equations</title>
-    <p>Solving linear equations is an important and fundamental skill in algebra. In algebra, we are often presented with a problem where the answer is known, but part of the problem is missing. The missing part of the problem is what we seek to find. An example of such a problem is shown below.
-      <md>
-        <mrow>\text{
-          \(4x + 16= -4\)}</mrow>
-      </md>
-    Notice the above problem has a missing part, or unknown, that is marked by
+    <title>Solution to an Equation</title>
+    <p>Solving linear equations is an important and fundamental skill in algebra. In algebra, we are often presented with a problem where the answer is known, but part of the problem is missing. The missing part of the problem is what we seek to find. An example of such a problem is shown below.</p>
+    <example>
+      <title>Example Linear Equation</title>
+      <p>
+        <md>
+          <mrow>4x+16=-4</mrow>
+        </md>
+      </p>
+    </example>
+    <p>Notice the above problem has a missing part, or unknown, that is marked by
       <m>x</m>. If we are given that the solution to this equation is
       <m>-5</m>, it could be plugged into the equation, replacing the
-      <m>x</m>with <m>-5</m>. This is shown below.
+      <m>x</m> with
+      <m>-5</m>. This is shown in
+      <xref ref="demonstrate-solution" autoname="yes" />.
     </p>
     <example xml:id="demonstrate-solution">
       <title>A Solution</title>
@@ -25,21 +30,19 @@
         <m>4x + 16= -4</m>. Let
         <m>x=-5</m>:
       </p>
-      <md>
-        <mrow>\text{
-        \(4(-5) + 16\)} \amp\amp\amp \text{Multiply
-        \(4(-5)\)}</mrow>
-        <mrow>\text{
-        \(-20+ 16\)} \amp\amp\amp \text{Add
-        \(-20+ 16\)}</mrow>
-        <mrow>\text{
-        \(-4\)} \amp\amp\amp \text{
-        \(-4=-4\): The left-hand side equals the right-hand side: LHS=RHS}</mrow>
-      </md>
+      <p>
+        <md>
+          <mrow>4(-5) + 16\amp\amp\amp\text{Multiply \(4(-5)\)}</mrow>
+          <mrow>-20+ 16 \amp\amp\amp \text{Add \(-20+ 16\)}</mrow>
+          <mrow>-4 \amp\amp\amp -4=-4</mrow>
+          <mrow>\text{The left-hand side equals the right-hand side.}\amp\amp\amp x=-5\text{ IS a solution}\checkmark</mrow>
+        </md>
+      </p>
     </example>
     <p>Now the equation comes out to a true statement! Notice also that if another number, for example,
       <m>3</m>, were plugged in for
-      <m>x</m>, we would not get a true statement.
+      <m>x</m>, we would not get a true statement as seen in 
+      <xref ref="not-a-solution" autoname="yes" />.
     </p>
     <example xml:id="not-a-solution">
       <title>NOT a Solution</title>
@@ -47,316 +50,404 @@
         <m>4x + 16= -4</m>. Let
         <m>x=3</m>:
       </p>
+      <p>
       <md>
-        <mrow>\text{
-        \(4(3) + 16\)} \amp\amp\amp \text{Multiply
+        <mrow>4(3) + 16 \amp\amp\amp \text{Multiply
         \(4(3)\)}</mrow>
-        <mrow>\text{
-        \(12+ 16\)} \amp\amp\amp \text{Add
+        <mrow>12+ 16 \amp\amp\amp \text{Add
         \(12+ 16\)}</mrow>
-        <mrow>\text{
-        \(28\)} \amp\amp\amp \text{
-        \(28\neq -4\): The left-hand side does not equal the right-hand side: LHS
-        \(\neq\) RHS}</mrow>
+        <mrow>28 \amp\amp\amp 28\neq -4</mrow>
+        <mrow>\text{The left-hand side does not equal the right-hand side.}\amp\amp\amp x=3\text{ is NOT a solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
     <p>Due to the fact that this is not a true statement, this demonstrates that
-      <m>3</m>is not the solution. However, depending on the complexity of the problem, this "guess and check" method is not very efficient. Thus, we take a more algebraic approach to solving equations. Here we will focus on what are called "one-step equations" or equations that only require one step to solve. While these equations often seem very fundamental, it is important to master the pattern for solving these problems so we can solve more complex problems.
+      <m>3</m> is not the solution. However, depending on the complexity of the problem, this "guess and check" method is not very efficient. Thus, we take a more algebraic approach to solving equations. First we will focus on what are called "one-step equations" or equations that only require one step to solve. While these equations often seem very fundamental, it is important to master the pattern for solving these problems so we can solve more complex problems.
     </p>
   </subsection>
   <subsection>
-    <title>Addition Problems</title>
-    <p>To solve equations, the general rule is to do the opposite. For example, consider the following:</p>
+    <title>Linear Equations - One-Step Equations</title>
+    <p>To solve equations, we perform mathematical operations to both sides of the equation to isolate the variable.  For example, consider the following:</p>
     <example>
       <title>Solve an Equation Involving Addition</title>
+      <p>Solve for <m>x</m>.
       <md>
-        <mrow>\text{
-        \(x +7= -5\)} \amp\amp\amp \text{Notice the
+        <mrow>x + 7 = -5 \amp\amp\amp \text{Notice the
         \(7\) is added to the
         \(x\).}</mrow>
-        <mrow>\text{
-        \((x +7)-7= (-5)-7\)} \amp\amp\amp \text{Subtract
+        <mrow>(x + 7) - 7 = (-5) - 7 \amp\amp\amp \text{Subtract
         \(7\) from both sides to isolate
         \(x\).}</mrow>
-        <mrow>\text{
-        \(x = -12\)} \amp\amp\amp \text{Our solution
-          <assemblage>
-            <tt>WeBWorK</tt>answers should include the entire
-          \(x = -12\),
-            <b>NOT</b>just the value
-          \(-12\)
-          </assemblage>}
-        </mrow>
+        <mrow>x = -12 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
-    <p>Then we get our solution,
-      <m>x = -12</m>. The same process is used in each of the following examples.
+    
+      <assemblage>
+        <title>WeBWorK: Entering solutions to equations</title>
+        <p>Enter the entire expression
+          <c>x = -12</c>, NOT just the value
+          <c>-12</c>.
+        </p>
+      </assemblage>
+    
+    <!--  The same process is used in each of the following examples.
+        </p>
+        <example>
+          <title>Solve Equations Involving Addition</title>
+          <md>
+            <mrow>4+x=8\amp\amp\amp 7=x+9 \amp\amp\amp 5=8+x</mrow>
+            <mrow>\underline{ -4 \,\,\,\,\,\, -4}\amp\amp\amp\underline{-9 \,\,\,\,\,\, -9}\amp\amp\amp\underline{-8\, \, -8 \,\,\,\,\,\,\,}</mrow>
+            <mrow>x=4\amp\amp\amp -2=x \amp\amp\amp-3=x</mrow>
+          </md>
+        </example>
+    -->
+    <p>The terms in an equation may be in any order and the variable may be a letter 
+    other than
+      <m>x</m>. The key is to focus on using operations that get 
+    the variable by itself on one side of the equals sign.
     </p>
     <example>
-      <title>Solve Equations Involving Addition</title>
+      <title>Another Example With Addition</title>
+      <p>Solve for <m>t</m>.</p>
+      <p>In this example,
+      <m>5</m> must be subtracted from both sides to solve for
+      <m>t</m>.
       <md>
-        <mrow>4+x=8\amp\amp\amp 7=x+9 \amp\amp\amp 5=8+x</mrow>
-        <mrow>\underline{ -4 \,\,\,\,\,\, -4}\amp\amp\amp\underline{-9 \,\,\,\,\,\, -9}\amp\amp\amp\underline{-8\, \, -8 \,\,\,\,\,\,\,}</mrow>
-        <mrow>x=4\amp\amp\amp -2=x \amp\amp\amp-3=x</mrow>
+        <mrow>8=5\amp +t</mrow>
+        <mrow>\underline{-5\,\,-5}\amp</mrow>
+        <mrow>3=t\amp</mrow>
       </md>
+      Then we get our solution,
+        <m>t = 3\checkmark</m>.
+      </p>
     </example>
-  </subsection>
-  <subsection>
-    <title>Subtraction Problems</title>
     <p>In a subtraction problem, we "counteract" negative numbers by adding them to both sides of the equation. For example, consider the following:</p>
     <example>
       <title>Solve an Equation Involving Subtration</title>
-      <p></p>
+      <p>Solve for
+        <m>x</m>.
       <md>
-        <mrow>\text{
-        \(x-5=4\)} \amp\amp\amp \text{Notice
+        <mrow>x-5=4 \amp\amp\amp \text{Notice
         \(5\) is  subtracted from
         \(x\).}</mrow>
-        <mrow>\text{
-        \((x-5)+5=4+5\)} \amp\amp\amp \text{Add
+        <mrow>(x-5)+5=4+5 \amp\amp\amp \text{Add
         \(5\) to both sides of the equation to solve for
         \(x\).}</mrow>
-        <mrow>\text{
-        \(x =9\)} \amp\amp\amp \text{Our solution!}</mrow>
+        <mrow>x=9 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
-    </example>
-    <p>Then we get our solution
-      <m>x =9</m>. The same process is used in each of the following examples. Notice that each time we are "eliminating" a negative number by adding.
     </p>
-    <example>
-      <title>Solve Equations Involving Subtraction</title>
-      <p></p>
-      <md>
-        <mrow>-6+x=-2\amp\amp\amp -10=x-7\amp\amp\amp 5=-8+x</mrow>
-        <mrow>\underline{ +6 \,\,\,\,\,\, +6}\amp\amp\amp\underline{+7 \,\,\,\,\,\, +7}\amp\amp\amp\underline{-8\, \, -8 \,\,\,\,\,\,\,}</mrow>
-        <mrow>x=4\amp\amp\amp -3=x\amp\amp\amp 13=x</mrow>
-      </md>
     </example>
-  </subsection>
-  <subsection>
-    <title>Multiplication Problems</title>
+      <!--The same process is used in each of the following examples. Notice that each time we are "eliminating" a negative number by adding.-->
+    
+    <!--
+        <example>
+          <title>Solve Equations Involving Subtraction</title>
+          <p></p>
+          <md>
+            <mrow>-6+x=-2\amp\amp\amp -10=x-7\amp\amp\amp 5=-8+x</mrow>
+            <mrow>\underline{ +6 \,\,\,\,\,\, +6}\amp\amp\amp\underline{+7 \,\,\,\,\,\, +7}\amp\amp\amp\underline{-8\, \, -8 \,\,\,\,\,\,\,}</mrow>
+            <mrow>x=4\amp\amp\amp -3=x\amp\amp\amp 13=x</mrow>
+          </md>
+        </example>
+    -->
     <p>With a multiplication problem, we "eliminate" a constant multiple by multiplying by the reciprocal (or dividing) on both sides. For example consider the following:</p>
     <example>
       <title>Positive Constant Multiple</title>
-      <p></p>
+      <p>Solve for
+        <m>w</m>.
       <md>
-        <mrow>\text{
-        \(4x = 20\)} \amp\amp\amp \text{Notice the constant multiple
+        <mrow>4w = 20 \amp\amp\amp \text{Notice the constant multiple
         \(4\) times the variable
-        \(x\).}</mrow>
-        <mrow>\text{
-        \(\frac{1}{4}(4x) = \frac{1}{4}\cdot 20\)} \amp\amp\amp \text{Multiply both sides by
+        \(w\).}</mrow>
+        <mrow>\frac{1}{4}(4w) = \frac{1}{4}\cdot 20 \amp\amp\amp \text{Multiply both sides by
         \(\frac{1}{4}\)(or divide both sides by
         \(4\)).}</mrow>
-        <mrow>\text{
-        \(x = 5\)} \amp\amp\amp \text{Our solution!}</mrow>
+        <mrow>w = 5 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
-    <p>Then we get our solution
-      <m>x = 5</m>.
-    </p>
     <p>With multiplication problems it is very important that care is taken with signs. If
-      <m>x</m>is multiplied by a negative then we will divide by a negative. This is shown in Example 2A-9.
-    </p>
+      the variable is multiplied by a negative then we will multiply by the negative reciprocal 
+      (or divide by a negative.)</p>
     <example>
       <title>Negative Constant Multiple</title>
-      <p></p>
+      <p>Solve the equation for
+        <m>x</m>.
       <md>
-        <mrow>\text{
-        \(-5x = 30\)} \amp\amp\amp \text{
+        <mrow>-5x = 30 \amp\amp\amp \text{
         \(x\) is multiplied by
         \(-5\)}</mrow>
-        <mrow>\text{
-        \(-\frac{1}{5}(-5x) = -\frac{1}{5}\cdot30\)} \amp\amp\amp \text{Multiply both sides by
-        \(-\frac{1}{5}\) (or divide both sides by
+        <mrow>-\frac{1}{5}(-5x) = -\frac{1}{5}\cdot30 \amp\amp\amp \text{Multiply both sides by
+        \(-\frac{1}{5}\)}</mrow>
+        <mrow>\amp\amp\amp\text{(or divide both sides by
         \(-5\))}</mrow>
-        <mrow>\text{
-        \(x = -6\)} \amp\amp\amp \text{Our solution!}</mrow>
+        <mrow>x=-6 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
     <p>The same process is used in each of the following examples. Notice how negative and positive numbers are handled as each problem is solved.</p>
     <example>
       <title>Multiply by Reciprocals</title>
+      <p>Solve for each variable.</p>
+      <sidebyside>
+        <p>
+          <md>
+            <mrow>8t\amp =-24</mrow>
+            <mrow>\frac{1}{8}(8t)\amp =(-24)\frac{1}{8}</mrow>
+            <mrow>t\amp =-3</mrow>
+        </md>
+        </p>
+        <p>
+          <md>
+            <mrow>-4z\amp =-20</mrow>
+            <mrow>\left(-\frac{1}{4}\right)(-4z)\amp =(-20)\left(-\frac{1}{4}\right)</mrow>
+            <mrow>z\amp =5</mrow>
+        </md>
+        </p>
+        <p>
+          <md>
+            <mrow>42\amp =7x</mrow>
+            <mrow>\frac{1}{7}(42)\amp =\frac{1}{7}(7x)</mrow>
+            <mrow>6\amp =x</mrow>
+        </md>
+        </p>
+        </sidebyside>
+<!--
       <md>
-        <mrow>8x=-24\amp\amp\amp -4x=-20\amp\amp\amp 42=7x</mrow>
-        <mrow>\frac{1}{8}(8x)=(-24)\frac{1}{8}\amp\amp\amp \frac{1}{4}(-4x)=(-20)(-\frac{1}{4}) \amp\amp\amp \frac{1}{7}\cdot 42=\frac{1}{7}(7x)</mrow>
-        <mrow>x =-3 \amp\amp\amp x=5 \amp\amp\amp 6=x</mrow>
-      </md>
+        <mrow>\amp\amp\amp -4z=-20\amp\amp\amp 42=7x</mrow>
+        <mrow>\frac{1}{8}(8t)=(-24)\frac{1}{8}\amp\amp\amp \frac{1}{4}(-4z)=(-20)(-\frac{1}{4}) \amp\amp\amp \frac{1}{7}\cdot 42=\frac{1}{7}(7x)</mrow>
+        <mrow>t =-3 \amp\amp\amp z=5 \amp\amp\amp 6=x</mrow>
+      </md>-->
     </example>
-  </subsection>
-  <subsection>
-    <title>Division Problems</title>
     <p>In division problems, "eliminate the denominator" by multiplying on both sides. For example consider:</p>
     <example>
       <title>Eliminate Denominator</title>
-      <p></p>
+      <p>Solve the equation for
+        <m>t</m>.
+      </p>
+      <p>
       <md>
-        <mrow>\text{
-        \(\frac{x}{5}=-3\)} \amp\amp\amp \text{Variable
-        \(x\) is divided by
+        <mrow>\frac{t}{5}=-3 \amp\amp\amp \text{Variable
+        \(t\) is divided by
         \(5\)}</mrow>
-        <mrow>\text{(5)
-        \(\frac{x}{5}=-3(5)\)} \amp\amp\amp \text{Multiply both sides by
+        <mrow>(5)\frac{t}{5}=-3(5) \amp\amp\amp \text{Multiply both sides by
         \(5\)}</mrow>
-        <mrow>\text{
-        \(x = -15\)} \amp\amp\amp \text{Our solution!}</mrow>
+        <mrow>t=-15 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
-    </example>
-    <p>Then we get our solution
-      <m>x = -15</m>. The same process is used in each of the following examples.
     </p>
+    </example>
+    <p>The same process is used in each of the following examples.
+    </p>
+
     <example>
       <title>Eliminate Denominator</title>
+      <p>Solve for each variable.</p>
+      <sidebyside>
+        <p>
+          <md>
+            <mrow>\frac{x}{-7}\amp =-2</mrow>
+            <mrow>(-7)\frac{x}{-7}\amp =-2(-7)</mrow>
+            <mrow>x\amp=14</mrow>
+        </md>
+        </p>
+        <p>
+          <md>
+            <mrow>\frac{t}{8}\amp =5</mrow>
+            <mrow>(8)\frac{t}{8}\amp =5(8)</mrow>
+            <mrow>t\amp =40</mrow>
+        </md>
+        </p>
+        <p>
+          <md>
+            <mrow>\frac{w}{-4}\amp =9</mrow>
+            <mrow>(-4)\frac{w}{-4}\amp =9(-4)</mrow>
+            <mrow>w\amp =-36</mrow>
+        </md>
+        </p>
+        </sidebyside>
+        <!--
       <md>
         <mrow>\frac{x}{-7}=-2 \amp\amp\amp \frac{x}{8}=5 \amp\amp\amp \frac{x}{-4}=9</mrow>
         <mrow>(-7)\frac{x}{-7}=-2(-7) \amp\amp\amp (8)\frac{x}{8}=5(8) \amp\amp\amp (-4)\frac{x}{-4}=9(-4)</mrow>
         <mrow>x=14\amp\amp\amp x=40 \amp\amp\amp x=-36</mrow>
-      </md>
+      </md>-->
     </example>
     <p>The process described above is fundamental to solving equations. Once this process is mastered, the problems we will see have several more steps. These problems may seem more complex, but the process and patterns used will remain the same.</p>
   </subsection>
   <subsection>
     <title>Linear Equations - Two-Step Equations</title>
-    <p>After mastering the technique for solving equations that are one-step equations, we are ready to consider two-step equations. As we solve two-step equations, the important thing to remember is that everything works backwards! When working with one-step equations, we learned that in order to clear a "plus five" in the equation, we would subtract five from both sides. We learned that to clear "divided by seven" we multiply by seven on both sides. The same pattern applies to the order of operations. When solving for our variable x, we use order of operations backwards as well. This means we will add or subtract first, then multiply or divide second (then exponents, and finally any parentheses or grouping symbols, but that's another lesson). So to solve the equation in the first example:</p>
+    <p>After mastering the technique for solving equations that are one-step equations, we are ready to consider two-step equations. As we solve two-step equations, the important thing to remember is that everything works backwards! When working with one-step equations, we learned that in order to clear a "plus five" in the equation, we would subtract five from both sides. We learned that to clear "divided by seven" we multiply by seven on both sides. The same pattern applies to the order of operations. When solving for our variable, we use order of operations backwards as well. This means we will add or subtract first, then multiply or divide second (then exponents, and finally any parentheses or grouping symbols, but that's another lesson).</p>
     <example>
       <title>Addition then Division</title>
-      <p></p>
+      <p>Solve the equation for
+        <m>x</m>.
+      </p>
+      <p>
       <md>
-        <mrow>\text{
-        \(4x + -20= -8\)}</mrow>
+        <mrow>4x+-20=-8</mrow>
       </md>
-    </example>
+    </p>
     <p>We have two numbers on the same side as the variable
       <m>x</m>. We need to handle the
-      <m>4</m>and the
+      <m>4</m> and the
       <m>-20</m>. We know to "eliminate" the four we need to divide, and to "eliminate" the subtracted twenty we will add twenty to both sides. If order of operations is done backwards, we add or subtract first. Therefore we will add
-      <m>20</m>to both sides first. Once we are done with that, we will divide both sides by
+      <m>20</m> to both sides first. Once we are done with that, we will divide both sides by
       <m>4</m>. The steps are shown below.
     </p>
+    <p>
     <md>
-      <mrow>\text{
-        \(4x\color{red}{-20} = -8\)} \amp\amp\amp \text{Start by focusing on the subtract
+      <mrow>4x\color{red}{-20} = -8 \amp\amp\amp \text{Start by focusing on the subtract
         \(20\)}</mrow>
-      <mrow>\text{
-        \(\phantom{123456}\underline{+20\,\,+20}\)} \amp\amp\amp \text{Add
+      <mrow>\phantom{123456}\underline{+20\,\,+20} \amp\amp\amp \text{Add
         \(20\) to both sides}</mrow>
-      <mrow>\text{
-        \(4x \phantom{1234} = 12\)} \amp\amp\amp \text{Now we focus on the
+      <mrow>4x \phantom{1234} = 12 \amp\amp\amp \text{Now we focus on the
         \(4\) multiplied by
         \(x\)}</mrow>
-      <mrow>\text{
-        \(\overline{ 4 } \phantom{12345678} \overline{ 4 }\)} \amp\amp\amp \text{Divide both sides by
+      <mrow>\overline{ 4 } \phantom{12345678} \overline{ 4 } \amp\amp\amp \text{Divide both sides by
         \(4\)}</mrow>
-      <mrow>\text{
-        \(x =3\)} \amp\amp\amp \text{Our Solution!}</mrow>
+      <mrow>x =3 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
     </md>
+  </p>
     <p>One way we can check the correctness of Our Solution is to substitute
-      <m>x=3</m>back in to the original equation:
+      <m>x=3</m> back in to the original equation:
     </p>
     <md>
-      <mrow>\text{
-        \(4x-20 = -8\)} \amp\amp\amp \text{Substitute
-        \(x=3\) into the
-        <b>LHS</b>}
+      <mrow>4x-20 = -8 \amp\amp\amp \text{Substitute
+        \(x=3\) into the left-hand side}
       </mrow>
-      <mrow>\text{
-        \(4(3)-20\)} \amp\amp\amp \text{Multiply
+      <mrow>4(3)-20 \amp\amp\amp \text{Multiply
         \(4(3)\)}</mrow>
-      <mrow>\text{
-        \(12-20\)} \amp\amp\amp \text{Subtract
+      <mrow>12-20 \amp\amp\amp \text{Subtract
         \(12-20\)}</mrow>
-      <mrow>\text{
-        \(-8\)} \amp\amp\amp \text{
+      <mrow>-8 \amp\amp\amp \text{
         \(-8=-8\): The left-hand side equals the right-hand side:
-        <b>LHS=RHS</b>}
+        LHS=RHS}
       </mrow>
     </md>
     <p>Since we get a true statement
       <m>-8=-8</m>, Our Solution
-      <m>x=3</m>is correct.
+      <m>x=3</m> is correct.<m>\checkmark\checkmark</m>
     </p>
+  </example>
+
     <p>The same process is used to solve any two-step equations. Add or subtract first, then multiply or divide. Consider our next example and notice how the same process is applied.</p>
     <example>
       <title>Subtraction then Division</title>
-      <p></p>
+      <p>Solve the equation for
+        <m>P</m>:
+      </p>
+      <p>
       <md>
-        <mrow>\text{
-        \(5x\color{red}{+7} = 7\)} \amp\amp\amp \text{Start by focusing on the plus
+        <mrow>5P\color{red}{+7} = 7 \amp\amp\amp \text{Start by focusing on the plus
         \(7\)}</mrow>
-        <mrow>\text{
-        \(\underline{-7\phantom{1}-7}\)} \amp\amp\amp \text{Subtract
+        <mrow>\underline{-7\phantom{1}-7} \amp\amp\amp \text{Subtract
         \(7\) from both sides}</mrow>
-        <mrow>\text{
-        \(5x \phantom{123} = 0\)} \amp\amp\amp \text{Now we focus on the
+        <mrow>5P \phantom{123} = 0 \amp\amp\amp \text{Now we focus on the
         \(5\) multiplied by
-        \(x\)}</mrow>
-        <mrow>\text{
-        \(\overline{ 5 } \phantom{1234567} \overline{ 5 }\)} \amp\amp\amp \text{Divide both sides by
-        \(5\)(recall
+        \(P\)}</mrow>
+        <mrow>\overline{ 5 } \phantom{1234567} \overline{ 5 } \amp\amp\amp \text{Divide both sides by
+        \(5\) (recall
         \(\frac{0}{5}=0\))}</mrow>
-        <mrow>\text{
-        \(x =0\)} \amp\amp\amp \text{Our Solution}</mrow>
+        <mrow>P = 0 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
     <p>Notice the seven subtracted out completely! Many students get stuck on this point, do not forget that we have a number for "nothing left" and that number is zero. With this in mind the process is almost identical to our first example.</p>
     <p>A common error students make with two-step equations is with negative signs. Remember the sign always stays with the number. Consider the following example.</p>
     <example>
       <title>Negative Coefficient</title>
+      <p>
       <md>
-        <mrow>\color{red}{4}-2x = 10 \amp\amp\amp \text{Start by focusing on the positive
+        <mrow>\color{red}{4}-2t = 10 \amp\amp\amp \text{Start by focusing on the positive
       \(4\)}</mrow>
-        <mrow>\underline{-4\,\,\,\,\,\,\,\,\,-4} \amp\amp\amp \text{Subtract
+        <mrow>\underline{-4\phantom{12345}-4} \amp\amp\amp \text{Subtract
       \(4\) from both sides}</mrow>
-        <mrow>\,\,\,\,\,\,\,-2x=6\,\, \amp\amp\amp\text{Notice negative
+        <mrow>-2t=6 \amp\amp\amp\text{Notice negative
       \(2\) is times
-      \(x\)(a negative coefficient)}</mrow>
-        <mrow>\,\,\,\,\,\,\,\,\,\,\,\,\overline{-2} \,\,\,\,\,\, \overline{-2}\,\,\,\,\, \amp\amp\amp\text{Divide both sides by
+      \(t\) (a negative coefficient)}</mrow>
+        <mrow>\overline{-2}\phantom{12}\overline{-2} \amp\amp\amp\text{Divide both sides by
       \(-2\)}</mrow>
-        <mrow>\,\,\,\,\,\,\, x =-3 \amp\amp\amp \text{Our Solution!}</mrow>
+        <mrow>t =-3 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
     <p>The same is true even if there the coefficient in front of the variable is a negative \(1\). Consider the next example.</p>
     <example>
       <title>Negative Coefficient</title>
+      <p>
       <md>
         <mrow>\color{red}{8}-x=2 \amp\amp\amp\text{Start by focusing on the positive
       \(8\)}</mrow>
-        <mrow>\underline{-8\,\,\,\,\,\,\,\,\,-8}\amp\amp\amp\text{Subtract
+        <mrow>\underline{-8\phantom{123}-8}\amp\amp\amp\text{Subtract
       \(8\) from both sides}</mrow>
-        <mrow>\,\,\,\,\,\,\,-x  = -6 \,\,\amp\amp\amp \text{Notice negative
+        <mrow>-x= -6\amp\amp\amp \text{Notice negative
       \(1\) is times
       \(x\)}</mrow>
-        <mrow>\,\,\,\,\,\,\,\,\,\,\,\,\overline{-1} \,\,\,\,\,\, \overline{-1}\,\,\,\,\,\amp\amp\amp \text{Divide both sides by
-      \(-1\)(or multiply both sides by
+        <mrow>\overline{-1}\phantom{123}\overline{-1} \amp\amp\amp \text{Divide both sides by
+      \(-1\) (or multiply both sides by
       \(-1\))}</mrow>
-        <mrow>\,\,\,\,\,\,\, x =6 \amp\amp\amp\text{Our Solution!}</mrow>
+        <mrow>x=6 \amp\amp\amp\text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
     <p>Solving two-step equations is a very important skill to master, as we study algebra. The first step is to add or subtract, the second is to multiply or divide. This pattern is seen in each of the following examples.</p>
     <example>
-      <title>Two-Step Examples</title>
-      <md>
-        <mrow>-3x+7=-8\amp\amp\amp -2+9x=7 \amp\amp\amp 8=2x+10</mrow>
-        <mrow>\,\,\,\,\,\,\,\,\, \underline{-7\,\,\,\,-7}\amp\amp\amp\underline{+2\,\,\,\,\,\,\,\,\,\,+2}\amp\amp\amp \underline{-10\,\,\,\,\,\,\,\,\,-10}</mrow>
-        <mrow>\,\,\,\,-3x=-15\amp\amp\amp \,\,\,\,\,\,\,\,\,9x=9\amp\amp\amp -2=2x\,\,\,\,\,\,\,\,</mrow>
-        <mrow>\,\,\,\,\overline{-3}\,\,\,\,\,\,\,\,\overline{-3}\amp\amp\amp \,\,\,\,\,\,\,\,\,\overline{9}\,\,\,\,\,\,\,\,\overline{9}\amp\amp\amp \overline{2}\,\,\,\,\,\,\overline{2}\,\,\,\,\,\,\,\,</mrow>
-        <mrow>\,\,\,\,x=5\amp\amp\amp \,\,\,\,\,\,\,\,\,x=1\amp\amp\amp -1=x\,\,\,\,\,\,\,\,</mrow>
-      </md>
-      <md>
-        <mrow>7-5x=17\amp\amp\amp -5-3x=-5\amp\amp\amp -3=\frac{x}{5}-4</mrow>
+      <title>More Two-Step Examples</title>
+      <!--
+            <md>
+              <mrow>-3x+7=-8\amp\amp\amp -2+9y=7 \amp\amp\amp -5-2t=-5</mrow>
+              <mrow>\,\,\,\,\,\,\,\,\, \underline{-7\,\,\,\,-7}\amp\amp\amp\underline{+2\,\,\,\,\,\,\,\,\,\,+2}\amp\amp\amp \underline{+5\,\,\,\,\,\,\,\,\,+5}</mrow>
+              <mrow>\,\,\,\,-3x=-15\amp\amp\amp \,\,\,\,\,\,\,\,\,9y=9\amp\amp\amp -2t=0\,\,\,\,\,\,\,\,</mrow>
+              <mrow>\,\,\,\,\overline{-3}\,\,\,\,\,\,\,\,\overline{-3}\amp\amp\amp \,\,\,\,\,\,\,\,\,\overline{9}\,\,\,\,\,\,\,\,\overline{9}\amp\amp\amp \overline{-2}\,\,\,\,\,\,\overline{-2}\,\,\,\,\,\,\,\,</mrow>
+              <mrow>\,\,\,\,x=5\amp\amp\amp \,\,\,\,\,\,\,\,\,y=1\amp\amp\amp t=0\,\,\,\,\,\,\,\,</mrow>
+            </md>
+        -->
+    <p>Solve for each variable.</p>
+      <sidebyside>
+        <p>
+          <md>
+            <mrow>7-5y=17\amp</mrow>
+            <mrow>\underline{-7\phantom{12345}-7}\amp</mrow>
+            <mrow>-5y=10\amp</mrow>
+            <mrow>\overline{-5}\phantom{123}\overline{-5}\amp</mrow>
+            <mrow>y=-2\amp</mrow>
+        </md>
+        </p>
+        <p>
+          <md>
+            <mrow>8=10+2t\amp</mrow>
+            <mrow>\underline{-10\phantom{1}-10}\phantom{1234}\amp</mrow>
+            <mrow>-2=2t\phantom{1234}\amp</mrow>
+            <mrow>\overline{2}\phantom{1234}\overline{2}\phantom{1234}\amp</mrow>
+            <mrow>-1=t\phantom{12345}\amp</mrow>
+        </md>
+        </p>
+        <p>
+          <md>
+            <mrow>-3=\frac{x}{5}-4\amp</mrow>
+            <mrow>\underline{+4\phantom{12345}+4}\amp</mrow>
+            <mrow>1=\frac{x}{5}\phantom{123}\amp</mrow>
+            <mrow>(5)1=\frac{x}{5}(5)\amp</mrow>
+            <mrow>5=x\phantom{123}\amp</mrow>
+        </md>
+        </p>
+        </sidebyside>
+     <!--  <md>
+        <mrow>7-5y=17\amp\amp\amp 8=10+2t \amp\amp\amp -3=\frac{x}{5}-4</mrow>
         <mrow>\underline{-7\,\,\,\,\,\,\,\,\,\,\,-7}\amp\amp\amp
-        \underline{+5\,\,\,\,\,\,\,\,\,\,\,\,+5}
+        \underline{-10\,\,\,\,\,\,\,\,\,\,\,\,-10}
         \amp\amp\amp\underline{+4\,\,\,\,\,\,\,\,\,+4}</mrow>
-        <mrow>\,\,\,\,-5x=10
-        \amp\amp\amp\,\,\,\,\,\,\,\,\,3x=0
+        <mrow>\,\,\,\,-5y=10
+        \amp\amp\amp\,\,\,\,\,\,\,\,\,-2=2t
         \amp\amp\amp(5)1=\frac{x}{5}(5)\,\,\,\,\,\,\,\,</mrow>
         <mrow>\,\,\,\,\overline{-5}\,\,\,\,\,\,\,\,\overline{-5}
-        \amp\amp\amp\,\,\,\,\,\,\,\,\,\overline{-3}\,\,\,\,\,\,\,\,\overline{-3}
+        \amp\amp\amp\,\,\,\,\,\,\,\,\,\overline{2}\,\,\,\,\,\,\,\,\overline{2}
         \amp\amp\amp\,\,\,\,\,\,\,\,\,\,\,\,\,\,</mrow>
-        <mrow>\,\,\,\,x=-2
-        \amp\amp\amp\,\,\,\,\,\,\,\,\,x=0
-        \amp\amp\amp5=x\,\,\,\,\,\,\,\,</mrow>
-      </md>
+        <mrow>\,\,\,\,y=-2
+        \amp\amp\amp\,\,\,\,\,\,\,\,\,-1=t
+        \amp\amp\amp 5=x\,\,\,\,\,\,\,\,</mrow>
+      </md> -->
     </example>
   </subsection>
   <subsection>
@@ -365,340 +456,316 @@
     <p>One such issue that needs to be addressed is parenthesis. Often the parenthesis can get in the way of solving an otherwise easy problem. As you might expect we can handle the parenthesis by using the distributive property. This is shown in the following example. Notice the first step is distributing, then it is solved like any other two-step equation.</p>
     <example>
       <title>Distribute First</title>
-      <p></p>
+      <p>Solve for
+        <m>x</m>.
+      </p>
+      <p>
       <md>
-        <mrow>\text{
-        \(4(2x -6) = 16\)} \amp\amp\amp \text{Distribute
+        <mrow>4(2x-6)=16 \amp\amp\amp \text{Distribute
         \(4\) through parenthesis: multiply
         \(4(2)\) and
         \(4(-6)\)}</mrow>
-        <mrow>\text{
-        \(8x -24= 16\)} \amp\amp\amp \text{Focus on the subtraction first}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\underline{+24\,\,\,+ 24}\)} \amp\amp\amp \text{Add
+        <mrow>8x-24=16 \amp\amp\amp \text{Focus on the subtraction first}</mrow>
+        <mrow>\underline{+24\phantom{1}+ 24} \amp\amp\amp \text{Add
         \(24\) to both sides}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,8x = 40\)} \amp\amp\amp \text{Now focus on the multiplication by
+        <mrow>8x = 40 \amp\amp\amp \text{Now focus on the multiplication by
         \(8\)}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\overline{\,8\,}\,\,\,\,\,\,\,\, \overline{\,8\,}\)} \amp\amp\amp \text{Divide both sides by
+        <mrow>\overline{\,8\,}\phantom{123}\overline{\,8\,} \amp\amp\amp \text{Divide both sides by
         \(8\)}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,x =5\)} \amp\amp\amp \text{Our Solution!}</mrow>
+        <mrow>x =5 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
-    <p>Often after we distribute there will be some like terms on one side of the equation. Example
-      <xref ref="clear-parentheses" />shows distributing to "clear" the parentheses followed by combining like terms. Notice we only combine like terms on the same side of the equation. Once we have done this, our next example solves just like any other two-step equation.
+    <p>Often after we distribute there will be some like terms on one side of the equation. <xref ref="clear-parentheses" autoname="yes" /> shows distributing to "clear" the parentheses followed by combining like terms. Notice we only combine like terms on the same side of the equation. Once we have done this, our next example solves just like any other two-step equation.
     </p>
     <example xml:id="clear-parentheses">
       <title>Distribute First</title>
-      <p></p>
+      <p>Solve for
+        <m>t</m>.
+      </p>
+      <p>
       <md>
-        <mrow>\text{
-        \(3(2x -4) + 9 = 15\)} \amp\amp\amp \text{Distribute the
-        \(3\) through the parenthesis}</mrow>
-        <mrow>\text{
-        \(6x -12+9= 15\)} \amp\amp\amp \text{Combine like terms,
+        <mrow>3(2t-4)+9=15 \amp\amp\amp \text{Distribute the
+        \(3\) through the parentheses}</mrow>
+        <mrow>6t-12+9=15 \amp\amp\amp \text{Combine like terms,
         \(-12+9\)}</mrow>
-        <mrow>\text{
-        \(6x -3= 15\)} \amp\amp\amp \text{Focus on the subtraction first}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\underline{+3\,\,\,\,  +3}\)} \amp\amp\amp \text{Add
+        <mrow>6t-3=15 \amp\amp\amp \text{Focus on the subtraction first}</mrow>
+        <mrow>\underline{+3\phantom{1}+3} \amp\amp\amp \text{Add
         \(3\) to both sides}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,6x = 18\)} \amp\amp\amp \text{Now focus on multiplication by
+        <mrow>6t = 18 \amp\amp\amp \text{Now focus on multiplication by
         \(6\)}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\overline{\,6\,}\,\,\,\,\,\,\overline{\,6\,}\)} \amp\amp\amp \text{Divide both sides by
+        <mrow>\overline{\,6\,}\phantom{123}\overline{\,6\,} \amp\amp\amp \text{Divide both sides by
         \(6\)}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,x = 3\)} \amp\amp\amp \text{Our Solution!}</mrow>
+        <mrow>t = 3 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
     <p>A second type of problem that becomes a two-step equation after a bit of work is one where we see the variable on both sides. This is shown in the following example:</p>
-    <example>
+    <example xml:id="example-collect-like-terms-first">
       <title>Collect Like Terms First</title>
-      <p></p>
-      <md>
-        <mrow>\text{
-        \(4x -6=2x + 10\)}</mrow>
-      </md>
-      <p>Notice here the
-        <m>x</m>is on both the left and right sides of the equation. This can make it difficult to decide which side to work with. We fix this by adding or subtracting one of the terms with
-        <m>x</m>to the other side, much like we do with a constant term. It doesn't matter which term gets added or subtracted,
-        <m>4x</m>or
-        <m>2x</m>, however, it would be our suggestion to subtract the smaller term in this case (to avoid negative coefficients). For this reason we begin this problem by  subtracting
-        <m>2x</m>from both sides.
+      <p>Solve for
+        <m>x</m>.
       </p>
+      <p>
       <md>
-        <mrow>\text{
-        \(4x -6=2x + 10\)} \amp\amp\amp \text{Notice the variable
+        <mrow>4x-6=2x+10</mrow>
+      </md></p>
+      <p>Notice here the
+        <m>x</m> is on both the left and right sides of the equation. This can make it difficult to decide which side to work with. We fix this by adding or subtracting one of the terms with
+        <m>x</m> to the other side, much like we do with a constant term. It doesn't matter which term gets added or subtracted,
+        <m>4x</m> or
+        <m>2x</m>, however, it would be our suggestion to subtract the smaller term in this case (to avoid negative coefficients). For this reason we begin this problem by  subtracting
+        <m>2x</m> from both sides.
+      </p>
+      <p>
+      <md>
+        <mrow>4x-6=2x+10 \amp\amp\amp \text{Notice the variable
         \(x\) on both sides}</mrow>
-        <mrow>\text{
-        \(\underline{-2x\,\,\,\,\, -2x}\)} \amp\amp\amp \text{Subtract
+        <mrow>\underline{-2x\phantom{1234}-2x}\phantom{1234} \amp\amp\amp \text{Subtract
         \(2x\) from both sides}</mrow>
-        <mrow>\text{
-        \(2x -6= 10\)} \amp\amp\amp \text{Focus on the subtraction first}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\underline{+6\,\,\,\, +6}\)} \amp\amp\amp \text{Add
+        <mrow>2x-6=\phantom{1234}10 \amp\amp\amp \text{Focus on the subtraction first}</mrow>
+        <mrow>\underline{+6\phantom{123456}+6} \amp\amp\amp \text{Add
         \(6\) to both sides}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,2x=16\)} \amp\amp\amp \text{Focus on the multiplication by
+        <mrow>2x=16 \amp\amp\amp \text{Focus on the multiplication by
         \(2\)}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\overline{2}\,\,\,\,\,\,\,\,\,\,\,\,\overline{2}\)} \amp\amp\amp \text{Divide both sides by
+        <mrow>\overline{2}\phantom{12345}\overline{2} \amp\amp\amp \text{Divide both sides by
         \(2\)}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,\, x = 8\)} \amp\amp\amp \text{Our Solution!}</mrow>
+        <mrow>x=8 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
-    <p>The next example shows the check on this solution. Here Our Solution
-      <m>x=8</m>is substituted for the
-      <m>x</m>on both the
-      <b>LHS</b>and
-      <b>RHS</b>before simplifying.
+    <p>The next example shows the check on the solution in <xref ref="example-collect-like-terms-first" autoname="yes" /> . Here Our Solution
+      <m>x=8</m> is substituted for the
+      <m>x</m> on both the
+      <term>LHS</term> and
+      <term>RHS</term> before simplifying.
     </p>
     <example>
-      <title>Check the Last Solution</title>
-      <p></p>
-      <md>
+      <title>Check Our Solution <m>x=8</m></title>
+      <p>Check that <m>x=8</m> is a solution of the equation <m>4x-6=2x+10</m>.</p>
+      <p>
+      <sidebyside>
+        <p>
+          <md>
+            <mrow>\text{LHS: }\amp\amp\amp 4x-6</mrow>
+            <mrow>4(8)-6 \amp\amp\amp \text{Multiply
+              \(4(8)\)}</mrow>
+              <mrow>32 -6 \amp\amp\amp \text{Subtract}</mrow>
+              <mrow>26 \amp\amp\amp \text{LHS value}</mrow>
+            </md>
+        </p>
+        <p>
+          <md>
+          <mrow>\text{RHS: }\amp\amp\amp 2x+10</mrow>
+            <mrow>2(8)+10 \amp\amp\amp \text{Multiply
+              \(2(8)\)}</mrow>
+              <mrow>16+10 \amp\amp\amp \text{Subtract}</mrow>
+              <mrow>26 \amp\amp\amp \text{RHS value}</mrow>
+            </md>
+          </p>
+        </sidebyside>
+      </p>
+      <!-- <md>
         <mrow>\text{
-          LHS:} \amp\amp\amp \text{\(4x-6\)} \amp\amp\amp\text{ } \amp\amp\amp \text{
+          LHS:} \amp\amp\amp 4x-6 \amp\amp\amp\text{ } \amp\amp\amp \text{
           RHS:}\amp\amp\amp\text{\(2x + 10\)
          }</mrow>
-        <mrow>\text{
-        \(4(8)-6\)} \amp\amp\amp \text{Multiply
+        <mrow>4(8)-6 \amp\amp\amp \text{Multiply
         \(4(8)\)}\amp\amp\amp\text{
          } \amp\amp\amp \text{
         \(2(8)+10\)}\amp\amp\amp\text{Multiply
         \(2(8)\)}</mrow>
-        <mrow>\text{
-          \(32 -6\)} \amp\amp\amp \text{Subtract}
+        <mrow>32 -6 \amp\amp\amp \text{Subtract}
           \amp\amp\amp\text{
           } \amp\amp\amp \text{
           \(16 +10\)}\amp\amp\amp\text{Add}</mrow>
-        <mrow>\text{
-        \(26\)} \amp\amp\amp \text{
+        <mrow>26 \amp\amp\amp \text{
         LHS value}\amp\amp\amp\text{
          } \amp\amp\amp \text{
         \(26\)}\amp\amp\amp\text{
         RHS value}</mrow>
       </md>
+    </p> -->
       <p>Since
-        <m>26=26</m>we have
-        <b>LHS=RHS</b>which means Our Solution
-        <m>x=8</m>is correct!
+        <m>26=26</m> we have
+        <term>LHS=RHS</term> which means Our Solution
+        <m>x=8</m> is correct!<m>\checkmark</m>
       </p>
     </example>
     <p>The next example illustrates the same process with negative coefficients. Notice first the negative term with the variable is added to both sides.</p>
     <example>
       <title>Collect Like Terms</title>
-      <p>
-        <p></p>
+        <p>Solve for
+          <m>z</m>.
+        </p>
+        <p>
         <md>
-          <mrow>\text{
-          \(-3x+9=6x-27\)} \amp\amp\amp \text{Notice the variable
-          \(x\) on both sides,
-          \(-3x\) is negative}</mrow>
-          <mrow>\text{
-          \(\underline{+3x\,\,\,\,\,\,\,\,\, +3x\,\,\,\,\,\,}\)} \amp\amp\amp \text{Add
-          \(3x\) to both sides}</mrow>
-          <mrow>\text{
-          \(\,\,\,\,\,\,\,9=9x-27\)} \amp\amp\amp \text{Focus on the subtraction of
+          <mrow>-3z+9=6z-27\ \amp\amp\amp \text{Notice the variable
+          \(z\) on both sides,
+          \(-3z\) is negative}</mrow>
+          <mrow>\underline{+3z\phantom{123}+3z}\phantom{12345} \amp\amp\amp \text{Add
+          \(3z\) to both sides}</mrow>
+          <mrow>9=9z-27 \amp\amp\amp \text{Focus on the subtraction of
           \(27\) first}</mrow>
-          <mrow>\text{
-          \(\,\,\,\,\,\,\underline{+27\,\,\,\,\,\,\,\, +27}\)} \amp\amp\amp \text{Add
+          <mrow>\underline{+27\phantom{12345}  +27} \amp\amp\amp \text{Add
           \(27\) to both sides}</mrow>
-          <mrow>\text{
-          \(\,\,\,\,\,\,\, 36=9x\)} \amp\amp\amp \text{Focus on the multiplication by
+          <mrow> 36=9z \amp\amp\amp \text{Focus on the multiplication by
           \(9\)}</mrow>
-          <mrow>\text{
-          \(\,\,\,\,\,\,\,\overline{9}\,\,\,\,\,\,\,\,\,\,\,\, \overline{9}\)} \amp\amp\amp \text{Divide both sides by
+          <mrow>\overline{\,9\,}\phantom{12}\overline{\,9\,}\phantom{1} \amp\amp\amp \text{Divide both sides by
           \(9\)}</mrow>
-          <mrow>\text{
-          \(\,\,\,\,\,\,\,\,\,\,\, 4=x\)} \amp\amp\amp \text{Our Solution!}</mrow>
+          <mrow> 4=z \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
       </p>
     </example>
     <p>Linear equations can become particularly interesting when the two processes are combined. In the following problems we have parenthesis and the variable on both sides. Notice in each of the following examples we distribute, then combine like terms, then move the variable to one side of the equation.</p>
     <example>
       <title>Distribute and Collect</title>
-      <p></p>
+      <p>Solve for
+          <m>x</m>.</p>
+          <p>
       <md>
-        <mrow>\text{
-        \(2(x-5) + 3x = x + 18\)} \amp\amp\amp \text{Distribute the
-        \(2\) through parenthesis}</mrow>
-        <mrow>\text{
-        \(2x-10 + 3x = x + 18\)} \amp\amp\amp \text{Combine like terms
+        <mrow>2(x-5)+3x=x+18 \amp\amp\amp \text{Distribute the
+        \(2\) through parentheses}</mrow>
+        <mrow>2x-10+3x=x+18 \amp\amp\amp \text{Combine like terms
         \(2x+ 3x\)}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,5x-10 = x + 18\)} \amp\amp\amp \text{Notice the variable
+        <mrow>5x-10=x+18 \amp\amp\amp \text{Notice the variable
         \(x\) on both sides,
         \(x\) is smaller}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\underline{-x\,\,\,\,\,\,\,\,\,\,\, -x\,\,\,\,\,\,}\)} \amp\amp\amp \text{Subtract
-        \(x\) to both sides}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,4x-10=18\)} \amp\amp\amp \text{Focus on the subtraction of
+        <mrow>\underline{-x\phantom{12345} -x}\phantom{12345} \amp\amp\amp \text{Subtract
+        \(x\) from both sides}</mrow>
+        <mrow>4x-10=\phantom{123}18 \amp\amp\amp \text{Focus on the subtraction of
         \(10\)}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\underline{+10\,\,\,\, +10}\)} \amp\amp\amp \text{Add
+        <mrow>\underline{+10\phantom{123}+10} \amp\amp\amp \text{Add
         \(10\) to both sides}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, 4x=28\)} \amp\amp\amp \text{Focus on the multiplication by
+        <mrow>4x=28 \amp\amp\amp \text{Focus on the multiplication by
         \(4\)}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\overline{4}\,\,\,\,\,\,\,\,\,\,\,\, \overline{4}\)} \amp\amp\amp \text{Divide both sides by
+        <mrow>\overline{4}\phantom{12345} \overline{4} \amp\amp\amp \text{Divide both sides by
         \(4\)}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, x=7\)} \amp\amp\amp \text{Our Solution!}</mrow>
+        <mrow>x=7 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
     <p>Sometimes we may have to distribute more than once to clear several parenthesis. Remember to combine like terms after you distribute!</p>
     <example>
       <title>Distribute and Collect</title>
-      <p></p>
+      <p>Solve for
+        <m>y</m>.
+      </p>
+      <p>
       <md>
-        <mrow>\text{
-        \(3(4x-5)-4(2x+1)=5\)} \amp\amp\amp \text{Distribute the
+        <mrow>3(4y-5)-4(2y+1)=5 \amp\amp\amp \text{Distribute the
         \(3\) and
-        \(-4\) through parenthesis}</mrow>
-        <mrow>\text{
-        \(12x-15-8x-4=5\)} \amp\amp\amp \text{Combine like terms
-        \(12x-8x\) and
+        \(-4\) through parentheses}</mrow>
+        <mrow>12y-15-8y-4=5 \amp\amp\amp \text{Combine like terms
+        \(12y-8y\) and
         \(-15-4\)}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,4x-19=5\)} \amp\amp\amp \text{Focus on the subtraction of
+        <mrow>4y-19=5 \amp\amp\amp \text{Focus on the subtraction of
         \(19\)}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\underline{+19\,\,\,\, +19}\)} \amp\amp\amp \text{Add
+        <mrow>\underline{+19 +19} \amp\amp\amp \text{Add
         \(19\) to both sides}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, 4x=24\)} \amp\amp\amp \text{Focus on the multiplication by
+        <mrow>4y=24 \amp\amp\amp \text{Focus on the multiplication by
         \(4\)}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\overline{4}\,\,\,\,\,\,\,\,\,\,\,\, \overline{4}\)} \amp\amp\amp \text{Divide both sides by
+        <mrow>\overline{4}\phantom{1234}\overline{4} \amp\amp\amp \text{Divide both sides by
         \(4\)}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, x=6\)} \amp\amp\amp \text{Our Solution!}</mrow>
+        <mrow>y=6 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
     <p>This leads to a
-      <b>
+      <term>
         <m>5</m>-step process
-      </b>to solve any linear equation. While all five steps aren't always needed, this can serve as a guide to solving equations.
+      </term> to solve any linear equation. While all five steps aren't always needed, this can serve as a guide to solving equations.
     </p>
     <p>
-      <b>
-        <ol>
+      <ol>
           <li>Distribute through any parentheses.</li>
           <li>Combine like terms on each side of the equation.</li>
           <li>Get the variable on one side by adding or subtracting.</li>
           <li>Solve the remaining 2-step equation (add or subtract then multiply or divide).</li>
-          <li>Check your answer by plugging it back in for x to find a true statement.</li>
+          <li>Check your answer by plugging it back in for <m>x</m> to find a true statement.</li>
         </ol>
-      </b>
     </p>
     <p>We can see each of the above five steps worked through our next example.</p>
     <example>
       <title>Demonstrate Five-Step Solution</title>
-      <p></p>
+      <p>Solve for
+        <m>x</m>.
+      </p>
+      <p>
       <md>
-        <mrow>\text{
-        \(4(2x -6) + 9 = 3(x -7) + 8x\)} \amp\amp\amp \text{
-          <b>Step 1:</b>Distribute the
+        <mrow>4(2x-6)+9=3(x-7)+8x \amp\amp\amp \text{Step 1: Distribute the
         \(4\) and
-        \(3\) through parenthesis}
+        \(3\) through parentheses}
         </mrow>
-        <mrow>\text{
-        \(\,\,\,\,8x-24+9=3x-21+8x\)} \amp\amp\amp \text{
-          <b>Step 2:</b>Combine like terms
+        <mrow>8x-24+9=3x-21+8x \amp\amp\amp \text{Step 2: Combine like terms
         \(-24+9\) and
         \(3x+8x\)}
         </mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,\,\,8x-15=11x-21\)} \amp\amp\amp \text{Notice the variable
+        <mrow>8x-15=11x-21 \amp\amp\amp \text{Notice the variable
         \(x\) is on both sides}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,\underline{-8x\,\,\,\,\,\,\,\,\,\,\,\,\, -8x}\)} \amp\amp\amp \text{
-          <b>Step 3:</b>Subtract
+        <mrow>\underline{-8x\phantom{12345}-8x}\phantom{12345} \amp\amp\amp \text{Step 3: Subtract
         \(8x\) from both sides}
         </mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,-15=3x-21\)} \amp\amp\amp \text{
-          <b>Step 4:</b>Focus on the subtraction of
+        <mrow>-15=3x-21 \amp\amp\amp \text{Step 4: Focus on the subtraction of
         \(21\)}
         </mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\underline{+21\,\,\,\,\,\,\,\, \,\,\, +21}\)} \amp\amp\amp \text{Add
+        <mrow>\underline{+21\phantom{12345} +21} \amp\amp\amp \text{Add
         \(21\) to both sides}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, 6=3x\)} \amp\amp\amp \text{Focus on the multiplication by
+        <mrow>6=3x \amp\amp\amp \text{Focus on the multiplication by
         \(3\)}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\overline{3}\,\,\,\,\,\,\,\, \overline{3}\)} \amp\amp\amp \text{Divide both sides by
+        <mrow>\overline{\,3\,}\phantom{12}\overline{\,3\,}\, \amp\amp\amp \text{Divide both sides by
         \(3\)}</mrow>
-        <mrow>\text{
-        \(\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, 2=x\)} \amp\amp\amp \text{Our Solution.  We leave
-          <b>Step 5</b>for you: check that
-        \(x=2\)
-          <b>IS</b>a solution by plugging this value back in to the original equation.}
-        </mrow>
-      </md>
-      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace is licensed under a Creative Commons Attribution 3.0 Unported License. (http://creativecommons.org/licenses/by/3.0/) Based on a work at http://wallace.ccfaculty.org/book/book.html. pages 120-->
+        <mrow>2=x \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
+      <p>
+        We leave
+          <term>Step 5</term> for you: check that
+        <m>x=2</m>
+          IS a solution by plugging this value back in to the original equation.
+        </p>
     </example>
-      <p>We can use exponent properties to solve equations involving scientific notation.</p>
-          <example>
-  <title>Solve an Equation Involving Scientific Notation</title>
-    <p>Solve the equation for
-      <m>x</m>.
+        
+      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace is licensed under a Creative Commons Attribution 3.0 Unported License. (http://creativecommons.org/licenses/by/3.0/) Based on a work at http://wallace.ccfaculty.org/book/book.html. pages 120-->
+    <p>Let's try one involving scientific notation. The fundamental ideas of solving 
+        an equation still apply.</p>
+    <example>
+      <title>Solve an Equation Involving Scientific Notation</title>
+      <p>Solve the equation for
+        <m>x</m>.
+      </p>
+      <!--Our own-->
+      <p>
+      <md>
+        <mrow>\left(7\times 10^{3}\right)x = 1.4\times 10^{-7}\amp\amp\amp \text{Divide both sides by } 7\times 10^{3}</mrow>
+        <mrow>x = \dfrac{1.4\times 10^{-7}}{7\times 10^{3}} \amp\amp\amp \text{Deal with numbers and
+           \(10\)'s separately}</mrow>
+        <mrow>\dfrac{1.4}{7}=0.2 \amp\amp\amp \text{Divide the numbers}</mrow>
+        <mrow>0.2=2.0\times 10^{-1} \amp\amp\amp \text{Convert \(0.2\) into scientific notation}</mrow>
+        <mrow>\dfrac{10^{-1} 10^{-7}}{ 10^{3}}=10^{-11} \amp\amp\amp \text{Use the product and quotient rules,}</mrow>
+        <mrow>\amp\amp\amp\text{and include the
+          \(10^{-1}\) from the conversion}</mrow>
+        <mrow>\amp\amp\amp
+      \text{to get the exponent:}</mrow>
+        <mrow>\amp\amp\amp
+       (-1)+(-7)-(3)=(-1)+(-7)+(-3)=-11</mrow>
+        <mrow>x=2.0 \times 10^{-11} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+      </md>
     </p>
-    <!--Our own-->
-  <md>
-    <mrow>\text{
-          \(7\times 10^{3}x = 1.4\times 10^{-7}\)} \amp\amp\amp \text{Solve for
-          \(x\)}</mrow>
-    <mrow>\text{
-          \(x= \dfrac{1.4\times 10^{-7}}{7\times 10^{3}}\)} \amp\amp\amp \text{Deal with numbers and
-          \(10\)'s separately}</mrow>
-    <mrow>\text{
-          \(\dfrac{1.4}{7}=0.2\)} \amp\amp\amp \text{Divide numbers}</mrow>
-    <mrow>\text{
-          \(0.2=2.0\times 10^{-1}\)} \amp\amp\amp \text{Convert this number into scientific notation}</mrow>
-    <mrow>\text{
-          \(\dfrac{10^{-1} 10^{-7}}{ 10^{3}}=10^{-11}\)} \amp\amp\amp \text{Use product and quotient rule,}</mrow>
-    <mrow>
-      \text{ }\amp\amp\amp
-      \text{using
-          \(10^{-1}\) from the conversion}
-    </mrow>
-    <mrow>
-      \text{ }\amp\amp\amp
-      \text{Be careful with signs:}
-    </mrow>
-    <mrow>
-      \text{ }\amp\amp\amp
-      (-1)+(-7)-(3)=(-1)+(-7)+(-3)=-11
-    </mrow>
-
-    <mrow>\text{
-          \(x=2.0 \times 10^{-11}\)} \amp\amp\amp \text{Our Solution}</mrow>
-  </md>
-</example>
+    </example>
   </subsection>
-    <subsection>
+  <subsection>
     <title>Absolute Value Equations</title>
     <p>Absolute value is defined as distance from zero.  Consider both integers
       <m>5</m> and
-      <m>-5</m>.   Since both positive and negative
+      <m>-5.</m> Since both positive and negative
       <m>5</m> have a distance of
       <m>5</m> units from
       <m>0</m> on the number line, both have an absolute value of
       <m>5</m>.
     </p>
     <md>
-      <mrow>\text{
-        \(\lvert 5\rvert =5 \text{ and } \lvert -5\rvert =5\)} \amp\amp\amp \text{
+      <mrow>\lvert 5\rvert =5 \text{ and } \lvert -5\rvert =5 \amp\amp\amp \text{
         <p align="center">
           <figure xml:id="figure-absolute-value-x-equal-5">
             <image xml:id="absolute-value-x-equal-5">
@@ -716,168 +783,139 @@
           <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 84 pg 52-->
         </p>
         <md>
-          <mrow>\text{
-            \(\lvert x\rvert  = 7\)} \amp\amp\amp \text{Absolute value can be positive or negative}
-          </mrow>
+          <mrow>\lvert x\rvert  = 7 \amp\amp\amp \text{Absolute value can be positive or negative}</mrow>
           <mrow>\text{
             \(x=7\) or
-            \(x=-7\)} \amp\amp\amp \text{Our Solution <m>\checkmark</m>}
-          </mrow>
+            \(x=-7\)} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
         <p>Notice that we have determined two possibilities, both the positive and negative. Either way, the absolute value of our number will be positive
-          <m>7</m>.
+          <m>7.</m>
         </p>
       </example>
       <assemblage>
-       <title>WeBWorK: Entering more than one solution</title>
-              <p>
-              Type
-              <c>x=7 or x=-7</c>
-              </p>
+        <title>WeBWorK: Entering Two Solutions</title>
+        <p>Be sure to include the word "or" between the solutions:
+          <c>x = 7 or x = -7</c>.
+        </p>
       </assemblage>
-      <!--TABLES WILL NEED TO BE UPGRADED IF THESE EXAMPLES ARE PUT BACK IN THE TEXT
       <p>
-        <b>
-          <font color="#FF0000"/>Important:
-        </b>First isolate the absolute value, then "remove the absolute value" by considering both the positive and negative solutions separately. Notice in the next two examples, all the numbers outside of the absolute value are "moved to the other side" first before we remove the absolute value bars and consider both positive and negative solutions.
+        <alert>Important:</alert> First isolate the absolute value, then "remove the absolute value" by considering both the positive and negative solutions separately. Notice in the next two examples, all the numbers outside of the absolute value are "moved to the other side" first before we remove the absolute value bars and consider both positive and negative solutions.
       </p>
       <example>
         <title>Isolate Absolute Value First</title>
-        <p>
-          <!** Cite Beginning and Intermediate Algebra by Tyler Wallace Example 85 pg 52**>
+        <p>Solve for <m>x</m>.
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 85 pg 52-->
         </p>
+        <p>
         <md>
-          <mrow>
-            5+\lvert x\rvert = 8 \amp\amp\amp \text{Notice absolute value is not alone on the
-            <b>LHS</b>
-            <font color="#FF0000"/>Isolate the absolute value first}
-          </mrow>
-          <mrow>
-            \underline{-5\phantom{12345}-5} \amp\amp\amp \text{Subtract
-            \(5\) from both sides}
-          </mrow>
-          <mrow>
-            \lvert x\rvert  = 3 \amp\amp\amp \text{Absolute value can be positive or negative}
-          </mrow>
-          <mrow>
-            \(x=3\) \text{or}
-            \(x=-3\)} \amp\amp\amp \text{Our Solution}
-          </mrow>
+          <mrow>5+\lvert x\rvert =8 \amp\amp\amp \text{Notice absolute value is not alone on the LHS}</mrow>
+          <mrow>\amp\amp\amp\text{Isolate the absolute value first}</mrow>
+          <mrow>\underline{-5\phantom{12345}-5} \amp\amp\amp \text{Subtract
+            \(5\) from both sides}</mrow>
+          <mrow>\lvert x\rvert =3 \amp\amp\amp \text{Absolute value can be positive or negative}</mrow>
+          <mrow>\text{
+            \(x=3\) or
+            \(x=-3\)} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
+      </p>
         <p>Check our two solutions: Substitute both back in the original equation
           <m>5+\lvert x\rvert = 8</m>.
         </p>
+        <p>
         <md>
-          <mrow>\text{
-            \(\underline{x=3:}\)} \amp\amp\amp \text{
-            \(\underline{x=-3:}\)}
-          </mrow>
-          <mrow>\text{
-            \(5+\lvert 3\rvert \)} \amp\amp\amp \text{
-            \(5+\lvert -3\rvert \)}
-          </mrow>
-          <mrow>\text{
-            \(5+3 = 8\checkmark\)} \amp\amp\amp \text{
-            \(5+3 = 8 \checkmark\)}
-          </mrow></md>
-          <p>Both
-            <m>x=3</m> and
-            <m>x=-3</m> satisfy the equation <m>\checkmark</m>
-          </p>
+          <mrow>\underline{x=3:} \amp\amp\amp 
+            \underline{x=-3:}</mrow>
+          <mrow>5+\lvert 3\rvert  \amp\amp\amp 
+            5+\lvert -3\rvert</mrow>
+          <mrow>5+3 = 8\checkmark \amp\amp\amp 
+            5+3 = 8 \checkmark</mrow>
+        </md>
+      </p>
+        <p>Both
+          <m>x=3</m> and
+          <m>x=-3</m> satisfy the equation
+          <m>\checkmark</m>
+        </p>
       </example>
       <example>
         <title>Isolate Absolute Value First</title>
-        <p>
-          <!** Cite Beginning and Intermediate Algebra by Tyler Wallace Example 86 pg 52**>
+        <p>Solve for <m>x</m>.
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 86 pg 52-->
         </p>
+        <p>
         <md>
-          <mrow>\text{
-            \(-4\lvert x\rvert =-20\)} \amp\amp\amp \text{Notice absolute value is not alone on the
-            <b>LHS</b>
-            <font color="#FF0000"/>Isolate the absolute value first}
+          <mrow>-4\lvert x\rvert =-20 \amp\amp\amp \text{Notice absolute value is not alone on the LHS}</mrow>
+          <mrow>\amp\amp\amp \text{Isolate the absolute value first}
           </mrow>
-          <mrow>\text{
-            \(\overline{-4}\phantom{123456}\overline{-4}\)} \amp\amp\amp \text{Divide both sides by
-            \(-4\)}
-          </mrow>
-          <mrow>\text{
-            \(\lvert x\rvert  = 5\)} \amp\amp\amp \text{Absolute value can be positive or negative}
-          </mrow>
+          <mrow>\overline{-4}\phantom{123456}\overline{-4} \amp\amp\amp \text{Divide both sides by
+            \(-4\)}</mrow>
+          <mrow>\lvert x\rvert  = 5 \amp\amp\amp \text{Absolute value can be positive or negative}</mrow>
           <mrow>\text{
             \(x=5\) or
-            \(x=-5\)} \amp\amp\amp \text{Our Solution}
-          </mrow>
+            \(x=-5\)} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
+      </p>
       </example>
       <p>Notice we never combine what is inside the absolute value with what is outside the absolute value. This is very important as it will often change the final result to an incorrect solution. The next example requires two steps to isolate the absolute value. The idea is the same as a two-step equation, add or subtract, then multiply or divide.</p>
       <example>
         <title>Two-Step Absolute Value Equation</title>
-        <p>
-          <!** Cite Beginning and Intermediate Algebra by Tyler Wallace Example 87 pg 53**>
+        <p>Solve for <m>x</m>.
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 87 pg 53-->
         </p>
+        <p>
         <md>
-          <mrow>\text{
-            \(5\lvert x\rvert -4 = 26\)} \amp\amp\amp \text{Notice absolute value is not alone on the
-            <b>LHS</b>
-            <font color="#FF0000"/>Isolate the absolute value first}
+          <mrow>5\lvert x\rvert -4 = 26 \amp\amp\amp \text{Notice absolute value is not alone on the LHS}</mrow>
+          <mrow>\amp\amp\amp\text{Isolate the absolute value first}
           </mrow>
-          <mrow>\text{
-            \(\underline{+4\phantom{12}+4}\)} \amp\amp\amp \text{Add
-            \(4\) to both sides}
-          </mrow>
-          <mrow>\text{
-            \(5\lvert x\rvert  = 30\)} \amp\amp\amp \text{Absolute value still not alone}
-          </mrow>
-          <mrow>\text{
-            \(\overline{5\,}\phantom{12345}\overline{\,5\,}\)} \amp\amp\amp \text{Divide both sides by
-            \(5\)}
-          </mrow>
-          <mrow>\text{
-            \(\lvert x\rvert  = 6\)} \amp\amp\amp \text{Absolute value can be positive or negative}
-          </mrow>
+          <mrow>\underline{+4\phantom{12}+4} \amp\amp\amp \text{Add
+            \(4\) to both sides}</mrow>
+          <mrow>5\lvert x\rvert  = 30 \amp\amp\amp \text{Absolute value still not alone}</mrow>
+          <mrow>\overline{5\,}\phantom{12345}\overline{\,5\,} \amp\amp\amp \text{Divide both sides by
+            \(5\)}</mrow>
+          <mrow>\lvert x\rvert  = 6 \amp\amp\amp \text{Absolute value can be positive or negative}</mrow>
           <mrow>\text{
             \(x=6\) or
-            \(x=-6\)} \amp\amp\amp \text{Our Solution}
-          </mrow>
+            \(x=-6\)} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
+      </p>
       </example>
-      <p>
-        Again we see the same process: isolate the absolute value first, then consider the positive and negative solutions. -->
-        <p>
-        Often the absolute value will have more than just a variable in it. In this case we will have to solve the resulting equations when we consider the positive and negative possibilities. This is shown in the next example.</p>
+      <p>Again we see the same process: isolate the absolute value first, then consider the positive and negative solutions. Often the absolute value will have more than just a variable in it. In this case we will have to solve the resulting equations when we consider the positive and negative possibilities. This is shown in the next example.</p>
       <example>
         <title>Absolute Value of an Expression</title>
-        <p>
+        <p>Solve for <m>x</m>.
           <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 88 pg 53-->
         </p>
+        <p>
         <md>
-          <mrow>\text{
-            \(\lvert 2x-1\rvert  = 7\)} \amp\amp\amp \text{Absolute value can be positive or negative}
-          </mrow>
+          <mrow>\lvert 2x-1\rvert  = 7 \amp\amp\amp \text{Absolute value can be positive or negative}</mrow>
           <mrow>\text{
             \(2x-1=7\) or
-            \(2x-1=-7\)} \amp\amp\amp \text{Two equations to solve}
-          </mrow>
+            \(2x-1=-7\)} \amp\amp\amp \text{Two equations to solve}</mrow>
         </md>
+      </p>
         <p>Now notice we have two equations to solve, each equation will give us a different solution. Both equations solve (separately) like any other two-step equation.</p>
+        <p>
         <md>
-          <mrow>2x-1=7\amp\amp\amp\text{ OR }\amp\amp\amp2x-1=-7</mrow>
+          <mrow>2x-1=7\amp\amp\amp\text{ OR }\amp\amp\amp 2x-1=-7</mrow>
           <mrow>\underline{+1\,+1}\amp\amp\amp\text{ }\amp\amp\amp\underline{+1\phantom{12}+1}</mrow>
           <mrow>2x=8\amp\amp\amp\text{ }\amp\amp\amp 2x=-6</mrow>
           <mrow>\overline{2}\phantom{1234}\overline{2}\amp\amp\amp\phantom{1234}\amp\amp\amp\overline{2}\phantom{1234}\overline{\,2\,}</mrow>
-          <mrow>x=4\amp\amp\amp\text{OR}\amp\amp\amp x=-3</mrow>
-          <mrow>\text{}\amp\amp\amp x=4\text{ or }x=-3\amp\amp\amp\text{Our Solution}</mrow>
+          <mrow>x=4\amp\amp\amp\text{ OR }\amp\amp\amp x=-3</mrow>
+          <mrow>x=4\amp\amp\amp \text{ or }x=-3\amp\amp\amp\text{Our Solution}\checkmark</mrow>
         </md>
+      </p>
       </example>
       <p>Again, it is important to remember that the absolute value must be alone first before we consider the positive and negative possibilities. This is illustrated in the below example.</p>
       <example>
         <title>Isolate Absolute Value First</title>
-        <p>
+        <p>Solve for <m>x</m>.
           <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 89 pg 54-->
         </p>
+        <p>
         <md>
           <mrow>2-4\lvert 2x + 3\rvert  = -18</mrow>
         </md>
+      </p>
         <p>To get the absolute value alone we first need to subtract the
           <m>2</m> from both sides, then divide by
           <m>-4</m>(the coefficient on the absolute value).  Notice we cannot combine the
@@ -886,35 +924,29 @@
           <m>-4</m> is multiplied by the absolute value expression.  Also notice we do not distribute the
           <m>-4</m> into the absolute value.  This is because the numbers outside cannot be combined with the numbers inside the absolute value. Thus we get the absolute value alone in the following way:
         </p>
+        <p>
         <md>
-          <mrow>\text{
-            \(2-4\lvert 2x + 3\rvert  = -18\)} \amp\amp\amp \text{Notice absolute value is not alone}
-          </mrow>
-          <mrow>\text{
-            \(\underline{-2\phantom{1234567890123}-2}\)} \amp\amp\amp \text{Subtract
-            \(2\) from both sides }
-          </mrow>
-          <mrow>\text{
-            \(-4\lvert 2x + 3\rvert  = - 20\)} \amp\amp\amp \text{Absolute value still not alone}
-          </mrow>
-          <mrow>\text{
-            \(\overline{-4\,}\phantom{123456789}\overline{\,-4\,}\)} \amp\amp\amp \text{Divide both sides by
-            \(-4\)}
-          </mrow>
-          <mrow>\text{
-            \(\lvert 2x+3\rvert  = 5\)} \amp\amp\amp \text{Absolute value can be positive or negative}
-          </mrow>
+          <mrow>2-4\lvert 2x + 3\rvert  = -18 \amp\amp\amp \text{Notice absolute value is not alone}</mrow>
+          <mrow>\underline{-2\phantom{1234567890123}-2} \amp\amp\amp \text{Subtract
+            \(2\) from both sides }</mrow>
+          <mrow>-4\lvert 2x + 3\rvert  = - 20 \amp\amp\amp \text{Absolute value still not alone}</mrow>
+          <mrow>\overline{-4\,}\phantom{123456789}\overline{\,-4\,} \amp\amp\amp \text{Divide both sides by
+            \(-4\)}</mrow>
+          <mrow>\lvert 2x+3\rvert  = 5 \amp\amp\amp \text{Absolute value can be positive or negative}</mrow>
           <mrow>2x+3=5\text{ or }2x+3=-5\amp\amp\amp \text{Two equations to solve}</mrow>
         </md>
+      </p>
         <p>Now we solve these two remaining equations to find our solutions.</p>
+        <p>
         <md>
-          <mrow>2x+3=5\amp\amp\amp\text{ OR }2x+3=-5</mrow>
-          <mrow>\underline{-3\,-3}\amp\amp\amp\text{ }\amp\amp\amp\underline{-3\,\,\,\,\,-3}</mrow>
-          <mrow>2x=2\amp\amp\amp\text{ }\amp\amp\amp2x=-8</mrow>
-          <mrow>\overline{2}\phantom{12345}\overline{2}\amp\amp\amp\text{ }\amp\amp\amp \overline{2}\,\,\,\,\,\,\,\,\,\,\,\,\overline{\,2\,}</mrow>
-          <mrow>x=1\amp\amp\amp\text{ OR }\amp\amp\amp x=-4</mrow>
-          <mrow>\text{ }\amp\amp\amp x=1\text{ or }x=-4\amp\amp\amp\text{Our Solution}</mrow>
+          <mrow>2x+3=5 \amp\amp\amp \text{ OR }\amp\amp\amp 2x+3=-5</mrow>
+          <mrow>\underline{-3\,-3} \amp\amp\amp \text{ }\amp\amp\amp\underline{-3\phantom{123}-3}</mrow>
+          <mrow>2x=2 \amp\amp\amp \text{ }\amp\amp\amp2x=-8</mrow>
+          <mrow>\overline{\,2\,}\phantom{12}\overline{\,2\,} \amp\amp\amp \text{ }\amp\amp\amp \overline{\,2\,}\phantom{123}\overline{\,2\,}</mrow>
+          <mrow>x=1 \amp\amp\amp \text{ OR } \amp\amp\amp x=-4</mrow>
+          <mrow>x=1\amp\amp\amp \text{ or }x=-4\amp\amp\amp\text{Our Solution}\checkmark</mrow>
         </md>
+      </p>
       </example>
       <p>As we are solving absolute value equations it is important to be aware of special cases. Remember the result of an absolute value must always be positive. Notice what happens in the next example.</p>
       <example>
@@ -923,30 +955,26 @@
           <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 90 pg 55-->
         </p>
         <md>
-          <mrow>\text{
-            \(7+\lvert 2x-5\rvert =4\)} \amp\amp\amp \text{Notice absolute value is not alone}
-          </mrow>
-          <mrow>\text{
-            \(\underline{-7\phantom{123456789}-7}\)} \amp\amp\amp \text{Subtract
-            \(7\) from both sides }
-          </mrow>
-          <mrow>\text{
-            \(\lvert 2x-5\rvert  = \color{red}{-3}\)} \amp\amp\amp \text{
+          <mrow>7+\lvert 2x-5\rvert =4 \amp\amp\amp \text{Notice absolute value is not alone}</mrow>
+          <mrow>\underline{-7\phantom{123456789}-7} \amp\amp\amp \text{Subtract
+            \(7\) from both sides }</mrow>
+          <mrow>\lvert 2x-5\rvert  = \color{red}{-3} \amp\amp\amp \text{
             <font color="#FF0000"/>
-            <b>STOP!</b>Result of absolute value can't be negative! }
+            <term>STOP!</term> Result of absolute value can't be negative! }
           </mrow>
-          <mrow>\text{No solution} \amp\amp\amp \text{Our Solution
-            <assemblage>Type
-              <b>No solution</b>in
-              <tt>WeBWorK</tt>
-            </assemblage>}
-          </mrow>
+          <mrow>\text{No solution} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
       </example>
       <p>Notice in the above example, the absolute value expressions equals a negative number! This is impossible with absolute value. When this occurs we
         <font color="#FF0000"/>
-        <b>STOP</b>and conclude there is no solution.
+        <term>STOP</term> and conclude there is no solution.
       </p>
+      <assemblage>
+        <title>WeBWorK: Enter "No solution"</title>
+        <p>If the equation has no solution, type
+          <c>No solution</c>.
+        </p>
+      </assemblage>
     </subsection>
-              </section>
+  </section>
               
