@@ -9,15 +9,17 @@
   <subsection>
     <title>Solution to an Equation</title>
     <p>Solving linear equations is an important and fundamental skill in algebra. In algebra, we are often presented with a problem where the answer is known, but part of the problem is missing. The missing part of the problem is what we seek to find. An example of such a problem is shown below.</p>
-    <example>
+    <example xml:id="example-equation">
       <title>Example Linear Equation</title>
       <p>
         <md>
-          <mrow>4x+16=-4</mrow>
+          <mrow>LHS \amp = RHS</mrow>
+          <mrow>4x+16\amp =-4</mrow>
         </md>
+      Equations are of the form "left-hand side" equals "right-hand side" or <term>LHS</term><m>=</m><term>RHS</term> for short<m>\checkmark</m>.
       </p>
     </example>
-    <p>Notice the above problem has a missing part, or unknown, that is marked by
+    <p>Notice the above equation in <xref ref="example-equation" autoname="yes" /> has a missing part, or unknown number, that is marked by
       <m>x</m>. If we are given that the solution to this equation is
       <m>-5</m>, it could be plugged into the equation, replacing the
       <m>x</m> with
@@ -27,15 +29,17 @@
     <example xml:id="demonstrate-solution">
       <title>A Solution</title>
       <p>Start with the equation
-        <m>4x + 16= -4</m>. Let
-        <m>x=-5</m>:
+        <m>4x + 16= -4</m>.</p>
+      <p>
+        Let
+        <m>x=-5</m> in the <term>LHS</term>:
       </p>
       <p>
         <md>
           <mrow>4(-5) + 16\amp\amp\amp\text{Multiply \(4(-5)\)}</mrow>
           <mrow>-20+ 16 \amp\amp\amp \text{Add \(-20+ 16\)}</mrow>
           <mrow>-4 \amp\amp\amp -4=-4</mrow>
-          <mrow>\text{The left-hand side equals the right-hand side.}\amp\amp\amp x=-5\text{ IS a solution}\checkmark</mrow>
+          <mrow>\text{The LHS DOES equal the RHS}\amp\amp\amp x=-5\text{ IS a solution}\checkmark</mrow>
         </md>
       </p>
     </example>
@@ -47,8 +51,9 @@
     <example xml:id="not-a-solution">
       <title>NOT a Solution</title>
       <p>Start with the equation
-        <m>4x + 16= -4</m>. Let
-        <m>x=3</m>:
+        <m>4x + 16= -4</m>.</p>
+        <p>Let
+        <m>x=3</m> in the <term>LHS</term>:
       </p>
       <p>
       <md>
@@ -57,7 +62,7 @@
         <mrow>12+ 16 \amp\amp\amp \text{Add
         \(12+ 16\)}</mrow>
         <mrow>28 \amp\amp\amp 28\neq -4</mrow>
-        <mrow>\text{The left-hand side does not equal the right-hand side.}\amp\amp\amp x=3\text{ is NOT a solution}\checkmark</mrow>
+        <mrow>\text{The LHS does NOT equal the RHS.}\amp\amp\amp x=3\text{ is NOT a solution}\checkmark</mrow>
       </md>
     </p>
     </example>
@@ -72,19 +77,19 @@
       <title>Solve an Equation Involving Addition</title>
       <p>Solve for <m>x</m>.
       <md>
-        <mrow>x + 7 = -5 \amp\amp\amp \text{Notice the
+        <mrow>x+7 \amp = -5 \amp\amp \text{Notice the
         \(7\) is added to the
-        \(x\).}</mrow>
-        <mrow>(x + 7) - 7 = (-5) - 7 \amp\amp\amp \text{Subtract
+        \(x\)}</mrow>
+        <mrow>(x+7)-7 \amp = (-5) - 7 \amp\amp \text{Subtract
         \(7\) from both sides to isolate
-        \(x\).}</mrow>
-        <mrow>x = -12 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        \(x\)}</mrow>
+        <mrow>x \amp = -12 \amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
     </p>
     </example>
     
       <assemblage>
-        <title>WeBWorK: Entering solutions to equations</title>
+        <title>WeBWorK: Entering Solutions to Equations</title>
         <p>Enter the entire expression
           <c>x = -12</c>, NOT just the value
           <c>-12</c>.
@@ -128,13 +133,13 @@
       <p>Solve for
         <m>x</m>.
       <md>
-        <mrow>x-5=4 \amp\amp\amp \text{Notice
+        <mrow>x-5\amp = 4 \amp\amp \text{Notice
         \(5\) is  subtracted from
-        \(x\).}</mrow>
-        <mrow>(x-5)+5=4+5 \amp\amp\amp \text{Add
+        \(x\)}</mrow>
+        <mrow>(x-5)+5\amp = 4+5 \amp\amp \text{Add
         \(5\) to both sides of the equation to solve for
-        \(x\).}</mrow>
-        <mrow>x=9 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        \(x\)}</mrow>
+        <mrow>x\amp = 9 \amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
     </p>
     </example>
@@ -157,13 +162,13 @@
       <p>Solve for
         <m>w</m>.
       <md>
-        <mrow>4w = 20 \amp\amp\amp \text{Notice the constant multiple
+        <mrow>4w \amp = 20 \amp\amp \text{Notice the constant multiple
         \(4\) times the variable
-        \(w\).}</mrow>
-        <mrow>\frac{1}{4}(4w) = \frac{1}{4}\cdot 20 \amp\amp\amp \text{Multiply both sides by
+        \(w\)}</mrow>
+        <mrow>\frac{1}{4}(4w) \amp = \frac{1}{4}\cdot 20 \amp\amp \text{Multiply both sides by
         \(\frac{1}{4}\)(or divide both sides by
-        \(4\)).}</mrow>
-        <mrow>w = 5 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        \(4\))}</mrow>
+        <mrow>w \amp = 5 \amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
     </p>
     </example>
@@ -175,14 +180,14 @@
       <p>Solve the equation for
         <m>x</m>.
       <md>
-        <mrow>-5x = 30 \amp\amp\amp \text{
+        <mrow>-5x \amp = 30 \amp\amp \text{
         \(x\) is multiplied by
         \(-5\)}</mrow>
-        <mrow>-\frac{1}{5}(-5x) = -\frac{1}{5}\cdot30 \amp\amp\amp \text{Multiply both sides by
+        <mrow>-\frac{1}{5}(-5x) \amp = -\frac{1}{5}\cdot30 \amp\amp \text{Multiply both sides by
         \(-\frac{1}{5}\)}</mrow>
         <mrow>\amp\amp\amp\text{(or divide both sides by
         \(-5\))}</mrow>
-        <mrow>x=-6 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        <mrow>x\amp =-6 \amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
     </p>
     </example>
@@ -228,12 +233,12 @@
       </p>
       <p>
       <md>
-        <mrow>\frac{t}{5}=-3 \amp\amp\amp \text{Variable
+        <mrow>\frac{t}{5}\amp =-3 \amp\amp \text{Variable
         \(t\) is divided by
         \(5\)}</mrow>
-        <mrow>(5)\frac{t}{5}=-3(5) \amp\amp\amp \text{Multiply both sides by
+        <mrow>(5)\frac{t}{5}\amp =-3(5) \amp\amp \text{Multiply both sides by
         \(5\)}</mrow>
-        <mrow>t=-15 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        <mrow>t\amp =-15 \amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
     </p>
     </example>
@@ -241,7 +246,7 @@
     </p>
 
     <example>
-      <title>Eliminate Denominator</title>
+      <title>Eliminate Denominators</title>
       <p>Solve for each variable.</p>
       <sidebyside>
         <p>
@@ -313,17 +318,15 @@
       <m>x=3</m> back in to the original equation:
     </p>
     <md>
-      <mrow>4x-20 = -8 \amp\amp\amp \text{Substitute
-        \(x=3\) into the left-hand side}
+      <mrow>4x-20 \amp = -8 \amp\amp \text{Substitute
+        \(x=3\) into the LHS}
       </mrow>
       <mrow>4(3)-20 \amp\amp\amp \text{Multiply
         \(4(3)\)}</mrow>
       <mrow>12-20 \amp\amp\amp \text{Subtract
         \(12-20\)}</mrow>
-      <mrow>-8 \amp\amp\amp \text{
-        \(-8=-8\): The left-hand side equals the right-hand side:
-        LHS=RHS}
-      </mrow>
+      <mrow>-8 \amp\amp\amp\text{Compare the LHS to the RHS}</mrow>
+      <mrow>-8\amp =-8\amp\amp\text{LHS=RHS}</mrow>
     </md>
     <p>Since we get a true statement
       <m>-8=-8</m>, Our Solution
@@ -377,17 +380,18 @@
       <title>Negative Coefficient</title>
       <p>
       <md>
-        <mrow>\color{red}{8}-x=2 \amp\amp\amp\text{Start by focusing on the positive
+        <mrow>\color{red}{8}-x\amp =2 \amp\amp\text{Start by focusing on the positive
       \(8\)}</mrow>
-        <mrow>\underline{-8\phantom{123}-8}\amp\amp\amp\text{Subtract
+        <mrow>\underline{-8\phantom{123}}\amp\underline{\phantom{1}-8}\amp\amp\text{Subtract
       \(8\) from both sides}</mrow>
-        <mrow>-x= -6\amp\amp\amp \text{Notice negative
+        <mrow>-x\amp = -6\amp\amp \text{Notice negative
       \(1\) is times
       \(x\)}</mrow>
-        <mrow>\overline{-1}\phantom{123}\overline{-1} \amp\amp\amp \text{Divide both sides by
-      \(-1\) (or multiply both sides by
-      \(-1\))}</mrow>
-        <mrow>x=6 \amp\amp\amp\text{Our Solution}\checkmark</mrow>
+        <mrow>(-1)(-x)\amp = -6(-1) \amp\amp \text{Multiply both sides by 
+      \(-1\)}</mrow>
+      <mrow>\amp\amp\amp\text{(or divide both sides by
+      \(-1\)) for the same result}</mrow>
+        <mrow>x\amp =6 \amp\amp\text{Our Solution}\checkmark</mrow>
       </md>
     </p>
     </example>
@@ -693,7 +697,7 @@
       </p>
       <p>
       <md>
-        <mrow>4(2x-6)+9=3(x-7)+8x \amp\amp\amp \text{Step 1: Distribute the
+        <mrow>4(2x-6)+9=3(x-7)+8x \amp\amp\amp \text{Step 1: Distribute
         \(4\) and
         \(3\) through parentheses}
         </mrow>
@@ -756,7 +760,7 @@
   </subsection>
   <subsection>
     <title>Absolute Value Equations</title>
-    <p>Absolute value is defined as distance from zero.  Consider both integers
+    <p><term>Absolute value</term> is defined as <em>distance from zero</em>.  Consider both integers
       <m>5</m> and
       <m>-5.</m> Since both positive and negative
       <m>5</m> have a distance of
@@ -764,18 +768,33 @@
       <m>0</m> on the number line, both have an absolute value of
       <m>5</m>.
     </p>
-    <md>
-      <mrow>\lvert 5\rvert =5 \text{ and } \lvert -5\rvert =5 \amp\amp\amp \text{
-        <p align="center">
-          <figure xml:id="figure-absolute-value-x-equal-5">
-            <image xml:id="absolute-value-x-equal-5">
-              <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
-                <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \fill[color=red] (4,.5) circle (.1cm); \draw[color=red] (5,.5) circle (.1cm); \draw[red] (4,.5) -- (4.9,.5); \node[anchor=south, color=red] at (4.5,.5) {$x$}; \end{tikzpicture}} ]]></latex-image-code>
-              </image>
-            </figure>
-          </p>}
-        </mrow>
-      </md>
+    <sidebyside widths="5% 25% 65%" valign="middle">
+      <p></p>
+      <p>
+        <md>
+          <mrow>\lvert 5\rvert \amp =5 \text{ and}</mrow>
+          <mrow>\lvert -5\rvert \amp =5</mrow>
+        </md>
+      </p>
+      <figure xml:id="figure-absolute-value-x-equal-5">
+        <image xml:id="absolute-value-x-equal-5">
+          <latex-image-code><![CDATA[
+            \begin{tikzpicture} \draw[<->] (-5.5,0) -- (5.5,0);
+              \foreach \x in {-5,...,5}
+                \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
+               \fill[color=red] (-5,0) circle (.1cm);
+               \fill[color=red] (5,0) circle (.1cm);
+               \fill[color=blue] (0,0) circle (.1cm);
+               \draw[color=M101_green] (-5,.5) -- (5,.5);
+               \draw[color=M101_green] (-5,.4) -- (-5,.6);
+               \draw[color=M101_green] (0,.4) -- (0,.6);
+               \draw[color=M101_green] (5,.4) -- (5,.6);
+               \node[anchor=south, color=M101_green] at (-2.5,.5) {distance $=5$};
+               \node[anchor=south, color=M101_green] at (2.5,.5) {distance $=5$}; 
+             \end{tikzpicture}]]></latex-image-code>
+        </image>
+      </figure>
+    </sidebyside>
       <p>Thus when solving equations with absolute value we can end up with more than one possible answer. This is because the expression inside the absolute value can be either positive or negative and we must account for both possibilities when solving equations. This is illustrated in the following example.</p>
       <example>
         <title>Absolute Value Equation: Two Solutions</title>
@@ -833,8 +852,8 @@
       </p>
         <p>Both
           <m>x=3</m> and
-          <m>x=-3</m> satisfy the equation
-          <m>\checkmark</m>
+          <m>x=-3</m> satisfy the equation.
+          <m>\checkmark\checkmark</m>
         </p>
       </example>
       <example>
