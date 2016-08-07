@@ -201,7 +201,7 @@
         </paragraphs>
         <figure xml:id="figure-tree-gender">
           <image xml:id="tree-gender">
-            <latex-image-code><![CDATA[\begin{tikzpicture} \draw (0,4) -- (3,6) node[shift={(.25,0)}] {$B$}; \draw (3.5, 6) -- (6.5,7) node[shift={(0.4,0)}] {$B$}; \draw (7.25, 7) -- (9,7.5) node[shift={(1.5,0)}] {$B\rightarrow BBB$}; \draw (7.25, 7) -- (9,6.5) node[shift={(1.5,0)}] {$G\rightarrow BBG$}; \draw (3.5, 6) -- (6.5,5) node[shift={(0.4,0)}] {$G$}; \draw (7.25, 5) -- (9,5.5) node[shift={(1.5,0)}] {$B\rightarrow BGB$}; \draw (7.25, 5) -- (9,4.5) node[shift={(1.5,0)}] {$G\rightarrow BGG$}; \draw (0,4) -- (3,2) node[shift={(.25,0)}] {$G$}; \draw (3.5, 2) -- (6.5,3) node[shift={(0.4,0)}] {$B$}; \draw (7.25, 3) -- (9,3.5) node[shift={(1.5,0)}] {$B\rightarrow GBB$}; \draw (7.25, 3) -- (9,2.5) node[shift={(1.5,0)}] {$G\rightarrow GBG$}; \draw (3.5, 2) -- (6.5,1) node[shift={(0.4,0)}] {$G$}; \draw (7.25, 1) -- (9,1.5) node[shift={(1.5,0)}] {$B\rightarrow GGB$}; \draw (7.25, 1) -- (9,.5) node[shift={(1.5,0)}] {$G\rightarrow GGG$}; \end{tikzpicture}} ]]></latex-image-code>
+            <latex-image-code><![CDATA[\begin{tikzpicture} \draw (0,4) -- (3,6) node[shift={(.25,0)}] {$B$}; \draw (3.5, 6) -- (6.5,7) node[shift={(0.4,0)}] {$B$}; \draw (7.25, 7) -- (9,7.5) node[shift={(1.5,0)}] {$B\rightarrow BBB$}; \draw (7.25, 7) -- (9,6.5) node[shift={(1.5,0)}] {$G\rightarrow BBG$}; \draw (3.5, 6) -- (6.5,5) node[shift={(0.4,0)}] {$G$}; \draw (7.25, 5) -- (9,5.5) node[shift={(1.5,0)}] {$B\rightarrow BGB$}; \draw (7.25, 5) -- (9,4.5) node[shift={(1.5,0)}] {$G\rightarrow BGG$}; \draw (0,4) -- (3,2) node[shift={(.25,0)}] {$G$}; \draw (3.5, 2) -- (6.5,3) node[shift={(0.4,0)}] {$B$}; \draw (7.25, 3) -- (9,3.5) node[shift={(1.5,0)}] {$B\rightarrow GBB$}; \draw (7.25, 3) -- (9,2.5) node[shift={(1.5,0)}] {$G\rightarrow GBG$}; \draw (3.5, 2) -- (6.5,1) node[shift={(0.4,0)}] {$G$}; \draw (7.25, 1) -- (9,1.5) node[shift={(1.5,0)}] {$B\rightarrow GGB$}; \draw (7.25, 1) -- (9,.5) node[shift={(1.5,0)}] {$G\rightarrow GGG$}; \end{tikzpicture} ]]></latex-image-code>
           </image>
         </figure>
       </sidebyside>
@@ -700,7 +700,7 @@
                         \node[shift={(1,0)}] {$\color{red}{6}$};
                         \node[shift={(0,0)}] {$\color{blue}{54}$};
                         \node[shift={(2,0)}] {$\color{green}{9}$};
-                      \end{tikzpicture}} ]]></latex-image-code>
+                      \end{tikzpicture} ]]></latex-image-code>
             </image>
           </figure>
         </sidebyside>

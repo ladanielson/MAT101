@@ -228,7 +228,7 @@
             <latex-image-code><![CDATA[\begin{tikzpicture} \draw[step=1cm,gray,very thin] (-4.9,-1.9) grid (4.9,5.9); \draw[line width=0.55mm,black,
               <->] (-5,0) -- (5,0) node[anchor=north west] {$t$}; \draw[line width=0.55mm,black] (4 cm,3pt) -- (4 cm,-3pt)node[shift={(0.05,-.3)}] {$10$}; \draw[line width=0.55mm,black] (-4 cm,3pt) -- (-4 cm,-3pt)node[shift={(0.05,-.3)}] {$-10$}; \draw[line width=0.55mm,black] (3pt,0cm) -- (-3pt,0 cm) node[shift={(-0.05,-.3)}] {$0$}; \draw[line width=0.55mm,black,
                 <->] (0,-2) -- (0,6) node[anchor=south east] {$D$}; \draw[line width=0.55mm,black] (3pt,5 cm) -- (-3pt,5 cm)node[shift={(-.3,0.05)}] {500}; \fill[color=black] (0,.33) circle (.15cm) node[shift={(-1.,.1)}] {\LARGE $(0,30)$}; \fill[color=black] (1.5,2.25) circle (.15cm) node[shift={(1.2,0)}] {\LARGE $(3,225)$}; \draw[line width=0.65mm,black,
-                  <->] (-1,-1) -- (4,5.5) node[shift={(-3.6,-1.8)}] {\LARGE $D=65t+30$}; \end{tikzpicture}} ]]></latex-image-code>
+                  <->] (-1,-1) -- (4,5.5) node[shift={(-3.6,-1.8)}] {\LARGE $D=65t+30$}; \end{tikzpicture} ]]></latex-image-code>
                 </image>
               </figure>
               <paragraphs>

@@ -191,7 +191,7 @@
     <p>We now use Venn diagrams to illustrate the relations between sets. In the late 1800s, an English logician named John Venn developed a method to represent relationships between sets. He represented these relationships using diagrams, which are now known as Venn diagrams. A Venn diagram represents a set as the interior of a circle. Often two or more circles are enclosed in a rectangle where the rectangle represents the universal set. To visualize an intersection or union of a set is easy.  Below are a few examples.</p>
     <figure xml:id="figure-Venn-A-union-B">
       <image xml:id="Venn-A-union-B">
-        <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe; \node[anchor=south east] at (current bounding box.south east) {$U$}; \node[anchor=south] at (current bounding box.north) {$A \cup B$}; \draw[filled] \firstcircle node {$A$} \secondcircle node {$B$}; \end{tikzpicture}} ]]></latex-image-code>
+        <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe; \node[anchor=south east] at (current bounding box.south east) {$U$}; \node[anchor=south] at (current bounding box.north) {$A \cup B$}; \draw[filled] \firstcircle node {$A$} \secondcircle node {$B$}; \end{tikzpicture} ]]></latex-image-code>
       </image>
     </figure>
     <p>The shaded region represents the collection of all elements that are either in
@@ -203,7 +203,7 @@
     </p>
     <figure xml:id="figure-Venn-A-intersect-B">
       <image xml:id="Venn-A-intersect-B">
-        <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe; \node[anchor=south east] at (current bounding box.south east) {$U$}; \begin{scope} \clip \firstcircle; \fill[filled] \secondcircle; \end{scope} \draw[outline] \firstcircle node {$A$}; \draw[outline] \secondcircle node {$B$}; \node[anchor=south] at (current bounding box.north) {$A \cap B$}; \end{tikzpicture}} ]]></latex-image-code>
+        <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe; \node[anchor=south east] at (current bounding box.south east) {$U$}; \begin{scope} \clip \firstcircle; \fill[filled] \secondcircle; \end{scope} \draw[outline] \firstcircle node {$A$}; \draw[outline] \secondcircle node {$B$}; \node[anchor=south] at (current bounding box.north) {$A \cap B$}; \end{tikzpicture} ]]></latex-image-code>
       </image>
     </figure>
     <p>The shaded region represents the collection of all elements that are common to both
@@ -213,7 +213,7 @@
     </p>
     <figure xml:id="figure-Venn-A-complement">
       <image xml:id="Venn-A-complement">
-        <latex-image-code><![CDATA[\begin{tikzpicture} \fill[color = M101_green!50!white ] \universe; \node[anchor=south east] at (current bounding box.south east) {$U$}; \draw \universe; \node[anchor=south] at (current bounding box.north) {$A'$}; \fill[color = white] \firstcircle; \draw[outline] \firstcircle node {$A$}; \draw[outline] \secondcircle node {$B$}; \end{tikzpicture}} ]]></latex-image-code>
+        <latex-image-code><![CDATA[\begin{tikzpicture} \fill[color = M101_green!50!white ] \universe; \node[anchor=south east] at (current bounding box.south east) {$U$}; \draw \universe; \node[anchor=south] at (current bounding box.north) {$A'$}; \fill[color = white] \firstcircle; \draw[outline] \firstcircle node {$A$}; \draw[outline] \secondcircle node {$B$}; \end{tikzpicture} ]]></latex-image-code>
       </image>
     </figure>
     <p>The shaded region represents the collection of all elements that are

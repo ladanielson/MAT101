@@ -698,7 +698,7 @@
                         \draw (3.5, 2) -- (6.5,1) node[shift={(0.4,0)}] {$G$} node[shift={(-1.5,.15)}] {$0.97$};
                         \draw (7.25, 1) -- (9,1.5) node[shift={(1.5,0)}] {$B\rightarrow GGB$} node[shift={(-1,-.025)}] {$0.03$};
                         \draw (7.25, 1) -- (9,.5) node[shift={(1.5,0)}] {$G\rightarrow GGG$} node[shift={(-1,.025)}] {$0.97$};
-                                  \end{tikzpicture}} ]]></latex-image-code>
+                                  \end{tikzpicture} ]]></latex-image-code>
                         </image>
                       </figure>
         </sidebyside>
