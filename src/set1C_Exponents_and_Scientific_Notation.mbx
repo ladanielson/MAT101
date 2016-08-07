@@ -6,14 +6,12 @@
       <li>Convert between standard and scientific notation.</li>
       <li>Multiply and divide expressions using scientific notation and exponent properties.</li>
       <li>Add and subtract expressions using scientific notation and exponent properties.</li>
-      <li>Solve equations using scientific notation and exponent properties.</li>
     </ul>
   </introduction>
   <subsection>
     <title>Exponent Properties</title>
     <p>Problems with exponents can often be simplified using a few important exponent properties. Recall from
-      Set
-      <xref ref="section-00-preliminaries" />exponents represent repeated multiplication:
+      <xref ref="section-00-preliminaries" autoname="yes" /> exponents represent repeated multiplication:
       <ul>
         <li>
           <m>x^1 = x</m>
@@ -27,941 +25,709 @@
         <li>
           <m>10^4 = (10)(10)(10)(10)=10,000</m>
         </li>
-      </ul>We will use this fact to discover the important properties.
+      </ul>This fact provides the basis for how we deal with mathematical expressions with exponents.
     </p>
     <example>
       <title>Multiplication with Exponents</title>
-      <p>
-        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 196 pg 177-->
+      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 196 pg 177-->
+      <p>Simplify.
+        <md>
+          <mrow>a^3a^2 \amp\amp\amp \text{Expand exponents to multiplication problem}</mrow>
+          <mrow>(aaa)(aa) \amp\amp\amp \text{Now we have \(5\) \(a\)'s being multiplied together}</mrow>
+          <mrow>a^5\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+        </md>
       </p>
-      <md>
-        <mrow>\text{
-          \(a^3a^2\)} \amp\amp\amp \text{Expand exponents to multiplication problem}</mrow>
-        <mrow>\text{
-          \((aaa)(aa)\)} \amp\amp\amp \text{Now we have
-          \(5\)
-          \(a\)'s being multiplied together}</mrow>
-        <mrow>a^5\amp\amp\amp\text{Our Solution
-          <div class="WWbox">Type
-            <b>a^5</b>for
-            <m>a^5</m>in
-            <tt>WeBWorK</tt>
-          </div>}
-        </mrow>
-      </md>
-    </example>
-    <p>A quicker method to arrive at our answer would have been to just add the exponents:
-      <m>a^3 a^2=a^{3+2}=a^5</m>. This is known as the
-      <b>product rule of exponents</b>:
-    </p>
-    <p>
-      <b>Product Rule of Exponents</b>:
-      <m>a^m a^n=a^{m+n}</m>
-    </p>
-    <p>The product rule of exponents can be used to simplify many problems. We will add the exponent on like variables. This is shown in the following examples:</p>
-    <example>
-      <title>Product Rule of Exponents</title>
-      <p>
-        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 197 pg 177-->
+      </example>
+      <assemblage>
+        <title>WeBWorK: Entering Exponents</title>
+        <p>Type
+          <c>a^5</c>for
+          <m>a^5.</m>
+        </p>
+      </assemblage>
+      <p>Notice that the exponents
+        <m>3</m> and
+        <m>2</m> give the number of times to multiply
+        <m>a</m> and the product is the total number of times
+        <m>a</m> gets multiplied,
+        <m>5:</m>
+        <m>a^3 a^2=a^{3+2}=a^5</m>. This is known as the
+        <term>product rule of exponents</term>:
       </p>
-      <md>
-        <mrow>3^2\cdot 3^6\cdot 3 \amp\amp\amp \text{Same base
-          \((3)\), add the exponents
-          \(2+6+1\)}</mrow>
-        <mrow>\text{
-          \(3^9\)} \amp\amp\amp \text{Our Solution}</mrow>
-      </md>
-    </example>
-    <example>
-      <title>Product Rule of Exponents</title>
-      <p>
-        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 198 pg 177-->
-      </p>
-      <md>
-        <mrow>\text{
-          \(2x^3 y^5 z \cdot 5x y^2 z^3\)} \amp\amp\amp \text{Multiply
-          \(2\cdot 5\), add exponents on each of
-          \(x, y\) and
-          \(z\)}</mrow>
-        <mrow>\text{
-          \(10x^4 y^7 z^4\)} \amp\amp\amp \text{Our Solution}</mrow>
-      </md>
-    </example>
-    <p>Rather than multiplying, we will now try to divide with exponents.</p>
-    <example>
-      <title>Division with Exponents</title>
-      <p>
-        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 199 pg 177-->
-      </p>
-      <md>
-        <mrow>\text{
-          \(\dfrac{a^5}{a^2}\)} \amp\amp\amp \text{Expand exponents}</mrow>
-        <mrow>\text{
-          \(\dfrac{aaaaa}{aa}\)} \amp\amp\amp \text{Divide out (cancel) two of the
-          \(a\)'s in both the numerator and denominator (
-          \(\frac{a}{a} = 1\))}</mrow>
-        <mrow>\text{
-          \(aaa\)} \amp\amp\amp \text{Convert to exponents}</mrow>
-        <mrow>\text{
-          \(a^3\)} \amp\amp\amp \text{Our Solution}</mrow>
-      </md>
-    </example>
-    <p>A quicker method to arrive at the solution would have been to just subtract the exponents,
-      <m>\dfrac{a^5}{ a^2} = a^{5-2}= a^3</m>. This is known as the
-      <b>quotient rule of exponents</b>.
-    </p>
-    <p>
-      <b>Quotient Rule of Exponents:</b>
-      <m>\frac{a^m}{ a^n} =a^{m-n}</m>
-    </p>
-    <p>The quotient rule of exponents can similarly be used to simplify exponent problems by subtracting exponents on like variables. This is shown in the following examples:</p>
-    <example>
-      <title>Quotient Rule of Exponents</title>
-      <p>
-        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 200 pg 178-->
-      </p>
-      <md>
-        <mrow>\text{
-          \(\dfrac{7^{13}}{7^5}\)} \amp\amp\amp \text{Same base, subtract the exponents
-          \(13-5 = 8\)}</mrow>
-        <mrow>\text{
-          \(7^8\)} \amp\amp\amp \text{Our Solution}</mrow>
-      </md>
-    </example>
-    <!--Remove this example
-    <example>
-      <title>Quotient Rule of Exponents</title>
-      <p>
-        <!## Cite Beginning and Intermediate Algebra by Tyler Wallace Example 201 pg 178##>
-      </p>
-      <md>
-        <mrow>\text{
-          \(\dfrac{5a^3 b^5 c^2}{2ab^3 c}\)} \amp\amp\amp \text{Subtract exponents on
-          \(a, b\) and
-          \(c\)}</mrow>
-        <mrow>\text{
-          \(\frac{5}{2} a^2 b^2 c\)} \amp\amp\amp \text{Our Solution}</mrow>
-      </md>
-    </example>
-    -->
-    <p>A third property we will look at will have an exponent problem raised to a second exponent. This is investigated in the following example:</p>
-    <example>
-      <title>Powers with Exponents</title>
-      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 202 pg 178-->
-      <md>
-        <mrow>\text{
-            \(\left(a^2\right)^3\)} \amp\amp\amp \text{This means we have
-            \(a^2\) three times--expand}</mrow>
-        <mrow>\text{
-            \(a^2\cdot a^2 \cdot a^2\)} \amp\amp\amp \text{Add exponents}</mrow>
-        <mrow>\text{
-            \(a^6\)} \amp\amp\amp \text{Our solution}</mrow>
-      </md>
-    </example>
-    <p>A quicker method to arrive at the solution would have been to just multiply the exponents,
-      <m>(a^2)^3 = a^{2\cdot 3} = a^6</m>. This is known as the
-      <b>power of a power rule of exponents</b>
-    </p>
-    <p>
-      <b>Power of a Power Rule of Exponents</b>:
-      <m>(a^m)^n=a^{mn}</m>
-    </p>
-    <p>This property is often combined with two other properties which we will investigate now.</p>
-    <example>
-      <title>Powers of Products</title>
-      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 203 pg 178-->
-      <md>
-        <mrow>\text{
-            \((ab)^3\)} \amp\amp\amp \text{This means we have
-            \((ab)\) three times}</mrow>
-        <mrow>\text{
-            \((ab)(ab)(ab)\)} \amp\amp\amp \text{The product of three
-            \(a\)'s and three
-            \(b\)'s can be written with exponents}</mrow>
-        <mrow>\text{
-            \(a^3 b^3\)} \amp\amp\amp \text{Our Solution}</mrow>
-      </md>
-    </example>
-    <p>A quicker method to arrive at the solution would have been to take the exponent of three and put it on each factor in parenthesis,
-      <m>(ab)^3 = a^3b^3</m>. This is known as the
-      <b>power of a product rule of exponents</b>:
-    </p>
-    <p>
-      <b>Power of a Product Rule of Exponents</b>:
-      <m>(ab)^m=a^m b^m</m>
-    </p>
-    <p>It is important to be careful to only use the power of a product rule with multiplication inside parenthesis. This property does NOT work if there is addition or subtraction inside the parentheses.</p>
-    <b>
-      <font color="#FF0000"/>WARNING:
-    </b>
-    <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Warning 204 pg 179-->
-    <p>
-      <md>
-        <mrow>\text{
-            \((a+b)^m\ne a^m+b^m\)} \amp\amp\amp \text{These are NOT equal if
-            \(m\ne 1\), beware of this error!}</mrow>
-      </md>
-    </p>
-    <p>Another property that is very similar to the power of a product rule is considered next.</p>
-    <example>
-      <title>Powers of Quotients</title>
-      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 205 pg 179-->
-      <md>
-        <mrow>\text{
-            \(\left(\frac{a}{b} \right)^3\)} \amp\amp\amp \text{This means we have the fraction three times}</mrow>
-        <mrow>\text{
-            \(\left(\frac{a}{b} \right) \left(\frac{a}{b} \right) \left(\frac{a}{b} \right)\)} \amp\amp\amp \text{Multiply fractions across the top and bottom, using exponents}</mrow>
-        <mrow>\text{
-            \(\dfrac{a^3}{b^3}\)} \amp\amp\amp \text{Our Solution}</mrow>
-      </md>
-    </example>
-    <p>A quicker method to arrive at the solution would have been to put the exponent on every factor in both the numerator and denominator,
-      <m>\left(\frac{a}{b} \right)^3=\frac{a^3}{b^3}</m>. This is known as the
-      <b>power of a quotient rule of exponents</b>:
-    </p>
-    <p>
-      <b>Power of a Quotient Rule of Exponents</b>:
-      <m>\left(\frac{a}{b} \right)^m=\frac{a^m}{b^m}</m>
-    </p>
-    <p>The power of a power, product and quotient rules are often used together to simplify expressions. This is shown in the following examples:</p>
-    <example>
-      <title>Simplify Exponents</title>
-      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 206 pg 179-->
-      <md>
-        <mrow>\text{
-            \((x^3y)^4\)} \amp\amp\amp \text{Put the exponent of
-            \(4\) on each factor, multiplying powers}</mrow>
-        <mrow>\text{
-            \(x^{12} y^4\)} \amp\amp\amp \text{Our solution
-          <div class="WWbox">In
-            <tt>WeBWorK</tt>type multi-digit exponents in parentheses--
-            <b>x^(12)</b>
-          </div>}
+      <mdn>
+        <mrow xml:id="exponents-product-rule">\text{Product Rule of Exponents: }
+          a^m a^n=a^{m+n}
         </mrow>
-      </md>
-    </example>
-    <example>
-      <title>Simplify Exponents</title>
-      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 207 pg 180-->
-      <md>
-        <mrow>\text{
-            \(\left(\dfrac{a^3 b}{c^4 d^5} \right)^2\)} \amp\amp\amp \text{Put the exponent of 2 on each factor, multiplying powers}</mrow>
-        <mrow>\text{
-            \(\dfrac{a^6 b^2}{c^8d^{10}}\)} \amp\amp\amp \text{Our Solution}</mrow>
-      </md>
-    </example>
-    <p>As we multiply exponents its important to remember these properties apply to exponents, not bases. An expression such as
-      <m>5^3</m>does not mean we multiply
-      <m>5</m>by
-      <m>3</m>, rather we multiply
-      <m>5</m>three times,
-      <m>5 \cdot 5 \cdot 5 = 125</m>. This is shown in the next example.
-    </p>
-    <example>
-      <title>Simplify Exponents</title>
-      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 208 pg 180-->
-      <md>
-        <mrow>\text{
-            \((4x^2 y^5)^3\)} \amp\amp\amp \text{Put the exponent of
-            \(3\) on each factor, multiplying powers}</mrow>
-        <mrow>\text{
-            \(4^3 x^6 y^{15}\)} \amp\amp\amp \text{Evaluate
-            \(4^3=4\cdot 4\cdot 4\)}</mrow>
-        <mrow>\text{
-            \(64x^6 y^{15}\)} \amp\amp\amp \text{Our Solution}</mrow>
-      </md>
-    </example>
-    <p>In the previous example we did not put the
-      <m>3</m>on the
-      <m>4</m>and multipy to get
-      <m>12</m>, this would have been incorrect. Never multiply a base by the exponent. These properties pertain to exponents only, not bases.
-    </p>
-    <p>In this lesson we have discussed
-      <m>5</m>different exponent properties. These rules are summarized in the following table:
-    </p>
-    <b>
-      <u>Rules of Exponents</u>
-    </b>
-    <p>
-      <md>
-        <mrow>\text{
-          <b>Product Rule of Exponents</b>} \amp\amp\amp \text{
-            \(a^m a^n=a^{m+n}\)}
-        </mrow>
-        <mrow>\text{
-          <b>Quotient Rule of Exponents</b>} \amp\amp\amp \text{
-            \(\frac{a^m}{a^n} =a^{m-n}\)}
-        </mrow>
-        <mrow>\text{
-          <b>Power of a Power Rule of Exponents</b>} \amp\amp\amp \text{
-            \((a^m)^n=a^{mn}\)}
-        </mrow>
-        <mrow>\text{
-          <b>Power of a Product Rule of Exponents</b>} \amp\amp\amp \text{
-            \((ab)^m=a^m b^m\)}
-        </mrow>
-        <mrow>\text{
-          <b>Power of a Quotient Rule of Exponents</b>} \amp\amp\amp \text{
-            \(\left(\frac{a}{b} \right)^m=\frac{a^m}{b^m}\)}
-        </mrow>
-      </md>
-    </p>
-    <p>These five properties are often mixed up in the same problem. Often there is a bit of flexibility as to which property is used first. However, order of operations
-      <b>PEMDAS</b>still applies to a problem. For this reason it is our suggestion to simplify inside any parentheses first, then simplify any exponents (using power rules), and finally simplify any multiplication or division (using product and quotient rules). This is illustrated in the next few examples:
-    </p>
-    <example>
-      <title>Simplify Exponents</title>
-      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 209 pg 180-->
-      <md>
-        <mrow>\text{
-            \((4x^3 y \cdot 5x^4 y^2)^3\)} \amp\amp\amp \text{
-          <b>
-            <font color="#FF0000"/>PEMDAS
-          </b>First inside
-          <font color="#FF0000"/>Parentheses: Multiply constants
-            \(4\cdot 5 = 20\), Apply
-          <b>Product Rule</b>: add exponents}
-        </mrow>
-        <mrow>\text{
-            \((20x^7 y^3)^3\)} \amp\amp\amp \text{
-          <b>P
-            <font color="#FF0000"/>EMDAS
-          </b>Next
-          <font color="#FF0000"/>Eponents: Apply
-          <b>Power of a Product Rule</b>: multiply exponents}
-        </mrow>
-        <mrow>\text{
-            \(20^3 x^{21} y^9\)} \amp\amp\amp \text{Evaluate
-            \(20^3\)}</mrow>
-        <mrow>\text{
-            \(8000x^{21} y^9\)} \amp\amp\amp \text{Our Solution}</mrow>
-      </md>
-    </example>
-    <example>
-      <title>Simplify Exponents</title>
-      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 210 pg 181-->
-      <md>
-        <mrow>\text{
-            \(7a^3(2a^4)^3\)} \amp\amp\amp \text{
-          <b>P
-            <font color="#FF0000"/>EMDAS
-          </b>Parenthesis are already simplified,
-          <font color="#FF0000"/>Eponents:Apply
-          <b>Power Rule</b>}
-        </mrow>
-        <mrow>\text{
-            \(7a^3(2^3a^{(4)( 3)})\)} \amp\amp\amp \text{Simplify inside parentheses}</mrow>
-        <mrow>\text{
-            \(7a^3(8a^{12})\)} \amp\amp\amp \text{
-          <b>PE
-            <font color="#FF0000"/>MDAS
-          </b>
-          <font color="#FF0000"/>Multiplication:
-            \((7)(8)=56\) Apply
-          <b>Product Rule</b>: add exponents}
-        </mrow>
-        <mrow>\text{
-            \(56a^{15}\)} \amp\amp\amp \text{Our Solution}</mrow>
-      </md>
-    </example>
-    <example>
-      <title>Simplify Exponents</title>
-      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 211 pg 181-->
-      <md>
-        <mrow>\text{
-            \(\dfrac{(3a^3 b)(10a^4 b^3)}{2a^4 b^2}\)} \amp\amp\amp \text{Simplify numerator with
-          <b>Product Rule:</b>add exponents}
-        </mrow>
-        <mrow>\text{
-            \(\dfrac{30a^7 b^4}{2a^4 b^2}\)} \amp\amp\amp \text{Now use the
-          <b>Quotient Rule</b>: subtract exponents}
-        </mrow>
-        <mrow>\text{
-            \(15a^{7-4} b^{4-2}\)} \amp\amp\amp \text{Simplify}</mrow>
-        <mrow>\text{
-            \(15a^3 b^2\)} \amp\amp\amp \text{Our Solution}</mrow>
-      </md>
-    </example>
-    <!-- <b>Example 2C-16:</b> <!## Cite Beginning and Intermediate Algebra by Tyler Wallace Example 212 pg 181##> <md><mrow>\text{\(\dfrac{3m^8 n^{12}}{(m^2 n^3)^3}\)} \amp\amp\amp \text{Use power rule in denominator}</mrow><mrow>\text{\(\dfrac{3m^8 n^{12}}{m^6 n^9}\)} \amp\amp\amp \text{Use quotient rule}</mrow><mrow>\text{\(3m^2 n^3\)} \amp\amp\amp \text{Our solution}</mrow></md> </p> <b>Example 2C-17:</b> <!## Cite Beginning and Intermediate Algebra by Tyler Wallace Example 213 pg 181##> <md><mrow>\text{\(\left(\dfrac{3a b^2(2a^4 b^2)^3}{6a^5 b^7}\right)^2\)} \amp\amp\amp \text{Simplify inside parenthesis first, using power rule in numerator}</mrow><mrow>\text{\(\left(\dfrac{3a b^2(8a^{12} b^6)}{6a^5 b^7}\right)^2\)} \amp\amp\amp \text{Simplify numerator using product rule}</mrow><mrow>\text{\(\left(\dfrac{24a^{13} b^8)}{6a^5 b^7}\right)^2\)} \amp\amp\amp \text{Simplify using the quotient rule}</mrow><mrow>\text{\((4a^8 b)^2\)} \amp\amp\amp \text{Now that the parenthesis are simplified, use the power rules}</mrow><mrow>\text{\(16a^{16}b^2\)} \amp\amp\amp \text{Our Solution}</mrow></md> </p> -->
-    <p>Clearly these problems can quickly become quite involved. Remember to follow order of operations as a guide, simplify inside parenthesis first, then power rules, then product and quotient rules.</p>
-  </subsection>
-  <subsection>
-    <title>Negative Exponents</title>
-    <p>There are a few special exponent properties that deal with exponents that are not positive. The first is considered in the following example, which is worked out 2 different ways:</p>
-    <example>
-      <title>Investigate Zero Power</title>
-      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 214 pg 183-->
-      <md>
-        <mrow>
-          \text{ } \amp\amp\amp
-          \underline{\text{First Method}}\amp\amp\amp 
-          \text{ } \amp\amp\amp
-          \underline{\text{Second Method}} 
-        </mrow>
-        <mrow>\dfrac{a^3}{a^3} \amp\amp\amp 
-          \text{Use the Quotient Rule,}\amp\amp\amp
-          \dfrac{a^3}{a^3} \amp\amp\amp
-          \text{Rewrite exponents}
-        </mrow>
-        <mrow>\text{ } \amp\amp\amp 
-          \text{subtract exponents}\amp\amp\amp
-          \text{ } \amp\amp\amp
-          \text{as repeated multiplication}
-        </mrow>
-        <mrow>a^0 \amp\amp\amp
-         \text{Our Solution}\amp\amp\amp
-         \dfrac{aaa}{aaa} \amp\amp\amp
-         \text{Cancel out all the
-            \(a\)'s}
-        </mrow>
-        <mrow>\text{ } \amp\amp\amp
-         \text{ }\amp\amp\amp
-         \frac{1}{1}=1 \amp\amp\amp 
-         \text{Our Solution}
-       </mrow></md>
-        <p>When we combine the two solutions we get:</p>
-      <md>
-      <mrow>\text{} \amp\amp\amp 
-        a^0=1 \amp\amp\amp
-        \text{Our Final Result} \amp\amp\amp
-        \text{ }
-      </mrow>
-    </md>
-  </example>
-  <p>This final result is an important property known as the
-    <b>Zero Power Rule of Exponents</b>:
-  </p>
-  <p>
-    <b>Zero Power Rule of Exponents</b>:
-    <m>a^0=1</m>
-  </p>
-  <p>Any number or expression raised to the zero power will always be
-    <m>1</m>. This is illustrated in the following example.
-  </p>
-  <example>
-    <title>Zero Power Rule of Exponents</title>
-    <p>
-      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 215 pg 183-->
-    </p>
-    <md>
-      <mrow>\text{
-          \((3x^2)^0\)} \amp\amp\amp \text{Apply the Zero Power Rule}</mrow>
-      <mrow>\text{
-          \(1\)} \amp\amp\amp \text{Our Solution}</mrow>
-    </md>
-  </example>
-  <p>Another property we will consider here deals with negative exponents. Again we will solve the following example two ways.</p>
-  <example>
-    <title>Negative Exponents</title>
-    <p>
-      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 216 pg 184-->
-    </p>
-    <md>
-      <mrow>
-          \text{ } \amp\amp\amp
-          \underline{\text{First Method}}\amp\amp\amp 
-          \text{ } \amp\amp\amp
-          \underline{\text{Second Method}} 
-        </mrow>
-      <mrow>\dfrac{a^3}{a^5} \amp\amp\amp
-          \text{Using the Quotient Rule,}\amp\amp\amp
-          \dfrac{a^3}{a^5} \amp\amp\amp
-          \text{Rewrite exponents}
-      </mrow>
-      <mrow>\text{ } \amp\amp\amp
-          \text{subtract exponents \(3-5=-2\)}\amp\amp\amp
-          \text{ } \amp\amp\amp
-          \text{as repeated multiplication}
-      </mrow>
-      <mrow>a^{-2} \amp\amp\amp
-       \text{Our Solution}\amp\amp\amp
-       \dfrac{aaa}{aaaaa} \amp\amp\amp 
-       \text{Reduce three
-          \(a\)'s out of top and bottom}</mrow>
-      <mrow>
-          \text{ } \amp\amp\amp
-          \text{ } \amp\amp\amp
-          \dfrac{1}{aa} \amp\amp\amp 
-          \text{Simplify to exponents}</mrow>
-      <mrow>
-          \text{ } \amp\amp\amp
-          \text{ } \amp\amp\amp
-          \dfrac{1}{a^2} \amp\amp\amp
-          \text{Our Solution}</mrow></md>
-      <p>When we combine the two solutions we get:</p>
-      <md>
-    <mrow>\text{} \amp\amp\amp
-     a^{-2}=\dfrac{1}{a^2} \amp\amp\amp
-      \text{Our Final Result}\amp\amp\amp
-      \text{ }
-    </mrow>
-  </md>
-</example>
-<p>This example illustrates an important property of exponents. Negative exponents yield the reciprocal of the base. Once we take the reciprocal the exponent is now positive. Also, it is important to note a negative exponent does not mean the expression is negative, only that we need the reciprocal of the base.  The next example simplifies a fraction raised to a negative exponent.</p>
-<example>
-  <title>Simplify a Fraction with a Negative Exponent</title>
-  <p>
-    <!-- New one-->
-  </p>
-  <md>
-    <mrow>\text{
-          \(\left(\dfrac{5}{3} \right)^{-2}\)} \amp\amp\amp \text{Negative exponents yield the reciprocal of the base}</mrow>
-    <mrow>\text{
-          \(\left(\dfrac{3}{5} \right)^2\)} \amp\amp\amp \text{The reciprocal has a positive exponent, now power rule}</mrow>
-    <mrow>\text{
-          \(\dfrac{3^2}{5^2}\)} \amp\amp\amp \text{Evaluate}</mrow>
-    <mrow>\text{
-          \(\dfrac{9}{25}\)} \amp\amp\amp \text{Our Solution}</mrow>
-  </md>
-</example>
-<p>Following are the rules of negative exponents:</p>
-<p>
-  <md>
-    <mrow>
-      \text{ }\amp\amp\amp
-      a^{-m}=\dfrac{1}{a^m}
-    </mrow>
-    <mrow>\text{Rules of Negative Exponents:}\amp\amp\amp
-     \dfrac{1}{a^{-m}}= a^m
-   </mrow>
-   <mrow>
-    \text{ }\amp\amp\amp
-    \left( \dfrac{a}{b}\right)^{-m}=\dfrac{b^m}{a^m}
-    </mrow>
-  </md>
-</p>
-<p>Simplifying with negative exponents is much the same as simplifying with positive exponents. It is the advice of the author to keep the negative exponents until the end of the problem and then "move them around" to their correct location (numerator or denominator). As we do this it is important to be very careful of rules for adding, subtracting, and multiplying with negatives. This is illustrated in the following example:</p>
-<example>
-  <title>Simplify Negative Exponents</title>
-  <p></p>
-  <md>
-    <mrow>\text{
-          \(\dfrac{6x^{-2} y^{-9}}{-12x^{-5}y^3}\)} \amp\amp\amp \text{Handle constants first:
-          \(\frac{6}{-12}= \frac{-1}{2}\)}</mrow>
-    <mrow>\text{
-          \(\dfrac{-x^{-2} y^{-9}}{2x^{-5}y^3}\)} \amp\amp\amp \text{Quotient rule to subtract exponents,}</mrow>
-          <mrow>
-            \text{ }\amp\amp\amp
-            \text{be careful with negatives!}
-          </mrow>
-          <mrow>
-            \text{ }\amp\amp\amp
-            (-2)-(-5)=(-2)+5=3
-          </mrow>
-          <mrow>
-            \text{ }\amp\amp\amp
-            (-9)-3=(-9)+(-3)=-12
-          </mrow>
+      </mdn>
 
-    <mrow>\text{
-          \(\frac{-1}{2} x^3y^{-12}\)} \amp\amp\amp \text{
-          \(y\) has a negative exponent, needs to move down to denominator}</mrow>
-    <mrow>\text{
-          \(\dfrac{-x^3}{2 y^{12}}\)} \amp\amp\amp \text{Our Solution
-      <div class="WWbox">Type
-        <b>-x^3/(2y^(12))</b>in
-        <tt>WeBWorK</tt>. Simplified expressions require a single fraction form:
+      <p>The product rule of exponents can be used to simplify expressions with the same variables. This is shown in the following examples:</p>
+
+      <example>
+        <title>Product Rule of Exponents</title>
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 197 pg 177-->
+        <p>Simplify.
+        <md>
+          <mrow>3^2\cdot 3^6\cdot 3 \amp\amp\amp \text{Same base \((3)\), add the exponents \(2+6+1\)}</mrow>
+          <mrow>3^9 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
+      </example>
+      <example>
+        <title>Product Rule of Exponents</title>
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 198 pg 177-->
+        <p>Simplify.
+        <md>
+          <mrow>2x^3 y^5 z \cdot 5x y^2 z^3 \amp\amp\amp \text{Multiply \(2\cdot 5\), add exponents on each of \(x, y\) and \(z\)}</mrow>
+          <mrow>10x^4 y^7 z^4 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
+      </example>
+      <p>Next, we consider what happens when we divide with exponents.</p>
+      <example>
+        <title>Division with Exponents</title>
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 199 pg 177-->
+        <p>Simplify.
+        <md>
+          <mrow>\dfrac{a^5}{a^2} \amp\amp\amp \text{Expand exponents}</mrow>
+          <mrow>\dfrac{aaaaa}{aa} \amp\amp\amp \text{Since \(\frac{a}{a} = 1\), each \(a\) in the bottom "cancels" an \(a\) in the top.}</mrow>
+          <mrow>aaa \amp\amp\amp \text{Convert to exponents}</mrow>
+          <mrow>a^3 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
+      </example>
+      <p>Since the exponent in the denominator reduces the exponent in the numerator, we may combine the exponents by subtracting the exponents,
+        <m>\dfrac{a^5}{ a^2} = a^{5-2}= a^3</m>. This is known as the
+        <term>quotient rule of exponents</term>.
+      </p>
+      <mdn>
+        <mrow xml:id="exponents-quotient-rule"> \text{Quotient Rule of Exponents: }
+          \frac{a^m}{ a^n} =a^{m-n}
+        </mrow>
+      </mdn>
+      
+      <p>The quotient rule of exponents may be used to simplify expressions by subtracting exponents on like variables. This is shown in the following examples:</p>
+      <example>
+        <title>Quotient Rule of Exponents</title>
+        <p>Simplify:</p>
+        <md>
+          <mrow>\dfrac{7^5 x^8}{7^4 x^3} \amp\amp\amp \text{Subtract the exponents on like bases, \(5-4 = 1\) and \(8-3=5\)}</mrow>
+          <mrow>7^1x^5 \amp\amp\amp \text{Note that \(7^1 = 7\) since there is only one \(7\) to multiply.}</mrow>
+          <mrow>7x^5 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </example>
+      <!--Remove this example <example> <title>Quotient Rule of Exponents</title> <p> <!** Cite Beginning and Intermediate Algebra by Tyler Wallace Example 201 pg 178**> </p> <md> <mrow>\dfrac{5a^3 b^5 c^2}{2ab^3 c} \amp\amp\amp \text{Subtract exponents on \(a, b\) and \(c\)}</mrow> <mrow>\frac{5}{2} a^2 b^2 c \amp\amp\amp \text{Our Solution}</mrow> </md> </example> -->
+      <p>A third property we consider is when an exponent problem is raised to a second exponent. This is investigated in the following example:</p>
+      <example>
+        <title>Powers with Exponents</title>
+        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 202 pg 178-->
+        <p>Simplify.
+        <md>
+          <mrow>\left(a^2\right)^3 \amp\amp\amp \text{This means we have \(a^2\) three times--expand}</mrow>
+          <mrow>a^2\cdot a^2 \cdot a^2 \amp\amp\amp \text{Add exponents}</mrow>
+          <mrow>a^6 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
+      </example>
+      <p>Since we have
+        <m>a^2</m> times itself
+        <m>3</m> times, we can multiply the exponents
+        <m>(a^2)^3 = a^{2\cdot 3} = a^6.</m> This is known as the
+        <term>power of a power rule of exponents</term>
+      </p>
+
+      <mdn>
+        <mrow xml:id="exponents-power-of-a-power-rule"> \text{Power of a Power Rule of Exponents: }
+          (a^m)^n=a^{mn}
+        </mrow>
+      </mdn>
+
+      <p>This property is often combined with two other properties which we will investigate now.</p>
+      <example>
+        <title>Powers of Products</title>
+        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 203 pg 178-->
+        <p>Simplify.
+        <md>
+          <mrow>(ab)^3 \amp\amp\amp \text{This means we have \((ab)\) three times}</mrow>
+          <mrow>(ab)(ab)(ab) \amp\amp\amp \text{The product of three \(a\)'s and three \(b\)'s can be written with exponents}</mrow>
+          <mrow>a^3 b^3 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
+      </example>
+      <p>A quicker method to arrive at the solution is to take the exponent,
+        <m>3,</m> and put it on each factor in parentheses,
+        <m>(ab)^3 = a^3b^3</m>. This is known as the
+        <term>power of a product rule of exponents</term>:
+      </p>
+
+      <mdn>
+        <mrow xml:id="exponents-power-of-a-product-rule"> \text{Power of a Product Rule of Exponents: }
+          (ab)^m=a^m b^m
+        </mrow>
+      </mdn>
+
+      <p>It is important to be careful to only use the power of a product rule with multiplication inside parentheses. This property does NOT work if there is addition or subtraction inside the parentheses.</p>
+      <alert>WARNING:</alert>
+      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Warning 204 pg 179-->
+      <p>
+        <md>
+          <mrow>(a+b)^m\ne a^m+b^m \amp\amp\amp \text{These are NOT equal if \(m\ne 1\), beware of this error!}</mrow>
+        </md>
+      </p>
+
+      <p>Another property that is very similar to the power of a product rule is considered next.</p>
+      <example>
+        <title>Powers of Quotients</title>
+        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 205 pg 179-->
+        <p>Simplify.
+        <md>
+          <mrow>\left(\frac{a}{b} \right)^3 \amp\amp\amp \text{This means we have the fraction three times}</mrow>
+          <mrow>\left(\frac{a}{b} \right) \left(\frac{a}{b} \right) \left(\frac{a}{b} \right) \amp\amp\amp \text{Multiply fractions across the top and bottom, using exponents}</mrow>
+          <mrow>\dfrac{a^3}{b^3} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
+      </example>
+      <p>A quicker method to arrive at the solution is to put the exponent on every factor in both the numerator and denominator,
+        <m>\left(\frac{a}{b} \right)^3=\frac{a^3}{b^3}</m>. This is known as the
+        <term>power of a quotient rule of exponents</term>:
+      </p>
+
+      <mdn>
+        <mrow xml:id="exponents-power-of-a-quotient-rule"> \text{Power of a Quotient Rule of Exponents: }
+          \left(\frac{a}{b} \right)^m=\frac{a^m}{b^m}
+        </mrow>
+      </mdn>
+      
+      <p>The power of a power, product and quotient rules are often used together to simplify expressions. This is shown in the following examples:</p>
+      <example>
+        <title>Simplify Exponents</title>
+        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 206 pg 179-->
+        <p>Simplify.
+        <md>
+          <mrow>(x^3y)^4 \amp\amp\amp \text{Put the exponent of \(4\) on each factor, multiplying powers}</mrow>
+          <mrow>x^{12} y^4 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
+      </example>
+      <assemblage>
+        <title>WeBWorK: Entering Multi-digit Exponents</title>
+        <p>If your exponent has two or more digits, you must place parentheses around it. Otherwise, WeBWorK only takes the first number after the <c>^</c> as the exponent: Type
+          <c>x^(12)</c>for
+          <m>x^{12}</m>.
+        </p>
+      </assemblage>
+      <example>
+        <title>Simplify Exponents</title>
+        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 207 pg 180-->
+        <p>Simplify.
+        <md>
+          <mrow>\left(\dfrac{a^3 b}{c^4 d^5} \right)^2 \amp\amp\amp \text{Put the exponent of 2 on each factor, multiplying powers}</mrow>
+          <mrow>\dfrac{a^6 b^2}{c^8d^{10}} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
+      </example>
+      <p>As we multiply exponents its important to remember these properties apply to exponents, not bases. An expression such as
+        <m>5^3</m> does not mean we multiply
+        <m>5</m> by
+        <m>3</m>, rather we multiply
+        <m>5</m> three times,
+        <m>5 \cdot 5 \cdot 5 = 125</m>. This is shown in the next example.
+      </p>
+      <example>
+        <title>Simplify Exponents</title>
+        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 208 pg 180-->
+        <md>
+          <mrow>(4x^2 y^5)^3 \amp\amp\amp \text{Put the exponent of \(3\) on each factor, multiplying powers}</mrow>
+          <mrow>4^3 x^6 y^{15} \amp\amp\amp \text{Evaluate \(4^3=4\cdot 4\cdot 4\)}</mrow>
+          <mrow>64x^6 y^{15} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </example>
+      <p>In the previous example we did not put the
+        <m>3</m> on the
+        <m>4</m> and multipy to get
+        <m>12</m>, this would have been incorrect. Never multiply a base by the exponent. These properties pertain to exponents only, not bases.
+      </p>
+      <p>In this lesson we have discussed five different exponent properties. These rules are summarized in the following table:</p>
+
+      <table>
+        <tabular top="major" halign="center">
+            <col halign="left" />
+            <col halign="right" />
+            <!--  -->
+            <row bottom="minor" halign="center">
+              <cell colspan="2">Rules of Exponents</cell>
+            </row>
+            <row>
+              <cell>Product Rule of Exponents</cell>
+              <cell><m>a^m a^n=a^{m+n}</m><xref ref="exponents-product-rule" /></cell>
+            </row>
+            <row>
+              <cell>Quotient Rule of Exponents</cell>
+              <cell><m>\frac{a^m}{a^n} =a^{m-n}</m><xref ref="exponents-quotient-rule" /></cell>
+            </row>
+            <row>
+              <cell>Power of a Power Rule of Exponents</cell>
+              <cell><m>(a^m)^n=a^{mn}</m><xref ref="exponents-power-of-a-power-rule" /></cell>
+            </row>
+            <row>
+              <cell>Power of a Product Rule of Exponents</cell>
+              <cell><m>(ab)^m=a^m b^m</m><xref ref="exponents-power-of-a-product-rule" /></cell>
+            </row>
+            <row bottom="major">
+              <cell>Power of a Quotient Rule of Exponents</cell>
+              <cell><m>\left(\frac{a}{b} \right)^m=\frac{a^m}{b^m}</m><xref ref="exponents-power-of-a-quotient-rule" /></cell>
+            </row>
+          </tabular>
+        </table>
+          
+      <p>Generally, simplifying an expression requires a combination of properties and deciding which property to use first may be confusing. However, the order of operations
+        <term>PEMDAS</term> (see <xref ref="section-00-preliminaries" autoname="yes" /> ) always applies and can be your guide. You should simplify inside any parentheses first, then simplify any exponents (using power rules), and finally simplify any multiplication or division (using product and quotient rules). This is illustrated in the next few examples:
+      </p>
+      <example>
+        <title>Simplify Exponents</title>
+        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 209 pg 180-->
+        <p>Simplify.
+        <md>
+          <mrow>(4x^3 y \cdot 5x^4 y^2)^3 \amp\amp\amp \underline{P}EMDAS\text{ First inside Parentheses:}</mrow>
+          <mrow>\amp\amp\amp\text{Multiply constants \(4\cdot 5 = 20\),}\</mrow>
+          <mrow>\amp\amp\amp\text{Apply Product Rule: add exponents}</mrow>
+          <mrow>(20x^7 y^3)^3 \amp\amp\amp P\underline{E}MDAS\text{: Next Eponents:}</mrow>
+          <mrow>\amp\amp\amp\text{Apply Power of a Product Rule: multiply exponents}
+          </mrow>
+          <mrow>20^3 x^{21} y^9 \amp\amp\amp \text{Evaluate \(20^3\)}</mrow>
+          <mrow>8000x^{21} y^9 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
+      </example>
+      <example>
+        <title>Simplify Exponents</title>
+        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 210 pg 181-->
+        <p>Simplify.
+        <md>
+          <mrow>7a^3(2a^4)^3 \amp\amp\amp P\underline{E}MDAS \text{ Parentheses are already simplified,}</mrow>
+          <mrow>\amp\amp\amp\text{Eponents: Apply Power Rule}
+          </mrow>
+          <mrow>7a^3(2^3a^{(4)( 3)}) \amp\amp\amp \text{Simplify inside parentheses}</mrow>
+          <mrow>7a^3(8a^{12}) \amp\amp\amp PE\underline{M}DAS\text{ Multiplication: \((7)(8)=56\)}</mrow>
+          <mrow>\amp\amp\amp\text{Apply Product Rule: add exponents}
+          </mrow>
+          <mrow>56a^{15} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
+      </example>
+      <example>
+        <title>Simplify Exponents</title>
+        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 211 pg 181-->
+        <p>Simplify.
+        <md>
+          <mrow>\dfrac{(3a^3 b)(10a^4 b^3)}{2a^4 b^2} \amp\amp\amp \text{Simplify numerator with
+            Product Rule: add exponents}
+          </mrow>
+          <mrow>\dfrac{30a^7 b^4}{2a^4 b^2} \amp\amp\amp \text{Now use the
+            Quotient Rule: subtract exponents}
+          </mrow>
+          <mrow>15a^{7-4} b^{4-2} \amp\amp\amp \text{Simplify}</mrow>
+          <mrow>15a^3 b^2 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
+      </example>
+      <!-- <b>Example 2C-16:</b> <!## Cite Beginning and Intermediate Algebra by Tyler Wallace Example 212 pg 181##> <md><mrow>\dfrac{3m^8 n^{12}}{(m^2 n^3)^3} \amp\amp\amp \text{Use power rule in denominator}</mrow><mrow>\dfrac{3m^8 n^{12}}{m^6 n^9} \amp\amp\amp \text{Use quotient rule}</mrow><mrow>3m^2 n^3 \amp\amp\amp \text{Our solution}</mrow></md> </p> <b>Example 2C-17:</b> <!## Cite Beginning and Intermediate Algebra by Tyler Wallace Example 213 pg 181##> <md><mrow>\left(\dfrac{3a b^2(2a^4 b^2)^3}{6a^5 b^7}\right)^2 \amp\amp\amp \text{Simplify inside parentheses first, using power rule in numerator}</mrow><mrow>\left(\dfrac{3a b^2(8a^{12} b^6)}{6a^5 b^7}\right)^2 \amp\amp\amp \text{Simplify numerator using product rule}</mrow><mrow>\left(\dfrac{24a^{13} b^8)}{6a^5 b^7}\right)^2 \amp\amp\amp \text{Simplify using the quotient rule}</mrow><mrow>(4a^8 b)^2 \amp\amp\amp \text{Now that the parentheses are simplified, use the power rules}</mrow><mrow>16a^{16}b^2 \amp\amp\amp \text{Our Solution}</mrow></md> </p> -->
+      <p>Clearly these problems can quickly become quite involved. Remember to follow order of operations as a guide, simplify inside parentheses first, then power rules, then product and quotient rules.</p>
+    </subsection>
+    <subsection>
+      <title>Negative Exponents</title>
+      <p>There are a few special exponent properties that deal with exponents that are not positive. The first is considered in the following example, which is worked out two different ways:</p>
+      <example>
+        <title>Investigate Zero Power</title>
+        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 214 pg 183-->
+        <p>
+        <md>
+          <mrow>\text{ } \amp\amp\amp \underline{\text{First Method}}\amp\amp\amp \text{ } \amp\amp\amp \underline{\text{Second Method}}</mrow>
+          <mrow>\dfrac{a^3}{a^3} \amp\amp\amp \text{Use the Quotient Rule,}\amp\amp\amp \dfrac{a^3}{a^3} \amp\amp\amp \text{Rewrite exponents}</mrow>
+          <mrow>\text{ } \amp\amp\amp \text{subtract exponents}\amp\amp\amp \text{ } \amp\amp\amp \text{as repeated multiplication}</mrow>
+          <mrow>a^0 \amp\amp\amp \text{Method 1 Solution}\amp\amp\amp \dfrac{aaa}{aaa} \amp\amp\amp \text{Cancel out all the \(a\)'s}</mrow>
+          <mrow>\text{ } \amp\amp\amp \text{ }\amp\amp\amp \frac{1}{1}=1 \amp\amp\amp \text{Method 2 Solution}</mrow>
+        </md>
+        When we combine the two solutions we get:
+        <md>
+          <mrow>\text{} \amp\amp\amp a^0=1 \amp\amp\amp \text{Our Final Result}\checkmark \amp\amp\amp \text{ }</mrow>
+        </md>
+      </p>
+      </example>
+      <p>This final result is an important property known as the
+        <term>Zero Power Rule of Exponents</term>:
+
+      <mdn>
+        <mrow xml:id="exponents-zero-power-rule"> \text{Zero Power Rule of Exponents: }
+          a^0=1
+        </mrow>
+      </mdn>
+
+      Any number or expression raised to the zero power will always be
+        <m>1</m>.
+      </p>
+      <example>
+        <title>Zero Power Rule of Exponents</title>
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 215 pg 183-->
+        <p>Simplify.
+        <md>
+          <mrow>\frac{x^2y^4}{x^2y} \amp\amp\amp \text{Subtract exponents of like bases}</mrow>
+          <mrow>x^0 y^3 \amp\amp\amp \text{Use the Zero Power Rule: \(x^0 = 1\)}</mrow>
+          <mrow>y^3 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
+      </example>
+      <p>Next we consider how to handle negative exponents by solving the same equation two different ways:</p>
+      <example>
+        <title>Investigate Negative Exponents</title>
+        <p>
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 216 pg 184-->
+        <md>
+          <mrow>\text{ } \amp\amp\amp \underline{\text{First Method}}\amp\amp\amp \text{ } \amp\amp\amp \underline{\text{Second Method}}</mrow>
+          <mrow>\dfrac{a^3}{a^5} \amp\amp\amp \text{Using the Quotient Rule,}\amp\amp\amp \dfrac{a^3}{a^5} \amp\amp\amp \text{Rewrite exponents}</mrow>
+          <mrow>\text{ } \amp\amp\amp \text{subtract exponents \(3-5=-2\)}\amp\amp\amp \text{ } \amp\amp\amp \text{as repeated multiplication}</mrow>
+          <mrow>a^{-2} \amp\amp\amp \text{Method 1 Solution}\amp\amp\amp \dfrac{aaa}{aaaaa} \amp\amp\amp \text{Reduce three \(a\)'s out of top and bottom}</mrow>
+          <mrow>\text{ } \amp\amp\amp \text{ } \amp\amp\amp \dfrac{1}{aa} \amp\amp\amp \text{Simplify to exponents}</mrow>
+          <mrow>\text{ } \amp\amp\amp \text{ } \amp\amp\amp \dfrac{1}{a^2} \amp\amp\amp \text{Method 2 Solution}</mrow>
+        </md>
+        Since both expressions are solutions, they must be equal:
+        <md>
+          <mrow>\text{} \amp\amp\amp a^{-2}=\dfrac{1}{a^2} \amp\amp\amp \text{Our Final Result}\checkmark\amp\amp\amp \text{ }</mrow>
+        </md>
+      </p>
+      </example>
+      <p>This example illustrates an important property of exponents. Negative exponents yield the reciprocal of the base--they "flip" the base. Once we take the reciprocal the exponent is now positive. Also, it is important to note a negative exponent does not mean the expression is negative, only that we need the reciprocal of the base.  The next example simplifies a fraction raised to a negative exponent.</p>
+      <example>
+        <title>Simplify a Fraction with a Negative Exponent</title>
+          <!-- New one-->
+        <p>Simplify.
+        <md>
+          <mrow>\left(\dfrac{5}{3} \right)^{-2} \amp\amp\amp \text{Negative exponents yield the reciprocal of the base}</mrow>
+          <mrow>\left(\dfrac{3}{5} \right)^2 \amp\amp\amp \text{The reciprocal has a positive exponent, now power rule}</mrow>
+          <mrow>\dfrac{3^2}{5^2} \amp\amp\amp \text{Evaluate}</mrow>
+          <mrow>\dfrac{9}{25} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
+      </example>
+      <p>Following are the rules of negative exponents:</p>
+
+      <table>
+        <tabular top="major" halign="center">
+            <col halign="center" />
+            <!--  -->
+            <row bottom="minor" halign="center">
+              <cell>Rules of Negative Exponents</cell>
+            </row>
+            <row>
+              <cell><m>a^0=1</m><xref ref="exponents-zero-power-rule" /></cell>
+            </row>
+            <row>
+              <cell><m>a^{-m}=\dfrac{1}{a^m}</m></cell>
+            </row>
+            <row>
+              <cell><m>\dfrac{1}{a^{-m}}= a^m</m></cell>
+            </row>
+            <row>
+              <cell><m>\left( \dfrac{a}{b}\right)^{-m}=\dfrac{b^m}{a^m}</m></cell>
+            </row>
+          </tabular>
+        </table>
+
+      <p>Simplifying with negative exponents is much the same as simplifying with positive exponents. It is the advice of the author to keep the negative exponents until the end of the problem and then "move them around" to their correct location (numerator or denominator). As we do this it is important to be very careful of rules for adding, subtracting, and multiplying with negatives. This is illustrated in the following example:</p>
+      <example>
+        <title>Negative Exponents</title>
+        <p>Simplify.
+        <md>
+          <mrow>\dfrac{6x^{-2} y^{-9}}{-12x^{-5}y^3} \amp\amp\amp \text{Handle constants first: \(\frac{6}{-12}= \frac{-1}{2}\)}</mrow>
+          <mrow>\dfrac{-x^{-2} y^{-9}}{2x^{-5}y^3} \amp\amp\amp \text{Quotient rule to subtract exponents,}</mrow>
+          <mrow>\text{ }\amp\amp\amp \text{be careful with negatives!}</mrow>
+          <mrow>\text{ }\amp\amp\amp (-2)-(-5)=(-2)+5=3</mrow>
+          <mrow>\text{ }\amp\amp\amp (-9)-3=(-9)+(-3)=-12</mrow>
+          <mrow>\frac{-1}{2} x^3y^{-12} \amp\amp\amp y \text{ has a negative exponent, needs to move down to denominator}</mrow>
+          <mrow>\dfrac{-x^3}{2 y^{12}} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
+    </example>
+      <assemblage>
+        <title>WeBWorK: Entering Simplified Expressions</title>
+        <p>Type
+        <c>-x^3/(2y^(12))</c> for <m>\dfrac{-x^3}{2 y^{12}}</m>.
+      </p>
+      <p>Simplified expressions require a single fraction form:
         <em>(num)/(denom)</em>with
         <ul>
-          <li>only integer coefficients:
-            <font color="#FF0000"/>NOT
+          <li>only integer coefficients: NOT
             <m>\dfrac{-.5x^3}{y^{12}}</m>
           </li>
-          <li>negative signs placed in numerator:
-            <font color="#FF0000"/>NOT
+          <li>negative signs placed in numerator: NOT
             <m>\dfrac{x^3}{-2 y^{12}}</m>
           </li>
-          <li>no negative exponents:
-            <font color="#FF0000"/>NOT
+          <li>no negative exponents: NOT
             <m>\frac{-1}{2}x^3y^{-12}</m>
           </li>
         </ul>
-      </div>}
-    </mrow>
-  </md>
-</example>
-<p>We now have the following nine properties of exponents. It is important that we are very familiar with all of them.</p>
-<em>Properties of Exponents</em>
-<p>
-  <md>
-    <mrow>a^m a^n=a^{m+n}\amp\amp\amp 
-            (ab)^m=a^m b^m \amp\amp\amp
-            a^{-m}=\dfrac{1}{a^m}</mrow>
-    <mrow>\frac{a^m}{a^n}=a^{m-n} \amp\amp\amp \amp\amp\amp\left(\frac{a}{b} \right)^m=\frac{a^m}{b^m}\amp\amp\amp
-            \dfrac{1}{a^{-m}}= a^m</mrow>
-    <mrow>(a^m)^n=a^{mn} \amp\amp\amp a^0=1
-            \amp\amp\amp \left( \dfrac{a}{b}\right)^{-m}=\dfrac{b^m}{a^m}</mrow>
-  </md>
-</p>
-</subsection>
-<subsection>
-<title>Scientific Notation</title>
-<p>One application of exponent properties comes from scientific notation. Scientific notation is used to represent really large or really small numbers. An example of a really large number would be the distance that light travels in a year in miles. An example of a really small number would be the mass of a single hydrogen atom in grams. Doing basic operations such as multiplication and division with these numbers would normally be very cumbersome. However, our exponent properties make this process much simpler.</p>
-<p>First we will take a look at what scientific notation is. Scientific notation is written as the product of two numbers:
-  <ol>
-    <li>A number between one and ten (it can be equal to one, but not ten), and</li>
-    <li>Ten to some power or exponent.</li>
-  </ol>
-</p>
-<b>Scientific Notation</b>:
-<m>a\times 10^b</m>where
-<m>1\leq  a\lt 10</m>
-<p>The exponent,
-  <m>b</m>, is very important to how we convert between scientific notation and normal numbers, or standard notation. The exponent tells us how many times we will multiply by
-  <m>10</m>. Multiplying by
-  <m>10</m>in effect moves the decimal point one place. So the exponent will tell us how many times the decimal moves between scientific notation and standard notation. To decide which direction to move the decimal (left or right) we simply need to remember that positive exponents mean we have a big number (bigger than ten) in standard notation and negative exponents mean we have a small number (less than one) in standard notation.
-</p>
-<p>Keeping this in mind, we can easily make conversions between standard notation and scientific notation.</p>
-<example>
-  <title>Convert Large Standard to Scientific</title>
-  <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 221 pg 188-->
-  <md>
-    <mrow>\text{Convert
-            \(14, 200\) to scientific notation} \amp\amp\amp \text{Put decimal after first nonzero number}</mrow>
-    <mrow>\text{
-            \(1.42\)} \amp\amp\amp \text{Exponent is how many times decimal moved,
-            \(4\)}</mrow>
-    <mrow>\text{
-            \(\times 10^4\)} \amp\amp\amp \text{Positive exponent, standard notation is big}</mrow>
-    <mrow>\text{
-            \(1.42 \times 10^4\)} \amp\amp\amp \text{Our Solution}</mrow>
-  </md>
-</example>
-<example>
-  <title>Convert Small Standard to Scientific</title>
-  <p>
-    <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 222 pg 188-->
-  </p>
-  <md>
-    <mrow>\text{Convert
-          \(0.0042\) to scientific notation} \amp\amp\amp \text{Put decimal after first nonzero number}</mrow>
-    <mrow>\text{
-          \(4.2\)} \amp\amp\amp \text{Exponent is how many times decimal moved,
-          \(3\)}</mrow>
-    <mrow>\text{
-          \(\times 10^{-3}\)} \amp\amp\amp \text{Negative exponent, standard notation is small}</mrow>
-    <mrow>\text{
-          \(4.2 \times 10^{-3}\)} \amp\amp\amp \text{Our Solution}</mrow>
-  </md>
-</example>
-<p>Scientific notation is the only time where it will be allowed to have negative exponents in our final solution. The negative exponent simply informs us that we are dealing with small numbers.</p>
-<example>
-  <title>Convert Large Scientific to Standard</title>
-  <p>
-    <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 223 pg 189-->
-  </p>
-  <md>
-    <mrow>\text{Convert
-          \(3.21\times 10^5\) to standard notation} \amp\amp\amp \text{Positive exponent means standard notation big number. Move decimal right
-          \(5\) places}</mrow>
-    <mrow>\text{
-          \(321,000\)} \amp\amp\amp \text{Our Solution}</mrow>
-  </md>
-</example>
-<example>
-  <title>Convert Small Scientific to Standard</title>
-  <p>
-    <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 224 pg 189-->
-  </p>
-  <md>
-    <mrow>\text{Convert
-          \(7.4\times 10^{-3}\) to standard notation} \amp\amp\amp \text{Negative exponent means standard notation small number. Move decimal left
-          \(3\) places}</mrow>
-    <mrow>\text{
-          \(0.0074\)} \amp\amp\amp \text{Our Solution}</mrow>
-  </md>
-</example>
-<p>Converting between standard notation and scientific notation is important to understand how scientific notation works and what it does. Here our main interest is to be able to perform operations with numbers in scientific notation using exponent properties.</p>
-</subsection>
-<subsection>
-<title>Addition and Subtraction Using Scientific Notation</title>
-<p>To add or subtract numbers expressed in scientific notation we could first write both numbers in standard notation, perform the operation, and then convert back to scientific notation.</p>
-<example>
-  <title>Addition with Scientific</title>
-  <p>
-    <!-- Our own-->
-  </p>
-  <md>
-    <mrow>\text{
-          \(2.36\times 10^{6}+ 9.7\times 10^{6}\)} \amp\amp\amp \text{Write both numbers in standard notation}</mrow>
-    <mrow>\text{
-          \(2,360,000 + 9,700,000\)} \amp\amp\amp \text{Add numbers}</mrow>
-    <mrow>\text{
-          \(12,060,000\)} \amp\amp\amp \text{Write the result in scientific notation}</mrow>
-    <mrow>\text{
-          \(1.206 \times 10^{7}\)} \amp\amp\amp \text{Our Solution}</mrow>
-  </md>
-</example>
-<p>Since both numbers were times
-  <m>10^6</m>, we also could have combined like terms involving
-  <m>10^6</m>, added the front numbers, then written the result using scientific notation.
-</p>
-<example>
-  <title>Addition with Scientific</title>
-  <p>
-    <!-- Our own-->
-  </p>
-  <md>
-    <mrow>\text{
-          \(2.36\times 10^{6}+ 9.7\times 10^{6}\)} \amp\amp\amp \text{Combine like terms involving
-          \(10^6\)}</mrow>
-    <mrow>\text{
-          \((2.36+ 9.7)\times 10^{6}\)} \amp\amp\amp \text{Add front numbers}</mrow>
-    <mrow>\text{
-          \((12.06)\times 10^{6}\)} \amp\amp\amp \text{Write the result in scientific notation}</mrow>
-    <mrow>\text{
-          \((1.206 \times 10^1)\times 10^{6}\)} \amp\amp\amp \text{Add exponents:
-          \(10^1\times 10^6 = 10^{1+6}\)}</mrow>
-    <mrow>\text{
-          \(1.206 \times 10^{7}\)} \amp\amp\amp \text{Our Solution}</mrow>
-  </md>
-</example>
-<p>Subtraction of numbers written using scientific notation is similar.</p>
-<example>
-  <title>Subtraction with Scientific</title>
-  <!-- Our own-->
-  <p>Subtract and write the result using scientific notation.</p>
-  <md>
-    <mrow>\text{
-          \(4.77\times 10^{-7}- 4.86\times 10^{-7}\)} \amp\amp\amp \text{Combine like terms involving
-          \(10^{-7}\)}</mrow>
-    <mrow>\text{
-          \((4.77-4.86)\times 10^{-7}\)} \amp\amp\amp \text{Subtract front numbers}</mrow>
-    <mrow>\text{
-          \((-0.09)\times 10^{-7}\)} \amp\amp\amp \text{Write the result in scientific notation}</mrow>
-    <mrow>\text{
-          \((-9.0 \times 10^{-2})\times 10^{-7}\)} \amp\amp\amp \text{Add exponents:
-          \(10^{-2}\times 10^{-7} = 10^{-2-7}\)}</mrow>
-    <mrow>\text{
-          \(-9.0 \times 10^{-9}\)} \amp\amp\amp \text{Our Solution}</mrow>
-  </md>
-</example>
-<p>If the scientific numbers do not both involve the same power of
-  <m>10</m>, adjust one of the numbers to match the power of
-  <m>10</m>of the other number.  Consider the following example.
-</p>
-<example>
-  <title>Subtraction with Scientific</title>
-  <p>
-    <!-- Our own-->
-  </p>
-  <md>
-    <mrow>\text{
-          \(8.93\times 10^{13}- 9.26\times 10^{14}\)} \amp\amp\amp \text{Rewrite
-          \(10^{14}\) as
-          \(10^1\times 10^{13}\) to match the other power of
-          \(13\)}</mrow>
-    <mrow>\text{
-          \(8.93\times 10^{13}- 9.26\times 10^1 \times 10^{13}\)} \amp\amp\amp \text{Multiply
-          \(-9.26\times 10^{1}\)}</mrow>
-    <mrow>\text{
-          \(8.93\times 10^{13}- 92.6\times 10^{13}\)} \amp\amp\amp \text{Combine like terms involving
-          \(10^{13}\)}</mrow>
-    <mrow>\text{
-          \((8.93-92.6)\times 10^{13}\)} \amp\amp\amp \text{Subtract front numbers}</mrow>
-    <mrow>\text{
-          \((-83.67)\times 10^{13}\)} \amp\amp\amp \text{Write the result in scientific notation}</mrow>
-    <mrow>\text{
-          \((-8.367 \times 10^{1})\times 10^{13}\)} \amp\amp\amp \text{Add exponents:
-          \(10^{1}\times 10^{13} = 10^{1+13}\)}</mrow>
-    <mrow>\text{
-          \(-8.367 \times 10^{14}\)} \amp\amp\amp \text{Our Solution}</mrow>
-  </md>
-</example>
-</subsection>
-<subsection>
-<title>Multiplication and Division Using Scientific Notation</title>
-<p>Multiplication and division can be performed by performing the operation with the front number (multiply or divide) then using exponent properties to simplify the
-  <m>10</m>'s.  Consider the following examples:
-</p>
-<example>
-  <title>Multiplication with Scientific</title>
-  <p>
-    <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 225 pg 189-->
-  </p>
-  <md>
-    <mrow>\text{
-          \((2.1\times 10^{-7})(3.7\times 10^{5})\)} \amp\amp\amp \text{Deal with front numbers and
-          \(10\)'s separately}</mrow>
-    <mrow>\text{
-          \((2.1)(3.7)=7.77\)} \amp\amp\amp \text{Multiply front numbers}</mrow>
-    <mrow>\text{
-          \(10^{-7} 10^5=10^{-2}\)} \amp\amp\amp \text{Use product rule on
-          \(10\)'s and add exponents}</mrow>
-    <mrow>\text{
-          \(7.77 \times 10^{-2}\)} \amp\amp\amp \text{Our Solution}</mrow>
-  </md>
-</example>
-<example>
-  <title>Division with Scientific</title>
-  <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 226 pg 189-->
-  <md>
-    <mrow>\text{
-            \(\dfrac{4.96\times 10^{4}}{3.1\times 10^{-3}}\)} \amp\amp\amp \text{Deal with front numbers and
-            \(10\)'s separately}</mrow>
-    <mrow>\text{
-            \(\dfrac{4.96}{3.1}=1.6\)} \amp\amp\amp \text{Divide front numbers}</mrow>
-    <mrow>\text{
-            \(\dfrac{10^{4}}{10^{-3}}=10^{7}\)} \amp\amp\amp \text{Use quotient rule to subtract exponents,}
-            </mrow>
-    <mrow>
-      \text{ }\amp\amp\amp
-      \text{be careful with negatives!}
-    </mrow>
-    <mrow>
-      \text{ }\amp\amp\amp
-      4-(-3)=4+3=7
-    </mrow>
-    <mrow>
-      1.6 \times 10^{7} \amp\amp\amp
-      \text{Our Solution}
-    </mrow>
-  </md>
-</example>
-<example>
-  <title>Powers with Scientific</title>
-  <p>
-    <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 227 pg 190-->
-  </p>
-  <md>
-    <mrow>\text{
-          \((1.8\times 10^{-4})^3\)} \amp\amp\amp \text{Use power rule to deal with front numbers and
-          \(10\)'s separately}</mrow>
-    <mrow>\text{
-          \((1.8)^3=5.832\)} \amp\amp\amp \text{Evaluate
-          \((1.8)^3\)}</mrow>
-    <mrow>\text{
-          \((10^{-4})^3=10^{-12}\)} \amp\amp\amp \text{Multiply exponents}</mrow>
-    <mrow>\text{
-          \(5.832 \times 10^{-12}\)} \amp\amp\amp \text{Our Solution}</mrow>
-  </md>
-</example>
-<p>Often when we multiply or divide in scientific notation the end result is not in scientific notation. We will then have to convert the front number into scientific notation and then combine the
-  <m>10</m>'s using the product property of exponents and adding the exponents. This is shown in the following examples:
-</p>
-<example>
-  <title>Multiplication with Scientific</title>
-  <p>
-    <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 228 pg 190-->
-  </p>
-  <md>
-    <mrow>\text{
-          \((4.7\times 10^{-3})(6.1\times 10^9)\)} \amp\amp\amp \text{Deal with front numbers and
-          \(10\)'s separately}</mrow>
-    <mrow>\text{
-          \((4.7)(6.1)=28.67\)} \amp\amp\amp \text{Next convert the front to scientific notation}</mrow>
-    <mrow>\text{
-          \(2.867\times 10^1\)} \amp\amp\amp \text{Next deal with the powers of
-          \(10\)}</mrow>
-    <mrow>\text{
-          \(10^1 10^{-3} 10^9=10^{7}\)} \amp\amp\amp \text{Use
-      <b>Product Rule:</b> add exponents include the
-          \(10^1\) from front conversion}
-    </mrow>
-    <mrow>\text{
-          \(2.867 \times 10^{7}\)} \amp\amp\amp \text{Our Solution}</mrow>
-  </md>
-</example>
-<example>
-  <title>Division with Scientific</title>
-  <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 229 pg 190-->
-  <md>
-    <mrow>\text{
-            \(\dfrac{2.014\times 10^{-3}}{3.8\times 10^{-7}}\)} \amp\amp\amp \text{Deal with front numbers and
-            \(10\)'s separately}</mrow>
-    <mrow>\text{
-            \(\dfrac{2.014}{3.8}=0.53\)} \amp\amp\amp \text{Divide numbers}</mrow>
-    <mrow>\text{
-            \(0.53=5.3\times 10^{-1}\)} \amp\amp\amp \text{Convert this number into scientific notation}</mrow>
-    <mrow>\text{
-            \(\dfrac{10^{-1} 10^{-3}}{ 10^{-7}}=10^{3}\)} \amp\amp\amp \text{Use product and quotient rule,}</mrow>
-    <mrow>
-      \text{ }\amp\amp\amp
-      \text{using
-            \(10^{-1}\) from the conversion}
-    </mrow>
-    <mrow>
-      \text{ }\amp\amp\amp
-      \text{Be careful with signs:}
-    </mrow>
-    <mrow>
-      \text{ }\amp\amp\amp
-      (-1)+(-3)-(-7)=(-1)+(-3)+7=7-4=3
-    </mrow>
-    <mrow>\text{
-            \(5.3 \times 10^{3}\)} \amp\amp\amp \text{Our Solution}</mrow>
-  </md>
-</example>
-<!--REMOVE THESE? THEY ARE IN THE APPLICATION SECTION: 2C
-<p>We can use exponent properties to solve equations involving scientific notation.</p>
-<example>
-  <title>Solve Equation with Scientific</title>
-    <p>Solve the equation for
-      <m>x</m>.
-    </p>
-    <!##Our own##>
-  <md>
-    <mrow>\text{
-          \(7\times 10^{3}x = 1.4\times 10^{-7}\)} \amp\amp\amp \text{Solve for
-          \(x\)}</mrow>
-    <mrow>\text{
-          \(x= \dfrac{1.4\times 10^{-7}}{7\times 10^{3}}\)} \amp\amp\amp \text{Deal with numbers and
-          \(10\)'s separately}</mrow>
-    <mrow>\text{
-          \(\dfrac{1.4}{7}=0.2\)} \amp\amp\amp \text{Divide numbers}</mrow>
-    <mrow>\text{
-          \(0.2=2.0\times 10^{-1}\)} \amp\amp\amp \text{Convert this number into scientific notation}</mrow>
-    <mrow>\text{
-          \(\dfrac{10^{-1} 10^{-7}}{ 10^{3}}=10^{-11}\)} \amp\amp\amp \text{Use product and quotient rule,}</mrow>
-    <mrow>
-      \text{ }\amp\amp\amp
-      \text{using
-          \(10^{-1}\) from the conversion}
-    </mrow>
-    <mrow>
-      \text{ }\amp\amp\amp
-      \text{Be careful with signs:}
-    </mrow>
-    <mrow>
-      \text{ }\amp\amp\amp
-      (-1)+(-7)-(3)=(-1)+(-7)+(-3)=-11
-    </mrow>
+      </p>
+    </assemblage>
 
-    <mrow>\text{
-          \(x=2.0 \times 10^{-11}\)} \amp\amp\amp \text{Our Solution}</mrow>
-  </md>
-</example>
-<example>
-  <title>Solve Equation with Scientific</title>
-    <p>The number of atoms in
-      <m>12</m>grams of carbon is
-      <m>6.022\times 10^{23}.</m>Determine the mass of one atom of carbon.
+      <p>We now have the following nine properties of exponents. It is important that we are very familiar with all of them.</p>
+
+      <table>
+        <tabular top="major" halign="center">
+            <col halign="center" />
+            <col halign="center" />
+            <col halign="center" />
+            <!--  -->
+            <row bottom="minor">
+              <cell colspan="3">Properties of Exponents</cell>
+            </row>
+            <row>
+              <cell><m>a^m a^n=a^{m+n}</m></cell>
+              <cell><m>(ab)^m=a^m b^m</m></cell>
+              <cell><m>a^{-m}=\dfrac{1}{a^m}</m></cell>
+            </row>
+            <row>
+              <cell><m>\frac{a^m}{a^n}=a^{m-n}</m></cell>
+              <cell><m>\left(\frac{a}{b} \right)^m=\frac{a^m}{b^m}</m></cell>
+              <cell><m>\dfrac{1}{a^{-m}}= a^m</m></cell>
+            </row>
+            <row>
+              <cell><m>(a^m)^n=a^{mn}</m></cell>
+              <cell><m>a^0=1</m></cell>
+              <cell><m>\left( \dfrac{a}{b}\right)^{-m}=\dfrac{b^m}{a^m}</m></cell>
+            </row>
+          </tabular>
+        </table>
+    </subsection>
+    <subsection>
+      <title>Scientific Notation</title>
+      <p>Scientific notation is used to represent really large or really small numbers. An example of a really large number would be the distance that light travels in a year in miles. An example of a really small number would be the mass of a single hydrogen atom in grams. Doing basic operations such as multiplication and division with these numbers would normally be very cumbersome. However, our exponent properties make this process much simpler.</p>
+      <p>First we will take a look at what scientific notation is. Scientific notation is written as the product of two numbers:
+        <ol>
+          <li>A number between one and ten (it can be equal to one, but not ten), and</li>
+          <li>Ten to some power or exponent.</li>
+        </ol>
+      <mdn>
+        <mrow>\text{Scientific Notation: } a\times 10^b\text{ where }1\leq  a\lt 10
+        </mrow>
+      </mdn>
     </p>
-    <!## Our own##>
-  <md>
-    <mrow>\text{
-          \(6.022\times 10^{23}\) atoms yields
-          \(12\) g} \amp\amp\amp \text{Understand what information we are given}</mrow>
-    <mrow>\text{Let
-          \(x=\) the mass of one atom of carbon.} \amp\amp\amp \text{Convert the given information into an equation}</mrow>
-    <mrow>\text{
-          \(6.022\times 10^{23}x =12\)} \amp\amp\amp \text{The number of atoms times the mass of each equals the total mass of
-          \(12\) grams}</mrow>
-    <mrow>\text{
-          \(x=\dfrac{12}{6.022\times 10^{23}}\)} \amp\amp\amp \text{Solve for
-          \(x\)}</mrow>
-    <mrow>\text{
-          \(\dfrac{12}{6.022}\)} \amp\amp\amp \text{Divide the numbers}</mrow>
-    <mrow>\text{
-          \(1.99=1.99\times 10^{0}\)} \amp\amp\amp \text{Convert this number into scientific notation}</mrow>
-    <mrow>\text{
-          \(\dfrac{10^{0}}{ 10^{23}}=10^{-23}\)} \amp\amp\amp \text{Use quotient rule, using
-          \(10^{0}\) from the conversion}</mrow>
-    <mrow>\text{
-          \(x=1.99 \times 10^{-23}\)} \amp\amp\amp \text{Our Solution: The the mass of one atom of carbon is
-          \(1.99 \times 10^{-23}\) gram.}</mrow>
-  </md>
-</example>
--->
-</subsection>
-</section>
+
+      <p>The exponent,
+        <m>b</m>, is very important to how we convert between scientific notation and normal numbers, or standard notation. The exponent tells us how many times we will multiply by
+        <m>10</m>. Multiplying by
+        <m>10</m> in effect moves the decimal point one place:
+        <m>3.2 \times 10^2 = 3.2 \times 100 = 320.</m> So the exponent will tell us how many times the decimal moves when changing between scientific notation and standard notation.
+      </p>
+      <p>Keeping this in mind, we can easily make conversions between standard notation and scientific notation.</p>
+      <example>
+        <title>Convert Large Standard to Scientific</title>
+        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 221 pg 188-->
+        <md>
+          <mrow>\text{Convert \(14,200\) to scientific notation} \amp\amp\amp \text{Put decimal after first nonzero number}</mrow>
+          <mrow>1.42 \amp\amp\amp \text{Exponent is how many times decimal moved, \(4\)}</mrow>
+          <mrow>\times 10^4 \amp\amp\amp \text{Positive exponent, standard notation is big}</mrow>
+          <mrow>1.42 \times 10^4 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </example>When scientific notation is used to represent small numbers, the format requires the number be rewritten as a "bigger" value:
+      <m>0.0021</m> must be written as
+      <m>2.1 \times 10^b</m>.  What should the value of the exponent,
+      <m>b,</m> be? Note that the decimal was moved three places and it seems we've changed the value to be bigger than the original number.  Here is where the exponent on the
+      <m>10</m> comes to the rescue.  If we divide
+      <m>2.1</m> by
+      <m>10</m> three times, the result will be
+      <m>.0021</m>.  Dividing by
+      <m>10</m> is the same thing as multipying by
+      <m>\frac{1}{10}</m> and negative exponents allow us to write the fraction as a power of 10:
+      <m>10^{-1} = \frac{1}{10}.</m> To finish the conversion of
+      <m>0.0021</m> to scientific notation:
+      <m>0.0021 = 2.1 \times 10^{-3}.</m> Let's look at another example:
+      <example>
+        <title>Convert Small Standard to Scientific</title>
+        <p>
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 222 pg 188-->
+        </p>
+        <md>
+          <mrow>\text{Convert \(0.0042\) to scientific notation} \amp\amp\amp \text{Put decimal after first nonzero number}</mrow>
+          <mrow>4.2 \amp\amp\amp \text{Exponent is how many times decimal moved, \(3\)}</mrow>
+          <mrow>\times 10^{-3} \amp\amp\amp \text{Small standard number means a negative exponent}</mrow>
+          <mrow>4.2 \times 10^{-3} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </example>
+      <p>To decide which direction to move the decimal (left or right) we simply need to remember that positive exponents mean we have a big number (bigger than ten) in standard notation and negative exponents mean we have a small number (less than one) in standard notation. Scientific notation is the only time where it will be allowed to have negative exponents in our final solution. The negative exponent simply informs us that we are dealing with a small number.</p>
+      <assemblage>
+        <title>WeBWorK: Entering Scientific Notation</title>
+        <p>Use lower case <c>x</c> for the times sign <m>\times</m>: Enter
+          <c>1.42 x 10^4</c> for
+          <m>1.42 \times 10^4.</m>
+        </p>
+        <p>For negative exponents or exponents with more than one digit, WeBWorK has a different rule than for general exponents.  Do NOT put parentheses around the exponent: Enter
+          <c>4.2 x 10^-3</c> for
+          <m>4.2 \times 10^{-3}.</m>
+        </p>
+        <p>Enter
+          <c>7.24 x 10^21</c> for
+          <m>47.24 \times 10^{21}.</m>
+        </p>
+      </assemblage>
+      <example>
+        <title>Convert Large Scientific to Standard</title>
+        <p>
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 223 pg 189-->
+        </p>
+        <md>
+          <mrow>\text{Convert \(3.21\times 10^5\) to standard notation} \amp\amp\amp \text{Positive exponent: Move decimal right \(5\) places}</mrow>
+          <mrow>321,000 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </example>
+      <example>
+        <title>Convert Small Scientific to Standard</title>
+        <p>
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 224 pg 189-->
+        </p>
+        <md>
+          <mrow>\text{Convert \(7.4\times 10^{-3}\) to standard notation} \amp\amp\amp \text{Negative exponent: Move decimal left \(3\) places}</mrow>
+          <mrow>0.0074 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </example>
+      <p>Converting between standard notation and scientific notation is important to understand how scientific notation works and what it does. Here our main interest is to be able to perform operations with numbers in scientific notation and the exponent properties are essential to these operations.</p>
+    </subsection>
+    <subsection>
+      <title>Multiplication and Division Using Scientific Notation</title>
+      <p>Multiplication and division can be performed by performing the operation with the front number (multiply or divide) then using exponent properties to simplify the
+        <m>10</m>'s.  Consider the following examples:
+      </p>
+      <example>
+        <title>Multiplication with Scientific</title>
+        <p>
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 225 pg 189-->
+        </p>
+        <md>
+          <mrow>(2.1\times 10^{-7})(3.7\times 10^{5}) \amp\amp\amp \text{Deal with front numbers and \(10\)'s separately}</mrow>
+          <mrow>(2.1)(3.7)=7.77 \amp\amp\amp \text{Multiply front numbers}</mrow>
+          <mrow>10^{-7} 10^5=10^{-2} \amp\amp\amp \text{Use product rule on \(10\)'s and add exponents}</mrow>
+          <mrow>7.77 \times 10^{-2} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </example>
+      <example>
+        <title>Division with Scientific</title>
+        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 226 pg 189-->
+        <md>
+          <mrow>\dfrac{4.96\times 10^{4}}{3.1\times 10^{-3}} \amp\amp\amp \text{Deal with front numbers and \(10\)'s separately}</mrow>
+          <mrow>\dfrac{4.96}{3.1}=1.6 \amp\amp\amp \text{Divide front numbers}</mrow>
+          <mrow>\dfrac{10^{4}}{10^{-3}}=10^{7} \amp\amp\amp \text{Use quotient rule to subtract exponents,}</mrow>
+          <mrow>\text{ }\amp\amp\amp \text{be careful with negatives!}</mrow>
+          <mrow>\text{ }\amp\amp\amp 4-(-3)=4+3=7</mrow>
+          <mrow>1.6 \times 10^{7} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </example>
+      <example>
+        <title>Powers with Scientific</title>
+        <p>
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 227 pg 190-->
+        </p>
+        <md>
+          <mrow>(1.8\times 10^{-4})^3 \amp\amp\amp \text{Use power rule to deal with front numbers and \(10\)'s separately}</mrow>
+          <mrow>(1.8)^3=5.832 \amp\amp\amp \text{Evaluate \((1.8)^3\)}</mrow>
+          <mrow>(10^{-4})^3=10^{-12} \amp\amp\amp \text{Multiply exponents}</mrow>
+          <mrow>5.832 \times 10^{-12} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </example>
+      <p>Often when we multiply or divide in scientific notation the end result is not in scientific notation. We will then have to convert the front number into scientific notation and then combine the
+        <m>10</m>'s using the product property of exponents and adding the exponents. This is shown in the following examples:
+      </p>
+      <example>
+        <title>Multiplication with Scientific</title>
+        <p>
+          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 228 pg 190-->
+        </p>
+        <md>
+          <mrow>(4.7\times 10^{-3})(6.1\times 10^9) \amp\amp\amp \text{Deal with front numbers and \(10\)'s separately}</mrow>
+          <mrow>(4.7)(6.1)=28.67 \amp\amp\amp \text{Next convert the front to scientific notation}</mrow>
+          <mrow>2.867\times 10^1 \amp\amp\amp \text{Next deal with the powers of \(10\)}</mrow>
+          <mrow>10^1 10^{-3} 10^9=10^{7} \amp\amp\amp \text{Use
+            <b>Product Rule:</b>add exponents include the \(10^1\) from front conversion}
+          </mrow>
+          <mrow>2.867 \times 10^{7} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </example>
+      <example>
+        <title>Division with Scientific</title>
+        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 229 pg 190-->
+        <md>
+          <mrow>\dfrac{2.014\times 10^{-3}}{3.8\times 10^{-7}} \amp\amp\amp \text{Deal with front numbers and \(10\)'s separately}</mrow>
+          <mrow>\dfrac{2.014}{3.8}=0.53 \amp\amp\amp \text{Divide numbers}</mrow>
+          <mrow>0.53=5.3\times 10^{-1} \amp\amp\amp \text{Convert this number into scientific notation}</mrow>
+          <mrow>\dfrac{10^{-1} 10^{-3}}{ 10^{-7}}=10^{3} \amp\amp\amp \text{Use product and quotient rule,}</mrow>
+          <mrow>\text{ }\amp\amp\amp \text{using \(10^{-1}\) from the conversion}</mrow>
+          <mrow>\text{ }\amp\amp\amp \text{Be careful with signs:}</mrow>
+          <mrow>\text{ }\amp\amp\amp (-1)+(-3)-(-7)=(-1)+(-3)+7=7-4=3</mrow>
+          <mrow>5.3 \times 10^{3} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </example>
+      <!--REMOVE THESE? THEY ARE IN THE APPLICATION SECTION: 2C <p>We can use exponent properties to solve equations involving scientific notation.</p> <example> <title>Solve Equation with Scientific</title> <p>Solve the equation for <m>x</m>. </p> <!**Our own**> <md> <mrow>7\times 10^{3}x = 1.4\times 10^{-7} \amp\amp\amp \text{Solve for \(x\)}</mrow> <mrow>x= \dfrac{1.4\times 10^{-7}}{7\times 10^{3}} \amp\amp\amp \text{Deal with numbers and \(10\)'s separately}</mrow> <mrow>\dfrac{1.4}{7}=0.2 \amp\amp\amp \text{Divide numbers}</mrow> <mrow>0.2=2.0\times 10^{-1} \amp\amp\amp \text{Convert this number into scientific notation}</mrow> <mrow>\dfrac{10^{-1} 10^{-7}}{ 10^{3}}=10^{-11} \amp\amp\amp \text{Use product and quotient rule,}</mrow> <mrow> \text{ }\amp\amp\amp \text{using \(10^{-1}\) from the conversion} </mrow> <mrow> \text{ }\amp\amp\amp \text{Be careful with signs:} </mrow> <mrow> \text{ }\amp\amp\amp (-1)+(-7)-(3)=(-1)+(-7)+(-3)=-11 </mrow> <mrow>x=2.0 \times 10^{-11} \amp\amp\amp \text{Our Solution}</mrow> </md> </example> <example> <title>Solve Equation with Scientific</title> <p>The number of atoms in <m>12</m> grams of carbon is <m>6.022\times 10^{23}.</m> Determine the mass of one atom of carbon. </p> <!** Our own**> <md> <mrow>6.022\times 10^{23}\) atoms yields \(12\) g} \amp\amp\amp \text{Understand what information we are given}</mrow> <mrow>\text{Let \(x=\) the mass of one atom of carbon.} \amp\amp\amp \text{Convert the given information into an equation}</mrow> <mrow>\text{\(6.022\times 10^{23}x =12 \amp\amp\amp \text{The number of atoms times the mass of each equals the total mass of \(12\) grams}</mrow> <mrow>x=\dfrac{12}{6.022\times 10^{23}} \amp\amp\amp \text{Solve for \(x\)}</mrow> <mrow>\dfrac{12}{6.022} \amp\amp\amp \text{Divide the numbers}</mrow> <mrow>1.99=1.99\times 10^{0} \amp\amp\amp \text{Convert this number into scientific notation}</mrow> <mrow>\dfrac{10^{0}}{ 10^{23}}=10^{-23} \amp\amp\amp \text{Use quotient rule, using \(10^{0}\) from the conversion}</mrow> <mrow>x=1.99 \times 10^{-23} \amp\amp\amp \text{Our Solution: The the mass of one atom of carbon is \(1.99 \times 10^{-23}\) gram.}</mrow> </md> </example> -->
+    </subsection>
+    <subsection>
+      <title>Addition and Subtraction Using Scientific Notation</title>
+      <p>To add or subtract numbers expressed in scientific notation we could first write both numbers in standard notation, perform the operation, and then convert back to scientific notation.</p>
+      <example>
+        <title>Addition with Scientific</title>
+        <p>
+          <!-- Our own-->
+        </p>
+        <md>
+          <mrow>2.36\times 10^{6}+ 9.7\times 10^{6} \amp\amp\amp \text{Write both numbers in standard notation}</mrow>
+          <mrow>2,360,000 + 9,700,000 \amp\amp\amp \text{Add numbers}</mrow>
+          <mrow>12,060,000 \amp\amp\amp \text{Write the result in scientific notation}</mrow>
+          <mrow>1.206 \times 10^{7} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </example>
+      <p>Since both numbers were times
+        <m>10^6</m>, we also could have combined like terms involving
+        <m>10^6</m>, added the front numbers, then written the result using scientific notation.
+      </p>
+      <example>
+        <title>Addition with Scientific</title>
+        <p>
+          <!-- Our own-->
+        </p>
+        <md>
+          <mrow>2.36\times 10^{6}+ 9.7\times 10^{6} \amp\amp\amp \text{Combine like terms involving \(10^6\)}</mrow>
+          <mrow>(2.36+ 9.7)\times 10^{6} \amp\amp\amp \text{Add front numbers}</mrow>
+          <mrow>(12.06)\times 10^{6} \amp\amp\amp \text{Write the result in scientific notation}</mrow>
+          <mrow>(1.206 \times 10^1)\times 10^{6} \amp\amp\amp \text{Add exponents: \(10^1\times 10^6 = 10^{1+6}\)}</mrow>
+          <mrow>1.206 \times 10^{7} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </example>
+      <p>Subtraction of numbers written using scientific notation is similar.</p>
+      <example>
+        <title>Subtraction with Scientific</title>
+        <!-- Our own-->
+        <p>Subtract and write the result using scientific notation.</p>
+        <md>
+          <mrow>4.77\times 10^{-7}- 4.86\times 10^{-7} \amp\amp\amp \text{Combine like terms involving \(10^{-7}\)}</mrow>
+          <mrow>(4.77-4.86)\times 10^{-7} \amp\amp\amp \text{Subtract front numbers}</mrow>
+          <mrow>(-0.09)\times 10^{-7} \amp\amp\amp \text{Write the result in scientific notation}</mrow>
+          <mrow>(-9.0 \times 10^{-2})\times 10^{-7} \amp\amp\amp \text{Add exponents: \(10^{-2}\times 10^{-7} = 10^{-2-7}\)}</mrow>
+          <mrow>-9.0 \times 10^{-9} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </example>
+      <p>If the scientific numbers do not both involve the same power of
+        <m>10</m>, adjust one of the numbers to match the power of
+        <m>10</m> of the other number.  Consider the following example.
+      </p>
+      <example>
+        <title>Subtraction with Scientific</title>
+        <p>
+          <!-- Our own-->
+        </p>
+        <md>
+          <mrow>8.93\times 10^{13}- 9.26\times 10^{14} \amp\amp\amp \text{Rewrite \(10^{14}\) as \(10^1\times 10^{13}\) to match the other power of \(13\)}</mrow>
+          <mrow>8.93\times 10^{13}- 9.26\times 10^1 \times 10^{13} \amp\amp\amp \text{Multiply \(-9.26\times 10^{1}\)}</mrow>
+          <mrow>8.93\times 10^{13}- 92.6\times 10^{13} \amp\amp\amp \text{Combine like terms involving \(10^{13}\)}</mrow>
+          <mrow>(8.93-92.6)\times 10^{13} \amp\amp\amp \text{Subtract front numbers}</mrow>
+          <mrow>(-83.67)\times 10^{13} \amp\amp\amp \text{Write the result in scientific notation}</mrow>
+          <mrow>(-8.367 \times 10^{1})\times 10^{13} \amp\amp\amp \text{Add exponents: \(10^{1}\times 10^{13} = 10^{1+13}\)}</mrow>
+          <mrow>-8.367 \times 10^{14} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </example>
+    </subsection>
+  </section>
