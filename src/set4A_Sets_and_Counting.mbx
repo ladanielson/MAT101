@@ -12,32 +12,66 @@
     <title>Sets</title>
     <p>In this section, we will familiarize ourselves with set operations and notations, so that we can apply these concepts to both counting and probability problems. We begin by defining some terms.</p>
     <p>A
-      <b>set</b>is a collection of objects, and its members are called the
-      <b>elements</b>of the set. We name the set by using capital letters, and enclose its members in braces
-      <m>{\cdots}</m>. Suppose we need to list the members of the chess club. We use the following set notation: \[C=\{\text{Ken, Bob, Tran, Shanti, Eric}\}\] A set that has no members is called an
-      <b>empty set</b>. The empty set is denoted by the symbol
+      <term>set</term> is a collection of objects, and its members are called the
+      <term>elements</term> of the set. We name the set by using capital letters, and enclose its members in braces
+      <m>{\cdots}</m>. Suppose we need to list the members of the chess club. We use the following set notation: 
+      <md>
+        <mrow>C=\{\text{Ken, Bob, Tran, Shanti, Eric}\}</mrow>
+      </md>
+      A set that has no members is called an
+      <term>empty set</term>. The empty set is denoted by the symbol
       <m>\emptyset</m> or with empty curly braces
       <m>\{\}</m>.
     </p>
     <p>Two sets are
-      <b>equal</b>if they have the same elements.
+      <term>equal</term> if they have the same elements.
     </p>
     <p>A set
       <m>A</m> is a
-      <b>subset</b>of a set
+      <term>subset</term> of a set
       <m>B</m> if every member of
       <m>A</m> is also a member of
       <m>B</m>. For example, suppose
-      <m>C = \{\text{Al, Bob, Chris, David, Ed}\}</m> and
-      <m>A = \{\text{Bob, David}\}</m>. Then
+      <m>C=\{\text{Al, Bob, Chris, David, Ed}\}</m> and
+      <m>A=\{\text{Bob, David}\}</m>. Then
       <m>A</m> is a subset of
-      <m>C</m>, written as
-      <m>A\subseteq C</m>.
+      <m>C,</m> written as
+      <m>A\subseteq C.</m>
     </p>
     <p>Notes: Every set is a subset of itself,
-      <m>A \subseteq A</m>. The empty set is a subset of every set,
-      <m>\emptyset \subseteq A</m>.
+      <m>A\subseteq A.</m> The empty set is a subset of every set,
+      <m>\emptyset \subseteq A.</m>
     </p>
+    <example>
+      <title>Subsets</title>
+        <!--  http://cnx.org/content/col10613/1.5/ Example 11.1 page 170 -->
+      <p>List all the subsets of the set of primary colors
+        <m>P = \{ \text{red, yellow, blue} \}</m>.
+      </p>
+      <p>The subsets are:
+        <md>
+          <mrow>\{\},\amp\amp\amp\{\text{red}\},\amp\amp\{\text{yellow}\},\amp\amp\{\text{blue}\},</mrow>
+          <mrow>\amp\amp\amp\{\text{red, yellow}\},\amp\amp\{\text{yellow, blue}\},\amp\amp</mrow>
+          <mrow>\amp\amp\amp\{\text{red, blue}\},\amp\amp\text{and}\amp\amp\{\text{red, yellow, blue}\}</mrow>
+        </md>
+      </p>
+      <p>Note that the empty set
+        <m>\{ \}</m> is a subset of every set, and a set is a subset of itself.
+      </p>
+      <p>Note also that there are
+        <m>8= 2^3</m> subsets of the original set containing
+        <m>3</m> elements. In general, a set with
+        <m>n</m> elements will have
+        <m>2^n</m> subsets!
+        <m>\checkmark</m>
+      </p>
+    </example>
+  <assemblage>
+     <title>WeBWorK: Entering Elements in Sets</title>
+     <p>Indicate a set with curly braces on each end of the list of elements: <c>{1,2,3}</c>.</p>
+     <p>Use a comma between elements in a set: <c>{red, yellow}</c> and between subsets: <c>{red},{red, yellow}</c>.</p>
+     <p>Denote the empty set with braces with no elements: <c>{}</c> or type the word <c>NONE</c>.</p>
+   </assemblage>
   </subsection>
   <subsection>
     <title>Union Of Two Sets</title>
@@ -46,32 +80,32 @@
       <m>B</m> be two sets, then the union of
       <m>A</m> and
       <m>B</m>, written as
-      <m>A\cup B</m>, is the set of all elements that are either in
+      <m>A\cup B,</m> is the set of all elements that are either in
       <m>A</m> or in
-      <m>B</m>, or in both
+      <m>B,</m> or in both
       <m>A</m> and
-      <m>B</m>.  When you see the union symbol
+      <m>B.</m>  When you see the union symbol
       <m>\cup</m> you should think
       <em>or</em>.
     </p>
     <example xml:id="union">
       <title>Union</title>
+        <!-- Modeled after WeBWorK Problems/MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_01_CompoundIneq.pg -->
       <p>Let
         <m>A=\{1,4,5,6,8\}</m> and
         <m>B=\{4,5,6,7\}</m> be two sets of integers.
-        <!-- Modeled after WeBWorK Problems/MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_01_CompoundIneq.pg -->
       </p>
+      <p>
       <md>
         <mrow>\text{Determine \(A\cup B\)} \amp\amp\amp \text{The union is the collection of all elements from both sets:}</mrow>
-        <mrow>\amp\amp\amp \text{integers in \(A\)
-          <b>OR</b>\(B\)(or both)}
-        </mrow>
-        <mrow>A\cup B=\{1,4,5,6,7,8 \} \amp\amp\amp \text{Our Solution}</mrow>
-        <mrow>\text{Type
-          <b>{1,4,5,6,7,8}</b>for \(\{1,4,5,6,7,8 \}\) in
+        <mrow>\amp\amp\amp \text{integers in \(A\) OR \(B\) (or both)}</mrow>
+        <mrow>A\cup B=\{1,4,5,6,7,8 \} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+   <!--     <mrow>\text{Type
+          <b>{1,4,5,6,7,8}</b> for \(\{1,4,5,6,7,8 \}\) in
           <b>WeBWorK</b>. Elements of sets are contained in curly braces.}
-        </mrow>
+        </mrow> -->
       </md>
+    </p>
     </example>
     <p>Notice in the solution to Example
       <xref ref="union" />, the integer
@@ -98,17 +132,36 @@
     </p>
     <example>
       <title>Intersection</title>
+        <!-- Modeled after WeBWorK Problems/MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_01_CompoundIneq.pg -->
       <p>Let
         <m>A=\{1,4,5,6,8\}</m> and
         <m>B=\{4,5,6,7\}</m> be two sets of integers.
-        <!-- Modeled after WeBWorK Problems/MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_01_CompoundIneq.pg -->
       </p>
+      <p>
       <md>
-        <mrow>\text{Find A\cap B } \amp\amp\amp \text{The intersection is the collection of all elements common to  both sets: integers in A
-          <b>AND</b>B (common to both)}
-        </mrow>
-        <mrow>\text{A\cap B=\{4,5,6 \} } \amp\amp\amp \text{Our Solution}</mrow>
+        <mrow>\text{Find \(A\cap B\)} \amp\amp\amp \text{The intersection is the collection of all elements common to both sets:}</mrow>
+        <mrow>\amp\amp\amp\text{integers in A AND B (common to both)}</mrow>
+        <mrow>A\cap B=\{4,5,6 \} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
+    </example>
+    Two sets
+      <m>A</m> and
+      <m>B</m> are called
+      <term>disjoint</term> sets if their intersection is an empty set.  This would be denoted
+      <m>A \cap B = \emptyset.</m>
+    <example>
+      <title>Disjoint Sets</title>
+        <!-- our own-->
+      <p>Let
+        <m>P=\{red,blue,yellow\}</m> and
+        <m>C=\{orange,purple,brown,green\}</m> be two sets of colors.
+      <md>
+        <mrow>\text{Find \(P\cap C\)}\amp\amp\amp\text{In other words, what elements do \(P\) and \(C\) have in common?}</mrow>
+        <mrow>\amp\amp\amp \text{There are no colors in \(P\) which are in \(C\).  The sets are disjoint.}</mrow>
+        <mrow>P \cap C=\{\}\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+      </md>
+    </p>
     </example>
   </subsection>
   <subsection>
@@ -118,7 +171,7 @@
       <m>U</m> is the set consisting of all elements under consideration.  For example, if we were interested in computing probabilities of particular poker hands the universal set would be the set of all
       <m>52</m> cards in a regular deck of cards.  If we were interested in GPAs of students at C of I, the universal set
       <m>U=\{\text{GPAs of all students at C of I}\}</m>.  Or the universal set could even be
-      <m>U=\{1,2,...,9,10  \}</m>, the set consisting of the first
+      <m>U=\{1,2,...,9,10\}</m>, the set consisting of the first
       <m>10</m> positive integers.
     </p>
   </subsection>
@@ -131,99 +184,128 @@
       <m>U</m> that are not in
       <m>A</m>. When you see the complement symbol
       <m>'</m> you should think
-      <em>not</em>or
+      <em>not</em> or
       <em>outside</em>.
     </p>
     <example>
       <title>Set Complement</title>
+        <!-- Modeled after WeBWorK Problems/MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_01_CompoundIneq.pg -->
       <p>Let the universal set
         <m>U=\{0,1,2,3,4,5,6,7\}</m>. Let
         <m>A=\{0,1,2,3,6\}</m>.
-        <!-- Modeled after WeBWorK Problems/MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_01_CompoundIneq.pg -->
       </p>
+      <p>
       <md>
-        <mrow>\text{Find \(A'\)} \amp\amp\amp \text{The complement of \(A\) is the collection of all elements in \(U\) that are
-          <b>NOT</b>in \(A\)}
-        </mrow>
-        <mrow>\text{\(A'=\{4,5,7 \}\)} \amp\amp\amp \text{Our Solution}</mrow>
+        <mrow>\text{Find \(A'\)} \amp\amp\amp \text{The complement of \(A\) is the collection of all elements in \(U\)}</mrow>
+        <mrow>\amp\amp\amp\text{that are NOT in \(A\)}</mrow>
+        <mrow>\text{\(A'=\{4,5,7\}\)} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
+    </example>
+        <example xml:id = "example-union-intersection-complement">
+      <title>Union, Intersection, Complement</title>
+        <!-- Modeled after  http://cnx.org/content/col10613/1.5/ Example 11.1 page 170 -->
+      <p>Let the universal set
+        <m>U=\{\text{red, orange, yellow, green, gold, blue, indigo, violet, purple, black}\}</m>,
+        <m>P = \{ \text{red, yellow, blue} \}</m>,
+        <m>Y = \{ \text{purple, gold} \}</m> and
+        <m>N = \{ \text{red, black} \}</m>.
+      </p>
+      <p>
+      <md>
+        <mrow>P\cup N=\{\text{red, yellow, blue, black}\} \amp\amp\amp \text{The union is the set of all elements}</mrow>
+        <mrow>\amp\amp\amp\text{that are either in \(P\) OR in \(N\), or in both}</mrow>
+        <mrow>P\cap N=\{\text{red}\}\amp\amp\amp\text{The intersection is the set of all elements}</mrow>
+        <mrow>\amp\amp\amp\text{that are common to both \(P\) AND \(N\)}</mrow>
+        <mrow>P\cap Y=\{ \} \amp\amp\amp \text{\(P\) and \(Y\) have no elements in common,}</mrow>
+        <mrow>\amp\amp\amp\text{\(P\) and \(Y\) are disjoint}</mrow>
+        <mrow>P'=\{\text{orange, green, gold,}\amp\amp\amp</mrow>
+        <mrow>\text{indigo, violet, purple, black}\}\amp\amp\amp\text{The elements in \(U\) NOT in \(P\checkmark\)}</mrow>
+      </md>
+    </p>
     </example>
     <example>
       <title>Set Operations</title>
+        <!-- Modeled after WeBWorK Problems/MAT123_Templates/setAppliedMath_08_01_Sets/AppMath_08_Sets.pg -->
       <p>Let the universal set
         <m>U=\{0,1,2,3,4,5,6,7\}</m>. Let
         <m>A=\{0,1,2,3,6\}</m> and
         <m>B=\{0, 3, 4, 6\}</m>.
-        <!-- Modeled after WeBWorK Problems/MAT123_Templates/setAppliedMath_08_01_Sets/AppMath_08_Sets.pg -->
       </p>
+      <p>
       <md>
-        <mrow>\text{Determine \(A\cap B'\)} \amp\amp\amp \text{First identify the set \(B'\): elements in \(U\)
-          <b>NOT</b>in \(B\)}
+        <mrow>\text{Determine \(A\cap B'\)} \amp\amp\amp \text{First identify the set \(B'\): elements in \(U\) NOT in \(B\)}
         </mrow>
-        <mrow>\text{\(B'=\{1,2,5,7 \}\)} \amp\amp\amp \text{Intersection is
-          <b>AND</b>: elements in \(A\)
-          <b>AND</b>\(B\)}
+        <mrow>\text{\(B'=\{1,2,5,7 \}\)} \amp\amp\amp \text{Intersection is AND: elements in \(A\) AND \(B'\)}
         </mrow>
-        <mrow>\text{\(A\cap B'=\{1,2 \}\)} \amp\amp\amp \text{Our Solution}</mrow>
+        <mrow>\text{\(A\cap B'=\{1,2 \}\)} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
     <example>
       <title>Set Operations</title>
+        <!-- Modeled after WeBWorK Problems/MAT123_Templates/setAppliedMath_08_01_Sets/AppMath_08_Sets.pg -->
       <p>Let the universal set
         <m>U=\{0,1,2,3,4,5,6,7\}</m>. Let
         <m>A=\{0,1,2,3,6\}</m> and
         <m>B=\{0, 3, 4, 6\}</m>.
-        <!-- Modeled after WeBWorK Problems/MAT123_Templates/setAppliedMath_08_01_Sets/AppMath_08_Sets.pg -->
       </p>
+      <p>
       <md>
-        <mrow>\text{Find \((A\cup B)'\)} \amp\amp\amp \text{Parentheses first: identify \((A\cup B)\)--union is
-          <b>OR</b>}
+        <mrow>\text{Find \((A\cup B)'\)} \amp\amp\amp \text{Parentheses first: identify \((A\cup B)\)--union is OR }
         </mrow>
-        <mrow>\text{\((A\cup B)=\{0,1,2,3,4,6 \}\)} \amp\amp\amp \text{Next consider the complement--
-          <b>OUTSIDE</b>this set}
+        <mrow>\text{\((A\cup B)=\{0,1,2,3,4,6 \}\)} \amp\amp\amp \text{Next consider the complement--OUTSIDE this set}
         </mrow>
-        <mrow>\text{\((A\cup B)'=\{5,7 \}\)} \amp\amp\amp \text{Our Solution}</mrow>
+        <mrow>\text{\((A\cup B)'=\{5,7 \}\)} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
   </subsection>
   <subsection>
     <title>Venn Diagrams</title>
-    <p>We now use Venn diagrams to illustrate the relations between sets. In the late 1800s, an English logician named John Venn developed a method to represent relationships between sets. He represented these relationships using diagrams, which are now known as Venn diagrams. A Venn diagram represents a set as the interior of a circle. Often two or more circles are enclosed in a rectangle where the rectangle represents the universal set. To visualize an intersection or union of a set is easy.  Below are a few examples.</p>
-    <figure xml:id="figure-Venn-A-union-B">
-      <image xml:id="Venn-A-union-B">
-        <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe; \node[anchor=south east] at (current bounding box.south east) {$U$}; \node[anchor=south] at (current bounding box.north) {$A \cup B$}; \draw[filled] \firstcircle node {$A$} \secondcircle node {$B$}; \end{tikzpicture} ]]></latex-image-code>
-      </image>
-    </figure>
-    <p>The shaded region represents the collection of all elements that are either in
-      <m>A</m> or in
-      <m>B</m>, or in both
-      <m>A</m> and
-      <m>B</m>. The region is
-      <m>A\cup B</m>
-    </p>
-    <figure xml:id="figure-Venn-A-intersect-B">
-      <image xml:id="Venn-A-intersect-B">
-        <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe; \node[anchor=south east] at (current bounding box.south east) {$U$}; \begin{scope} \clip \firstcircle; \fill[filled] \secondcircle; \end{scope} \draw[outline] \firstcircle node {$A$}; \draw[outline] \secondcircle node {$B$}; \node[anchor=south] at (current bounding box.north) {$A \cap B$}; \end{tikzpicture} ]]></latex-image-code>
-      </image>
-    </figure>
-    <p>The shaded region represents the collection of all elements that are common to both
-      <m>A</m> and
-      <m>B</m> The region is
-      <m>A\cap B</m>
-    </p>
-    <figure xml:id="figure-Venn-A-complement">
-      <image xml:id="Venn-A-complement">
-        <latex-image-code><![CDATA[\begin{tikzpicture} \fill[color = M101_green!50!white ] \universe; \node[anchor=south east] at (current bounding box.south east) {$U$}; \draw \universe; \node[anchor=south] at (current bounding box.north) {$A'$}; \fill[color = white] \firstcircle; \draw[outline] \firstcircle node {$A$}; \draw[outline] \secondcircle node {$B$}; \end{tikzpicture} ]]></latex-image-code>
-      </image>
-    </figure>
-    <p>The shaded region represents the collection of all elements that are
-      <b>NOT</b>in
-      <m>A</m>. The region is
-      <m>A'</m>
-    </p>
-    <p>We will now consider sets of numbers defined using inequalities.</p>
+    <p><!--We now use Venn diagrams to illustrate the relations between sets.--> In the late 1800s, an English logician named John Venn developed a method to visualize relationships between sets. He represented these relationships using diagrams, which are now known as Venn diagrams. A Venn diagram represents a set as the interior of a circle. Often two or more circles are enclosed in a rectangle where the rectangle represents the universal set. To visualize an union or intersection of a set is easy.  Below are a few examples.</p>
+    <sidebyside widths="45% 45%" valign="middle">
+      <figure xml:id="figure-Venn-A-union-B">
+        <image xml:id="Venn-A-union-B">
+          <latex-image-code><![CDATA[\begin{tikzpicture}\draw \universe; \node[anchor=south east] at (current bounding box.south east) {$U$}; \node[anchor=south] at (current bounding box.north) {$A \cup B$}; \draw[filled] \firstcircle node {$A$} \secondcircle node {$B$}; \end{tikzpicture} ]]></latex-image-code>
+        </image>
+      </figure>
+      <p>The shaded region represents the collection of all elements that are either in
+        <m>A</m> or in
+        <m>B</m>, or in both
+        <m>A</m> and
+        <m>B</m>. The region is
+        <m>A\cup B</m>
+      </p>
+    </sidebyside>
+    <sidebyside widths="45% 45%" valign="middle">
+      <figure xml:id="figure-Venn-A-intersect-B">
+        <image xml:id="Venn-A-intersect-B">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe; \node[anchor=south east] at (current bounding box.south east) {$U$}; \begin{scope} \clip \firstcircle; \fill[filled] \secondcircle; \end{scope} \draw[outline] \firstcircle node {$A$}; \draw[outline] \secondcircle node {$B$}; \node[anchor=south] at (current bounding box.north) {$A \cap B$}; \end{tikzpicture} ]]></latex-image-code>
+        </image>
+      </figure>
+      <p>The shaded region represents the collection of all elements that are common to both
+        <m>A</m> and
+        <m>B</m> The region is
+        <m>A\cap B</m>
+      </p>
+    </sidebyside>
+    <sidebyside widths="45% 45%" valign="middle">
+      <figure xml:id="figure-Venn-A-complement">
+        <image xml:id="Venn-A-complement">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \fill[color = M101_green!50!white ] \universe; \node[anchor=south east] at (current bounding box.south east) {$U$}; \draw \universe; \node[anchor=south] at (current bounding box.north) {$A'$}; \fill[color = white] \firstcircle; \draw[outline] \firstcircle node {$A$}; \draw[outline] \secondcircle node {$B$}; \end{tikzpicture} ]]></latex-image-code>
+        </image>
+      </figure>
+      <p>The shaded region represents the collection of all elements that are NOT in
+        <m>A</m>. The region is 
+        <m>A'</m>
+      </p>
+    </sidebyside>
+  <!--</subsection>-->
+    <!--<p>We will now consider sets of numbers defined using inequalities.</p>-->
     <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace is licensed under a Creative Commons Attribution 3.0 Unported License. (http://creativecommons.org/licenses/by/3.0/) Based on a work at http://wallace.ccfaculty.org/book/book.html. pages 118 -->
-  </subsection>
+
+  <!--
   <subsection>
     <title>Sets</title>
     <p>You are already familiar with the concept of sets from
@@ -300,270 +382,343 @@
       <b>disjoint</b>sets if their intersection is an empty set.  This would be denoted
       <m>A\cap B = \emptyset</m>.  The following examples demonstrate the above ideas regarding sets.
     </p>
-    <example>
-      <title>Subsets</title>
-      <p>List all the subsets of the set of primary colors
-        <m>P = \{ \text{red, yellow, blue} \}</m>.
-        <!--  http://cnx.org/content/col10613/1.5/ Example 11.1 page 170 -->
-      </p>
-      <p>The subsets are:</p>
-      <p>
-        <m>\{ \},\{\text{red} \},\{\text{yellow} \},\{\text{blue} \},</m>
-      </p>
-      <p>
-        <m>\{\text{red, yellow} \},\{\text{red, blue} \},\{\text{yellow, blue} \},</m> and
-        <m>\{\text{red, yellow, blue} \}</m>
-      </p>
-      <p>Note that the empty set
-        <m>\{ \}</m> is a subset of every set, and a set is a subset of itself.
-      </p>
-      <p>Note also that there are
-        <m>8= 2^3</m> subsets of the original set containing
-        <m>3</m> elements. In general, a set with
-        <m>n</m> elements will have
-        <m>2^n</m> subsets!
-        <m>\checkmark</m>
-      </p>
-      <div class="WWbox">Use a comma between elements in a set: {red, yellow} and between subsets: {red},{red, yellow} when entering subsets in
-        <tt>WeBWorK</tt>.
-      </div>
-    </example>
-    <example xml:id = "example-union-intersection-complement">
-      <title>Union, Intersection, Complement</title>
-      <p>Let the universal set
-        <m>U=\{\text{red, orange, yellow, green, gold, blue, indigo, violet, purple, black}\}</m>,
-        <m>P = \{ \text{red, yellow, blue} \}</m>,
-        <m>Y = \{ \text{purple, gold} \}</m> and
-        <m>N = \{ \text{red, black} \}</m>.
-        <!-- Modeled after  http://cnx.org/content/col10613/1.5/ Example 11.1 page 170 -->
-      </p>
-      <md>
-        <mrow>P\cup N=\{\text{red, yellow, blue, black}\} \amp\amp\amp \text{The union is the set of all elements}</mrow>
-        <mrow>\text{}\amp\amp\amp\text{that are either in \(P\) OR in \(N\), or in both}
-        </mrow>
-        <mrow>P\cap N=\{\text{red} \} \amp\amp\amp \text{The intersection is the set of all elements}</mrow>
-        <mrow>\text{}\amp\amp\amp\text{that are common to both \(P\) AND \(N\)}
-        </mrow>
-        <mrow>P\cap Y=\{ \} \amp\amp\amp \text{\(P\) and \(Y\) have no elements in common,}</mrow>
-          <mrow>\text{}\amp\amp\amp\text{\(P\) and \(Y\) are disjoint}
-        </mrow>
-        <mrow>P'=\{\text{orange, green, gold, indigo, violet, purple, black} \} \amp\amp\amp \text{The elements in \(U\) NOT in \(P\checkmark\)}
-        </mrow>
-      </md></example>
+  -->
+
    
-    <p>Recall a Venn diagram represents a set as the interior of a circle. Often two or more circles are enclosed in a rectangle where the rectangle represents the universal set. These diagrams allow us to visualize an intersection or union of two sets or the complement of a set.  We will now use Venn diagrams to sort various populations and count objects.  We use the notation
+    <p><!--Recall a Venn diagram represents a set as the interior of a circle. Often two or more circles are enclosed in a rectangle where the rectangle represents the universal set. These diagrams allow us to visualize an intersection or union of two sets or the complement of a set.-->  We will now use Venn diagrams to sort various populations and count objects.  We use the notation
       <m>n(A)</m> to represent the number of elements in set
-      <m>A</m>.  For example,
-      <m>n(P\cup N) = 4</m> in Example <xref ref="example-union-intersection-complement" />.
+      <m>A</m>.  For example, if <m>A=\{\text{Maggie, Joe, Ben, Susanne}\}</m> then
+      <m>n(A)=4</m>.
     </p>
   <example>
     <title>2-Group Venn Diagram</title>
+      <!--   http://cnx.org/content/col10613/1.5/ Example 11.6 page 171 -->
     <p>Suppose a survey of car enthusiasts showed that over a certain time period,
       <m>30</m> drove cars with automatic transmissions,
       <m>20</m> drove cars with standard transmissions, and
-      <m>12</m> drove cars of both types. If every person in the survey drove cars with one of these transmissions, how many people participated in the survey?
-      <!--   http://cnx.org/content/col10613/1.5/ Example 11.6 page 171 -->
-      <p></p>
-      <md>
-        <mrow>\text{Let set
-          <m>A</m> represent those surveyed with automatic transmissions. } \amp\amp\amp \text{Let set
-          <m>S</m> represent those surveyed with standard transmissions. }
-        </mrow>
-        <mrow>\text{Since
-          <m>12</m> drove cars of both types Record
+      <m>12</m> drove cars of both types. If every person in the survey drove cars with one of these transmissions, how many people participated in the survey?</p>
+    <p>Let set <m>A</m> represent those surveyed with automatic transmissions.</p>
+    <p>Let set <m>S</m> represent those surveyed with standard transmissions.</p>
+    <sidebyside widths="45% 45%" valign="middle">
+      <paragraphs>
+        <p>Since
+          <m>12</m> drove cars of both types, record
           <m>\color{red}{12}</m> in
           <m>A</m> AND
           <m>S</m>
-          <m>=A\cap S</m>.That is
-          <m>n(A\cap S)=\color{red}{12}</m>. } \amp\amp\amp \text{
-          <image source="set4A_Sets_and_Counting_01.png" />}
-        </mrow>
-        <mrow>\text{Let
+          <m>=A\cap S</m>.
+        </p>
+        <p>That is 
+          <m>n(A\cap S)=\color{red}{12}</m>.
+        </p>
+      </paragraphs>
+      <figure xml:id="figure-venn-cars-12">
+        <image xml:id="venn-cars-12">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe;
+            \node[anchor=south east] at (current bounding box.south east) {$U$};
+            \draw[outline] \firstcircle node[shift={(-1.5,1.5)}] {$A$};
+            \draw[outline] \secondcircle node[shift={(1.5,1.5)}] {$S$};
+            \node[shift={(1,0)}] {$\color{red}{12}$}; \end{tikzpicture} ]]></latex-image-code>
+        </image>
+      </figure>
+    </sidebyside>
+    <sidebyside widths="45% 45%" valign="middle">
+      <paragraphs>
+        <p>Let
           <m>\color{blue}{x}</m> be the number in
-          <m>A</m> but
-          <b>NOT</b>in
+          <m>A</m> but NOT in
           <m>S</m>. Then
-          <m>\color{blue}{x}=n(A\cap S')</m>. Let
+          <m>\color{blue}{x}=n(A\cap S')</m>.
+        </p>
+        <p>Let
           <m>\color{green}{y}</m> be the number in
-          <m>S</m> but
-          <b>NOT</b>in
+          <m>S</m> but NOT in
           <m>A</m>. Then
-          <m>\color{green}{y}=n(S\cap A')</m>. } \amp\amp\amp \text{
-          <image source="set4A_Sets_and_Counting_02.png" />}
-        </mrow>
-        <mrow>\text{Because
-          <m>30</m> people drove cars with automatic transmissions, the circle
-          <m>A</m> must contain
-          <m>30</m> total people. This means
-          <m>x + 12 = 30</m>. Subtract
-          <m>12</m> from both sides to get
-          <m>x = 18</m>. Record
-          <m>\color{blue}{18}</m> in
-          <m>A</m> but
-          <b>NOT</b>in
-          <m>S</m>. } \amp\amp\amp \text{
-          <image source="set4A_Sets_and_Counting_03.png" />}
-        </mrow>
-        <mrow>\text{Because
-          <m>20</m> people drove cars with standard transmissions, the circle
-          <m>S</m> must contain
-          <m>20</m> total people. This means
-          <m>y + 12 = 20</m>. Subtract
-          <m>12</m> from both sides to get
-          <m>y = 8</m>. Record
-          <m>\color{green}{8}</m> in
-          <m>S</m> but
-          <b>NOT</b>in
-          <m>A</m>. } \amp\amp\amp \text{
-          <image source="set4A_Sets_and_Counting_04.png" />}
-        </mrow>
-        <mrow>\text{Now that all the information is sorted out, it is easy to read from the diagram that:} \amp\amp\amp \text{
-          <m>\color{blue}{18}</m> people drove cars with automatic transmissions only,
+          <m>\color{green}{y}=n(S\cap A')</m>.
+        </p>
+      </paragraphs>
+      <figure xml:id="figure-venn-cars-12-x-y">
+        <image xml:id="venn-cars-12-x-y">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe;
+            \node[anchor=south east] at (current bounding box.south east) {$U$};
+            \draw[outline] \firstcircle node[shift={(-1.5,1.5)}] {$A$};
+            \draw[outline] \secondcircle node[shift={(1.5,1.5)}] {$S$};
+            \node[shift={(1,0)}] {$\color{red}{12}$};
+            \node[shift={(0,0)}] {$\color{blue}{x}$};
+            \node[shift={(2,0)}] {$\color{green}{y}$}; \end{tikzpicture} ]]></latex-image-code>
+        </image>
+      </figure>
+      </sidebyside>
+      <sidebyside widths="45% 45%" valign="middle">
+        <paragraphs>
+          <p>Because
+            <m>30</m> people drove cars with automatic transmissions, the circle
+            <m>A</m> must contain
+            <m>30</m> total people.
+          </p>
+          <p>This means
+            <m>x + 12 = 30</m>. Subtract
+            <m>12</m> from both sides to get
+            <m>x = 18</m>. 
+          </p>
+          <p>Record
+            <m>\color{blue}{18}</m> in
+            <m>A</m> but NOT in
+            <m>S</m>.
+          </p>
+        </paragraphs>
+        <figure xml:id="figure-venn-cars-12-18-y">
+          <image xml:id="venn-cars-12-18-y">
+            <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe;
+              \node[anchor=south east] at (current bounding box.south east) {$U$};
+              \draw[outline] \firstcircle node[shift={(-1.5,1.5)}] {$A$};
+              \draw[outline] \secondcircle node[shift={(1.5,1.5)}] {$S$};
+              \node[shift={(1,0)}] {$\color{red}{12}$};
+              \node[shift={(0,0)}] {$\color{blue}{18}$};
+              \node[shift={(2,0)}] {$\color{green}{y}$}; \end{tikzpicture} ]]></latex-image-code>
+          </image>
+        </figure>
+      </sidebyside>
+      <sidebyside widths="45% 45%" valign="middle">
+        <paragraphs>
+          <p>Because
+            <m>20</m> people drove cars with standard transmissions, the circle
+            <m>S</m> must contain
+            <m>20</m> total people.
+          </p>
+          <p>This means
+            <m>y + 12 = 20</m>. Subtract
+            <m>12</m> from both sides to get
+            <m>y = 8</m>. 
+          </p>
+          <p>Record
+            <m>\color{green}{8}</m> in
+            <m>S</m> but NOT in
+            <m>A</m>.
+          </p>
+        </paragraphs>
+        <figure xml:id="figure-venn-cars-12-18-8">
+        <image xml:id="venn-cars-12-18-8">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe;
+            \node[anchor=south east] at (current bounding box.south east) {$U$};
+            \draw[outline] \firstcircle node[shift={(-1.5,1.5)}] {$A$};
+            \draw[outline] \secondcircle node[shift={(1.5,1.5)}] {$S$};
+            \node[shift={(1,0)}] {$\color{red}{12}$};
+            \node[shift={(0,0)}] {$\color{blue}{18}$};
+            \node[shift={(2,0)}] {$\color{green}{8}$}; \end{tikzpicture} ]]></latex-image-code>
+        </image>
+      </figure>
+      </sidebyside>
+      <sidebyside widths="45% 45%" valign="middle">
+        <p>Now that all the information is sorted out, it is easy to read from the diagram that:</p> 
+        <p><m>\color{blue}{18}</m> people drove cars with automatic transmissions only,
           <m>\color{red}{12}</m> people drove both types of cars, and
-          <m>\color{green}{8}</m> drove cars with standard transmissions only. }
-        </mrow>
-        <mrow>\text{
-          <m>18+12+8=38</m>} \amp\amp\amp \text{Our Solution:
-          <m>38</m> people participated in the survey. }
-        </mrow>
-      </md>
+          <m>\color{green}{8}</m> drove cars with standard transmissions only.
+        </p>
+      </sidebyside>
+      <p>
+        <md>
+          <mrow>18+12+8=38\amp\amp\amp\text{Our Solution:}</mrow>
+        </md>
+      <m>38</m> people participated in the survey.<m>\checkmark</m>
     </p>
   </example>
   <example xml:id="example-disneyland-knotts">
     <title>2-Group Venn Diagram</title>
-    <p>A survey of
-      <m>100</m> people in California indicates that
-      <m>60</m> people have visited Disneyland,
-      <m>15</m> have visited Knott's Berry Farm, and
-      <m>6</m> have visited both. How many people have visited neither place?
       <!--   http://cnx.org/content/col10613/1.5/ Example 11.7 page 171 -->
-      <p></p>
-      <md>
-        <mrow>\text{Let set
-          <m>D</m> represent those surveyed who have visited Disneyland. } \amp\amp\amp \text{Let set
-          <m>K</m> represent those surveyed who have visited Knott's Berry Farm. }
-        </mrow>
-        <mrow>\text{Since
-          <m>6</m> have visited both Record
-          <m>\color{red}{6}</m> in
-          <m>=D\cap K</m> Let
-          <m>\color{blue}{x}=n(D\cap K')</m>. Let
-          <m>\color{green}{y}=n(K\cap D')</m>. } \amp\amp\amp \text{
-          <image source="set4A_Sets_and_Counting_05.png" />}
-        </mrow>
-        <mrow>\text{Because
-          <m>60</m> people visited Disneyland,
-          <m>D</m> must contain
-          <m>60</m> total people. This means
-          <m>x + 6 = 60</m>. Subtract
-          <m>6</m> from both sides to get
-          <m>x = 54</m>. Record
-          <m>\color{blue}{54}</m> in
-          <m>D</m> but
-          <b>NOT</b>in
-          <m>K</m>. } \amp\amp\amp \text{
-          <image source="set4A_Sets_and_Counting_06.png" />}
-        </mrow>
-        <mrow>\text{Because
-          <m>15</m> people visited Knott's,
-          <m>K</m> must contain
-          <m>15</m> total people. This means
-          <m>y + 6 = 15</m>. Subtract
-          <m>6</m> from both sides to get
-          <m>y = 9</m>. Record
-          <m>\color{green}{9}</m> in
-          <m>K</m> but
-          <b>NOT</b>in
-          <m>D</m>. } \amp\amp\amp \text{
-          <image source="set4A_Sets_and_Counting_07.png" />}
-        </mrow>
-        <mrow>\text{Let
-          <m>\color{brown}{z}</m> be the number in the rectangle representing the universal set
-          <m>U</m> but
-          <b>NOT</b>in
-          <m>D</m> nor in
-          <m>K</m>. Thus
-          <m>z=n(D\cup K)'</m>. } \amp\amp\amp \text{
-          <image source="set4A_Sets_and_Counting_08.png" />}
-        </mrow>
-        <mrow>\text{Since
-          <m>100</m> people participated in the survey,
-          <m>U</m> must contain
-          <m>100</m> objects. This means
-          <m>54+6+9+z = 100</m> or
-          <m>69+z=100</m>. Subtract
-          <m>69</m> from both sides to get
-          <m>z = 31</m>. Record
-          <m>\color{brown}{31}</m> in
-          <m>(D\cup K)'</m>. } \amp\amp\amp \text{
-          <image source="set4A_Sets_and_Counting_09.png" />}
-        </mrow>
-        <mrow>\text{
-          <m>31=n(D\cup K)'</m>} \amp\amp\amp \text{Our Solution:
-          <m>31</m> people have visited neither place. }
-        </mrow>
-      </md>
-    </p>
-    <p>Looking back at the final Venn diagram of the survey of
-      <m>100</m> people in California, we can organize the results in a two-way table as follows:
-    </p>
+      <p>A survey of
+        <m>100</m> people in California indicates that
+        <m>60</m> people have visited Disneyland,
+        <m>15</m> have visited Knott's Berry Farm, and
+        <m>6</m> have visited both. How many people have visited neither place?
+      </p>
+      <p>Let set <m>D</m> represent those surveyed who have visited Disneyland.</p>
+      <p>Let set <m>K</m> represent those surveyed who have visited Knott's Berry Farm.</p>
+      <sidebyside widths="45% 45%" valign="middle">
+        <paragraphs>
+          <p>Since
+            <m>6</m> have visited both, record
+            <m>\color{red}{6}</m> in
+            <m>=D\cap K</m>.
+          </p>
+          <p>Let
+            <m>\color{blue}{x}=n(D\cap K')</m>.
+          </p>
+          <p>Let
+            <m>\color{green}{y}=n(K\cap D')</m>.
+          </p>
+        </paragraphs>
+        <figure xml:id="figure-venn-parks-6-x-y">
+          <image xml:id="venn-parks-6-x-y">
+            <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe;
+              \node[anchor=south east] at (current bounding box.south east) {$U$};
+              \draw[outline] \firstcircle node[shift={(-1.5,1.5)}] {$D$};
+              \draw[outline] \secondcircle node[shift={(1.5,1.5)}] {$K$};
+              \node[shift={(1,0)}] {$\color{red}{6}$};
+              \node[shift={(0,0)}] {$\color{blue}{x}$};
+              \node[shift={(2,0)}] {$\color{green}{y}$}; \end{tikzpicture} ]]></latex-image-code>
+          </image>
+        </figure>
+      </sidebyside>
+      <sidebyside widths="45% 45%" valign="middle">
+        <paragraphs>
+          <p>Because
+            <m>60</m> people visited Disneyland,
+            <m>D</m> must contain
+            <m>60</m> total people.
+          </p>
+          <p> This means
+            <m>x + 6 = 60</m>. Subtract
+            <m>6</m> from both sides to get
+            <m>x = 54</m>.
+          </p>
+          <p>Record
+            <m>\color{blue}{54}</m> in
+            <m>D</m> but NOT in
+            <m>K</m>.
+          </p>
+        </paragraphs>
+        <figure xml:id="figure-venn-parks-6-54-y">
+          <image xml:id="venn-parks-6-54-y">
+            <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe;
+              \node[anchor=south east] at (current bounding box.south east) {$U$};
+              \draw[outline] \firstcircle node[shift={(-1.5,1.5)}] {$D$};
+              \draw[outline] \secondcircle node[shift={(1.5,1.5)}] {$K$};
+              \node[shift={(1,0)}] {$\color{red}{6}$};
+              \node[shift={(0,0)}] {$\color{blue}{54}$};
+              \node[shift={(2,0)}] {$\color{green}{y}$}; \end{tikzpicture} ]]></latex-image-code>
+          </image>
+        </figure>
+      </sidebyside>
+      <sidebyside widths="45% 45%" valign="middle">
+        <paragraphs>
+          <p>Because
+            <m>15</m> people visited Knott's,
+            <m>K</m> must contain
+            <m>15</m> total people.
+          </p>
+          <p>This means
+            <m>y + 6 = 15</m>. Subtract
+            <m>6</m> from both sides to get
+            <m>y = 9</m>.
+          </p>
+          <p>Record
+            <m>\color{green}{9}</m> in
+            <m>K</m> but NOT in
+            <m>D</m>.
+          </p>
+        </paragraphs>
+        <figure xml:id="figure-venn-parks-6-54-9">
+          <image xml:id="venn-parks-6-54-9">
+            <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe;
+              \node[anchor=south east] at (current bounding box.south east) {$U$};
+              \draw[outline] \firstcircle node[shift={(-1.5,1.5)}] {$D$};
+              \draw[outline] \secondcircle node[shift={(1.5,1.5)}] {$K$};
+              \node[shift={(1,0)}] {$\color{red}{6}$};
+              \node[shift={(0,0)}] {$\color{blue}{54}$};
+              \node[shift={(2,0)}] {$\color{green}{9}$}; \end{tikzpicture} ]]></latex-image-code>
+          </image>
+        </figure>
+      </sidebyside>
+      <sidebyside widths="45% 45%" valign="middle">
+        <paragraphs>
+          <p>Let
+            <m>\color{brown}{z}</m> be the number in the rectangle representing the universal set
+            <m>U</m> but NOT in
+            <m>D</m> nor in
+            <m>K</m>.
+          </p>
+          <p>Thus
+            <m>z=n(D\cup K)'</m>.
+          </p>
+        </paragraphs>
+        <figure xml:id="figure-venn-parks-6-54-9-z">
+        <image xml:id="venn-parks-6-54-9-z">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe;
+            \node[anchor=south east] at (current bounding box.south east) {$U$};
+            \node[anchor=south west] at (current bounding box.south west) {$\color{brown}z$};
+            \draw[outline] \firstcircle node[shift={(-1.5,1.5)}] {$D$};
+            \draw[outline] \secondcircle node[shift={(1.5,1.5)}] {$K$};
+            \node[shift={(1,0)}] {$\color{red}{6}$};
+            \node[shift={(0,0)}] {$\color{blue}{54}$};
+            \node[shift={(2,0)}] {$\color{green}{9}$}; \end{tikzpicture} ]]></latex-image-code>
+        </image>
+      </figure>
+    </sidebyside>
+    <sidebyside widths="45% 45%" valign="middle">
+        <paragraphs>
+          <p>Since
+            <m>100</m> people participated in the survey,
+            <m>U</m> must contain
+            <m>100</m> objects.
+          </p>
+          <p>This means
+            <m>54+6+9+z = 100</m> or
+            <m>69+z=100</m>. Subtract
+            <m>69</m> from both sides to get
+            <m>z = 31</m>.
+          </p>
+          <p>Record
+            <m>\color{brown}{31}</m> in
+            <m>(D\cup K)'</m>.
+          </p>
+        </paragraphs>
+        <figure xml:id="figure-venn-parks-solution">
+        <image xml:id="venn-parks-solution">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe;
+            \node[anchor=south east] at (current bounding box.south east) {$U$};
+            \node[anchor=south west] at (current bounding box.south west) {$\color{brown}31$};
+            \draw[outline] \firstcircle node[shift={(-1.5,1.5)}] {$D$};
+            \draw[outline] \secondcircle node[shift={(1.5,1.5)}] {$K$};
+            \node[shift={(1,0)}] {$\color{red}{6}$};
+            \node[shift={(0,0)}] {$\color{blue}{54}$};
+            \node[shift={(2,0)}] {$\color{green}{9}$}; \end{tikzpicture} ]]></latex-image-code>
+        </image>
+      </figure>
+    </sidebyside>
     <p>
       <md>
-        <mrow>
-          <td align="center">
-            <m>\,</m>
-          </td>
-          <td align="center">Disneyland (
-            <m>D</m>)
-          </td>
-          <td align="center">Not Disneyland (
-            <m>D'</m>)
-          </td>
-          <td align="center">Total</td>
-        </mrow>
-        <mrow>
-          <td align ="center">Knott's (
-            <m>K</m>)
-          </td>
-          <td align ="center">
-            <m>\color{red}{6}</m>
-          </td>
-          <td align ="center">
-            <m>\color{green}{9}</m>
-          </td>
-          <td align ="center">
-            <m>15</m>
-          </td>
-        </mrow>
-        <mrow>
-          <td align ="center">Not Knott's (
-            <m>K'</m>)
-          </td>
-          <td align ="center">
-            <m>\color{blue}{54}</m>
-          </td>
-          <td align ="center">
-            <m>\color{brown}{31}</m>
-          </td>
-          <td align ="center">
-            <m>85</m>
-          </td>
-        </mrow>
-        <mrow>
-          <td align ="center">Total</td>
-          <td align ="center">
-            <m>\fbox{60}</m>
-          </td>
-          <td align ="center">
-            <m>40</m>
-          </td>
-          <td align ="center">
-            <m>100</m>
-          </td>
-        </mrow>
+        <mrow>31=n(D\cup K)' \amp\amp\amp\text{Our Solution:}</mrow>
       </md>
+      <m>31</m> people have visited neither place.<m>\checkmark</m>
     </p>
-    <p>Notice from the above table, we can determine particular counts.  For example, at the bottom of the Disneyland column is the boxed number
+    <p>Looking back at the final Venn diagram of <xref ref="example-disneyland-knotts" autoname="yes" /> in which <m>100</m> people in California were surveyed, we can organize the results in a two-way table as follows:
+    </p>
+    <p>
+      <table>
+        <tabular halign="center" top="minor" left="minor">
+          <col halign="center" right="minor" />
+          <col halign="center" right="minor" />
+          <col halign="center" right="minor" />
+          <col halign="center" right="minor" />
+      <!--  -->
+          <row bottom="minor">
+            <cell></cell>
+            <cell>Disneyland (<m>D</m>)</cell>
+            <cell>Not Disneyland (<m>D'</m>)</cell>
+            <cell>Total</cell>
+          </row>
+          <row bottom="minor">
+            <cell>Knott's (<m>K</m>)</cell>
+            <cell><m>\color{red}{6}</m></cell>
+            <cell><m>\color{green}{9}</m></cell>
+            <cell><m>15</m></cell>
+          </row>
+          <row bottom="minor">
+            <cell>Not Knott's (<m>K'</m>)</cell>
+            <cell><m>\color{blue}{54}</m></cell>
+            <cell><m>\color{brown}{31}</m></cell>
+            <cell><m>85</m></cell>
+          </row>
+          <row bottom="minor">
+            <cell>Total</cell>
+            <cell><m>\fbox{60}</m></cell>
+            <cell><m>40</m></cell>
+            <cell><m>100</m></cell>
+          </row>
+        </tabular>
+      </table>
+      Notice from the above table, we can determine particular counts.  For example, at the bottom of the Disneyland column is the boxed number
       <m>\fbox{60}</m>, which is the total number of people surveyed who visited Disneyland.  The red
       <m>\color{red}{6}</m> is the intersection of row Knott's and column Disneyland, which is
       <m>n(D\cap K)</m>, the number of people who visited both parks.  The
@@ -595,7 +750,7 @@
       <m>3</m> exercise categories (jog, swim, cycle) we will use three circles, one for each group. Use the exercise survey results to assign a number to each region in a corresponding Venn diagram and then answer the given questions in the following examples:
     </p>
   </example>
-  <example>
+  <example xml:id="example-exercise-survey">
     <title>3-Group Venn Diagram</title>
     <p>Use the exercise survey results above to assign a number to each region in a corresponding Venn diagram.
       <!--   http://cnx.org/content/col10613/1.5/ Example 11.8 page 172 -->
@@ -655,8 +810,7 @@
   </example>
   <example>
     <title>3-Group Venn Diagram</title>
-    <p>Use the completed Venn diagram from
-      <b>Example 4A-5</b>to determine the number of people surveyed who jog but do not swim or cycle.
+    <p>Use the completed Venn diagram from <xref ref="example-exercise-survey" autoname="yes" /> to determine the number of people surveyed who jog but do not swim or cycle.
       <!--   http://cnx.org/content/col10613/1.5/ Example 11.8(a) page 172 -->
       <p></p>
       <md>
@@ -673,8 +827,7 @@
   </example>
   <example>
     <title>3-Group Venn Diagram</title>
-    <p>Use the completed Venn diagram from
-      <b>Example 4A-5</b>to determine the number of people surveyed who take part in only one of the activities.
+    <p>Use the completed Venn diagram from <xref ref="example-exercise-survey" autoname="yes" /> to determine the number of people surveyed who take part in only one of the activities.
       <!--   http://cnx.org/content/col10613/1.5/ Example 11.8(b) page 172 -->
       <p></p>
       <md>
@@ -691,18 +844,16 @@
   </example>
   <example>
     <title>3-Group Venn Diagram</title>
-    <p>Use the completed Venn diagram from
-      <b>Example 4A-5</b>to determine the number of people surveyed who do not take part in any of these activities.
+    <p>Use the completed Venn diagram from <xref ref="example-exercise-survey" autoname="yes" /> to determine the number of people surveyed who do not take part in any of these activities.
       <!--   http://cnx.org/content/col10613/1.5/ Example 11.8(c) page 172 -->
-      <p></p>
+      </p>
+      <p>
       <md>
-        <mrow>\text{The region which contains people who do not take part in any of these activities is highlighted in
-          <m>\color{green}{\text{green}}</m>. } \amp\amp\amp \text{
+        <mrow>\text{The region which contains people who do not take part in any of these activities is highlighted in \(\color{green}{\text{green}}\). } \amp\amp\amp \text{
           <image source="set4A_Sets_and_Counting_17.png" />}
         </mrow>
-        <mrow>\text{
-          <m>12</m>} \amp\amp\amp \text{Our Solution:
-          <m>12</m> people do not take part in any of these activities. }
+        <mrow>12 \amp\amp\amp \text{Our Solution:
+          \(12\) people do not take part in any of these activities. }
         </mrow>
       </md>
     </p>
@@ -711,7 +862,7 @@
 <subsection>
   <title>Tree Diagrams and the Multiplication Axiom</title>
   <p>In this Module, we are developing counting techniques that will be used in the following Module to study probability. One of the most fundamental of such techniques is called the
-    <b>Multiplication Axiom</b>. Before we introduce the multiplication axiom, we first consider some examples.
+    <term>Multiplication Axiom</term>. Before we introduce the multiplication axiom, we first consider some examples.
   </p>
   <example>
     <title>2-Step Tree Diagram</title>
