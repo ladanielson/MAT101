@@ -10,7 +10,7 @@
     <p>Working with fractions is a very important foundation to algebra. Here we will briefly review reducing, multiplying, dividing, adding, and subtracting fractions. As this is a review, concepts will not be explained in detail as other lessons are.</p>
     <figure xml:id="figure-fraction-bar-one-third">
       <image xml:id="fraction-bar-one-third" width="80%">
-        <latex-image-code><![CDATA[\begin{tikzpicture} \filldraw[fill=yellow, draw=black] (0,0) rectangle (15,1); \draw (5,0) -- (5,1); \draw (10,0) -- (10,1); \draw[pattern=north west lines, pattern color=black!60!white] (0.1, 0.1) rectangle (4.9, .9); \node at (16, 0.5) {$\dfrac{1}{3}$}; \end{tikzpicture}]]></latex-image-code>
+        <latex-image-code><![CDATA[\begin{tikzpicture}[scale=.6] \filldraw[fill=yellow, draw=black] (0,0) rectangle (15,1); \draw (5,0) -- (5,1); \draw (10,0) -- (10,1); \draw[pattern=north west lines, pattern color=black!60!white] (0.1, 0.1) rectangle (4.9, .9); \node at (16, 0.5) {$\dfrac{1}{3}$}; \end{tikzpicture}]]></latex-image-code>
       </image>
     </figure>
     <p>A fraction can be used to represent parts of a whole. The fraction bar shown above represents the fraction
@@ -177,7 +177,7 @@
     </p>
     </example>
     <p>If the denominators do not match we will first have to identify the
-      <term>LCD</term>and build up each fraction by multiplying the numerators and denominators by the same number so the denominator is built up to the
+      <term>LCD</term> and build up each fraction by multiplying the numerators and denominators by the same number so the denominator is built up to the
       <term>LCD</term>.
     </p>
     <example>
@@ -198,7 +198,8 @@
       <p>
       <md>
         <mrow>\dfrac{2}{3}-\dfrac{1}{6} \amp\amp\amp \text{LCD is \(6\)}</mrow>
-        <mrow>\dfrac{2\cdot 2}{2\cdot 3}-\dfrac{1}{6} \amp\amp\amp \text{Multiply first fraction by \(1=\dfrac{2}{2}\), the second already has a denominator of \(6\)}</mrow>
+        <mrow>\dfrac{2\cdot 2}{2\cdot 3}-\dfrac{1}{6} \amp\amp\amp \text{Multiply first fraction by \(1=\dfrac{2}{2}\),}</mrow>
+        <mrow>\amp\amp\amp\text{the second already has a denominator of \(6\)}</mrow>
         <mrow>\dfrac{4}{6}-\dfrac{1}{6} \amp\amp\amp \text{Same denominator, subtract numerators, \(4-1\)}</mrow>
         <mrow>\dfrac{3}{6} \amp\amp\amp \text{Reduce answer, dividing numerator and denominator by \(3\)}</mrow>
         <mrow>\dfrac{1}{2} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
