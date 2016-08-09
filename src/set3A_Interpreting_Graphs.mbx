@@ -54,8 +54,8 @@
         <p>The following example finds the address or coordinate pair for each of several points on the coordinate plane.</p>
   <example>
   <title>Identify Quadrants and Coordinates</title>
-  <p>Give the quadrant and coordinates of each point.
     <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 119 pg 89-->
+  <p>Give the quadrant and coordinates of each point.
   </p>
   <sidebyside widths="55% 40%" valign="middle">
     <figure xml:id="figure-grid-3-points">
@@ -121,9 +121,10 @@
   <p>Just as we can give the coordinates for a set of points, we can take a set of points and plot them on the plane.</p>
   <example>
   <title>Graph Points</title>
-  <p>Graph the points
-    <m>A(3, 2), B( - 2, 1), C(3, - 4), D( - 2, - 3), E( - 3, 0), F (0, 2), G(0, 0)</m>
     <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 120 pg 90-->
+  <p>Graph the points</p>
+  <p>
+    <m>A(3, 2), B( - 2, 1), C(3, - 4), D( - 2, - 3), E( - 3, 0), F (0, 2), G(0, 0)</m>
   </p>
   <sidebyside widths="55% 40%" valign="middle">
     <figure xml:id="figure-grid-2-of-7-points">
@@ -210,93 +211,46 @@
       <m>y=2x - 3</m>. To determine whether or not a point
       <m>(x,y)</m> is a solution to a given equation, you substitute (or "plug in") the values into their corresponding variables in the equation and check to see that you get a true statement (both sides of the equation have equal values).
     </p>
-      <example>
-        <title>Investigate Solution</title>
-        <p>Determine if the point
-          <m>(1,-1)</m> is a solution to the equation
-          <m>y = 2x - 3</m>.
-          <!-- Our own-modeled after WeBWorK 3A problem 4-->
+    <example>
+      <title>Investigate Solution</title>
+        <!-- Our own-modeled after WeBWorK 3A problem 4-->
+      <p>Determine if the point
+        <m>(1,-1)</m> is a solution to the equation
+        <m>y = 2x - 3</m>.
+      <md>
+        <mrow>y\amp=2x-3\amp\amp\text{Since \((1,-1)=(x,y)\)}</mrow>
+        <mrow>\amp\amp\amp\text{substitute \(x=1\) and \(y=-1\) in the equation.}</mrow>
+        <mrow>-1\amp=2(1)-3\amp\amp\text{Simplify}</mrow>
+        <mrow>-1\amp =-1\amp\amp\text{A true statement}</mrow>
+      </md>
+      The point
+          <m>(1,-1)</m> <em>is</em>
+          a solution.<m>\checkmark</m>
         </p>
-        <table>
-          <tabular>
-            <col halign="right" />
-            <col />
-        <!--  -->
-          <row valign="bottom">
-            <cell><m>y = 2x - 3</m></cell>
-            <cell>
-              <line>Since
-            <m>(1,-1)=(x,y)</m>,</line>
-            <line>substitute
-            <m>x=1</m> and
-            <m>y=-1</m></line>
-            <line>in the equation.</line></cell>
-          </row>
-          <row>
-            <cell>
-            <m>-1=2(1)-3</m></cell>
-            <cell>Simplify</cell>
-          </row>
-          <row>
-            <cell>
-            <m>-1=-1</m></cell>
-            <cell>A true statement</cell>
-          </row>
-          <row>
-            <cell colspan="2" halign="center">The point
-            <m>(1,-1)</m> <em>is</em>
-            a solution.<m>\checkmark</m></cell>
-          </row>
-        </tabular>
-      </table>
-        
       </example>
       <example>
         <title>Investigate Solution</title>
+          <!-- Our own-modeled after WeBWorK 3A problem 4-->
         <p>Determine if the point
           <m>(-9,7)</m> is a solution to the equation
           <m>y = \lvert x+5\rvert+4</m>.
-          <!-- Our own-modeled after WeBWorK 3A problem 4-->
-        </p>
-        <table>
-          <tabular>
-            <col halign="right" />
-            <col />
-        <!--  -->
-          <row>
-            <cell><m>y = \lvert x+5\rvert +4</m></cell>
-            <cell valign="bottom"><line>Substitute
-            <m>x=-9</m> and
-            <m>y=7</m></line>
-            <line>in the equation.</line></cell>
-          </row>
-          <row>
-            <cell><m>7 = \lvert -9+5\rvert +4</m></cell>
-            <cell>Simplify: Inside absolute value first</cell>
-          </row>
-          <row>
-            <cell><m>7 = \lvert -4\rvert +4</m></cell>
-            <cell><m>
-            \lvert -4\rvert =4</m></cell>
-          </row>
-          <row>
-            <cell><m>7 = 8</m></cell>
-            <cell>
-            <em>NOT</em> a true statement: <m>7</m> does not equal <m>8</m></cell>
-          </row>
-          <row>
-            <cell colspan="2" halign="center">No, the point <m>(-9,7)</m> <em>is not</em> a solution. <m>\checkmark</m></cell>
-          </row>
-        </tabular>
-      </table>
+        <md>
+          <mrow>y\amp = \lvert x+5\rvert +4\amp\amp\text{Substitute \(x=-9\) and \(y=7\)}</mrow>
+          <mrow>\amp\amp\amp\text{in the equation.}</mrow>
+          <mrow>7 \amp = \lvert -9+5\rvert +4\amp\amp\text{Simplify: Inside absolute value first}</mrow>
+          <mrow>7\amp = \lvert -4\rvert +4\amp\amp\lvert -4\rvert =4</mrow>
+          <mrow>7\amp =8\amp\amp\text{NOT a true statement: \(7\) does not equal \(8\)}</mrow>
+        </md>
+        No, the point <m>(-9,7)</m> <em>is not</em> a solution. <m>\checkmark</m>
+      </p>
       </example>
           <example>
             <title>Equation Table</title>
+              <!-- Our own-modeled after WeBWorK 3A problem 6-->
             <p>For the equation
               <m>Q = P^2-3</m>, find the
               <m>Q</m>-coordinate for each value of
               <m>P</m> in the table.
-              <!-- Our own-modeled after WeBWorK 3A problem 6-->
             </p>
             <sidebyside widths="30% 70%" valign="middle">
               <table>
@@ -389,9 +343,9 @@
     </p>
         <example>
           <title>Graph a Given Equation</title>
+            <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 121 pg 91-->
           <p>Graph
             <m>y=2x-3</m>. We make a table of values.
-            <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 121 pg 91-->
           </p>
           <sidebyside widths="40% 55%" valign="middle">
             <table>
@@ -472,8 +426,8 @@
                 </figure>
           <paragraphs>
                 <p>Plot each point.</p>
-                <p>In the next Set
-                  <xref ref="section-3B-lines" />, we will see that this particular equation determines a line.  Thus, once the points are plotted on the graph, connect the dots to make a line.</p>
+                <p>In the next 
+                  <xref ref="section-3B-lines" autoname="yes" />, we will see that this particular equation determines a line.  Thus, once the points are plotted on the graph, connect the dots to make a line.</p>
                 <p>The graph is Our Solution.<m>\checkmark</m>
                 </p>
               </paragraphs>
@@ -489,9 +443,9 @@
         </p>
         <example>
           <title>Graph a Given Equation</title>
+            <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 122 pg 92-->
           <p>Graph
             <m>2x-3y=6</m>. We make a table of values.
-            <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 122 pg 92-->
           </p>
           <sidebyside widths="40% 55%" valign="middle">
   <table>
@@ -934,35 +888,29 @@
     <m>y</m>-intercept of
     <m>y=3x+2</m>.
   </p>
-  <p>******First style table*****</p>
+  <p>
   <md>
-    <mrow>\text{
-          \(y = 3x+2\)} \amp\amp\amp \text{
+    <mrow>y\amp =3x+2\amp\amp\text{
           \(y\)-intercepts have an
           \(x\)-coordinate of
           \(0\): set
           \(x=0\)}</mrow>
-    <mrow>\text{
-          \(y = 3(0)+2\)} \amp\amp\amp \text{Solve for
+    <mrow>y\amp =3(0)+2\amp\amp\text{Solve for
           \(y\): Multiply
           \(3(0)\) first}</mrow>
-    <mrow>\text{
-          \(y=0+2\)} \amp\amp\amp \text{Add}</mrow>
-    <mrow>\text{
-          \(y=2\)} \amp\amp\amp \text{We have found the
+    <mrow>y\amp =0+2\amp\amp\text{Add}</mrow>
+    <mrow>y\amp =2\amp\amp\text{We have found the
           \(y\)-value of the
           \(y\)-intercept}</mrow>
-    <mrow>\text{
-          \((0,2)\)} \amp\amp\amp \text{Our Solution
-      <m>\checkmark</m>}
-    </mrow>
+    <mrow>\amp (0,2)\amp\amp\text{Our Solution}\checkmark</mrow>
   </md>
+</p>
+  <!--
   <p>******Second style table*****</p>
   <table>
       <tabular>
         <col halign="right" />
         <col />
-    <!--  -->
       <row>
         <cell><m>y=3x+2</m></cell>
         <cell><m>y</m>-intercepts have an
@@ -994,7 +942,8 @@
         <cell>Our Solution <m>\checkmark</m></cell>
       </row>
     </tabular>
-  </table>
+  </table>-->
+
   <sidebyside widths="40% 55%" valign="middle">
     <p>The
       <m>y</m>-intercept <m>(0,2)</m> is labeled on the graph of the equation.
@@ -1016,30 +965,27 @@
         </title>
         <p>Find the
           <m>x</m>-intercept of
-          <m>y = 3x+2</m>.
+          <m>y=3x+2</m>.
         </p>
-        <p>****First style table--shall I fix?****</p>
+        <p>
         <md>
-          <mrow>y = 3x+2 \amp\amp\amp
-                \text{
+          <mrow>y\amp =3x+2\amp\amp\text{
                 \(x\)-intercepts have a
                 \(y\)-coordinate of
                 \(0\): set
                 \(y=0\)}</mrow>
-          <mrow>0 = 3x+2 \amp\amp\amp
-                 \text{Solve for
+          <mrow>0\amp =3x+2\amp\amp\text{Solve for
                 \(x\): Subtract
                 \(2\) from both sides}</mrow>
-          <mrow>-2=3x \amp\amp\amp \text{Divide both sides by
+          <mrow>-2\amp =3x\amp\amp\text{Divide both sides by
                 \(3\)}</mrow>
-          <mrow>-\dfrac{2}{3}=x \amp\amp\amp \text{We have found the
+          <mrow>-\dfrac{2}{3}\amp =x\amp\amp\text{We have found the
                 \(x\)-value of the
                 \(x\)-intercept}</mrow>
-          <mrow>\left(-\dfrac{2}{3} , 0\right) \amp\amp\amp \text{Our Solution
-            \(\checkmark\)}
-          </mrow>
+          <mrow>\amp\left(-\dfrac{2}{3}, 0\right)\amp\amp\text{Our Solution}\checkmark</mrow>
         </md>
-        <p>****First style table--shall I fix?****</p>
+      </p>
+      <p>
         <sidebyside widths="40% 55%" valign="middle">
           <p>The
             <m>x</m>-intercept <m>\left(-\frac{2}{3} , 0\right)</m> is labeled on the graph of the equation.
@@ -1053,6 +999,7 @@
                 </image>
               </figure>
             </sidebyside>
+          </p>
             </example>
   <p>The intercepts are points on the graph where the graph crosses an axis.  If it is understood which kind of intercept is being referred to we may slightly abuse the notation and say "The
     <m>x</m>-intercept is
@@ -1061,12 +1008,12 @@
   </p>
 <example>
 <title>Investigate Equation Relationships Graphically</title>
+  <!-- Our own-modeled after WeBWorK 3A problem 17-->
 <p>Consider the graph of
   <m>y=\lvert x+1\rvert</m> in red together with the line
   <m>y=3</m> in blue below. For what values of
   <m>x</m> does
   <m>\lvert x+1\rvert =3</m>?
-  <!-- Our own-modeled after WeBWorK 3A problem 17-->
 </p>
 <sidebyside widths="55% 40%" valign="middle">
 <figure xml:id="figure-graph-two-equations-intercepts">
@@ -1093,12 +1040,12 @@
 </example>
 <example>
     <title>Investigate Equation Relationships Graphically</title>
+      <!-- Our own-modeled after WeBWorK 3A problem 17-->
     <p>Consider the graph of
       <m>y=\lvert x+1\rvert</m> in red together with the line
       <m>y=3</m> in blue below. For what values of
       <m>x</m> is
       <m>\lvert x+1\rvert \lt 3</m>?
-      <!-- Our own-modeled after WeBWorK 3A problem 17-->
     </p>
     <sidebyside widths="55% 40%" valign="middle">
       <figure xml:id="figure-graph-two-equations-less-than">
@@ -1127,12 +1074,12 @@
     </example>     
 <example>
 <title>Investigate Equation Relationships Graphically</title>
+  <!-- Our own-modeled after WeBWorK 3A problem 6-->
 <p>Consider the graph of
   <m>y=\lvert x+1\rvert</m> in red together with the line
   <m>y=3</m> in blue below. For what values of
   <m>x</m> is
   <m>\lvert x+1\rvert \gt 3</m>?
-  <!-- Our own-modeled after WeBWorK 3A problem 6-->
 </p>
 <sidebyside widths="55% 40%" valign="middle">
 <figure xml:id="figure-graph-two-equations-greater-than">

@@ -23,8 +23,8 @@
     </p>
     <example>
       <title>Determine Slope Given Graph</title>
-      <p>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 123 pg 95-->
+      <p>
       </p>
         <sidebyside widths="55% 40%" valign="middle" margins="0%">
           <figure xml:id="figure-negative-slope">
@@ -68,8 +68,8 @@
     </example>
     <example>
       <title>Determine Slope Given Graph</title>
-      <p>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 124 pg 96-->
+      <p>
       </p>
       <sidebyside widths="55% 40%" valign="middle">
         <figure xml:id="figure-positive-slope">
@@ -113,9 +113,7 @@
     <p>There are two special lines that have unique slopes that we need to be aware of. They are illustrated in the following example.</p>
     <example>
       <title>Special Slopes</title>
-      <p>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 125 pg 96-->
-      </p>
       <sidebyside widths="45% 45%" valign="middle">
         <figure xml:id="figure-horizontal-slope">
           <image xml:id="horizontal-slope" source="images/horizontal-slope.svg">
@@ -169,123 +167,100 @@
       <m>y</m> values, we can calculate this by subtracting the
       <m>y</m> values of a point. Similarly, if run is a change in the
       <m>x</m> values, we can calculate this by subtracting the
-      <m>x</m> values of a point. In this way we get the following equation for slope:
-    </p>
     <mdn>
       <mrow xml:id="equation-slope">\text{The slope of a line through }
         (x_1, y_1)\text{ and }
         (x_2, y_2)\text{ is }
-        \dfrac{y_2-y_1}{x_2-x_1}
-      </mrow>
+        \dfrac{y_2-y_1}{x_2-x_1}</mrow>
     </mdn>
+  </p>
     <p>When mathematicians began working with slope, it was called the modular slope. For this reason we often represent the slope with the variable
       <m>m</m>. Now we have the following for slope:
-    </p>
     <mdn>
       <mrow xml:id="equation-m-slope">\text{Slope}
         =m=\dfrac{\text{rise}}{\text{run}}=\dfrac{\text{change in } y}{\text{change in }x} =\dfrac{y_2-y_1}{x_2-x_1}</mrow>
       </mdn>
+    </p>
     <p>As we subtract the
       <m>y</m> values and the
       <m>x</m> values when calculating slope it is important we subtract them in the same order. This process is shown in the following examples.
     </p>
     <example>
       <title>Determine Slope Given Two Points</title>
-      <p>Determine the slope and describe the line.
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 126 pg 97-->
-      </p>
+      <p>Determine the slope and describe the line.</p>
+      <p>Determine the slope between
+          <m>(-4, 3)</m> and
+          <m>(2,-9)</m>. First identify
+          <m>x_1, y_1, x_2, y_2</m>.
+        
       <md>
-        <mrow>\text{Determine the slope between
-          \((-4, 3)\) and
-          \((2,-9)\)} \amp\amp\amp \text{Identify
-          \(x_1, y_1, x_2, y_2\)}</mrow>
-        <mrow>\text{
-          \((x_1, y_1)\) and
-          \((x_2,y_2)\)} \amp\amp\amp \text{Use slope formula
+        <mrow>(x_1, y_1)\amp =(-4, 3)\text{ and}</mrow>
+        <mrow>(x_2,y_2)\amp =(2,-9) \amp\amp\text{Use slope formula
           \(m=\dfrac{y_2-y_1}{x_2-x_1}\)}</mrow>
-        <mrow>\text{
-          \(m=\dfrac{-9-3}{2-(-4)}\)} \amp\amp\amp \text{Simplify}</mrow>
-        <mrow>\text{
-          \(m=\dfrac{-12}{6}\)} \amp\amp\amp \text{Reduce}</mrow>
-        <mrow>\text{
-          \(m=-2\lt 0\), 
-          falls} \amp\amp\amp \text{Our Solution}\checkmark
-        </mrow>
+        <mrow>m\amp =\dfrac{-9-3}{2-(-4)} \amp\amp \text{Simplify}</mrow>
+        <mrow>m\amp =\dfrac{-12}{6} \amp\amp \text{Reduce}</mrow>
+        <mrow>m\amp =-2\lt 0\text{, falls} \amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
     <example>
       <title>Determine Slope Given Two Points</title>
-      <p>Determine the slope and describe the line.
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 127 pg 97-->
-      </p>
+      <p>Determine the slope and describe the line.</p>
+      <p>Determine the slope between
+          <m>(4, 6)</m> and
+          <m>(2,-1)</m>. First identify
+          <m>x_1, y_1, x_2, y_2</m>.
       <md>
-        <mrow>\text{Determine the slope between
-          \((4, 6)\) and
-          \((2,-1)\)} \amp\amp\amp \text{Identify
-          \(x_1, y_1, x_2, y_2\)}</mrow>
-        <mrow>\text{
-          \((x_1, y_1)\) and
-          \((x_2,y_2)\)} \amp\amp\amp \text{Use slope formula
+        <mrow>(x_1, y_1)\amp =(4, 6)\text{ and}</mrow>
+        <mrow>(x_2,y_2)\amp =(2,-1) \amp\amp\text{Use slope formula
           \(m=\dfrac{y_2-y_1}{x_2-x_1}\)}</mrow>
-        <mrow>\text{
-          \(m=\dfrac{-1-6}{2-4}\)} \amp\amp\amp \text{Simplify}</mrow>
-        <mrow>\text{
-          \(m=\dfrac{-7}{-2}\)} \amp\amp\amp \text{Reduce, dividing both numerator and denominator by
+        <mrow>m\amp =\dfrac{-1-6}{2-4}\amp\amp \text{Simplify}</mrow>
+        <mrow>m\amp =\dfrac{-7}{-2} \amp\amp \text{Reduce, multiplying}</mrow>
+        <mrow>\amp\amp\amp\text{both numerator and denominator by
           \(-1\)}</mrow>
-        <mrow>\text{
-          \(m=\dfrac{7}{2}\gt 0\), 
-          rises} \amp\amp\amp \text{Our Solution}\checkmark
-        </mrow>
+        <mrow>m\amp =\dfrac{7}{2}\gt 0\text{, rises} \amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
     <p>We may come up against a problem that has a zero slope (horizontal line) or no slope (vertical line) just as with using the graphs.</p>
     <example>
       <title>Determine Slope Given Two Points</title>
-      <p>Determine the slope and describe the line.
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 128 pg 97-->
-      </p>
+      <p>Determine the slope and describe the line.</p>
+      <p>Determine the slope between
+          <m>(-4,-1)</m> and
+          <m>(-4,-5)</m>. First identify
+          <m>x_1, y_1, x_2, y_2</m>.
       <md>
-        <mrow>\text{Determine the slope between
-          \((-4, -1)\) and
-          \((-4, -5)\)} \amp\amp\amp \text{Identify
-          \(x_1, y_1, x_2, y_2\)}</mrow>
-        <mrow>\text{
-          \((x_1, y_1)\) and
-          \((x_2,y_2)\)} \amp\amp\amp \text{Use slope formula
+        <mrow>(x_1, y_1)\amp =(-4,-1)\text{ and}</mrow>
+        <mrow>(x_2,y_2)\amp =(-4,-5) \amp\amp\text{Use slope formula
           \(m=\dfrac{y_2-y_1}{x_2-x_1}\)}</mrow>
-        <mrow>\text{
-          \(m=\dfrac{-5-(-1)}{-4-(-4)}\)} \amp\amp\amp \text{Simplify}</mrow>
-        <mrow>\text{
-          \(m=\dfrac{-4}{0}\)} \amp\amp\amp \text{Can't divide by zero, undefined}</mrow>
-        <mrow>\text{
-          \(m=\) does not exists (no slope), 
-          vertical} \amp\amp\amp \text{Our Solution}\checkmark
-        </mrow>
+        <mrow>m\amp =\dfrac{-5-(-1)}{-4-(-4)}\amp\amp \text{Simplify}</mrow>
+        <mrow>m\amp =\dfrac{-4}{0} \amp\amp \text{Can't divide by zero, undefined}</mrow>
+        <mrow>m\amp =\text{does not exist (no slope),} \amp\amp \text{Our Solution}\checkmark</mrow>
+        <mrow>\text{vertical}\amp\amp\amp</mrow>
       </md>
+    </p>
     </example>
     <example>
       <title>Determine Slope Given Two Points</title>
-      <p>Determine the slope and describe the line.
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 129 pg 98-->
-      </p>
+      <p>Determine the slope and describe the line.</p>
+      <p>Determine the slope between
+          <m>(3,1)</m> and
+          <m>(-2,1)</m>. First identify
+          <m>x_1, y_1, x_2, y_2</m>.
       <md>
-        <mrow>\text{Determine the slope between
-          \((3,1)\) and
-          \((-2,1)\)} \amp\amp\amp \text{Identify
-          \(x_1, y_1, x_2, y_2\)}</mrow>
-        <mrow>\text{
-          \((x_1, y_1)\) and
-          \((x_2,y_2)\)} \amp\amp\amp \text{Use slope formula
+        <mrow>(x_1, y_1)\amp =(3,1)\text{ and}</mrow>
+        <mrow>(x_2,y_2)\amp =(-2,1) \amp\amp\text{Use slope formula
           \(m=\dfrac{y_2-y_1}{x_2-x_1}\)}</mrow>
-        <mrow>\text{
-          \(m=\dfrac{1-1}{-2-3}\)} \amp\amp\amp \text{Simplify}</mrow>
-        <mrow>\text{
-          \(m=\dfrac{0}{-5}\)} \amp\amp\amp \text{Reduce}</mrow>
-        <mrow>\text{
-          \(m=0\),
-          horizontal} \amp\amp\amp \text{Our Solution}\checkmark
-        </mrow>
+        <mrow>m\amp =\dfrac{1-1}{-2-3}\amp\amp \text{Simplify}</mrow>
+        <mrow>m\amp =\dfrac{0}{-5} \amp\amp \text{Reduce}</mrow>
+        <mrow>m\amp =0\text{, horizontal} \amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
     <p>
       <!-- <m>\color{red}{\text{Note:}}</m> There is a big difference between a -->
@@ -334,46 +309,39 @@
     </p>
     <example>
       <title>Determine Slope-Intercept Form</title>
-      <p>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 132 pg 102-->
-      </p>
+      <p>
       <md>
         <mrow>\text{
           \(m, (0,b), (x,y)\)} \amp\amp\amp \text{Using the slope formula
           \(\dfrac{y_2-y_1}{x_2-x_1}=m\) gives:}</mrow>
-        <mrow>\text{
-          \(\dfrac{y-b}{x-0}=m\)} \amp\amp\amp \text{Simplify}</mrow>
-        <mrow>\text{
-          \(\dfrac{y-b}{x}=m\)} \amp\amp\amp \text{Multiply both sides by
+        <mrow>\dfrac{y-b}{x-0}\amp =m \amp\amp \text{Simplify: \(x-0=x\)}</mrow>
+        <mrow>\dfrac{y-b}{x}\amp =m \amp\amp \text{Multiply both sides by
           \(x\)}</mrow>
-        <mrow>\text{
-          \(y-b=mx\)} \amp\amp\amp \text{Add
+        <mrow>y-b\amp =mx \amp\amp \text{Add
           \(b\) to both sides}</mrow>
-        <mrow>\text{
-          \(\underline{+b\hphantom{12}+b}\)} \amp\amp\amp \text{
-          \(\,\)}</mrow>
-        <mrow>\text{
-          \(y=mx+b\)} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        <mrow>\underline{+b}\amp\underline{\phantom{12345}+b} \amp\amp\amp \text{ }</mrow>
+        <mrow>y\amp =mx+b \amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
     <p>This equation,
       <m>y =mx + b</m> can be thought of as the equation of any line that has a slope of
       <m>m</m> and a
       <m>y</m>-intercept of
       <m>b</m>. This formula is known as the slope-intercept equation.
-    </p>
     <mdn>
       <mrow xml:id="equation-slope-intercept">\text{Slope-Intercept Equation: }
         y=mx+b</mrow>
       </mdn>
+    </p>
     <p>If we know the slope and the
       <m>y</m>-intercept we can easily determine the equation that represents the line.
     </p>
     <example>
       <title>Determine Equation Given Slope and Intercept</title>
-      <p>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 133 pg 102-->
-      </p>
+      <p>
       <md>
         <mrow>\text{Slope
           \(=\dfrac{3}{4}\),
@@ -387,15 +355,15 @@
         <mrow>\text{
           \(y=\dfrac{3}{4}x-3\)} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
     <p>We can also determine the equation by looking at a graph and finding the slope and
       <m>y</m>-intercept.
     </p>
     <example>
       <title>Determine Equation Given Graph</title>
-      <p>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 134 pg 103-->
-      </p>
+      <p>
       <sidebyside widths="55% 40%" valign="middle">
         <figure xml:id="figure-determine-equation">
         <image xml:id="determine-equation" source="images/determine-equation.svg">
@@ -438,6 +406,7 @@
           <p><m>y =-\dfrac{2}{3}x+3</m></p>
           <p>Our Solution<m>\checkmark</m></p>
         </sidebyside>
+      </p>
     </example>
     <p>We can also move in the opposite direction, using the equation to identify the slope and
       <m>y</m>-intercept and graph the equation from this information. However, it will be important for the equation to first be in slope-intercept form. If it is not, we will have to solve it for
@@ -446,30 +415,27 @@
     </p>
     <example>
       <title>Determine Slope and Intercept</title>
-      <p>Determine the slope and intercept of
-        <m>2x-4y =6</m>.
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 135 pg 103-->
-      </p>
+      <p>Determine the slope and intercept of
+        <m>2x-4y =6</m>.</p>
+      <p>Write in slope-intercept form:
       <md>
-        <mrow>\text{Write in slope-intercept form:
-          \(2x-4y =6\)} \amp\amp\amp \text{Solve for
+        <mrow>2x-4y\amp =6 \amp\amp \text{Solve for
           \(y\)}</mrow>
-        <mrow>\text{
-          \(\underline{-2x\hphantom{123}-2x}\)} \amp\amp\amp \text{Subtract
+        <mrow>\underline{-2x\phantom{1234}}\amp\underline{\phantom{123}-2x} \amp\amp \text{Subtract
           \(2x\) from both sides}</mrow>
-        <mrow>\text{
-          \(-4y =-2x+6\)} \amp\amp\amp \text{Put
-          \(x\) term first}</mrow>
-        <mrow>\text{
-          \(\overline{-4}\hphantom{1234}\overline{-4}\hphantom{1}\overline{-4}\)} \amp\amp\amp \text{Divide each term by
+        <mrow>-4y\amp =-2x+6 \amp\amp \text{Put
+          \(x\) term first on RHS}</mrow>
+        <mrow>\overline{-4}\amp\phantom{1234}\overline{-4}\phantom{1}\overline{-4} \amp\amp \text{Divide each term by
           \(-4\)}</mrow>
-        <mrow>\text{Slope-intercept form:
-          \(y =\dfrac{1}{2}x-\dfrac{3}{2}\)} \amp\amp\amp \text{Slope-intercept equation 
+        <mrow>\text{Slope-intercept form: }
+          y\amp =\dfrac{1}{2}x-\dfrac{3}{2}\amp\amp \text{Slope-intercept equation 
           \(y=mx+b\)}</mrow>
-        <mrow>\text{Slope
-          \(m=\dfrac{1}{2}\), Intercept
-          \(b=\dfrac{3}{2}\)} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        <mrow>\text{Slope: }
+          m=\dfrac{1}{2}\amp\text{, Intercept: }
+          b=\dfrac{3}{2} \amp\amp \text{Our Solution}\checkmark</mrow>
       </md>
+    </p>
     </example>
     <p>Once we have an equation in slope-intercept form we can graph it by
       <ul>
@@ -484,20 +450,19 @@
     </p>
     <example>
       <title>Graph Line Given Slope-Intercept Equation</title>
-      <p>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 136 pg 103-->
-      </p>
+      <p>
       <md>
         <mrow>\text{ Graph
           \(y =\dfrac{1}{2}x-4\)} \amp\amp\amp \text{Recall the slope-intercept equation }</mrow>
-        <mrow>\text{
-          \(y =mx+b\)} \amp\amp\amp \text{Identify the slope,
+        <mrow>y =mx+b \amp\amp\amp \text{Identify the slope,
           \(m\), and the
           \(y\)-intercept,
           \(b\)}</mrow>
         <mrow>\text{
           \(m=\dfrac{1}{2}, b=-4\)} \amp\amp\amp \text{Make the graph}</mrow>
       </md>
+    </p>
       <sidebyside widths="55% 40%" valign="middle">
         <figure xml:id="figure-determine-graph-pos-slope">
         <image xml:id="determine-graph-pos-slope" source="images/determine-graph-pos-slope.svg">
@@ -538,31 +503,24 @@
     </example>
     <example>
       <title>Graph Line</title>
-      <p>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 137 pg 104-->
-      </p>
+      <p>Graph.
       <md>
-        <mrow>\text{ Graph
-          \(3x+4y=12\)} \amp\amp\amp \text{Not in slope intercept form}</mrow>
-        <mrow>\text{
-          \(\underline{-3x\hphantom{12345}-3x}\)} \amp\amp\amp \text{Subtract
+        <mrow>3x+4y\amp =12 \amp\amp \text{Not in slope intercept form}</mrow>
+        <mrow>\underline{-3x\phantom{1234}}\amp\underline{\phantom{12345}-3x} \amp\amp \text{Subtract
           \(3x\) from both sides}</mrow>
-        <mrow>\text{
-          \(4y =-3x+12\)} \amp\amp\amp \text{Put
+        <mrow>4y\amp =-3x+12 \amp\amp \text{Put
           \(x\) term first}</mrow>
-        <mrow>\text{
-          \(\overline{4}\hphantom{1234}\overline{4}\hphantom{12345}\overline{4}\)} \amp\amp\amp \text{Divide each term by
+        <mrow>\overline{4}\amp\hphantom{1234}\overline{4}\hphantom{12345}\overline{4}\amp\amp \text{Divide each term by
           \(4\)}</mrow>
-        <mrow>\text{
-          \(y=-\dfrac{3}{4}x+3\)} \amp\amp\amp \text{Recall the slope-intercept equation }</mrow>
-        <mrow>\text{
-          \(y =mx+b\)} \amp\amp\amp \text{Identify the slope,
+        <mrow>y\amp =-\dfrac{3}{4}x+3 \amp\amp \text{Recall the slope-intercept equation }</mrow>
+        <mrow>y\amp =mx+b \amp\amp \text{Identify the slope,
           \(m\), and the
           \(y\)-intercept,
           \(b\)}</mrow>
-        <mrow>\text{
-          \(m=-\dfrac{3}{4}, b=3\)} \amp\amp\amp \text{Make the graph}</mrow>
+        <mrow>m=-\dfrac{3}{4}\amp\text{, } b=3\amp\amp \text{Make the graph}</mrow>
       </md>
+    </p>
       <sidebyside widths="55% 40%" valign="middle">
         <figure xml:id="figure-determine-graph-neg-slope">
         <image xml:id="determine-graph-neg-slope" source="images/determine-graph-neg-slope.svg">
@@ -615,9 +573,8 @@
     </p>
     <example>
       <title>Vertical Line Equation</title>
-      <p>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 138 pg 104-->
-      </p>
+      <p>
       <sidebyside widths="55% 40%" valign="middle">
         <figure xml:id="figure-vertical-line">
         <image xml:id="vertical-line" source="images/vertical-line.svg">
@@ -648,12 +605,12 @@
           <p><m>x=-4</m></p>
           <p>Our Solution<m>\checkmark</m></p>
         </sidebyside>
+      </p>
     </example>
     <example>
       <title>Horizontal Line Equation</title>
-      <p>
         <!-- Ours-->
-      </p>
+      <p>
       <sidebyside widths="55% 40%" valign="middle">
         <figure xml:id="figure-horizontal-line">
         <image xml:id="horizontal-line" source="images/horizontal-line.svg">
@@ -686,6 +643,7 @@
           <p><m>y=2</m></p>
           <p>Our Solution<m>\checkmark</m></p>
         </sidebyside>
+      </p>
     </example>
   </subsection>
 </section>
