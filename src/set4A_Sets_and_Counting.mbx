@@ -752,131 +752,298 @@
   </example>
   <example xml:id="example-exercise-survey">
     <title>3-Group Venn Diagram</title>
-    <p>Use the exercise survey results above to assign a number to each region in a corresponding Venn diagram.
       <!--   http://cnx.org/content/col10613/1.5/ Example 11.8 page 172 -->
-      <p></p>
-      <md>
-        <mrow>\text{Let set
+    <p>Use the exercise survey results above to assign a number to each region in a corresponding Venn diagram.
+    </p>
+    <p>Let set
           <m>J</m> represent the joggers, set
           <m>S</m> the swimmers and set
-          <m>C</m> the cyclers. } \amp\amp\amp \text{We always begin by first assigning the number to the innermost region and then working our way out.}
-        </mrow>
-        <mrow>\text{Since
+          <m>C</m> the cyclers.</p>
+    <p>We always begin by first assigning the number to the innermost region and then working our way out.</p>
+    <sidebyside widths="45% 45%" valign="middle">
+      <paragraphs>
+        <p>Since
           <m>3</m> people participate in all three activities place a
-          <m>\color{red}{3}</m> in
-          <m>=J\cap S\cap C</m> Let
-          <m>\color{blue}{x}=n((J\cap S)\cap C')</m>(people that jog and swim but don't cycle). Let
-          <m>\color{green}{y}=n((J\cap C)\cap S')</m>. Let
-          <m>\color{brown}{z}=n((S\cap C)\cap J')</m>. } \amp\amp\amp \text{
-          <image source="set4A_Sets_and_Counting_10.png" />}
-        </mrow>
-        <mrow>\text{Since
+          <m>\color{red}{3}</m> in the intersection of all three circles
+          <m>=J\cap S\cap C</m>.
+          </p>
+        <p>Let
+          <m>\color{blue}{x}=n((J\cap S)\cap C')</m> (people that jog and swim but don't cycle).
+        </p>
+        <p>Let
+          <m>\color{green}{y}=n((J\cap C)\cap S')</m>.
+        </p>
+        <p>Let
+          <m>\color{brown}{z}=n((S\cap C)\cap J')</m>.
+        </p>
+      </paragraphs>
+      <figure xml:id="figure-venn-survey-x-y-z">
+        <image xml:id="venn-survey-x-y-z">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \draw (-2,-3.5) rectangle (4,2);
+            \node[anchor=south east] at (current bounding box.south east) {$U$};
+            \draw[outline] \firstcircle node[shift={(-1.5,1.5)}] {$J$};
+            \draw[outline] \secondcircle node[shift={(1.5,1.5)}] {$S$};
+            \draw[outline] (1,-1.5) circle (1.5cm) node[shift={(1.5,-1.5)}] {$C$};
+            \node[shift={(1,.5)}] {$\color{blue}{x}$};
+            \node[shift={(1,-.5)}] {$\color{red}{3}$};
+            \node[shift={(.25,-1)}] {$\color{green}{y}$};
+            \node[shift={(1.75,-1)}] {$\color{brown}{z}$}; \end{tikzpicture} ]]></latex-image-code>
+        </image>
+      </figure>
+    </sidebyside>
+    <sidebyside widths="45% 45%" valign="middle">
+      <paragraphs>
+        <p>Since
           <m>14</m> jog and swim
           <m>x+3=14</m>, so
-          <m>\color{blue}{x = 11}</m>. Since
+          <m>\color{blue}{x = 11}</m>.
+        </p>
+        <p>Since
           <m>9</m> jog and cycle
           <m>y+3=9</m>, so
-          <m>\color{green}{y = 6}</m>. Since
+          <m>\color{green}{y = 6}</m>.
+        </p>
+        <p>Since
           <m>7</m> swim and cycle
           <m>z+3=7</m>, so
-          <m>\color{brown}{z = 4}</m>. After replacing
+          <m>\color{brown}{z = 4}</m>.
+        </p>
+        <p>After replacing
           <m>x,y,z</m> with these values label the regions
-          <m>\color{red}{m}, \color{blue}{n},\color{green}{ p}</m>. } \amp\amp\amp \text{
-          <image source="set4A_Sets_and_Counting_11.png" />}
-        </mrow>
-        <mrow>\text{Since
+          <m>\color{red}{m}, \color{blue}{n},\color{green}{ p}</m>.
+        </p>
+      </paragraphs>
+      <figure xml:id="figure-venn-survey-m-n-p">
+        <image xml:id="venn-survey-m-n-p">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \draw (-2,-3.5) rectangle (4,2);
+            \node[anchor=south east] at (current bounding box.south east) {$U$};
+            \draw[outline] \firstcircle node[shift={(-1.5,1.5)}] {$J$};
+            \draw[outline] \secondcircle node[shift={(1.5,1.5)}] {$S$};
+            \draw[outline] (1,-1.5) circle (1.5cm) node[shift={(1.5,-1.5)}] {$C$};
+            \node[shift={(1,.5)}] {$\color{blue}{11}$};
+            \node[shift={(1,-.5)}] {$\color{red}{3}$};
+            \node[shift={(.25,-1)}] {$\color{green}{6}$};
+            \node[shift={(1.75,-1)}] {$\color{brown}{4}$};
+            \node[shift={(-.25,.25)}] {$\color{red}{m}$};
+            \node[shift={(2.25,.25)}] {$\color{blue}{n}$};
+            \node[shift={(1,-2)}] {$\color{green}{p}$}; \end{tikzpicture} ]]></latex-image-code>
+        </image>
+      </figure>
+    </sidebyside>
+    <sidebyside widths="45% 45%" valign="middle">
+      <paragraphs>
+        <p>Since
           <m>50</m> people jog
           <m>m + 11+3+6=50</m>, so
-          <m>\color{red}{m =30 }</m>. Since
+          <m>\color{red}{m =30 }</m>.
+        </p>
+        <p>Since
           <m>30</m> swim
           <m>n+11+3+4=30</m>, so
-          <m>\color{blue}{n = 12}</m>. Since
+          <m>\color{blue}{n = 12}</m>.
+        </p>
+        <p>Since
           <m>35</m> cycle
           <m>p+6+3+4=35</m>, so
-          <m>\color{green}{p = 22}</m>. } \amp\amp\amp \text{
-          <image source="set4A_Sets_and_Counting_12.png" />}
-        </mrow>
-        <mrow>\text{By adding all the entries in all three sets, we get a sum of
-          <m>88</m>. Since
+          <m>\color{green}{p = 22}</m>.
+        </p>
+      </paragraphs>
+      <figure xml:id="figure-venn-survey-interiors">
+        <image xml:id="venn-survey-interiors">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \draw (-2,-3.5) rectangle (4,2);
+            \node[anchor=south east] at (current bounding box.south east) {$U$};
+            \draw[outline] \firstcircle node[shift={(-1.5,1.5)}] {$J$};
+            \draw[outline] \secondcircle node[shift={(1.5,1.5)}] {$S$};
+            \draw[outline] (1,-1.5) circle (1.5cm) node[shift={(1.5,-1.5)}] {$C$};
+            \node[shift={(1,.5)}] {$11$};
+            \node[shift={(1,-.5)}] {$3$};
+            \node[shift={(.25,-1)}] {$6$};
+            \node[shift={(1.75,-1)}] {$4$};
+            \node[shift={(-.25,.25)}] {$\color{red}{30}$};
+            \node[shift={(2.25,.25)}] {$\color{blue}{12}$};
+            \node[shift={(1,-2)}] {$\color{green}{22}$}; \end{tikzpicture} ]]></latex-image-code>
+        </image>
+      </figure>
+    </sidebyside>
+    <sidebyside widths="45% 45%" valign="middle">
+      <paragraphs>
+        <p>By adding all the entries in all three sets, we get a sum of
+          <m>88</m>.
+        </p>
+        <p>Since
           <m>100</m> people were surveyed, the number inside the universal set but outside of all three sets is
-          <m>100-88=\color{red}{12}</m>} \amp\amp\amp \text{
-          <image source="set4A_Sets_and_Counting_13.png" />}
-        </mrow>
-        <mrow>\text{Our Solution} \amp\amp\amp \text{
-          <image source="set4A_Sets_and_Counting_14.png" />}
-        </mrow>
-      </md>
-    </p>
-  </example>
-  <example>
-    <title>3-Group Venn Diagram</title>
-    <p>Use the completed Venn diagram from <xref ref="example-exercise-survey" autoname="yes" /> to determine the number of people surveyed who jog but do not swim or cycle.
-      <!--   http://cnx.org/content/col10613/1.5/ Example 11.8(a) page 172 -->
-      <p></p>
-      <md>
-        <mrow>\text{The region which contains joggers who do not swim or cycle is highlighted in
-          <m>\color{red}{\text{red}}</m>. } \amp\amp\amp \text{
-          <image source="set4A_Sets_and_Counting_15.png" />}
-        </mrow>
-        <mrow>\text{
-          <m>30</m>} \amp\amp\amp \text{Our Solution:
-          <m>30</m> people jog but do not swim or cycle. }
-        </mrow>
-      </md>
-    </p>
-  </example>
-  <example>
-    <title>3-Group Venn Diagram</title>
-    <p>Use the completed Venn diagram from <xref ref="example-exercise-survey" autoname="yes" /> to determine the number of people surveyed who take part in only one of the activities.
-      <!--   http://cnx.org/content/col10613/1.5/ Example 11.8(b) page 172 -->
-      <p></p>
-      <md>
-        <mrow>\text{The regions which contain people taking part in exactly one activity are highlighted in
-          <m>\color{blue}{\text{blue}}</m>. } \amp\amp\amp \text{
-          <image source="set4A_Sets_and_Counting_16.png" />}
-        </mrow>
-        <mrow>\text{
-          <m>30+12+22=64</m>} \amp\amp\amp \text{Our Solution:
-          <m>64</m> people take part in only one of the activities. }
-        </mrow>
-      </md>
-    </p>
-  </example>
-  <example>
-    <title>3-Group Venn Diagram</title>
-    <p>Use the completed Venn diagram from <xref ref="example-exercise-survey" autoname="yes" /> to determine the number of people surveyed who do not take part in any of these activities.
-      <!--   http://cnx.org/content/col10613/1.5/ Example 11.8(c) page 172 -->
+          <m>100-88=\color{red}{12}</m>.
+        </p>
+      </paragraphs>
+      <figure xml:id="figure-venn-survey-outside">
+        <image xml:id="venn-survey-outside">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \draw (-2,-3.5) rectangle (4,2);
+            \node[anchor=south east] at (current bounding box.south east) {$U$};
+            \draw[outline] \firstcircle node[shift={(-1.5,1.5)}] {$J$};
+            \draw[outline] \secondcircle node[shift={(1.5,1.5)}] {$S$};
+            \draw[outline] (1,-1.5) circle (1.5cm) node[shift={(1.5,-1.5)}] {$C$};
+            \node[shift={(1,.5)}] {$11$};
+            \node[shift={(1,-.5)}] {$3$};
+            \node[shift={(.25,-1)}] {$6$};
+            \node[shift={(1.75,-1)}] {$4$};
+            \node[shift={(-.25,.25)}] {$30$};
+            \node[shift={(2.25,.25)}] {$12$};
+            \node[shift={(1,-2)}] {$22$};
+            \node[shift={(-1,-2.25)}] {$\color{red}{12}$}; \end{tikzpicture} ]]></latex-image-code>
+        </image>
+      </figure>
+    </sidebyside>
+    <sidebyside widths="45% 45%" valign="middle">
+      <p>Our Solution<m>\checkmark</m>
       </p>
-      <p>
-      <md>
-        <mrow>\text{The region which contains people who do not take part in any of these activities is highlighted in \(\color{green}{\text{green}}\). } \amp\amp\amp \text{
-          <image source="set4A_Sets_and_Counting_17.png" />}
-        </mrow>
-        <mrow>12 \amp\amp\amp \text{Our Solution:
-          \(12\) people do not take part in any of these activities. }
-        </mrow>
-      </md>
+       <figure xml:id="figure-venn-survey-solution">
+        <image xml:id="venn-survey-solution">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \draw (-2,-3.5) rectangle (4,2);
+            \node[anchor=south east] at (current bounding box.south east) {$U$};
+            \draw[outline] \firstcircle node[shift={(-1.5,1.5)}] {$J$};
+            \draw[outline] \secondcircle node[shift={(1.5,1.5)}] {$S$};
+            \draw[outline] (1,-1.5) circle (1.5cm) node[shift={(1.5,-1.5)}] {$C$};
+            \node[shift={(1,.5)}] {$11$};
+            \node[shift={(1,-.5)}] {$3$};
+            \node[shift={(.25,-1)}] {$6$};
+            \node[shift={(1.75,-1)}] {$4$};
+            \node[shift={(-.25,.25)}] {$30$};
+            \node[shift={(2.25,.25)}] {$12$};
+            \node[shift={(1,-2)}] {$22$};
+            \node[shift={(-1,-2.25)}] {$12$}; \end{tikzpicture} ]]></latex-image-code>
+          </image>
+      </figure>
+    </sidebyside>
+  </example>
+  <example>
+    <title>3-Group Venn Diagram</title>
+      <!--   http://cnx.org/content/col10613/1.5/ Example 11.8(a) page 172 -->
+    <p>Use the completed Venn diagram from <xref ref="example-exercise-survey" autoname="yes" /> to determine the number of people surveyed who jog but do not swim or cycle.
+  </p>
+  <sidebyside widths="45% 45%" valign="middle">
+    <p>The region which contains joggers who do not swim or cycle is highlighted in
+      <m>\color{red}{\text{red}}</m>.
     </p>
+    <figure xml:id="figure-venn-survey-jog-not-swim-or-cycle">
+        <image xml:id="venn-survey-jog-not-swim-or-cycle">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \draw (-2,-3.5) rectangle (4,2);
+          \node[anchor=south east] at (current bounding box.south east) {$U$};
+          \fill [color = red!50!white ] \firstcircle;
+          \fill [color = white ] \secondcircle;
+          \fill [color = white ] (1,-1.5) circle (1.5cm);
+          \draw[outline] \firstcircle node[shift={(-1.5,1.5)}] {$J$};
+          \draw[outline] \secondcircle node[shift={(1.5,1.5)}] {$S$};
+          \draw[outline] (1,-1.5) circle (1.5cm) node[shift={(1.5,-1.5)}] {$C$};
+          \node[shift={(1,.5)}] {$11$};
+          \node[shift={(1,-.5)}] {$3$};
+          \node[shift={(.25,-1)}] {$6$};
+          \node[shift={(1.75,-1)}] {$4$};
+          \node[shift={(-.25,.25)}] {$30$};
+          \node[shift={(2.25,.25)}] {$12$};
+          \node[shift={(1,-2)}] {$22$};
+          \node[shift={(-1,-2.25)}] {$12$}; \end{tikzpicture} ]]></latex-image-code>
+        </image>
+      </figure>
+    </sidebyside>
+    <p>Our Solution: <m>30</m> people jog but do not swim or cycle.<m>\checkmark</m></p>
+  </example>
+  <example>
+    <title>3-Group Venn Diagram</title>
+      <!--   http://cnx.org/content/col10613/1.5/ Example 11.8(b) page 172 -->
+    <p>Use the completed Venn diagram from <xref ref="example-exercise-survey" autoname="yes" /> to determine the number of people surveyed who take part in only one of the activities.
+    </p>
+    <sidebyside widths="45% 45%" valign="middle">
+    <p>The regions which contain people taking part in exactly one activity are highlighted in
+      <m>\color{blue}{\text{blue}}</m>.
+    </p>
+    <figure xml:id="figure-venn-survey-one-activity">
+        <image xml:id="venn-survey-one-activity">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \draw (-2,-3.5) rectangle (4,2);
+            \node[anchor=south east] at (current bounding box.south east) {$U$};
+            \fill [color = blue!50!white ] \firstcircle;
+            \fill [color = blue!50!white ] \secondcircle;
+            \fill [color = blue!50!white ] (1,-1.5) circle (1.5cm);
+            \begin{scope}
+                \clip \firstcircle;
+                \fill[color=white] \secondcircle;
+            \end{scope}
+            \begin{scope}
+                \clip \secondcircle;
+                \fill[color=white] (1,-1.5) circle (1.5cm);
+            \end{scope}
+            \begin{scope}
+                \clip (1,-1.5) circle (1.5cm);
+                \fill[color=white] \firstcircle;
+            \end{scope}
+            \draw[outline] \firstcircle node[shift={(-1.5,1.5)}] {$J$};
+            \draw[outline] \secondcircle node[shift={(1.5,1.5)}] {$S$};
+            \draw[outline] (1,-1.5) circle (1.5cm) node[shift={(1.5,-1.5)}] {$C$};
+            \node[shift={(1,.5)}] {$11$};
+            \node[shift={(1,-.5)}] {$3$};
+            \node[shift={(.25,-1)}] {$6$};
+            \node[shift={(1.75,-1)}] {$4$};
+            \node[shift={(-.25,.25)}] {$30$};
+            \node[shift={(2.25,.25)}] {$12$};
+            \node[shift={(1,-2)}] {$22$};
+            \node[shift={(-1,-2.25)}] {$12$}; \end{tikzpicture} ]]></latex-image-code>
+        </image>
+      </figure>
+    </sidebyside>
+    <p>Our Solution: <m>30+12+22=64</m> people jog but do not swim or cycle.<m>\checkmark</m></p>
+  </example>
+  <example>
+    <title>3-Group Venn Diagram</title>
+      <!--   http://cnx.org/content/col10613/1.5/ Example 11.8(c) page 172 -->
+    <p>Use the completed Venn diagram from <xref ref="example-exercise-survey" autoname="yes" /> to determine the number of people surveyed who do not take part in any of these activities.
+    </p>
+    <sidebyside widths="45% 45%" valign="middle">
+    <p>The region which contains people who do not take part in any of these activities is highlighted in <m>\color{green}{\text{green}}</m>.
+    </p>
+    <figure xml:id="figure-venn-survey-none">
+        <image xml:id="venn-survey-none">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \fill [color = green!30!white ] (-2,-3.5) rectangle (4,2);
+            \draw (-2,-3.5) rectangle (4,2);
+            \node[anchor=south east] at (current bounding box.south east) {$U$};
+            \fill [color = white ] \firstcircle;
+            \fill [color = white ] \secondcircle;
+            \fill [color = white ] (1,-1.5) circle (1.5cm);
+            \draw[outline] \firstcircle node[shift={(-1.5,1.5)}] {$J$};
+            \draw[outline] \secondcircle node[shift={(1.5,1.5)}] {$S$};
+            \draw[outline] (1,-1.5) circle (1.5cm) node[shift={(1.5,-1.5)}] {$C$};
+            \node[shift={(1,.5)}] {$11$};
+            \node[shift={(1,-.5)}] {$3$};
+            \node[shift={(.25,-1)}] {$6$};
+            \node[shift={(1.75,-1)}] {$4$};
+            \node[shift={(-.25,.25)}] {$30$};
+            \node[shift={(2.25,.25)}] {$12$};
+            \node[shift={(1,-2)}] {$22$};
+            \node[shift={(-1,-2.25)}] {$12$}; \end{tikzpicture} ]]></latex-image-code>
+        </image>
+      </figure>
+    </sidebyside>
+    <p>Our Solution: <m>12</m> people do not take part in any of these activities.<m>\checkmark</m></p>
   </example>
 </subsection>
 <subsection>
   <title>Tree Diagrams and the Multiplication Axiom</title>
-  <p>In this Module, we are developing counting techniques that will be used in the following Module to study probability. One of the most fundamental of such techniques is called the
-    <term>Multiplication Axiom</term>. Before we introduce the multiplication axiom, we first consider some examples.
+  <p>In this section, we are developing counting techniques that will be used in the following <xref ref="section-4C-probability-rules" autoname="yes" /> to study probability. One of the most fundamental of such techniques is called the
+  <term>Multiplication Axiom</term>. Before we introduce the multiplication axiom, we first consider some examples.
   </p>
-  <example>
+  <example xml:id="example-tree-2-step">
     <title>2-Step Tree Diagram</title>
-    <p>A restaurant has a special choose
-      <m>2</m> dinner deal: for one low price a customer may select one of two appetizers and one of four main courses.  How many different dinner combinations consisting of one appetizer and one main course are possible?
       <!--   Modeled after http://cnx.org/content/col10613/1.5/ Example 11.9 page 173 but less sexist!! -->
-      </p>
+    <p>A restaurant has a special "choose
+      <m>2</m> dinner deal": for one low price a customer may select one of two appetizers and one of four main courses.  How many different dinner combinations consisting of one appetizer and one main course are possible?
+    </p>
       <p>Label the two appetizers
           <m>a_1</m> and
           <m>a_2</m>.</p>
-          <p>Label the four main dishes
+      <p>Label the four main dishes
           <m>m_1, m_2, m_3</m> and
           <m>m_4</m>.</p>
-        <p>Create a tree diagram for this problem.
+      <p>Create a tree diagram for this problem.</p>
+      <sidebyside widths="45% 45%" valign="middle">
+        <p>
           <ol>
             <li>Since we may select one of two appetizers, the tree begins with two branches, one for each of
           <m>a_1</m> and
@@ -886,18 +1053,30 @@
           <m>8</m> dinner special combinations.</li>
         </ol>
       </p>
-          
-            <image source="set4A_Sets_and_Counting_18.png" />
-      <md>
-        <mrow>8\amp\amp\amp \text{Our Solution:}</mrow>
-        </md>
-        <p>There are
+      <figure xml:id="figure-tree-8-leaves">
+        <image xml:id="tree-8-leaves">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \draw (0,0) -- (3,4) node[shift={(.25,0)}] {$a_1$};
+            \draw (3.5, 4) -- (6.5,7) node[shift={(1.25,0)}] {$m_1\rightarrow a_1,m_1$};
+            \draw (3.5, 4) -- (6.5,5) node[shift={(1.25,0)}] {$m_2\rightarrow a_1,m_2$};
+            \draw (3.5, 4) -- (6.5,3) node[shift={(1.25,0)}] {$m_3\rightarrow a_1,m_3$};
+            \draw (3.5, 4) -- (6.5,1) node[shift={(1.25,0)}] {$m_4\rightarrow a_1,m_4$};
+            \draw (0,0) -- (3,-4) node[shift={(.25,0)}] {$a_2$};
+            \draw (3.5, -4) -- (6.5,-1) node[shift={(1.25,0)}] {$m_1\rightarrow a_2,m_1$};
+            \draw (3.5, -4) -- (6.5,-3) node[shift={(1.25,0)}] {$m_2\rightarrow a_2,m_2$};
+            \draw (3.5, -4) -- (6.5,-5) node[shift={(1.25,0)}] {$m_3\rightarrow a_2,m_3$};
+            \draw (3.5, -4) -- (6.5,-7) node[shift={(1.25,0)}] {$m_4\rightarrow a_2,m_4$}; \end{tikzpicture} ]]></latex-image-code>
+        </image>
+      </figure>
+    </sidebyside>
+    <p>Our Solution: There are
           <m>8</m> possible different dinner combinations  consisting of one appetizer and one main course. For example, one combination
           <m>a_2, m_3</m> represents the choice of appetizer
           <m>2</m> with main course
           <m>3\checkmark</m>.
-           </p></example>
-    <p>The tree diagram gives us all eight possibilities. The method involves two steps. First we choose an appetizer. We have two choices:
+    </p>
+  </example>
+
+    <p>The tree diagram above gives us all eight possibilities. The method involves two steps. First we choose an appetizer. We have two choices:
       <m>a_1</m> or
       <m>a_2</m>. If we choose
       <m>a_1</m>, we have four main dishes to go with it;
@@ -906,64 +1085,105 @@
       <m>a_2</m>, we can select any one of the four main dishes, again. The tree diagram helps us visualize these possibilities.
     </p>
     <p>The reader should note that the process involves two steps. For the first step of choosing an appetizer, there are two choices, and for each choice of an appetizer, there are four choices of a main dish. So altogether there
-      <m>2\cdot 4=8</m> possibilities. If, in the above example, we add a dessert, we have the following problem:
+      <m>2\cdot 4=8</m> possibilities. If, in the above <xref ref="example-tree-2-step" autoname="yes" />, we add a dessert, we have the following problem:
     </p>
 
   <example xml:id="example-3-step-tree">
     <title>3-Step Tree Diagram</title>
-    <p>A restaurant has a special choose
-      <m>3</m> dinner deal: for one low price a customer may select one of two appetizers, one of four main courses, and one of three desserts.  How many different dinner combinations consisting of one appetizer, one main course and one dessert are possible?
       <!--   Modeled after http://cnx.org/content/col10613/1.5/ Example 11.10 page 174 but less sexist!! -->
+    <p>A restaurant has a special "choose
+      <m>3</m> dinner deal": for one low price a customer may select one of two appetizers, one of four main courses, and one of three desserts.  How many different dinner combinations consisting of one appetizer, one main course and one dessert are possible?
       </p>
-      <p>Label the two appetizers
-          <m>a_1</m> and
-          <m>a_2</m>. 
-         </p>
-         <p>Label the four main dishes
-          <m>m_1, m_2, m_3</m> and
-          <m>m_4</m>.</p>
-          <p>Label the three desserts
-          <m>d_1, d_2</m> and
-          <m>d_3</m>.</p>
-           <p>The tree diagram below results. (Note that only 6 of the actual possible dinner combinations are listed at the far right.) The tree has
+    <sidebyside widths="45% 45%" valign="middle">
+      <paragraphs>
+        <p>
+          <ol>
+            <li>Label the two appetizers
+              <m>a_1</m> and
+              <m>a_2</m>.</li>
+            <li>Label the four main dishes
+              <m>m_1, m_2, m_3</m> and
+              <m>m_4</m>.</li>
+            <li>Label the three desserts
+              <m>d_1, d_2</m> and
+              <m>d_3</m>.</li>
+            </ol>
+          </p>
+           <p>The tree diagram at the right results. The tree has
           <m>2\times 4\times 3 = 24</m> endpoints, one for each of the
           <m>24</m> dinner special combinations.</p>
-          <image source="set4A_Sets_and_Counting_19.png" />}
-        <md>
-        <mrow>24 \amp\amp\amp \text{Our Solution:}</mrow>
-        </md>
-        <p>There are
-          <m>24</m> possible different dinner combinations consisting of one appetizer, one main course, and one dessert.<m>\checkmark</m>
-        
-    </p></example>
+        </paragraphs>
+      <figure xml:id="figure-tree-24-leaves">
+        <image xml:id="tree-24-leaves">
+          <latex-image-code><![CDATA[\begin{tikzpicture} \draw (0,0) -- (3,4) node[shift={(.25,0)}] {$a_1$};
+            \draw (3.5, 4) -- (6.5,7) node[shift={(0.4,0)}] {$m_1$};
+            \draw (7.25, 7) -- (9,7.5) node[shift={(1.5,0)}] {$d_1\rightarrow a_1,m_1,d_1$};
+            \draw (7.25, 7) -- (9,7) node[shift={(1.5,0)}] {$d_2\rightarrow a_1,m_1,d_2$};
+            \draw (7.25, 7) -- (9,6.5) node[shift={(1.5,0)}] {$d_3\rightarrow a_1,m_1,d_3$};
+            \draw (3.5, 4) -- (6.5,5) node[shift={(0.4,0)}] {$m_2$};
+            \draw (7.25, 5) -- (9,5.5) node[shift={(1.5,0)}] {$d_1\rightarrow a_1,m_2,d_1$};
+            \draw (7.25, 5) -- (9,5) node[shift={(1.5,0)}] {$d_2\rightarrow a_1,m_2,d_2$};
+            \draw (7.25, 5) -- (9,4.5) node[shift={(1.5,0)}] {$d_3\rightarrow a_1,m_2,d_3$};
+            \draw (3.5, 4) -- (6.5,3) node[shift={(0.4,0)}] {$m_3$};
+            \draw (7.25, 3) -- (9,3.5) node[shift={(1.5,0)}] {$d_1\rightarrow a_1,m_3,d_1$};
+            \draw (7.25, 3) -- (9,3) node[shift={(1.5,0)}] {$d_2\rightarrow a_1,m_3,d_2$};
+            \draw (7.25, 3) -- (9,2.5) node[shift={(1.5,0)}] {$d_3\rightarrow a_1,m_3,d_3$};
+            \draw (3.5, 4) -- (6.5,1) node[shift={(0.4,0)}] {$m_4$};
+            \draw (7.25, 1) -- (9,1.5) node[shift={(1.5,0)}] {$d_1\rightarrow a_1,m_4,d_1$};
+            \draw (7.25, 1) -- (9,1) node[shift={(1.5,0)}] {$d_2\rightarrow a_1,m_4,d_2$};
+            \draw (7.25, 1) -- (9,0.5) node[shift={(1.5,0)}] {$d_3\rightarrow a_1,m_4,d_3$};
+            \draw (0,0) -- (3,-4) node[shift={(.25,0)}] {$a_2$};
+            \draw (3.5, -4) -- (6.5,-1) node[shift={(0.4,0)}] {$m_1$};
+            \draw (7.25, -1) -- (9,-0.5) node[shift={(1.5,0)}] {$d_1\rightarrow a_2,m_1,d_1$};
+            \draw (7.25, -1) -- (9,-1) node[shift={(1.5,0)}] {$d_2\rightarrow a_2,m_1,d_2$};
+            \draw (7.25, -1) -- (9,-1.5) node[shift={(1.5,0)}] {$d_3\rightarrow a_2,m_1,d_3$};
+            \draw (3.5, -4) -- (6.5,-3) node[shift={(0.4,0)}] {$m_2$};
+            \draw (7.25, -3) -- (9,-2.5) node[shift={(1.5,0)}] {$d_1\rightarrow a_2,m_2,d_1$};
+            \draw (7.25, -3) -- (9,-3) node[shift={(1.5,0)}] {$d_2\rightarrow a_2,m_2,d_2$};
+            \draw (7.25, -3) -- (9,-3.5) node[shift={(1.5,0)}] {$d_3\rightarrow a_2,m_2,d_3$};
+            \draw (3.5, -4) -- (6.5,-5) node[shift={(0.4,0)}] {$m_3$};
+            \draw (7.25, -5) -- (9,-4.5) node[shift={(1.5,0)}] {$d_1\rightarrow a_2,m_3,d_1$};
+            \draw (7.25, -5) -- (9,-5) node[shift={(1.5,0)}] {$d_2\rightarrow a_2,m_3,d_2$};
+            \draw (7.25, -5) -- (9,-5.5) node[shift={(1.5,0)}] {$d_3\rightarrow a_2,m_3,d_3$};
+            \draw (3.5, -4) -- (6.5,-7) node[shift={(0.4,0)}] {$m_4$};
+            \draw (7.25, -7) -- (9,-6.5) node[shift={(1.5,0)}] {$d_1\rightarrow a_2,m_4,d_1$};
+            \draw (7.25, -7) -- (9,-7) node[shift={(1.5,0)}] {$d_2\rightarrow a_2,m_4,d_2$};
+            \draw (7.25, -7) -- (9,-7.5) node[shift={(1.5,0)}] {$d_3\rightarrow a_2,m_4,d_3$}; \end{tikzpicture} ]]></latex-image-code>
+        </image>
+      </figure>
+    </sidebyside>
+    <p>Our Solution: There are
+        <m>24</m> possible different dinner combinations consisting of one appetizer, one main course, and one dessert.<m>\checkmark</m>
+      </p>
+    </example>
     <p>The important thing to observe here, again, is that this is a three step process. There are two choices for the first step of choosing an appetizer. For each choice of a appetizer, there are four choices of a main course, and for each combination of an appetizer and main course, there are three choices of selecting a dessert. All in all, we have
       <m>2\times 4\times 3 = 24</m> different possibilities.
     </p>
     <p>The tree diagrams help us visualize the different possibilities, but they are not practical when the possibilities are numerous. Besides, we are mostly interested in counting the number of elements in the set and not the actual possibilities. But once the problem is envisioned, we can solve it without a tree diagram. The two examples we just solved may have given us a clue to do just that.</p>
-    <p>Let us now try to solve Example <xref ref="example-3-step-tree" /> without a tree diagram. Recall that the problem involved three steps: choosing an appetizer, choosing a main course, and choosing a dessert. The number of ways of choosing each are listed below.
+    <p>Let us now try to solve <xref ref="example-3-step-tree" autoname="yes" /> without a tree diagram. Recall that the problem involved three steps: choosing an appetizer, choosing a main course, and choosing a dessert. The number of ways of choosing each are listed below.
     </p>
     <p>
-      <md>
-        <mrow>
-          <td align="center">The number of ways of choosing an appetizer</td>
-          <td align="center">The number of ways of choosing a main course</td>
-          <td align="center">The number of ways of choosing a dessert</td>
-        </mrow>
-        <mrow>
-          <td align ="center">
-            <m>2</m>
-          </td>
-          <td align="center">
-            <m>4</m>
-          </td>
-          <td align ="center">
-            <m>3</m>
-          </td>
-        </mrow>
-      </md>
+      <table>
+        <tabular halign="center" top="minor" left="minor">
+          <col halign="center" right="minor" />
+          <col halign="center" right="minor" />
+          <col halign="center" right="minor" />
+      <!--  -->
+          <row bottom="minor">
+            <cell>The number of ways of choosing an appetizer</cell>
+            <cell>The number of ways of choosing a main course</cell>
+            <cell>The number of ways of choosing a dessert</cell>
+          </row>
+          <row bottom="minor">
+            <cell><m>2</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>3</m></cell>
+          </row>
+        </tabular>
+      </table>
     </p>
     <p>By multiplying these three numbers we get
-      <m>2\cdot 4\cdot 3=24</m>, which is what we got when we did the problem using a tree diagram.  The procedure we just employed is called the multiplication axiom.
+      <m>2\cdot 4\cdot 3=24</m>, which is what we got when we did the problem using a tree diagram.  The procedure we just employed is called the <term>multiplication axiom</term>:
     </p>
     <p>
       <term>The Multiplication Axiom</term>: If a task can be done in
@@ -975,54 +1195,113 @@
  
   <example>
     <title>Multiplication Axiom</title>
-    <p>A truck license plate consists of a letter followed by four digits. How many such license plates are possible?
       <!--   This is T http://cnx.org/content/col10613/1.5/ Example 11.12 page 176  -->
-      </p>
+    <p>A truck license plate consists of a letter followed by four digits. How many such license plates are possible?
+    </p>
+    <p>Since there are <m>26</m> letters and <m>10</m> digits, we have the number of choices for each listed in the below table.
+    </p>
+    <p>
+      <table>
+        <tabular halign="center" top="minor" left="minor">
+          <col halign="center" right="minor" />
+          <col halign="center" right="minor" />
+          <col halign="center" right="minor" />
+          <col halign="center" right="minor" />
+          <col halign="center" right="minor" />
+      <!--  -->
+          <row bottom="minor">
+            <cell>Letter</cell>
+            <cell>Digit</cell>
+            <cell>Digit</cell>
+            <cell>Digit</cell>
+            <cell>Digit</cell>
+          </row>
+          <row bottom="minor">
+            <cell><m>26</m></cell>
+            <cell><m>10</m></cell>
+            <cell><m>10</m></cell>
+            <cell><m>10</m></cell>
+            <cell><m>10</m></cell>
+          </row>
+        </tabular>
+      </table>
       <md>
-        <mrow>
-          <td colspan="2">FIX ME!!
-            <!-- Since there are <m>26</m> letters and <m>10</m> digits, we have the number of choices for each listed in the below table.</td> <tr> <td colspan="2" align ="center"> <table align="center"  border="1"> <tr> <td  align="center">Letter</td> <td  align="center">Digit</td> <td  align="center">Digit</td> <td  align="center">Digit</td> <td  align="center">Digit</td> </td> </mrow><mrow> <td  align ="center"><m>26</m></td> <td  align="center"><m>10</m></td> <td  align ="center"><m>10</m></td> <td  align ="center"><m>10</m></td> <td  align ="center"><m>10</m></td> </mrow></md></td> </tr><mrow> <td><m>26\cdot 10 \cdot 10 \cdot 10 \cdot 10</m></td> <td>Multiply the possibilities using the <b>Multiplication Axiom</b></td> </mrow><mrow> <td>260,000</td> <td>Our Solution: There are 260,000 possible such license plates-->I'm broken!
-          </td>
-        </mrow>
-      </md>
-   
+        <mrow>26\cdot 10 \cdot 10 \cdot 10 \cdot 10\amp\amp\amp\text{Multiply the possibilities using the Multiplication Axiom}</mrow>
+        <mrow>260,000\amp\amp\amp\text{Our Solution:}</mrow>
+        </md>
+      There are <m>260,000</m> possible such license plates.<m>\checkmark</m>
+    </p>
   </example>
   <example>
     <title>Multiplication Axiom</title>
+      <!--   This is T http://cnx.org/content/col10613/1.5/ Example 11.13 page 176  -->
     <p>In how many different ways can a
       <m>3</m>-question true-false test be answered?
-      <!--   This is T http://cnx.org/content/col10613/1.5/ Example 11.13 page 176  -->
     </p>
-    <md>
-      <mrow>
-        <td colspan="2">FIX ME!
-          <!--Since there are two choices for each question, we have</td> <tr> <td colspan="2" align ="center"> <table align="center"  border="1"> <tr> <td  align="center">Question 1</td> <td  align="center">Question 2</td> <td  align="center">Question 3</td> </mrow><mrow> <td  align ="center"><m>2</m></td> <td  align="center"><m>2</m></td> <td  align ="center"><m>2</m></td> </mrow></md></td> </tr><mrow> <td><m>2\cdot 2 \cdot 2 </m></td> <td>Multiply the possibilities using the <b>Multiplication Axiom</b></td> </mrow><mrow> <td align="right"><m>8</m></td> <td>-->Our Solution: There are
-          <m>8</m> different ways.
-        </td>
-      </mrow>
-    </md>
-    <p>We list all eight possibilities below:</p>
-    <p>TTT, TTF, TFT, TFF, FTT, FTF, FFT, FFF</p>
-    <p>The reader should note that the first letter in each possibility is the answer corresponding to the first question, the second letter corresponds to the answer to the second question and so on. For example, TFF, says that the answer to the first question is given as true, and the answers to the second and third questions false.</p>
+    <p>Since there are two choices for each question, we have:
+    <table>
+        <tabular halign="center" top="minor" left="minor">
+          <col halign="center" right="minor" />
+          <col halign="center" right="minor" />
+          <col halign="center" right="minor" />
+      <!--  -->
+          <row bottom="minor">
+            <cell>Question 1</cell>
+            <cell>Question 2</cell>
+            <cell>Question 3</cell>
+          </row>
+          <row bottom="minor">
+            <cell><m>2</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>2</m></cell>
+          </row>
+        </tabular>
+      </table>
+      <md>
+        <mrow>2\cdot 2 \cdot 2\amp\amp\amp\text{Multiply the possibilities using the Multiplication Axiom}</mrow>
+        <mrow>8\amp\amp\amp\text{Our Solution: There are
+          \(8\) different ways.}\checkmark</mrow>
+      </md>
+      We list all eight possibilities below:
+      <md>
+        <mrow>TTT, TTF, TFT, TFF, FTT, FTF, FFT, FFF</mrow>
+      </md>
+      The reader should note that the first letter in each possibility is the answer corresponding to the first question, the second letter corresponds to the answer to the second question and so on. For example, <m>TFF</m>, says that the answer to the first question is given as true, and the answers to the second and third questions false.
+    </p>
   </example>
   <example>
     <title>Multiplication Axiom</title>
-    <p>In how many different ways can four people be seated in a row?
       <!--   This is T http://cnx.org/content/col10613/1.5/ Example 11.14 page 177  -->
-      </p>
+    <p>In how many different ways can four people be seated in a row?</p>
+    <p>Suppose we put four chairs in a row, and proceed to put four people in these seats.</p>
+    <p>There are four choices for the first chair we choose. Once a person sits down in that chair, there are only three choices for the second chair, and so on. We list as shown below:</p>
+    <p>
+      <table>
+        <tabular halign="center" top="minor" left="minor">
+          <col halign="center" right="minor" />
+          <col halign="center" right="minor" />
+          <col halign="center" right="minor" />
+          <col halign="center" right="minor" />
+      <!--  -->
+          <row bottom="minor">
+            <cell>Choices for chair 1</cell>
+            <cell>Choices for chair 2</cell>
+            <cell>Choices for chair 3</cell>
+            <cell>Choices for chair 4</cell>
+          </row>
+          <row bottom="minor">
+            <cell><m>4</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>2</m></cell>
+          </row>
+        </tabular>
+      </table>
       <md>
-        <mrow>\text{Suppose we put four chairs in a row, and proceed to put four people in these seats.}
-      </mrow>
-      <mrow>
-        \text{There are four choices for the first chair we choose. Once a person sits down in that chair, there are only three choices for the second chair, and so on. We list as shown below.}
-      </mrow>
-      <mrow>
-        <td colspan="2" align ="center">\text{FIX ME!!
-          <!-- <table align="center"  border="1"> <tr> <td  align="center">Choices for chair 1} \amp\amp\amp \text{Choices for chair 2}\text{Choices for chair 3} \amp\amp\amp \text{Choices for chair 4}</mrow><mrow> <td  align ="center"><m>4</m></td> <td  align="center"><m>3</m></td> <td  align ="center"><m>2</m></td> <td  align ="center"><m>1</m></td> </mrow></md></td> </tr><mrow>\text{<m>4\cdot 3 \cdot 2 \cdot 1 </m>} \amp\amp\amp \text{Multiply the possibilities using the <b>Multiplication Axiom</b>}</mrow><mrow>\text{<m>24</m>} \amp\amp\amp \text{-->Our Solution: There are
-          <m>24</m> different ways. }</td>
-        </mrow>
+        <mrow>4\cdot 3\cdot 2\cdot 1\amp\amp\amp \text{Multiply the possibilities using the Multiplication Axiom}</mrow>
+        <mrow>24 \amp\amp\amp\text{Our Solution: There are \(24\) different ways.}\checkmark</mrow>
       </md>
-    
+    </p>
   </example>
 </subsection>
 </section>
