@@ -5,6 +5,7 @@
       <li>Solve number problems by creating and solving a linear equation.</li>
       <li>Solve practical percent problems.</li>
       <li>Solve equations using scientific notation and exponent properties.</li>
+      <li>Solve linear formulas for a given variable.</li>
       <li>Solve weighted average problems.</li>
       <li>****MOVE TO 2B--Solve, graph and give interval notation for the solution to inequalities with absolute values.</li>
       <li>****MOVE TO 2A and 2B--Solve linear distance equations and inequalities problems.</li>
@@ -461,10 +462,143 @@
   <subsection>
     <title>Solving for Variables in Formulas</title>
     <p>***From Fall 2015:PUT IN THE EXPLANATION AND 3C-4 3C-5, 3C-8, 3C-9.  SHOULD THESE BE HERE OR IN 2A?</p>
-  </subsection>
+
+  <p>Solving formulas is much like solving general linear equations. The only difference is we will have several variables in the problem and we will be attempting to solve for one specific variable. For example, we may have a formula such as <m>A=\pi r^2 + \pi r s</m> (formula for surface area of a right circular cone) and we may be interested in solving for the variable <m>s</m>. This means we want to isolate the <m>s</m> so the equation has <m>s</m> on one side, and everything else on the other. So a solution might look like <m>s = \dfrac{A-\pi r^2}{\pi r}</m>. This second equation gives the same information as the first which means they are algebraically equivalent. However, one is solved for the area <m>A</m>, while the other is solved for <m>s</m> (slant height of the cone).  In this section we will discuss how we can move from the first equation to the second.</p>
+  <p>When solving formulas for a variable we need to focus on the one variable we are trying to solve for, all the others are treated just like numbers. This is shown in the following example. Two parallel problems are shown, the first is a normal one step equation, the second is a formula that we are solving for <m>x</m>:</p>
+  <example>
+    <title>Compare Solving for a Variable in an Equation and a Formula</title>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 74 pg 47-->
+    <p>Solve for <m>x</m>.</p>
+    <p>
+      <md>
+        <mrow>3x\amp =12\amp\amp\amp wx\amp =z\amp\amp\text{In both problems, \(x\) is multiplied by something}</mrow>
+        <mrow>\overline{\,3\,}\amp\phantom{123}\overline{\,3\,}\amp\amp\amp\overline{\,w\,}\amp\phantom{12}\overline{\,w\,}\amp\amp\text{To isolate \(x\) we divide by \(3\) or \(w\)}</mrow>
+        <mrow>x\amp =4\amp\amp\amp x\amp =\dfrac{z}{w}\amp\amp\text{Our Solutions}\checkmark</mrow>
+      </md>
+      </p>
+    </example>
+  <p>We use the same process to solve <m>3x = 12</m> for <m>x</m> as we use to solve <m>wx = z</m> for <m>x</m>.  Because we are solving for <m>x</m> we treat all the other variables the same way we would treat numbers. Thus, to get rid of the multiplication we divided by <m>w</m>. This
+same idea is seen in the following example.</p>
+
+<example>
+  <title>Solve for a Variable in a Formula</title>
+  <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 75 pg 47-->
+      <p>Solve for <m>n</m>.</p>
+      <p>
+        <md>
+          <mrow>m+n\amp =p\amp\amp\text{Solving for \(n\), treat all other variables like numbers}</mrow>
+          <mrow>\underline{-m}\amp\underline{\phantom{123}-m}\amp\amp\text{Subtract \(m\) from both sides}</mrow>
+          <mrow>n\amp =p-m\amp\amp\text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
+    </example>
+    <p>The next example is a two-step problem:</p>
+    <example>
+  <title>Solve for a Variable in a Formula--2-Step Problem</title>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 78 pg 48-->
+<p>Solve for <m>m</m>.</p>
+<p>
+  <md>
+    <mrow>y\amp =mx+b\amp\amp\text{Solving for \(m\), focus on addition first}</mrow>
+    <mrow>\underline{-b}\amp\phantom{1234567}\underline{-b}\amp\amp\text{Subtract \(b\) from both sides}</mrow>
+    <mrow>y-b\amp =mx\amp\amp\text{The \(m\) is multiplied by \(x\), therfore}</mrow>
+    <mrow>\overline{\,\,\,\,x\,\,\,\,}\amp\phantom{1234}\overline{\,x\,}\amp\amp\text{Divide both sides by \(x\)}</mrow>
+    <mrow>\dfrac{y-b}{x}\amp =m\amp\amp\text{Our Solution}\checkmark</mrow>
+  </md>
+</p>
+</example>
+
+  <p>It is important to note that we know we are done with the problem when the variable we are solving for is isolated or alone on one side of the equation and it does not appear anywhere on the other side of the equation.</p>
+
+  <p>The next example is also a two-step equation (it is the problem we started with at the beginning of the section):</p>
+
+  <example>
+    <title>Formula for Surface Area of a Right Circular Cone</title>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 79 pg 49-->
+    <p> Solve for <m>s</m>.</p>
+    <p>
+      <md>
+        <mrow>A\amp =\pi r^2 + \pi r s\amp\amp\text{Solving for \(s\), focus on what is added to the term with \(s\)}</mrow>
+        <mrow>\underline{-\pi r^2}\amp\phantom{1}\underline{-\pi r^2}\amp\amp\text{Subtract \(\pi r^2\) from both sides}</mrow>
+        <mrow>A-\pi r^2\amp =\pi r s\amp\amp\text{The \(s\) is multiplied by \(\pi r\), so}</mrow>
+        <mrow>\overline{\phantom{123}\pi r\phantom{123}}\amp\phantom{123}\overline{\,\pi r\,}\amp\amp\text{Divide both sides by \(\pi r\)}</mrow>
+        <mrow>\dfrac{A-\pi r^2}{\pi r}\amp =s\amp\amp\text{Our Solution}\checkmark</mrow>
+      </md>
+    </p>
+  </example>
+  <p>Notice, we cannot reduce the <m>\pi r</m> in the numerator and denominator because of the subtraction in the problem.</p>
+
+</subsection>
   <subsection>
     <title>Averages and Weighted Averages</title>
     <p>***From Fall 2015: PUT IN THE EXPLANATION AND 3C-1 3C-2, 3C-3,</p>
+
+    <p>You are all familiar with computing average grades.  For example, if your scores on <m>2</m> homework assignments are <m>89</m> and <m>85</m>, then the average of the two assignments is <m>\dfrac{89+85}{2}=\dfrac{174}{2}=87</m>.  One application involving averages is to determine the minimum value of a third grade based on a desired minimum average. Consider the following example:</p>
+
+    <example>
+      <title>Computing Desired Score for a Minimum Average</title>
+<!-- Our own-->
+      <p>Suppose your scores on <m>2</m> homework assignments are <m>89</m> and <m>85</m>.  What minimum score should you achieve on your third assignment if you desire the average of the <m>3</m> assignments to be at least <m>90</m>?</p>
+      <p>Let 
+        <ul>
+          <li><m>x</m> represent the <term>unknown</term> third score</li>
+        </ul>
+        <md>
+          <mrow>\amp\dfrac{89+85+x}{3}\amp\amp\text{Formula for the average of the \(3\) scores}</mrow>
+          <mrow>\dfrac{89+85+x}{3}\amp \geq 90\amp\amp\text{Compare the average of the \(3\) scores to the desired minimum}</mrow>
+          <mrow>\dfrac{174+x}{3}\amp \geq 90\amp\amp\text{Simplified addition}</mrow>
+          <mrow>174+x\amp\geq 270\amp\amp\text{Multiplied both sides by \(3\)}</mrow>
+          <mrow>\underline{-174\phantom{1234}}\amp\underline{\phantom{1}-174}\amp\amp\text{Subtract \(174\) from both sides}</mrow>
+          <mrow>x\amp \geq 96\amp\amp\text{Our Solution:}</mrow>
+        </md>
+        You should earn at least a <m>96</m> on your third assignment if you desire the average of the <m>3</m> assignments to be at least <m>90</m>.<m>\checkmark</m>
+      </p>
+    </example>
+
+<p>The final course grade in <term>MAT 101</term> is a weighted average.  The final course grade is weighted by groups as follows: 
+<ul>
+  <li><term>Attendance and Participation</term> has weight <m>5\%</m></li>
+  <li><term>Unit Exams</term> have weight <m>20\%</m></li>, and the
+  <li><term>Final Exam</term> has weight <m>75\%</m>.</li>
+</ul>
+Consider the computation of the following example grade:
+</p>
+<example>
+  <title>Computed Weighted Average Grade</title>
+<!-- Our own-->
+  <p>Suppose your <term>MAT 101</term> final course grades are as follows: Attendance and Participation <m>=95</m>, Unit Exams <m>=83</m> and Final Exam <m>=72</m>.  Compute your overall weighted average in <term>MAT 101</term>.</p>
+  <p>
+    <md>
+      <mrow>95\left(\dfrac{5}{100} \right) + 83\left(\dfrac{20}{100} \right) + 72\left(\dfrac{75}{100} \right)\amp\amp\amp\text{Multiply each grade by its corresponding weight}</mrow>
+      <mrow>95(.05)+ 83(.20) + 72(.75)\amp\amp\amp\text{Compute the corresponding decimal weights}</mrow>
+      <mrow>\amp\amp\amp PE\underline{M}DAS:\text{ Multiplication before Addition}</mrow>
+      <mrow>4.75+16.6+54\amp\amp\amp PEMD\underline{A}S:\text{ Add}</mrow>
+      <mrow>75.35\amp\amp\amp\text{Our Solution:}</mrow>
+    </md>
+    Your overall weighted average in <term>MAT 101</term> would be <m>75.35\%</m>.  The <term>Final Exam</term> is given the highest weight so has the greatest influence on the final weighted average.<m>\checkmark</m>
+  </p>
+</example>
+
+<example>
+  <title>Computing Desired Score for a Minimum Weighted Average</title>
+<!-- Our own-->
+  <p>Suppose your <term>MAT 101</term> final course grades are as follows: Attendance and Participation <m>=100</m> and your Unit Exams average <m>=88</m>.  What minimum score should you achieve on your Final Exam if you desire your overall weighted average in MAT 101 to be at least <m>80</m>?</p>
+  <p>Let 
+    <ul>
+      <li><m>x</m> represent the <term>unknown</term> Final Exam score</li>
+    </ul>
+    <md>
+      <mrow>100(.05) + 88(.20) + x(.75)\amp\amp\amp\text{Formula for the average of the \(3\) scores}</mrow>
+      <mrow>100(.05) + 88(.20) + x(.75) \amp\geq 80\amp\amp\text{Compare the average of the \(3\) scores to the desired minimum}</mrow>
+      <mrow>5 + 17.6 + .75x \amp \geq 80\amp\amp\text{Solve for \(x\): Multiplied numbers first}</mrow>
+      <mrow>22.6+.75x\amp\geq 80\amp\amp\text{Added}</mrow>
+      <mrow>\underline{-22.6\phantom{123456}}\amp\underline{\phantom{1}-22.6}\amp\amp\text{Subtract \(22.6\) from both sides}</mrow>
+      <mrow>.75x\amp\geq 57.4\amp\amp\text{Divide both sides by \(.75\)}</mrow>
+      <mrow>x\amp \geq 76.53\amp\amp\text{Our Solution:}</mrow>
+    </md>
+    You should earn at least a <m>76.53</m> on your Final Exam if you desire your overall weighted average in <term>MAT 101</term> to be at least <m>80</m>.
+  </p>
+</example>
   </subsection>
   <subsection>
     <title>Absolute Value Applications</title>
