@@ -7,8 +7,6 @@
       <li>Solve equations using scientific notation and exponent properties.</li>
       <li>Solve linear formulas for a given variable.</li>
       <li>Solve weighted average problems.</li>
-      <li>****MOVE TO 2B--Solve, graph and give interval notation for the solution to inequalities with absolute values.</li>
-      <li>****MOVE TO 2A and 2B--Solve linear distance equations and inequalities problems.</li>
     </ul>
   </introduction>
   <subsection>
@@ -604,89 +602,9 @@ Consider the computation of the following example grade:
     <title>Absolute Value Applications</title>
     <p>*****NOTE: MOVE THESE OUT OF THIS SECTION. PUT A FEW EXAMPLES IN THE INTERVAL SECTION?*****</p>
     <p>Recall absolute value is defined as distance from zero.  We now consider some absolute value applications.</p>
-    <example>
-      <title>Distance Equation</title>
-      <!-- Our own like WeBWorK 1C Problem 15-->
-      <p>Suppose the distance between
-        <m>x</m> and
-        <m>4</m> is exactly
-        <m>7</m>. Determine
-        <m>x</m>.
-      </p>
-      <p>Start by translating the words into an equation.  We will need to translate <term>distance</term> into absolute value. We are given 
-          <ul>
-            <li><m>x=</m> the <term>unknown</term> number(s)</li>
-            <li>the distance is <m>7</m></li>
-          </ul>
-      In distance problems, <term>between</term> translates to subtraction.
-      <md>
-        <mrow>\amp\amp\amp\amp\amp\lvert x-4 \rvert\amp\amp\text{Translation of }``\text{distance between \(x\) and \(4\)"}</mrow>
-        <mrow>\amp\amp\amp\amp\amp =7\amp\amp\text{Translation of }``\text{is \(7\)"}</mrow>
-        <mrow>\amp\amp\amp\amp\lvert x-4 \rvert\amp = 7\amp\amp\text{Absolute value can be positive or negative}</mrow>
-        <mrow>x-4\amp =7\amp\amp\text{or}\amp x-4\amp=-7 \amp\amp \text{Two equations to solve}</mrow>
-        <mrow>\underline{+4}\amp\underline{\phantom{1}+4}\amp\amp\amp\underline{+4}\amp\underline{\phantom{12}+4}\amp\amp</mrow>
-        <mrow>x\amp =11\amp\amp\text{or}\amp x\amp =-3\amp\amp\text{Our Solution}\checkmark</mrow>
-      </md>
-    </p>
-    </example>
-    <example>
-      <title>Distance (Three-Part Inequality)</title>
-      <!-- Our own like WeBWorK 1C Problem 18-->
-      <p>Suppose the distance between
-        <m>x</m> and zero is less than or equal to
-        <m>6</m>. Determine
-        <m>x.</m>
-      </p>
-      <p>Start by translating the words into an equation.  We will need to translate <term>distance</term> into absolute value. We are given 
-          <ul>
-            <li><m>x=</m> the <term>unknown</term> number(s)</li>
-            <li>the distance is less than or equal to <m>6</m></li>
-          </ul>
-      In distance problems, <term>between</term> translates to subtraction.
-      <md>
-        <mrow>\lvert x-0 \rvert\amp\amp\amp\text{Translation of }``\text{distance between \(x\) and zero"}</mrow>
-        <mrow>\leq 6\amp\amp\amp\text{Translation of }``\text{less than or equal to \(6\)"}</mrow>
-        <mrow>\lvert x-0 \rvert \leq 6\amp\amp\amp\text{Simplify the absolute value expression}</mrow>
-        <mrow>\lvert x \rvert\leq 6\amp\amp\amp\text{Absolute value is less, use three part inequality}</mrow><mrow>-6\leq x \leq 6 \amp\amp\amp \text{Inequality notation}\checkmark</mrow>
-        <mrow>[-6,6] \amp\amp\amp \text{Interval notation}\checkmark</mrow>
-      </md>
-      This shows <m>x</m> is any number between <m>-6</m> and <m>6</m>.
-      </p>
-    </example>
-    <example>
-      <title>Distance (OR Inequality)</title>
-      <!-- Our own like WeBWorK 1C Problem 20-->
-      <p>Suppose the distance between
-        <m>x</m> and
-        <m>-14</m> is greater than
-        <m>3</m>. Determine
-        <m>x</m>.
-      </p>
-      <p>Start by translating the words into an equation.  We will need to translate <term>distance</term> into absolute value. We are given 
-          <ul>
-            <li><m>x=</m> the <term>unknown</term> number(s)</li>
-            <li>the distance is greater than <m>3</m></li>
-          </ul>
-      In distance problems, <term>between</term> translates to subtraction.
-      <md>
-        <mrow>\lvert x-(-14)\rvert\amp\amp\amp\text{Translation of }``\text{distance between \(x\) and \(-14\)"}</mrow>
-        <mrow>\gt 3\amp\amp\amp\text{Translation of }``\text{is greater than \(3\)"}</mrow>
-        <mrow>\lvert x-(-14) \rvert\gt 3\amp\amp\amp\text{Simplify the absolute value expression}</mrow>
-        <mrow>\lvert x+14 \rvert\gt 3\amp\amp\amp\text{Absolute value is greater than a positive, use OR}</mrow>
-      </md>
-      We now have two inequalities to solve:
-      <md>
-        <mrow>x+14\gt 3\amp\amp\amp\text{ OR }\amp\amp\amp x+14\lt -3</mrow>
-        <mrow>\underline{-14}\underline{-14}\amp\amp\amp\amp\amp\amp\underline{-14}\underline{-14}</mrow>
-        <mrow>x\gt -11\amp\amp\amp\text{ OR }\amp\amp\amp x\lt -17</mrow>
-      </md>
-      Thus we have:
-      <md>
-        <mrow>x\lt -17\text{ or } x\gt -11\amp\amp\amp\text{Our Solution: compound inequality}\checkmark</mrow>
-        <mrow>(-\infty,-17)\cup (-11,\infty)\amp\amp\amp \text{Our Solution: interval notation}\checkmark</mrow>
-      </md>
-    </p>
-    </example>
+    
+    
+    
   </subsection>
 </section>
                      
