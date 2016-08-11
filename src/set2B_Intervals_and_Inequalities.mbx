@@ -4,7 +4,8 @@
     <ul>
       <li>Use inequality and interval notation.</li>
       <li>Solve linear inequalities.</li>
-      <li>Solve inequalities with absolute values.</li>
+      <li>Solve, graph and give interval notation for the solution to inequalities with absolute values.</li>
+      <li>Solve linear distance inequality problems.</li>
     </ul>
   </introduction>
   <subsection>
@@ -466,6 +467,30 @@
           </p>
         </example>
         <example>
+      <title>Distance (Three-Part Inequality)</title>
+      <!-- Our own like WeBWorK 1C Problem 18-->
+      <p>Suppose the distance between
+        <m>x</m> and zero is less than or equal to
+        <m>6</m>. Determine
+        <m>x.</m>
+      </p>
+      <p>Start by translating the words into an equation.  We will need to translate <term>distance</term> into absolute value. We are given 
+          <ul>
+            <li><m>x=</m> the <term>unknown</term> number(s)</li>
+            <li>the distance is less than or equal to <m>6</m></li>
+          </ul>
+      In distance problems, <term>between</term> translates to subtraction.
+      <md>
+        <mrow>\lvert x-0 \rvert\amp\amp\amp\text{Translation of }``\text{distance between \(x\) and zero"}</mrow>
+        <mrow>\leq 6\amp\amp\amp\text{Translation of }``\text{less than or equal to \(6\)"}</mrow>
+        <mrow>\lvert x-0 \rvert \leq 6\amp\amp\amp\text{Simplify the absolute value expression}</mrow>
+        <mrow>\lvert x \rvert\leq 6\amp\amp\amp\text{Absolute value is less, use three part inequality}</mrow><mrow>-6\leq x \leq 6 \amp\amp\amp \text{Inequality notation}\checkmark</mrow>
+        <mrow>[-6,6] \amp\amp\amp \text{Interval notation}\checkmark</mrow>
+      </md>
+      This shows <m>x</m> is any number between <m>-6</m> and <m>6</m>.
+      </p>
+    </example>
+        <example>
           <title>Absolute Value Inequality: Greater than or equal</title>
           <p>Solve, graph, and give interval notation for the solution.</p>
           <!-- Owr Own -->
@@ -530,6 +555,40 @@
               </md>
             </p>
             </example>
+            <example>
+      <title>Distance (OR Inequality)</title>
+      <!-- Our own like WeBWorK 1C Problem 20-->
+      <p>Suppose the distance between
+        <m>x</m> and
+        <m>-14</m> is greater than
+        <m>3</m>. Determine
+        <m>x</m>.
+      </p>
+      <p>Start by translating the words into an equation.  We will need to translate <term>distance</term> into absolute value. We are given 
+          <ul>
+            <li><m>x=</m> the <term>unknown</term> number(s)</li>
+            <li>the distance is greater than <m>3</m></li>
+          </ul>
+      In distance problems, <term>between</term> translates to subtraction.
+      <md>
+        <mrow>\lvert x-(-14)\rvert\amp\amp\amp\text{Translation of }``\text{distance between \(x\) and \(-14\)"}</mrow>
+        <mrow>\gt 3\amp\amp\amp\text{Translation of }``\text{is greater than \(3\)"}</mrow>
+        <mrow>\lvert x-(-14) \rvert\gt 3\amp\amp\amp\text{Simplify the absolute value expression}</mrow>
+        <mrow>\lvert x+14 \rvert\gt 3\amp\amp\amp\text{Absolute value is greater than a positive, use OR}</mrow>
+      </md>
+      We now have two inequalities to solve:
+      <md>
+        <mrow>x+14\gt 3\amp\amp\amp\text{ OR }\amp\amp\amp x+14\lt -3</mrow>
+        <mrow>\underline{-14}\underline{-14}\amp\amp\amp\amp\amp\amp\underline{-14}\underline{-14}</mrow>
+        <mrow>x\gt -11\amp\amp\amp\text{ OR }\amp\amp\amp x\lt -17</mrow>
+      </md>
+      Thus we have:
+      <md>
+        <mrow>x\lt -17\text{ or } x\gt -11\amp\amp\amp\text{Our Solution: compound inequality}\checkmark</mrow>
+        <mrow>(-\infty,-17)\cup (-11,\infty)\amp\amp\amp \text{Our Solution: interval notation}\checkmark</mrow>
+      </md>
+    </p>
+    </example>
             <p>The essential idea of the absolute value is to denote distance from a given value. It may also be used in more complicated expressions.  Determining solutions in these cases requires putting to use mathematical tools from this section.</p>
             <example>
               <title>Absolute Value Inequality</title>

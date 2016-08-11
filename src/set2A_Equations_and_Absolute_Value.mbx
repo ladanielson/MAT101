@@ -4,6 +4,7 @@
     <ul>
       <li>Solve equations (including equations with variables on both sides) by balancing and using inverse operations.</li>
       <li>Solve linear absolute value equations.</li>
+      <li>Solve linear distance equation problems.</li>
     </ul>
   </introduction>
   <subsection>
@@ -817,13 +818,39 @@
           <c>x = 7 or x = -7</c>.
         </p>
       </assemblage>
+      <example>
+      <title>Distance Equation</title>
+      <!-- Our own like WeBWorK 1C Problem 15-->
+      <p>Suppose the distance between
+        <m>x</m> and
+        <m>4</m> is exactly
+        <m>7</m>. Determine
+        <m>x</m>.
+      </p>
       <p>
+     <!--  Start by translating the words into an equation.  We will need to translate <term>distance</term> into absolute value. We are given 
+          <ul>
+            <li><m>x=</m> the <term>unknown</term> number(s)</li>
+            <li>the distance is <m>7</m></li>
+          </ul>
+      In distance problems, <term>between</term> translates to subtraction. -->
+      <md>
+        <mrow>\amp\amp\amp\amp\amp\lvert x-4 \rvert\amp\amp\text{Absolute value represents the distance between \(x\) and \(4\)}</mrow>
+       <!--  <mrow>\amp\amp\amp\amp\amp =7\amp\amp\text{Translation of }``\text{is \(7\)"}</mrow> -->
+        <mrow>\amp\amp\amp\amp\lvert x-4 \rvert\amp = 7\amp\amp\text{Absolute value can be positive or negative}</mrow>
+        <mrow>x-4\amp =7\amp\amp\text{or}\amp x-4\amp=-7 \amp\amp \text{Two equations to solve}</mrow>
+        <mrow>\underline{+4}\amp\underline{\phantom{1}+4}\amp\amp\amp\underline{+4}\amp\underline{\phantom{12}+4}\amp\amp</mrow>
+        <mrow>x\amp =11\amp\amp\text{or}\amp x\amp =-3\amp\amp\text{Our Solution}\checkmark</mrow>
+      </md>
+    </p>
+    </example>
+     <!--  <p>
         <alert>Important:</alert> First isolate the absolute value, then "remove the absolute value" by considering both the positive and negative solutions separately. Notice in the next two examples, all the numbers outside of the absolute value are "moved to the other side" first before we remove the absolute value bars and consider both positive and negative solutions.
       </p>
       <example>
         <title>Isolate Absolute Value First</title>
         <p>Solve for <m>x</m>.
-          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 85 pg 52-->
+          <!## Cite Beginning and Intermediate Algebra by Tyler Wallace Example 85 pg 52##>
         </p>
         <p>
         <md>
@@ -859,7 +886,7 @@
       <example>
         <title>Isolate Absolute Value First</title>
         <p>Solve for <m>x</m>.
-          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 86 pg 52-->
+          <!## Cite Beginning and Intermediate Algebra by Tyler Wallace Example 86 pg 52##>
         </p>
         <p>
         <md>
@@ -879,7 +906,7 @@
       <example>
         <title>Two-Step Absolute Value Equation</title>
         <p>Solve for <m>x</m>.
-          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 87 pg 53-->
+          <!## Cite Beginning and Intermediate Algebra by Tyler Wallace Example 87 pg 53##>
         </p>
         <p>
         <md>
@@ -897,7 +924,7 @@
             \(x=-6\)} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
       </p>
-      </example>
+      </example> -->
       <p>Again we see the same process: isolate the absolute value first, then consider the positive and negative solutions. Often the absolute value will have more than just a variable in it. In this case we will have to solve the resulting equations when we consider the positive and negative possibilities. This is shown in the next example.</p>
       <example>
         <title>Absolute Value of an Expression</title>
@@ -924,11 +951,11 @@
         </md>
       </p>
       </example>
-      <p>Again, it is important to remember that the absolute value must be alone first before we consider the positive and negative possibilities. This is illustrated in the below example.</p>
+      <!-- <p>Again, it is important to remember that the absolute value must be alone first before we consider the positive and negative possibilities. This is illustrated in the below example.</p>
       <example>
         <title>Isolate Absolute Value First</title>
         <p>Solve for <m>x</m>.
-          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 89 pg 54-->
+          <!## Cite Beginning and Intermediate Algebra by Tyler Wallace Example 89 pg 54##>
         </p>
         <p>
         <md>
@@ -971,7 +998,7 @@
       <example>
         <title>Absolute Values Can't Be Negative</title>
         <p>
-          <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 90 pg 55-->
+          <!## Cite Beginning and Intermediate Algebra by Tyler Wallace Example 90 pg 55##>
         </p>
         <md>
           <mrow>7+\lvert 2x-5\rvert =4 \amp\amp\amp \text{Notice absolute value is not alone}</mrow>
@@ -984,7 +1011,7 @@
       </example>
       <p>Notice in the above example, the absolute value expressions equals a negative number! This is impossible with absolute value. When this occurs we
         <alert>STOP</alert> and conclude there is no solution.
-      </p>
+      </p> -->
       <assemblage>
         <title>WeBWorK: Enter "No solution"</title>
         <p>If the equation has no solution, type
