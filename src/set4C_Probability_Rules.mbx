@@ -660,11 +660,10 @@
           </paragraphs>
           <image source="images/tree-gender.svg" />
         </sidebyside>
-        We are told <m>P(B)=0.03</m> Determine the probability of a girl using complementary events, since
-            <m>B' = G</m>.
+        We are told <m>P(B)=0.03</m>. Determine the probability of a girl using complementary events, since
+            <m>B'=G</m>.
           <md>
-          <mrow>P(G)=P(B')=1-P(B)=1-0.03=0.97
-          </mrow></md>
+          <mrow>P(G)=P(B')=1-P(B)=1-0.03=0.97</mrow></md>
           Label the corresponding branches of the tree.
           <sidebyside widths="40% 55%" valign="middle" margins="0%">
           <paragraphs>
