@@ -11,8 +11,8 @@
   </introduction>
   <subsection>
     <title>Probability Properties</title>
-    <p>
       <!--   This is CoconinoCC_chapter_4_Probability.pdf page 116 -->The examples and WeBWorK problems of
+    <p>
       <xref ref="section-4B-Probability" autoname="yes" /> demonstrated some important probability results which are summarized below.
     </p>
     <!-- adds number <list xml:id="probability-properties"> 
@@ -66,9 +66,9 @@
      
     <example>
       <title>Complementary Events--Flu</title>
+        <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.2 Example 4.2.5(b), page 121 -->
       <p>Suppose you know the probability of not getting the flu is
         <m>0.24</m>. What is the probability of getting the flu?
-        <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.2 Example 4.2.5(b), page 121 -->
         </p>
         <p>
         <md>
@@ -91,9 +91,9 @@
 
     <example xml:id="example-sample-space-deck-of-cards">
       <title>Complementary Events--Cards</title>
+        <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.2 Example 4.2.5, page 121 -->
       <p>In an experiment of picking a card from a deck, what is the probability of
         not getting a card that is a Queen?
-        <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.2 Example 4.2.5, page 121 -->
         </p>
         <p>
         <md>
@@ -143,9 +143,9 @@
    
     <example>
       <title>Complementary Events--At Least</title>
+        <!--   This matches our WeBWorK  -->
       <p>Two fair dice are rolled. Determine the probability of rolling a sum of at least a
         <m>4</m>.
-        <!--   This matches our WeBWorK  -->
         </p>
         <p>The
             <m>SS</m> is written in <xref ref="example-2-dice-sample-space" autoname="yes" />. Recall the sample space has
@@ -179,8 +179,8 @@
     <title>Probability Rules</title>
     <example xml:id="example-card-probabilities">
       <title>Probability--Select One Card</title>
-      <p>In an experiment of picking one card from a deck, what is the probability of getting a Jack and an Ace? What is the probability of getting a Jack or an Ace? What is the probability of getting a Spade or an Ace?
         <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.2 Example 4.2.5, page 121 -->
+      <p>In an experiment of picking one card from a deck, what is the probability of getting a Jack and an Ace? What is the probability of getting a Jack or an Ace? What is the probability of getting a Spade or an Ace?
         </p>
         <p>Recall the sample space for a deck of cards in <xref ref="example-sample-space-deck-of-cards" autoname="yes" /></p>
         <p>(a) Determine the probability of selecting a Jack
@@ -262,8 +262,8 @@
       </p>
     <example>
       <title>Mutually Exclusive</title>
+      <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Homework Problem 11, page 140 -->
       <p>(Recall Example <xref ref="example-titanic" autoname="yes" />.) The number of people who survived the Titanic based on class and gender is in the below table ("Encyclopedia Titanica," 2013).
-        </p>
         <table>
           <tabular halign="center" top="minor" left="minor">
             <col right="minor" />
@@ -308,8 +308,7 @@
             </row>
           </tabular>
         </table>
-      <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Homework Problem 11, page 140 -->
-      <p>Determine if the events survivor is a female and survivor is in the first class are mutually exclusive.</p>
+        Determine if the events survivor is a female and survivor is in the first class are mutually exclusive.</p>
       <p>Label the event spaces
             <m>F</m> for female and
             <m>1st</m> for first class.
@@ -345,8 +344,8 @@
     </p>
     <example>
       <title>Conditional Probability--Titanic</title>
+      <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Homework Problem 11, page 140 -->
       <p>(Recall <xref ref="example-titanic" autoname="yes" />.) The number of people who survived the Titanic based on class and gender is in the below table ("Encyclopedia Titanica," 2013). Suppose a person is picked at random from the survivors.
-        </p>
         <table>
           <tabular halign="center" top="minor" left="minor">
             <col right="minor" />
@@ -391,8 +390,7 @@
             </row>
           </tabular>
         </table>
-      <p>Determine the following probabilities.</p>
-      <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Homework Problem 11, page 140 -->
+      Determine the following probabilities.</p>
       <p>(a) Determine the probability that a survivor was in the first class. Label the event space
             <m>1st</m> for first class. 
           <md>
@@ -415,10 +413,10 @@
 
     <example>
       <title>Conditional Probability--Dice</title>
+        <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.2 Example 4.3.1, page 130 -->
       <p>Two fair dice are rolled. Determine the probability of rolling a sum of
         <m>5</m>, given that the first die is a
         <m>2</m>.
-        <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.2 Example 4.3.1, page 130 -->
         </p>
         <p>
         <md>
@@ -445,10 +443,11 @@
           </p>
     </example>
     <example xml:id="example-conditional-cards">
+        <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Example 4.3.1d, page 131 -->
       <title>Conditional Probability--Cards</title>
       <p>Suppose you pick a card from a deck. What is the probability of getting a Spade, given that the card is a Jack?
-        <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Example 4.3.1d, page 131 -->
-        </p><p>
+        </p>
+        <p>
         <md>
           <mrow>\text{We know the card is a Jack.} \amp\amp\amp \text{Write the restricted sample space,
             \(R\). }
@@ -500,18 +499,17 @@
       <m>B</m> happening. Otherwise, the two events are dependent.
     </p>
     <p>
-      <div class="boxed">In symbols,
+      In symbols,
         <m>A</m> and
         <m>B</m> are
         <term>independent</term> if
         <m>P(A|B) = P(A)</m> or
         <m>P(B|A) = P(B)</m>.
-      </div>
     </p>
     <example>
       <title>Independent Events--Titanic</title>
+      <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Homework Problem 11, page 140 -->
       <p>(Recall <xref ref="example-titanic" autoname="yes" />.) The number of people who survived the Titanic based on class and gender is in the below table ("Encyclopedia Titanica," 2013). Suppose a person is picked at random from the survivors.
-      </p>
         <table>
           <tabular halign="center" top="minor" left="minor">
             <col right="minor" />
@@ -556,8 +554,7 @@
             </row>
           </tabular>
         </table>
-      <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Homework Problem 11, page 140 -->
-      <p>Determine if the events <em>"survivor is a female"</em> and <em>"survivor is in first class"</em> are independent.</p>
+      Determine if the events <em>"survivor is a female"</em> and <em>"survivor is in first class"</em> are independent.</p>
       <p>Label the event spaces
             <m>F</m> for female and
             <m>1st</m> for first class. Compute both
@@ -568,19 +565,17 @@
             <term>independent</term> if
             <m>P(F|1st) = P(F)</m>.
           <md>
-          <mrow>P(F | 1st) = \dfrac{n(F\cap 1st)}{\text{n(1st)}}=\dfrac{134}{193}\approx 0.6943 \amp\amp\amp P(F) = \dfrac{n(F)}{\text{Total #}}=\dfrac{308}{450}\approx 0.6844
-          </mrow>
+          <mrow>P(F | 1st) = \dfrac{n(F\cap 1st)}{\text{n(1st)}}=\dfrac{134}{193}\approx 0.6943 \amp\amp\amp P(F) = \dfrac{n(F)}{\text{Total #}}=\dfrac{308}{450}\approx 0.6844</mrow>
           <mrow>P(F|1st) \neq P(F) \amp\amp\amp \text{Since
-            \(0.6943\neq  0.6844\) Our Solution:}
-          </mrow>
+            \(0.6943\neq  0.6844\) Our Solution:}</mrow>
         </md>
         The events <em>"survivor is a female"</em> and <em>"survivor is in first class"</em> are <em>NOT</em> independent.  Thus, the events <em>"survivor is a female"</em> and <em>"survivor is in first class"</em> are dependent.<m>\checkmark</m>
       </p>
     </example>
     <example>
       <title>Independent Events--Dice</title>
-      <p>Two fair dice are rolled. Are the events <em>"sum of 7"</em> and <em>"first die is a 3"</em> independent?
         <!--   This is CoconinoCC_chapter_4_Probability.pdf Section 4.3 Example 4.3.2a, page 132 -->
+      <p>Two fair dice are rolled. Are the events <em>"sum of 7"</em> and <em>"first die is a 3"</em> independent?
         </p>
         <p>
         <md>
@@ -632,7 +627,8 @@
             \(P(A|B)=\dfrac{1}{6}=\dfrac{6}{36}=P(A)\)} \amp\amp\amp \text{Our Solution:}</mrow>
             </md>
             The events <em>"sum of 7"</em> and <em>"first die is a 3"</em>  are independent<m>\checkmark</m>.
-      </p></example>
+      </p>
+    </example>
       <p>Two events
         <m>A</m> and
         <m>B</m> are <term>independent</term> if the fact that
@@ -642,15 +638,18 @@
 
     <example>
       <title>Probability Tree</title>
+        <!--   Our own -->
       <p>Male calico cats are quite rare.  In fact, the probability of a cat having a boy calico kitten is only
         <m>3\%</m>.  Suppose a cat has
         <m>3</m> calico kittens.  Use a
         <term>probability tree</term> to determine the following probabilities.
-        <!--   Our own -->
         </p>
         <p>Let
-            \(B\) represent a boy kitten. Let
-            \(G\) represent a girl kitten. Illustrate the possibilities with a tree diagram.
+          <ul>
+            <li><m>B</m> represent a boy kitten</li>
+            <li><m>G</m> represent a girl kitten</li>
+          </ul>
+         Illustrate the possibilities with a tree diagram.
           <sidebyside widths="40% 55%" valign="middle" margins="0%">
           <paragraphs>
             <p>The tree has
@@ -720,8 +719,7 @@
             <m>P(\text{at least one boy})=1-P(GGG)</m>. Multiply the probabilities along the path to the outcome
             <m>GGG</m>. 
           <md>
-          <mrow>\amp P(GGG)= (0.97)(0.97)(0.97)\approx 0.9127 \amp\amp \text{Now use the complement}
-          </mrow>
+          <mrow>\amp P(GGG)= (0.97)(0.97)(0.97)\approx 0.9127 \amp\amp \text{Now use the complement}</mrow>
           <mrow>\amp P(\text{at least one boy})=1-P(GGG)=\amp\amp</mrow>
           <mrow>\amp 1-(0.97)^3\approx 1-0.9127=0.0873 \amp\amp \text{Our Solution (b):}</mrow>
             </md>

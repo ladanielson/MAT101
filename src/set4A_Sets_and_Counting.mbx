@@ -145,11 +145,19 @@
       </md>
     </p>
     </example>
+    <p>To recap:
+      <ul>
+        <li>For <term>union</term> write <m>\cup</m> and think <m>OR</m></li>
+        <li>For <term>intersection</term> write <m>\cap</m> and think <m>AND</m></li>
+      </ul>
+    </p>
+    <p>
     Two sets
       <m>A</m> and
       <m>B</m> are called
       <term>disjoint</term> sets if their intersection is an empty set.  This would be denoted
       <m>A \cap B = \emptyset.</m>
+    </p>
     <example>
       <title>Disjoint Sets</title>
         <!-- our own-->
@@ -385,7 +393,7 @@
   -->
 
    
-    <p><!--Recall a Venn diagram represents a set as the interior of a circle. Often two or more circles are enclosed in a rectangle where the rectangle represents the universal set. These diagrams allow us to visualize an intersection or union of two sets or the complement of a set.-->  We will now use Venn diagrams to sort various populations and count objects.  We use the notation
+    <p><!--Recall a Venn diagram represents a set as the interior of a circle. Often two or more circles are enclosed in a rectangle where the rectangle represents the universal set. These diagrams allow us to visualize an intersection or union of two sets or the complement of a set.-->We will now use Venn diagrams to sort various populations and count objects.  We use the notation
       <m>n(A)</m> to represent the number of elements in set
       <m>A</m>.  For example, if <m>A=\{\text{Maggie, Joe, Ben, Susanne}\}</m> then
       <m>n(A)=4</m>.
@@ -1160,7 +1168,7 @@
       <m>2\times 4\times 3 = 24</m> different possibilities.
     </p>
     <p>The tree diagrams help us visualize the different possibilities, but they are not practical when the possibilities are numerous. Besides, we are mostly interested in counting the number of elements in the set and not the actual possibilities. But once the problem is envisioned, we can solve it without a tree diagram. The two examples we just solved may have given us a clue to do just that.</p>
-    <p>Let us now try to solve <xref ref="example-3-step-tree" autoname="yes" /> without a tree diagram. Recall that the problem involved three steps: choosing an appetizer, choosing a main course, and choosing a dessert. The number of ways of choosing each are listed below.
+    <p>Let us now try to solve <xref ref="example-3-step-tree" autoname="yes" /> without a tree diagram. Recall that the problem involved three steps: choosing an appetizer, choosing a main course, and choosing a dessert. The number of ways of choosing each are listed below:
     </p>
     <p>
       <table>
@@ -1170,9 +1178,9 @@
           <col halign="center" right="minor" />
       <!--  -->
           <row bottom="minor">
-            <cell>The number of ways of choosing an appetizer</cell>
-            <cell>The number of ways of choosing a main course</cell>
-            <cell>The number of ways of choosing a dessert</cell>
+            <cell>appetizer</cell>
+            <cell>main course</cell>
+            <cell>dessert</cell>
           </row>
           <row bottom="minor">
             <cell><m>2</m></cell>
