@@ -54,19 +54,19 @@
       <title>Number Problem</title>
         <!--Cite Beginning and Intermediate Algebra by Tyler Wallace Example 102 pg 64-->
       <p>If
-        <m>28</m> less than five times a certain number is
-        <m>232</m>, what is the number?
+        <m>28</m> more than five times a certain number is
+        <m>233</m>, what is the number?
       </p>
       <p>
       <md>
         <mrow>\text{Let \(x\) equal }``\text{the number"} \amp\amp\amp \text{The variable stands in for the unknown quantity.}</mrow>
         <mrow>5x\amp\amp\amp\text{Translation of }``\text{five times a certain number"}</mrow>
-          <mrow>5x-28\amp\amp\amp \text{We need }``28\text{ less than" \(5x\)}</mrow>
-          <mrow>5x-28\amp =232 \amp\amp \text{The quantity }``\text{is" \(232\)}</mrow>
-          <mrow>\underline{+28}\amp\underline{\phantom{1}+28} \amp\amp \text{Add 28 to both sides}</mrow>
-          <mrow>5x\amp =260\amp\amp \text{The variable \(x\) is multiplied by \(5\)}</mrow>
+          <mrow>5x+28\amp\amp\amp \text{We need }``28\text{ more than" \(5x\)}</mrow>
+          <mrow>5x+28\amp =233 \amp\amp \text{The quantity }``\text{is" \(233\)}</mrow>
+          <mrow>\underline{-28}\amp\underline{\phantom{1}-28} \amp\amp \text{Subtract 28 from both sides}</mrow>
+          <mrow>5x\amp =205\amp\amp \text{The variable \(x\) is multiplied by \(5\)}</mrow>
           <mrow>\overline{\,5\,}\amp\phantom{123}\overline{\,5\,}\amp\amp \text{Divide both sides by \(5\)}</mrow>
-          <mrow>x\amp =52 \amp\amp \text{Our Solution: The number is \(52\).}\checkmark</mrow>
+          <mrow>x\amp =41 \amp\amp \text{Our Solution: The number is \(41\).}\checkmark</mrow>
         </md>
       </p>
       </example>
@@ -129,6 +129,73 @@
     </p>
     </example>
   </subsection>
+    <subsection>
+    <title>Solving for Variables in Formulas</title>
+    <p>***From Fall 2015:PUT IN THE EXPLANATION AND 3C-4 3C-5, 3C-8, 3C-9.  SHOULD THESE BE HERE OR IN 2A?</p>
+
+  <p>Solving formulas is much like solving general linear equations. The only difference is we will have several variables in the problem and we will be attempting to solve for one specific variable. For example, we may have a formula such as <m>A=\pi r^2 + \pi r s</m> (formula for surface area of a right circular cone) and we may be interested in solving for the variable <m>s</m>. This means we want to isolate the <m>s</m> so the equation has <m>s</m> on one side, and everything else on the other. So a solution might look like <m>s = \dfrac{A-\pi r^2}{\pi r}</m>. This second equation gives the same information as the first which means they are algebraically equivalent. However, one is solved for the area <m>A</m>, while the other is solved for <m>s</m> (slant height of the cone).  In this section we will discuss how we can move from the first equation to the second.</p>
+  <p>When solving formulas for a variable we need to focus on the one variable we are trying to solve for, all the others are treated just like numbers. This is shown in the following example. Two parallel problems are shown, the first is a normal one step equation, the second is a formula that we are solving for <m>x</m>:</p>
+  <example>
+    <title>Compare Solving for a Variable in an Equation and a Formula</title>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 74 pg 47-->
+    <p>Solve for <m>x</m>.</p>
+    <p>
+      <md>
+        <mrow>3x\amp =12\amp\amp\amp wx\amp =z\amp\amp\text{In both problems, \(x\) is multiplied by something}</mrow>
+        <mrow>\overline{\,3\,}\amp\phantom{123}\overline{\,3\,}\amp\amp\amp\overline{\,w\,}\amp\phantom{12}\overline{\,w\,}\amp\amp\text{To isolate \(x\) we divide by \(3\) or \(w\)}</mrow>
+        <mrow>x\amp =4\amp\amp\amp x\amp =\dfrac{z}{w}\amp\amp\text{Our Solutions}\checkmark</mrow>
+      </md>
+      </p>
+    </example>
+  <p>We use the same process to solve <m>3x = 12</m> for <m>x</m> as we use to solve <m>wx = z</m> for <m>x</m>.  Because we are solving for <m>x</m> we treat all the other variables the same way we would treat numbers. Thus, to get rid of the multiplication we divided by <m>w</m>. This
+same idea is seen in the following example.</p>
+
+<example>
+  <title>Solve for a Variable in a Formula</title>
+  <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 75 pg 47-->
+      <p>Solve for <m>n</m>.</p>
+      <p>
+        <md>
+          <mrow>m+n\amp =p\amp\amp\text{Solving for \(n\), treat all other variables like numbers}</mrow>
+          <mrow>\underline{-m}\amp\underline{\phantom{123}-m}\amp\amp\text{Subtract \(m\) from both sides}</mrow>
+          <mrow>n\amp =p-m\amp\amp\text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
+    </example>
+    <p>The next example is a two-step problem:</p>
+    <example>
+  <title>Solve for a Variable in a Formula--2-Step Problem</title>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 78 pg 48-->
+<p>Solve for <m>m</m>.</p>
+<p>
+  <md>
+    <mrow>y\amp =mx+b\amp\amp\text{Solving for \(m\), focus on addition first}</mrow>
+    <mrow>\underline{-b}\amp\phantom{1234567}\underline{-b}\amp\amp\text{Subtract \(b\) from both sides}</mrow>
+    <mrow>y-b\amp =mx\amp\amp\text{The \(m\) is multiplied by \(x\), therfore}</mrow>
+    <mrow>\overline{\,\,\,\,x\,\,\,\,}\amp\phantom{1234}\overline{\,x\,}\amp\amp\text{Divide both sides by \(x\)}</mrow>
+    <mrow>\dfrac{y-b}{x}\amp =m\amp\amp\text{Our Solution}\checkmark</mrow>
+  </md>
+</p>
+</example>
+
+  <p>It is important to note that we know we are done with the problem when the variable we are solving for is isolated or alone on one side of the equation and it does not appear anywhere on the other side of the equation.</p>
+  <p>The next example is also a two-step equation (it is the problem we started with at the beginning of the section):</p>
+  <example>
+    <title>Formula for Surface Area of a Right Circular Cone</title>
+<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 79 pg 49-->
+    <p> Solve for <m>s</m>.</p>
+    <p>
+      <md>
+        <mrow>A\amp =\pi r^2 + \pi r s\amp\amp\text{Solving for \(s\), focus on what is added to the term with \(s\)}</mrow>
+        <mrow>\underline{-\pi r^2}\amp\phantom{1}\underline{-\pi r^2}\amp\amp\text{Subtract \(\pi r^2\) from both sides}</mrow>
+        <mrow>A-\pi r^2\amp =\pi r s\amp\amp\text{The \(s\) is multiplied by \(\pi r\), so}</mrow>
+        <mrow>\overline{\phantom{123}\pi r\phantom{123}}\amp\phantom{123}\overline{\,\pi r\,}\amp\amp\text{Divide both sides by \(\pi r\)}</mrow>
+        <mrow>\dfrac{A-\pi r^2}{\pi r}\amp =s\amp\amp\text{Our Solution}\checkmark</mrow>
+      </md>
+    </p>
+  </example>
+  <p>Notice, we cannot reduce the <m>\pi r</m> in the numerator and denominator because of the subtraction in the problem.</p>
+  </subsection>
   <subsection>
     <title>Percent Problems</title>
     <p>There are three basic types of percent problems:
@@ -147,46 +214,39 @@
               <m>50</m>?</li>
             </ul>
         </li>
-        <li><term>Determine a number that is a given percent of another number.</term> 
+        <li><term>Determine a number from a given percent of another number.</term> 
           <ul>
             <li>For example,
-              <m>10\%</m> of what number is
-              <m>12</m>?</li>
+              <m>37.5\%</m> of what number is
+              <m>57</m>?</li>
             </ul>
         </li>
       </ol>
     </p>
     <p>Let's examine each of the three types of percent problems.</p>
-    <!--PERHAPS PUT THIS BACK IF WE CAN HAVE IT AS A "CLOSED KNOWL##AN EXTRA EXAMPLE
+
         <example>
+          <!-- This one is ours!  For WeBWorK-->
           <title>1. Determine a certain percent of a given number</title>
-          <p></p>
+          <p>
           <md>
-            <mrow>
-              \text{What number is
-              \(25\%\) of
-              \(640\)?} \amp\amp\amp \text{Translate the words into an equation}</mrow>
-            <mrow>
-              \text{ } \amp\amp\amp \text{\(x\) represents "the number"}
-            </mrow>
-            <mrow>
-              \text{ } \amp\amp\amp \text{\(25\%\) of \(640\) is \(.25 \cdot 640\)}
-            </mrow>
-            <mrow>
-              x=.25\cdot 640 \amp\amp\amp \text{\(x\) is equal to \(25\%\) of \(640\)}</mrow>
-            <mrow>
-            \text{ } \amp\amp\amp \text{Multiply}</mrow>
-            <mrow>\text{
-            \(x=160\)} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
-          </md>
+              <mrow>\text{What number is \(25\%\) of \(640\)?} \amp\amp\amp \text{Translate the words into an equation}</mrow>
+              <mrow>\amp\amp\amp \text{\(x\) represents "the number"}</mrow>
+              <mrow>\amp\amp\amp \text{\(25\%\) of \(640\) is \(.25 \cdot 640\)}</mrow>
+              <mrow>x\amp =.25\cdot 640 \amp\amp \text{\(x\) is equal to \(25\%\) of \(640\)}</mrow>
+              <mrow>\amp\amp\amp \text{Multiply}</mrow>
+              <mrow>x\amp =160 \amp \text{Our Solution}\checkmark</mrow>
+            </md>
+        </p>
         </example>
-      -->
+
+    <!--PERHAPS PUT THIS BACK IF WE CAN HAVE IT AS A "CLOSED KNOWL##AN EXTRA EXAMPLE
     <example>
       <title>Determine a certain percent of a given number</title>
-        <!-- This one is ours!  For WeBWorK-->
+        <!** This one is ours!  For WeBWorK**>
       <p>Determine
           <m>175\%</m> of
-          <m>30</m>.</p>
+          <m>30.</m></p>
         <p>First, think about the question.  We know that <m>50\%</m> of
           <m>30</m> is <m>15</m>.  The <term>of</term> is multiplication: <m>0.5\cdot 30 = 15</m>. We are asked to determine <m>175\%</m> of
           <m>30</m>. Translate the words into an equation.  Let 
@@ -202,6 +262,7 @@
         </md>
       </p>
     </example>
+  -->
     <p>Now we'll address our second item on the list:</p>
     <example>
       <title>Determine a percent given two numbers</title>
@@ -292,7 +353,7 @@
           </example>
       -->
       <example>
-        <title>Find a number that is a given percent of another number</title>
+        <title>Determine a number from a given percent of another number</title>
           <!--This is ours-->
           <p><m>37.5\%</m> of what number is <m>57</m>?</p>
           <p>Translate the words into an equation. Let
@@ -301,22 +362,23 @@
           </ul>  
           Recall <term>of</term> translates to times, and <term>is</term> translates to equals.
           <md>
-            <mrow>37.5\% \cdot x\amp =57 \amp\amp \text{Change
-          \(37.5\%\) to a decimal}</mrow>
-            <mrow>.375 \cdot x\amp =57\amp\amp \text{Solve our equation for
-          \(x\): Divide both sides by 0.375}</mrow>
-            <mrow>\dfrac{.375}{.375}\cdot x\amp =\dfrac{57}{.375}\amp\amp \text{Simplify both sides of the equation:
-          \(\dfrac{.375}{.375}=1\) and
-          \(\dfrac{57}{.375}=152\)}</mrow>
+            <mrow>0.375\ cdot x \amp\amp\amp \text{Calculate \(37.5\%\) of the number}</mrow>
+            <mrow>0.375 \cdot x\amp =57\amp\amp \text{Set up the equation}</mrow>
+            <mrow>\dfrac{0.375}{0.375}\cdot x\amp =\dfrac{57}{0.375}\amp\amp \text{Divide both sides by \(0.375\) and simplify; \(\dfrac{0.375}{0.375}=1\) and \(\dfrac{57}{0.375}=152\)}</mrow>
             <mrow>x\amp =152 \amp\amp \text{Our Solution}\checkmark</mrow>
           </md>
         </p>
       </example>
-      <p>Most of the time when you need to solve a percent problem, it will not be presented purely as a "percent" problem.  It will come in some setting like a Chemistry or Business problem.  Recognizing the "type" of percent problem will be the key to translating the problem into an equation.</p>
+    </subsection>
+    <subsection>
+      <title>Applications of Percent</title>
+      <p>Most of the time when you need to solve a percent problem, it will not be presented purely as a "percent" problem.  It will come in some setting like a Chemistry or Business problem. 
+        <!--A person's salary can increase by a percentage. A town's population can decrease by a percentage. A clothing firm can discount its apparel.  -->
+        Consider the following examples. Recognizing the "type" of percent problem will be the key to translating the problem into an equation.</p>
       <example>
-        <title>Percent Problem: Chemistry</title>
+        <title>Mixing a Chemical Solution</title>
           <!-- Cite http://mathrev.redwoods.edu/PreAlgText/chapter7.pdf  Example 4 pg 523-->
-        <p>
+        <p> A solution of hydrochloric acid is needed to clean a rusty storage barrel.  If
           <m>35</m> millilitres of a
           <m>60</m> millilitre solution is hydrochloric acid. What percent of the solution is hydrochloric acid?
         </p>
@@ -341,68 +403,73 @@
           </md>
         </p>
       </example>
-    </subsection>
-    <subsection>
-      <title>Percent Increase or Decrease</title>
-      <p>A person's salary can increase by a percentage. A town's population can decrease by a percentage. A clothing firm can discount its apparel.  Consider the following examples.</p>
+      <p>
+         When solving a word problem, you'll need to do more than a straightforward application of any one method.  The key is to break the situation down into parts you know how to handle. Use a variable for the unknown quantity and then build mathematical expressions from the description of the problem. Put the expressions together to make an equality which you may solve with algebra operations.
+       </p>
       <example>
         <title>Percent Increase</title>
-          <!-->- Cite http://mathrev.redwoods.edu/PreAlgText/chapter7.pdf  Example 1 pg 529-->
-        <p>A salesperson is granted a
-          <m>5\%</m> salary increase. If the salesperson's current salary is
-          <m>\$4,000</m> per month, what will be her new salary?
+          <!-->- Owr own-->
+        <p>When Paul was hired from his internship to a full time position, he was given a
+          <m>130\%</m> salary increase. If his new salary is
+          <m>\$4,000</m> per month, what was his old monthly internship pay?
         </p>
-        <p>First recognize this involves the first type of percent problem: <term>1. Determine a certain percent of a given number.</term> Start by translating the words into an equation.  Let
+        <p><!--First recognize this involves the third type of percent problem: <term>3. Determine a number from a given percent.</term> But we'll have to do more than a straigtforward application of the this type of problem. Start by translating the words into an equation.  Let-->
         <ul>
-          <li><m>x=</m> the <term>unknown</term> salary increase</li>
+          <li>Let <m>p=</m> the <term>unknown</term> monthly internship pay </li>
         </ul>
         <md>
-          <mrow>0.05\amp\amp\amp\text{The decimal equivalent of \(5\%\)}</mrow>
-          <mrow>0.05\cdot 4000 \amp\amp\amp 5\%\text{ of }4000\text{: this is the salary increase}</mrow>
-          <mrow>x\amp =0.05\cdot 4000\amp\amp \text{The unknown salary increase is \(5\%\) of \(4000\)}</mrow>
-          <mrow>x\amp =200 \amp\amp \text{Recall: \(x\) represents the salary increase}</mrow>
-          <mrow>\text{New salary }\amp=4000+200 \amp\amp \text{Compute the new salary using the}</mrow>
-          <mrow>\amp\amp\amp\text{current salary and the salary increase}=x</mrow>
-          <mrow>\$4200\amp\amp\amp \text{Our Solution}\checkmark</mrow>
+          <mrow>1.30\amp\amp\amp\text{The decimal equivalent of \(130\%\)}</mrow>
+          <mrow>1.30\cdot p \amp\amp\amp 130\%\text{ of } his old pay\text{: this is the salary increase}</mrow>
+          <mrow>p + 1.30\cdot p \amp\amp\amp \text{Add the increase to his old pay for his new salary}</mrow>
+          <mrow>p + 1.30\cdot p\amp =4000 \amp\amp \text{Set up the equation: both sides represent the new salary}</mrow>
+          <mrow>2.30\cdot p\amp =4000 \amp\amp \text{Combine like terms on the LHS, remember, \(p = 1p\)}</mrow>
+          <mrow>2.30\cdot p\amp =4000 \amp\amp \text{Divide both sides by \(2.30\)}</mrow>
+          <mrow>p\amp= \dfrac{4000}{2.30} \amp\amp \text{Simplify}</mrow>
+          <mrow>p\amp= 1739.1304 \amp\amp \text{Our answer must be in terms of dollars and cents}</mrow>
+          <mrow>\text{Paul's internship pay was } \amp \$1,739.13 \amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
       </p>
       </example>
+      The basic idea used to solve one problem may be the same in a different setting.
       <example>
-        <title>Percent Decrease</title>
-          <!-- Cite http://mathrev.redwoods.edu/PreAlgText/chapter7.pdf  Example 3 pg 531-->
-        <p>Due to a mill closure, the population of Silvertown decreases by
-          <m>8.5\%</m>. If the original population was
-          <m>10,200</m> hardy souls, what is the new population?
+        <title>Sales Tax</title>
+          <!-- Our own-->
+        <p>Bea orders gardening tools online and <m>\$532.45</m> is charged to her credit card for the order. How much did the garden tools cost if shipping/handling is <m>8.5\%</m> of the purchase? i.e. what was the cost of just the tools?
         </p>
-        <p>First recognize this involves the first type of percent problem: <term>1. Determine a certain percent of a given number.</term> Start by translating the words into an equation.  Let 
+        <p>First recognize this involves the same strategies used in the previous problem. We start by translating the words into an equation.  Let 
         <ul>
-          <li><m>x=</m> the <term>unknown</term> population decrease</li>
+          <li><m>x=</m> the <term>unknown</term> cost of the tools</li>
         </ul>
         <md>
           <mrow>0.085\amp\amp\amp\text{The decimal equivalent of \(8.5\%\)}</mrow>
-          <mrow>0.085\cdot 10200 \amp\amp\amp 8.5\%\text{ of }10200\text{: this is the population decrease}</mrow>
-          <mrow>x\amp =0.085\cdot 10200\amp\amp \text{The unknown population decrease is \(8.5\%\) of \(10200\)}</mrow>
-          <mrow>x\amp =867 \amp\amp \text{Recall: \(x\) represents the population decrease}</mrow>
-          <mrow>\text{New population }\amp=10200-867 \amp\amp \text{Compute the new population using the}</mrow>
-          <mrow>\amp\amp\amp\text{original population and the population decrease}=x</mrow>
-          <mrow>9333\text{ people}\amp\amp\amp \text{Our Solution}\checkmark</mrow>
+          <mrow>0.085\cdot x \amp\amp\amp 8.5\%\text{ of } the tool cost\text{: this is the shipping/handling charge}</mrow>
+          <mrow>x\amp = 532.45 - 0.085 x\amp\amp \text{Subtract the extra charges from the total to get the tool cost}</mrow>
+          <mrow>x + 0.085 x\amp =532.45 \amp\amp \text{Add \(0.085x\) to both sides to collect like terms}</mrow>
+          <mrow>1.085 x\amp=532.45 \amp\amp \text{Simplify the RHS by adding \(1x\) and \(0.085x\)}</mrow>
+          <mrow>x\amp= \dfrac{532.45}{1.085} \amp\amp\text{Divide both sides by \(1.085\)}</mrow>
+          <mrow>x\amp=490.7373 \amp\amp \text{Round the answer to dollars and cents}</mrow>
+          <mrow>\text{The tools alone cost} \amp=\$490.74 \amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
       </p>
       </example>
-    </subsection>
+      <p>
+        Note that the problems in WeBWorK will have different settings, but similar methods to setting up an equation to solve the problem. Also notice that we could have set up the equation for the past example as <m>x + 0.085 x =532.45</m> to start with if since it is equivalent to <m>x = 532.45 - 0.085 x.</m> As long as your equation describes a valid relationship from the problem, you will be able to use it to calculate the solution to the problem.
+      </p>
+<!--    </subsection>
     <subsection>
       <title>Discount</title>
+
       <p>Another important application of percent is the discounting of goods.</p>
       <example>
         <title>Discount</title>
-          <!-- Cite http://mathrev.redwoods.edu/PreAlgText/chapter7.pdf  Example 5 pg 534-->
+          <!** Cite http://mathrev.redwoods.edu/PreAlgText/chapter7.pdf  Example 5 pg 534**>
         <p>A pair of skis is marked at
           <m>\$310</m>. However, a sign in the shop indicates that skis are being discounted at
           <m>15\%.</m> What will be the new selling price of the skis?
         </p>
         <p>First recognize this involves the first type of percent problem: <term>1. Determine a certain percent of a given number.</term> Start by translating the words into an equation.  Let 
         <ul>
-          <li><m>D=</m> the <term>unknown</term> discount (in dollars)</li>
+          <li><m>x=</m> the <term>unknown</term> selling price</li>
         </ul>
         <md>
           <mrow>0.15\amp\amp\amp\text{The decimal equivalent of \(15\%\)}</mrow>
@@ -415,121 +482,10 @@
         </md>
       </p>
       </example>
+-->
     </subsection>
-    <subsection>
-    <title>Intervals</title>
-    <p>In this section we introduce a notation that is used in two different ways.  The correct interpretation of the notation depends on the context in which it occurs.  The notation is called the "plus or minus" sign,
-      <m>\pm,</m> and most people encounter it when they use the quadratic formula.
-    </p>
-    <p>The quadratic formula calculates the solutions for an equation like
-      <md>
-        <mrow>2x^2+5x-3=0.</mrow>
-      </md>
-      In this case, the solutions are
-      <md>
-        <mrow>\amp\amp x \amp = \dfrac{-5 \pm \sqrt{5^2 - 4(2)(-3)}}{2(2)}  \amp\amp \text{Simplify the expression}</mrow>
-        <mrow>\amp\amp x \amp = \dfrac{-5 \pm 7}{4} \amp\amp \text{**Add and subtract \(7\)}</mrow>
-        <mrow>x \amp = \dfrac{-5 + 7}{4}\amp\amp \text{ or } x = \dfrac{-5 - 7}{4} \amp\amp \text{  }</mrow>
-        <mrow>x \amp = \dfrac{2}{4}\amp\amp \text{ or } x = \dfrac{-12}{4} \amp\amp \text{Simplify }</mrow>
-        <mrow>x \amp = \dfrac{1}{2}\amp\amp \text{ or } x = -3 \amp\amp \text{ }</mrow>
-      </md>
-      **Here the <m>\pm</m> means add <m>7</m> to <m>-5</m> to calculate one solution and then subtract <m>7</m> from <m>-5</m> to get the second solution.
-    </p>
-    <p>The plus or minus sign is also used to indicate an interval or range of values.  For example, you may have seen reports based on opinion polls where the percentage of the population in favor of a particular idea is estimated.  This estimate is usually given in the form:
-      <m>45 \pm 3</m> percent.  Here, it means that the percentage of people in favor of the idea could range any where from
-      <m>42\%</m> to
-      <m>48\%</m>. It's the interval
-      <m>[42, 48]</m>. In this case, the
-      <m>\pm</m> symbol represents a range of values, not just two numbers like it does in the quadratic formula.
-    </p>
-    <example>
-      <title>Intervals Using the Plus or Minus sign</title>
-      <p>A study of trout in a certain mountain lake in Idaho states that the average length of the trout population in the lake is
-        <m>21.4 \pm 2.7</m> cm.  Let
-        <m>L</m> represent the average length of a trout in the lake and state an inequality that represents the plus or minus expression given.  Give four values within the range of the plus or minus expression.
-      </p>
-      <p>
-        <md>
-          <mrow>21.4-2.7 \le L \le 21.4+2.7 \amp\amp\amp \text{Subtract and add \(2.7\) to get the ends of the interval.}</mrow>
-          <mrow>18.7 \le L \le 24.1 \amp\amp\amp \text{An inequality that represents the plus or minus expression}\checkmark</mrow>
-          <mrow>19, 21.4, 22, 24 \amp\amp\amp \text{Four values within the interval.}\checkmark</mrow>
-        </md>
-      </p>
-    </example>
-  </subsection>
-  <subsection>
-    <title>Solving for Variables in Formulas</title>
-    <p>***From Fall 2015:PUT IN THE EXPLANATION AND 3C-4 3C-5, 3C-8, 3C-9.  SHOULD THESE BE HERE OR IN 2A?</p>
-
-  <p>Solving formulas is much like solving general linear equations. The only difference is we will have several variables in the problem and we will be attempting to solve for one specific variable. For example, we may have a formula such as <m>A=\pi r^2 + \pi r s</m> (formula for surface area of a right circular cone) and we may be interested in solving for the variable <m>s</m>. This means we want to isolate the <m>s</m> so the equation has <m>s</m> on one side, and everything else on the other. So a solution might look like <m>s = \dfrac{A-\pi r^2}{\pi r}</m>. This second equation gives the same information as the first which means they are algebraically equivalent. However, one is solved for the area <m>A</m>, while the other is solved for <m>s</m> (slant height of the cone).  In this section we will discuss how we can move from the first equation to the second.</p>
-  <p>When solving formulas for a variable we need to focus on the one variable we are trying to solve for, all the others are treated just like numbers. This is shown in the following example. Two parallel problems are shown, the first is a normal one step equation, the second is a formula that we are solving for <m>x</m>:</p>
-  <example>
-    <title>Compare Solving for a Variable in an Equation and a Formula</title>
-<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 74 pg 47-->
-    <p>Solve for <m>x</m>.</p>
-    <p>
-      <md>
-        <mrow>3x\amp =12\amp\amp\amp wx\amp =z\amp\amp\text{In both problems, \(x\) is multiplied by something}</mrow>
-        <mrow>\overline{\,3\,}\amp\phantom{123}\overline{\,3\,}\amp\amp\amp\overline{\,w\,}\amp\phantom{12}\overline{\,w\,}\amp\amp\text{To isolate \(x\) we divide by \(3\) or \(w\)}</mrow>
-        <mrow>x\amp =4\amp\amp\amp x\amp =\dfrac{z}{w}\amp\amp\text{Our Solutions}\checkmark</mrow>
-      </md>
-      </p>
-    </example>
-  <p>We use the same process to solve <m>3x = 12</m> for <m>x</m> as we use to solve <m>wx = z</m> for <m>x</m>.  Because we are solving for <m>x</m> we treat all the other variables the same way we would treat numbers. Thus, to get rid of the multiplication we divided by <m>w</m>. This
-same idea is seen in the following example.</p>
-
-<example>
-  <title>Solve for a Variable in a Formula</title>
-  <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 75 pg 47-->
-      <p>Solve for <m>n</m>.</p>
-      <p>
-        <md>
-          <mrow>m+n\amp =p\amp\amp\text{Solving for \(n\), treat all other variables like numbers}</mrow>
-          <mrow>\underline{-m}\amp\underline{\phantom{123}-m}\amp\amp\text{Subtract \(m\) from both sides}</mrow>
-          <mrow>n\amp =p-m\amp\amp\text{Our Solution}\checkmark</mrow>
-        </md>
-      </p>
-    </example>
-    <p>The next example is a two-step problem:</p>
-    <example>
-  <title>Solve for a Variable in a Formula--2-Step Problem</title>
-<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 78 pg 48-->
-<p>Solve for <m>m</m>.</p>
-<p>
-  <md>
-    <mrow>y\amp =mx+b\amp\amp\text{Solving for \(m\), focus on addition first}</mrow>
-    <mrow>\underline{-b}\amp\phantom{1234567}\underline{-b}\amp\amp\text{Subtract \(b\) from both sides}</mrow>
-    <mrow>y-b\amp =mx\amp\amp\text{The \(m\) is multiplied by \(x\), therfore}</mrow>
-    <mrow>\overline{\,\,\,\,x\,\,\,\,}\amp\phantom{1234}\overline{\,x\,}\amp\amp\text{Divide both sides by \(x\)}</mrow>
-    <mrow>\dfrac{y-b}{x}\amp =m\amp\amp\text{Our Solution}\checkmark</mrow>
-  </md>
-</p>
-</example>
-
-  <p>It is important to note that we know we are done with the problem when the variable we are solving for is isolated or alone on one side of the equation and it does not appear anywhere on the other side of the equation.</p>
-
-  <p>The next example is also a two-step equation (it is the problem we started with at the beginning of the section):</p>
-
-  <example>
-    <title>Formula for Surface Area of a Right Circular Cone</title>
-<!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 79 pg 49-->
-    <p> Solve for <m>s</m>.</p>
-    <p>
-      <md>
-        <mrow>A\amp =\pi r^2 + \pi r s\amp\amp\text{Solving for \(s\), focus on what is added to the term with \(s\)}</mrow>
-        <mrow>\underline{-\pi r^2}\amp\phantom{1}\underline{-\pi r^2}\amp\amp\text{Subtract \(\pi r^2\) from both sides}</mrow>
-        <mrow>A-\pi r^2\amp =\pi r s\amp\amp\text{The \(s\) is multiplied by \(\pi r\), so}</mrow>
-        <mrow>\overline{\phantom{123}\pi r\phantom{123}}\amp\phantom{123}\overline{\,\pi r\,}\amp\amp\text{Divide both sides by \(\pi r\)}</mrow>
-        <mrow>\dfrac{A-\pi r^2}{\pi r}\amp =s\amp\amp\text{Our Solution}\checkmark</mrow>
-      </md>
-    </p>
-  </example>
-  <p>Notice, we cannot reduce the <m>\pi r</m> in the numerator and denominator because of the subtraction in the problem.</p>
-
-</subsection>
   <subsection>
     <title>Averages and Weighted Averages</title>
-    <p>***From Fall 2015: PUT IN THE EXPLANATION AND 3C-1 3C-2, 3C-3,</p>
 
     <p>You are all familiar with computing average grades.  For example, if your scores on <m>2</m> homework assignments are <m>89</m> and <m>85</m>, then the average of the two assignments is <m>\dfrac{89+85}{2}=\dfrac{174}{2}=87</m>.  One application involving averages is to determine the minimum value of a third grade based on a desired minimum average. Consider the following example:</p>
 
@@ -597,14 +553,47 @@ Consider the computation of the following example grade:
     You should earn at least a <m>76.53</m> on your Final Exam if you desire your overall weighted average in <term>MAT 101</term> to be at least <m>80</m>.
   </p>
 </example>
-  </subsection>
-  <subsection>
-    <title>Absolute Value Applications</title>
-    <p>*****NOTE: MOVE THESE OUT OF THIS SECTION. PUT A FEW EXAMPLES IN THE INTERVAL SECTION?*****</p>
-    <p>Recall absolute value is defined as distance from zero.  We now consider some absolute value applications.</p>
-    
-    
-    
+</subsection>
+    <subsection>
+    <title>Intervals in Context</title>
+    <p>In this section we introduce a notation that is used in two different ways.  The correct interpretation of the notation depends on the context in which it occurs.  The notation is called the "plus or minus" sign,
+      <m>\pm,</m> and you may have encountered it when you used the quadratic formula. (Don't worry, the quadratic formula is not part of this section.)
+    </p>
+    <p>The quadratic formula calculates the solutions for an equation like
+      <md>
+        <mrow>2x^2+5x-3=0.</mrow>
+      </md>
+      In this case, the solutions are
+      <md>
+        <mrow>\amp\amp x \amp = \dfrac{-5 \pm \sqrt{5^2 - 4(2)(-3)}}{2(2)}  \amp\amp \text{Simplify the expression}</mrow>
+        <mrow>\amp\amp x \amp = \dfrac{-5 \pm 7}{4} \amp\amp \text{**Add and subtract \(7\)}</mrow>
+        <mrow>x \amp = \dfrac{-5 + 7}{4}\amp\amp \text{ or } x = \dfrac{-5 - 7}{4} \amp\amp \text{  }</mrow>
+        <mrow>x \amp = \dfrac{2}{4}\amp\amp \text{ or } x = \dfrac{-12}{4} \amp\amp \text{Simplify }</mrow>
+        <mrow>x \amp = \dfrac{1}{2}\amp\amp \text{ or } x = -3 \amp\amp \text{ }</mrow>
+      </md>
+      **Here the <m>\pm</m> means add <m>7</m> to <m>-5</m> to calculate one solution and then subtract <m>7</m> from <m>-5</m> to get the second solution.
+    </p>
+    <p>The plus or minus sign is also used to indicate an interval or range of values.  For example, you may have seen reports based on opinion polls where the percentage of the population in favor of a particular idea is estimated.  This estimate is usually given in the form:
+      <m>45 \pm 3</m> percent.  Here, it means that the percentage of people in favor of the idea could range any where from
+      <m>42\%</m> to
+      <m>48\%</m>. It's the interval
+      <m>[42, 48]</m>. In this case, the
+      <m>\pm</m> symbol represents a range of values, not just two numbers like it does in the quadratic formula.
+    </p>
+    <example>
+      <title>Intervals Using the Plus or Minus sign</title>
+      <p>A study of trout in a certain mountain lake in Idaho states that the average length of the trout population in the lake is
+        <m>21.4 \pm 2.7</m> cm.  Let
+        <m>L</m> represent the average length of a trout in the lake and state an inequality that represents the plus or minus expression given.  Give four values within the range of the plus or minus expression.
+      </p>
+      <p>
+        <md>
+          <mrow>21.4-2.7 \le L \le 21.4+2.7 \amp\amp\amp \text{Subtract and add \(2.7\) to get the ends of the interval.}</mrow>
+          <mrow>18.7 \le L \le 24.1 \amp\amp\amp \text{An inequality that represents the plus or minus expression}\checkmark</mrow>
+          <mrow>19, 21.4, 22, 24 \amp\amp\amp \text{Four values within the interval.}\checkmark</mrow>
+        </md>
+      </p>
+    </example>
   </subsection>
 </section>
                      
