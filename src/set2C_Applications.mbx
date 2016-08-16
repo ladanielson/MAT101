@@ -2,11 +2,12 @@
   <title>Applications</title>
   <introduction>
     <ul>
-      <li>Solve number problems by creating and solving a linear equation.</li>
-      <li>Solve practical percent problems.</li>
+      <li>Solve number problems by creating and solving an equation.</li>
       <li>Solve equations using scientific notation and exponent properties.</li>
-      <li>Solve linear formulas for a given variable.</li>
+      <li>Solve formulas for a given variable.</li>
+      <li>Solve practical percent problems.</li>
       <li>Solve weighted average problems.</li>
+      <li>Interpret plus or minus notation for intervals.</li>
     </ul>
   </introduction>
   <subsection>
@@ -68,15 +69,16 @@
           <mrow>\overline{\,5\,}\amp\phantom{123}\overline{\,5\,}\amp\amp \text{Divide both sides by \(5\)}</mrow>
           <mrow>x\amp =41 \amp\amp \text{Our Solution: The number is \(41\).}\checkmark</mrow>
         </md>
+      Note that the key to solving the problem is to create an equation that describes the situation: <m>5x+28=233.</m>  Once the equation is designed, the solution is just a few algebraic steps away.
       </p>
       </example>
       <p>The previous example and problems like it are useful for gaining skill in translating words into equations, but you would probably never encounter such questions in a work place.  Although the next few examples are also fairly artificial, working similar problems will help develop your skills in translating problems into mathematical expressions and this is a necessary skill in many careers.  Boiling down a situation into a mathematical representation allows us to use algebra tools to determine a solution to the problem.</p>
       <example>
         <!--Our own-->
         <title>Translating Words into a Mathematical Expression</title>
-        <p>On Saturday, Juana bought groceries and filled her gas tank.  She spent
+        <p>On Saturday, Brooke bought groceries and filled her gas tank.  She spent
           <m>\$53</m> on groceries, which was
-          <m>\$18</m> less than twice what she spent on gasoline.  How much did Juana spend on filling her tank with gas?
+          <m>\$18</m> less than twice what she spent on gasoline.  How much did Brooke spend on filling her tank with gas?
         </p>
         <p>Since we don't know how much she spent on gasoline, we will use a variable to represent this unknown amount. Sometimes it is helpful to write out the other quantities described in the problem in terms of the variable.
         <md>
@@ -131,10 +133,8 @@
   </subsection>
     <subsection>
     <title>Solving for Variables in Formulas</title>
-    <p>***From Fall 2015:PUT IN THE EXPLANATION AND 3C-4 3C-5, 3C-8, 3C-9.  SHOULD THESE BE HERE OR IN 2A?</p>
-
   <p>Solving formulas is much like solving general linear equations. The only difference is we will have several variables in the problem and we will be attempting to solve for one specific variable. For example, we may have a formula such as <m>A=\pi r^2 + \pi r s</m> (formula for surface area of a right circular cone) and we may be interested in solving for the variable <m>s</m>. This means we want to isolate the <m>s</m> so the equation has <m>s</m> on one side, and everything else on the other. So a solution might look like <m>s = \dfrac{A-\pi r^2}{\pi r}</m>. This second equation gives the same information as the first which means they are algebraically equivalent. However, one is solved for the area <m>A</m>, while the other is solved for <m>s</m> (slant height of the cone).  In this section we will discuss how we can move from the first equation to the second.</p>
-  <p>When solving formulas for a variable we need to focus on the one variable we are trying to solve for, all the others are treated just like numbers. This is shown in the following example. Two parallel problems are shown, the first is a normal one step equation, the second is a formula that we are solving for <m>x</m>:</p>
+  <p>When solving formulas for a variable we need to focus on the one variable we are trying to solve for, all the others are treated just like numbers. This is shown in the following example. Two parallel problems are shown, the first is a one step equation with numbers, the second is a formula that we are solving for <m>x</m>:</p>
   <example>
     <title>Compare Solving for a Variable in an Equation and a Formula</title>
 <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 74 pg 47-->
@@ -162,9 +162,9 @@ same idea is seen in the following example.</p>
         </md>
       </p>
     </example>
-    <p>The next example is a two-step problem:</p>
+    <p>The next example takes more than one step:</p>
     <example>
-  <title>Solve for a Variable in a Formula--2-Step Problem</title>
+  <title>Solve for a Variable in a Formula--Two steps</title>
 <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 78 pg 48-->
 <p>Solve for <m>m</m>.</p>
 <p>
@@ -177,7 +177,6 @@ same idea is seen in the following example.</p>
   </md>
 </p>
 </example>
-
   <p>It is important to note that we know we are done with the problem when the variable we are solving for is isolated or alone on one side of the equation and it does not appear anywhere on the other side of the equation.</p>
   <p>The next example is also a two-step equation (it is the problem we started with at the beginning of the section):</p>
   <example>
@@ -192,9 +191,53 @@ same idea is seen in the following example.</p>
         <mrow>\overline{\phantom{123}\pi r\phantom{123}}\amp\phantom{123}\overline{\,\pi r\,}\amp\amp\text{Divide both sides by \(\pi r\)}</mrow>
         <mrow>\dfrac{A-\pi r^2}{\pi r}\amp =s\amp\amp\text{Our Solution}\checkmark</mrow>
       </md>
+      Notice, we cannot reduce the <m>\pi r</m> in the numerator and denominator because of the subtraction in the numerator.
     </p>
   </example>
-  <p>Notice, we cannot reduce the <m>\pi r</m> in the numerator and denominator because of the subtraction in the problem.</p>
+  <p>Formulas may involve quite a few variables and sometimes quantities represented in a formula might be related. For example, you have two times to keep track of or three lengths.  In these cases, using the same letter for each variable makes it easier to remember what the variable represent.  To keep track of these "same named" quantities, we use <term>subscripts</term> on the variables.  A subscript is a number or letter which is attached to the variable at the lower left of the variable like <m>C_t</m> or <m>C_d.</m> In this case, <m>C_t</m> might represent the cost of a tablet computer and <m>C_d</m> might be the cost of a desktop computer. Both might occur in a formula.</p>
+    <assemblage>
+      <title>WeBWorK: Entering subscripted variables</title>
+      <p>For
+        <m>C_t</m> type:
+        <c>Ct</c>.
+      </p>
+    </assemblage>
+  <example>
+    <title>A More Involved Equation</title>
+  <p>Solve the equation for <m>x_1.</m></p>
+  <p>We will need several steps to determine the solution for this problem.  Focus on simple steps to bring the <m>x_1'</m>s together.
+    <md>
+        <mrow>L + x_1\amp=\dfrac{5(x_2 - x_1)}{k}\amp\amp\text{Solving for \(x_1\), focus on getting \(x_1\) "loose" on the RHS}</mrow>
+        <mrow>k(L + x_1)\amp=k\left(\dfrac{5(x_2 - x_1)}{k}\right)\amp\amp\text{Multiply both sides by \(k\)}</mrow>
+        <mrow>kL + kx_1\amp=5(x_2 - x_1)\amp\amp\text{Distribute the \(k\) on the LHS, simplify the RHS}</mrow>
+        <mrow>kL + kx_1\amp=5x_2 - 5x_1\amp\amp\text{Distribute the \(5\) on the LHS}</mrow>
+        <mrow>\underline{-kL}\phantom{12345}\amp\phantom{12346}\underline{-kL}\amp\amp\text{Subtract \(kL\) from both sides}</mrow>
+        <mrow>kx_1 \amp=5x_2 - 5x_1 - kL\amp\amp\text{Simplify}</mrow>
+        <mrow>\underline{+5x_1}\amp\phantom{123456}\underline{+5x_1}\amp\amp\text{Add \(5x_1\) to both sides}</mrow>
+        <mrow>kx_1 + 5x_1 \amp=5x_2 - kL\amp\amp\text{Simplify:}</mrow>
+        <mrow>x_1(k + 5) \amp=5x_2 - kL\amp\amp\text{Factor out the \(x_1\) on the LHS}</mrow>
+        <mrow>\overline{\phantom{12}k+5\phantom{12}}\amp\phantom{123}\overline{\phantom{12}k+5\phantom{12}}\amp\amp\text{Divide both sides by \(k+5\)}</mrow>
+        <mrow>x_1\amp =\dfrac{5x_2 - kL}{k+5}\amp\amp\text{Our Solution}\checkmark</mrow>
+      </md>
+  </p>
+  </example>
+  <example>
+    <title>When the Variable is in the Denominator</title>
+    <p>Solve for <m>z</m>.</p>
+    <p>When working with variables in fractions, you should "clear" the denominators if doing so makes the problem easier to solve.
+      <md>
+        <mrow>\dfrac{2}{z}\amp=\dfrac{5}{v} + \dfrac{x}{z}\amp\amp\text{Solving for \(z\)}</mrow>
+        <mrow>vz\cdot \dfrac{2}{z}\amp=vz\cdot \left(\dfrac{5}{v}+\dfrac{x}{z}\right)\amp\amp\text{Multiply both sides by \(vz\) to clear the denominators}</mrow>
+        <mrow>2v\amp= vz\left(\dfrac{5}{v}\right) + vz\left(\dfrac{x}{z}\right)\amp\amp\text{Simplify the LHS, distribute the \(vz\) on the RHS}</mrow>
+         <mrow>2v\amp= 5z+xv\amp\amp\text{Simplify the RHS:}</mrow>
+        <mrow>\underline{-xv}\amp\phantom{12345}\underline{-xv}\amp\amp\text{Subtract \(xv\) from both sides}</mrow>
+        <mrow>2v-xv \amp= 5z\amp\amp\text{Simplify:}</mrow>
+        <mrow>\overline{\phantom{123}5\phantom{123}}\amp\phantom{123}\overline{\,5\,}\amp\amp\text{Divide both sides by \(5\)}</mrow>
+        <mrow>\dfrac{2v-xv}{5} \amp= z\amp\amp\text{Rewrite with \(z\) on the LHS}</mrow>
+        <mrow>z\amp =\dfrac{2v-xv}{5}\amp\amp\text{Our Solution}\checkmark</mrow>
+      </md>
+  </p>
+  </example>
   </subsection>
   <subsection>
     <title>Percent Problems</title>
@@ -225,18 +268,23 @@ same idea is seen in the following example.</p>
     </p>
     <p>Let's examine each of the three types of percent problems.</p>
 
-        <example>
-          <!-- This one is ours!  For WeBWorK-->
-          <title>1. Determine a certain percent of a given number</title>
-          <p>
+    <example>
+    <!-- This one is ours!  For WeBWorK-->
+    <title>1. Determine a certain percent of a given number</title>
+      <p>What number is <m>25\%</m> of <m>640</m>?</p>
+      <p>Translate the words into an equation. Let
+      <ul>
+        <li><m>x=</m> the <term>unknown</term> number</li>
+      </ul>
           <md>
-              <mrow>\text{What number is \(25\%\) of \(640\)?} \amp\amp\amp \text{Translate the words into an equation}</mrow>
-              <mrow>\amp\amp\amp \text{\(x\) represents "the number"}</mrow>
-              <mrow>\amp\amp\amp \text{\(25\%\) of \(640\) is \(.25 \cdot 640\)}</mrow>
-              <mrow>x\amp =.25\cdot 640 \amp\amp \text{\(x\) is equal to \(25\%\) of \(640\)}</mrow>
+              <mrow>x\amp =\amp\amp \text{Translate "What number is"}</mrow>
+              <mrow> \amp .25\cdot 640\amp\amp \text{Translate: \(25\%\) of \(640\)}</mrow>
+              <mrow>x\amp =.25\cdot 640 \amp\amp \text{Equation: \(x\) is equal to \(25\%\) of \(640\)}</mrow>
               <mrow>\amp\amp\amp \text{Multiply}</mrow>
-              <mrow>x\amp =160 \amp \text{Our Solution}\checkmark</mrow>
+              <mrow>x\amp =160 \amp\amp \text{Our Solution}\checkmark</mrow>
             </md>
+        </p>
+        <p>In this problem, the equation is somewhat of artificial in that it immediately yields the solution.
         </p>
         </example>
 
@@ -265,7 +313,7 @@ same idea is seen in the following example.</p>
   -->
     <p>Now we'll address our second item on the list:</p>
     <example>
-      <title>Determine a percent given two numbers</title>
+      <title>2. Determine a percent given two numbers</title>
         <!-- Cite http://mathrev.redwoods.edu/PreAlgText/chapter7.pdf  Example 4 pg 513-->
       <p><m>15</m> is what percent of <m>50</m>?</p>
       <p>Translate the words into an equation. Let
@@ -275,12 +323,12 @@ same idea is seen in the following example.</p>
         <md>
           <mrow>15\amp = \amp\amp \text{Translation of }``15\text{ is"}</mrow>
           <mrow>x\amp\cdot 50 \amp\amp \text{Translation of }``\text{what percent of \(50\)"}</mrow>
-          <mrow>15\amp = x\cdot 50\amp\amp\text{Solve our equation for
-          \(x\): Divide both sides by
+          <mrow>15\amp = x\cdot 50\amp\amp\text{Set-up our equation and solve for
+          \(x\)}</mrow>
+          <mrow>\dfrac{15}{50}\amp =\dfrac{x\cdot 50}{50} \amp\amp \text{Divide both sides by
           \(50\)}</mrow>
-          <mrow>\dfrac{15}{50}\amp =\dfrac{x\cdot 50}{50} \amp\amp \text{Simplify the RHS:
-          \(\dfrac{50}{50}=1\)}</mrow>
-          <mrow>\dfrac{15}{50}\amp =x \amp\amp \text{Divide
+          <mrow>\dfrac{15}{50}\amp =x \amp\amp \text{Simplify:
+          \(\dfrac{50}{50}=1\) and
           \(\dfrac{15}{50}=0.3\)}</mrow>
           <mrow>0.3\amp = x \amp\amp \text{Change
           \(0.3\) to a percent.}</mrow>
@@ -353,7 +401,7 @@ same idea is seen in the following example.</p>
           </example>
       -->
       <example>
-        <title>Determine a number from a given percent of another number</title>
+        <title>3. Determine a number from a given percent of another number</title>
           <!--This is ours-->
           <p><m>37.5\%</m> of what number is <m>57</m>?</p>
           <p>Translate the words into an equation. Let
@@ -362,8 +410,8 @@ same idea is seen in the following example.</p>
           </ul>  
           Recall <term>of</term> translates to times, and <term>is</term> translates to equals.
           <md>
-            <mrow>0.375\ cdot x \amp\amp\amp \text{Calculate \(37.5\%\) of the number}</mrow>
-            <mrow>0.375 \cdot x\amp =57\amp\amp \text{Set up the equation}</mrow>
+            <mrow>0.375\cdot x \amp\amp\amp \text{Translate: \(37.5\%\) of the number}</mrow>
+            <mrow>0.375\cdot x\amp =57\amp\amp \text{Set up the equation}</mrow>
             <mrow>\dfrac{0.375}{0.375}\cdot x\amp =\dfrac{57}{0.375}\amp\amp \text{Divide both sides by \(0.375\) and simplify; \(\dfrac{0.375}{0.375}=1\) and \(\dfrac{57}{0.375}=152\)}</mrow>
             <mrow>x\amp =152 \amp\amp \text{Our Solution}\checkmark</mrow>
           </md>
@@ -419,11 +467,11 @@ same idea is seen in the following example.</p>
         </ul>
         <md>
           <mrow>1.30\amp\amp\amp\text{The decimal equivalent of \(130\%\)}</mrow>
-          <mrow>1.30\cdot p \amp\amp\amp 130\%\text{ of } his old pay\text{: this is the salary increase}</mrow>
-          <mrow>p + 1.30\cdot p \amp\amp\amp \text{Add the increase to his old pay for his new salary}</mrow>
-          <mrow>p + 1.30\cdot p\amp =4000 \amp\amp \text{Set up the equation: both sides represent the new salary}</mrow>
-          <mrow>2.30\cdot p\amp =4000 \amp\amp \text{Combine like terms on the LHS, remember, \(p = 1p\)}</mrow>
-          <mrow>2.30\cdot p\amp =4000 \amp\amp \text{Divide both sides by \(2.30\)}</mrow>
+          <mrow>1.30\cdot p \amp\amp\amp 130\%\text{ of his old pay (the salary increase)}</mrow>
+          <mrow>p + 1.30 p \amp\amp\amp \text{Add the increase to his old pay for his new salary}</mrow>
+          <mrow>p + 1.30 p\amp =4000 \amp\amp \text{Set up the equation: both sides represent the new salary}</mrow>
+          <mrow>2.30 p\amp =4000 \amp\amp \text{Combine like terms on the LHS, remember, \(p = 1p\)}</mrow>
+          <mrow>2.30 p\amp =4000 \amp\amp \text{Divide both sides by \(2.30\)}</mrow>
           <mrow>p\amp= \dfrac{4000}{2.30} \amp\amp \text{Simplify}</mrow>
           <mrow>p\amp= 1739.1304 \amp\amp \text{Our answer must be in terms of dollars and cents}</mrow>
           <mrow>\text{Paul's internship pay was } \amp \$1,739.13 \amp\amp \text{Our Solution}\checkmark</mrow>
@@ -442,7 +490,7 @@ same idea is seen in the following example.</p>
         </ul>
         <md>
           <mrow>0.085\amp\amp\amp\text{The decimal equivalent of \(8.5\%\)}</mrow>
-          <mrow>0.085\cdot x \amp\amp\amp 8.5\%\text{ of } the tool cost\text{: this is the shipping/handling charge}</mrow>
+          <mrow>0.085\cdot x \amp\amp\amp 8.5\%\text{ of the tool cost (the shipping/handling charge)}</mrow>
           <mrow>x\amp = 532.45 - 0.085 x\amp\amp \text{Subtract the extra charges from the total to get the tool cost}</mrow>
           <mrow>x + 0.085 x\amp =532.45 \amp\amp \text{Add \(0.085x\) to both sides to collect like terms}</mrow>
           <mrow>1.085 x\amp=532.45 \amp\amp \text{Simplify the RHS by adding \(1x\) and \(0.085x\)}</mrow>
@@ -453,7 +501,7 @@ same idea is seen in the following example.</p>
       </p>
       </example>
       <p>
-        Note that the problems in WeBWorK will have different settings, but similar methods to setting up an equation to solve the problem. Also notice that we could have set up the equation for the past example as <m>x + 0.085 x =532.45</m> to start with if since it is equivalent to <m>x = 532.45 - 0.085 x.</m> As long as your equation describes a valid relationship from the problem, you will be able to use it to calculate the solution to the problem.
+        Note that the problems in WeBWorK will have different settings, but similar methods for setting up an equation to solve the problem. Also notice that we could have set up the equation for the past example as <m>x + 0.085 x =532.45</m> to start with if since it is equivalent to <m>x = 532.45 - 0.085 x.</m> As long as your equation describes a valid relationship from the problem, you will be able to use it to calculate the solution to the problem.
       </p>
 <!--    </subsection>
     <subsection>
@@ -501,7 +549,8 @@ same idea is seen in the following example.</p>
           <mrow>\amp\dfrac{89+85+x}{3}\amp\amp\text{Formula for the average of the \(3\) scores}</mrow>
           <mrow>\dfrac{89+85+x}{3}\amp \geq 90\amp\amp\text{Compare the average of the \(3\) scores to the desired minimum}</mrow>
           <mrow>\dfrac{174+x}{3}\amp \geq 90\amp\amp\text{Simplified addition}</mrow>
-          <mrow>174+x\amp\geq 270\amp\amp\text{Multiplied both sides by \(3\)}</mrow>
+          <mrow>3\cdot\dfrac{174+x}{3}\amp\geq 3\cdot 270\amp\amp\text{Multiply both sides by \(3\)}</mrow>
+          <mrow>174+x\amp\geq 270\amp\amp\text{Simplify}</mrow>
           <mrow>\underline{-174\phantom{1234}}\amp\underline{\phantom{1}-174}\amp\amp\text{Subtract \(174\) from both sides}</mrow>
           <mrow>x\amp \geq 96\amp\amp\text{Our Solution:}</mrow>
         </md>
@@ -520,16 +569,17 @@ Consider the computation of the following example grade:
 <example>
   <title>Computed Weighted Average Grade</title>
 <!-- Our own-->
-  <p>Suppose your <term>MAT 101</term> final course grades are as follows: Attendance and Participation <m>=95</m>, Unit Exams <m>=83</m> and Final Exam <m>=72</m>.  Compute your overall weighted average in <term>MAT 101</term>.</p>
+  <p>Suppose your <term>MAT-101</term> final course grades are as follows: Attendance and Participation <m>=95</m>, Unit Exams <m>=83</m> and Final Exam <m>=72</m>.  Compute your overall weighted average in <term>MAT 101</term>.</p>
   <p>
     <md>
-      <mrow>95\left(\dfrac{5}{100} \right) + 83\left(\dfrac{20}{100} \right) + 72\left(\dfrac{75}{100} \right)\amp\amp\amp\text{Multiply each grade by its corresponding weight}</mrow>
-      <mrow>95(.05)+ 83(.20) + 72(.75)\amp\amp\amp\text{Compute the corresponding decimal weights}</mrow>
+      <!--<mrow>95\left(\dfrac{5}{100} \right) + 83\left(\dfrac{20}{100} \right) + 72\left(\dfrac{75}{100} \right)\amp\amp\amp\text{Multiply each grade by its corresponding weight}</mrow>
+      <mrow>95(.05)+ 83(.20) + 72(.75)\amp\amp\amp\text{Compute the corresponding decimal weights}</mrow> -->
+      <mrow>95(.05)+ 83(.20) + 72(.75)\amp\amp\amp\text{Multiply each grade by its corresponding weight}</mrow>
       <mrow>\amp\amp\amp PE\underline{M}DAS:\text{ Multiplication before Addition}</mrow>
       <mrow>4.75+16.6+54\amp\amp\amp PEMD\underline{A}S:\text{ Add}</mrow>
       <mrow>75.35\amp\amp\amp\text{Our Solution:}</mrow>
     </md>
-    Your overall weighted average in <term>MAT 101</term> would be <m>75.35\%</m>.  The <term>Final Exam</term> is given the highest weight so has the greatest influence on the final weighted average.<m>\checkmark</m>
+    Your overall weighted average in <term>MAT-101</term> would be <m>75.35\%</m>.  The <term>Final Exam</term> is given the highest weight so has the greatest influence on the final weighted average.<m>\checkmark</m>
   </p>
 </example>
 
@@ -544,13 +594,13 @@ Consider the computation of the following example grade:
     <md>
       <mrow>100(.05) + 88(.20) + x(.75)\amp\amp\amp\text{Formula for the average of the \(3\) scores}</mrow>
       <mrow>100(.05) + 88(.20) + x(.75) \amp\geq 80\amp\amp\text{Compare the average of the \(3\) scores to the desired minimum}</mrow>
-      <mrow>5 + 17.6 + .75x \amp \geq 80\amp\amp\text{Solve for \(x\): Multiplied numbers first}</mrow>
-      <mrow>22.6+.75x\amp\geq 80\amp\amp\text{Added}</mrow>
+      <mrow>5 + 17.6 + .75x \amp \geq 80\amp\amp\text{Solve for \(x\): Multiply numbers first}</mrow>
+      <mrow>22.6+.75x\amp\geq 80\amp\amp\text{Add like terms}</mrow>
       <mrow>\underline{-22.6\phantom{123456}}\amp\underline{\phantom{1}-22.6}\amp\amp\text{Subtract \(22.6\) from both sides}</mrow>
       <mrow>.75x\amp\geq 57.4\amp\amp\text{Divide both sides by \(.75\)}</mrow>
       <mrow>x\amp \geq 76.53\amp\amp\text{Our Solution:}</mrow>
     </md>
-    You should earn at least a <m>76.53</m> on your Final Exam if you desire your overall weighted average in <term>MAT 101</term> to be at least <m>80</m>.
+    You should earn at least a <m>76.53</m> on your Final Exam if you desire your overall weighted average in <term>MAT-101</term> to be at least <m>80</m>.
   </p>
 </example>
 </subsection>
@@ -566,7 +616,7 @@ Consider the computation of the following example grade:
       In this case, the solutions are
       <md>
         <mrow>\amp\amp x \amp = \dfrac{-5 \pm \sqrt{5^2 - 4(2)(-3)}}{2(2)}  \amp\amp \text{Simplify the expression}</mrow>
-        <mrow>\amp\amp x \amp = \dfrac{-5 \pm 7}{4} \amp\amp \text{**Add and subtract \(7\)}</mrow>
+        <mrow>\amp\amp x \amp = \dfrac{-5 \pm 7}{4} \amp\amp \text{Add and subtract \(7\) from \(-5\)**}</mrow>
         <mrow>x \amp = \dfrac{-5 + 7}{4}\amp\amp \text{ or } x = \dfrac{-5 - 7}{4} \amp\amp \text{  }</mrow>
         <mrow>x \amp = \dfrac{2}{4}\amp\amp \text{ or } x = \dfrac{-12}{4} \amp\amp \text{Simplify }</mrow>
         <mrow>x \amp = \dfrac{1}{2}\amp\amp \text{ or } x = -3 \amp\amp \text{ }</mrow>
@@ -577,7 +627,9 @@ Consider the computation of the following example grade:
       <m>45 \pm 3</m> percent.  Here, it means that the percentage of people in favor of the idea could range any where from
       <m>42\%</m> to
       <m>48\%</m>. It's the interval
-      <m>[42, 48]</m>. In this case, the
+      <m>[42, 48]</m> where the ends of the interval are calculated by 
+      <m>42=45-3</m> and 
+      <m>48=45+3.</m> In this case, the
       <m>\pm</m> symbol represents a range of values, not just two numbers like it does in the quadratic formula.
     </p>
     <example>
@@ -588,9 +640,9 @@ Consider the computation of the following example grade:
       </p>
       <p>
         <md>
-          <mrow>21.4-2.7 \le L \le 21.4+2.7 \amp\amp\amp \text{Subtract and add \(2.7\) to get the ends of the interval.}</mrow>
-          <mrow>18.7 \le L \le 24.1 \amp\amp\amp \text{An inequality that represents the plus or minus expression}\checkmark</mrow>
-          <mrow>19, 21.4, 22, 24 \amp\amp\amp \text{Four values within the interval.}\checkmark</mrow>
+          <mrow>21.4-2.7 \amp\le L \le 21.4+2.7 \amp\amp \text{Subtract and add \(2.7\) to get the ends of the interval}</mrow>
+          <mrow>18.7 \amp\le L \le 24.1 \amp\amp \text{An inequality that represents the plus or minus expression}\checkmark</mrow>
+          <mrow>\amp 19, 21.4, 22, 24\amp\amp \text{Four values within the interval}\checkmark</mrow>
         </md>
       </p>
     </example>
