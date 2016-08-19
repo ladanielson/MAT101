@@ -316,12 +316,12 @@
             </example>
 
             <p>The previous <xref ref="example-warning" autoname="yes" /> illustrates that if the same problem is done two different ways we will arrive at two different solutions. However, only one method can be correct. It turns out the second method, with solution
-              <m>17</m>, is the correct method. The order of operations ends with the most basic of operations, addition (or subtraction). Before addition is completed we must do repeated addition or multiplication (or division). Before multiplication is completed we must do repeated multiplication or exponents. When we want to do something out of order and make it come first we will put it in parenthesis (or grouping symbols). This list then is our order of operations we will use to simplify expressions.
+              <m>17</m>, is the correct method. The order of operations ends with the most basic of operations, addition (or subtraction). Before addition is completed we must do repeated addition or multiplication (or division). Before multiplication is completed we must do repeated multiplication or exponents. When we want to do something out of order and make it come first we will put it in parentheses (or grouping symbols). This list then is our order of operations we will use to simplify expressions.
             <table>
               <tabular halign="center">
                   <!--  -->
                 <row bottom="minor"><cell>Order of Operations:</cell></row>
-                <row><cell>Parenthesis (Grouping)</cell></row>
+                <row><cell>parentheses (Grouping)</cell></row>
                 <row><cell>Exponents</cell></row>
                 <row><cell>Multiply and Divide (Left to Right)</cell></row>
                 <row><cell>Add and Subtract (Left to Right)</cell></row>
@@ -355,7 +355,7 @@
                 <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 25 pg 19-->
               <p>
               <md>
-                <mrow>\text{Compute }2+3(\underbrace{9 - 4})^2 \amp\amp\amp \text{Parenthesis first (subtract)}</mrow>
+                <mrow>\text{Compute }2+3(\underbrace{9 - 4})^2 \amp\amp\amp \text{parentheses first (subtract)}</mrow>
                 <mrow>2+3\underbrace{(5)^2} \amp\amp\amp \text{Exponents}</mrow>
                 <mrow>2+ \underbrace{3(25)} \amp\amp\amp \text{Multiply}</mrow>
                 <mrow>\underbrace{2 + 75} \amp\amp\amp \text{Add}</mrow>
@@ -377,21 +377,21 @@
             </example>
             <p>In the previous <xref ref="example-order-of-operations" autoname="yes" />, if we had multiplied first, five would have been  the answer which is incorrect.</p>
 
-            <p>If there are several parenthesis in a problem we will start with the inner most parenthesis and work our way out. Inside each parenthesis we simplify using the order of operations as well. To make it easier to know which parenthesis goes with which parenthesis, different types of parenthesis will be used such as { } and [ ] and ( ), these parenthesis all mean the same thing, they are parenthesis and must be evaluated first.</p>
+            <p>If there are several parentheses in a problem we will start with the inner most parentheses and work our way out. Inside each parentheses we simplify using the order of operations as well. To make it easier to know which parentheses goes with which parentheses, different types of parentheses will be used such as { } and [ ] and ( ), these parentheses all mean the same thing, they are parentheses and must be evaluated first.</p>
 
             <example>
               <title>Order of Operations</title>
               <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 27 pg 19-->
               <p>
               <md>
-                <mrow>\text{Compute }2\{8^2 - 7[32 - 4(\underbrace{3^2} + 1)]( - 1)\} \amp\amp\amp \text{Inner most parenthesis, exponents first}</mrow>
-                <mrow>2\{8^2 - 7[32 - 4(\underbrace{9 + 1})]( - 1)\} \amp\amp\amp \text{Add inside those parenthesis}</mrow>
-                <mrow>2\{8^2 - 7[32 -\underbrace{ 4(10)}]( - 1)\} \amp\amp\amp \text{Multiply inside inner most parenthesis}</mrow>
-                <mrow>2\{8^2 - 7[\underbrace{32 - 40}]( - 1)\} \amp\amp\amp \text{Subtract inside those parenthesis}</mrow>
+                <mrow>\text{Compute }2\{8^2 - 7[32 - 4(\underbrace{3^2} + 1)]( - 1)\} \amp\amp\amp \text{Inner most parentheses, exponents first}</mrow>
+                <mrow>2\{8^2 - 7[32 - 4(\underbrace{9 + 1})]( - 1)\} \amp\amp\amp \text{Add inside those parentheses}</mrow>
+                <mrow>2\{8^2 - 7[32 -\underbrace{ 4(10)}]( - 1)\} \amp\amp\amp \text{Multiply inside inner most parentheses}</mrow>
+                <mrow>2\{8^2 - 7[\underbrace{32 - 40}]( - 1)\} \amp\amp\amp \text{Subtract inside those parentheses}</mrow>
                 <mrow>2\{\underbrace{8^2} - 7[ - 8]( - 1)\} \amp\amp\amp \text{Exponents next}</mrow>
                 <mrow>2\{64\underbrace{- 7[ - 8]}( - 1)\} \amp\amp\amp \text{Multiply left to right, sign with the number}</mrow>
                 <mrow>2\{64 + \underbrace{56( - 1)}\} \amp\amp\amp \text{Finish multiplying}</mrow>
-                <mrow>2\{\underbrace{64 - 56}\} \amp\amp\amp \text{Subtract inside parenthesis}</mrow>
+                <mrow>2\{\underbrace{64 - 56}\} \amp\amp\amp \text{Subtract inside parentheses}</mrow>
                 <mrow>\underbrace{2\{8\}} \amp\amp\amp \text{Multiply}</mrow>
                 <mrow>16 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
               </md>
@@ -399,7 +399,7 @@
             </example>
 
             <p>As the above example illustrates, it can take several steps to complete a problem. The key to successfully solve order of operations problems is to take the time to show your work and do one step at a time. This will reduce the chance of making a mistake along the way.</p>
-            <p>There are several types of grouping symbols that can be used besides parenthesis. One type is a fraction bar. If we have a fraction, the entire numerator and the entire denominator must be evaluated before we reduce the fraction. In these cases we can simplify in both the numerator and denominator at the same time.</p>
+            <p>There are several types of grouping symbols that can be used besides parentheses. One type is a fraction bar. If we have a fraction, the entire numerator and the entire denominator must be evaluated before we reduce the fraction. In these cases we can simplify in both the numerator and denominator at the same time.</p>
 
             <example>
               <title>Order of Operations: Fraction</title>
@@ -415,7 +415,7 @@
             </p>
             </example>
 
-            <p>Another type of grouping symbol that also has an operation  with  it,  absolute value. When we have absolute value we will evaluate everything inside the absolute value, just as if it were a normal parenthesis. Then once the inside is completed we will take the absolute value, or distance from zero, to make the number positive.</p>
+            <p>Another type of grouping symbol that also has an operation  with  it,  absolute value. When we have absolute value we will evaluate everything inside the absolute value, just as if it were a normal set of parentheses. Then once the inside is completed we will take the absolute value, or distance from zero, to make the number positive.</p>
 
             <example>
               <title>Order of Operations: Absolute Value</title>
@@ -456,16 +456,16 @@
               <p>
               <md>
                 <mrow>\text{\(p(q +6)\) when \(p=3\) and \(q=5\)} \amp\amp\amp \text{Replace \(p\) with \(3\) and \(q\) with \(5\)}</mrow>
-                <mrow>(3)((5)+6) \amp\amp\amp \text{Evaluate parenthesis}</mrow>
+                <mrow>(3)((5)+6) \amp\amp\amp \text{Evaluate parentheses}</mrow>
                 <mrow>(3)(11)\amp\amp\amp \text{Multiply}</mrow>
                 <mrow>33 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
               </md>
             </p>
             </example>
 
-            <p>Whenever a variable is replaced with something, we will put the new number inside a set of parenthesis. Notice the
+            <p>Whenever a variable is replaced with something, we will put the new number inside a set of parentheses. Notice the
               <m>3</m> and
-              <m>5</m> in the previous <xref ref="example-evaluate-expression" autoname="yes" /> are in parenthesis. This is to preserve operations that are sometimes lost in a simple replacement. Sometimes the parenthesis won't make a difference, but it is a good habit to always use them to prevent problems later.
+              <m>5</m> in the previous <xref ref="example-evaluate-expression" autoname="yes" /> are in parentheses. This is to preserve operations that are sometimes lost in a simple replacement. Sometimes the parentheses won't make a difference, but it is a good habit to always use them to prevent problems later.
             </p>
 
             <example>
@@ -474,7 +474,7 @@
               <p>
               <md>
                 <mrow>\text{\(x+zx(3-z)\left(\dfrac{x}{3} \right)\) when \(x=-6\) and \(z =-2\)} \amp\amp\amp \text{Replace all \(x\)'s with \(-6\) and \(z\)'s with \(-2\)}</mrow>
-                <mrow>(-6)+(-2)(-6)(3-(-2))\left(\dfrac{(-6)}{3} \right) \amp\amp\amp \text{Evaluate parenthesis}</mrow>
+                <mrow>(-6)+(-2)(-6)(3-(-2))\left(\dfrac{(-6)}{3} \right) \amp\amp\amp \text{Evaluate within parentheses}</mrow>
                 <mrow>-6+(-2)(-6)(5)(-2) \amp\amp\amp \text{Multiply left to right}</mrow>
                 <mrow>-6+(12)(5)(-2) \amp\amp\amp \text{Multiply left to right}</mrow>
                 <mrow>-6+(60)(-2) \amp\amp\amp \text{Multiply}</mrow>
@@ -484,7 +484,7 @@
             </p>
             </example>
             <p>It will be more common in our study of algebra that we do not know the value of the variables. In this case, we will have to simplify what we can and leave the variables in our final solution. One way we can simplify expressions is to combine like terms. Like terms are terms where the variables match exactly (exponents included). Examples of like terms would be
-              <m>3xy></m> and
+              <m>3xy</m> and
               <m>-7xy</m> or
               <m>3a^2b</m> and
               <m>8a^2b</m> or
@@ -521,7 +521,7 @@
                 </assemblage>
             <p>As we combine like terms we need to interpret subtraction signs as part of the following term. This means if we see a subtraction sign, we treat the following term like a negative term, the sign always stays with the term.</p>
 
-            <p>A final method to simplify is known as distributing. Often as we work with problems there will be a set of parenthesis that make solving a problem difficult, if not impossible. To get rid of these unwanted parenthesis we have the <term>distributive property</term>. Using this property we multiply the number in front of the parenthesis by each term inside of the parenthesis.
+            <p>A final method to simplify is known as distributing. Often as we work with problems there will be a set of parentheses that make solving a problem difficult, if not impossible. To get rid of these unwanted parentheses we have the <term>distributive property</term>. Using this property we multiply the number in front of the parentheses by each term inside of the parentheses.
             </p>
 
             <mdn>
@@ -557,10 +557,10 @@
             <p>In the previous <xref ref="example-distribute-a-negative" autoname="yes" /> we again use the fact that the sign goes with the number. This means we treat the
               <m>-6</m> as a negative number, this gives
               <m>(-7)(-6) = 42</m>, a positive number. The most common error in distributing is a sign error.
-              <alert>be very careful with your signs!</alert>
+              <alert>Be very careful with your signs!</alert>
             </p>
 
-            <p>It is possible to distribute just a negative through parenthesis. If we have a negative in front of parenthesis we can think of it like a
+            <p>It is possible to distribute just a negative through parentheses. If we have a negative in front of parentheses we can think of it like a
               <m>-1</m> in front and distribute the
               <m>-1</m> through. This is shown in the following example.
             </p>
@@ -577,7 +577,7 @@
             </p>
             </example>
 
-            <p>Distributing through parenthesis and combining like terms can be combined into one problem. Order of operations tells us to multiply (distribute) first then add or subtract last (combine like terms). Thus we do each problem in two steps, distribute then combine.</p>
+            <p>Distributing through parentheses and combining like terms can be combined into one problem. Order of operations tells us to multiply (distribute) first then add or subtract last (combine like terms). Thus we do each problem in two steps, distribute then combine.</p>
 
             <example>
               <title>Simplify</title>
@@ -615,7 +615,7 @@
                 <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 39 pg 24-->
               </p>
               <md>
-                <mrow>2(5x-8)-6(4x+3) \amp\amp\amp \text{Distribute \(2\) into first parenthesis and \(-6\) into second}</mrow>
+                <mrow>2(5x-8)-6(4x+3) \amp\amp\amp \text{Distribute \(2\) into first parentheses and \(-6\) into second}</mrow>
                 <mrow>10x-16-24x-18 \amp\amp\amp \text{Combine like terms \(10x-24x\) and \(-16-18\)}</mrow>
                 <mrow>-14x-34 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
               </md>
@@ -627,7 +627,7 @@
               </p>
               <md>
                 <mrow>4(3x-8)-(2x-7) \amp\amp\amp \text{Negative (subtract) in middle can be thought of as \(-1\)}</mrow>
-                <mrow>4(3x-8)-1(2x-7) \amp\amp\amp \text{Distribute \(4\) into first parenthesis and \(-1\) into second}</mrow>
+                <mrow>4(3x-8)-1(2x-7) \amp\amp\amp \text{Distribute \(4\) into first parentheses and \(-1\) into second}</mrow>
                 <mrow>12x-32-2x+7 \amp\amp\amp \text{Combine like terms \(12x-2x\) and \(-32+7\)}</mrow>
                 <mrow>10x-25 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
               </md>

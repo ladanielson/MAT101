@@ -1,4 +1,4 @@
-<section xml:id="section-1B-precents-and-estimation">
+<section xml:id="section-1B-percents-and-estimation">
   <title>Percents and Estimation</title>
   <introduction>
     <ul>
@@ -95,7 +95,7 @@
       <assemblage>
         <title>WeBWorK: Entering Percents</title>
         <p>Type
-          <c>7.25%</c>for <m>7.25\%</m>.
+          <c>7.25%</c> for <m>7.25\%</m>.
         </p>
       </assemblage>
       <example>
@@ -232,10 +232,10 @@
             <p>Round <m>6.7291</m> to the nearest tenth.</p>
             <p>Find the tenths place: one place after the decimal.
             <md>
-              <mrow>6.\color{red}{7}291 \amp\amp\amp \color{red}{7} \text{ is in the tenths place. The}</mrow>
-              <mrow>\amp\amp\amp \color{blue}{\text{next}}\text{ digit is the trigger.}
+              <mrow>6.\color{red}{7}\color{black}{291} \amp\amp\amp \color{red}{7}\color{black}{} \text{ is in the tenths place. The}</mrow>
+              <mrow>\amp\amp\amp \color{blue}{\text{next}}\color{black}{}\text{ digit is the trigger.}
               </mrow>
-              <mrow>6.\color{red}{7}\color{blue}{2}91 \amp\amp\amp \text{Since the trigger \(\color{blue}{2}\) is less than \(5\), we do not round up.}</mrow>
+              <mrow>6.\color{red}{7}\color{blue}{2}\color{black}{91} \amp\amp\amp \text{Since the trigger \(\color{blue}{2}\color{black}{}\) is less than \(5\), we do not round up.}</mrow>
               <mrow>6.7 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
             </md>
           </p>
@@ -246,10 +246,10 @@
             <p>Round <m>6.7291</m> to the nearest hundredth.</p>
             <p>Find the hundredths place: two places after the decimal.
             <md>
-              <mrow>6.7\color{red}{2}91 \amp\amp\amp \color{red}{2}\text{ is in the hundredths place. The}</mrow>
-              <mrow>\amp\amp\amp \color{blue}{\text{next}}\text{ digit is the trigger.}
+              <mrow>6.7\color{red}{2}\color{black}{91} \amp\amp\amp \color{red}{2}\color{black}{}\text{ is in the hundredths place. The}</mrow>
+              <mrow>\amp\amp\amp \color{blue}{\text{next}}\color{black}{}\text{ digit is the trigger.}
               </mrow>
-              <mrow>6.7\color{red}{2}\color{blue}{9}1 \amp\amp\amp \text{Since the trigger \(\color{blue}{9}\) is greater than \(5\), we round up.}</mrow>
+              <mrow>6.7\color{red}{2}\color{blue}{9}\color{black}{1} \amp\amp\amp \text{Since the trigger \(\color{blue}{9}\color{black}{}\) is greater than \(5\), we round up.}</mrow>
               <mrow>6.73 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
             </md>
           </p>
@@ -264,8 +264,8 @@
             <p>
             <md>
               <mrow>5.924\times 6.675 \amp\amp\amp \text{Identify the triggers for each value}</mrow>
-              <mrow>5.\color{red}{9}\color{blue}{2}4\times 6.\color{red}{6}\color{blue}{7}5 \amp\amp\amp \text{ The trigger \(\color{blue}{2}\) is less than \(5\): round down,}</mrow>
-              <mrow>\amp\amp\amp\text{the trigger \(\color{blue}{7}\) is greater than \(5\): round up}</mrow>
+              <mrow>5.\color{red}{9}\color{blue}{2}\color{black}{4}\times 6.\color{red}{6}\color{blue}{7}\color{black}{5} \amp\amp\amp \text{ The trigger \(\color{blue}{2}\color{black}{}\) is less than \(5\): round down,}</mrow>
+              <mrow>\amp\amp\amp\text{the trigger \(\color{blue}{7}\color{black}{}\) is greater than \(5\): round up}</mrow>
               <mrow>5.9\times 6.7 \amp\amp\amp \text{Multiply}</mrow>
               <mrow>39.53 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
             </md>
