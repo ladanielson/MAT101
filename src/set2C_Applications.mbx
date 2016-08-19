@@ -3,7 +3,7 @@
   <introduction>
     <ul>
       <li>Solve number problems by creating and solving an equation.</li>
-      <li>Solve equations using scientific notation and exponent properties.</li>
+      <li>Solve problems using scientific notation and exponent properties.</li>
       <li>Solve formulas for a given variable.</li>
       <li>Solve practical percent problems.</li>
       <li>Solve weighted average problems.</li>
@@ -76,9 +76,9 @@
       <example>
         <!--Our own-->
         <title>Translating Words into a Mathematical Expression</title>
-        <p>On Saturday, Brooke bought groceries and filled her gas tank.  She spent
+        <p>On Saturday, Brooks bought groceries and filled her gas tank.  She spent
           <m>\$53</m> on groceries, which was
-          <m>\$18</m> less than twice what she spent on gasoline.  How much did Brooke spend on filling her tank with gas?
+          <m>\$18</m> less than twice what she spent on gasoline.  How much did Brooks spend on filling her tank with gas?
         </p>
         <p>Since we don't know how much she spent on gasoline, we will use a variable to represent this unknown amount. Sometimes it is helpful to write out the other quantities described in the problem in terms of the variable.
         <md>
@@ -412,7 +412,8 @@ same idea is seen in the following example.</p>
           <md>
             <mrow>0.375\cdot x \amp\amp\amp \text{Translate: \(37.5\%\) of the number}</mrow>
             <mrow>0.375\cdot x\amp =57\amp\amp \text{Set up the equation}</mrow>
-            <mrow>\dfrac{0.375}{0.375}\cdot x\amp =\dfrac{57}{0.375}\amp\amp \text{Divide both sides by \(0.375\) and simplify; \(\dfrac{0.375}{0.375}=1\) and \(\dfrac{57}{0.375}=152\)}</mrow>
+            <mrow>\dfrac{0.375}{0.375}\cdot x\amp =\dfrac{57}{0.375}\amp\amp \text{Divide both sides by \(0.375\) and simplify:}</mrow>
+            <mrow>\amp\amp\amp \dfrac{0.375}{0.375}=1 \text{ and } \dfrac{57}{0.375}=152</mrow>
             <mrow>x\amp =152 \amp\amp \text{Our Solution}\checkmark</mrow>
           </md>
         </p>

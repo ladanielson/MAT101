@@ -235,11 +235,13 @@
       <example>
         <title>Simplify Exponents</title>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 208 pg 180-->
+        <p>Simplify.
         <md>
           <mrow>(4x^2 y^5)^3 \amp\amp\amp \text{Put the exponent of \(3\) on each factor, multiplying powers}</mrow>
           <mrow>4^3 x^6 y^{15} \amp\amp\amp \text{Evaluate \(4^3=4\cdot 4\cdot 4\)}</mrow>
           <mrow>64x^6 y^{15} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
+      </p>
       </example>
       <p>In the previous example we did not put the
         <m>3</m> on the
@@ -588,6 +590,17 @@
           <mrow>0.0074 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
       </example>
+      <p>When you use a calculator or computer, sometimes scientific notation will be displayed a little differently than we've just discusssed.  The number will look like <c>2.341 E03</c>.  In this case, the <c>E03</c> is short for "<m>\times 10^3</m>" and the number is <m>2.341 \times 10^3</m>.</p>
+      <example>
+        <title>Interpret Computer/Calculator Notation</title>
+        <p>
+          <!-- Our own-->
+        </p>
+        <md>
+          <mrow>\text{Convert <c>5.915 E-12</c> to scientific notation} \amp\amp\amp \text{Exponent on \(10\) is \(-12\)}</mrow>
+          <mrow>5.915 \times 10^{-12} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
+        </md>
+      </example>      
       <p>Converting between standard notation and scientific notation is important to understand how scientific notation works and what it does. Here our main interest is to be able to perform operations with numbers in scientific notation and the exponent properties are essential to these operations.</p>
     </subsection>
     <subsection>
