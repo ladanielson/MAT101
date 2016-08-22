@@ -23,9 +23,15 @@
 <book>
     <title>Survey of Algebra and Probability</title>
         <subtitle>MAT 101</subtitle>
+
+<chapter xml:id="chapter-0-preliminaries">
+    <title>Preliminaries</title>
+    <xi:include href="./set00_Preliminaries.mbx" />
+</chapter>
+
 <chapter xml:id="chapter-1-numbers">
     <title>Numbers</title>
-<xi:include href="./set00_Preliminaries.mbx" />
+
 <xi:include href="./set1A_Fractions.mbx" />
 <xi:include href="./set1B_Percents_and_Estimation.mbx" />
 <xi:include href="./set1C_Exponents_and_Scientific_Notation.mbx" />
