@@ -14,7 +14,7 @@
     <p>A
       <term>set</term> is a collection of objects, and its members are called the
       <term>elements</term> of the set. We name the set by using capital letters, and enclose its members in braces
-      <m>{\cdots}</m>. Suppose we need to list the members of the chess club. We use the following set notation: 
+      <m>\{\cdots\}</m>. Suppose we need to list the members of the chess club. We use the following set notation: 
       <md>
         <mrow>C=\{\text{Ken, Bob, Tran, Shanti, Eric}\}</mrow>
       </md>
@@ -173,6 +173,217 @@
     </example>
   </subsection>
   <subsection>
+    <title>Intervals as Sets</title>
+              <p>Intervals represent sets of numbers.  This means we can perform set operations on intervals.  For example:</p>
+            <example xml:id="example-overlapping-intervals">
+              <title>Union of Two Overlapping Intervals</title>
+                <!-- Modeled after and WeBWorK MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_04_LinearIneq.pg -->
+              <p>Consider the below graph of two intervals. The
+                    <term>union</term> of the points in the graph would be all values in either the top interval OR in the bottom (or in both).</p>
+              <sidebyside widths="55% 40%" valign="middle">
+              <figure xml:id="figure-intervals-overlapping">
+                <image xml:id="intervals-overlapping">
+                  <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                    <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \fill[color=green] (2,1) circle (.1cm); \draw[green,
+                      <-] (-5.5,1) -- (2,1); \draw[color=blue] (-2,.5) circle (.1cm); \draw[blue, ->] (-1.9,.5) -- (5.5,.5); \end{tikzpicture}]]></latex-image-code>
+                    </image>
+                  </figure>
+                  <paragraphs>
+                  <p>For example,
+                    <m>-3</m> is in the top interval
+                    <m>(-\infty, 2]</m>, so
+                    <m>-3</m> is in the union.</p>
+                  <p>Also 
+                    <m>2.7</m> is in the bottom interval
+                    <m>(-2, \infty)</m>, so
+                    <m>2.7</m> is in the union.</p>
+                  <p>And 
+                    <m>-\frac{1}{3}</m> is in both intervals, so
+                    <m>-\frac{1}{3}</m> is in the union.</p>
+                </paragraphs>
+              </sidebyside>
+              <p>Notice every real number is either in the top or bottom interval (or in both).
+                  <md>
+                    <mrow>(-\infty, \infty)\amp\amp\amp \text{An interval describing the union}\checkmark</mrow>
+                    <mrow>-\infty \lt x \lt \infty \amp\amp\amp \text{An inequality describing the union}\checkmark</mrow>
+                  </md>
+                </p>
+              </example>
+              <assemblage>
+                <title>WeBWorK: Entering all Real Numbers</title>
+                <p>Type 
+                  <c>(-inf,inf)</c> for the interval <m>(-\infty, \infty)</m>.
+                </p>
+                <p>Type 
+                  <c>-inf &lt; x &lt; inf</c> for the inequality <m>-\infty \lt x \lt \infty</m>.
+                </p>
+                <p>Equivalently, you may type <c>all real numbers</c>.</p>
+              </assemblage>
+                <example>
+                  <title>Intersection of Two Overlapping Intervals</title>
+                    <!-- Modeled after and WeBWorK MAT105_Templates/setAlgebra_04_01_LinearInequalities/41IntAlg_04_LinearIneq.pg -->
+                  <p>Consider the same two intervals of <xref ref="example-overlapping-intervals" autoname="yes" />.  The
+                    <term>intersection</term> of the points in the graph would be all values in both the top interval AND the bottom.  This is points common to both (or in the <term>overlap</term>).
+                  </p>
+                  <sidebyside widths="55% 40%" valign="middle">
+                  <figure xml:id="figure-intervals-overlapping-copy">
+                    <image source="images/intervals-overlapping.svg" />
+                  </figure>
+                  <paragraphs>
+                  <p> For example,
+                    <m>-3</m> is NOT in the bottom interval
+                    <m>(-2, \infty),</m> so
+                    <m>-3</m> is NOT in the intersection.</p>
+                  <p>Also, 
+                    <m>2.7</m> is NOT in the top interval
+                    <m>(-\infty, 2],</m> so
+                    <m>2.7</m> is NOT in the intersection.</p>
+                  <p>But since
+                    <m>-\frac{1}{3}</m> is in both intervals,
+                    <m>-\frac{1}{3}</m> IS in the intersection.
+                  </p>
+                </paragraphs>
+              </sidebyside>
+                <p>
+                  <md>
+                    <mrow>(-2, 2] \amp\amp\amp \text{An interval describing the intersection}\checkmark</mrow>
+                    <mrow>-2 \lt x \leq 2 \amp\amp\amp \text{An inequality describing the intersection}\checkmark</mrow>
+                  </md>
+                </p>
+                </example>
+                <example xml:id="example-overlapping-intervals2">
+                  <title>Union of Two Overlapping Intervals</title>
+                    <!-- Modeled after and WeBWorK MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_05_CompoundIneq.pg -->
+                  <p>Describe the
+                    <term>union</term> of the points in the graph.</p>
+                  <p>Recall the
+                        <term>union</term> of the points in the graph would be all values in either the first interval OR in the second (or in both).</p>
+                <sidebyside widths="55% 40%" valign="middle">
+                  <figure xml:id="figure-intervals-overlapping2">
+                    <image xml:id="intervals-overlapping2">
+                      <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                        <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \fill[color=red] (-3,1) circle (.1cm); \draw[red,
+                          <-] (-5.5,1) -- (-3,1); \draw[color=green] (4,.5) circle (.1cm); \draw[green, <-] (-5.5,.5) -- (3.9,.5); \end{tikzpicture}]]></latex-image-code>
+                        </image>
+                      </figure>
+                      <paragraphs>
+                      <p>For example,
+                        <m>-3</m> is in both the top and bottom intervals, so
+                        <m>-3</m> is in the union.</p>
+                        <p>And
+                        <m>2.7</m> is in the bottom interval, so
+                        <m>2.7</m> is in the union.</p>
+                        <p>But
+                        <m>5</m> is in neither interval, so
+                        <m>5</m> is NOT in the union.
+                        </p>
+                        </paragraphs>
+                        </sidebyside>
+                        <p>Notice every number in the bottom interval is in the union (as is every number in the top interval).
+                      <md>
+                        <mrow>(-\infty, 4)\amp\amp\amp \text{An interval describing the union}\checkmark</mrow>
+                        <mrow>x \lt 4 \amp\amp\amp \text{An inequality describing the union}\checkmark</mrow>
+                      </md>
+                    </p>
+                    </example>
+                    <example>
+                      <title>Intersection of Two Overlapping Intervals</title>
+                        <!-- Modeled after and WeBWorK MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_05_CompoundIneq.pg -->
+                      <p>Describe the
+                        <term>intersection</term> of the points in the graph.
+                      </p>
+                      <p>Consider the same two intervals of <xref ref="example-overlapping-intervals2" autoname="yes" />. Recall the
+                        <term>intersection</term> of the points in the graph would be all values in both the first interval AND the second. This is points common to both (or in the <term>overlap</term>).</p>
+                    <sidebyside widths="55% 40%" valign="middle">
+                      <figure xml:id="figure-intervals-overlapping2-copy">
+                        <image source="images/intervals-overlapping2.svg" />
+                      </figure>
+                      <paragraphs>
+                      <p>For example,
+                        <m>-3</m> is in both the top and bottom intervals, so
+                        <m>-3</m> is in the intersection.</p>
+                      <p>But
+                        <m>2.7</m> is in the bottom interval but not the top, so
+                        <m>2.7</m> is NOT in the intersection.</p>
+                      <p>Also
+                        <m>5</m> is in neither interval, so
+                        <m>5</m> is NOT in the intersection.</p>
+                        </paragraphs>
+                        </sidebyside>
+                        <p>Notice the overlap of the two intervals is all numbers in the first interval.
+                      <md>
+                        <mrow>(-\infty, -3] \amp\amp\amp \text{An interval describing the intersection}\checkmark</mrow>
+                        <mrow>x \leq -3 \amp\amp\amp \text{An inequality describing the intersection}\checkmark</mrow>
+                      </md>
+                    </p>
+                  </example>
+                    <example xml:id="example-non-overlapping">
+                      <title>Union of Two Non-Overlapping Intervals</title>
+                        <!-- Modeled after and WeBWorK MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_07_CompoundIneq.pg -->
+                      <p>Describe the
+                        <term>union</term> of the points in the graph.
+                      </p> 
+                    <sidebyside widths="55% 40%" valign="middle">
+                      <figure xml:id="figure-interval-non-overlapping">
+                        <image xml:id="interval-non-overlapping">
+                          <latex-image-code><![CDATA[\begin{tikzpicture} \draw[
+                            <->] (-5.5,0) -- (5.5,0); \foreach \x in {-5,...,5} \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x}; \fill[color=green] (1,1) circle (.1cm); \draw[green, ->] (1,1) -- (5.5,1); \fill[color=red] (-2,.5) circle (.1cm); \draw[red,
+                              <-] (-5.5,.5) -- (-2,.5); \end{tikzpicture}]]></latex-image-code>
+                            </image>
+                          </figure>
+                        <p>Recall the
+                            <term>union</term> of the points in the graph would be all values in either the first interval OR in the second (or in both).</p>
+                          </sidebyside>
+                        <p> 
+                          <md>
+                            <mrow>(-\infty, -2]\cup [1,\infty) \amp\amp\amp \text{A union of intervals describing the union}\checkmark</mrow>
+                            <mrow>x\leq -2\text{ or }x\geq 1 \amp\amp\amp \text{A compound inequality describing the union}\checkmark</mrow>
+                          </md>
+                        </p>
+                        </example>
+                        <assemblage>
+                        <title>WeBWorK: Entering Two Intervals or Two Inequalities</title>
+                        <p>For interval notation, the upper case "U" means that values from either interval are solutions:
+                          <c>(-inf, -2] U [1, inf)</c>.
+                        </p>
+                        <p>For
+                          <m>x \leq -2 \text{ or } x \geq 1</m>:</p>
+                          <p>For inequality notation type
+                          <c>x &lt; = -2 or x &gt; = 1</c>
+                          </p>
+                          <p>Be sure to include the word "or" between the solutions.
+                        </p>  
+                      </assemblage>
+                        
+                        <example>
+                          <title>Intersection of Two Non-Overlapping Intervals</title>
+                            <!-- Modeled after and WeBWorK MAT105_Templates/setAlgebra_04_02_CompoundIneq/42IntAlg_05_CompoundIneq.pg -->
+                          <p>Describe the
+                            <term>intersection</term> of the points in the graph.
+                          </p>
+                          <p>Consider the same two intervals of <xref ref="example-non-overlapping" autoname="yes" />.</p>
+                        <sidebyside widths="55% 40%" valign="middle">
+                          <figure xml:id="figure-interval-non-overlapping-copy">
+                            <image source="images/interval-non-overlapping.svg" />
+                          </figure>
+                          <p>The
+                            <term>intersection</term> of the points in the graph would be all values common to both (overlap).
+                          </p>
+                        </sidebyside>
+                        <p>
+                          <md>
+                          <mrow>\text{None} \amp\amp\amp \text{There are no values common to both intervals}\checkmark</mrow>
+                        </md>
+                      </p>
+                    </example>
+                     <assemblage>
+                        <title>WeBWorK: Entering Empty Sets</title>
+                        <p>Type
+                          <c>None</c> for empty sets.
+                        </p>
+                      </assemblage>  
+                      </subsection>              
+  <subsection>
     <title>Universal Set</title>
     <p>A
       <term>universal set</term>
@@ -278,13 +489,16 @@
           <latex-image-code><![CDATA[\begin{tikzpicture}\draw \universe; \node[anchor=south east] at (current bounding box.south east) {$U$}; \node[anchor=south] at (current bounding box.north) {$A \cup B$}; \draw[filled] \firstcircle node {$A$} \secondcircle node {$B$}; \end{tikzpicture} ]]></latex-image-code>
         </image>
       </figure>
+      <paragraphs>
       <p>The shaded region represents the collection of all elements that are either in
         <m>A</m> or in
-        <m>B</m>, or in both
+        <m>B,</m> or in both
         <m>A</m> and
-        <m>B</m>. The region is
-        <m>A\cup B</m>
+        <m>B.</m></p>
+        <p>The region is
+        <m>A\cup B.</m>
       </p>
+    </paragraphs>
     </sidebyside>
     <sidebyside widths="45% 45%" valign="middle">
       <figure xml:id="figure-Venn-A-intersect-B">
@@ -292,11 +506,14 @@
           <latex-image-code><![CDATA[\begin{tikzpicture} \draw \universe; \node[anchor=south east] at (current bounding box.south east) {$U$}; \begin{scope} \clip \firstcircle; \fill[filled] \secondcircle; \end{scope} \draw[outline] \firstcircle node {$A$}; \draw[outline] \secondcircle node {$B$}; \node[anchor=south] at (current bounding box.north) {$A \cap B$}; \end{tikzpicture} ]]></latex-image-code>
         </image>
       </figure>
+      <paragraphs>
       <p>The shaded region represents the collection of all elements that are common to both
         <m>A</m> and
-        <m>B</m> The region is
-        <m>A\cap B</m>
+        <m>B.</m></p>
+        <p>The region is
+        <m>A\cap B.</m>
       </p>
+    </paragraphs>
     </sidebyside>
     <sidebyside widths="45% 45%" valign="middle">
       <figure xml:id="figure-Venn-A-complement">
@@ -304,10 +521,13 @@
           <latex-image-code><![CDATA[\begin{tikzpicture} \fill[color = M101_green!50!white ] \universe; \node[anchor=south east] at (current bounding box.south east) {$U$}; \draw \universe; \node[anchor=south] at (current bounding box.north) {$A'$}; \fill[color = white] \firstcircle; \draw[outline] \firstcircle node {$A$}; \draw[outline] \secondcircle node {$B$}; \end{tikzpicture} ]]></latex-image-code>
         </image>
       </figure>
+      <paragraphs>
       <p>The shaded region represents the collection of all elements that are NOT in
-        <m>A</m>. The region is 
-        <m>A'</m>
+        <m>A.</m></p>
+        <p>The region is 
+        <m>A'.</m>
       </p>
+    </paragraphs>
     </sidebyside>
   <!--</subsection>-->
     <!--<p>We will now consider sets of numbers defined using inequalities.</p>-->
@@ -321,8 +541,8 @@
     </p>
     <ul>
       <li>A
-        <b>set</b>is a collection of objects, and its members are called the
-        <b>elements</b>of the set.
+        <b>set</b> is a collection of objects, and its members are called the
+        <b>elements</b> of the set.
       </li>
       <li>We name the set by using capital letters, and enclose its members in braces. For example, the set of primary colors could be denoted
         <m>P = \{ \text{red, yellow, blue} \}</m>.
@@ -333,11 +553,11 @@
         <m>\{\}</m>.
       </li>
       <li>Two sets are
-        <b>equal</b>if they have the same elements.
+        <b>equal</b> if they have the same elements.
       </li>
       <li>A set
         <m>A</m> is a
-        <b>subset</b>of a set
+        <b>subset</b> of a set
         <m>B</m> if every member of
         <m>A</m> is also a member of
         <m>B</m>. For example, suppose and
@@ -351,18 +571,18 @@
         <m>\emptyset \subseteq A</m>.
       </li>
       <li>The
-        <b>union</b>of
+        <b>union</b> of
         <m>A</m> and
         <m>B</m>, written as
         <m>A\cup B</m>, is the set of all elements that are either in
         <m>A</m>
-        <b>OR</b>in
+        <b>OR</b> in
         <m>B</m>, or in both
         <m>A</m> and
         <m>B</m>.
       </li>
       <li>The
-        <b>intersection</b>of
+        <b>intersection</b> of
         <m>A</m> and
         <m>B</m>, written as
         <m>A\cap B</m>, is the set of all elements that are common to both sets
@@ -375,19 +595,19 @@
         <m>U</m> is the set consisting of all elements under consideration.
       </li>
       <li>The
-        <b>complement</b>of set
+        <b>complement</b> of set
         <m>A</m>, written as
         <m>A'</m>, is the set consisting of elements in the universal set
         <m>U</m> that are
-        <b>NOT</b>in
+        <b>NOT</b> in
         <m>A</m>.
       </li>
     </ul>
     <p>A concept not discussed in
-      <b>Set 1C</b>is disjoint sets. Two sets
+      <b>Set 1C</b> is disjoint sets. Two sets
       <m>A</m> and
       <m>B</m> are called
-      <b>disjoint</b>sets if their intersection is an empty set.  This would be denoted
+      <b>disjoint</b> sets if their intersection is an empty set.  This would be denoted
       <m>A\cap B = \emptyset</m>.  The following examples demonstrate the above ideas regarding sets.
     </p>
   -->
@@ -1034,7 +1254,7 @@
 </subsection>
 <subsection>
   <title>Tree Diagrams and the Multiplication Axiom</title>
-  <p>In this section, we are developing counting techniques that will be used in the following <xref ref="section-4C-probability-rules" autoname="yes" /> to study probability. One of the most fundamental of such techniques is called the
+  <p>In this section, we are developing counting techniques that will be used in <xref ref="section-4C-probability-rules" autoname="yes" /> to study probability. One of the most fundamental of such techniques is called the
   <term>Multiplication Axiom</term>. Before we introduce the multiplication axiom, we first consider some examples.
   </p>
   <example xml:id="example-tree-2-step">

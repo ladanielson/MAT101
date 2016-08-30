@@ -5,20 +5,19 @@
       <li> Determine the slope of a given linear model and describe its meaning, in context.</li>
       <li> Use a given linear model to solve problems.</li>
       <li> Create a linear model from data to solve problems.</li>
-    </ul>
+    </ul>jkku
   </introduction>
   <subsection>
     <title>Linear Models</title>
     <p>Now that you have an understanding of lines, we will consider linear models.  A
-      <term>linear model</term> is an equation for a line that is connected to a real-world situation or data. What does this mean?
+      <term>linear model</term> is <!--an equation for--> a line that is connected to a real-world situation or data. What does this mean?
     </p>
     <p>Recall when we write the slope-intercept 
       <xref ref="equation-slope-intercept" autoname="yes" /> for a line:
-    </p>
     <md>
       <mrow>y=mx+b</mrow>
     </md>
-    <p>that
+    that
       <m>y</m> represents the
       <term>dependent variable</term> (sometimes called the
       <term>"response" variable</term>) and
@@ -55,12 +54,116 @@
           <m>x=0</m>
         </li>
       </ul>
-    </p>
-    <p>Recall that points in the plane are denoted:
+    Recall that points in the plane are denoted:
+      <md>
+        <mrow>(x,y)=(horizontal\;\#, vertical\;\#)</mrow>
+      </md>
+      Now, we have another way to look at what a point represents:
       <md>
         <mrow>(x,y)=(independent, dependent) =(predictor, response)</mrow>
       </md> Consider some examples of linear models.
     </p>
+    <example xml:id="example-independent-dependent">
+      <title>A Linear Model</title>
+      <p>Theo saved $500 from his summer job for spending money at college this fall.  If he spends about $20 per week, how long will his money last?  
+        <!-- These are our own!-->
+      </p>
+      <p>Since the rate of change is a constant <m>-20</m> dollars per week, the model should be a line. The vertical intercept is how much he has at the beginning of the fall semester when zero weeks have passed: <m>500</m>.  The linear model is
+        <md>
+          <mrow>y=-20x+500.</mrow>
+        </md>
+        The predictor (or independent variable) is
+        <md>
+          <mrow>x= \text{ number of weeks}</mrow>
+        </md>
+        and the response (or dependent variable) is 
+        <md>
+          <mrow>y= \text{ amount of money left}</mrow>
+        </md>
+        We want to know how many weeks it will take until no money is left, when <m>y=0</m>.
+          <md>
+            <mrow>0\amp= -20x+500 \amp\amp\text{Add <m>20x</m> to both sides.}</mrow>
+           <mrow>20x\amp= 500 \amp\amp\text{Divide both sides by 20}</mrow>
+          <mrow>x\amp= 25 \amp\amp</mrow>
+          <mrow>\text{The money will be gone in }\amp 25 \text{ weeks}\amp\amp\text{Our Solution}\checkmark</mrow>
+          </md>
+        </p>
+      </example>
+      <example>
+        <title>Use a Graph to Determine a Solution</title>
+        <p>Consider <xref ref="example-independent-dependent" autoname="yes" />. Use the graph of the model to determine (a) when <m>\$300</m> remains and also (b) how much money remains after <m>5</m> weeks.</p>
+        <p>Reading the graph of an equation is sometimes faster than computing an answer from the equation.</p>
+        <sidebyside widths="40% 55%" valign="middle">
+          <paragraphs>
+          <p> The graph of the model from <xref ref="example-independent-dependent" autoname="yes" /> is given at the right.
+          </p>
+          <p><md>
+          <mrow>y=-20x+500</mrow>
+        </md></p>
+        </paragraphs>
+          <figure xml:id="figure-college-spending-model">
+          <image xml:id="college-spending-model">
+            <latex-image-code><![CDATA[\begin{tikzpicture}
+                  \draw[step=1cm,gray,very thin] (0,0) grid (5.9,5.9);
+                  \draw[line width=0.55mm,black,->] (0,0) -- (6,0) node[anchor=north west] {$x$-axis};
+                  \draw[line width=0.55mm,black,->] (0,0) -- (0,6) node[anchor=south east] {$y$-axis};
+                  \draw[line width=0.55mm,black] (1 cm,3pt) -- (1 cm,-3pt) node[shift={(0.05,-.3)}] {$5$};
+                  \draw[line width=0.55mm,black] (5 cm,3pt) -- (5 cm,-3pt) node[shift={(0.05,-.3)}] {$25$};
+                  \draw[line width=0.55mm,black] (3pt,1 cm) -- (-3pt,1 cm) node[shift={(-.5,0.05)}] {$\$100$};
+                  \draw[line width=0.55mm,black] (3pt,5 cm) -- (-3pt,5 cm) node[shift={(-.5,0.05)}] {$\$500$};
+                  \draw[line width=0.65mm,black,<->] (5,0) -- (0,5)  node[shift={(3,-.5)}] {\LARGE $y=-20x+500$};
+          \end{tikzpicture}]]></latex-image-code>
+                          </image>
+              </figure>
+            </sidebyside>
+            <sidebyside widths="40% 55%" valign="middle">
+          <paragraphs>
+          <p>(a) Use the graph of the model to determine when <m>\$300</m> remains.</p>
+          <p>Consider a horizontal line at <m>y=300</m> and note that the lines intersect at <m>x=10.</m></p>
+          <p><m>\$300</m> remains after <m>10</m> weeks.<m>\checkmark</m></p>
+          </paragraphs>
+          <figure xml:id="figure-college-spending-model-300-remains">
+          <image xml:id="college-spending-model-300-remains">
+            <latex-image-code><![CDATA[\begin{tikzpicture}
+        \draw[step=1cm,gray,very thin] (0,0) grid (5.9,5.9);
+        \draw[line width=0.55mm,black,->] (0,0) -- (6,0) node[anchor=north west] {$x$-axis};
+        \draw[line width=0.55mm,black,->] (0,0) -- (0,6) node[anchor=south east] {$y$-axis};
+        \draw[line width=0.55mm,black] (1 cm,3pt) -- (1 cm,-3pt) node[shift={(0.05,-.3)}] {$5$};
+        \draw[line width=0.55mm,black] (5 cm,3pt) -- (5 cm,-3pt) node[shift={(0.05,-.3)}] {$25$};
+        \draw[line width=0.55mm,black] (3pt,1 cm) -- (-3pt,1 cm) node[shift={(-.5,0.05)}] {$\$100$};
+        \draw[line width=0.55mm,black] (3pt,5 cm) -- (-3pt,5 cm) node[shift={(-.5,0.05)}] {$\$500$};
+        \draw[line width=0.65mm,black,<->] (5,0) -- (0,5)  node[shift={(3,-.5)}] {\LARGE $y=-20x+500$};
+        \draw[line width=0.65mm,gray,dotted,<->] (6,3) -- (0,3) node[shift={(-.5,0.05)}] {$\$300$};
+        \draw[line width=0.65mm,red,dashed] (2,3) -- (2,-.5) node[shift={(0,-.25)}] {\LARGE $x=10$};
+\end{tikzpicture}]]></latex-image-code>
+                          </image>
+              </figure>
+            </sidebyside>
+        <sidebyside widths="40% 55%" valign="middle">
+          <paragraphs>
+          <p>(b) Use the graph of the model to determine how much money remains after <m>5</m> weeks.</p>
+          <p>Consider a vertical line at <m>x=5</m> and note that the lines intersect at <m>(5,400).</m></p>
+          <p><m>\$400</m> remains after <m>5</m> weeks.<m>\checkmark</m></p>
+          </paragraphs>
+          <figure xml:id="figure-college-spending-model-5-weeks">
+          <image xml:id="college-spending-model-5-weeks">
+            <latex-image-code><![CDATA[\begin{tikzpicture}
+        \draw[step=1cm,gray,very thin] (0,0) grid (5.9,5.9);
+        \draw[line width=0.55mm,black,->] (0,0) -- (6,0) node[anchor=north west] {$x$-axis};
+        \draw[line width=0.55mm,black,->] (0,0) -- (0,6) node[anchor=south east] {$y$-axis};
+        \draw[line width=0.55mm,black] (1 cm,3pt) -- (1 cm,-3pt) node[shift={(0.05,-.3)}] {$5$};
+        \draw[line width=0.55mm,black] (5 cm,3pt) -- (5 cm,-3pt) node[shift={(0.05,-.3)}] {$25$};
+        \draw[line width=0.55mm,black] (3pt,1 cm) -- (-3pt,1 cm) node[shift={(-.5,0.05)}] {$\$100$};
+        \draw[line width=0.55mm,black] (3pt,5 cm) -- (-3pt,5 cm) node[shift={(-.5,0.05)}] {$\$500$};
+        \draw[line width=0.65mm,black,<->] (5,0) -- (0,5)  node[shift={(3,-.5)}] {\LARGE $y=-20x+500$};
+        \draw[line width=0.65mm,gray,dotted,<->] (1,6) -- (1,0);
+        \draw[line width=0.65mm,red,dashed] (1,4) -- (0,4) node[shift={(-.5,0.05)}] {$\$400$};
+\end{tikzpicture}]]></latex-image-code>
+                          </image>
+              </figure>
+            </sidebyside>
+      </example>
+    <p>When making a model, we are not restricted to the using <m>x</m> and <m>y</m>. Using variables that tie in with what they represent make the mathematical model easier to understand.</p>
     <example xml:id="example-road-trip-intro">
       <title>Road Trip! Determine Slope and Intercept of Given Model</title>
       <p>Suppose you are driving from Caldwell to LaGrande, OR to watch the Yotes play a game against Eastern Oregon University.  When you reach Ontario, OR (which is 30 miles into the drive) you are able to set your cruise control at 65 miles per hour (mph) for the remainder of the trip.  The linear equation
@@ -92,7 +195,7 @@
       <p>Continue with 
         <xref ref="example-road-trip-intro" autoname="yes" />. Recall the linear model
         <m>D=65t + 30</m> represents your distance
-        <m>D</m>(in miles) from Caldwell
+        <m>D</m> (in miles) from Caldwell
         <m>t</m> hours after cruise. Describe what the slope means.</p>
       <p>Since
       <md>
@@ -116,7 +219,7 @@
       <p>Continue with 
         <xref ref="example-road-trip-intro" autoname="yes" />.  Recall the linear model
         <m>D=65t + 30</m> represents your distance
-        <m>D</m>(in miles) from Caldwell
+        <m>D</m> (in miles) from Caldwell
         <m>t</m> hours after using cruise. How many hours after setting your cruise control will you be
         <m>225</m> miles from Caldwell?
         <!--Our own-->
