@@ -16,8 +16,8 @@
     <title>The Cartesian Coordinate Plane</title>
     <p>Often, to get an idea of the behavior of an equation we will make a picture that represents the solutions to the equations. A graph is simply a picture of the solutions to an equation. Before we spend much time on making a visual representation of an equation, we first have to understand the basis of graphing. Following is an example of what is called the Cartesian coordinate plane (named in honor of the 17th century philosopher, mathematician and scientist, Ren&#x00E9; Descartes).</p>
     <p>The plane is divided into four regions, called
-      <term>quadrants</term>, by a horizontal number line (
-      <m>x</m>-axis) and a vertical number line (
+      <term>quadrants</term>, by a horizontal number line (labelled the
+      <m>x</m>-axis on the graph below) and a vertical number line (labelled the
       <m>y</m>-axis).
     </p>
     <sidebyside widths="55% 40%" valign="middle">
@@ -115,7 +115,7 @@
   <assemblage>
     <title>WeBWorK: Entering Points</title>
     <p>Points in the plane are entered as
-      <c>(#,#)= (horizontal #, vertical #)=(independent, dependent)</c>.
+      <c>(#,#)= (horizontal #, vertical #)<!--=(independent, dependent)NOT DEFINED YET?--></c>.
     </p>
   </assemblage>
   <p>Just as we can give the coordinates for a set of points, we can take a set of points and plot them on the plane.</p>
@@ -244,13 +244,16 @@
         No, the point <m>(-9,7)</m> <em>is not</em> a solution. <m>\checkmark</m>
       </p>
       </example>
+      <p>Equations do not always use the varibles 
+        <m>x</m> and <m>y</m>, but as long as we know which represents the horizontal distance and which the vertical, we may plot a graph to represent the equation.
+      </p>
           <example>
-            <title>Equation Table</title>
+            <title>Equation Table with Variables Not <m>x</m> nor <m>y</m></title>
               <!-- Our own-modeled after WeBWorK 3A problem 6-->
             <p>For the equation
               <m>Q = P^2-3</m>, find the
               <m>Q</m>-coordinate for each value of
-              <m>P</m> in the table.
+              <m>P</m> in the table.  Since <m>Q</m> is written in terms of <m>P</m>, we will take <m>P</m> as the horizontal variable and <m>Q</m> for the vertical.
             </p>
             <sidebyside widths="30% 70%" valign="middle">
               <table>
@@ -323,14 +326,13 @@
           <paragraphs>
           <p>Find each
                 <m>Q</m>-coordinate by replacing
-                <m>P</m> with the given value in the equation:</p>
-              <p>
-                <m>Q = P^2-3</m>
-                <m>P=-3\mapsto Q =(-3)^2-3=(-3)(-3)-3=9-3=6</m>
-                <m>P=-1\mapsto Q =(-1)^2-3=(-1)(-1)-3=1-3=-2</m>
-                <m>P=0\mapsto Q =(0)^2-3=(0)(0)-3=0-3=-3</m>
-                <m>P=1\mapsto Q =(1)^2-3=(1)(1)-3=1-3=-2</m>
-                <m>P=5\mapsto Q =(5)^2-3=(5)(5)-3=25-3=22\checkmark</m></p>
+                <m>P</m> with the given value in the equation: <m>Q = P^2-3</m></p>
+              <p> 
+                <m>P=-3\mapsto Q =(-3)^2-3=<!--(-3)(-3)-3=-->9-3=6</m>
+                <m>P=-1\mapsto Q =(-1)^2-3=<!--(-1)(-1)-3=-->1-3=-2</m>
+                <m>P=0\mapsto Q =(0)^2-3=<!--(0)(0)-3=-->0-3=-3</m>
+                <m>P=1\mapsto Q =(1)^2-3=<!--(1)(1)-3=-->1-3=-2</m>
+                <m>P=5\mapsto Q =(5)^2-3=<!--(5)(5)-3=-->25-3=22\checkmark</m></p>
               </paragraphs>
         </sidebyside>
       </example>
@@ -1006,6 +1008,90 @@
     <m>-\frac{2}{3}</m>" instead of referring to the point
     <m>\left( -\frac{2}{3},0\right)</m>.
   </p>
+  <p>When variables other than <m>x</m> and <m>y</m> are used in equations, we use the same process to calculate intercepts.   
+</p>
+     <example>
+        <title>Determine
+          <m>Q</m>-Intercept
+        </title>
+        <p>Find the
+          <m>Q</m>-intercept of
+          <m>2a+5Q=8</m>.  In this case, let the vertical axis be given by <m>Q</m>. 
+        </p>
+        <p>
+        <md>
+          <mrow>2a+5Q\amp =8\amp\amp\text{
+                \(Q\)-intercepts have an
+                \(a\)-coordinate of
+                \(0\): set
+                \(a=0\)}</mrow>
+          <mrow>2(0)+5Q\amp =8\amp\amp\text{Simplify}</mrow>
+          <mrow>5Q\amp =8\amp\amp\text{Divide both sides by
+                \(5\)}</mrow>
+          <mrow>Q\amp =\dfrac{8}{5}\amp\amp\text{We have found the
+                \(Q\)-value of the
+                \(Q\)-intercept}</mrow>
+          <mrow>\amp\left(0, \dfrac{8}{5}\right)\amp\amp\text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
+        <sidebyside widths="40% 55%" valign="middle">
+          <paragraphs>
+          <p>The
+            <m>Q</m>-intercept <m>\left(0, \frac{8}{5}\right)</m> is labeled on the graph of the equation.
+          </p>
+        </paragraphs>
+          <figure xml:id="figure-determine-Q-intercepts">
+          <image xml:id="determine-Q-intercepts">
+            <latex-image-code><![CDATA[\begin{tikzpicture}
+                \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
+                \draw[line width=0.55mm,black,<->] (-6,0) -- (6,0) node[anchor=north west] {$a$-axis};
+                \draw[line width=0.55mm,black,<->] (0,-6) -- (0,6) node[anchor=south east] {$Q$-axis};
+                \foreach \x in {-4,-2,2,4}
+                    \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
+                \foreach \y in {-4,-2,2,4}
+                    \draw[line width=0.55mm,black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
+                \fill[color=black] (0,1.6) circle (.15cm) node[shift={(-1,-.3)}] {\LARGE $\left(0,\frac{8}{5}\right)$};
+                \draw[line width=0.65mm,black,<->] (-6,4) -- (6,-0.8) node[shift={(-2.2,-.4)}] {\LARGE $2a+5Q=8$};
+                \end{tikzpicture} ]]></latex-image-code>
+                </image>
+              </figure>
+            </sidebyside>
+            </example>
+</subsection>
+
+<subsection>
+  <title>Equations and Graphs</title>
+There are situations where you have two (or more) equations and you need to know the values that "work" in both.  In other words, what values are solutions to both problems described by the two equations?  Alternatively, sometimes solving an equation can be thought of as finding common solutions to two equations.
+<example>
+  <!--Our own -->
+  <title>Points in Common</title>
+  <p>Identify the common point of the graphs <m>f(t)</m> and <m>g(t).</m></p>
+  <sidebyside widths="55% 40%" valign="middle">
+          <figure xml:id="figure-determine-intersection-of-two-lines">
+          <image xml:id="determine-intersection-of-two-lines">
+            <latex-image-code><![CDATA[\begin{tikzpicture}
+                \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
+                \draw[line width=0.55mm,black,<->] (-6,0) -- (6,0) node[anchor=north west] {$t$-axis};
+                \draw[line width=0.55mm,black,<->] (0,-6) -- (0,6) node[anchor=south east] {$P$-axis};
+                \foreach \x in {-4,-2,2,4}
+                    \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
+                \foreach \y in {-4,-2,2,4}
+                    \draw[line width=0.55mm,black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
+                \fill[color=black] (1,3) circle (.15cm) node[shift={(-.1,.5)}] {\LARGE $\left(1,3\right)$};
+                \draw[line width=0.65mm,black,<->] (4,6) -- (-6,-4)  node[shift={(1.5,.65)}] {\LARGE $f(t)$};
+                \draw[line width=0.65mm,black,<->] (6,.5) -- (-5,6) node[shift={(.5,-.75)}] {\LARGE $g(t)$};
+                \draw[line width=0.65mm,red,dashed] (1,3) -- (1,-.5) node[shift={(0,-.25)}] {\LARGE $t=1$};
+        \end{tikzpicture}]]></latex-image-code>
+                </image>
+              </figure>
+              <paragraphs>
+                <p>The common point is <m>(1,3).</m></p>
+                <p>We say the graphs <term>intersect</term> at common points.</p>
+                <p>The graphs intersect at <m>t=1.\checkmark</m></p>
+                <p>Note: The location of the common point is often given by the value from the horizontal axis and not by the entire point.</p>
+              </paragraphs>
+            </sidebyside>
+          </example>
 <example>
 <title>Investigate Equation Relationships Graphically</title>
   <!-- Our own-modeled after WeBWorK 3A problem 17-->
