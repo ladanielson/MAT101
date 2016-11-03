@@ -13,7 +13,7 @@
     <title>Probability Properties</title>
       <!--   This is CoconinoCC_chapter_4_Probability.pdf page 116 -->The examples and WeBWorK problems of
     <p>
-      <xref ref="section-4B-Probability" autoname="yes" /> demonstrated some important probability results which are summarized below.
+      <xref ref="section-4B-probability" autoname="yes" /> demonstrated some important probability results which are summarized below.
     </p>
     <!-- adds number <list xml:id="probability-properties"> 
       <title>Probability Properties</title>-->
