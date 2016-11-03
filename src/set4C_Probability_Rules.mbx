@@ -394,7 +394,7 @@
       <p>(a) Determine the probability that a survivor was in the first class. Label the event space
             <m>1st</m> for first class. 
           <md>
-          <mrow>P(F) = \dfrac{n(1st)}{\text{Total #}}=\dfrac{193}{450}\approx 0.4289 \amp\amp\amp \text{Our Solution (a):}</mrow>
+          <mrow>P(1st) = \dfrac{n(1st)}{\text{Total #}}=\dfrac{193}{450}\approx 0.4289 \amp\amp\amp \text{Our Solution (a):}</mrow>
           </md>
           The probability that a survivor was in the first class is
             <m>\dfrac{193}{450}</m> or about
