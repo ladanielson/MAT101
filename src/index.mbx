@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 <docinfo>
+    <brandlogo source="images/seal.jpg"/> <!--see sample article about 176x240 pixels brand logo-->
+    <latex-preamble>
+        <package>cancel</package></latex-preamble>
 	<latex-image-preamble>
         \usepackage{pgfplots}               % loads tikz package
         \usepackage{xcolor}
@@ -22,7 +25,42 @@
 </docinfo>
 <book>
     <title>Survey of Algebra and Probability</title>
-        <subtitle>MAT 101</subtitle>
+    <subtitle>MAT 101</subtitle>
+    <frontmatter>
+<titlepage>
+    <author>
+        <personname>Robin Cruz</personname>
+        <department>Mathematics Department</department>
+        <institution>
+            <line>College of Idaho</line>
+            <line>Caldwell, Idaho, USA</line>
+        </institution>
+        <email>rcruz@collegeofidaho.edu</email>
+    </author>
+    <author>
+        <personname>Lynda Danielson</personname>
+        <department>Mathematics Department</department>
+        <institution>
+            <line>College of Idaho</line>
+            <line>Caldwell, Idaho, USA</line>
+        </institution>
+        <email>ldanielson@collegeofidaho.edu</email>
+    </author>
+    <author>
+        <personname>Katherine Yoshiwara</personname>
+        <department>Mathematics Department</department>
+        <institution>
+            <line>  Los Angeles Pierce College (retired)</line>
+        </institution>
+        <email>kyoshiwara@hotmail.com</email>
+    </author>
+    <date>
+        <today />
+    </date>
+</titlepage>
+</frontmatter>
+ 
+
 
 <chapter xml:id="chapter-0-preliminaries">
     <title>Preliminaries</title>

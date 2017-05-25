@@ -15,39 +15,39 @@
     <p>Applications are better known as "story problems." Story problems can be challenging, but are a powerful use of mathematics. Often it takes a bit of practice to convert the English sentence into a mathematical sentence. These first examples will focus on basic number problems to build your skills at "translating" words into math symbols.</p>
     <p>A few important phrases are described below that can give us clues for how to set up a problem.</p>
     <ul>
-      <li>
+      <li><p>
         <term>A number</term> (or <term>an unknown</term>, <term>a value</term>, etc) usually becomes our variable
-      </li>
-      <li>
+      </p></li>
+      <li><p>
         <term>Is</term> (or other forms of is: <term>was</term>, <term>will be</term>, <term>are</term>, etc) often represents equals (
         <m>=</m>):
         <ul>
           <li>"<m>x</m> is
             <m>5</m>" becomes
             <m>x=5</m></li>
-        </ul>
+        </ul></p>
       </li>
-      <li>
+      <li><p>
         <term>More than</term> often represents addition: 
         <ul>
           <li>"Three more than a number" becomes <m>x+3</m></li>
-        </ul>
+        </ul></p>
       </li>
-      <li><term>Less than</term> often represents subtraction:
+      <li><p><term>Less than</term> often represents subtraction:
         <ul>
           <li>"Four less than a number" becomes <m>x-4</m></li>
-        </ul>
+        </ul></p>
       </li>
-      <li><term>Times</term> often represents multiplicaton:
+      <li><p><term>Times</term> often represents multiplicaton:
         <ul>
           <li>"Six times a number" becomes <m>6x</m></li>
-        </ul>
+        </ul></p>
       </li>
-      <li><term>Of</term> often represents multiplicaton in percent problems:
+      <li><p><term>Of</term> often represents multiplicaton in percent problems:
         <ul>
           <li>"Fifty percent of a number" becomes
             <m>0.5x</m></li>
-        </ul>
+        </ul></p>
       </li>
     </ul>
     <p>We'll start with a "number problem" to practice translating words into an equation.  Look for these phrases and the mathematical concepts they represent.</p>

@@ -1119,7 +1119,7 @@ There are situations where you have two (or more) equations and you need to know
       </p>
       <p>Thus,
         <m>\lvert x+1\rvert =3</m> at
-        <m>x=-4</m> and <m>2.\checkmark</m>
+        <m>x=-4</m> or <m>x=2.\checkmark</m>
       </p>
     </paragraphs>
   </sidebyside>
