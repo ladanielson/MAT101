@@ -170,10 +170,20 @@
       <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Warning 204 pg 179-->
       <p>
         <md>
-          <mrow>(a+b)^m\ne a^m+b^m \amp\amp\amp \text{These are NOT equal if \(m\ne 1\), beware of this error!}</mrow>
+          <mrow>(a+b)^n\ne a^n+b^n \amp\amp\amp \text{These are NOT equal if \(n\ne 1\), beware of this error!}</mrow>
         </md>
       </p>
-
+      <sage>
+        <input>
+          var('a,b')
+          @interact
+          def binomialfunc(n=(3,[2..7])):
+              expr = (a+b)^n
+              expr2 = a^n+b^n
+              mystring = r"$${}\neq {}$$".format(latex(expr.expand()),latex(expr2))
+              pretty_print(html(mystring))
+            </input>
+      </sage>
       <p>Another property that is very similar to the power of a product rule is considered next.</p>
       <example>
         <title>Powers of Quotients</title>

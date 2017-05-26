@@ -27,37 +27,37 @@
     <title>Survey of Algebra and Probability</title>
     <subtitle>MAT 101</subtitle>
     <frontmatter>
-<titlepage>
-    <author>
-        <personname>Robin Cruz</personname>
-        <department>Mathematics Department</department>
-        <institution>
-            <line>College of Idaho</line>
-            <line>Caldwell, Idaho, USA</line>
-        </institution>
-        <email>rcruz@collegeofidaho.edu</email>
-    </author>
-    <author>
-        <personname>Lynda Danielson</personname>
-        <department>Mathematics Department</department>
-        <institution>
-            <line>College of Idaho</line>
-            <line>Caldwell, Idaho, USA</line>
-        </institution>
-        <email>ldanielson@collegeofidaho.edu</email>
-    </author>
-    <author>
-        <personname>Katherine Yoshiwara</personname>
-        <department>Mathematics Department</department>
-        <institution>
-            <line>  Los Angeles Pierce College (retired)</line>
-        </institution>
-        <email>kyoshiwara@hotmail.com</email>
-    </author>
-    <date>
-        <today />
-    </date>
-</titlepage>
+    <titlepage>
+        <author>
+            <personname>Robin Cruz</personname>
+            <department>Mathematics Department</department>
+            <institution>
+                <line>College of Idaho</line>
+                <line>Caldwell, Idaho, USA</line>
+            </institution>
+            <email>rcruz@collegeofidaho.edu</email>
+        </author>
+        <author>
+            <personname>Lynda Danielson</personname>
+            <department>Mathematics Department</department>
+            <institution>
+                <line>College of Idaho</line>
+                <line>Caldwell, Idaho, USA</line>
+            </institution>
+            <email>ldanielson@collegeofidaho.edu</email>
+        </author>
+        <author>
+            <personname>Katherine Yoshiwara</personname>
+            <department>Mathematics Department</department>
+            <institution>
+                <line>Los Angeles Pierce College (retired)</line>
+            </institution>
+            <email>kyoshiwara@hotmail.com</email>
+        </author>
+        <date>
+            <today />
+        </date>
+    </titlepage>
 </frontmatter>
  
 
